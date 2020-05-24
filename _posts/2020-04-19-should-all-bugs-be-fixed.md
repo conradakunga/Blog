@@ -20,9 +20,9 @@ Fixing bugs has **costs**:
   3. People (you have to assign developers, and QA)
   4. Bother (it can be a physiological or organizational bother to fix that bug)
 
-The benefits of fixing the bug are pretty straightforward
+The benefits of fixing the bug are pretty straightforward.
 
-  1. The bug is fixed and customers are happy
+  1. The bug is fixed and customers are happy.
 
 So should bugs always be fixed?
 
@@ -32,6 +32,12 @@ The benefit is usually easy to tell – a bug like inability to login that keeps
 
 But a bug where the font sizes of a label in a particular screen double in size; that manifests **only** in Windows 7 32 bit Javanese edition that is used by a single customer? Maybe not.
 
-This is why in bug trackers over and above &#8216;**Fixed**&#8216;, &#8216;**Incomplete**&#8216; and &#8216;**Open**&#8216; there is a status &#8216;Won&#8217;t Fix&#8217;.
+This is why in bug trackers there are the known statuses
+* Open
+* In Progress
+* Fixed
+* Incomplete
 
-In other words  &#8211; only fix bugs where the benefit is greater than the cost.
+There is also an additional status - **Won't Fix**
+
+In other words : only fix bugs where the benefit is greater than the cost.
