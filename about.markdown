@@ -4,15 +4,52 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I have been writing software professionally for decades. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I am an entrepreneur, and co-founder of [Innova Limited](http://www.innova.co.ke/), where I lead the research and product development. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I have a keen interest in technology and software development in particular. I have architected, designed and developed solutions in supply chain, knowledge management, fintech and agritech.
 
+My work is currently running in production in 10 countries across various industries.
 
-[jekyll-organization]: https://github.com/jekyll
+Some of the organizations I have worked with in developing solutions include
+* Microsoft
+* Safaricom
+* Nokia
+* Standard Chartered Bank (Kenya)
+* Standard Chartered Bank (Uganda)
+* Ecobank (Ghana)
+* CAL Bank (Ghana)
+* I&M Bank (Kenya)
+* I&M Bank (Tanzania)
+* Family Bank (Kenya)
+* National Bank (Kenya)
+* SBM Bank (Kenya)
+* Bank Of Africa (Kenya)
+* Bank Of Africa (Uganda)
+* East African Breweries (Kenya)
+* Uganda Breweries (Uganda)
+* Farmers' Choice (Kenya)
+
+I have also had the opportunity to collaborate with various governments to design and build solutions
+* Government Of Kenya
+* Government Of Uganda
+* Government Of Tanzania
+* Government of Botswana
+
+My focus is
+* Software architecture and design
+* Algorithm analysis and design
+* High performance computing
+* Artificial intelligence and machine learning
+* Alternative user and computing interfaces
+* Systems integration
+
+Over the years I have had the opportunity to work on several technology stacks including C, C++, Python, PHP, Java, Visual Basic, Visual Basic.NET, Delphi, SQL Server, PostgreSQL, MySQL, Sybase, SQLLite and Oracle.
+
+My current specialization is the .NET platform and in particular C# and F#. I have been a Microsoft MVP for over 15 years.
+
+I have a passion for learning, teaching and mentorship to share my knowledge, as well as consulting.
+
+Drop me a line. ConradAkunga at gmail
+

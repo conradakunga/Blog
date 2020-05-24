@@ -18,26 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Conrad Akunga, Esquire. Coding & Learning since 2000
-email: conradakunga@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-I have been writing software professionally for decades.
-
-I am an entrepreneur, and co-founder of Innova Limited, where I lead the research and product development.
-
-I have a keen interest in technology and software development in particular.
-
-Over my career I have written code to build systems in C++, Delphi, Visual Basic, PHP, Python, Java.
-
-I have architected, designed and develope solutions in supply chain, knowledge management, fintech and agritech.
-
-I have specialized in C# and F# development, but I have a keen interest in Prolog and Lisp.
-
-I have a passion for learning, teaching and mentorship to share my knowledge.
-
-Drop me a line. ConradAkunga at gmail
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://conradakunga.com/blog" # the base hostname & protocol for your site, e.g. http://example.com
+title: "Conrad Akunga, Esquire. Code"
+email: "conradakunga@gmail.com"
+description: "I have been writing software professionally for decades."
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://conradakunga.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username:  conradakunga
 
