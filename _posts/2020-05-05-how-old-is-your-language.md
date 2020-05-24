@@ -9,9 +9,9 @@ permalink: /2020/05/05/how-old-is-your-language/
 categories:
   - Epiphanies
 ---
-Ever wonder how old your favourite language is? You might me surprised!
+Ever wonder how old your favourite language is? You might be surprised!
 
-
+Here are their ages as at 2020
 
   * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is 25, and so is Java
   * [PHP](https://en.wikipedia.org/wiki/PHP) is 26
