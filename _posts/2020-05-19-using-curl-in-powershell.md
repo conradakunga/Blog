@@ -6,7 +6,6 @@ author: Conrad Akunga
 layout: post
 categories:
   - PowerShell
-  - Uncategorized
 ---
 A useful tool to have in your toolbelt is an ability to make web requests and retrieve responses from the command line.
 

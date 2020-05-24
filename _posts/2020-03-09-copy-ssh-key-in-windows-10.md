@@ -6,9 +6,6 @@ author: Conrad Akunga
 layout: post
 categories:
   - PowerShell
-tags:
-  - Linux
-  - Powershell
 ---
 Did you know that Windows 10 has a proper SSH client, and has had one for a while?
 

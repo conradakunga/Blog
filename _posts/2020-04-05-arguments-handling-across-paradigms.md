@@ -7,6 +7,7 @@ layout: post
 categories:
   - 'C#'
   - 'F#'
+  - Lisp
 ---
 One of the interesting things about using an object oriented language (like [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)) vs a functional one (like [Racket](https://racket-lang.org/)) is you get an opportunity to see first hand how different things are doing in either paradigm.
 

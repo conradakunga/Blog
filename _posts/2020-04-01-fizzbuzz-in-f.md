@@ -6,8 +6,6 @@ author: Conrad Akunga
 layout: post
 categories:
   - 'F#'
-tags:
-  - FizzBuzz
 ---
 The FizzBuzz problem is one of those ubiquitous industry problems that has been floating around for decades, intended to separate the sheep from the goats.
 

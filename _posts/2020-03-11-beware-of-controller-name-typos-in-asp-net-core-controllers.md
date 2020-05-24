@@ -5,8 +5,6 @@ date: 2020-03-11T10:35:43+03:00
 author: Conrad Akunga
 layout: post
 categories:
-  - 'C#'
-tags:
   - ASP.NET Core
 ---
 The other day I spent the better part of an hour trying to figure out why a particular controller action was not being hit by a request.

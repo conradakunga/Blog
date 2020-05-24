@@ -6,8 +6,6 @@ author: Conrad Akunga
 layout: post
 categories:
   - Under The Hood
-tags:
-  - auto-implemented properties
   - 'C#'
 ---
 One of the features of C# (and the .NET platform in general) is the support of properties as a first class citizen of the runtime.
