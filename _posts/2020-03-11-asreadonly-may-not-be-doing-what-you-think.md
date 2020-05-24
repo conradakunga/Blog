@@ -21,8 +21,18 @@ The devil is in the details!
 
 Take this code:
 
-<div class="gist-oembed" data-gist="f9677549efa980300d990125866e0e2a.json" data-ts="8">
-</div>
+```csharp
+// Create an array of names
+var names = new List<string>() { "Anna", "Jane", "Mary" };
+// Return AsReadOnly
+var readOnlyNames = names.AsReadOnly();
+// Print the read only list
+Console.WriteLine(String.Join(",", readOnlyNames));
+// Change the first name in the original list
+names[0] = "Clarice";
+// Print the read only list again
+Console.WriteLine(String.Join(",", readOnlyNames));
+```
 
 You might be surprised to note that it prints the following
 
@@ -31,10 +41,12 @@ You might be surprised to note that it prints the following
 
 Yes. Changing the original list **changes the ReadOnlyCollection as well**!
 
-Calling **AsReadOnly()** returns a wrapper to the original list. Changes to the original list will manifest in the read only collection.
+Calling `AsReadOnly()` returns a wrapper to the original list. Changes to the original list will manifest in the read only collection.
 
 This might not be a problem when crossing application boundaries (say using JSON) but it may provide some surprises if the read only collection and the original list co-exist, perhaps internally in a class.
 
 So how do we tackle the problem of returning a collection that you do not intend to be modified?
 
 We can look at solutions next time.
+
+Happy Hacking!
