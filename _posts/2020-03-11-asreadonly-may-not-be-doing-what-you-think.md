@@ -4,8 +4,6 @@ title: AsReadOnly() May Not Be Doing What You Think!
 date: 2020-03-11T20:13:03+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=35
-permalink: /2020/03/11/asreadonly-may-not-be-doing-what-you-think/
 categories:
   - 'C#'
 ---
@@ -36,7 +34,7 @@ Console.WriteLine(String.Join(",", readOnlyNames));
 
 You might be surprised to note that it prints the following
 
-![](images/2020/03/image.png)
+![](../images/2020/03/image.png)
 
 
 Yes. Changing the original list **changes the ReadOnlyCollection as well**!

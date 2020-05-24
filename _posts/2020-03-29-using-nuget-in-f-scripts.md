@@ -4,8 +4,6 @@ title: 'Using Nuget In F# Scripts'
 date: 2020-03-29T14:59:51+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=89
-permalink: /2020/03/29/using-nuget-in-f-scripts/
 categories:
   - 'F#'
   - Nuget
@@ -24,7 +22,7 @@ The web service I am using is the [Sunshine Sunset api](https://sunrise-sunset.o
 
 The response itself looks like this:
 
-![](images/2020/03/29-Mar-2.png)
+![](../images/2020/03/29-Mar-2.png)
 
 First the is the root, that contains the **status** (a string) and the **results** (a nested object)
 
@@ -32,13 +30,13 @@ I have created a number of simple types to capture only the data that I am inter
 
 The code is as follows:
 
-![](images/2020/03/29-Mar-1.png)
+![](../images/2020/03/29-Mar-1.png)
 
 Save it in a file, **Script.fsx**
 
 You can run it using the `dotnet fsi` tool as follows:
 
-![](images/2020/03/29-Mar-3.png)
+![](../images/2020/03/29-Mar-3.png)
 
 You must include the `–langversion:preview` when you invoke the command or the Nuget functionality will not work.
 

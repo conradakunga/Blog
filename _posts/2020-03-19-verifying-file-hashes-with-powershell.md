@@ -4,8 +4,6 @@ title: Verifying File Hashes With PowerShell
 date: 2020-03-19T12:10:26+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=41
-permalink: /2020/03/19/verifying-file-hashes-with-powershell/
 categories:
   - PowerShell
 ---
@@ -23,13 +21,13 @@ Which works like so…
 Get-FileHash <filename>
 ```
 
-![](images/2020/03/Hash.png)
+![](../images/2020/03/Hash.png)
 
 But what if you want the MD5 hash?
 
 No problem
 
-![](images/2020/03/Hash-2.png)
+![](../images/2020/03/Hash-2.png)
 
 These are the supported algorithms
 

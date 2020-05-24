@@ -4,8 +4,6 @@ title: How Old Is Your Language?
 date: 2020-05-05T15:57:47+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=264
-permalink: /2020/05/05/how-old-is-your-language/
 categories:
   - Epiphanies
 ---

@@ -4,8 +4,6 @@ title: Should all bugs be fixed?
 date: 2020-04-19T20:10:08+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=239
-permalink: /2020/04/19/should-all-bugs-be-fixed/
 categories:
   - Epiphanies
 ---

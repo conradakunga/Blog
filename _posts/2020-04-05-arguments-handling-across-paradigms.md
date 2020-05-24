@@ -4,8 +4,6 @@ title: Arguments Handling Across Paradigms
 date: 2020-04-05T18:00:15+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=117
-permalink: /2020/04/05/arguments-handling-across-paradigms/
 categories:
   - 'C#'
   - 'F#'
@@ -18,7 +16,7 @@ Object oriented languages tend to use infix notation. This means given an operan
 
 For instance, this is how addition is done in C#
 
-![](images/2020/04/Infix-vs-Postfix-1.png)
+![](../images/2020/04/Infix-vs-Postfix-1.png)
 
 The parameters are between the operands.
 
@@ -28,17 +26,17 @@ Take [Racket](https://racket-lang.org/).
 
 Addition uses prefix notation
 
-![](images/2020/04/Infix-vs-Postfix-2.png)
+![](../images/2020/04/Infix-vs-Postfix-2.png)
 
 Now, you might thing that this is the same thing. But what if you wanted to add 3 numbers?
 
 In plain C# you would do it like this:
 
-![](images/2020/04/Infix-vs-Postfix-3.png)
+![](../images/2020/04/Infix-vs-Postfix-3.png)
 
 In Racket it is done like this
 
-![](images/2020/04/Infix-vs-Postfix-4.png)
+![](../images/2020/04/Infix-vs-Postfix-4.png)
 
 See the difference?
 
@@ -48,7 +46,7 @@ For Racket you specify **+** only once regardless of the number of arguments.
 
 Naturally you can get this behavior in F# natively. You can even get it in C# using LINQ.
 
-![](images/2020/04/Infix-vs-Postfix-5.png)
+![](../images/2020/04/Infix-vs-Postfix-5.png)
 
 What is happening here is we are folding all the elements of the list into a single value using the `List.fold` construct.
 
@@ -58,11 +56,11 @@ The squiggly line is the F# linter helpfully pointing out that there is no need 
 
 You can also achieve the same result with `List.reduce`
 
-![](images/2020/04/Reduce.png)
+![](../images/2020/04/Reduce.png)
 
 The equivalent code in C# is as follows, using the LINQ aggregate extension method.
 
-![](images/2020/04/Infix-vs-Postfix-6.png)
+![](../images/2020/04/Infix-vs-Postfix-6.png)
 
 Naturally LINQ has a `Sum` extension method as well.
 

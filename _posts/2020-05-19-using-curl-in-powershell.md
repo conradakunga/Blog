@@ -4,8 +4,6 @@ title: Using Curl In PowerShell
 date: 2020-05-19T19:50:49+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=287
-permalink: /2020/05/19/using-curl-in-powershell/
 categories:
   - PowerShell
   - Uncategorized
@@ -17,13 +15,14 @@ There are many tools that can do this for you, my favourite being these two:
   1. [httpie](https://httpie.org/)
   2. [curl](https://curl.haxx.se/)
 
+![](../images/2020/03/21-Mar-2019-Tuple-1.png)
 It is the second that I want to turn my attention to.
 
 Curl is a very popular utility that comes installed in many Linux distributions.
 
 If you use tools like [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md), it generates examples in curl format
 
-![](images/2020/05/image-2.png)
+![](../images/2020/05/image-2.png)
 
 If you are developing on Windows, curl is something you will need to install.
 
@@ -43,7 +42,7 @@ curl google.com
 
 A response will come back as follows
 
-![](images/2020/05/image-3.png)
+![](../images/2020/05/image-3.png)
 
 You might say to yourself “mission accomplished”
 
@@ -63,7 +62,7 @@ get-alias curl
 
 You should see the following
 
-![](images/2020/05/image-4.png)
+![](../images/2020/05/image-4.png)
 
 So the question is how do we run curl the application?
 
@@ -75,7 +74,7 @@ The first is to leave PowerShell in no doubt you are referring to an application
 curl.exe google.com
 ```
 
-![](images/2020/05/image-5.png)
+![](../images/2020/05/image-5.png)
 
 You can see the results are very different because curl has (in my opinion) the sensible default of not printing the headers if invoked without parameters.
 
@@ -99,13 +98,13 @@ Scroll to the bottom (if your profile already has entries and add this line).
 Remove-Item Alias:\curl
 ```
 
-![](images/2020/05/image-6.png)
+![](../images/2020/05/image-6.png)
 
 Save the file and then reload the shell – or close and open it again.
 
 Now try and run curl (without the extension)
 
-![](images/2020/05/image-7.png)
+![](../images/2020/05/image-7.png)
 
 This second approach makes this change persistent across PowerShell sessions.
 

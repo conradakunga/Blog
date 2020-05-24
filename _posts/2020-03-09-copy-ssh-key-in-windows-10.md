@@ -4,8 +4,6 @@ title: Copy SSH Key In Windows 10
 date: 2020-03-09T22:38:39+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=16
-permalink: /2020/03/09/copy-ssh-key-in-windows-10/
 categories:
   - PowerShell
 tags:

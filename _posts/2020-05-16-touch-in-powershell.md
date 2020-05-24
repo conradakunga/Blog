@@ -4,8 +4,6 @@ title: Touch In PowerShell
 date: 2020-05-16T05:23:00+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=270
-permalink: /2020/05/16/touch-in-powershell/
 categories:
   - PowerShell
 ---
@@ -85,7 +83,7 @@ touch test.txt
 
 You should see the new file created
 
-![>](images/2020/05/image-1.png)
+![](../images/2020/05/image-1.png)
 
 You can access the code in my [Github](https://github.com/conradakunga/BlogCode/tree/master/16%20May%20-%20Touch%20In%20PowerShell).
 

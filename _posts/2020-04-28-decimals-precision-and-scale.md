@@ -4,8 +4,6 @@ title: Decimals, Precision And Scale
 date: 2020-04-28T12:51:47+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=260
-permalink: /2020/04/28/decimals-precision-and-scale/
 categories:
   - SQL Server
 ---
@@ -27,7 +25,7 @@ Which begs the question – what is precision and what is scale?
 
 Given a number, 10,000 the diagram below illustrates them.
 
-[<img style="display: inline; background-image: none;" title="Scale 1" src="images/2020/04/Scale-1_thumb.png" alt="Scale 1" width="1039" height="219" border="0" />](images/2020/04/Scale-1.png)
+[<img style="display: inline; background-image: none;" title="Scale 1" src="../images/2020/04/Scale-1_thumb.png" alt="Scale 1" width="1039" height="219" border="0" />](../images/2020/04/Scale-1.png)
 
 The **precision** is 11 and the **scale** is 6.
 

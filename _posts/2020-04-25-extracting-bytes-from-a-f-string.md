@@ -4,8 +4,6 @@ title: 'Extracting Bytes From A F# String'
 date: 2020-04-25T05:10:52+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=249
-permalink: /2020/04/25/extracting-bytes-from-a-f-string/
 categories:
   - 'F#'
   - Tips
@@ -31,7 +29,7 @@ printfn "%A" "This Is My String"B
 
 Note the **B** at the end
 
-![](images/2020/04/Bytes-2.png)
+![](../images/2020/04/Bytes-2.png)
 
 The code is in my [github](https://github.com/conradakunga/BlogCode/tree/master/25%20April%20-%20F%23%20Bytes)
 

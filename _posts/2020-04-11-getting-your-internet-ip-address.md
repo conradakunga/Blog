@@ -4,8 +4,6 @@ title: Getting Your Internet IP Address
 date: 2020-04-11T16:35:47+03:00
 author: Conrad Akunga
 layout: post
-guid: https://www.conradakunga.com/blog/?p=211
-permalink: /2020/04/11/getting-your-internet-ip-address/
 categories:
   - PowerShell
 ---
@@ -21,7 +19,7 @@ You can get that information using this handy expression:
 
 You should get the following, outputting your IP address. This assumes you are connected to the Internet.
 
-![](images/2020/04/IP-Address-1.png)
+![](../images/2020/04/IP-Address-1.png)
 
 Curl is of course an alias for **Invoke-WebRequest**
 
@@ -37,7 +35,7 @@ curl ipinfo.io/ip
 
 You should see the folliing:
 
-![](images/2020/04/IP-Address-2.png)
+![](../images/2020/04/IP-Address-2.png)
 
 We don’t need everything here – all we need is the content, hence the simplified expression above.
 
