@@ -1,0 +1,24 @@
+﻿{
+  "ActiveFolder": "C:\\Users\\conrada\\blogs\\blog",
+  "ActiveSidebarIndex": 0,
+  "OpenDocuments": [
+    {
+      "Filename": "C:\\Users\\conrada\\blogs\\blog\\_posts\\2020-05-25-goodbye-wordpress.md",
+      "IsActive": true,
+      "LastEditorLineNumber": 18,
+      "LastImageFolder": null
+    },
+    {
+      "Filename": "C:\\Users\\conrada\\blogs\\blog\\_posts\\2020-03-11-asreadonly-may-not-be-doing-what-you-think.md",
+      "IsActive": false,
+      "LastEditorLineNumber": 0,
+      "LastImageFolder": null
+    },
+    {
+      "Filename": "C:\\Users\\conrada\\blogs\\blog\\_posts\\2020-05-24-using-iis-with-asp-net-core-3-0.md",
+      "IsActive": false,
+      "LastEditorLineNumber": 156,
+      "LastImageFolder": "C:\\Users\\conrada\\blogs\\blog\\images\\2020\\05"
+    }
+  ]
+}
