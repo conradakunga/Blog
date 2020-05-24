@@ -20,10 +20,10 @@
 
 title: "Conrad Akunga, Esquire. Code"
 email: "conradakunga@gmail.com"
-description: "I have been writing software professionally for decades."
+description: "I have been writing software professionally for over 20 years. And I'm still learning."
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://conradakunga.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ""
+twitter_username: "roomthinker"
 github_username:  conradakunga
 
 # Build settings
@@ -41,7 +41,8 @@ permalink: /:title/
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+    - update.sh
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
