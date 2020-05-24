@@ -11,7 +11,7 @@ categories:
 tags:
   - FizzBuzz
 ---
-The FizzBuzz problem is one of those notorious industry problems that has been floating around for decades, intended to separate the sheep from the goats.
+The FizzBuzz problem is one of those ubiquitous industry problems that has been floating around for decades, intended to separate the sheep from the goats.
 
 It is deceptively simple:
 
@@ -19,19 +19,19 @@ It is deceptively simple:
 
 How hard can it be?
 
-Let us attempt it in F#
+Let us attempt it in F#.
 
-Here is the first attempt
+Here is my first attempt.
 
-[<img style="display: inline; background-image: none;" title="Fizz Buzz 1" src="images/2020/04/Fizz-Buzz-1_thumb.png" alt="Fizz Buzz 1" width="619" height="287" border="0" />](images/2020/04/Fizz-Buzz-1.png)
+![](images/2020/04/Fizz-Buzz-1.png)
 
-The algorithm simply creates a list of 100 elements and then using the **List.iter** construct, loops through the elements and calls a function that does the computation and prints the result
+The algorithm simply creates a list of 100 elements and then using the `List.iter` construct, loops through the elements and calls a function that does the computation and prints the result
 
 We can make a couple of obvious improvements.
 
 First of all we can get rid of all those modulus divisions and replace them with a function to do that verification for us
 
-[<img style="display: inline; background-image: none;" title="Fizz Buzz 2" src="images/2020/04/Fizz-Buzz-2_thumb.png" alt="Fizz Buzz 2" width="740" height="318" border="0" />](images/2020/04/Fizz-Buzz-2.png)
+![](images/2020/04/Fizz-Buzz-2.png)
 
 The other improvement we can make is that this function is doing two things
 
@@ -40,24 +40,24 @@ The other improvement we can make is that this function is doing two things
 
 This means that if we wanted to change the logic, for example print **_fizz_** in red and **_buzz_** in green we would have to tinker with the function.
 
-It might make more sense to split the logic checks and the printing.
+It might make more sense to split the logic checks and the output.
 
 What we can do is create a new list with the correct elements, and then pipe that to a different function that does the printing.
 
-[<img style="display: inline; background-image: none;" title="Fizz Buzz 3" src="images/2020/04/Fizz-Buzz-3_thumb.png" alt="Fizz Buzz 3" width="710" height="376" border="0" />](images/2020/04/Fizz-Buzz-3.png)
+![](images/2020/04/Fizz-Buzz-3.png)
 
-Finally, **_FizzBuzz_** is the output for input divisible by 3 and divisible by 5
+Finally, the string **_FizzBuzz_** should be the output for input divisible by 3 and divisible by 5
 
 There are two was we could potentially handle this
 
-  1. Introduce a new function that calls Divisible By 3 and then Divisible by 5
+  1. Introduce a new function that calls `DivisibleBy` with 3 and then `DivisibleBy` with 5
   2. Simplify the operation
 
 I think #2 is the simpler way to go.
 
 Here is the final code.
 
-[<img style="display: inline; background-image: none;" title="Fizz Buzz 4" src="images/2020/04/Fizz-Buzz-4_thumb.png" alt="Fizz Buzz 4" width="658" height="377" border="0" />](images/2020/04/Fizz-Buzz-4.png)
+![](images/2020/04/Fizz-Buzz-4.png)
 
 Here is a challenge for you can you eliminate that call that checks for divisible by 3 and divisible by 5 and just retain the two calls?
 
