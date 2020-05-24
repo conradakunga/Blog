@@ -153,3 +153,5 @@ If the configuration has worked correctly, you should see the following:
 The exact version of IIS will vary based on your operating system (Windows 10 or Windows Server). But whichever the case it will show Microsoft IIS somewhere in the server header.
 
 Mission accomplished!
+
+Happy hacking!
