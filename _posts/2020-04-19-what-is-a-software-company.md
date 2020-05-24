@@ -8,5 +8,6 @@ guid: https://www.conradakunga.com/blog/?p=237
 permalink: /2020/04/19/what-is-a-software-company/
 categories:
   - Epiphanies
+  - Software
 ---
-> A software company is an institution that converts money into software that people pay money for
+> A software company is an institution that converts money into software that people pay money for.
