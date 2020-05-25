@@ -1,6 +1,6 @@
 ﻿---
 title: Goodbye Wordpress
-date: 2020-05-25T10:40:26+30:00
+date: 2020-05-25T10:40:26+03:00
 author: Conrad Akunga
 layout: post
 categories:

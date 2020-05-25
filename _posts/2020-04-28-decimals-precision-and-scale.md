@@ -36,8 +36,8 @@ Remember: **precision includes the decimals**
 
 Things to be aware of:
 
-  1. In SQL Server if you do not specify the precision and neither do you specify the scale, it defaults to a precision of **18** and a scale of *0*
-  2. In SQL server if you specify the precision only, the database engine assumes a scale of *0*
+  1. In SQL Server if you do not specify the precision and neither do you specify the scale, it defaults to a precision of **18** and a scale of **0**
+  2. In SQL server if you specify the precision only, the database engine assumes a scale of **0**
   3. If you are using entity framework with a decimal type, the default precision is **18** and the scale is **2**
   4. To avoid overflow errors when passing data to .NET from SQL Server especially if numbers are introduced into the database via TSQL or another system, have a maximum precision of **28**
   5. If you pass a value with **greater** scale to a stored procedure or function, that number will be **rounded** to fit the defined
