@@ -28,6 +28,7 @@ This gives me a number of benefits
 7. WordPress gave me a lot of problems when it came to formatting source code. Jekykll handles that brilliantly
 8. A Jekyll site is **FAST**
 9. I always have my content with me
+10. It is very easy to correct and update posts
 
 Here's to the future.
 
