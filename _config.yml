@@ -38,7 +38,6 @@ disqus:
     # Leave shortname blank to disable comments site-wide.
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
     shortname: conradakunga
-
 url: https://conradakunga.com/blog
 
 # Exclude from processing.
@@ -51,6 +50,8 @@ url: https://conradakunga.com/blog
 #
 exclude:
     - update.sh
+    - Dockerfile
+    - docker-compose.yml
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
