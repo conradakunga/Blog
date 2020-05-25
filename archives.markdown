@@ -13,7 +13,7 @@ permalink: /archives/
 <ul>
   {% for post in month.items %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%-d %B" }}
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - {{ post.date | date: "%-d %B" }}
     </li>
   {% endfor %}
 </ul>
