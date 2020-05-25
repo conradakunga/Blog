@@ -1,4 +1,4 @@
----
+﻿---
 id: 260
 title: Decimals, Precision And Scale
 date: 2020-04-28T12:51:47+03:00
@@ -6,6 +6,7 @@ author: Conrad Akunga
 layout: post
 categories:
   - SQL Server
+  - .NET
 ---
 The .NET framework has a decimal data type.
 
@@ -25,7 +26,7 @@ Which begs the question – what is precision and what is scale?
 
 Given a number, 10,000 the diagram below illustrates them.
 
-[<img style="display: inline; background-image: none;" title="Scale 1" src="../images/2020/04/Scale-1_thumb.png" alt="Scale 1" width="1039" height="219" border="0" />](../images/2020/04/Scale-1.png)
+![](../images/2020/04/Scale-1.png)
 
 The **precision** is 11 and the **scale** is 6.
 
@@ -35,8 +36,8 @@ Remember: **precision includes the decimals**
 
 Things to be aware of:
 
-  1. In SQL Server if you do not specify the precision and neither do you specify the scale, it defaults to a precision of **18** and a scale of ****
-  2. In SQL server if you specify the precision only, the database engine assumes a scale of ****
+  1. In SQL Server if you do not specify the precision and neither do you specify the scale, it defaults to a precision of **18** and a scale of *0*
+  2. In SQL server if you specify the precision only, the database engine assumes a scale of *0*
   3. If you are using entity framework with a decimal type, the default precision is **18** and the scale is **2**
   4. To avoid overflow errors when passing data to .NET from SQL Server especially if numbers are introduced into the database via TSQL or another system, have a maximum precision of **28**
   5. If you pass a value with **greater** scale to a stored procedure or function, that number will be **rounded** to fit the defined
