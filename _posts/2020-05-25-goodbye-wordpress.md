@@ -1,12 +1,12 @@
 ﻿---
 title: Goodbye Wordpress
-date: 2020-05-25T10:40:26+00:00
+date: 2020-05-25T10:40:26+30:00
 author: Conrad Akunga
 layout: post
 categories:
   - Epiphanies
 ---
-I have been running this blog on WordpPress since inception, and using WordPress in general for many years (since 2005).
+I have been running this blog on [WordPress](https://wordpress.org/) since inception, and using WordPress in general for many years (since 2005).
 
 While uploading my last post I got a cryptic error and the effort aborted.
 
@@ -26,4 +26,9 @@ This gives me a number of benefits
 5. If WordPress is discontinued there is nothing to worry about. Markdown is just plain text
 6. It is cheap to quickly publish and view the site as it will appear to end users.
 7. WordPress gave me a lot of problems when it came to formatting source code. Jekykll handles that brilliantly
-8. Jekyll is **FAST**
+8. A Jekyll site is **FAST**
+9. I always have my content with me
+
+Here's to the future.
+
+Happy hacking!
