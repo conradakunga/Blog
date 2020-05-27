@@ -7,11 +7,11 @@ layout: post
 categories:
   - 'C#'
 ---
-You have probably come across the **AsReadOnly()** extension method, and have probably made liberal use of it.
+You have probably come across the `AsReadOnly()` extension method, and have probably made liberal use of it.
 
 However there is a slight gotcha that may surprise you.
 
-The documentation says as follows
+The documentation says as follows:
 
 > Returns a read-only [ReadOnlyCollection<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlycollection-1?view=netframework-4.8) wrapper for the current collection.
 
@@ -32,7 +32,7 @@ names[0] = "Clarice";
 Console.WriteLine(String.Join(",", readOnlyNames));
 ```
 
-You might be surprised to note that it prints the following
+You might be surprised to note that it prints the following:
 
 ![](../images/2020/03/image.png)
 

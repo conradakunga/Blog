@@ -31,7 +31,7 @@ gem update
 
 However I got an error with one of the gems, OpenSSL.
 
-When I tried to update it independently ..
+When I tried to update it independently ...
 
 ![](../images/2020/05/OpenSSLUpdate1.png)
 
