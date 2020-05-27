@@ -13,7 +13,7 @@ So like I mentioned in my [last post]({% post_url 2020-05-25-goodbye-wordpress %
 
 Initially I tried to [install and run](https://jekyllrb.com/docs/installation/) it on Windows.
 
-Running Ruby navively on Windows is not something I would recommend for anyone that enjoys their sanity, in particular if you need to build gems. 
+Running Ruby natively on Windows is not something I would recommend for anyone that enjoys their sanity, in particular if you need to build gems. 
 
 It's not impossible - it's just difficult. You have to install a whole bunch of supporting infrastructure to get everything working correctly.
 
