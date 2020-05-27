@@ -19,7 +19,7 @@ It's not impossible - it's just difficult. You have to install a whole bunch of 
 
 After getting a huge number of [cryptic errors](https://gist.github.com/KelseyDH/11198922) I changed tack.
 
-So I ended up running it on Ubuntu on WSL.
+So I ended up running it on Ubuntu on the [Widows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL).
 
 Works perfectly.
 
@@ -52,4 +52,3 @@ This will pull down and install the necessary libraries for the OpenSSL gem to b
 Mission accomplished!
 
 Happy hacking!
-
