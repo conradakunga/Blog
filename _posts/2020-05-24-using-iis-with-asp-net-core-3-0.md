@@ -5,7 +5,6 @@ author: Conrad Akunga
 layout: post
 categories:
   - ASP.NET Core
-  - PowerShell
 ---
 **Kestrel**, the web server that powers ASP.NET Core is highly optimized for running ASP.NET Core code, and running it fast.
 
