@@ -17,7 +17,9 @@ The good news is that you can fix this problem in your Powershell profile
 
 Open your profile using the following command.
 
-`notepad++ $profile`
+```powershell
+notepad++ $profile
+```
 
 I'm using Notepad++ (because I have installed it, and use it as my go-to text editor) but you can use any editor there, even plain old Notepad
 
@@ -42,12 +44,13 @@ function ssh-copy-id([string]$userAtMachine, [string]$port = 22)
 }
 ```
 
-
-Save the file, close the active Powershell session and re-launch it again. You should find that the `ssh-copy-id` is recognized as a known command.
+Save the file, close the active PowerShell session and re-launch it again. You should find that the `ssh-copy-id` is recognized as a known command.
 
 You can then use it to copy your ID to another ssh terminal
 
-`ssh-copy-id yourname@machine`
+```powershell
+ssh-copy-id yourname@machine
+```
 
 If ssh is running on a non-default port (i.e. not 22) specify the port as follows
 

@@ -20,7 +20,7 @@
 
 title: "Conrad Akunga, Esquire. Code"
 email: "conradakunga@gmail.com"
-description: "I have been writing software professionally for over 20 years. And I'm still learning."
+description: "I have been writing software professionally in Nairobi, Kenya for over 20 years. And I'm still learning."
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://conradakunga.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "roomthinker"
@@ -31,6 +31,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-analytics
 permalink: /:title/
 
 # Disqus Comments
@@ -39,6 +40,12 @@ disqus:
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
     shortname: conradakunga
 url: https://conradakunga.com/blog
+
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-167591172-1      # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

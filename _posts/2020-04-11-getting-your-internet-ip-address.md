@@ -33,7 +33,7 @@ To get the raw response, execute the following:
 curl ipinfo.io/ip
 ```
 
-You should see the folliing:
+You should see the following:
 
 ![](../images/2020/04/IP-Address-2.png)
 

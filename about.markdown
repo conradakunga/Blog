@@ -45,11 +45,11 @@ My focus is
 * Alternative user and computing interfaces
 * Systems integration
 
-Over the years I have had the opportunity to work on several technology stacks including C, C++, Python, PHP, Java, Visual Basic, Visual Basic.NET, Delphi, SQL Server, PostgreSQL, MySQL, Sybase, SQLLite and Oracle.
+Over the years I have had the opportunity to work on several technology stacks including ASP.NET, C, C++, Python, PHP, Java, Visual Basic, Visual Basic.NET, Delphi, SQL Server, PostgreSQL, MySQL, Sybase, SQLite and Oracle.
 
 My current specialization is the .NET platform and in particular C# and F#. I have been a Microsoft MVP for over 15 years.
 
 I have a passion for learning, teaching and mentorship to share my knowledge, as well as consulting.
 
-Drop me a line. ConradAkunga at gmail
+Drop me a line.
 
