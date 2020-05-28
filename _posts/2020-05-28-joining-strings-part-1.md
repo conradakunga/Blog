@@ -73,6 +73,6 @@ Here the compiler has realized that this code can be optimized at compile time a
 
 In the next installment we will look at `string.Concat()`
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/28%20May%20-%20Joining%20Strings%20-%20Part%201).
 
 Happy hacking!
