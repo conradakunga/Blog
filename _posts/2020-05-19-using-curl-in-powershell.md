@@ -1,4 +1,4 @@
----
+﻿---
 id: 287
 title: Using Curl In PowerShell
 date: 2020-05-19T19:50:49+03:00
@@ -14,7 +14,6 @@ There are many tools that can do this for you, my favourite being these two:
   1. [httpie](https://httpie.org/)
   2. [curl](https://curl.haxx.se/)
 
-![](../images/2020/03/21-Mar-2019-Tuple-1.png)
 It is the second that I want to turn my attention to.
 
 Curl is a very popular utility that comes installed in many Linux distributions.
