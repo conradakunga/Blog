@@ -50,7 +50,7 @@ What has in fact happened here is that curl has **not run at all**!
 
 What has in fact run is the PowerShell cmdlet `Invoke-WebRequest`
 
-Why? Because out of the box PowerShell has a pre-configured alias for this – **curl**
+Why? Because out of the box PowerShell has a pre-configured alias for this – `curl`
 
 You can verify this as follows
 
@@ -82,7 +82,7 @@ The other (more sensible) solution is to **remove** the curl alias.
 
 You can do this from your profile. Using your favourite text editor, open your profile.
 
-Today we will use Visual Studio Code
+Today we will use Visual Studio Code.
 
 In a PowerShell prompt type the following:
 
@@ -90,7 +90,7 @@ In a PowerShell prompt type the following:
 code $profile
 ```
 
-Scroll to the bottom (if your profile already has entries and add this line).
+Scroll to the bottom (if your profile already has entries and add this line):
 
 ```powershell
 Remove-Item Alias:\curl
