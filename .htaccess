@@ -1,3 +1,8 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} conradakunga\.com [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ /blog/$1 [R,L]
+
 RewriteCond %{REQUEST_URI} !/blog/images
 RewriteCond %{REQUEST_URI} /images
-RewriteRule ^(.*)$ blog/$1
+RewriteRule ^(.*)$ blog/$1 [PT]

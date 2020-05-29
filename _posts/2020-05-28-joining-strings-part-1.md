@@ -54,7 +54,7 @@ You might ask - at what point does the compiler decide not to use the + operator
 
 The magic number appears to be 4 strings. Anything more will result in the second behaviour.
 
-In other words, the compiler works very hard to optimize what was traditionally poorly performing code.
+In other words, the compiler works very hard to optimize what was originally poorly performant code.
 
 The compiler also has some additional optimizations.
 
