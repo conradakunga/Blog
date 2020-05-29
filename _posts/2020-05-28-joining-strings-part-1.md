@@ -39,7 +39,7 @@ var fullName = title + " " + firstName + " " + initial + " " + surname;
 Console.WriteLine(fullName);
 ```
 
-If we paste the code in [Sharplab](https://sharplab.io/) we see a large difference.
+If we paste the code in [SharpLab.io](https://sharplab.io/) we see a large difference.
 
 ![](../images/2020/05/Concatenate2.png)
 
