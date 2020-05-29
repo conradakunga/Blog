@@ -1,0 +1,3 @@
+RewriteCond %{REQUEST_URI} !/blog/images
+RewriteCond %{REQUEST_URI} /images
+RewriteRule ^(.*)$ blog/$1
