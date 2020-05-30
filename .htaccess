@@ -6,3 +6,7 @@ RewriteRule ^(.*)$ /blog/$1 [R,L]
 RewriteCond %{REQUEST_URI} !/blog/images
 RewriteCond %{REQUEST_URI} /images
 RewriteRule ^(.*)$ blog/$1 [PT]
+
+RewriteCond %{REQUEST_URI} !/gdpr/images
+RewriteCond %{REQUEST_URI} /images
+RewriteRule ^(.*)$ gdpr/$1 [PT]
