@@ -29,6 +29,8 @@ For this, launch **Turn Windows Features On And Off**.
 
 Scroll down to **Virtual Machine Platform** and check that box.
 
+![](../images/2020/06/VirtualMachinePlatform.png)
+
 Click **OK** to complete.
 
 # Download and Install the Latest Kernel
