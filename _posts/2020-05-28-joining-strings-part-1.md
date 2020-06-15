@@ -7,6 +7,12 @@ categories:
   - .NET
   - Under The Hood
 ---
+
+This is Part 1 in the series of **Joining stings**
+
+* Joining Strings - Part 1 : The + Operator
+* [Joining Strings - Part 2 : String.Concat]({% post_url 2020-06-15-joining-strings-part-2 %})
+
 In the course of writing a typical application, you will generally find the need to combine a string with one or more other strings.
 
 The first, and most obvious way to do it is to concatenate the string using the `+` operator.
