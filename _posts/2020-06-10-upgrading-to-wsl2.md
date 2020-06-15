@@ -1,7 +1,9 @@
----
+﻿---
 layout: post
 title: Upgrading To WSL 2
 date: 2020-06-10 11:26:42 +0300
+categories:
+  - WSL
 ---
 Good news if you have been running on [Windows Subsystem For Linux](https://docs.microsoft.com/en-us/windows/wsl/) (WSL) and have wanted to upgrade to version 2 but have not been willing to join the Windows Insider Program - WSL2 is now out in the main release.
 
