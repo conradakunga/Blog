@@ -11,6 +11,7 @@ categories:
 This is Part 2 in the series of **Joining stings**
 
 * [Joining Strings - Part 1 : The + Operator]({% post_url 2020-05-28-joining-strings-part-1 %})
+* Joining Strings - Part 2 : String.Concat
 
 The second way to join strings is to use the `String.Concat` method.
 
