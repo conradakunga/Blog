@@ -57,6 +57,17 @@ There is also a version that takes an [`IEmumerable<string>`](https://docs.micro
 
 This means that you can pass anything that implements `IEnumerabe<string>` such as a `List<string>`
 
+```csharp
+var list = new List<string>();
+
+list.Add(son);
+list.Add(daughter);
+list.Add(mother);
+list.Add(clown);
+
+var characters = String.Concat(list);
+```
+
 Of note is that there are overloads that instead of taking two to four `strings` as parameters, it they take [`ReadOnlySpan<char>`](https://docs.microsoft.com/en-us/dotnet/api/system.readonlyspan-1?view=netcore-3.1) instead.
 
 If you are writing highly performant code using [Spans](https://docs.microsoft.com/en-us/dotnet/api/system.span-1?view=netcore-3.1), these would be more appropriate choices.
