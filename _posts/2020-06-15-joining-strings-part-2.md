@@ -70,7 +70,7 @@ var characters = String.Concat(list);
 
 Of note is that there are overloads that instead of taking two to four `strings` as parameters, it they take [`ReadOnlySpan<char>`](https://docs.microsoft.com/en-us/dotnet/api/system.readonlyspan-1?view=netcore-3.1) instead.
 
-If you are writing highly performant code using [Spans](https://docs.microsoft.com/en-us/dotnet/api/system.span-1?view=netcore-3.1), these would be more appropriate choices.
+If you are writing highly performant code using [Spans](https://docs.microsoft.com/en-us/dotnet/api/system.span-1?view=netcore-3.1), these overloads would be more appropriate choices.
 
 In the documentation for [String.Concat](https://docs.microsoft.com/en-us/dotnet/api/system.string.concat?view=netcore-3.1) is a remark that touches on what we discovered in the [previous post in the series]({% post_url 2020-05-28-joining-strings-part-1 %})
 
