@@ -2,6 +2,10 @@
 layout: post
 title: "Joining Strings - Part 3 : StringBuilder"
 date: 2020-06-22 03:29:19 +0300
+layout: post
+categories:
+  - .NET
+  - Under The Hood
 ---
 
 This is Part 1 in the series of **Joining stings**
