@@ -12,6 +12,7 @@ This is Part 2 in the series of **Joining stings**
 
 * [Joining Strings - Part 1 : The + Operator]({% post_url 2020-05-28-joining-strings-part-1 %})
 * Joining Strings - Part 2 : String.Concat
+* [Joining Strings - Part 3 : StringBuilder]({% post_url 2020-06-22-joining-strings-part-3 %})
 
 The second way to join strings is to use the `String.Concat` method.
 
