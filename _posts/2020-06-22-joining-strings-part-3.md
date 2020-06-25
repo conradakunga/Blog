@@ -12,9 +12,9 @@ This is Part 1 in the series of **Joining stings**
 
 The third way to join strings is to use a class called the `StringBuilder`.
 
-The [StringBuilder](https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=netcore-3.1) is a mutable string of characters. Remember that a string by design is immutable.
+The [StringBuilder](https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=netcore-3.1) is a mutable string of characters. (Remember that a `string`, by design, is immutable).
 
-You typically interact with a `StringBuilder` by creating one, and then adding strings to it using the Append method.
+You typically interact with a `StringBuilder` by creating one, and then adding strings to it using the [Append](https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder.append?view=netcore-3.1) method.
 
 ```csharp
 // Create a new, empty StringBuilder 
@@ -42,7 +42,7 @@ griffins.Append("Stewie");
 Console.WriteLine(griffins);
 ```
 
-Should you want to manipulate the strings prior to appending them, there is a method that allows you to append strings using the String.Format syntax
+Should you want to manipulate the strings prior to appending them, there is a method that allows you to append strings using the `String.Format` syntax
 
 ```csharp
 var holidays = new StringBuilder();
@@ -50,13 +50,13 @@ holidays.AppendFormat("New Year's Day {0:d MMM yyyy}", new DateTime(2020, 1, 1))
 Console.WriteLine(holidays);
 ```
 
-With string interpolation, you can do this directly
+With string interpolation, you can do this directly:
 
 ```csharp
 holidays.Append($"Christmas { new DateTime(2020, 12, 25):d MMM yyyy}");
 ```
 
-If you look at the output, it looks something like this.
+If you look at the output, it looks something like this:
 
 ![](../images/2020/06/StringBuilderOutput.png)
 
@@ -77,7 +77,7 @@ Alternatively you can use either `AppendFormat` or string interpolation to intro
 
 Interestingly, when you use string interpolation, the compiler rewrites the code to use AppendFormat.
   
-The former code, when passed to SharpLab, generates the following:
+The former code, when passed to [SharpLab](https://sharplab.io/), generates the following:
 
 ![](../images/2020/06/AppendFormat.png)
 
@@ -85,21 +85,23 @@ Given that a `StingBuilder` is mutable, this allows a number of operations that 
 
 You can **modify** the contents of a `StringBuilder`.
 
+```csharp
 newHolidays[6] = '-';
+```
 
-This will change the output from
+This will change the output from:
 
 ```plaintext
 Labour Day 1 May 2020
 ```
 
-to
+to:
 
 ```plaintext
 Labour Day-1 May 2020
 ```
 
-You can also insert text into any position in the `StringBuilder`.
+You can also **insert** text into any position in the `StringBuilder`.
 
 In the example below we are inserting text at the very beginning.
 
