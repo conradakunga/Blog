@@ -21,7 +21,7 @@ To my surprise, this is what gets pasted.
 
 Notice that the `http://www.` and the trailing `/` do not appear anywhere in the browser URL bar.
 
-I am not sure this is a good thing, because I believe in the principal of least astonishment. In this case what I copy should be what I paste.
+I am not sure this is a good thing, because I believe in [the principal of least astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment). In this case what I copy should be what I paste.
 
 Happy hacking!
 
