@@ -13,6 +13,7 @@ This is Part 1 in the series of **Joining stings**
 * [Joining Strings - Part 1 : The + Operator]({% post_url 2020-05-28-joining-strings-part-1 %})
 * [Joining Strings - Part 2 : String.Concat]({% post_url 2020-06-15-joining-strings-part-2 %})
 * Joining Strings - Part 3 : StringBuilder
+* [Joining Strings - Part 4 : String.Format]({% post_url 2020-07-01-joining-strings-part-4 %})
 
 The third way to join strings is to use a class called the `StringBuilder`.
 
