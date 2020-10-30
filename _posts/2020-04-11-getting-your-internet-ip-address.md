@@ -21,7 +21,7 @@ You should get the following, outputting your IP address. This assumes you are c
 
 ![](../images/2020/04/IP-Address-1.png)
 
-Curl is of course an alias for **Invoke-WebRequest**
+`Curl` is of course an alias for `Invoke-WebRequest`
 
 Here we are using the excellent website [ipinfo.io](https://ipinfo.io/) that has a [dedicated web](https://ipinfo.io/ip) page that returns your IP address.
 
