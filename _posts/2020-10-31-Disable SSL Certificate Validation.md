@@ -12,7 +12,7 @@ If you are invoking a web request from your application, you may get the followi
 System.AggregateException: One or more errors occurred. (The SSL connection could not be established, see inner exception.) ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
 ```
 
-This essentially means that the runtime is attempting to validate the SSL certificate and this validation is failing.
+If the request you were making was a HTTPS request, this essentially means that the runtime is attempting to validate the SSL certificate of the target, and this validation is failing.
 
 This could be for any number of reasons, ranging from the certificate is self signed to the certificate has expired, or even it has been revoked.
 
@@ -20,7 +20,7 @@ Whatever the case may be, there are times when you do not want this validation t
 
 It is possible to turn this off.
 
-If you are running on **full .NET**, add this line of code to somewhere it will be executed, maybe in a constructor; or on a load event.
+If you are running on **.NET Framework**, add this line of code to somewhere it will be executed, maybe in a constructor; or on a load event.
 
 ```csharp
 ServicePointManager.ServerCertificateValidationCallback +=
@@ -29,7 +29,7 @@ ServicePointManager.ServerCertificateValidationCallback +=
 
 This code essentially forces the runtime to believe that the certificate validation process has succeeded.
 
-If you're running in .NET Core you need to do it a bit differently, as the code above does not actually do anything.
+If you're running in **.NET Core** you need to do it a bit differently, as the code above does not actually do anything.
 
 For .NET Core you need to do a bit more work and create a handler to perform this work. This handler is then passed to the `HttpClient` that you are using to invoke the requests.
 
@@ -48,5 +48,7 @@ The `HttpClient` now will not throw any SSL validation errors.
 This approach is actually more flexible because you can control the validation - you can have some requests that you want validated and others that you do not. 
 
 In this case you create a second `HttpClient` the usual way without the handler - that one's requests will always be validated.
+
+The solution on the .NET Framework above has the disadvantage that **all** HTTPS requests in that application are not validated.
 
 Happy hacking!
