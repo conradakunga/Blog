@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disable SSL Certificate Validation
+title: Disable SSL Certificate Validation In .NET
 date: 2020-10-31 12:52:07 +0300
 categories:
     - C#
