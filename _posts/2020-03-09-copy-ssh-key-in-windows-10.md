@@ -55,7 +55,7 @@ ssh-copy-id yourname@machine
 If ssh is running on a non-default port (i.e. not 22) specify the port as follows
 
 ```powershell
-ssh-copy-id yourname@machine -p 222
+ssh-copy-id yourname@machine 222
 ```
 
 Happy Hacking!
