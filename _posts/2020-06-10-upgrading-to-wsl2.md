@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Upgrading To WSL 2
 date: 2020-06-10 11:26:42 +0300
