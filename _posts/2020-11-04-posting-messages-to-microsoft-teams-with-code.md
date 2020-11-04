@@ -1,7 +1,11 @@
 ---
 layout: post
-title: Posting Messages To Microsoft Teams With C#
+title: Posting Messages To Microsoft Teams With Code
 date: 2020-11-04 20:48:20 +0300
+categories:
+    - C#
+    - .NET
+    - Microsoft Teams
 ---
 
 [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software) makes use of an API, the [Microsoft Graph API](https://docs.microsoft.com/en-us/graph/overview), that is leveraged to push data into, and pull data out of various Microsoft Products, chiefly Office 365.
@@ -73,12 +77,13 @@ curl.exe -H "Content-Type:application/json" -d "{'text':'Hello World'}" <YOUR WE
 ```
 Note for windows the `.exe` is important otherwise the shell will consider `curl` as an alias for `invoke-webrequest`
 
-You can install curl directly [here](https://curl.haxx.se/windows/). Alternatively you can use [Chocolatey](https://chocolatey.org/) package manager. In which case you run this command from your favourite shell
+You can install [curl](https://curl.haxx.se/) directly [here](https://curl.se/download.html). Alternatively you can use [Chocolatey](https://chocolatey.org/) package manager if you are on windows. In which case you run this command from your favourite shell
 
 ```bash
 choco install curl
 ```
 
+For Linux, curl is usually installed by default.
 
 **Powershell**
 ```powershell
