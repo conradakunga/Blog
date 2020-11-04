@@ -61,17 +61,15 @@ Click that link to access the setup
 
 ![](../images/2020/11/Save%20Connector.png)
 
-There are two main ways to leverage this integration
-
-##### HTTP Request
-This is a normal HTTP request using whatever technique - `Powershell`, `Curl`, `HTTPie` or other such technique.
+Once the webhooks are generated you can post messages to the approproate channels using a HTTP request
+using whatever technique - `Powershell`, `Curl`, `HTTPie` or other such.
 
 **Bash on macOS or Linux**
 ```bash
 curl -H 'Content-Type: application/json' -d '{"text": "Hello World"}' <YOUR WEBHOOK URL>
 ```
 
-**Bash on Windows**
+**Command Prompt Or Bash on Windows**
 ```bash
 curl.exe -H "Content-Type:application/json" -d "{'text':'Hello World'}" <YOUR WEBHOOK URL>
 ```
