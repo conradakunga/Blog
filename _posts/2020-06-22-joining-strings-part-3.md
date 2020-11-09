@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Joining Strings - Part 3 : StringBuilder"
 date: 2020-06-22 03:29:19 +0300
