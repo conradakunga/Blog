@@ -47,7 +47,7 @@ If we expand the first node ..
 
 ![](../images/2020/11/Expanded-1.png)
 
-ANd we expand the second node ...
+And we expand the second node ...
 
 ![](../images/2020/11/Expanded-2.png)
 
@@ -60,8 +60,7 @@ From a quick analysis this seems to be the structure
 2. Each `channel` has some metadata, consisting of the following key properties:
    1. Channel name
    2. Current play list item (which may be null)
-   3. Expires
-   4. Current show
+   3. Current show
 3. Each `current play list item` has some metadata, consisting of the following key properties:
    1. Start time
    2. Catalog entry
@@ -396,6 +395,9 @@ sb.AppendLine($"It is playing on:  {currentItem?.CurrentShow?.Title}");
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/9%20Nov%202020%20-%20Getting%20Now%20Playing%20Information%20From%20WQXR).
 
 Happy hacking!
+
+### Update
+[SaraBee](https://sarabee.github.io/2020/09/13/is-this-mahler/)([@sarabee](https://twitter.com/sarabee)) had not only [already done something similar](https://github.com/SaraBee/nowplaying), she also outputted the now playing information to an eInk display
 
 
 
