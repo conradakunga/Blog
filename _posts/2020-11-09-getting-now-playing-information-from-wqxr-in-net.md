@@ -399,7 +399,7 @@ The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/
 Happy hacking!
 
 ### Update
-[SaraBee](https://sarabee.github.io/2020/09/13/is-this-mahler/)([@sarabee](https://twitter.com/sarabee)) had not only [already done something similar](https://github.com/SaraBee/nowplaying), she also outputted the now playing information to an eInk display
+[SaraBee](https://sarabee.github.io/2020/09/13/is-this-mahler/)([@sarabee](https://twitter.com/sarabee)) had not only [already done something similar](https://github.com/SaraBee/nowplaying), she also outputted the now playing information to an eInk display. How awesome is that?
 
 
 
