@@ -197,6 +197,8 @@ using (var client = new HttpClient())
 ```
 This code now handles both normal requests as well as redirected requests.
 
+The difference is that for some reason, the initial `https` URL has been permanently moved to a `http` location.
+
 If we make this request the response is as follows:
 
 ```json
