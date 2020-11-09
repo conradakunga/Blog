@@ -381,7 +381,19 @@ With a strongly typed object it is easier to use the class in code, as you not o
 
 You can even make improvements by removing properties you're not interested in, or adding additional ones for your own purposes.
 
-The code is in my Github.
+**Note:** it is entirely possible for the `current play list item` to be `null` - there may be no current program for the selected channel, for whatever reason.
+
+In this case it is advisable to use [null conditional expression](https://csharp.today/c-6-features-null-conditional-and-and-null-coalescing-operators/) (or Elvis operator) to avoid having to keep checking for `nulls`.
+
+The code changes slightly to be like this:
+
+```csharp
+sb.AppendLine($"The current track playing is: {currentItem?.CurrentPlaylistItem?.CatalogEntry?.Title}");
+sb.AppendLine($"The composer is: {currentItem?.CurrentPlaylistItem?.CatalogEntry?.Composer?.Name}");
+sb.AppendLine($"It is playing on:  {currentItem?.CurrentShow?.Title}");
+```
+
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/9%20Nov%202020%20-%20Getting%20Now%20Playing%20Information%20From%20WQXR).
 
 Happy hacking!
 
