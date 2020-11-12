@@ -117,9 +117,9 @@ What we want to achieve is to output a message to the console that informs the o
 </Project>
 ```
 
-The updated .csproj would look as follows:
+The updated `.csproj` would look as follows:
 
-If you run the Release build, the output should have this additional line
+If you run the `Release` build, the output should have this additional line
 
 ![](../images/2020/11/LoggedReleasae.png)
 
