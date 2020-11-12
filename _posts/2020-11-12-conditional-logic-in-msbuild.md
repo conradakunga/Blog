@@ -6,7 +6,7 @@ categories:
     - .NET
     - MSBuild
 ---
-The [Microsoft Build Engine](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild?view=vs-2019), MSBuild, is responsible for controlling the build process that translates source code to object code and its relevant artefacts.
+The [Microsoft Build Engine](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild?view=vs-2019), MSBuild, is responsible for controlling the build process that translates source code to object code and its relevant artifacts.
 
 MSBuild itself uses an XML file format to define various parameters that control the build process.
 
@@ -82,7 +82,7 @@ It will look like this:
 There are a few key attributes here
 * Name -  name for the target
 * [AfterTargets](https://docs.microsoft.com/en-us/visualstudio/msbuild/target-element-msbuild?view=vs-2019) - when the logic should fire. In this case, we want it to happen after a successful build
-* [Condition](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditions?view=vs-2019) - the logic that controls the execution
+* [Condition](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditions?view=vs-2019) - the logic that controls the execution. Here we are checking if the build is `Release`.
 
 The logic we want is to copy the outputted file to a target directory, using a `command`. The argument is the command to execute.
 
