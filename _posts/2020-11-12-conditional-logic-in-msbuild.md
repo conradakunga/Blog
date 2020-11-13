@@ -104,6 +104,8 @@ This can be solved using a [Message](https://docs.microsoft.com/en-us/visualstud
 
 What we want to achieve is to output a message to the console that informs the observer what the build engine is doing.
 
+The updated `.csproj` would look as follows:
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
@@ -117,7 +119,7 @@ What we want to achieve is to output a message to the console that informs the o
 </Project>
 ```
 
-The updated `.csproj` would look as follows:
+The `importance` needs to be set to high so that MSBuild always prints the message. By default, messages that are not of high priority are not printed.
 
 If you run the `Release` build, the output should have this additional line
 
