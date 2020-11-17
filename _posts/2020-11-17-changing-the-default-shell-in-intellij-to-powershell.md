@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Changing The Default Shell In IntelliJ TO PowerShell
+title: Changing The Default Shell In IntelliJ To PowerShell
 date: 2020-11-17 10:44:41 +0300
 Categories:
-    - IntelliJ
+    -IntelliJ
 ---
 The default shell in [IntelliJ](https://www.jetbrains.com/idea/) (and its children IDEs) is the [Windows Command Prompt](https://www.sciencedirect.com/topics/computer-science/window-command-shell).
 
