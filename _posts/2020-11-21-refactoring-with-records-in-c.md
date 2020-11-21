@@ -289,6 +289,19 @@ bartsTwinSister.NickName.Should().Be("JoJo");
 bartsTwinSister.FullNames.Should().Be("Simpson, Lisa");
 bartsTwinSister.Age.Should().Be(20);
 ```
+You can also clone an object as follows:
+
+```csharp
+var bart = new Person()
+{
+    FirstName = "Bart",
+    Surname = "Simpson",
+    DateOfBirth = new DateTime(2000, 1, 1),
+    NickName = "JoJo"
+};
+
+var bartsTwinSister = bart with { };
+```
 
 # Value Comparison
 
