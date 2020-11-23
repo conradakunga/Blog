@@ -4,6 +4,7 @@ title: HTTP Redirects Using HttpClient
 date: 2020-11-23 09:54:58 +0300
 categories:
     - C#
+    - Under The Hood
 ---
 In a [previous post](({% post_url 2020-11-09-getting-now-playing-information-from-wqxr-in-net %})) I had mentioned that the `HttpClient` does not automatically process HTTP redirects and you would have to write the logic yourself.
 
@@ -93,6 +94,6 @@ And to make things more complicated, this change was introduced in .NET Core, as
 
 However in the full .NET Framework 4.8 and earlier, redirects between `http` and `https` are honored. That means there is inconsistency in behaviour between .NET Core and .NET Framework.
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/23%20November%20-%20HTTP%20Redirects%20Using%20HttpClient).
 
 Happy hacking!
