@@ -12,7 +12,7 @@ As with most things in life, this is partly true and also partly false.
 
 We can demonstrate this with a real example.
 
-My company site is [innova.co.ke](https://www.innova.co.ke). I have also bought [innova.africa](https://www.innova.africa).
+My company site is [innova.co.ke](http://www.innova.co.ke). I have also bought [innova.africa](http://innova.africa).
 
 I have setup `innova.africa` to redirect to `innova.co.ke`, so that anyone visiting the former will be seamlessly redirected to the latter.
 
@@ -52,7 +52,7 @@ If we run this we in fact get an error:
 
 To understand what exactly is happening we need to dig a little deeper.
 
-What we want to examine is the headers that the server responsds with to the initial request.
+What we want to examine is the headers that the server responds with to the initial request.
   
 For this we need to do two things:
 
@@ -78,17 +78,17 @@ If we run this we should see the following:
 
 ![](../images/2020/11/HeadersResponse.png)
 
-The key header here is Location.
+The key header here is `Location`.
 
 If the `AllowAutoRedirect` is `true`, the `HttpClient` will retrieve the value of this header and automatically make a request to the URL specified there.
 
-Now I opened by saying it is partly true and partly false that the HttpClient automatically follows redirects, and I seem to have proved otherwise.
+Now I opened by saying it is partly true and partly false that the `HttpClient` automatically follows redirects, and I seem to have proved otherwise.
 
 Here's the thing: even with `AllowAutoRedirect` being true, a request to a **http** resource that has been redirected to a **https** resource will **NOT** be auto redirected.
 
-In other words a `http` or `https` resource redirected to another `http` or `https` resource will redirect just fine.
+**In other words a `http` or `https` resource redirected to another `http` or `https` resource will redirect just fine.**
 
-Where it will break is if the origin is `http` and the corresponding redirect isn't; or if the origin in `https` and the corresponding redirect isn't.
+**Where it will break is if the origin is `http` and the corresponding redirect isn't; or if the origin in `https` and the corresponding redirect isn't.**
 
 And to make things more complicated, this change was introduced in .NET Core, as it is arguably more secure. 
 
