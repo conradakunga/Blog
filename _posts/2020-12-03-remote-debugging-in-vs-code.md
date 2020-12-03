@@ -89,7 +89,7 @@ In my case, that is
 ssh rad@192.168.0.21
 ```
 
-I have setup password-less authentication, which saves a lot of bother.  
+I have setup [password-less authentication](https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/), which saves a lot of bother. If you are on windows [this post]({% post_url 2020-03-09-copy-ssh-key-in-windows-10 %}) contains a script that you will need
 
 Next you will be asked where to save the config. I believe it should not matter which you choose.
 
