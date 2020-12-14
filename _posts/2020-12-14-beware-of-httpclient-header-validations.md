@@ -16,28 +16,27 @@ var url = "<insert url here>";
 var client = new HttpClient();
 var res = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
 var response = res.IsSuccessStatusCode;
-Log.Information("The response for {url} is {response}", response);
 ```
 
 It mostly works, (and could be made more robust to [handle redirects](({% post_url 2020-11-23-http-redirects-using-httpclient %})) but for our purposes it is ok.
 
-However it was failing for a particular url - `https://www.dnsstuff.com` - it was returning false.
+However it was failing for a particular url - `https://www.dnsstuff.com` - it was returning `false`.
 
 Which is strange because I know the URL is ok.
 
 ![](../images/2020/12/DNSStuff.png)
 
-The fact that the return value of the function was false implied that it was returning something else.
+The fact that the return value of the function was false implied that it was returning some other status code.
 
 Let us add some logging to the code.
 
 Here I am using the `Serilog.Sinks.Console` package
 
 ```bash
-`dotnet add package serilog.sinks.console`
+dotnet add package serilog.sinks.console`
 ```
 
-The code is as follows
+The updated code is as follows
 
 ```csharp
 // Setup the logging
@@ -72,9 +71,9 @@ If we run this, the response is as follows:
 
 ![](../images/2020/12/SecondResponse.png)
 
-So the returned response is Forbidden.
+So the returned response is `Forbidden`.
 
-Which is strange. We know it works on the browser bit it is not working with our code.
+Which is strange. We know it works on the browser but it is not working with our code.
 
 What could the problem be?
 
@@ -104,7 +103,7 @@ Browsers commonly identify themselves when requesting a resource from a web serv
 
 That string is what Chrome on my machine identifies itself as.
 
-In our code, the `HttpClient` does not actually set this. We can update the code so that it cheats that it is Chrome.
+In our code, the `HttpClient` does not actually set this. We can update the code so that it cheats that it is Chrome. The string we use will be copied from Fiddler.
 
 The updated code is as follows:
 
@@ -135,7 +134,7 @@ So what is happening here?
 
 The site `https://www.dnsstuff.com` is rejecting requests whenever a `User-Agent` is not specified. Which, from a security standpoint, is understandable.
 
-Of course as we have proven you can lie about the identity of the browser, but even that simple restriction can improve server performance by rejecting requests from poorly configured automated bots.
+Of course as we have demonstrated you can lie about the identity of the browser, but even that simple restriction can improve server performance by rejecting requests from poorly configured automated bots.
 
 Which begs the question - does it matter what the `user-agent` is?
 
@@ -148,6 +147,7 @@ Change the line that sets the agent as follows:
 client.DefaultRequestHeaders.Add("User-Agent",
     "The Steward Of Gondor");
 ```
+If we run the code will still get a successful result.
 
 So it doesn't matter what the `user-agent` is - as long as it is specified.
 
