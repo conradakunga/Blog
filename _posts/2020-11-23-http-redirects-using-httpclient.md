@@ -29,11 +29,11 @@ We should see the html of the website (redirected) printed to the console.
 
 ![](../images/2020/11/CaptureHTML.png)
 
-Given nothing special has been done, this implies that the HttpClient has in fact followed the redirect.
+Given nothing special has been done, this implies that the `HttpClient` has in fact followed the redirect.
 
 We can prove this by modifying the code slightly.
 
-When constructing the HttpClient we can pass it a [HttpClientHandler](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclienthandler?view=net-5.0) that controls various properties.
+When constructing the `HttpClient` we can pass it a [HttpClientHandler](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclienthandler?view=net-5.0) that controls various properties.
 
 One of these properties is [AllowAutoRedirect](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclienthandler.allowautoredirect?view=net-5.0#System_Net_Http_HttpClientHandler_AllowAutoRedirect), which we can see defaults to true.
 
@@ -58,7 +58,7 @@ For this we need to do two things:
 
 1. Change how we are making the request - rather than make a request for content, we make a raw request using [GetAsync](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.getasync?view=net-5.0) rather than [GetStringAsync](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.getstringasync?view=net-5.0)
 
-   The difference is `GetAsync` returns a `HttpResponse`, which we want to examine, rather than `GetStringAsync` which returns the response content as a `string`.
+   The difference is `GetAsync` returns a `HttpResponse` object, which we want to examine, rather than `GetStringAsync` which returns the response content as a `string`.
 
 2. Instruct the `HttpClient` that we are interested in just the headers, and not the body. This is done using an overload of the `GetAsync` method.
 
