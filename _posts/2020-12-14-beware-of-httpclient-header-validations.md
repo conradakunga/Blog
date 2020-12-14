@@ -26,7 +26,7 @@ Which is strange because I know the URL is ok.
 
 ![](../images/2020/12/DNSStuff.png)
 
-The fact that the return value of the function was false implied that it was returning some other status code.
+The fact that the return value was false implied that it was returning some other status code.
 
 Let us add some logging to the code.
 
