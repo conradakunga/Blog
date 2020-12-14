@@ -18,7 +18,7 @@ var res = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
 var response = res.IsSuccessStatusCode;
 ```
 
-It mostly works, (and could be made more robust to [handle redirects](({% post_url 2020-11-23-http-redirects-using-httpclient %})) but for our purposes it is ok.
+It mostly works, (and could be made more robust to [handle redirects]({% post_url 2020-11-23-http-redirects-using-httpclient %}) but for our purposes it is ok.
 
 However it was failing for a particular url - `https://www.dnsstuff.com` - it was returning `false`.
 
