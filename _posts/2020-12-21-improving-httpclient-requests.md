@@ -4,6 +4,7 @@ title: Improving HttpClient Requests
 date: 2020-12-21 13:02:20 +0300
 categories:
     - C#
+    - HttpClient
 ---
 This is another improvement to the logic of making a `Http` request using the [HttpClient](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-5.0).
 

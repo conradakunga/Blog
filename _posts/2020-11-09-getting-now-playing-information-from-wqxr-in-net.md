@@ -6,6 +6,7 @@ categories:
     - .NET
     - C#
     - API
+    - HttpClient
 ---
 I have recently discovered a glorious online streaming radio station, [WXQR - New York's Classical Music Radio Station](https://www.wqxr.org/). This station streams classical music pretty much 24 hours a day.
 
