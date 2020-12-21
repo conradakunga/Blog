@@ -9,7 +9,7 @@ This is another improvement to the logic of making a `Http` request using the [H
 
 As [has been discussed before]({% post_url 2020-11-23-http-redirects-using-httpclient %}), a number of problems manifest, the main one being that in .NET Core (and .NET 5) redirects between `http` and `https` are not natively honoured by the `HttpClient`.
 
-In a [previous post where we were getting the details of currently playing music on WQXR]({% post_url 2020-11-09-getting-now-playing-information-from-wqxr-in-net %}) We had written the following code to check the response for a redirect and then made a second request to the `Uri` specified in the header
+In a [previous post where we were getting the details of currently playing music on WQXR]({% post_url 2020-11-09-getting-now-playing-information-from-wqxr-in-net %}), we had written the following code to check the response for a redirect and then made a second request to the `Uri` specified in the header
 
 ```csharp
 var result = "";
