@@ -5,9 +5,9 @@ date: 2020-12-21 13:02:20 +0300
 categories:
     - C#
 ---
-This is another improvement to the logic of making a `Http` request using the `HttpClient`.
+This is another improvement to the logic of making a `Http` request using the [HttpClient](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-5.0).
 
-As [has been discussed before]({% post_url http-redirects-using-httpclient/}), a number of problems manifest, the main one being that in .NET Core (and .NET 5) redirects between http and https are not natively honoured by the `HttpClient`.
+As [has been discussed before]({% post_url 2020-11-23-http-redirects-using-httpclient %}), a number of problems manifest, the main one being that in .NET Core (and .NET 5) redirects between `http` and `https` are not natively honoured by the `HttpClient`.
 
 In a [previous post where we were getting the details of currently playing music on WQXR]({% post_url 2020-11-09-getting-now-playing-information-from-wqxr-in-net %}) We had written the following code to check the response for a redirect and then made a second request to the `Uri` specified in the header
 
@@ -53,7 +53,7 @@ We start with this line.
 if ((int)response.StatusCode >= 300 && (int)response.StatusCode <= 399)
 ```
 
-Using this logic we can create a static class that we can use to contain an extension method for the `HttpResponseMessage` class.
+Using this logic we can create a static class that we can use to contain an extension method for the [HttpResponseMessage](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8&viewFallbackFrom=net-5.0) class.
 
 ```csharp
 public static class HttpResponseExtensions
@@ -108,7 +108,7 @@ using (var client = new HttpClient())
 
 Doing it this way means that we can easily reuse this logic.
 
-A further improvement is to make the method return a [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8) object directly, rather than a string. This gives more flexibility in the management of the logic.
+A further improvement is to make the method return a [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8&viewFallbackFrom=net-5.0) object directly, rather than a string. This gives more flexibility in the management of the logic.
 
 Running the code should yield the following:
 
@@ -116,7 +116,7 @@ Running the code should yield the following:
 
 Note the two logged requests at the very top.
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/21%20Dec%202020%20-%20Http%20Client%20Request%20Improvements).
 
 Happy hacking!
 
