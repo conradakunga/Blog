@@ -6,7 +6,7 @@ categories:
     - C#
     - Under The Hood
 ---
-In a [previous post](({% post_url 2020-11-09-getting-now-playing-information-from-wqxr-in-net %})) I had mentioned that the `HttpClient` does not automatically process HTTP redirects and you would have to write the logic yourself.
+In a [previous post]({% post_url 2020-11-09-getting-now-playing-information-from-wqxr-in-net %}) I had mentioned that the `HttpClient` does not automatically process HTTP redirects and you would have to write the logic yourself.
 
 As with most things in life, this is partly true and also partly false.
 
