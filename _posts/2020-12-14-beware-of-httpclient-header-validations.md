@@ -4,6 +4,7 @@ title: Beware of HttpClient Header Validations
 date: 2020-12-14 13:35:13 +0300
 categories:
     - C#
+    - HttpClient
 ---
 I ran into an interesting problem the other day.
 

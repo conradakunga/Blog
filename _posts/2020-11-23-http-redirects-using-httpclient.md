@@ -5,6 +5,7 @@ date: 2020-11-23 09:54:58 +0300
 categories:
     - C#
     - Under The Hood
+    - HttpClient
 ---
 In a [previous post]({% post_url 2020-11-09-getting-now-playing-information-from-wqxr-in-net %}) I had mentioned that the `HttpClient` does not automatically process HTTP redirects and you would have to write the logic yourself.
 
