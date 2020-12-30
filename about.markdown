@@ -54,3 +54,5 @@ I have a passion for learning, teaching and mentorship to share my knowledge, as
 Drop me a line.
 
 conradakunga -at- gmail.com
+
+LinkedIn - [www.linkedin.com/in/conrad-akunga](www.linkedin.com/in/conrad-akunga)
