@@ -47,22 +47,22 @@ Note the scroll bar. There is more stuff.
 Let us page through the rest.
 
 ![](../images/2020/12/Reuters2.png)
-Page 2
+**Page 2**
 
 ![](../images/2020/12/Reuters3.png)
-Page 3
+**Page 3**
 
 ![](../images/2020/12/Reuters4.png)
-Page 4
+**Page 4**
 
 ![](../images/2020/12/Reuters5.png)
-Page 5
+**Page 5**
 
 ![](../images/2020/12/Reuters6.png)
-Page 6
+**Page 6**
 
 ![](../images/2020/12/Reuters7.png)
-Page 7
+**Page 7**
 
 You probably quickly scrolled through those screenshots without reading, didn't you?
 
