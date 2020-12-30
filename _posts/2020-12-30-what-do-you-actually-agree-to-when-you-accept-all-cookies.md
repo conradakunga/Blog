@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Do You Actually Agree To When You Accept Cookies
+title: What Do You Actually Agree To When You Accept All Cookies
 date: 2020-12-30 10:48:58 +0300
 categories:
     - The Business Of Software
