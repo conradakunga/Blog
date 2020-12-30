@@ -55,4 +55,4 @@ Drop me a line.
 
 conradakunga -at- gmail.com
 
-LinkedIn - [www.linkedin.com/in/conrad-akunga](www.linkedin.com/in/conrad-akunga)
+LinkedIn - [https://www.linkedin.com/in/conrad-akunga](www.linkedin.com/in/conrad-akunga)
