@@ -152,8 +152,9 @@ We can quickly create a console app for this purpose. Here I am using C# 5 (cros
 ```bash
 dotnet new condole -o GDPR
 ```
+This will create a new console app and put in in a folder named GDPR.
 
-We then add the [serilog](https://serilog.net/) console package for logging.
+We then add the [Serilog](https://serilog.net/) console package for logging.
 
 ```bash
 dotnet add package serilog.sinks.console
@@ -165,11 +166,9 @@ The structure should look like this:
 
 ![](../images/2020/12/Reuters18.png)
 
-This will create a new console app and put in in a folder named GDPR.
+Finally, we need to instruct the compile to treat the `vendors.html` file as part of the deployment content.
 
-Finally, we need to instruct the compile to treat the vendors.html file as part of the deployment content.
-
-Open the `.csproj` file and paste the following:
+Open the `.csproj` file and paste the following at the bottom, just before the closing `<project>` tag:
 
 ```xml
 <ItemGroup>
@@ -179,8 +178,9 @@ Open the `.csproj` file and paste the following:
 </ItemGroup>
 ```
 
+This means that the build action is `none` - we're not doing anything to the file. Also, we want to copy the file to the output directory, but only if it is newer.
 
-Resulting project file should look like this:
+The resulting project file should look like this:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -193,7 +193,7 @@ Resulting project file should look like this:
     <PackageReference Include="serilog.sinks.console" Version="3.1.1" />
   </ItemGroup>
 
-  <!-- Copy the vendors.hml file to the output directory, overwriting of it is newer -->
+  <!-- Copy the vendors.html file to the output directory, overwriting if it is newer -->
   <ItemGroup>
     <None Update="vendors.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -223,8 +223,14 @@ var matches = reg.Matches(vendors);
 Log.Information("There were {num} matches", matches.Count);
 
 // extract the vendor number, name and their url, ordering by the name first.
-var vendorInfo = matches.OrderBy(x => x.Groups["company"].Value).Select((x, i) =>
-      new { Index = i + 1, Name = x.Groups["company"].Value, URL = x.Groups["url"].Value });
+var vendorInfo = matches.OrderBy(match => match.Groups["company"].Value)
+    .Select((match, index) =>
+      new
+      {
+          Index = index + 1,
+          Name = match.Groups["company"].Value,
+          URL = match.Groups["url"].Value
+      });
 
 // Create a string builder to progressively build the markdown
 var sb = new StringBuilder();
@@ -249,7 +255,7 @@ File.WriteAllText("vendors.md", sb.ToString());
 
 A file, `vendors.md` in markdown format will be generated.
 
-<a name="results"> The results should be as follows (if viewed as markdown)</a>
+<a name="results"></a> The results should be as follows (if viewed as markdown)
 
 Listing As At 30 December 2020 08:10 GMT
 
