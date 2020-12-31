@@ -253,7 +253,7 @@ if (File.Exists("vendors.md"))
 File.WriteAllText("vendors.md", sb.ToString());
 ```
 
-A file, `vendors.md` in markdown format will be generated.
+A file, `vendors.md` in [markdown](https://www.markdownguide.org/) format will be generated.
 
 <a name="results"></a> The results should be as follows (if viewed as markdown)
 
