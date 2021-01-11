@@ -13,7 +13,7 @@ Are you seeing the following screen?
 
 The problem is the registry association of .js files is broken.
 
-Open this key
+Launch the registry editor [Regedit](https://support.microsoft.com/en-us/windows/how-to-open-registry-editor-in-windows-10-deab38e6-91d6-e0aa-4b7c-8878d9e07b11) and navigate to this key
 
 `Computer\HKEY_CLASSES_ROOT\.js`
 
