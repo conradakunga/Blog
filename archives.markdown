@@ -3,6 +3,10 @@ layout: page
 title: Archives
 permalink: /archives/
 ---
+{% assign count = site.posts | size %}
+
+<h3>Total Posts : {{count}}</h3>
+
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
   <h2>{{ year.name }}</h2>
