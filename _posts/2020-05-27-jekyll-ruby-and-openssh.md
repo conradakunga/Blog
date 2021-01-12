@@ -1,4 +1,4 @@
-﻿---
+---
 title: Jekyll, Ruby & OpenSSH
 date: 2020-05-27T11:07:26+03:00
 author: Conrad Akunga
@@ -15,7 +15,7 @@ Initially I tried to [install and run](https://jekyllrb.com/docs/installation/) 
 
 Running Ruby natively on Windows is not something I would recommend for anyone that enjoys their sanity, in particular if you need to build gems. 
 
-It's not impossible - it's just difficult. You have to install a whole bunch of supporting infrastructure to get everything working correctly.
+It's not impossible - it's just difficult. You have to install a whole bunch of supporting plumbing and infrastructure to get everything working correctly, and these are the problem because finding native Windows equivalents is usually a challenge. Also, you may have to recompile some of this dependencies and the native tooling for Windows becomes an additional challenge.
 
 After getting a huge number of [cryptic errors](https://gist.github.com/KelseyDH/11198922) I changed tack.
 
