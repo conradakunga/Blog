@@ -3,7 +3,8 @@ layout: post
 title: Fix For Entity Framework Tools Error
 date: 2021-01-12 03:12:38 +0300
 categories:
-    - Entity Framework
+    - Entity Framework Core
+    - Fixes
 ---
 While running the entity framework command to add a migration, I got the following error
 

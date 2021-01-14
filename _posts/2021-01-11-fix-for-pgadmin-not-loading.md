@@ -4,6 +4,7 @@ title: Fix For pgAdmin Not Loading
 date: 2021-01-11 21:03:45 +0300
 categories: 
     - PostgreSQL
+    - Fixes
 ---
 Are you attempting to open the pgAdmin web console and it appears to be loading endlessly?
 
