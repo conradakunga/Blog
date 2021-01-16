@@ -20,6 +20,10 @@ Except that this doesn't work either. Nothing gets copied to the clipboard.
 
 **Fail.**
 
-Things that look like clickable hyperlinks should be clickable hyperlinks
+1. Things that look like clickable hyperlinks **should be clickable hyperlinks**.
+2. If you want to help the user, **then help the user**. There are options
+   - Make the hyperlinks clickable
+   - Add a button that when clicked, launches the website to the desired URL
+   - Add a button that when clicked, triggers the download process in the background, and then prompts the user to install when done.
 
 Happy hacking!
