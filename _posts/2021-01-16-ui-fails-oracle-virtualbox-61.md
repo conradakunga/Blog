@@ -20,4 +20,6 @@ Except that this doesn't work either. Nothing gets copied to the clipboard.
 
 **Fail.**
 
+Things that look like clickable hyperlinks should be clickable hyperlinks
+
 Happy hacking!
