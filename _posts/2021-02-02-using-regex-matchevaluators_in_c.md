@@ -32,8 +32,6 @@ To do this we have to:
 2. Convert them to degrees Fahrenheit
 3. Replace their occurrences in the text
 
-Identify The Temperatures
-
 For this we will use our old friend the regular expression.
 
 The pattern we want is this
