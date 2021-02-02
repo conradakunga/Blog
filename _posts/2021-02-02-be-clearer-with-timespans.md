@@ -4,6 +4,7 @@ title: Be Clearer With TimeSpans
 date: 2021-02-02 14:30:02 +0300
 categories:
     - Tips
+    - Time
 ---
 Many of the .NET APIs take time intervals as their parameters, and it usually is in milliseconds.
 
