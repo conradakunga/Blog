@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Regex MatchEvaluators
+title: Using Regex MatchEvaluators In C#
 date: 2021-02-02 16:16:43 +0300
 categories:
     - Regex
@@ -56,7 +56,7 @@ Let me attempt to break it down.
 
 1. Look for any digits (`\d`), and if found, match as many sequential digits as possible. Capture this into the group `temperature`
 2. After the digits there may or may not be a space (`\s`)
-3. The temperature is indicated **either** by the degree symbol, `°` or the word `degree`. Find what was used, and capture into the group `notation`
+3. The temperature is indicated **either** by the degree symbol, `°` or the word `degrees`. Find what was used, and capture into the group `notation`
 4. After that there may or may not be a space
 5. After that there is a C, used to indicate Celsius
 
@@ -64,7 +64,7 @@ Now you might ask, how will we capture, convert and replace the temperatures?
 
 Regular Expression [MatchEvaluators](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.matchevaluator?view=net-5.0) to the rescue!
 
-The MatchEvaluator is a delegate (pointer to a method) that takes as a parameter the [Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match?view=net-5.0) object populated by the Regex engine.
+The `MatchEvaluator` is a delegate (pointer to a method) that takes as a parameter the [Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match?view=net-5.0) object populated by the Regex engine.
 
 We will write a function to do the heavy lifting.
 
@@ -116,15 +116,33 @@ Death can occur if the body temperature drops below 95.0 degrees F.
 
 If we want 100% fidelity to the text, we can additionally capture whether spaces were used between the temperature and the symbol and substitute accordingly, but that is an exercise I leave to you!
 
-This technique would be very useful on a scientific website serving both metric and non-metric users.
+You can also decide to standardize and use one notation - either ° or degrees.
+
+Say for example we want to standardize with °.
+
+If that were the case we would replace this line:
+
+```csharp
+return $"{fahrenheit} {notation} F";
+```
+
+with this:
+
+```csharp
+return $"{fahrenheit} ° F";
+```
+
+This technique would be very useful on a scientific website serving both metric and non-metric users. Users can choose whichever notation they prefer and the code will seamlessly convert back and forth.
+  
+Contributors can write with whichever notation they are comfortable with and readers can read it in whichever notation they prefer.
 
 In this case we would write a second regex like so:
 
-```plaintext
+```csharp
 (?<temperature>\d+)\s?(?<notation>(°|degrees))\s?F
 ```
 
-Note the F at the end. With this regex we are searching for Fahrenheit.
+Note the `F` at the end. With this regex we are searching for Fahrenheit.
 
 Note that the original regex would ignore Fahrenheit temperatures if they were already in the text.
 
