@@ -35,7 +35,6 @@ Yes, that extra semicolon here
 ```csharp
 using System;;
 ```
-
 was the source of the problem.
 
 It seems to confuse the compiler into thinking the class has top level statements.
