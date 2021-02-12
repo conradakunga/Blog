@@ -150,7 +150,7 @@ It can certainly be optimized, but this is good enough for our purposes.
 We can quickly create a console app for this purpose. Here I am using C# 5 (cross platform), but you can follow the steps with whichever stack you prefer.
 
 ```bash
-dotnet new condole -o GDPR
+dotnet new console -o GDPR
 ```
 This will create a new console app and put in in a folder named GDPR.
 
