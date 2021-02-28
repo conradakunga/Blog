@@ -40,11 +40,11 @@ One part that can throw you off is handling of errors like this:
 "Response status code does not indicate success: 400 (Bad Request)"
 ```
 
-This is not very useful to users as they cannot figure out what do next.
+This is not very useful to users as they cannot figure out what the actual problem is.
 
 It is even more of a problem for 500 errors where the details are even more obfuscated.
 
-To handle this, explicit catch the ApiException, and then use that to get the details of the exception.
+To handle this, explicitly catch the `ApiException`, and then use that to get the details of the exception.
 
 Like this:
 
@@ -74,7 +74,7 @@ Another reason is that the downstream client is a VB.NET application, and [Refit
 
 On the calling side you have one more complication.
 
-If the service is down for whatever reason, Refit gives an even more cryptic error.
+If the service is down for whatever reason, Refit throws an even more cryptic error. This is because the exception is thrown by the networking stack of the runtime even before Refit gets an opportunity to process the request.
 
 If the calling API is down, you actually get a bunch of nested exceptions:
 * `HttpRequestException`
