@@ -141,6 +141,6 @@ This property is changed with the method `Reproduce()` is called
 
 That is what happens under the hood when you use auto-implemented properties.
 
-The source code is available on my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/10%20April%20-%20All%20About%20Properties),
+The source code is available on my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2020-04-10%20-%20All%20About%20Properties),
 
 Happy hacking!

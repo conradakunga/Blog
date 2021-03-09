@@ -395,7 +395,7 @@ sb.AppendLine($"The composer is: {currentItem?.CurrentPlaylistItem?.CatalogEntry
 sb.AppendLine($"It is playing on:  {currentItem?.CurrentShow?.Title}");
 ```
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/9%20Nov%202020%20-%20Getting%20Now%20Playing%20Information%20From%20WQXR).
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-11-09%20-%20Getting%20Now%20Playing%20Information%20From%20WQXR).
 
 Happy hacking!
 

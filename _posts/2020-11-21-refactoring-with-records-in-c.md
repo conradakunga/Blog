@@ -349,6 +349,6 @@ public record SmallPerson : Person
 }
 ```
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/21%20Nov%202020%20-%20Refactoring%20With%20Records).
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-11-21%20-%20Refactoring%20With%20Records).
 
 Happy hacking!

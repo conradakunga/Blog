@@ -68,6 +68,6 @@ Naturally LINQ has a `Sum` extension method as well.
 
 Such a design makes it very easy to write powerful programs composed of building blocks that are flexible in terms of their argument handling.
 
-You can access the code on my [Github](https://github.com/conradakunga/BlogCode/tree/master/5%20April%20Infix%20vs%20Prefix%20Notation).
+You can access the code on my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-04-05%20-%20Infix%20vs%20Prefix%20Notation).
 
 Happy hacking!

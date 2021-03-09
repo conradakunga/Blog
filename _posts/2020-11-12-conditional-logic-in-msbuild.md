@@ -125,6 +125,6 @@ If you run the `Release` build, the output should have this additional line
 
 ![](../images/2020/11/LoggedReleasae.png)
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/12%20Nov%202020%20-%20Conditional%20Logic%20In%20MSBuild).
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-11-12%20-%20Conditional%20Logic%20In%20MSBuild).
 
 Happy hacking!

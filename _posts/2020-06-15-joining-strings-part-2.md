@@ -78,6 +78,6 @@ In the documentation for [String.Concat](https://docs.microsoft.com/en-us/dotnet
 
 ![](../images/2020/06/Remarks.png)
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/15%20Jun%202020%20-%20Joining%20Strings%20-%20Part%202)
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-06-15%20-%20Joining%20Strings%20-%20Part%202)
 
 Happy hacking!

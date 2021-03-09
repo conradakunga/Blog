@@ -285,7 +285,7 @@ Either way, your changes to the `Investor` have affected `InstitutionalInvestor`
 
 So how do we solve this problem where we need to encapsulate expected behaviour in code? **Contracts**. We shall look into that in the next post.
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-03-06%20Inheritance).
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-03-06%20-%20Inheritance).
 
 Happy hacking!
 

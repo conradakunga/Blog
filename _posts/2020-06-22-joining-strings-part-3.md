@@ -118,6 +118,6 @@ Regardless of the number of strings you are joining, the `StringBuilder` interna
 
 This means that if you are manipulating a large number of strings, you can get a lot of performance benefits from using a `StringBuilder`.
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/25%20Jun%202020%20-%20Joining%20Strings%20-%20Part%203).
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-06-25%20-%20Joining%20Strings%20-%20Part%203).
 
 Happy hacking!

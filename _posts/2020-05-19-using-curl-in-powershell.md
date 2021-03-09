@@ -1,4 +1,4 @@
-﻿---
+---
 id: 287
 title: Using Curl In PowerShell
 date: 2020-05-19T19:50:49+03:00
@@ -108,6 +108,6 @@ This second approach makes this change persistent across PowerShell sessions.
 
 If you just want it temporarily you can run `Remove-Item` in the current session and it will be reset the next time you start the shell.
 
-You can access the code on my [Github](https://github.com/conradakunga/BlogCode/tree/master/19%20May%20-%20Using%20Curl%20in%20PowerShell).
+You can access the code on my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-05-19%20-%20Using%20Curl%20in%20PowerShell).
 
 Happy hacking!

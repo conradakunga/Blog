@@ -123,6 +123,6 @@ You can get R from [here](https://www.r-project.org/) or you can install it usin
 
 If you are keen on mining the raw data, those files will be invaluable.
 
-The code is in my [github](https://github.com/conradakunga/BlogCode/tree/master/14%20April%20Collection%20Empty%20Checks).
+The code is in my [github](https://github.com/conradakunga/BlogCode/tree/master/2020-04-14%20-%20Collection%20Empty%20Checks).
 
 Happy hacking!

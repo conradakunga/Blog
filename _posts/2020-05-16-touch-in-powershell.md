@@ -85,6 +85,6 @@ You should see the new file created
 
 ![](../images/2020/05/image-1.png)
 
-You can access the code in my [Github](https://github.com/conradakunga/BlogCode/tree/master/16%20May%20-%20Touch%20In%20PowerShell).
+You can access the code in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-05-16%20-%20Touch%20In%20PowerShell).
 
 Happy hacking!

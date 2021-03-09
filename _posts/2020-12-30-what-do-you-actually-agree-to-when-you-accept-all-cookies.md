@@ -925,6 +925,6 @@ In summary:
 4. These organizations potentially deal with each other.
 5. Among these vendors are some very familiar names   - Adobe, Amazon, Google, Huawei, Oracle, Salesforce
 
-The code, including the inputs and generated outputs, is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/30%20Dec%202021%20-%20GDPR%20Data%20Vendors)
+The code, including the inputs and generated outputs, is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-12-30%20-%20GDPR%20Data%20Vendors)
 
 Happy hacking!

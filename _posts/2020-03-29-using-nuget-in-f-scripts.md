@@ -40,6 +40,6 @@ You can run it using the `dotnet fsi` tool as follows:
 
 You must include the `–langversion:preview` when you invoke the command or the Nuget functionality will not work.
 
-You can get the source code for the script on my [github](https://github.com/conradakunga/BlogCode/tree/master/29%20March%202020%20-%20Nuget%20From%20F%23%20Scripts)
+You can get the source code for the script on my [github](https://github.com/conradakunga/BlogCode/tree/master/2020-03-29%20-%20Nuget%20From%20F%23%20Scripts)
 
 Happy hacking!

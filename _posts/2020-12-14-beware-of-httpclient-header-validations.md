@@ -154,6 +154,6 @@ So it doesn't matter what the `user-agent` is - as long as it is specified.
 
 The moral is whenever using a `HttpClient`, get into the habit of setting a `user-agent`.
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/14%20Dec%202020%20-%20URL%20Validation).
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-12-14%20-%20URL%20Validation).
 
 Happy hacking!

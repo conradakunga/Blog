@@ -117,7 +117,7 @@ Running the code should yield the following:
 
 Note the two logged requests at the very top.
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/21%20Dec%202020%20-%20Http%20Client%20Request%20Improvements).
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-12-21%20-%20Http%20Client%20Request%20Improvements).
 
 Happy hacking!
 

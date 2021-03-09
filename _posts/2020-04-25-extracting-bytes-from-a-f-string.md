@@ -31,7 +31,7 @@ Note the **B** at the end
 
 ![](../images/2020/04/Bytes-2.png)
 
-The code is in my [github](https://github.com/conradakunga/BlogCode/tree/master/25%20April%20-%20F%23%20Bytes)
+The code is in my [github](https://github.com/conradakunga/BlogCode/tree/master/2020-04-25%20-%20F%23%20Bytes)
 
 
 Happy hacking!
