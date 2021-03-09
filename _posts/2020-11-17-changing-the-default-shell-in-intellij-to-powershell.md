@@ -5,7 +5,7 @@ date: 2020-11-17 10:44:41 +0300
 categories:
     - IntelliJ
 ---
-The default shell in [IntelliJ](https://www.jetbrains.com/idea/) (and its children IDEs) is the [Windows Command Prompt](https://www.sciencedirect.com/topics/computer-science/window-command-shell).
+The default shell in [IntelliJ](https://www.jetbrains.com/idea/) (and its children IDEs) is the [Windows Command Prompt](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands).
 
 ![](../images/2020/11/WindowsCommand.png)
 
