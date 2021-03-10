@@ -216,7 +216,7 @@ The class diagram of our types so far is this:
 
 We then learn we need to add these:
 1. Unicorn
-2. Earthwork
+2. Earthworm
 3. Jellyfish
 4. Whale
 5. Bee
