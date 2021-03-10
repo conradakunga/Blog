@@ -25,6 +25,10 @@ The error itself is this:
 
 ![](../images/2021/03/ErrorMessage.png)
 
+```plaintext
+'MatchCollection' does not contain a definition for 'Select' and no accessible extension method 'Select' accepting a first argument of type 'MatchCollection' could be found (are you missing a using directive or an assembly reference?
+```
+
 In short - in .NET Standard 2, the regex collections do not implement the extension methods that you need to get LINQ to work.
 
 The solution to this is to use an `IEnumerable<Match>` instead of a `MatchCollection`.
