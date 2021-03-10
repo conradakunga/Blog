@@ -27,7 +27,7 @@ The error itself is this:
 
 In short - in .NET Standard 2, the regex collections do not implement the extension methods that you need to get LINQ to work.
 
-The solution to this is to use an IEnumerable<Match> instead of a `MatchCollection`.
+The solution to this is to use an `IEnumerable<Match>` instead of a `MatchCollection`.
 
 Update your code as follows:
 
@@ -35,7 +35,7 @@ Update your code as follows:
 var matches = reg.Matches(connectionString).Cast<Match>().Select(x => x);
 ```
 
-What is happening here is we are extracting each Match from the `MatchCollection` and projecting it into an `IEnumerable<Match>`
+What is happening here is we are extracting each `Match` from the `MatchCollection` and projecting it into an `IEnumerable<Match>`
 
 This collection will support LINQ without any problems.
 
