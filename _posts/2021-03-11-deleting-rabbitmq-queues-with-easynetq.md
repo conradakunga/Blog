@@ -22,7 +22,7 @@ Install it the usual way
 dotnet package add EasyNetQ.Management.Client
 ```
 
-This is different from the usual library for interacting with RabbitMQ, EasyNetQ.
+This is different from the usual library for interacting with RabbitMQ, [EasyNetQ](https://easynetq.com/).
 
 Once you install it, the following code should delete all the queues.
 
@@ -34,8 +34,8 @@ var queues = await client.GetQueuesAsync();
 // Loop through the queues and invoke the delete
 foreach (var queue in queues)
 {
-	Log.Information("Deleting queue {queue}", queue.Name);
-	await client.DeleteQueueAsync(queue);
+    Log.Information("Deleting queue {queue}", queue.Name);
+    await client.DeleteQueueAsync(queue);
 }
 ```
 
