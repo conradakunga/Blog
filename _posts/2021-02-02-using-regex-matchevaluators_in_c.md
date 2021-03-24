@@ -174,7 +174,7 @@ Zero degrees C is 35° F
 
 Note the last temperature is unchanged.
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2%20Feb%202021-%20%20Using%20Regular%20Expression%20Match%20Evaluators).
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-02-02%20-%20Using%20Regular%20Expression%20Match%20Evaluators).
 
 Happy hacking!
 

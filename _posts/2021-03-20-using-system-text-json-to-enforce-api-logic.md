@@ -287,7 +287,7 @@ public class Person
 
 I like to think that the serializer will be updated to handle other casing types - PascalCase, snake_case
 
-Our final json is as follows:
+Our final Json is as follows:
 ```json
 {
   "fullName": "Donald Trump",

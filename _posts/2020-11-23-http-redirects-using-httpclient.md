@@ -95,6 +95,6 @@ And to make things more complicated, this change was introduced in .NET Core, as
 
 However in the full .NET Framework 4.8 and earlier, redirects between `http` and `https` are honored. That means there is inconsistency in behaviour between .NET Core and .NET Framework.
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-11-23-%20HTTP%20Redirects%20Using%20HttpClient).
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2020-11-23%20-%20HTTP%20Redirects%20Using%20HttpClient).
 
 Happy hacking!
