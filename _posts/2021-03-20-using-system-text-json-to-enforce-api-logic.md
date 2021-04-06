@@ -121,17 +121,17 @@ Next, we fix the age - another expression.
 ```csharp
 public class Person
 {
-	public string FirstName { get; set; }
-	public string Surname { get; set; }
-	public string FullName => $"{FirstName} {Surname}";
-	public DateTime DateOfBirth { get; set; }
-	public int Age => DateTime.Now.Year - DateOfBirth.Year;
+    public string FirstName { get; set; }
+    public string Surname { get; set; }
+    public string FullName => $"{FirstName} {Surname}";
+    public DateTime DateOfBirth { get; set; }
+    public int Age => DateTime.Now.Year - DateOfBirth.Year;
 }
 ```
 
 When we serialize we get the following:
 
-```csharp
+```json
 {
   "FirstName": "Donald",
   "Surname": "Trump",
@@ -180,14 +180,14 @@ This we can fix with another attribute  [JsonPropertyName](https://docs.microsof
 ```csharp
 public class Person
 {
-	public string FirstName { get; set; }
-	public string Surname { get; set; }
-	public string FullName => $"{FirstName} {Surname}";
-	[JsonIgnore]
-	public DateTime DateOfBirth { get; set; }
-	[JsonPropertyName("DateOfBirth")]
-	public string DateOfString => DateOfBirth.ToString("yyyy-MM-dd");
-	public int Age => DateTime.Now.Year - DateOfBirth.Year;
+    public string FirstName { get; set; }
+    public string Surname { get; set; }
+    public string FullName => $"{FirstName} {Surname}";
+    [JsonIgnore]
+    public DateTime DateOfBirth { get; set; }
+    [JsonPropertyName("DateOfBirth")]
+    public string DateOfString => DateOfBirth.ToString("yyyy-MM-dd");
+    public int Age => DateTime.Now.Year - DateOfBirth.Year;
 }
 ```
 This attribute allows us to override the property name.
@@ -272,16 +272,16 @@ Notice that the `DateOfBirth` is still not correct- this is because the serializ
 ```csharp
 public class Person
 {
-	[JsonIgnore]
-	public string FirstName { get; set; }
-	[JsonIgnore]
-	public string Surname { get; set; }
-	public string FullName => $"{FirstName} {Surname}";
-	[JsonIgnore]
-	public DateTime DateOfBirth { get; set; }
-	[JsonPropertyName("dateOfBirth")]
-	public string DateOfString => DateOfBirth.ToString("yyyy-MM-dd");
-	public int Age => DateTime.Now.Year - DateOfBirth.Year;
+    [JsonIgnore]
+    public string FirstName { get; set; }
+    [JsonIgnore]
+    public string Surname { get; set; }
+    public string FullName => $"{FirstName} {Surname}";
+    [JsonIgnore]
+    public DateTime DateOfBirth { get; set; }
+    [JsonPropertyName("dateOfBirth")]
+    public string DateOfString => DateOfBirth.ToString("yyyy-MM-dd");
+    public int Age => DateTime.Now.Year - DateOfBirth.Year;
 }
 ```
 
