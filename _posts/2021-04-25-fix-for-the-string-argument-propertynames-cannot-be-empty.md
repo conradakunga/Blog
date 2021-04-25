@@ -8,7 +8,7 @@ categories:
     - Fixes
 ---
 
-Today I got the following error when working with Entity Framework Core:
+Today I got the following error when working with [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) against a [PostgreSQL](https://www.postgresql.org/) database:
 
 ```plaintext
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
