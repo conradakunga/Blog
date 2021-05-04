@@ -6,19 +6,21 @@ categories:
     - Tips
     - Windows Terminal
 ---
-If you're on Windows and are not using Windows Terminal, you really should.
+If you're on Windows and are not using [Windows Terminal](https://github.com/microsoft/terminal), you really should.
 
-Get it off the Windows Store.
+Get it off the [Windows Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab).
 
 Once you have opened a couple of tabs, it will start to look like this:
 
 ![](../images/2021/05/WindowsTerminal.png)
+  
+Each tab by default has a caption of the current path.
 
-With enough tabs open it starts to become to remember which tab is running what.
+With enough tabs open it starts to become difficult to remember which tab is running what.
 
 There is a solution for this - the tabs can be renamed so that the captions can be something other than the current path.
 
-If you right-click you get the following menu:
+If you right-click on the tab's caption you get the following menu:
 
 ![](../images/2021/05/TerminalMenu1.png)
 
@@ -38,7 +40,7 @@ Clicking `Color` will give you a colour wheel
 
 ![](../images/2021/05/WindowsTerminal-5.png)
 
-Once you select the color you want the tab looks like this:
+Once you select the color you want, the tab looks like this:
 
 ![](../images/2021/05/WindowsTerminal-6.png)
 
