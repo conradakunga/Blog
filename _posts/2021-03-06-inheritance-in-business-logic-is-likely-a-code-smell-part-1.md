@@ -283,7 +283,7 @@ Which leaves you with few choices, none of them pretty
 
 Either way, your changes to the `Investor` have affected `InstitutionalInvestor`. Should this be the case?
 
-So how do we solve this problem where we need to encapsulate expected behaviour in code? **Contracts**. We shall look into that in the next post.
+So how do we solve this problem where we need to encapsulate expected behaviour in code? **Contracts**. We shall look into that in a future post.
 
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-03-06%20-%20Inheritance).
 
