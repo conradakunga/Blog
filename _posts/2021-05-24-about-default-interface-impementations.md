@@ -148,6 +148,6 @@ mouse.MakeSound();
 mouse.Introduce();
 ```
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2021-05-24%20-%20Default%20Interface%20Implementation).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2021-05-24%20-%20Default%20Interface%20Implementation)
 
 Happy hacking!
