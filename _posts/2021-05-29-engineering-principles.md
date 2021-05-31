@@ -2,9 +2,9 @@
 layout: post
 title: Engineering Principles
 date: 2021-05-29 13:11:41 +0300
-draft: true
 categories:
     - Software
+published: false
 ---
 # Code Is Written For Other People (Including Yourself)
 

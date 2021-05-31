@@ -6,7 +6,7 @@ categories:
     - Tools
     - Gitlab
 ---
-If you have turned on 2 factor authentication for GitLab, you might be wondering how you can access and manipulate your repository over HTTPS.
+If you have turned on 2 factor authentication for [GitLab](https://about.gitlab.com/), you might be wondering how you can access and manipulate your repository over HTTPS.
 
 Go to **User Settings** > **Access Tokens**
 
