@@ -6,30 +6,34 @@ categories:
     - Software
 published: false
 ---
-# Code Is Written For Other People (Including Yourself)
+# 1. Code Is Written For Other People (Including Yourself)
 
-# Always Be Clear Rather Than Be Clever
+# 2. Always Be Clear Rather Than Be Clever
 
-# Occam's Razor
+# 3. Occam's Razor
 
-# Weed Your Garden
+# 4. Weed Your Garden
 
-# Document Your Context - Why, Not What
+# 5. Bad Code Can Be Written In Any Tool. And So Can Good Code
+
+# 6. Document Your Context - Why, Not What
 
 // List Keys, skipping the first
 
-# There Is No Free Lunch
+# 7. There Is No Free Lunch
 
-# Beware Hubris
+# 8. Beware Hubris
 
-# Ask Questions When You Can. Answer Them When You Can't
+# 9. Ask Questions When You Can. Answer Them When You Can't
 
-# There Is Little New Under The Sun
+# 10. There Is Little New Under The Sun
 
-# Principles & Concepts Over Languages
+# 11. Principles & Concepts Over Languages
 
-# Work Smarter Over Working Hard
+# 12. Work Smarter Over Working Hard
 
-# The More You Rest, The More Productive You Are
+# 13. The More You Rest, The More Productive You Are
 
-# The Deliverable Is Shipping, Not Code
+# 14. The Deliverable Is Shipping, Not Code
+
+# 15. 
