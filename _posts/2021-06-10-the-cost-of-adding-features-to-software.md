@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Cost Of Adding Features
+title: The Cost Of Adding Features To Sofware
 date: 2021-06-10 09:20:56 +0300
 categories:
     - The Business Of Software
@@ -46,6 +46,7 @@ This is what it directly entails to make that change:
 14. If you have a SDK, updating it to reflect this change, updating the documentation and publishing the artifacts to clients (Java [Gradle](https://gradle.org/)/[Maven](https://maven.apache.org/), .NET [NuGet](https://www.nuget.org/), PHP [Composer](https://getcomposer.org/), Ruby [Gems](https://rubygems.org/), Rust [Cargo](https://crates.io/), Node [NPM](https://www.npmjs.com/) etc)
 15. Updating your training, marketing materials and website
 16. Once you add this feature, you generally cannot remove it. You must support it
+17. Adding features means you have more code to support. More code means increased potential for maintenance complexity, bugs, and security flaws
 
 Not so simple, is it?
 
