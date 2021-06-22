@@ -187,7 +187,9 @@ The conglomerate will certainly offer you a better salary and benefits, a straig
 
 The startup, however will expose you to all facets of the business, and at one time or the other you will find yourself supporting sales, and then operations, and then engineering, and then finance. You will be pushed totally outside your comfort zone and will learn a lot.
 
-Given your life plan, which of these offers is best aligned with taking you towards your goals and dreams in the long term? It make make better sense in the short term to forgo the conglomerate and learn all that you can at the startup.
+Given your life plan, which of these offers is best aligned with taking you towards your goals and dreams in the long term? It may make better sense in the short term to forgo the conglomerate and learn all that you can at the startup.
+
+But if your goal is a stress-free, comfortable existence without income stresses - a startup might not be a good call.
 
 Either way - this is a continuous evaluation you need to continuously and consistently make.
 
