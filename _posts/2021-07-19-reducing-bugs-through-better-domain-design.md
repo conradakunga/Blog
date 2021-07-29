@@ -8,4 +8,14 @@ categories:
     - Design
 published: false
 ---
+  
+One of my favourite maxims is "measure twice so you cut once".
+
+When it comes to developing, improving and maintaining software, you can get a surprising boost from spending some time on refining your domain design.
+
+Let us use an example.
+
+You are working on a contact application. For simplicity I have skipped all but the essentials to demonstrate the point.
+
+
 
