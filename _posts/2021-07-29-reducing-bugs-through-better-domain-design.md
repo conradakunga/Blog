@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reducing Bugs Through Better Domain Design
-date: 2021-07-29 00:18:29 +0300
+date: 2021-07-29 19:00:29 +0300
 categories:
     - C#
     - Design
@@ -89,9 +89,9 @@ A way to do this is to use a constructor to set (and validate) fields.
 
 Here we are doing a couple of things:
 
-- We are making sure the FirstName, Surname, DateOfBirth, EmailAddress and PhoneNumber are provided.
+- We are making sure the `FirstName`, `Surname`, `DateOfBirth`, `EmailAddress` and `PhoneNumber` are provided.
 - For the string values, we are insisting on a value being provided - so we reject empty strings, nulls, and whitespace
-- For date of birth we are rejecting dates later than today or earlier than 1 jan 1900 (The exact date as a lower bound depends on your logic)
+- For date of birth we are rejecting dates later than today or earlier than 1 Jan 1900 (The exact date as a lower bound depends on your logic)
 
 If the validations pass, we can then go ahead to assign the values.
 
@@ -136,7 +136,7 @@ In other words, date of birth is optional.
 
 This means we have to make two more changes:
 
-First, we need to be explicit in our domain that the DateOfBirth might not be known. Rather than use a magic date (1 Jan 0000 00:00), we can signal explicitly in our domain that the value is optional. For this we can use a nullable date.
+First, we need to be explicit in our domain that the `DateOfBirth` might not be known. Rather than use a magic date (1 Jan 0000 00:00), we can signal explicitly in our domain that the value is optional. For this we can use a nullable date.
 
 This means we change from:
 
@@ -150,7 +150,7 @@ to
 public DateTime? DateOfBirth { get; }
 ```
 
-Note the `?`, the mans the DateOfBirth is nullable.
+Note the `?`, indicates to the runtime that the `DateOfBirth` is nullable.
 
 This means we can check if the `DateOfBirth` is null - if it is, then no `DateOfBirth` was provided.
 
@@ -222,7 +222,7 @@ public byte? Age
 }
 ```
 
-Now in our domain whenever we want to use the age of a contact, it is baked right into the contact.
+Now in our domain whenever we want to use the `Age` of a contact, it is baked right into the `Contact`.
 
 ```csharp
 Console.WriteLine (james.Age);
@@ -230,16 +230,19 @@ Console.WriteLine (james.Age);
 
 Having it this way means we can change our implementation to whatever we want.
 
-We can decide to make `Age` a string to handle the case when the `DateOfBirth` is unknown.
+We can decide add a new string property to handle the case when the `DateOfBirth` is unknown. Perhaps for use on the user interface, without having to keep handling the possibility of a null `Age`.
 
 In which case the property would look like this:
 
 ```csharp
-get
+public string DisplayAge
 {
-    if (DateOfBirth.HasValue)
-        return $"{DateTime.Today.Year - DateOfBirth.Value.Year}";
-    return "Age unknown";
+    get
+    {
+        if (DateOfBirth.HasValue)
+            return $"{DateTime.Today.Year - DateOfBirth.Value.Year}";
+        return "Age unknown";
+    }
 }
 ```
 
@@ -318,7 +321,9 @@ But - we have not really solved the problem.
 
 Technically, the email address is indeed a string.
 
-But, if you think about it, what if we created a type?
+But, if you think about it, an email address has **meaning**. It is not just a string. There is the address itself, and the display name.
+
+what if we created a new type to encapsulate this?
 
 ```csharp
 public class EmailAddress
@@ -352,9 +357,9 @@ public class EmailAddress
 }
 ```
 The rationale here is:
-- An email address is composed of an **address** (james@gmail.com) and a **display name** (James Bond)
+- An email address is composed of an **address** (*james@gmail.com*) and a **display name** (*James Bond*)
 - If a display name is not provided, use the email address as the display name
-- The validations from our earlier code are preserved here.
+- The validations from our earlier code should be preserved here.
 
 We thus refactor our `Contact` type to be like this:
 
@@ -398,8 +403,6 @@ public class ContactV2
             throw new ArgumentNullException(nameof(firstName));
         if (string.IsNullOrWhiteSpace(surname))
             throw new ArgumentNullException(nameof(surname));
-        if (string.IsNullOrWhiteSpace(emailAddress))
-            throw new ArgumentNullException(nameof(emailAddress));
         if (string.IsNullOrWhiteSpace(phoneNumber))
             throw new ArgumentNullException(nameof(phoneNumber));
     
@@ -413,12 +416,14 @@ public class ContactV2
 
 Note that the constructor is still taking a string as the parameter for the `emailAddress`, but then going on ahead to construct an `EmailAddress` object.
 
+Note also that we are no longer validating email here - it has been delegated to the `EmailAddress` type.
+
 ![](../images/2021/07/EmailAddress.png)
 
 Now this is unquestionably more code up front. What are the benefits?
 
 1. The `EmailAddress` type can be used in other parts of the domain, or even used in another application altogether. And as improvements are made and functionality is added (and bugs fixed!) the benefits trickle down.
-2. Any logic that receives an EmailAddress object knows what it is, and how to use it. It does not need to perform any additional validations.
+2. Any logic that receives an `EmailAddress` object knows what it is, and how to use it. It does not need to perform any additional validations.
 3. The state of the object will always be correct
 
 So if in other parts of the application you have code like this:
@@ -452,7 +457,7 @@ This is the same phone number:
 
 How many times have you attempted to dial a number, or enter a phone number into a form and been told your phone number is invalid?
 
-This problem can be solved using a number of new types (I am skipping the constructors and validations to make the code shorter)
+This problem can be solved using a number of new types (I am skipping the constructors and validations, as well as making the types mutable to make the code shorter. In reality it should follow the model of `EmailAddress`)
 
 ```csharp
 public class Country
@@ -474,26 +479,24 @@ public class PhoneNumber
     public string DisplayShortNumber => $"{MobileOperator.Prefix}{Number}";
 }
 ```
+There are two computed properties in the type, `DisplayFullNumber` and `DisplayShortNumber` that illustrate how to work around formatting issues. You can even add others!
 
 To demonstrate how it works, here are some tests:
 
 ```csharp
-public class PhoneNumberTests
+[Fact]
+public void PhoneNumberIsConstructedCorrectly()
 {
-    [Fact]
-    public void PhoneNumberIsConstructedCorrectly()
-    {
-        var kenya = new Country() { Name = "Kenya", CountryCode = "254" };
-        var safaricom = new MobileOperator() { Name = "Safaricom", Prefix = "0721" };
-        var phoneNumber = new PhoneNumber() { Country = kenya, MobileOperator = safaricom, Number = "000000" };
-        phoneNumber.DisplayFullNumber.Should().Be("254721000000");
-        phoneNumber.DisplayShortNumber.Should().Be("0721000000");
-    }
+    var kenya = new Country() { Name = "Kenya", CountryCode = "254" };
+    var safaricom = new MobileOperator() { Name = "Safaricom", Prefix = "0721" };
+    var phoneNumber = new PhoneNumber() { Country = kenya, MobileOperator = safaricom, Number = "000000" };
+    phoneNumber.DisplayFullNumber.Should().Be("254721000000");
+    phoneNumber.DisplayShortNumber.Should().Be("0721000000");
 }
 ```
 With this change the `PhoneNumber` type now can be delegated the responsibility of the interpretation and display of a phone number.
 
-And, just like `EmailAddress` this type can be used across the domain, or even in other solutions.
+And, just like `EmailAddress` this type can be used across the domain, or packaged into a Nuget package for use in other projects.
 
 And, again, just like `EmailAddress`, any code using this type knows what it is, and how to use it.
 
@@ -613,3 +616,14 @@ This has a number of benefits:
 1. No bugs from when state is changed by accident
 2. Thread-safe for free - given there are no setters - you don't need to write code to factor in contention and state mutation
 3. Predictable - no matter how many places the object is passed around - you can rely on the state to be known.
+
+Spending more time on domain design leads to the following benefits:
+1. Code that is more modular
+2. Code that is easier to debug and test
+3. Code that is to maintain, and add features
+4. Code that is easier to read and internalize
+5. Focused objects with single responsibility
+
+The code is in my Github.
+
+Happy hacking!
