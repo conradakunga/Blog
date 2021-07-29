@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reducing Bugs Through Better Domain Design
+title: Reducing Bugs And Improving Maintainability Through Better Domain Design
 date: 2021-07-29 19:00:29 +0300
 categories:
     - C#
