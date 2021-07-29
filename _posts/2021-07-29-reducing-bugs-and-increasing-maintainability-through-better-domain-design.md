@@ -627,6 +627,6 @@ Spending more time on domain design leads to the following benefits:
 5. Focused objects with single responsibility
 6. Reduction (or outright) removal of state, making objects predictable
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-07-29%20-%20Domain%20Design).
 
 Happy hacking!
