@@ -17,7 +17,7 @@ You are working on a contact application, contact in the sense of an address boo
 
 Here is the contact class:
 
-```CSharp
+```csharp
 public class Contact
 {
     public string FirstName { get; set; }
