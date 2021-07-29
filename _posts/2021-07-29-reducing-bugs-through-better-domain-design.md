@@ -361,6 +361,8 @@ The rationale here is:
 - If a display name is not provided, use the email address as the display name
 - The validations from our earlier code should be preserved here.
 
+Thus, instead of passing a string around (that happens to be an email address) - we are passing around an actual type.
+
 We thus refactor our `Contact` type to be like this:
 
 ```csharp
@@ -448,12 +450,13 @@ You will face a similar problem with phone numbers.
 
 This is the same phone number:
 
-254721000000
-0721000000
-0721-000-000
-0721-000000
-254-721-000-000
-254-721000000
+* 254721000000
+* 0721000000
+* 0721-000-000
+* 0721-000000
+* 254-721-000-000
+* 254-721000000
+
 
 How many times have you attempted to dial a number, or enter a phone number into a form and been told your phone number is invalid?
 
@@ -596,8 +599,7 @@ public class ContactV3
             throw new ArgumentNullException(nameof(firstName));
         if (string.IsNullOrWhiteSpace(surname))
             throw new ArgumentNullException(nameof(surname));
-        if (string.IsNullOrWhiteSpace(emailAddress))
-            throw new ArgumentNullException(nameof(emailAddress));
+        // THis validation should be performed in the PhoneNumber object
         if (string.IsNullOrWhiteSpace(phoneNumber))
             throw new ArgumentNullException(nameof(phoneNumber));
 
@@ -623,6 +625,7 @@ Spending more time on domain design leads to the following benefits:
 3. Code that is to maintain, and add features
 4. Code that is easier to read and internalize
 5. Focused objects with single responsibility
+6. Reduction (or outright) removal of state, making objects predictable
 
 The code is in my Github.
 
