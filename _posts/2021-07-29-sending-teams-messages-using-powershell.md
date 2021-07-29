@@ -6,9 +6,9 @@ categories:
     - Teams
     - PowerShell
 ---
-First, read [this previous post](https://www.conradakunga.com/blog/posting-messages-to-microsoft-teams-with-code/) that gives a primer on how to interact with Teams.
+First, read [this previous post](https://www.conradakunga.com/blog/posting-messages-to-microsoft-teams-with-code/) that gives a primer on how to interact with [Microsoft Teams](https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software).
 
-The way to send a message using Powershell is like this:
+The way to post a message to a channel using [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1) is like this:
 
 ```powershell
 Invoke-RestMethod -Method post -ContentType 'Application/Json' -Body '{"text":"Hello World!"}' -Uri <YOUR WEBHOOK URL>
