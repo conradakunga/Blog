@@ -18,10 +18,10 @@ But what if you wanted to know where exactly it was? It is possible to have more
 To do this, run the this command:
 
 ```powershell
-where.exe javac
+    where.exe javac
 ```
 
-(note the back-tick) if you are using [PowerShell](https://docs.microsoft.com/en-us/powershell/) (or [PowerShell Core](https://twitter.com/yulemsee/status/1404345270910001152?s=08)). This is because where without the exe will be interpreted as an alias for [where-object](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.1)
+(note the `.exe`) if you are using [PowerShell](https://docs.microsoft.com/en-us/powershell/) (or [PowerShell Core](https://twitter.com/yulemsee/status/1404345270910001152?s=08)). This is because where without the exe will be interpreted as an alias for [where-object](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.1)
 
 If you are using the [Windows Command](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) interpreter (cmd.exe), run just 
 
