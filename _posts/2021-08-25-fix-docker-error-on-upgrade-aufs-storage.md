@@ -24,7 +24,7 @@ You can read about the details [here](https://docs.docker.com/storage/storagedri
 
 To fix this do the following:
 
-1. Stop running containers
+1. **Stop running containers**
 
     From where you have your `docker-compose.yml` file, run the following command: 
     
@@ -32,7 +32,7 @@ To fix this do the following:
     sudo docker-compose down
     ```
     
-2. Stop docker
+2. **Stop docker**
     
     Run the following command to stop the docker service:
     
@@ -40,13 +40,13 @@ To fix this do the following:
     sudo systemctl stop docker
     ```
 
-3. Back up the current `aufs` location
+3. **Back up the current `aufs` location**
 
     ```bash
     sudo cp -au /var/lib/docker /var/lib/docker.bak
     ```
     
-4. Clear the current `aufs` location
+4. **Clear the current `aufs` location**
 
     ```bash
     sudo rm -rf /var/lib/docker/aufs/
@@ -63,7 +63,7 @@ To fix this do the following:
     
     This means that your containers are probably still running, or docker has an active handle to one of more of your containers.
     
-5. Create / Update `/etc/docker/daemon.json`
+5. **Create / Update `/etc/docker/daemon.json`**
 
     It should have the following contents:
     
@@ -72,7 +72,7 @@ To fix this do the following:
         "storage-driver": "overlay2"
     }
     ```
-6. Restart docker
+6. **Restart docker**
 
     Run the following command
     
