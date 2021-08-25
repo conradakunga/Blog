@@ -4,6 +4,7 @@ title: Fix - Docker Error On Upgrade - aufs storage
 date: 2021-08-25 15:00:49 +0300
 categories:
     - Linux
+    - Docker
 ---
 While upgrading [docker](https://www.docker.com/) you may get the following error:
 
