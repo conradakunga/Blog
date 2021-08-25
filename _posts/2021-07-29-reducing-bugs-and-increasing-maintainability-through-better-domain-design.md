@@ -235,16 +235,10 @@ We can decide add a new string property to handle the case when the `DateOfBirth
 In which case the property would look like this:
 
 ```csharp
-public string DisplayAge
-{
-    get
-    {
-        if (DateOfBirth.HasValue)
-            return $"{DateTime.Today.Year - DateOfBirth.Value.Year}";
-        return "Age unknown";
-    }
-}
+public string DisplayAge => Age == null ? "Unknown" : $"{Age}";
 ```
+
+We are leveraging the fact that we are already computing the `Age` in another property; so we check if that is `null` and output the appropriate string.
 
 We can verify the code with tests for each scenario:
 
