@@ -74,11 +74,11 @@ To fix this do the following:
     ```
 6. Restart docker
 
-Run the following command
-
-```bash
-sudo systemctl start docker
-```
+    Run the following command
+    
+    ```bash
+    sudo systemctl start docker
+    ```
 
 To verify that it worked, run the following command:
 
