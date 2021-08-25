@@ -98,6 +98,8 @@ sudo docker-compose up -d
 
 **Note that this will re-download and recreate the images and volumes.**
 
-If everything runs OK, you can delete the backups.
+You can now upgrade your docker.
+
+If everything runs OK after upgrading and restarting your containers, you can delete the backups.
 
 Happy hacking!
