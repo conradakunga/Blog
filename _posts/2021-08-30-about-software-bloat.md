@@ -105,7 +105,7 @@ Casual users will consider Excel bloated.
 
 But ask anyone who builds complex dynamic models for a living and **they will laugh Google Sheets out of town**.
 
-So in conclusion, one person's bloat is another person's features.
+So in conclusion, **one person's bloat is another person's features**.
 
 Having said that - I don't understand why software vendors are falling over themselves to introduce Dark Mode to their products.
 
