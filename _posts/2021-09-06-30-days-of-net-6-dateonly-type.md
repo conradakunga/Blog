@@ -6,8 +6,6 @@ categories:
     - C#
     - 30 Days Of .NET 6
 ---
-# The `DateOnly` Type
-
 In .NET when manipulating dates and times, you generally use the [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-5.0) type for such purposes.
 
 This generally works but can be a bit clumsy and can trip you up do to the fact that a `DateTime` contains a date and a time component.
