@@ -6,8 +6,6 @@ categories:
     - C#
     - 30 Days Of .NET 6
 ---
-**This is Day 1 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
-
 # The `DateOnly` Type
 
 In .NET when manipulating dates and times, you generally use the [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-5.0) type for such purposes.
@@ -103,5 +101,9 @@ var otherNewDate = DateTime.Now.ToDateOnly();
 ```
 
 I think the latter is more discoverable to current users.
+
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-09-06%20-%2030%20Days%20Of%20.NET%206%20-%20Day%201%20-%20DateTimeOnly).
+
+**This is Day 1 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
     
 Happy hacking!
