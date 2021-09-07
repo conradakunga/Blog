@@ -100,6 +100,10 @@ var otherNewDate = DateTime.Now.ToDateOnly();
 
 I think the latter is more discoverable to current users.
 
+# TLDR
+
+There is a new [DateOnly](https://docs.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-6.0) type that unlike the [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0) that deals with dates and time, only deals with the date.
+
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-09-06%20-%2030%20Days%20Of%20.NET%206%20-%20Day%201%20-%20DateTimeOnly).
 
 **This is Day 1 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
