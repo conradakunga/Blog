@@ -72,7 +72,7 @@ var newYearEve = new TimeOnly().AddMinutes(-4);
 
 However, you might want to know when the day has wrapped.
 
-There are overloaded `Add` methods that take out parameters where this information is stored.
+There are overloaded `Add` methods that take `out` parameters where this information is stored.
 
 So using our previous example:
 
@@ -110,7 +110,7 @@ The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/
 
 # TLDR
 
-There is a companion TimeOnly type that is designed for use for dealing with `time` without a `date` component. It is much more intuitive to use than a `TimeSpan`
+There is a companion `TimeOnly` type that is designed for use for dealing with `time` without a `date` component. It is much more intuitive to use than a `TimeSpan`
 
 **This is Day 3 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
 
