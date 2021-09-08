@@ -71,6 +71,15 @@ A couple of reasons:
 1. In [Visual Basic .NET](https://docs.microsoft.com/en-us/dotnet/visual-basic/) **Date** is an alias for the `DateTime` type.
 2. There is already a [Date](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.date?view=net-5.0#System_DateTime_Date) property of the `DateTime` type, which is also a `DateTime` (but with the time component set to midnight)
 
+The `DateOnly` type also has a number of handy properties that make general coding easier:
+
+* [Day](https://docs.microsoft.com/en-us/dotnet/api/system.dateonly.day?view=net-6.0#System_DateOnly_Day)
+* [DayNumber](https://docs.microsoft.com/en-us/dotnet/api/system.dateonly.daynumber?view=net-6.0#System_DateOnly_DayNumber)
+* [DayOfTheWeek](https://docs.microsoft.com/en-us/dotnet/api/system.dateonly.dayofweek?view=net-6.0#System_DateOnly_DayOfWeek)
+* [DayOfTheYear](https://docs.microsoft.com/en-us/dotnet/api/system.dateonly.dayofyear?view=net-6.0#System_DateOnly_DayOfYear)
+* [Month](https://docs.microsoft.com/en-us/dotnet/api/system.dateonly.month?view=net-6.0#System_DateOnly_Month)
+* [Year](https://docs.microsoft.com/en-us/dotnet/api/system.dateonly.year?view=net-6.0#System_DateOnly_Year)
+
 # Thoughts
 This is an excellent, long overdue type
 
