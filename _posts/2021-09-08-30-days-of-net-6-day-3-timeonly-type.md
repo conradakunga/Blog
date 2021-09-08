@@ -63,7 +63,7 @@ var future = TimeOnly.FromDateTime(DateTime.Now)
 
 To move in the other direction, that is to find out the time one hour, thirty minutes ago, use negative numbers as parameters to the `Add` methods.
 
-Keep in mind that `TimeOnly` only stores the time, so this computation (one minute before midnight) will wrap around and give you 23:56.
+Keep in mind that `TimeOnly` only stores the time, so this computation (four minutes before midnight) will wrap around and give you 23:56.
 
 ```csharp
 // Passing no arguments assumes you want to start at 0:00.00.000000
