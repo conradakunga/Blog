@@ -39,7 +39,7 @@ The generated program itself is as follows:
 
 ![](../images/2021/09/CodeRightBefore.png)
 
-If you are an experience developer in Java or C++ or any of the traditional object oriented languages you will probably understand what is happening in this file. The syntax and keywords are even mostly the same.
+If you are an experienced developer in [Java](https://docs.oracle.com/en/java/), [C++](https://docs.microsoft.com/en-us/cpp/?view=msvc-160) or any of the traditional object oriented languages you will probably understand what is happening in this file. The syntax and keywords are even mostly the same.
 
 If, however, you are a student, or are a hobbyist who wants to try out the language, you will wonder what these things are:
 

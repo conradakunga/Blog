@@ -108,6 +108,10 @@ Personally I **struggle** with using the `TimeSpan` correctly to represent time 
 
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-09-08%20-%2030%20Days%20Of%20.NET%206%20-%20Day%203%20-%20TimeOnly).
 
+# TLDR
+
+There is a companion TimeOnly type that is designed for use for dealing with `time` without a `date` component. It is much more intuitive to use than a `TimeSpan`
+
 **This is Day 3 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
 
 Happy hacking!
