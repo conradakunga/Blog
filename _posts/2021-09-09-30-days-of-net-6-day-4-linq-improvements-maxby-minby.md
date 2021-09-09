@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 30 Days Of .NET 6 - Day 4 - LINQ Improvements - MaxBy & Min By
+title: 30 Days Of .NET 6 - Day 4 - LINQ Improvements - MaxBy & MinBy
 date: 2021-09-09 11:40:32 +0300
 categories:
     - C#
