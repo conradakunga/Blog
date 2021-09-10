@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 30 Days Of .NET 6 - Day 5 - New Mathematics API
+title: 30 Days Of .NET 6 - Day 5 - Mathematics API Additions
 date: 2021-09-10 14:30:40 +0300
 categories:
     - C#
     - 30 Days Of .NET 6
 ---
-It may surprise you to learn that even the Math API, which generally does not change all that much, has some additions for those who do high performance trigonometric functions.
+It may surprise you to learn that even the [Math](https://docs.microsoft.com/en-us/dotnet/api/system.math?view=net-5.0) API, which generally does not change all that much, has some additions for those who do high performance trigonometric functions.
 
 Suppose you need the cosine of an angle.
 
@@ -40,7 +40,7 @@ The Sin is -0.428182669496151 and the Cosine is  -0.9036922050915059
 
 I tried to benchmark the new method vs just getting the sin and cos independently as before.
 
-At least as of release 7, [Math.SinCos](https://docs.microsoft.com/en-us/dotnet/api/system.math.sincos?view=net-6.0) seems to be orders of magnitude slower.
+At least as of release 7, [Math.SinCos](https://docs.microsoft.com/en-us/dotnet/api/system.math.sincos?view=net-6.0) seems to be **orders of magnitude slower**.
 
 Here is the code for the benchmark (I will upload the benchmark tests to Github)
 
@@ -78,7 +78,7 @@ Intel Core i5-9300H CPU 2.40GHz, 1 CPU, 8 logical and 4 physical cores
 
 This has [already been logged](https://github.com/dotnet/runtime/issues/48776) but it seems it won't be addressed until .NET version 7.
 
-There is also a new method for computing the reciprocal estimate, [Math.ReciprocalEstimate](https://docs.microsoft.com/en-us/dotnet/api/system.math.reciprocalestimate?view=net-6.0)
+There is also a new method for computing the reciprocal estimate of a number, [Math.ReciprocalEstimate](https://docs.microsoft.com/en-us/dotnet/api/system.math.reciprocalestimate?view=net-6.0)
 
 ```csharp
 var reciprocalEstimate = Math.ReciprocalEstimate(90);
