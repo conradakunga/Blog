@@ -100,8 +100,8 @@ The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/
 
 # TLDR
 
-Math class now has additional methods for some target demographics.
+[Math](https://docs.microsoft.com/en-us/dotnet/api/system.math?view=net-6.0) class now has additional methods for some target demographics.
 
-**This is Day 4 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
+**This is Day 5 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
 
 Happy hacking!
