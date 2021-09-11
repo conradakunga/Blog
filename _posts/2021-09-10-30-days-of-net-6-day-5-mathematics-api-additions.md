@@ -85,11 +85,36 @@ var reciprocalEstimate = Math.ReciprocalEstimate(90);
 Console.WriteLine(reciprocalEstimate);
 ```
 
-And finally there is another new method for computing the reciprocal of the square root of a number, [Math.ReciprocalSqrtEstimate](https://docs.microsoft.com/en-us/dotnet/api/system.math.reciprocalsqrtestimate?view=net-6.0)
+There is another new method for computing the reciprocal of the square root of a number, [Math.ReciprocalSqrtEstimate](https://docs.microsoft.com/en-us/dotnet/api/system.math.reciprocalsqrtestimate?view=net-6.0)
 
 ```csharp
 var reciprocalRootEstimate = Math.ReciprocalSqrtEstimate(90);
 Console.WriteLine(reciprocalRootEstimate);
+```
+
+Finally, there is a a new method to assist when you are doing integer division and are interested in the remainder.
+
+Most people would do it like so:
+
+```csharp
+var quotient = 10 / 3;
+var remainder = 10 % 3;
+Console.WriteLine($"The quotient is {quotient} and the remainder is {remainder}");
+```
+
+The [Math](https://docs.microsoft.com/en-us/dotnet/api/system.math?view=net-5.0) class has for a long time had a method that makes such code cleaner - [Math.DivRem](https://docs.microsoft.com/en-us/dotnet/api/system.math.divrem?view=net-5.0):
+
+```csharp
+int remainder;
+var quotient = Math.DivRem(10, 3, out remainder);
+Console.WriteLine($"The quotient is {quotient} and the remainder is {remainder}");
+```
+
+This has been further improved in .NET 6 - rather than return the remainder as an output parameter, the method returns a [tuple](https://docs.microsoft.com/en-us/dotnet/api/system.valuetuple-2?view=net-6.0) of the quotient and the remainder.
+
+```csharp
+var result = Math.DivRem(10, 3);
+Console.WriteLine($"The quotient is {result.Quotient} and the remainder is {result.Remainder}");
 ```
 
 # Thoughts
