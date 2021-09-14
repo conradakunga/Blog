@@ -105,10 +105,10 @@ public class RankComparable : IComparer<Rank>
     {
         // Equal rank
         if (a.Weight == b.Weight)
-        	return 0;
+            return 0;
         // Higher rank
         if (a.Weight > b.Weight)
-        	return -1;
+            return -1;
         // Lower rank
         return 1;
     }
