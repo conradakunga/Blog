@@ -134,6 +134,8 @@ You should see the following:
 
 If you pass an argument that is not an integer, you get a `404` error as the runtime will complain it cannot find such a route.
 
+Again to re-emphasize - you can still setup your project the old way and use the old routing. This is just another, simpler way to build.
+
 # Thoughts
 
 This has been a long time coming and I am glad it is much easier and cleaner to get started writing simple web applications without all the ceremony out of the box.
