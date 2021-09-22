@@ -16,4 +16,6 @@ You can [download it here](https://dotnet.microsoft.com/download/dotnet/6.0).
 
 Remember if you are using a 64 bit machine to download the correct version!
 
+![](../images/2021/09/64Bit2.png)
+
 Happy hacking!
