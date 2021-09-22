@@ -119,6 +119,8 @@ The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/
 
 # TLDR
 
+`System.Text.Json` Serializer has additional flexibility. 
+
 Setting the reference handler using the `JsonSerializationOptions` to `ReferenceHandler.IgnoreCycles` allows you to explicitly set circular object references to null
 
 **This is Day 8 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
