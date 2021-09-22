@@ -6,12 +6,11 @@ categories:
     - C#
     - 30 Days Of .NET 6
 ---
-When dealing with complex object graphs in memory, it is common to have objects referencing themslves.
+When dealing with complex object graphs in memory, it is common to have objects referencing themselves.
 
 Take this example.
 
 We have this class:
-
 
 ```csharp
 public class Animal
@@ -119,6 +118,8 @@ Having the flexibility to ignore nested object cycles without having to explicit
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2021-09-21%20-%2030%20Days%20Of%20.NET%206%20-%20Day%208%20-%20System.Text.Json%20Object%20Cycles)
 
 # TLDR
+
+Setting the reference handler using the `JsonSerializationOptions` to `ReferenceHandler.IgnoreCycles` allows you to explicitly set circular object references to null
 
 **This is Day 8 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
 
