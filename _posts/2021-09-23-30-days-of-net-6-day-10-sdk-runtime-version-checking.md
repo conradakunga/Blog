@@ -10,10 +10,8 @@ Software is always a moving target - adding features, fixing bugs or even removi
 
 The .NET ecosystem has two main pieces:
 
-1. The SDK
-    This is composed of all the tools used to develop and publish .NET applications, ranging from console to desktop to mobile to web.
-2. The runtime
-    This is what is actually responsible for running .NET applications. 
+1. **The SDK** - This is composed of all the tools used to develop and publish .NET applications, ranging from console to desktop to mobile to web.
+2. **The runtime** - This is what is actually responsible for running .NET applications. 
     
     This is because the compiler does not compile to machine code, but to an [intermediate called IL](https://en.wikipedia.org/wiki/Common_Intermediate_Language). It is possible to skip this, but that is something we shall look at a bit later.
     
