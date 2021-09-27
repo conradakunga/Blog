@@ -57,7 +57,7 @@ var newTakeFiveSkipTwo = numbers.Take(2..5);
 This should return
 
 ```plaintext
-3,4,5,6,7
+3,4,5
 ```
 
 You need to be very careful about the order! The order in which you `Take` and `Skip` matters! Consider this expression:
