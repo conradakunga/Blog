@@ -99,7 +99,7 @@ var newLastTenSkipLast5 = numbers.Take(^10..^5);
 
 This is a great addition to the LINQ engine.
 
-The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-09-27%20-%2030%20Days%20Of%20.NET%206%20-%20Day%209%20-%20LINQ%20Improvements%20-%20Index%20%26%20Range%20Support)
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-09-27%20-%2030%20Days%20Of%20.NET%206%20-%20Day%2011%20-%20LINQ%20Improvements%20-%20Index%20%26%20Range%20Support)
 
 # TLDR
 
