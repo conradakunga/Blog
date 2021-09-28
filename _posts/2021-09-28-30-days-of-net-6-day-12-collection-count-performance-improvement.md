@@ -97,7 +97,7 @@ public class Test
     }
 }
 ```
-My results have been largely inconclusive as to whether in fact this method is any better than Enumerable.Count()
+**My results have been largely inconclusive as to whether in fact this method is any better than [Enumerable.Count()](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.count?view=net-6.0)**
 
 My first run got this:
 
@@ -132,7 +132,7 @@ Also if there is an issue with the setup of the tests, you can send a pull reque
 
 # TLDR
 
-There is a [TryGetNonEnumeratedCount](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.trygetnonenumeratedcount?view=net-6.0) method that allows you to cheaply determine the size of a collection.
+There is a [TryGetNonEnumeratedCount](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.trygetnonenumeratedcount?view=net-6.0) method that should allow you to cheaply determine the size of a collection.
 
 **This is Day 12 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
 
