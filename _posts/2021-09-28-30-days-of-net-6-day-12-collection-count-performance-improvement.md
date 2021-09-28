@@ -128,6 +128,14 @@ If indeed in release candidate 2 (or the final release) the performance is consi
 
 The code for the tests is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-09-28%20-%2030%20Days%20Of%20.NET%206%20-%20Day%2012%20-%20Collection%20Count%20Performance%20Improvements). I encourage you to run them for yourself and comment your results.
 
+You run the benchmarks by executing this command in the folder with the code:
+
+```bash
+dotnet run -c Release
+```
+
+You must run it in the `Release` configuration for the metrics to be captured correctly.
+
 Also if there is an issue with the setup of the tests, you can send a pull request.
 
 # TLDR
