@@ -104,11 +104,13 @@ The beauty if this approach is you can correspondingly **remove** a namespace yo
 
 The fourth way is to **turn off this feature completely**, which you would be considering if you are migrating an existing project and don't want to have type clashes.
   
-For this you place the following tag into a property group in your `.csproj`
+For this you place the `ImplicitUsings` tag into a property group in your `.csproj` and specify `disable`
 
+```xml
 <PropertyGroup>
   <ImplicitUsings>disable</ImplicitUsings>
 </PropertyGroup>
+```
 
 Note that for new .NET projects, (created by .NET 6 Release Candidate 1 going forward) [**this feature is enabled by default**](https://docs.microsoft.com/en-us/dotnet/core/compatibility/sdk/6.0/implicit-namespaces). It wasn't even in the preview versions.
 
