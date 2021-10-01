@@ -126,4 +126,6 @@ Implicit `usings` free developers from having to repeatedly specify namespace im
 
 **This is Day 14 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
 
+While you're here's an update to the Day 12 article on [performance improvements of count]({% post_url 2021-09-28-30-days-of-net-6-day-12-collection-count-performance-improvement %}).
+
 Happy hacking!

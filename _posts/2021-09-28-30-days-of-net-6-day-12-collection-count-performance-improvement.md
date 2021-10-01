@@ -6,6 +6,10 @@ categories:
     - C#
     - 30 Days Of .NET 6
 ---
+# UPDATE
+
+**The purpose of this method is not to quickly get the count of a collection - it is to *let the developer know if it possible to cheaply obtain the count*. If it isn't, it will return a status so that the developer can know how to proceed next.**
+
 A fairly common operation is determining the length of a collection, for a myriad of reasons - loop control, buffer space allocation etc.
 
 There is a way to determine this - the [Count()](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.count?view=net-6.0) method of the [Enumerable](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable?view=net-6.0) class.
@@ -16,7 +20,11 @@ If it is an [IColleciton](https://docs.microsoft.com/en-us/dotnet/api/system.col
 
 However there are cases where the runtime will actually have to enumerate the collection to determine the number of items.
 
-It is for this reason that a new method has been introduced to try and quickly establish the count int the fastest way possible - [TryGetNonEnumeratedCount](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.trygetnonenumeratedcount?view=net-6.0)
+It is for this reason that a new method has been introduced to **try** and quickly establish the count. If it is possible, the method returns `true` and returns the count as an `out` variable.
+
+If it is **not** possible the method returns `false` and a **zero** as the count in the out variable.
+
+The method is named [TryGetNonEnumeratedCount](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.trygetnonenumeratedcount?view=net-6.0)
 
 You invoke it as follows:
 
@@ -139,7 +147,9 @@ My final run got this:
 Again, **all** were slower.
 
 # Thoughts
-If indeed in release candidate 2 (or the final release) the performance is consistent, this would be a good addition to the developer toolbelt to cheaply discover the size of a collection.
+This is be a good addition to the developer toolbelt to allow checking if the determination of the size of a collection will be a cheap operation. If it is - the count will be returned.
+
+If it isn't, the developer can decide what to do; including getting the count anyway the hard way.
 
 The code for the tests is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-09-28%20-%2030%20Days%20Of%20.NET%206%20-%20Day%2012%20-%20Collection%20Count%20Performance%20Improvements). I encourage you to run them for yourself and comment your results.
 
@@ -155,7 +165,7 @@ Also if there is an issue with the setup of the tests, you can send a pull reque
 
 # TLDR
 
-There is a [TryGetNonEnumeratedCount](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.trygetnonenumeratedcount?view=net-6.0) method that should allow you to cheaply determine the size of a collection.
+There is a [TryGetNonEnumeratedCount](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.trygetnonenumeratedcount?view=net-6.0) method that should allow you to verify if you can cheaply determine the size of a collection.
 
 **This is Day 12 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
 
