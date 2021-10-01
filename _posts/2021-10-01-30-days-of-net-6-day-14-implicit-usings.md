@@ -8,6 +8,8 @@ categories:
 ---
 When developing an application, you invariably will need to use logic or functionality encapsulated elsewhere.
 
+This could either be another library (or DLL) or sourced from a [Nuget](https://www.nuget.org/) package.
+
 This brings up the question of what should be in the core language and runtime, and what should be added on in the form of packages.
 
 And even if the pieces that you require are present, you have to notify the compiler which ones you are making use of so it knows where to search for the actual functionality.
@@ -24,9 +26,9 @@ And given the project has several controllers, each file essentially has the sam
 
 I have always wondered two things:
 
-First, given this is a web API, **OBVIOUSLY** I will need access to things like Content Responses, JSON, HTML Encoding, Routing, etc. Why do I need to keep referencing them in my files? I have already indicated this is a web application at the point of setting up the project.
+First, given this is a web API, **OBVIOUSLY** I will need access to things like Content Responses, JSON, HTML Encoding, Routing, etc. Why do I need to keep referencing them in my files? I have already indicated this is a web application at the point of setting up the project. This should be enough to signal my intent.
 
-Secondly, there are a whole bunch of things that should be automatically referenced. For exaple the `System` namespace contains things like `DateTime`. If you don't have a `using System;` clause in your code, you won't have access to them!
+Secondly, there are a whole bunch of things that should be automatically referenced. For example the `System` namespace contains fundamental things like the `DateTime` type. If you don't have a `using System;` clause in your code, you won't have access to them!
 
 For many years this problem has been solved at IDE level - when you create a new controller or class or whatever construct, the IDE inserts for you the appropriate `using` statements.
 
@@ -46,9 +48,9 @@ You can either do this directly in the IDE or using `cat` or any such tool.
 
 ![](../images/2021/10/ProjectType.png)
 
-How it has been implemented is a file is generated at compile time and placed in the `obj` folder. The compiler the uses this during the compilation process to stitch everything together.
+How it has been implemented is a file is generated at compile time and placed in the `obj` folder. The compiler then uses this during the compilation process to stitch everything together.
 
-For this particular project I have located the file in the obj folder of my project.
+For this particular project I have located the file in the `obj` folder of my project.
 
 ![](../images/2021/10/GlobalUsingsLocation.png)
 
@@ -56,15 +58,15 @@ If you open this file you should see the following:
 
 ![](../images/2021/10/GlobaUsingsFile.png)
 
-As you can see it is automatically generated.
+As you can see it is automatically generated, so if you edit it manually it will be overwritten when it is regenerated.
 
 The IDE as well can use this file to offer intellisense and other such functionality.
 
 The inevitable question arises: what if you don't want a particular namespace imported?
 
-For example there are two objects called `Task` - one is in [System.Threading ](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task) and the other is in [Microsoft.Build.Utilities](https://docs.microsoft.com/en-us/dotnet/api/microsoft.build.utilities.task?view=msbuild-16-netcore).
+For example there are two commonly used objects called `Task` - one is in [System.Threading ](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task) and the other is in [Microsoft.Build.Utilities](https://docs.microsoft.com/en-us/dotnet/api/microsoft.build.utilities.task?view=msbuild-16-netcore).
 
-How does the compiler know what you mean? You will get a compiler error if you try to compile code that references `Task`.
+How does the compiler know what you mean? You will get a compiler error if you try to compile code that references just `Task`.
 
 There are **four** solutions to this.
 
@@ -74,7 +76,7 @@ The first is in your source code file you `alias` the one you mean:
 using Task = System.Threading.Tasks.Task;
 ```
 
-The problem with this is you must do it in every file you want to use the type.
+The problem with this is you must do it in **every file** you want to use the type.
 
 The second is to add **your own** global using to your file - any file.
 
@@ -84,7 +86,7 @@ A `global using` is not the same as a normal `using`. [You can read more details
 global using System.Threading.Tasks;
 ```
 
-You can add this line to any file in your project.
+You can add this line to any file in your project. A strategy is to create a single file for this purpose that has nothing but these statements.
 
 The third way is to create an `ItemGroup` in your `.csproj` and register your namespace imports there.
 
@@ -120,7 +122,7 @@ This is a welcome change, and would go a long way to reducing boiler plate and a
 
 # TLDR
 
-Implicing usings free developers from having to repeatedly specify namespace imports.
+Implicit `usings` free developers from having to repeatedly specify namespace imports.
 
 **This is Day 14 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
 
