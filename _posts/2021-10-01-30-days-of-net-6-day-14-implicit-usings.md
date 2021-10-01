@@ -96,7 +96,7 @@ The third way is to create an `ItemGroup` in your `.csproj` and register your na
 </ItemGroup>
 ```
 
-The beauty if this approach is you can correspondingly **remove** a namespace you don't want to use:
+The beauty of this approach is you can correspondingly **remove** a namespace you don't want to use:
 
 ```xml
 <ItemGroup>
