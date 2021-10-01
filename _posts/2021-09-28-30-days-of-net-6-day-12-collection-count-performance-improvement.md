@@ -33,6 +33,19 @@ else
 }
 ```
 
+**NOTE: This method will return a count of 0 if it is unable to quickly get a count of the collection.**
+
+You should therefore wrap it around harness like this:
+
+```csharp
+var success = enumerable.TryGetNonEnumeratedCount(out var count);
+if (!success)
+{
+	// do your slow count here
+}
+```
+
+
 I have attempted to verify this with some tests:
 
 ```csharp
