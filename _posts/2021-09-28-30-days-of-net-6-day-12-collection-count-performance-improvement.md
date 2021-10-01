@@ -45,8 +45,11 @@ if (!success)
 }
 ```
 
+For the tests it just so happens that `Enumerable.Range` has been optimized such that this method works for this use case.
 
-I have attempted to verify this with some tests:
+However if you modify the range (perhaps with a `Where` filter, the method returns `false`)
+
+I have attempted to verify the speed of this with some tests:
 
 ```csharp
 public class Test
