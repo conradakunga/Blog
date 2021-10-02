@@ -12,7 +12,7 @@ This is accomplished using the [Take](https://docs.microsoft.com/en-us/dotnet/ap
 
 These work perfectly well, but can be a bit ungainly.
 
-A very welcome improvement is now that LINQ supports [index and range operators](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges) operators.
+A very welcome improvement is now that LINQ supports [range operators](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges) operators.
 
 These allow you to specify very tersely what values you want to pull out of a something.
 
