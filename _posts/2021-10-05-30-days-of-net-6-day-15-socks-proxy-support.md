@@ -24,12 +24,14 @@ This has been changed in .NET 6, which now has full support for SOCKS proxies.
 
 ```csharp
 using System.Net;
+
 // Create a handler for socks connectivity.
 // Note the URI starts with socks5
 var socksHander = new HttpClientHandler
 {
     Proxy = new WebProxy("socks5://127.0.0.1", 9050)
 };
+
 // Wire the handler to a new http client
 var client = new HttpClient(socksHander);
 
@@ -45,7 +47,7 @@ var proxy = new WebProxy("socks5://127.0.0.1", 9050);
 proxy.Credentials = new NetworkCredential("user", "p@ssw0rd");
 ```
 
-If, for whatever reason, you need to use a SOCKS proxy from a Web application, or a Web API application, you can wire it up in your Program.cs as follows:
+If, for whatever reason, you need to use a SOCKS proxy from a Web application, or a Web API application, you can wire it up in your `Program.cs` as follows:
 
 ```csharp
 builder.Services.AddHttpClient("customClient")
@@ -59,6 +61,15 @@ builder.Services.AddHttpClient("customClient")
     };
 });
 ```
+
+In your controllers you then inject a `IHttpClientFactory` via the constructor, and you can get a `HttpClient` configured correctly like this:
+
+```csharp
+// Get a client from injected IHttpClientFactory (_httpClientFactory)
+var client = _httpClientFactory.CreateClient("customClient");
+```
+
+
 
 # Thoughts
 
