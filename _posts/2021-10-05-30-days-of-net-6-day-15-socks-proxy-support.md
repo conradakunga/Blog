@@ -68,8 +68,7 @@ In your controllers you then inject a `IHttpClientFactory` via the constructor, 
 var client = _httpClientFactory.CreateClient("customClient");
 
 // Make a reqest
-var response = await
-client.GetAsync("https://google.com");
+var response = await client.GetAsync("https://google.com");
 ```
 
 # Thoughts
