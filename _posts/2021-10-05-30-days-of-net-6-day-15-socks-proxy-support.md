@@ -36,7 +36,6 @@ var socksHander = new HttpClientHandler
 var client = new HttpClient(socksHander);
 
 // Make a request
-
 var response = await client.GetAsync("https://google.com");
 ```
 
@@ -67,7 +66,10 @@ In your controllers you then inject a `IHttpClientFactory` via the constructor, 
 ```csharp
 // Get a client from injected IHttpClientFactory (_httpClientFactory)
 var client = _httpClientFactory.CreateClient("customClient");
-var response = await client.GetAsync("https://google.com");
+
+// Make a reqest
+var response = await
+client.GetAsync("https://google.com");
 ```
 
 # Thoughts
