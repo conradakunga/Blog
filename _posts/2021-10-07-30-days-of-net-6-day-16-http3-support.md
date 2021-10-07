@@ -17,7 +17,7 @@ For a long time the prevalent version was `HTTP/1` but there has since been a mo
 However there are caveats:
 
 1. For Windows, it is only available on Windows 11 and Windows Server 2022
-2. It is not available in Mac OSX at all
+2. It is not presently available in Mac OSX at all, but support will be added in the future.
 
 On Linux it is supported, but you have to do some extra work to get it running.
 
