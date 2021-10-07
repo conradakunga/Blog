@@ -81,4 +81,6 @@ The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/
 
 .NET 6 now supports establishment of connections through SOCKS proxies.
 
+**This is Day 15 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
+
 Happy hacking!
