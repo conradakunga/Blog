@@ -5,7 +5,6 @@ date: 2021-10-07 09:59:16 +0300
 categories:
     - .NET
     - C#
-    
 ---
 It is again worth repeating that .NET 6, like 5, 3 and 2 before it are [cross platform](https://dotnet.microsoft.com/) and can be used to build applications in Linux and OSX.
 
