@@ -14,5 +14,7 @@ Again - if you're on Windows, remember to choose the correct architecture when d
 
 ![](../images/2021/10/DotNet6RC2.png)
 
+![](../images/2021/10/DotnetRC2Install.png)
+
 Happy hacking!
 
