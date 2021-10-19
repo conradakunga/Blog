@@ -14,6 +14,10 @@ Again - if you're on Windows, remember to choose the correct architecture when d
 
 ![](../images/2021/10/DotNet6RC2.png)
 
+If you're on Linux, [read this post to see the best way to install]({% post_url 2021-10-07-installing-net-6-on-linux %})
+
+Once done you can check it was installed correctly:
+
 ![](../images/2021/10/DotnetRC2Install.png)
 
 Happy hacking!
