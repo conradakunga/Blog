@@ -337,7 +337,7 @@ You can of course make it easier by doing this:
 var dog = new Animal(Name: "Dog", Legs: 4);
 ```
 
-This is better. The trouble with this is there is now way to enforce this in your code.
+This is better. The trouble with this is there is no way to enforce this in your code.
 
 You can work around this by declaring your record like this:
 
