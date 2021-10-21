@@ -19,7 +19,7 @@ public class Person
 }
 ```
 
-If you try to persist this, you will get the following error:
+If you try to create a migration for this, you will get the following error:
 
 ```plaintext
 The property 'Person.Hobbies' could not be mapped because it is of type 'IList<string>', which is not a supported primitive type or a valid entity type. 
@@ -31,9 +31,9 @@ This essentially means that Entity Framework Core does not directly support pers
 
 There are two ways around this problem:
 
-# Create A Wrapper Object
+# 1: Create A Wrapper Object
 
-The first is to create a wrapper class for the `Hobby`, and then change the collection to be of this new type rather than a `string`.
+The first is to create a wrapper class for the `Hobby`, and then change the type of the collection to be of this new type rather than a `string`.
 
 This we do like so:
 
@@ -60,7 +60,7 @@ public class Person
 }
 ```
 
-With this done we can create and persist a `Person` and their `Hobbies` like so:
+With this done we can create our migrations, update the database and then go on create and persist a `Person` and their `Hobbies` like so:
 
 ```csharp
 using (var ctx = new PersonContext())
@@ -92,7 +92,7 @@ The benefit of this approach is you can directly  query the database to answer a
   
 The drawback of this approach is you have to change your object model to create the wrapper classes. Generally, you should think twice about changing your domain model to accommodate persistence concerns.
 
-# Use A Value Converter
+# 2: Use A Value Converter
 
 The second way is to use the `ValueConverter` type. This is a class that allows you to convert objects when reading them from the database or writing them to the database.
 
@@ -109,9 +109,9 @@ public class Animal
 }
 ```
 
-Our design here is to persist the `Foods` property, which is a `List` of `Strings`, as an string. We will use [Json.NET](https://www.newtonsoft.com/json) for this.
+Our design here is to persist the `Foods` property, which is a `List` of `Strings`, as a  String. We will use [Json.NET](https://www.newtonsoft.com/json) for this.
 
-The idea here is to convert the list to a string in `Json` and persist that.
+The idea here is to convert the `List` to a `string` in Json and persist that.
 
 To achieve this we override the `OnModelCreating` event of our `DBContext` and configure it to attach the `ValueConverter`.
 
@@ -152,7 +152,7 @@ The benefit of this technique is you do not need to change your object model to 
 
 The drawback is you cannot easily directly query the database without putting some extra effort to manipulate the `Foods` column.
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-10-21%20-%20EF%20Persist%20Primitive%20Collection)
 
 Happy hacking!
 
