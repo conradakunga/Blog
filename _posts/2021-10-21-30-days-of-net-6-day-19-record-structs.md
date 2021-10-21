@@ -6,7 +6,7 @@ categories:
     - .NET
     - C#
 ---
-Today's item, record struts, is a bit more elaborate to explain, but I shall do my best.
+Today's item, `record structs`, is a bit more elaborate to explain, but I shall do my best.
 
 If you want to combine multiple types into a more complex type there are several ways to do this in .NET:
 
