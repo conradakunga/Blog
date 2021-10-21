@@ -152,6 +152,10 @@ The benefit of this technique is you do not need to change your object model to 
 
 The drawback is you cannot easily directly query the database without putting some extra effort to manipulate the `Foods` column.
 
+If you run the app, you should see the following:
+
+![](../images/2021/10/EFCorePrimitivesResults.png)
+
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-10-21%20-%20EF%20Persist%20Primitive%20Collection)
 
 Happy hacking!
