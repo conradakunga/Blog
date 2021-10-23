@@ -109,11 +109,15 @@ public class Animal
 }
 ```
 
-Our design here is to persist the `Foods` property, which is a `List` of `Strings`, as a  String. We will use [Json.NET](https://www.newtonsoft.com/json) for this.
+Our design here is to persist the `Foods` property, which is a `List` of `Strings`, as a  `String`. We will use [Json.NET](https://www.newtonsoft.com/json) for this.
 
 The idea here is to convert the `List` to a `string` in Json and persist that.
 
 To achieve this we override the `OnModelCreating` event of our `DBContext` and configure it to attach the `ValueConverter`.
+
+In our `ValueConverter` we tell it two things:
+1. What (and how) to **persist** to storage
+2. What (and how) to **load** from storage
 
 ```csharp
 protected override void OnModelCreating(ModelBuilder modelBuilder)
