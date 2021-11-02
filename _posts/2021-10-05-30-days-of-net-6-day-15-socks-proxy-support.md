@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 15 - SOCKS Proxy Support
 date: 2021-10-05 11:24:56 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 Occasionally you will need to connect to the internet, or to another network for that matter, through a proxy.

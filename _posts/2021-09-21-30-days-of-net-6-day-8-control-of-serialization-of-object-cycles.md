@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 8 - Control Of Serialization Of Object Cycles
 date: 2021-09-21 09:13:14 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 When dealing with complex object graphs in memory, it is common to have objects referencing themselves.

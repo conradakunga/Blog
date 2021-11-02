@@ -5,6 +5,7 @@ date: 2021-10-21 10:03:40 +0300
 categories:
     - .NET
     - C#
+    - 30 Days Of .NET 6
 ---
 Today's item, `record structs`, is a bit more elaborate to explain, but I shall do my best.
 

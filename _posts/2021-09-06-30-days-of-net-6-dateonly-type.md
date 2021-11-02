@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - DateOnly Type
 date: 2021-09-06 09:14:19 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 In .NET when manipulating dates and times, you generally use the [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-5.0) type for such purposes.

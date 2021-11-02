@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 14 - Implicit Usings
 date: 2021-10-01 16:06:06 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 When developing an application, you invariably will need to use logic or functionality encapsulated elsewhere.

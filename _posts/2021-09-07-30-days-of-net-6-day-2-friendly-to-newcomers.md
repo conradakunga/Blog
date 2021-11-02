@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 2 - Friendly To Newcomers
 date: 2021-09-07 09:22:38 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 One of the challenges of developing and maintaining a programming languages and its accompanying tooling is you have to be welcoming to several demographics:

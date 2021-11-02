@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 6 - Priority Queue
 date: 2021-09-13 12:31:58 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 We are all familiar with the [Queue](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1?view=net-5.0) class.

@@ -5,6 +5,7 @@ date: 2021-11-01 21:02:50 +0300
 categories:
     - .NET
     - C#
+    - 30 Days Of .NET 6
 ---
 A fairly common task in day to day programming is combining strings.
 

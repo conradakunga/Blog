@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 4 - LINQ Improvements - MaxBy & MinBy
 date: 2021-09-09 11:40:32 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 One of the most powerful features introduced in the .NET Framework, all the way back in 2008 in .NET 3.5 was [Language Integrated Query, better known as LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/#:~:text=Language%2DIntegrated%20Query%20(LINQ)%20is%20the%20name%20for%20a,directly%20into%20the%20C%23%20language.&text=The%20LINQ%20family%20of%20technologies,XML%20(LINQ%20to%20XML).)

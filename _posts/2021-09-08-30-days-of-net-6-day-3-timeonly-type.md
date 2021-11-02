@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 3 - TimeOnly Type
 date: 2021-09-08 08:52:17 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 [We looked at the new DateOnly Type]({% post_url 2021-09-06-30-days-of-net-6-dateonly-type %}) on Day 1 of this series, and it should come as no surprise that there is a companion [TimeOnly](https://docs.microsoft.com/en-us/dotnet/api/system.timeonly?view=net-6.0) type that has been introduced to deal with only the time component of a [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0).

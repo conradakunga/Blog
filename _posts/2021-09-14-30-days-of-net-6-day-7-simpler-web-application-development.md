@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 7 - Simpler Web Application Development
 date: 2021-09-14 09:29:53 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 The default template for a web application in .NET 5 and previous versions looks like it was done with seasoned, disciplined developers in mind. This is not a bad thing. The issue, just like with the [previous console templates I've talked about earlier]({% post_url 2021-09-07-30-days-of-net-6-day-2-friendly-to-newcomers %}), is it is not welcoming to those new to the platform.

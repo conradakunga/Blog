@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 13 - LINQ Improvements - Chunk
 date: 2021-09-29 09:48:17 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 One of the cornerstones of modern computing is that there is much less emphasis on raw power and more on distributing work.

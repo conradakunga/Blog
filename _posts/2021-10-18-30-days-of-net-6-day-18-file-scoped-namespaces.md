@@ -5,6 +5,7 @@ date: 2021-10-18 11:22:46 +0300
 categories:
     - .NET
     - C#
+    - 30 Days Of .NET 6
 ---
 As your codebase grows, it becomes important to organize your code. This is done using a concept called namespaces.
 

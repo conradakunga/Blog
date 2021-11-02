@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 16 - HTTP/3 Support
 date: 2021-10-07 13:56:02 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 The [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is the protocol at the heart of the internet. 

@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 11 - LINQ Improvements - Range Support
 date: 2021-09-24 13:54:41 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 One of the most powerful features of LINQ is the ability to select a range of elements from a collection.

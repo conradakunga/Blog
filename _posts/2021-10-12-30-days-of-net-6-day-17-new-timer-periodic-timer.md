@@ -5,6 +5,7 @@ date: 2021-10-12 12:12:12 +0300
 categories:
     - .NET
     - C#
+    - 30 Days Of .NET 6
 ---
 If there is one thing that .NET has plenty of it is **timers**.
 

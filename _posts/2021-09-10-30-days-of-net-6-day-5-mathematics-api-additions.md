@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 5 - Mathematics API Additions
 date: 2021-09-10 14:30:40 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 It may surprise you to learn that even the [Math](https://docs.microsoft.com/en-us/dotnet/api/system.math?view=net-5.0) API, which generally does not change all that much, has some additions for those who do high performance trigonometric functions.

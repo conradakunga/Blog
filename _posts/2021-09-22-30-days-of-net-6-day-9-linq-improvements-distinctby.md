@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 9 - LINQ Improvements - DistinctBy
 date: 2021-09-22 14:41:51 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 Another improvement that has been added to the LINQ engine is the [DistinctBy](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinctby?view=net-6.0) method.

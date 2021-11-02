@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 12 - Collection Count Performance Improvement
 date: 2021-09-28 09:52:47 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 # UPDATE

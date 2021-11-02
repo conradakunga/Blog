@@ -4,6 +4,7 @@ title: 30 Days Of .NET 6 - Day 10 - SDK & Runtime Version Checking
 date: 2021-09-23 09:13:21 +0300
 categories:
     - C#
+    - .NET
     - 30 Days Of .NET 6
 ---
 Software is always a moving target - adding features, fixing bugs or even removing features. The same challenges fall upon the tools used to develop software.

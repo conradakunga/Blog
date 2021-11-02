@@ -5,6 +5,7 @@ date: 2021-10-27 09:33:40 +0300
 categories:
     - .NET
     - C#
+    - 30 Days Of .NET 6
 ---
 Today we look at what might be a niche feature, but nevertheless in some use cases might actually be quite useful.
 
