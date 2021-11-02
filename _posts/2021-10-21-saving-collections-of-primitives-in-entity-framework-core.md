@@ -60,7 +60,7 @@ public class Person
 }
 ```
 
-With this done we can create our migrations, update the database and then go on create and persist a `Person` and their `Hobbies` like so:
+With this done we can create our migrations, update the database and then go on to create and persist a `Person` and their `Hobbies` like so:
 
 ```csharp
 using (var ctx = new PersonContext())

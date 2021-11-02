@@ -152,4 +152,6 @@ The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/
 
 The [JsonPropertyOrder](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonpropertyorderattribute?view=net-6.0) attribute allows you to control the order of the serialization of object properties.
 
+Happy hacking!
+
 **This is Day 20 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
