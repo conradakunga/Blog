@@ -90,7 +90,9 @@ This technique creates two tables, and a foreign key to relate the two.
 
 The benefit of this approach is you can directly  query the database to answer any questions without going through the domain.
   
-The drawback of this approach is you have to change your object model to create the wrapper classes. Generally, you should think twice about changing your domain model to accommodate persistence concerns.
+The drawback of this approach is you have to change your object model to create the wrapper classes.
+
+Generally, you should think twice about changing your domain model to accommodate persistence concerns.
 
 # 2: Use A Value Converter
 
