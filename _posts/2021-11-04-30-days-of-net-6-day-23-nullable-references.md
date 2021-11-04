@@ -91,6 +91,8 @@ You could handle this by using the new overload for `FirstOrDefault` where you s
 string notNullName = names.FirstOrDefault(n => n.Length > 20, "");
 ```
 
+If we do this, there is **no way** anything other than a `string` is returned. So the return is never `null`.
+
 To turn **OFF** this feature entirely, which is ON by default, change `Nullable` to `disable`. With this the project will behave like it was prior to .NET 6.
 
 # Thoughts
