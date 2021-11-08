@@ -125,7 +125,9 @@ Assuming we call this method with a collection of 100,000 numbers - what would h
 
 Given there are only so many sockets that can be opened by a `HttpClient`, if we invoke that method 100,000 times in parallel we will quickly run out of sockets and get a [SocketException](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets.socketexception?view=net-6.0) error.
 
-And even if, hypothetically speaking we were able to make as many socket connections as required, any upstream server receiving 100,000 simultaneous requests from the same IP at the same time would probably consider it a [DOS attack](https://en.wikipedia.org/wiki/Denial-of-service_attack)
+And even if, hypothetically speaking we were able to make as many socket connections as required, any upstream server receiving 100,000 simultaneous requests from the same IP at the same time would probably consider it a [DOS attack](https://en.wikipedia.org/wiki/Denial-of-service_attack).
+
+In other words, it is a very common problem to have to control the parallelism on an asynchronous operation.
 
 To avoid this problem, we would need to batch our requests, and then wait for each batch to successfully complete before moving on to the next batch.
 
