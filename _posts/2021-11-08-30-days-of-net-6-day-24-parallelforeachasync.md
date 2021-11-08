@@ -34,6 +34,7 @@ var numbers = Enumerable.Range(0, 15);
 foreach (var number in numbers)
 {
     await DoSomething(number);
+    
     Log.Information($"Completed {number}");
 }
 ```
