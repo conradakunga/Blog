@@ -5,6 +5,7 @@ date: 2021-06-11 10:57:59 +0300
 categories:
     - C#
     - TimeSpan
+    - Tips
 ---
 The [TimeSpan](https://docs.microsoft.com/en-us/dotnet/api/system.timespan?view=net-5.0) object allows for the representations of a point in time (the [TimeOfDay](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.timeofday?view=net-5.0) component of a [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-5.0)).
 

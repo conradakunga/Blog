@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SQL Server User Defined Table Types - Column Order Matters
+title: Tip - SQL Server User Defined Table Types - Column Order Matters
 date: 2021-11-24 16:52:12 +0300
 categories:
     - SQL Server

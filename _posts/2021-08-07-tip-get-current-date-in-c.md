@@ -4,6 +4,7 @@ title: Tip - Get Current Date In C#
 date: 2021-08-07 16:42:48 +0300
 categories:
     - C#
+    - Tips
 ---
 Frequently in the course of your code, you will need to get the current date.
 
