@@ -110,6 +110,6 @@ The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/
 
 [Extended Property](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-10.0/extended-property-patterns) Patterns make it easier to write filtering expressions on complex objects.
 
-**This is Day 27 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the upcoming release of .NET 6.**
+**This is Day 27 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the new release of .NET 6.**
 
 Happy hacking!
