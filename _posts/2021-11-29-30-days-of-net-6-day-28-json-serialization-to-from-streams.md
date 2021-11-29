@@ -127,7 +127,7 @@ The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/
 
 # TLDR
 
-There are new overloads to support JSON serialization and de-serialization to and from  `stream`.
+There are new overloads to support JSON serialization and de-serialization to and from  `stream` objects.
 
 **This is Day 28 of the 30 Days Of .NET 6 where every day I will attempt to explain one new / improved thing in the new release of .NET 6.**
 
