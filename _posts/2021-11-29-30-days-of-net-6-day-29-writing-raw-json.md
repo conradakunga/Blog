@@ -156,7 +156,7 @@ The `skipInputValidation` parameter is required to be set to **true** (default i
 
 ![](../images/2021/12/InvalidJson.png)
 
-This is because a number with a prefix of 0 is not, in fact, valid Json under RC8259.
+This is because a number with a prefix of 0 is not, in fact, valid Json under [RC8259](https://datatracker.ietf.org/doc/html/rfc8259).
 
 We therefore need to tell the writer to **skip** Json validation.
 
