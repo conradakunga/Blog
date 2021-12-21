@@ -64,7 +64,7 @@ And here we go:
 
 Mystery solved.
 
-But going back to our original business - perhaps we want to be explicit to the users that we do not accept null parameters.
+But going back to our original business - perhaps we want to be explicit to the users that we do not accept `null` parameters.
 
 So we would update our method like this:
 
