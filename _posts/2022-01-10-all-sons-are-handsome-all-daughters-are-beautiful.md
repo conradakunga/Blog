@@ -26,6 +26,8 @@ Here's the thing - this stuff does not do **anything** to move the needle for pr
 1. These metrics are **completely subjective**. Almost everyone will feel their software is all these things, even if the reality on the ground is different. Because your sons are handsome and your daughters are beautiful
 2. In the larger scheme of things, this stuff **doesn't matter** in terms of moving the needle for the decision makers.
 
+![](../images/2022/01/DontCare.png)
+
 When procuring enterprise software, these are the stakeholders who will make the call, arranged by their influence (where applicable)
 
 * Board
