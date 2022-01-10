@@ -1,6 +1,6 @@
 ---
 layout: post
-title: All Sons Are Handsome; All Daughters Are Beautiful
+title: All Sons Are Handsome; All Daughters Are Beautiful - Pitching Enterprise Software
 date: 2022-01-10 10:15:57 +0300
 categories:
     - The Business Of Software
