@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coding Is Easy - Any Monkey Can Do It. Software However Is Very Hard
+title: Coding Is Easy - Any Monkey Can Do It. Software, However Is Very Hard
 date: 2022-01-14 13:06:45 +0300
 categories:
     - The Business Of Software
@@ -13,7 +13,9 @@ There is a famous question those in the software industry ask themselves:
 
 Let me illustrate with an example.
 
-Let us say you are a heavy [Excel](https://www.microsoft.com/en-us/microsoft-365/excel) user. Let us then assume, for whatever reason, Excel does NOT have a function that returns the current date. 
+Let us say you are a heavy [Excel](https://www.microsoft.com/en-us/microsoft-365/excel) user. Let us then assume, for whatever reason, Excel does NOT have a function that returns the current date.
+
+*I'm using Excel here because almost everyone understands Excel formulas.*
 
 So you do your research and find out that in fact, there isn't such a function and Google is full of desperate Excel users looking for a solution.
 
@@ -462,3 +464,7 @@ For today just remember all this grief I have outlined came from a simple questi
 > I want to sell this very simple software that computes the date for Excel.
 > 
 > How hard can it be?
+
+**Writing code is easy.**
+
+**Building software is hard.**
