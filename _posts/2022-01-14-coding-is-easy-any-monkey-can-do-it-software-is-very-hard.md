@@ -453,7 +453,7 @@ But that is a discussion for another day.
 
 In the course of your operations in addition to the bugs and security flaws in your own software, you are also at the mercy of the bugs and security flaws of the [other](https://www.advancedinstaller.com/release-19.0.html#enhancements) [systems](https://stripe.com/blog/changelog) and [libraries](https://www.add-in-express.com/news-latest.php) that you use.
 
-You have to keep on top of these because much as they are not your problem, they are also your problem because your software may introduce security and other risks to your customers.
+You have to keep on top of these because much as they are not your problem, **they are also your problem** because your software may introduce security and other risks to your customers.
 
 That too, is a discussion for another day.
 
