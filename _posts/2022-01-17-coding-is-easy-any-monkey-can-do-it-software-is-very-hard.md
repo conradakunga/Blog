@@ -424,7 +424,7 @@ One one hand, this is a compliment as your software is good enough to attract pi
 
 But the other, more salient fact is that support is a cost. Someone has to read your email / handle your call / handle your chat, triage the problem, find solutions and communicate them.
 
-This costs money.
+**This costs money.**
 
 Also, these clients who have not paid are consuming scarce resources (support staff time and attention) at the expense of paying customers. Thus their satisfaction decreases.
 
