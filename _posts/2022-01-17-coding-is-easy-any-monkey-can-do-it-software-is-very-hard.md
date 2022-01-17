@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Coding Is Easy - Any Monkey Can Do It. Software, However Is Very Hard
-date: 2022-01-14 13:06:45 +0300
+date: 2022-01-17 09:06:45 +0300
 categories:
     - The Business Of Software
 ---
