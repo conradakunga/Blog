@@ -5,7 +5,7 @@ date: 2022-02-10 13:28:25 +0300
 categories:
     - The Business Of Software
 ---
-Remember last time when I said coding is easy? 
+Remember [last time when I said coding is easy?]({% post_url 2022-01-17-coding-is-easy-any-monkey-can-do-it-software-is-very-hard %})
 
 **Well, I lied.**
 
