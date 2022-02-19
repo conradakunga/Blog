@@ -5,7 +5,9 @@ date: 2022-02-10 13:29:05 +0300
 categories:
 published: false
 ---
-So let us take a simple example of some code that takes a list of numbers, runs a filter to retrieve the odd numbers, and then squares those.
+The problem is simple.
+
+We have a list of numbers. From that list we want to get only the even numbers, and then square those.
 
 *This example is contrived to make it simpler to explain.*
 
@@ -28,6 +30,10 @@ This is better - the one line is split into three so the flow can be logically u
 The next improvement that can be made is to simplify this:
 
 ![](../images/2022/01/Complexity.png)
+
+You have to parse the code visually to understand what exactly it is doing. This is a bottleneck to the understanding and maintainability of the code.
+
+We want to optimize for **understanding** of the code.
 
 This can be done by refactoring the logic into functions:
 

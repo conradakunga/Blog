@@ -97,6 +97,8 @@ public class NullToEmptyStringConverter : JsonConverter<string>
     {
     	if (value == null)
             writer.WriteStringValue("");
+        else 
+            writer.WriteStringValue(value);
     }
 }
 ```
