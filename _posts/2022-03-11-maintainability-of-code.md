@@ -120,7 +120,7 @@ The contract will look like this:
 ```csharp
 interface IProcess
 {
-	public IEnumerable<int> Process();
+    public IEnumerable<int> Process();
 }
 ```
 
@@ -129,29 +129,29 @@ And then we can refactor our class to give it a better, clearer name; and indica
 ```csharp
 public class OddItemProcessor : IProcess
 {
-	private IEnumerable<int> _input;
-	public OddItemProcessor(IEnumerable<int> input)
-	{
-		_input = input;
-	}
-
-	public IEnumerable<int> Process()
-	{
-		// Filter the items
-		var filteredItems = _input.Where(i => IsOdd(i));
-		// Square the items
-		var processedItems = filteredItems.Select(i => Square(i));
-		// return
-		return processedItems;
-	}
-	bool IsOdd(int value)
-	{
-		return value % 2 != 0;
-	}
-	int Square(int value)
-	{
-		return value * 2;
-	}
+    private IEnumerable<int> _input;
+    public OddItemProcessor(IEnumerable<int> input)
+    {
+    	_input = input;
+    }
+    
+    public IEnumerable<int> Process()
+    {
+    	// Filter the items
+    	var filteredItems = _input.Where(i => IsOdd(i));
+    	// Square the items
+    	var processedItems = filteredItems.Select(i => Square(i));
+    	// return
+    	return processedItems;
+    }
+    bool IsOdd(int value)
+    {
+    	return value % 2 != 0;
+    }
+    int Square(int value)
+    {
+    	return value * 2;
+    }
 }
 ```
 
@@ -173,33 +173,33 @@ Should we need to add a different processor, say an `EvenItemProcessor`, that wo
 ```csharp
 public class EvenItemProcessor : IProcess
 {
-	private IEnumerable<int> _input;
-	public EvenItemProcessor(IEnumerable<int> input)
-	{
-		_input = input;
-	}
-
-	public IEnumerable<int> Process()
-	{
-		// Filter the items
-		var filteredItems = _input.Where(i => IsEven(i));
-		// Square the items
-		var processedItems = filteredItems.Select(i => Square(i));
-		// return
-		return processedItems;
-	}
-	bool IsOdd(int value)
-	{
-		return value % 2 != 0;
-	}
-	bool IsEven(int value)
-	{
-		return !IsOdd(value);
-	}
-	int Square(int value)
-	{
-		return value * 2;
-	}
+    private IEnumerable<int> _input;
+    public EvenItemProcessor(IEnumerable<int> input)
+    {
+    	_input = input;
+    }
+    
+    public IEnumerable<int> Process()
+    {
+    	// Filter the items
+    	var filteredItems = _input.Where(i => IsEven(i));
+    	// Square the items
+    	var processedItems = filteredItems.Select(i => Square(i));
+    	// return
+    	return processedItems;
+    }
+    bool IsOdd(int value)
+    {
+    	return value % 2 != 0;
+    }
+    bool IsEven(int value)
+    {
+    	return !IsOdd(value);
+    }
+    int Square(int value)
+    {
+    	return value * 2;
+    }
 }
 ```
 
