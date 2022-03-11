@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using 'TRUE' and 'FALSE' For Bit Types In SQL Server
-date: 2022-03-11 08:55:51 +0300
+date: 2022-03-12 08:55:51 +0300
 categories:
     - SQL
     - SQL Server
@@ -41,6 +41,8 @@ SELECT
 ```
 
 The strings have to be the values '`True`' or '`False`' (not case sensitive). Any other values will give you an error.
+
+I think this is easier to read than 0 or 1.
 
 Running the script will return the following:
 
