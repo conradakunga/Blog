@@ -140,7 +140,7 @@ Version 6 came out 30 minutes later.
 
 "What?!"
 
-"There are also a bunch of other calendars used besides those two. [Hebrew](https://en.wikipedia.org/wiki/Hebrew_calendar), for example. And The [Egyptican](https://en.wikipedia.org/wiki/Egyptian_calendar). And some others I forget. You'll have to research them."
+"There are also a bunch of other calendars used besides those two. [Hebrew](https://en.wikipedia.org/wiki/Hebrew_calendar), for example. And The [Egypticn](https://en.wikipedia.org/wiki/Egyptian_calendar). And some others I forget. You'll have to research them."
 
 "I thought birthdays was a very simple concept! How hard can it be?"
 
