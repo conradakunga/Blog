@@ -10,7 +10,7 @@ SQL Server, as you are no doubt aware, has a type that can be used to represent 
 
 This type is called [BIT](https://docs.microsoft.com/en-us/sql/t-sql/data-types/bit-transact-sql?view=sql-server-ver15)
 
-`true` is represented as 1, and `false` as 0.
+`true` is represented as `1`, and `false` as `0`.
 
 Like so:
 
@@ -42,7 +42,7 @@ SELECT
 
 The strings have to be the values '`True`' or '`False`' (not case sensitive). Any other values will give you an error.
 
-I think this is easier to read than 0 or 1.
+I think this is easier to read than `0` or `1`.
 
 Running the script will return the following:
 
