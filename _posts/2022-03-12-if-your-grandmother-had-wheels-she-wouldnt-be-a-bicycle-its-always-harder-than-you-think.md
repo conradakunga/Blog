@@ -136,11 +136,11 @@ Version 6 came out 30 minutes later.
 
 "Ethiopia? Why?"
 
-"This would be a good time to tell you that Ethipia does not use the [Gregorian Calendar](https://en.wikipedia.org/wiki/Gregorian_calendar), but [has its own](https://en.wikipedia.org/wiki/Ethiopian_calendar) - a year has 12 months of 30 days and then a 13th month that has either 5 or 6 days, depending on if it is a leap year."
+"This would be a good time to tell you that Ethiopia does not use the [Gregorian Calendar](https://en.wikipedia.org/wiki/Gregorian_calendar), but [has its own](https://en.wikipedia.org/wiki/Ethiopian_calendar) - a year has 12 months of 30 days and then a 13th month that has either 5 or 6 days, depending on if it is a leap year."
 
 "What?!"
 
-"There are also a bunch of other calendars used besides those two. [Hebrew](https://en.wikipedia.org/wiki/Hebrew_calendar), for example. And The [Egypticn](https://en.wikipedia.org/wiki/Egyptian_calendar). And some others I forget. You'll have to research them."
+"There are also a bunch of other calendars used besides those two. [Hebrew](https://en.wikipedia.org/wiki/Hebrew_calendar), for example. And The [Egyptian](https://en.wikipedia.org/wiki/Egyptian_calendar). And some others I forget. You'll have to research them."
 
 "I thought birthdays was a very simple concept! How hard can it be?"
 
@@ -201,6 +201,10 @@ Version 8 came out 2 hours later.
 "Some countries can decide that they will stop - or start - observing [daylight savings time](https://www.timeanddate.com/time/dst/). Which will throw off your server time calculations."
 
 "Oh no!"
+
+"Alas. Some countries can even decide to observe differnet time zones, either changing the ones they currently observe or harmonizing those that they do."
+
+"Wow!"
 
 "Such is life! Now going back to your template - you will need to allow users to specify their own messages, in their own language. Can't assume everyone speaks English!"
 
