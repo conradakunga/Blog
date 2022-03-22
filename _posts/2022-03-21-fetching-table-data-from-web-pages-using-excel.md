@@ -39,7 +39,7 @@ From the prompt you get, paste (or type in) the URL to the page that has the tab
 
 ![](../images/2022/03/4-WebURL.png)
 
-You should get a prompt like this that lists all the things Excel think are potential data sources in the URL.
+You should get a prompt like this that lists all the things Excel thinks are potential data sources in the URL.
 
 ![](../images/2022/03/5-DataSources.png)
 
