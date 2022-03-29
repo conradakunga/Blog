@@ -199,3 +199,23 @@ char GradeBySwitchV6(int grade) =>
         _ => 'F'
     };
 ```
+
+If you are wondering at this terse, almost cryptic syntax - this is borrowed heavily from functional programming paradigm.
+
+The equivalent program in F# would look like this:
+
+```fsharp
+let grade(x) = match x with
+    | x when x > 100 -> 'X'
+    | x when x >= 80 -> 'A'
+    | x when x >= 80 ->'B'
+    | x when x >= 80 ->'C'
+    | x when x >= 80 ->'D'
+    | x when x >= 80 ->'E'
+    | x when x >= 80 ->'F'
+    | _-> 'X'
+```
+
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2022-03-29%20-%20Clearer%20Code%20With%20Swtich%20Expressions%20In%20C%23).
+
+Happy hacking!
