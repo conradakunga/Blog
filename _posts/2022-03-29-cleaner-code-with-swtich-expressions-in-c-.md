@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Cleaner Code With Swtich Expressions In C#
-date: 2022-03-30 19:58:46 +0300
+date: 2022-03-29 14:30:46 +0300
 categories:
     - C#
     - Algorithms
 ---
-Everyone who remembers their path towards becoming a software engineer will remember the problem of writing a program that given a mark, allocates a grade according to a table like this:
+Everyone who remembers their path towards becoming a programmer, either as a hobbyist or a career software engineer, will remember the problem of writing this program - given a mark, allocates a grade according to a table like this:
 
 | Marks | Grade |
 |:-------:|:-------:|
@@ -121,12 +121,12 @@ Now these look almost identical:
 
 ![](../images/2022/03/Diff.png)
 
-The is and and are not just syntactic sugar - they can also help the compiler find errors in your code.
+The `is` and `and` are not just syntactic sugar - they can also help the compiler find errors in your code.
 
 So if in the IDE I introduce the following bug:
 
 ```csharp
-case int x when x is >= 40 and < 50:
+case int x when x is >= 40 and < 40:
     return 'E';
 ```
 
@@ -134,9 +134,9 @@ Note how the compiler notifies you after it attempts to evaluate your conditions
 
 ![](../images/2022/03/CompilerHelp.png)
 
-It doesn't do this on the first version.
+The compiler does not attempt to validate the previous version of the function.
 
-C# 8 introduced switch expressions to simplify code like this still further:
+C# 8 introduced [switch expressions](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression) to simplify code like this still further:
 
 ```csharp
 char GradeBySwitchV3(int grade) =>
