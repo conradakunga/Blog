@@ -208,11 +208,11 @@ The equivalent program in F# would look like this:
 let grade(x) = match x with
     | x when x > 100 -> 'X'
     | x when x >= 80 -> 'A'
-    | x when x >= 80 ->'B'
-    | x when x >= 80 ->'C'
-    | x when x >= 80 ->'D'
-    | x when x >= 80 ->'E'
-    | x when x >= 80 ->'F'
+    | x when x >= 70 ->'B'
+    | x when x >= 60 ->'C'
+    | x when x >= 50 ->'D'
+    | x when x >= 40 ->'E'
+    | x when x < 40 ->'F'
     | _-> 'X'
 ```
 
