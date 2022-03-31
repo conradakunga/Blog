@@ -8,7 +8,7 @@ categories:
 ---
 Did you know that the Nuget client (`nuget.exe`) is capable of updating itself?
 
-Run the following command in an administrative PowerShell (or Command) prompt:
+Run the following command in an **administrative** PowerShell (or Command) prompt:
 
 ```powershell
 nuget update -self
