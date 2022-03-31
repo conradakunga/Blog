@@ -6,7 +6,7 @@ categories:
     - C#
     - Algorithms
 ---
-Everyone who remembers their path towards becoming a programmer, either as a hobbyist or a career software engineer, will remember the problem of writing this program - given a mark, allocates a grade according to a table like this:
+Everyone who remembers their path towards becoming a programmer, either as a hobbyist or a career software engineer, will remember the problem of writing this program - given a mark, allocate a grade according to a table like this:
 
 | Marks | Grade |
 |:-------:|:-------:|
@@ -151,6 +151,8 @@ char GradeBySwitchV3(int grade) =>
          _ => 'X'
      };
 ```
+
+Of interest is this part -  `_ => 'X'`. Here `_ =>` is the equivalent of `default` in a traditional switch statement - it matches **anything else**.
 
 As from the if example above, this can be simplified further:
 
