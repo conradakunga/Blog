@@ -108,7 +108,7 @@ Which begs the question of why are there two classes essentially doing the same 
 
 `HttpUtility` is in the `System.Web` namespace, which you will have to include from  `System.Web.HttpUtility.dll`. This comes for free if you are building a web or an API application. If you are building a console, class library or desktop application, you will need to explicitly add it to you project references.
 
-`WebUtility` is in the `System.Net` namespace, which is in `System.Runtime.dll` so you don't need to include any additional DLLs into your project if it is a console, desktop or class library.
+`WebUtility` is in the `System.Net` namespace, which is in `System.Runtime.dll` so you don't need to include any additional DLLs into your project regardless of type.
 
 In fact the documentation for `HttpUtility` explicitly informs you of the same:
 
