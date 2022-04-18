@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What Amazon AWS Means For ICT In Kenya
-date: 2022-04-14 17:10:27 +0300
+date: 2022-04-18 17:10:27 +0300
 categories:
     - Business Of Software
     - Amazon
@@ -11,6 +11,8 @@ categories:
 This is HUGE news for the ICT industry, and I for one cannot wait to see just how much Amazon will change the game.
 
 [Microsoft](https://www.microsoft.com/en-us/) and [Google](https://about.google/?utm_source=google-KE&utm_medium=referral&utm_campaign=hp-footer&fg=1), who set up in Nairobi eons ago seem to have rested on their laurels, became complacent and I fully expect Amazon to **EAT THEIR LUNCH** in several ways.
+
+![](../images/2022/04/cloud.png)
 
 # Local Traffic
 
@@ -57,7 +59,7 @@ By virtue of offering [IAAS](https://en.wikipedia.org/wiki/Infrastructure_as_a_s
 
 It is entirely possible to have a virtualized server network completely in the cloud without owning a single actual server. The same with clients - you can virtualize and standardize workstations and just use tablets or low powered laptops to access these powerful virtualized workstations.
 
-As traffic is cheap and fast, a whole range of possibilities become available.
+As traffic is cheap and fast, a whole range of possibilities become available, including private and hybrid clouds.
 
 # Improved Content Delivery
 
