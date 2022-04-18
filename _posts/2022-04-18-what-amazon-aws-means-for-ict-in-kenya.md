@@ -1,10 +1,12 @@
 ---
 layout: post
 title: What Amazon AWS Means For ICT In Kenya
-date: 2022-04-18 17:10:27 +0300
+date: 2022-04-18 16:10:27 +0300
 categories:
     - Business Of Software
     - Amazon
+    - Azure
+    - Google
 ---
 [Amazon AWS](https://aws.amazon.com/) announced the other day that they were setting up an AWS zone in Nairobi.
 
@@ -14,13 +16,13 @@ This is HUGE news for the ICT industry, and I for one cannot wait to see just ho
 
 ![](../images/2022/04/cloud.png)
 
+I expect Amazon to constitute a local office and set a team on the ground to take advantage of the following:
+
 # Local Traffic
 
-By virtue of setting up in Kenya, I would expect Amazon to peer with other providers of connectivity in Kenya, resulting in cheap, fast bandwidth.
+By virtue of setting up in Kenya, I would expect Amazon to peer with other providers of connectivity in Kenya, resulting in **cheap, fast bandwidth**.
 
 This means that for all intents and purposes applications deployed in the Kenya AWS zone will be **local traffic**.
-
-I expect Amazon to constitute a local office and set a team on the ground to do the following:
 
 1. Convince a multitude of industries with legacy, new and hybrid systems to take up the very low hanging fruit of doing **backups** to Amazon. They can literally knock on every door of a corporate and close backup solutions almost immediately.
 2. Convince a multitude of industries, again with legacy  new and hybrid systems to take up AWS for **redundancy & high availability**. Again this is a low hanging fruit - you can't argue with having your current environment virtualized (legacy) or deployed redundantly (either as containers or as PAAS (platform as a service) or SAAS (software as a service)).
@@ -32,15 +34,17 @@ There are a lot of truths, half truths, whole lies around data sovereignty laws.
 
 There is no reason to insist a bank or other such institution keeps its customer data locally but then not say a word when the same bank uses globally hosted Google / Office 365 for email.
 
-Those same email inboxes in servers spread all over the world are full of attachments ranging from statements to scans of IDs, passports, PIN numbers, application forms, birth certificates, etc.
+Those same email inboxes in servers spread **all over the world** are full of attachments ranging from statements to scans of IDs, passports, PIN numbers, application forms, birth certificates, etc.
+
+Folders are synchronized globally using [OneDrive](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage), [Google Drive](https://www.google.com/drive/), [DropBox](https://www.dropbox.com/), [Box](https://www.box.com/) and other such tools. I'm pretty sure all these folders contain all manner of personally identifiable customer data.
 
 Amazon can avoid this "problem" by telling customers "all your data is stored locally in Kenya".
 
 # Developer Experience
 
-Amazon has some 226 products in their [AWS offering](https://aws.amazon.com/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all), most if not all, will now be available to developers in Kenya to build and support solutions hosted locally.
+[Amazon](https://www.amazon.com/) has some 226 products in their [AWS offering](https://aws.amazon.com/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all), most if not all, will now be available to developers in Kenya to build and support solutions hosted locally.
 
-This opens a number of opportunities to local ICT firms such as building solutions for national and county governments.
+This opens a number of opportunities to local ICT firms such as building all sorts of solutions in the private and public sector - for national and county governments.
 
 # Distributed Workloads
 
