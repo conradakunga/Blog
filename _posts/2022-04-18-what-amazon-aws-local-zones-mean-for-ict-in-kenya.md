@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Amazon AWS Means For ICT In Kenya
+title: What Amazon AWS Local Zones Mean For ICT In Kenya
 date: 2022-04-18 16:10:27 +0300
 categories:
     - Business Of Software
