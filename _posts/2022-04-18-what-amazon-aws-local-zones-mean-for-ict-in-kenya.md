@@ -42,7 +42,7 @@ Amazon can avoid this "problem" by telling customers "all your data is stored lo
 
 # Developer Experience
 
-[Amazon](https://www.amazon.com/) has some 226 products in their [AWS offering](https://aws.amazon.com/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all), most if not all, will now be available to developers in Kenya to build and support solutions hosted locally.
+[Amazon](https://www.amazon.com/) has some 226 products in their [AWS offering](https://aws.amazon.com/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all), most if not all, will eventually be available to developers in Kenya to build and support solutions hosted locally.
 
 This opens a number of opportunities to local ICT firms such as building all sorts of solutions in the private and public sector - for national and county governments.
 
