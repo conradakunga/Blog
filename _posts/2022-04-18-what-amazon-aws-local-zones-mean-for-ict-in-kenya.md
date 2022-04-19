@@ -73,4 +73,6 @@ This benefits extends to even simple solutions like hosted websites and web appl
 
 So there is lots of opportunity for local software development firms, integrators and cloud solution providers.
 
+Read this in the context that it is a **long term play**. Naturally the investment will start with the essentials and ramp up over time.
+
 Happy hacking!
