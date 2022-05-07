@@ -5,6 +5,10 @@ permalink: /about/
 ---
 
 I have been writing software professionally for decades. 
+In this blog I will be writing primarily about:
+
+1. **The Business of software**
+2. **Software development**
 
 I am an entrepreneur, and co-founder of [Innova Limited](http://www.innova.co.ke/), where I lead the research and product development. 
 
