@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - SQL Server
+    - Fixes
 ---
 For many years, the provider to access SQL Server from .NET was [System.Data.SqlClient](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-6.0).
 
