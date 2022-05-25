@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fix - Python - Warning: Ignoring Invalid Distribution
+title: Fix - Python - Warning- Ignoring Invalid Distribution
 date: 2022-05-25 10:47:31 +0300
 categories:
     - Python
