@@ -16,7 +16,7 @@ public class Person
 }
 ```
 
-Assume you also have the following class:
+Assume you also have the following class, that inherits from `Person`:
 
 ```csharp
 public class Student : Person
@@ -27,12 +27,12 @@ public class Student : Person
 
 There is an excellent library, [Dapper](https://github.com/DapperLib/Dapper), that you can use for mapping between C# objects and the database.
 
-First, let us let Dapper create for us a dynamic object, and dump that using Linqpad.
+First, let us let **Dapper** create for us a dynamic object, and dump that using [Linqpad](https://www.linqpad.net/).
 
-To get a dynamic object when using the Query method, do not specify a type.
+To get a `dynamic` object when using the [Query](https://www.learndapper.com/selecting-multiple-rows) method, do not specify a type.
 
 ```csharp
-var cn = new SqlConnection("data source=;trusted_connection=true;database=innovadevelop;encrypt=false");
+var cn = new SqlConnection("data source=;trusted_connection=true;database=test;encrypt=false");
 var result = cn.Query("Select '12 nov 2000' DateOfBirth, 'James Bond' Name, 'Finance' DegreeProgram");
 result.Dump();
 ```
@@ -43,10 +43,10 @@ This will display the following:
 
 Next, we want to map the query to a strongly typed object.
 
-Let us start with the Person class.
+Let us start with the `Person` class.
 
 ```csharp
-var cn = new SqlConnection("data source=;trusted_connection=true;database=innovadevelop;encrypt=false");
+var cn = new SqlConnection("data source=;trusted_connection=true;database=test;encrypt=false");
 var result = cn.Query<Person>("Select '12 nov 2000' DateOfBirth, 'James Bond' Name, 'Finance' DegreeProgram");
 result.Dump();
 ```
@@ -58,7 +58,7 @@ This will output the following:
 The problem arises when you try to map to a `Student` type.
 
 ```csharp
-var cn = new SqlConnection("data source=;trusted_connection=true;database=innovadevelop;encrypt=false");
+var cn = new SqlConnection("data source=;trusted_connection=true;database=test;encrypt=false");
 var result = cn.Query<Student>("Select '12 nov 2000' DateOfBirth, 'James Bond' Name, 'Finance' DegreeProgram");
 result.Dump();
 ```
@@ -67,7 +67,7 @@ This outputs the following:
 
 ![](../images/2022/05/DapperStudent.png)
 
-Notice that the `DateOfBirth` and `Name` are the default values of their respective types - DateTime.MinValue[](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.minvalue?view=net-6.0) for a [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0) and `null` for a [string](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-6.0).
+Notice that the `DateOfBirth` and `Name` are the default values of their respective types - [DateTime.MinValue](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.minvalue?view=net-6.0) for a [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-6.0) and `null` for a [string](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-6.0).
 
 If we modify the `Person` class and make the properties read/write:
 
@@ -87,7 +87,7 @@ Now the data is being pulled correctly.
 
 The problem here is that `Dapper` seems to be unable to set the properties of the parent after it has successfully done so for the child if the parent is immutable.
 
-##### Moral
+## Moral
 
 When mapping objects with an inheritance chain in Dapper, beware if they are immutable.
 
