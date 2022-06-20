@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conmen, Charlatans And Software Developers
-date: 2022-06-21 18:32:20 +0300
+date: 2022-06-20 10:06:20 +0300
 categories:
     - Business Of Software
 ---
