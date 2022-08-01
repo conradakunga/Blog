@@ -44,10 +44,11 @@ This is very tedious.
 
 Which is why you can use the extensions in the `System.Net.Http.Json` namespace to simplify this. The extension method we can employ here is [PostAsJsonAsync](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.json.httpclientjsonextensions.postasjsonasync?view=net-6.0).
 
+![](../images/2022/08/HttpClientJson.png)
+
 This extension method does the heavy lifting of accepting your object and serializing it for posting to the target URL.
 
 This is achieved like so:
-
 
 ```csharp
 // Create a second person
@@ -59,7 +60,7 @@ response = await client.PostAsJsonAsync("Create", otherPerson);
 
 The code is thus vastly simplified.
 
-There is also an overload that allows you to pass a CancellationToken.
+There is also an overload that allows you to pass a [CancellationToken](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-6.0).
 
 ```csharp
 // Post to the endpoint with a cancellation token
