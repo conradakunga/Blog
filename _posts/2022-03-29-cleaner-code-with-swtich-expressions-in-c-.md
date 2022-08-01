@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cleaner Code With Swtich Expressions In C#
+title: Cleaner Code With Switch Expressions In C#
 date: 2022-03-29 14:30:46 +0300
 categories:
     - C#
