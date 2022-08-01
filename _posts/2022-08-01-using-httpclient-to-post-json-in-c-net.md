@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using HttpClient To Post JSON In C# & .NET
-date: 2022-07-20 17:11:42 +0300
+date: 2022-08-01 12:11:42 +0300
 categories:
     - C#
     - .NET
