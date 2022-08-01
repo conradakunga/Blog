@@ -33,8 +33,8 @@ The `Person` object we are submitting here is this one:
 ```csharp
 public class Person
 {
-	public string Names { get; set; }
-	public DateTime DateOfBirth { get; set; }
+    public string Names { get; set; }
+    public DateTime DateOfBirth { get; set; }
 }
 ```
 
@@ -65,6 +65,26 @@ There is also an overload that allows you to pass a [CancellationToken](https://
 ```csharp
 // Post to the endpoint with a cancellation token
 response = await client.PostAsJsonAsync("Create", otherPerson, ctx);
+```
+
+If your upstream API is very conservative about the JSON it accepts, or has some non-default configurations, you can configure how you want the serialization of your object to be done.
+
+Like so:
+
+```csharp
+// Configure required JSON serialization options
+var options = new JsonSerializerOptions()
+{
+    AllowTrailingCommas = true,
+    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+    IgnoreReadOnlyProperties = true,
+    NumberHandling = JsonNumberHandling.WriteAsString,
+    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+    WriteIndented = true
+};
+
+// Post to the endpoint with custom options
+response = await client.PostAsJsonAsync("Create", otherPerson, options);
 ```
 
 The beauty of this is that for most simple cases you can use the `HttpClient` directly and not have to depend on libraries like [Refit](https://github.com/reactiveui/refit), [RestSharp](https://restsharp.dev/) and [Flurl](https://flurl.dev/)
