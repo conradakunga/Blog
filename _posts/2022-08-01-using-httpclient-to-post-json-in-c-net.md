@@ -67,7 +67,7 @@ There is also an overload that allows you to pass a [CancellationToken](https://
 response = await client.PostAsJsonAsync("Create", otherPerson, ctx);
 ```
 
-If your upstream API is very conservative about the JSON it accepts, or has some non-default configurations, you can configure how you want the serialization of your object to be done.
+If your upstream API is very conservative about the JSON it accepts, or has some non-default configurations, you can configure how you want the serialization of your object to be done using a [JsonSerializerOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-6.0) object.
 
 Like so:
 
@@ -88,5 +88,8 @@ response = await client.PostAsJsonAsync("Create", otherPerson, options);
 ```
 
 The beauty of this is that for most simple cases you can use the `HttpClient` directly and not have to depend on libraries like [Refit](https://github.com/reactiveui/refit), [RestSharp](https://restsharp.dev/) and [Flurl](https://flurl.dev/)
+
+
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2022-08-01%20-%20Posting%20JSON%20Using%20HttpClient).
 
 Happy hacking!
