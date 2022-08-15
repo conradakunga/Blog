@@ -11,7 +11,9 @@ When dealing with the web, you will often require to deal with URLs.
 Like so:
 
 ```csharp
+// Build a HttpClient object
 var client = new HttpClient();
+// Download the contentent of the URL as a string asynchronously
 var result = await client.GetStringAsync("https://localhost");
 ```
 
