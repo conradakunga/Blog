@@ -36,9 +36,9 @@ await client.GetStringAsync($"https://localhost:{5000}/Customers?Height=10&Weigh
 ```
 
 This is very brittle and prone to errors if you are generating the query string (and the entire URL) for that matter. You have to keep track of a bunch of things:
-- The number and positions of the /
-- The ?
-- The number and positions of the &
+- The number and positions of the `/`
+- The `?`
+- The number and positions of the `&`
 - URL encoding special characters
 
 There is a better way to do this.
@@ -92,7 +92,9 @@ var query = new Dictionary<string, string>()
     {"Weight" , "70"},
     {"SkinColor", "Brown"}
 };
-var queryString = string.Join('&', query.Select(q => $"{q.Key}={q.Value}")).Dump();
+
+// Project the dictionary into a collection of name/value pairs and join them into a string
+var queryString = string.Join('&', query.Select(q => $"{q.Key}={q.Value}"));
 
 var builder = new UriBuilder("https", "localhost", 5000, "Customers", $"?{queryString}");
 ```
