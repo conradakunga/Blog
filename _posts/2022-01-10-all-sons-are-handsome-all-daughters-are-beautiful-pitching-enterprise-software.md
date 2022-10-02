@@ -97,7 +97,7 @@ In other words, if you can make your customer an additional 5 million dollars th
 
 They are never going to pay 1 million dollars fo "easy to use".
 
-Then an only then will things like "easy to use" even merit examination.
+Then and only then will things like "easy to use" even merit examination.
 
 If you ask around you will find software solutions that are notoriously difficult to use, or require inordinate amounts of resources to run but are still chugging along with zero chance of being removed why? Because they deliver tremendous value and there is zero compelling reason to replace them, despite spirited attempts by rivals (experienced or startups).
 
