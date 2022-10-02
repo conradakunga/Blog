@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tip - Grouping Correctly With VB.NET
+title: Tip - Grouping Correctly In LINQ With VB.NET
 date: 2022-10-02 11:59:45 +0300
 categories:
     - VB.NET
@@ -111,11 +111,12 @@ To get VB.NET to do what we want, we need to make use of the [Key](https://learn
 The code should be updated to look like this:
 
 
+```vb
 Dim distinctElements = livingThings.DistinctBy(Function(t) New With {Key t.Kingdom, Key t.Legs})
 For Each element In distinctElements
     Console.WriteLine($"Kingdom: {element.Kingdom}; Legs: {element.Legs}")
 Next
-
+```
 
 The different bits are here:
 
