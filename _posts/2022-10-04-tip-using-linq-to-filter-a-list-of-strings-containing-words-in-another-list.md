@@ -5,6 +5,7 @@ date: 2022-10-04 21:34:22 +0300
 categories:
     - C#
     - LINQ
+    - Tips
 ---
 Suppose you have this list of snacks.
 

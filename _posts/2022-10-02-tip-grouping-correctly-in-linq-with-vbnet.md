@@ -5,6 +5,7 @@ date: 2022-10-02 11:59:45 +0300
 categories:
     - VB.NET
     - LINQ
+    - Tips
 ---
 Grouping is one of the more powerful features of [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/).
 

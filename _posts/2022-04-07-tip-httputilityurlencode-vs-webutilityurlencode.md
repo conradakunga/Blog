@@ -5,6 +5,7 @@ date: 2022-04-07 04:40:52 +0300
 categories:
     - C#
     - .NET
+    - Tips
 ---
 In this world of websites and APIs you will invariably be called upon to build URLs, either manually or through code.
 
