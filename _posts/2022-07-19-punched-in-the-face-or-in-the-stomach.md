@@ -3,7 +3,7 @@ layout: post
 title: Punched In The Face Or In The Stomach
 date: 2022-07-19 15:38:35 +0300
 categories:
-    - Buisness Of Software
+    - Business Of Software
 ---
 Quick - would you like to be punched in the face or punched in the stomach?
 
