@@ -161,11 +161,11 @@ class AgentAdvancedComparer : IComparer<Agent>
         switch (_comparison)
         {
             case Comparison.FirstNameThenSurname:
-            var fCompare = a1.FirstName.CompareTo(a2.FirstName);
-            if (fCompare == 0) // first names match. Compare surnames
-                return a1.Surname.CompareTo(a2.Surname);
-            else
-                return fCompare; ;
+                var fCompare = a1.FirstName.CompareTo(a2.FirstName);
+                if (fCompare == 0) // first names match. Compare surnames
+                    return a1.Surname.CompareTo(a2.Surname);
+                else
+                    return fCompare; ;
             default:
                 var sCompare = a1.Surname.CompareTo(a2.Surname);
                 if (sCompare == 0) // surnames match. Compare first names
