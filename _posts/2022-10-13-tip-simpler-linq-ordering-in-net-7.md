@@ -111,6 +111,6 @@ PrintNumbers(reversed);
 
 This is a tiny change in the larger scheme of things, but it makes the code a lot more cleaner and understandable.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2022-10-13%20-%20Simpler%20LINQ%20Ordering%20In%20.NET%207).
 
 Happy hacking!
