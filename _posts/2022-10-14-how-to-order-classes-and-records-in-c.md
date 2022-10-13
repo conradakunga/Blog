@@ -209,6 +209,6 @@ Agent { FirstName = Jane, Surname = Bond }
 Agent { FirstName = Jason, Surname = Bourne }
 ```
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2022-10-14%20-%20How%20To%20Order%20Classes%20And%20Records%20In%20C%23).
 
 Happy hacking!
