@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Order Classes And Records
+title: How To Order Classes And Records In C#
 date: 2022-10-14 16:50:56 +0300
 categories:
     - C#
