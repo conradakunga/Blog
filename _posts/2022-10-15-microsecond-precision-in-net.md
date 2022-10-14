@@ -116,6 +116,6 @@ This should print the exact value of `Ticks` as before
 638013562900109990
 ```
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2022-10-15%20-%20Microsecond%20Precision%20In%20.NET).
 
 Happy hacking!
