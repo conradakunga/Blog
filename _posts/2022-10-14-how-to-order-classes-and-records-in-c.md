@@ -93,7 +93,7 @@ public class AgentComparer : IComparer<Agent>
 
 The generic `IComparer` interface has one function, [Compare](https://learn.microsoft.com/en-us/dotnet/api/system.collections.icomparer.compare?view=net-6.0). Within this function we use the knowledge that ultimately names are [strings](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-7.0), and `strings` already know how to compare themselves using the [CompareTo](https://learn.microsoft.com/en-us/dotnet/api/system.string.compareto?view=net-6.0) method.
 
-The logic here is if two elements, `a1` and `a2` are **EQUAL**, `CompareTo` returns a 0. Otherwise it returns -1 if `a1` is LESS or 1 if it is **GREATER**.
+The logic here is if two elements, `a1` and `a2` are **EQUAL**, `CompareTo` returns a 0. Otherwise it returns -1 if `a1` is **LESS** or 1 if it is **GREATER**.
 
 We can then wire this into the code for ordering like this:
 
@@ -112,7 +112,7 @@ Agent { FirstName = Jason, Surname = Bourne }
 Agent { FirstName = Evelyn, Surname = Salt }
 ```
 
-We can even use the new syntax in C# 7 that avoids lambdas altogether:
+We can even use the new syntax in .NET 7 that avoids lambdas altogether:
 
 ```csharp
 // Order using the comparer (new syntax)
