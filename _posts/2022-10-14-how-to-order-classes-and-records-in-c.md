@@ -213,7 +213,7 @@ Improved as this is, we can still do one better.
 
 It can get tiresome specifying the `Comparer` each time we want to perform sort operations.
 
-A better alternative is to make the class itself sort aware. This we do by implementing the [IComparable<T>](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable?view=net-6.0) interface.
+A better alternative is to make the class itself sort aware. This we do by implementing the [IComparable](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable?view=net-6.0) interface.
 
 This has a single method, [CompareTo()](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable.compareto?view=net-6.0)
 
@@ -228,7 +228,6 @@ record Agent : IComparer<Agent>, IComparable<Agent>
     {
         Surname = surname;
         FirstName = firstName;
-
     }
     public int Compare(Agent a1, Agent a2)
     {
