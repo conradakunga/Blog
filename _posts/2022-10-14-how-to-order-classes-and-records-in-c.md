@@ -209,6 +209,61 @@ Agent { FirstName = Jane, Surname = Bond }
 Agent { FirstName = Jason, Surname = Bourne }
 ```
 
+Improved as this is, we can still do one better.
+
+It can get tiresome specifying the `Comparer` each time we want to perform sort operations.
+
+A better alternative is to make the class itself sort aware. This we do by implementing the [IComparable<T>](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable?view=net-6.0) interface.
+
+This has a single method, [CompareTo()](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable.compareto?view=net-6.0)
+
+We update our record to look like this, leveraging the code from our `Comparer` earlier:
+
+```csharp
+record Agent : IComparer<Agent>, IComparable<Agent>
+{
+    public string FirstName { get; }
+    public string Surname { get; }
+    public Agent(string firstName, string surname)
+    {
+        Surname = surname;
+        FirstName = firstName;
+
+    }
+    public int Compare(Agent a1, Agent a2)
+    {
+        var sCompare = a1.Surname.CompareTo(a2.Surname);
+        if (sCompare == 0) // surnames match. Compare first names
+            return a1.FirstName.CompareTo(a2.FirstName);
+        else
+            return sCompare;
+    }
+    public int CompareTo(Agent other)
+    {
+        return this.Compare(this, other);
+    }
+}
+```
+
+We can then simplify our calling code like this:
+
+```csharp
+// Order
+var newlyOrderedAgents = agents.OrderBy(agent => agent).ToList();
+
+PrintCollection(newlyOrderedAgents);
+
+// Order (new syntax)
+var moreNewlyOrderedAgents = agents.Order().ToList();
+
+PrintCollection(moreNewlyOrderedAgents);
+
+// reverse sorting
+PrintCollection(agents.OrderDescending().ToList());
+```
+
+Notice we do not deal anywhere with `Comparers` now - the runtime now natively knows how to sort `Agent` objects. This is a much cleaner approach, and users of your types do not even need to know the magic of how sorting works.
+
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2022-10-14%20-%20How%20To%20Order%20Classes%20And%20Records%20In%20C%23).
 
 Happy hacking!
