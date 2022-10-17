@@ -38,4 +38,6 @@ The obvious way to do it is as follows:
 
 Alternatively, you can right-click the title of the tab and from the menu that displays, choose **Duplicate Tab**
 
+![](../images/DuplicateTab.png)
+
 Happy hacking!
