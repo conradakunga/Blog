@@ -94,7 +94,7 @@ SELECT
     @Date [International Format Without Spaces]
 
 -- International Format - 2 Digit Year Without Spaces
-SET @Date = '201024';
+SET @Date = '221024';
 
 SELECT
     @Date [International Format - 2 Digit Year Without Spaces]
