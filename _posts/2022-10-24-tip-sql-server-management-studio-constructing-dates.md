@@ -102,6 +102,10 @@ SELECT
 
 These should all output the date  - 24 Oct 2022.
 
+The results should be as follows:
+
+![](../images/2022/10/Dates.png)
+
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2022-10-24%20-%20SQL%20Server%20Date%20Formatting).
 
 Happy hacking!
