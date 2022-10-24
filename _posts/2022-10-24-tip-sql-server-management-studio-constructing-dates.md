@@ -7,7 +7,7 @@ categories:
     - SQL Server Management Studio
     - Tips
 ---
-Working with dates is a fairly common operation when working in TSQL.
+Working with dates is a fairly common operation when working in [TSQL](https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver16).
 
 You would commonly do it like so:
 
