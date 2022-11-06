@@ -6,6 +6,7 @@ author: Conrad Akunga
 layout: post
 categories:
   - Epiphanies
+  - Business Of Software
 ---
 On the surface a perfectly reasonable question.
 
