@@ -9,13 +9,13 @@ categories:
 
 "I'm all ears, my son!" I answered.
 
-"I'm always fogetting birthdays. So I'm going to build a web app where I will enter a name, an age, email anddress, phone number and a date - and when the time comes my app will send a happy birthday email and a text message! Spin this up on the cloud as SAAS and make some quick money from users."
+"I'm always forgetting birthdays. So I'm going to build a web app where I will enter a name, an age, email address, phone number and a date - and when the time comes my app will send a happy birthday email and a text message! Spin this up on the cloud as SAAS and make some quick money from users."
 
 This was music to my ears. I have precisely this problem as well, which, I can assure you, strains relationships. A webapp like this would certainly get my interest.
 
 "Good stuff", I told my friend. "When can I access the prototype?"
 
-"Oh it was just a few minutes of work - a React website with a Postgres database in the cloud. Let me send you the link to collect data."
+"Oh it was just a few minutes of work - a [React](https://reactjs.org/) website with a [PostgreSQL](https://www.postgresql.org/) database in the cloud. Let me send you the link to collect data."
 
 ![](../images/2022/03/Screen%201.png)
 
@@ -41,9 +41,9 @@ Version 2 came out half an hour later.
 
 "Why? Everyone knows their country code, surely."
 
-"Yes, but remember this is me keying in the data. I know my friend Sonia is in Botwsana but I can't offhand remember the country code."
+"Yes, but remember this is me keying in the data. I know my friend Sonia is in Botswana but I can't offhand remember the country code."
 
-"Humph. Ok. What else?"
+"Humph. OK. What else?"
 
 "What is this notification date? How is it different from the Date Of Birth?"
 
@@ -57,15 +57,15 @@ Version 3 came out half an hour later.
 
 > Dear Bart,
 > 
-> On this occasion of your 11th birthday, I wanted to wish you the best today and going foward
+> On this occasion of your 11th birthday, I wanted to wish you the best today and going forward
 
 "How does your system know to use 'Bart' in the messages?"
 
 "I just pick the first name you enter."
 
-"Hmm. That might be a problem. What if the person is named Mary Louise Parker? Mary Louise here is one name. Also, some pople (like me) would key it in as Simpson, Bart."
+"Hmm. That might be a problem. What if the person is named Mary Louise Parker? Mary Louise here is one name. Also, some people (like me) would key it in as Simpson, Bart."
 
-"Ugh. Fine. Let me update the protptype."
+"Ugh. Fine. Let me update the prototype."
 
 Version 4 came out 30 minutes later.
 
@@ -85,7 +85,7 @@ Version 5 came out 20 minutes later.
 
 > Dear [First Name],
 > 
-> On this occasion of your 11th birthday, I wanted to wish you the best today and going foward
+> On this occasion of your 11th birthday, I wanted to wish you the best today and going forward
 
 "I see. Well, I happen to know that Rihnana's government name is [Robyn Rihanna Fenty](https://en.wikipedia.org/wiki/Rihanna). Robyn is in fact her first name, but I'm pretty sure most people call her Rihanna. If it the message said "Robyn" she would know this is just some automated bot."
 
@@ -94,7 +94,7 @@ Version 5 came out 20 minutes later.
 "Also, there are people who legally have one name. These are called mononyms. For example the former Emperor of Japan, [Akihito](https://en.wikipedia.org/wiki/Akihito). Or [Cher](https://en.wikipedia.org/wiki/Cher). How would I save these in your system?"
 
 
-"Man, you're killing me here! Gime me 30."
+"Man, you're killing me here! Gimme me 30."
 
 Version 6 came out 30 minutes later.
 
@@ -124,7 +124,7 @@ Version 6 came out 30 minutes later.
 
 "I ... I dunno. Why wouldn't it?"
 
-"Well, you can't assume everyone speaks English. If you have to store data in a language other than English your database needs to be prepared accordigly otherwise your data will be converted to gibberish. In short, your database needs to be setup as [unicode](https://en.wikipedia.org/wiki/Unicode) aware to cater for almost all languages."
+"Well, you can't assume everyone speaks English. If you have to store data in a language other than English your database needs to be prepared accordingly otherwise your data will be converted to gibberish. In short, your database needs to be setup as [Unicode](https://en.wikipedia.org/wiki/Unicode) aware to cater for almost all languages."
 
 "Let me check with my DBA. Give me 15"
 
@@ -194,7 +194,7 @@ Version 8 came out 2 hours later.
 
 "What now?"
 
-"Time zones are not in fact static - they change due to various practical and poilitical reasons. So you can't keep that as a static database in your app - you will have to be updating it."
+"Time zones are not in fact static - they change due to various practical and political reasons. So you can't keep that as a static database in your app - you will have to be updating it."
 
 "What do you mean change?"
 
@@ -202,7 +202,7 @@ Version 8 came out 2 hours later.
 
 "Oh no!"
 
-"Alas. Some countries can even decide to observe differnet time zones, either changing the ones they currently observe or harmonizing those that they do."
+"Alas. Some countries can even decide to observe different time zones, either changing the ones they currently observe or harmonizing those that they do."
 
 "Wow!"
 
@@ -216,7 +216,7 @@ Version 8 came out 2 hours later.
 
 "And finally you need a way to track delivery of the emails and text messages. Its not like you can send a test message!"
 
-"Finally!? Does that mean you've run out of critques?"
+"Finally!? Does that mean you've run out of critiques?"
 
 "No. It just means dinner has been served and I am hungry. 
 
