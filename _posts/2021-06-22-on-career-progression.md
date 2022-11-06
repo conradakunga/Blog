@@ -5,7 +5,7 @@ date: 2021-06-22 05:46:58 +0300
 categories:
     - Personal Development
     - Career
-    - Business
+    - Business Of Software
 ---
 [Lionel Messi](https://en.wikipedia.org/wiki/Lionel_Messi) is, by many accounts, the best football player in the world.
 
