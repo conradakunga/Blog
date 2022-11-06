@@ -3,7 +3,7 @@ layout: post
 title: All Sons Are Handsome; All Daughters Are Beautiful - Pitching Enterprise Software
 date: 2022-01-10 10:15:57 +0300
 categories:
-    - The Business Of Software
+    - Business Of Software
 ---
 In my experience, parents are generally of the opinion that their sons are handsome and their daughters are beautiful.
 

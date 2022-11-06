@@ -3,7 +3,7 @@ layout: post
 title: The Value Of Good Documentation
 date: 2021-07-03 12:34:22 +0300
 categories:
-    - The Business Of Software
+    - Business Of Software
     - Documentation
 ---
 Recent developments (we are in the middle of a massive upgrade of our technology stacks) as well as strategic decisions have forced us to interface with systems and ecosystems not only at code level as we are accustomed to, but additionally at documentation level.

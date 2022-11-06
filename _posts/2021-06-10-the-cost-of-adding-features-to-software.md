@@ -3,7 +3,7 @@ layout: post
 title: The Cost Of Adding Features To Software
 date: 2021-06-10 09:20:56 +0300
 categories:
-    - The Business Of Software
+    - Business Of Software
 ---
 
 > More Features Is Good

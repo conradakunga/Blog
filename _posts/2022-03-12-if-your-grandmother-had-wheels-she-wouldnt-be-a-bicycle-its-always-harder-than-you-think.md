@@ -3,7 +3,7 @@ layout: post
 title: If Your Grandmother Had Wheels - She Wouldn't Be A Bicycle - Its ALWAYS Harder Than You Think
 date: 2022-03-12 14:47:31 +0300
 categories:
-    - The Business Of Software
+    - Business Of Software
 ---
 "I have an idea!" a friend said breathlessly.
 

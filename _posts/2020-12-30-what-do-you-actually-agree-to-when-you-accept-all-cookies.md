@@ -3,7 +3,7 @@ layout: post
 title: What Do You Actually Agree To When You Accept All Cookies
 date: 2020-12-30 10:48:58 +0300
 categories:
-    - The Business Of Software
+    - Business Of Software
     - People
 ---
 I have been writing software for exactly twenty years now. In the course of this I have learnt very many things, which I hope to journal over time.

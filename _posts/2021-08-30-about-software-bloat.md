@@ -3,7 +3,7 @@ layout: post
 title: About Software Bloat
 date: 2021-08-30 10:57:53 +0300
 categories:
-    - The Business Of Software
+    - Business Of Software
 ---
 Occasionally you will hear somebody say, (or you yourself may say) something like:
 
