@@ -39,7 +39,7 @@ warning CS8618: Non-nullable property 'FirstName' must contain a non-null
 value when exiting constructor. Consider declaring the property as nullable
 ```
 
-And this one
+And this one:
 
 ```plaintext
 warning CS8618: Non-nullable property 'Surname' must contain a non-null va 
@@ -68,7 +68,7 @@ to
 
 The problem with this solution is it turns off all those warnings that could potentially save you lots of subtle bugs and errors.
 
-The other solution is to tell the compiler that you are going to take responsibility for those properties not being `null`
+The other solution is to tell the compiler that you are going to take responsibility for those properties not being `null`.
 
 You do this by providing a default value of your property indicating it is not null - `default!`
 
@@ -169,6 +169,6 @@ In other words, you must set all the values marked `required`.
 
 With this keyword we can reduce the amounts of boilerplate code required to enforce behaviour.
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2022-11-12%20-%20Required%20Keyword%20In%20C%23%2011%20%26%20.NET%207).
 
 Happy hacking!
