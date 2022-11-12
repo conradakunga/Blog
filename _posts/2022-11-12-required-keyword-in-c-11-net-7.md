@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Required Keyword In .NET 7
+title: Required Keyword In C# 11 & .NET 7
 date: 2022-11-12 10:49:21 +0300
 categories:
     - C#
