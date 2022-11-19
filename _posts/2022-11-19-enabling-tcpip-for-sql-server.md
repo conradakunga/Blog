@@ -15,7 +15,6 @@ Some drivers, like the [SQL Server JDBC Driver](https://learn.microsoft.com/en-u
 
 If you don't, you will get an error like this.
 
-
 ```plaintext
 [08S01] The TCP/IP connection to the host localhost, port 1433
 has failed. Error: "Connection refused: no further information.
@@ -26,6 +25,21 @@ port are not blocked by a firewall.".
 ```
 
 ![](../images/2022/11/JDBCConnection.png)
+
+If you are connected to the database engine using [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) or a tool like [Jetbrains DataGrip](https://www.jetbrains.com/datagrip/) you can check how you are connected using this query:
+
+```sql
+SELECT
+    net_transport
+FROM
+    sys.dm_exec_connections
+WHERE
+    session_id = @@SPID;
+```
+
+![](../images/2022/11/SQLServer.png)
+
+![](../images/2022/11/Datagrip.png)
 
 If you are using SQL Server 2019 you can enable TCP as follows:
 
