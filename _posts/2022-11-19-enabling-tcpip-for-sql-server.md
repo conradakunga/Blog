@@ -11,7 +11,7 @@ By default, SQL Server accepts connections using the **Shared Memory** protocol.
 
 It may interest you to know that SQL Server supports two others - **Named Pipes** and **TCP/IP**.
 
-Some drivers, like JDBC Drivers require you to have the TCP/IP protocol enabled.
+Some drivers, like the [SQL Server JDBC Driver](https://learn.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-ver16) [requires you to have the TCP/IP protocol enabled](https://learn.microsoft.com/en-us/sql/connect/jdbc/troubleshooting-connectivity?view=sql-server-ver16).
 
 If you don't, you will get an error like this.
 
