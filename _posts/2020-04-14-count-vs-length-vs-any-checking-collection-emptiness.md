@@ -5,7 +5,7 @@ date: 2020-04-14T23:22:07+03:00
 author: Conrad Akunga
 layout: post
 categories:
-  - 'C#'
+  - C#
   - Under The Hood
 ---
 When working with collections there are several ways that you can determine if a collection is empty.
