@@ -123,3 +123,5 @@ retrievedMonkey = JsonSerializer.Deserialize<Animal>(rawJson, options);
 If we run the code we see now that the name is correctly set to `NULL`
 
 ![](../images/2022/11/NullValueName.png)
+
+Happy hacking!
