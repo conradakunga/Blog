@@ -124,4 +124,6 @@ If we run the code we see now that the name is correctly set to `NULL`
 
 ![](../images/2022/11/NullValueName.png)
 
+The code is in my Github.
+
 Happy hacking!
