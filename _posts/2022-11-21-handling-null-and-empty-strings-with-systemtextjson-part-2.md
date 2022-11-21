@@ -124,6 +124,6 @@ If we run the code we see now that the name is correctly set to `NULL`
 
 ![](../images/2022/11/NullValueName.png)
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2022-11-21%20-%20Deserialize%20Null%20Strings).
 
 Happy hacking!
