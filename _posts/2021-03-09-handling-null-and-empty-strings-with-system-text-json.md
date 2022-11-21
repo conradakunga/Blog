@@ -137,6 +137,8 @@ If we run the code, the output should be like this:
 
 ![](../images/2021/03/Animal4.png)
 
+If you want to see how to write custom code to deserialize the JSON with custom logic, [read this post where I show you how to achieve the reverse of what we have done here]({% post_url 2022-11-21-handling-null-and-empty-strings-with-systemtextjson-part-2 %})
+
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-03-09%20-%20Systm.Text.Json%20Empty%20String%20Handling).
 
 Happy hacking!
