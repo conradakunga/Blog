@@ -10,7 +10,9 @@ In a previous post I talked about [Handling Null And Empty Strings With System.T
 
 Today Malthe wrote asking about how to tackle the problem in the reverse - your JSON has empty strings and you want to convert them to `NULL`.
 
-The answer is absolutely!
+Is this possible?
+
+The answer is **absolutely**!
 
 Let us use a simple model:
 
