@@ -56,7 +56,7 @@ We want that empty string to be deserialized as a `NULL`.
 
 The way to achieve this, as it was for the serialization, is to write a [JsonConverter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-7.0) for the string type, and to override the `Read` method.
 
-So we write the following code:
+So we write the following code, completing the serializer we had defined earlier:
 
 ```csharp
 public override string Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
