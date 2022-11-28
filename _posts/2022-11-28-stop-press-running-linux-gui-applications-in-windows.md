@@ -90,3 +90,15 @@ This means that Windows is now an even better **excellent** development environm
 This was initially planned for Windows 11 but then was back-ported to Windows 10 (which is what I still use.)
 
 Make sure your Windows is up to date and fully patched, [go forth and enjoy](https://apps.microsoft.com/store/detail/windows-subsystem-for-linux/9P9TQF7MRM4R)!
+
+You can verify everything is OK by running the command
+
+```bash
+wsl --version
+```
+
+You should see something like the following:
+
+![](../images/2022/11/WSLVersion.png)
+
+Happy hacking!
