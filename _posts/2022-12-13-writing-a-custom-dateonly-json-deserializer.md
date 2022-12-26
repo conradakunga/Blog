@@ -20,7 +20,7 @@ Take this following example:
 
 `Birthday` here, would, in most programming languages, be treated as a [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-7.0), with the time component set to midnight.
 
-.NET has a construct for this - the [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-7.0)
+.NET has a construct specifically for this scenarios - the [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-7.0) type.
 
 So we can model our destination class like this:
 
@@ -32,9 +32,9 @@ public class Person
 }
 ```
 
-```csharp
 Finally we can write the code to deserialize the JSON
 
+```csharp
 var json = """
 {
     "name": "James Bond",
@@ -51,7 +51,7 @@ And ... this fails.
 
 All the properties are set to `null`!
 
-Our problem is that the attributes are **case sensitive**.
+Our problem is that the attributes are **case sensitive** by default for the [System.Text.JsonSerializer](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/character-casing).
 
 We can fix this using the [JsonPropertyName](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonpropertynameattribute?view=net-7.0) attribute.
 
@@ -129,7 +129,7 @@ Success!
 Now the question arises - what if the `birthdate` in the JSON is not always known?
 
 The solution is threefold:
-1. Change the property from a `DateOnly` to a nullable `DateOnly`
+1. Change the property from a `DateOnly` to a [nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) `DateOnly`
 2. Write the logic to define what constitutes a **null** date
 3. Write a new **converter** for this use case.
 
