@@ -173,7 +173,7 @@ Our Json now is as follows:
 }
 ```
 
-But our contract is still not correct - the name is not correct.
+But our contract is still not correct - the date of birth is not correct.
 
 This we can fix with another attribute  [JsonPropertyName](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonpropertynameattribute?view=net-5.0)
 
