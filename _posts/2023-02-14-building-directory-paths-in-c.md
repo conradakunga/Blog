@@ -86,7 +86,7 @@ These new overloads were introduced in .NET Framework 4.
 This means that we can do this:
 
 ```csharp
-var folderLocation = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Incomplete", "Active", "2023", "January");
+folderLocation = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Incomplete", "Active", "2023", "January");
 Console.WriteLine(folderLocation);
 ```
 
@@ -105,7 +105,7 @@ The runtime will ignore any prior complete paths and use the latest to start con
 For example:
 
 ```csharp
-var folderLocation = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Incomplete", "Active", @"C:\2023", "January");
+folderLocation = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Incomplete", "Active", @"C:\2023", "January");
 Console.WriteLine(folderLocation);
 ```
 
