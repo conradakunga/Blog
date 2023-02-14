@@ -26,12 +26,14 @@ This uses the [Environment.GetFolderPath](https://learn.microsoft.com/en-us/dotn
 
 By the way, you use `Environment.GetFolderPath` to request the runtime to get for you the location of various system folders - don't assume the System folder is always `C:\WINDOWS\system32\` - what if the user installed Windows on Drive E? You can get a list of the folders you can retrieve [here](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=net-7.0).
 
+> **Fun fact:** [Directory.CreateDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.createdirectory?view=net-7.0) does not throw an exception of they directory you want to create does not exist
+
 There are a bunch of problems with this approach.
 
 1. On windows the directory separator is `\` . On MacOS and Linux is is `/`.
 1. String concatenation is error prone.
 
-Is there a way the framework can help with this problem?
+Is there a way the .NET can help with this problem?
 
 Indeed.
 
