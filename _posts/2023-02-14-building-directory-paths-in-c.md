@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Building Paths In C#
+title: Building Directory Paths In C#
 date: 2023-02-14 04:06:01 +0300
 categories:
-    -C#
+    - C#
 ---
 Suppose you wanted to generate a folder on your desktop, say to store your incomplete proposals.
 
