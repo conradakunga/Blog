@@ -30,7 +30,7 @@ By the way, you use `Environment.GetFolderPath` to request the runtime to get fo
 
 There are a bunch of problems with this approach.
 
-1. On windows the directory separator is `\` . On MacOS and Linux is is `/`.
+1. On Windows the directory separator is `\` . On MacOS and Linux is is `/`.
 1. String concatenation is error prone.
 
 Is there a way the .NET can help with this problem?
@@ -79,7 +79,7 @@ Console.WriteLine(folderLocation);
 
 Here we are progressively building the path by calling [Path.Combine](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-7.0) multiple times.
 
-And then the other day a college informed me that Path.Combine has several overloads - one that takes [3 arguments](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-7.0#system-io-path-combine(system-string-system-string-system-string)), one that takes [4 arguments](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-7.0#system-io-path-combine(system-string-system-string-system-string-system-string)) and one that takes a [parameter array](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-7.0#system-io-path-combine(system-string())), meaning you can specify as many paths as you want.
+And then the other day a college informed me that [Path.Combine](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-7.0) has several overloads - one that takes [3 arguments](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-7.0#system-io-path-combine(system-string-system-string-system-string)), one that takes [4 arguments](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-7.0#system-io-path-combine(system-string-system-string-system-string-system-string)) and one that takes a [parameter array](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-7.0#system-io-path-combine(system-string())), meaning you can specify as many paths as you want.
 
 These new overloads were introduced in .NET Framework 4.
 
