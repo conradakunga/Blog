@@ -26,7 +26,7 @@ This uses the [Environment.GetFolderPath](https://learn.microsoft.com/en-us/dotn
 
 By the way, you use `Environment.GetFolderPath` to request the runtime to get for you the location of various system folders - don't assume the System folder is always `C:\WINDOWS\system32\` - what if the user installed Windows on Drive E? You can get a list of the folders you can retrieve [here](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=net-7.0).
 
-> **Fun fact:** [Directory.CreateDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.createdirectory?view=net-7.0) does not throw an exception of they directory you want to create does not exist
+> **Fun fact:** [Directory.CreateDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.createdirectory?view=net-7.0) does not throw an exception if the directory you want to create already exists!
 
 There are a bunch of problems with this approach.
 
