@@ -10,11 +10,11 @@
 	  {%- include google-analytics.html -%}
 	{%- endif -%}
 	{%- if jekyll.environment == 'production' -%}
-	<!-- Panelbear Analytics - We respect your privacy -->
-	<script async src="https://cdn.panelbear.com/analytics.js?site=96rb2zIiNp2"></script>
+	<!-- Cronitor RUM -->
+	<script async src="https://rum.cronitor.io/script.js"></script>
 	<script>
-		window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
-		panelbear('config', { site: '96rb2zIiNp2' });
+		window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+		cronitor('config', { clientKey: 'eb0ad92a9d4dfa84552e8836ffe1bca2' });
 	</script>
 	{%- endif -%}
 	<style>
