@@ -94,12 +94,10 @@ An expanded current show is as follows:
 If you don't want to use an online tool and want to visualize the JSON formatted for yourself in an easy to read format, you can use this code in a console application, or [LinqPad](https://www.linqpad.net/):
 
 ```csharp
-using (var client = new HttpClient())
-{
-	var response = await client.GetStringAsync("https://api.wnyc.org/api/v1/whats_on/");
-	var formattedResponse = JToken.Parse(response).ToString();
-	Console.Write(formattedResponse);
-}
+var client = new HttpClient();
+var response = await client.GetStringAsync("https://api.wnyc.org/api/v1/whats_on/");
+var formattedResponse = JsonDocument.Parse(response);
+Console.Write(JsonSerializer.Serialize(formattedResponse, new JsonSerializerOptions { WriteIndented = true }));
 ```
 
 This should give you the following
@@ -146,12 +144,10 @@ https://api.wnyc.org/api/v1/whats_on/wqxr-special2
 The code is as follows:
 
 ```csharp
-using (var client = new HttpClient())
-{
-   var response = await client.GetStringAsync("https://api.wnyc.org/api/v1/whats_on/wqxr-special2");
-   var formattedResponse = JToken.Parse(response).ToString();
-   Console.Write(formattedResponse);
-}
+var client = new HttpClient();
+var response = await client.GetStringAsync("https://api.wnyc.org/api/v1/whats_on/wqxr-special2");
+var formattedResponse = JsonDocument.Parse(response);
+Console.Write(JsonSerializer.Serialize(formattedResponse, new JsonSerializerOptions { WriteIndented = true }));
 ```
 If we run this code we get ...
 
@@ -164,37 +160,41 @@ Looking closely at the error it would seem that request is not returning any JSO
 The problem here is that the [HttpClient](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=netcore-3.1) does not natively follow redirects, so we have to rewrite our code around this.
 
 ```csharp
-var url = "http://api.wnyc.org/api/v1/whats_on/wqxr-special2";
-	
-using (var client = new HttpClient())
+var url = "https://api.wnyc.org/api/v1/whats_on/wqxr-special2";
+
+var client = new HttpClient(new HttpClientHandler() { AllowAutoRedirect = true });
+var formattedResult = "";
+
+// Make the initial request
+var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
+
+// Check if the status code of the response is in the 3xx range
+if ((int)response.StatusCode >= 300 && (int)response.StatusCode <= 399)
 {
-	var formattedResult = "";
-	
-	// Make the initial request
-	var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
-	
-	// Check if the status code of the response is in the 3xx range
-	if ((int)response.StatusCode >= 300 && (int)response.StatusCode <= 399)
-	{
-		// It is a redirect. Extract the location from the header
-		var finalResponse = await client.GetAsync(response.Headers.Location);
-		if (finalResponse.IsSuccessStatusCode)
-		{
-			// Now make the request for the json
-			var jsonResult = await finalResponse.Content.ReadAsStringAsync();
-			// Format the json
-			formattedResult = JToken.Parse(jsonResult).ToString();
-		}
-	}
-	else
-	{
-		// This isn't a redirect. Read the response
-		formattedResult = JToken.Parse(await response.Content.ReadAsStringAsync()).ToString();
-	}
-	
-	// Output the json
-	Console.Write(formattedResult);
+    // It is a redirect. Extract the location from the header
+    var finalResponse = await client.GetAsync(response.Headers.Location);
+    if (finalResponse.IsSuccessStatusCode)
+    {
+        // Now make the request for the json
+        var jsonResult = await finalResponse.Content.ReadAsStringAsync();
+        // Format the json
+        formattedResult = JsonSerializer.Serialize(JsonDocument.Parse(jsonResult), new JsonSerializerOptions() { WriteIndented = true });
+    }
+    else
+    {
+        Console.WriteLine($"Could not get the result, error: {finalResponse.StatusCode}");
+    }
 }
+else
+{
+    // This isn't a redirect. Read the response
+    var jsonResult = await response.Content.ReadAsStringAsync();
+    // Format the json
+    formattedResult = JsonSerializer.Serialize(JsonDocument.Parse(jsonResult), new JsonSerializerOptions() { WriteIndented = true });
+}
+
+// Output the json
+Console.Write(formattedResult);
 ```
 This code now handles both normal requests as well as redirected requests.
 
@@ -328,49 +328,43 @@ Finally you modify your code slightly to get the results as a typed object.
 The final code looks like this:
 
 ```csharp
+Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();;
+
+var client = new HttpClient();
+var result = "";
+
 var url = "https://api.wnyc.org/api/v1/whats_on/wqxr-special2";
 
-using (var client = new HttpClient())
+// Make the initial request
+var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
+
+// Check if the status code of the response is in the 3xx range
+if ((int)response.StatusCode >= 300 && (int)response.StatusCode <= 399)
 {
-	var result = "";
-
-	// Make the initial request
-	var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
-
-	// Check if the status code of the response is in the 3xx range
-	if ((int)response.StatusCode >= 300 && (int)response.StatusCode <= 399)
-	{
-		// It is a redirect. Extract the location from the header
-		var finalResponse = await client.GetAsync(response.Headers.Location);
-		if (finalResponse.IsSuccessStatusCode)
-		{
-			// Now make the request for the json
-			result = await finalResponse.Content.ReadAsStringAsync();
-		}
-		else
-		{
-			Console.WriteLine($"Could not get the result, error: {finalResponse.StatusCode}");
-		}
-	}
-	else
-	{
-		// This isn't a redirect. Read the response
-		result = await response.Content.ReadAsStringAsync();
-	}
-
-	// Type the response
-	var currentItem = JsonConvert.DeserializeObject<Current>(result);
-
-	// Output the results
-
-	var sb = new StringBuilder();
-
-	sb.AppendLine($"The current track playing is: {currentItem.CurrentPlaylistItem.CatalogEntry.Title}");
-	sb.AppendLine($"The composer is: {currentItem.CurrentPlaylistItem.CatalogEntry.Composer.Name}");
-	sb.AppendLine($"It is playing on:  {currentItem.CurrentShow.Title}");
-
-	Console.Write(sb);
+    // It is a redirect. Extract the location from the header
+    var finalResponse = await client.GetAsync(response.Headers.Location);
+    if (finalResponse.IsSuccessStatusCode)
+    {
+        // Now make the request for the json
+        result = await finalResponse.Content.ReadAsStringAsync();
+    }
+    else
+    {
+        Log.Error("Could not get the result, {Error}: {finalResponse.StatusCode}");
+    }
 }
+else
+{
+    // This isn't a redirect. Read the response
+    result = await response.Content.ReadAsStringAsync();
+}
+// Type the response
+var currentItem = JsonSerializer.Deserialize<Current>(result);
+
+// Output the results
+Log.Information("The current track playing is: {Track}", currentItem?.CurrentPlaylistItem?.CatalogEntry?.Title);
+Log.Information("The composer is: {Composer}", currentItem?.CurrentPlaylistItem?.CatalogEntry?.Composer?.Name);
+Log.Information("It is playing on: {Show}", currentItem?.CurrentShow?.Title);
 ```
 
 If you run the code, you should get something like the following:
