@@ -8,7 +8,9 @@ categories:
     - API
     - HttpClient
 ---
-I have recently discovered a glorious online streaming radio station, [WXQR - New York's Classical Music Radio Station](https://www.wqxr.org/). This station streams classical music pretty much 24 hours a day.
+**UPDATE: Updated to .NET 7 on 23 Feb 2023**
+
+I have recently discovered a glorious online streaming radio station, [WQXR - New York's Classical Music Radio Station](https://www.wqxr.org/). This station streams classical music pretty much 24 hours a day.
 
 While the site is open, the information of what is playing is displayed both at the top at the bottom of the page.
 
