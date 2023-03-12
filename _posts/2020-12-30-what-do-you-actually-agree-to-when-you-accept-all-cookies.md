@@ -807,7 +807,7 @@ Listing As At 30 December 2020 08:10 GMT
 |544|Spolecznosci Sp. z o.o. Sp. k.|[https://www.spolecznosci.pl/polityka-prywatnosci](https://www.spolecznosci.pl/polityka-prywatnosci)|
 |545|SPORTORITY UK LTD|[https://www.minutemedia.com/privacy-policy](https://www.minutemedia.com/privacy-policy)|
 |546|Sportradar AG|[https://www.sportradar.com/about-us/privacy/](https://www.sportradar.com/about-us/privacy/)|
-|547|Spotible|[spotible.com/privacy.php](spotible.com/privacy.php)|
+|547|Spotible|[https://spotible.com/privacy.php](spotible.com/privacy.php)|
 |548|SpotX, Inc.|[https://www.spotx.tv/privacy-policy/](https://www.spotx.tv/privacy-policy/)|
 |549|SpringServe, LLC|[https://springserve.com/privacy-policy/](https://springserve.com/privacy-policy/)|
 |550|Squared SAS|[https://qwarry.com/imprint/](https://qwarry.com/imprint/)|
