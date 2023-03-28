@@ -68,7 +68,7 @@ The usual approach would be for each name to:
 1. Check the length
 1. Depending on the length construct the appropriate `Actress` object
 
-The beauty and elegance of list patters is **it can all be done in one step**.
+The beauty and elegance of list patterns is **it can all be done in one step**.
 
 Our complete program is as follow:
 
