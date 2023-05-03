@@ -33,7 +33,9 @@ public string Greet()
 }
 ```
 
-The logic here is that between midnight and 1PM, you are greeted with "**good morning**". From 1PM to 4PM, "**good afternoon**", from 4PM to 6PM "**good evening**" and anything else, "**good evening**"
+The logic here is that between midnight and 1PM, you are greeted with "**good morning**". From 1PM to 4PM, "**good afternoon**", from 4PM to 6PM "**good evening**" and anything else, "**good evening**".
+
+The code uses list patterns that I talked about in the last post - [How To Use C# List Pattern Matching Practically]({% post_url 2023-03-28-how-to-use-c-list-pattern-matching-practically %})
 
 Naturally we write tests for this.
 
@@ -393,7 +395,7 @@ This problem revolving around the `IClock` is in fact a problem many of the Micr
 
 The good news in in .NET 8 there is an [attempt to come up with a unified solution to this problem](https://github.com/dotnet/runtime/issues/36617).
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2023-05-03%20-%20Testable%20Code%20Depending%20On%20Current%20Time).
 
 Happy hacking!
 
