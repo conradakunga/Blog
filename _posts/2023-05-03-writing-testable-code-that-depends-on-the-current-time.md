@@ -371,7 +371,7 @@ If we make a request using [Insomnia](https://insomnia.rest/) (or any such tool)
 
 ![](../images/2023/05/API%20Request.png)
 
-**To make this article simpler, I have used `DateTime.Now` for the SystemClock. It should really be DateTime.UTC now.**
+**To make this article simpler, I have used `DateTime.Now` for the SystemClock. It should really be `DateTime.UTC` now, or better yet a more robust abstraction like [NodaTime](https://nodatime.org/)**
 
 **It is perfectly OK as long as your application is only handling a single time zone. Once it doesn't - you have to factor in time zones.**
 
