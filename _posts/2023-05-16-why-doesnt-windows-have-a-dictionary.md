@@ -51,7 +51,9 @@ If there's one thing I know for a fact is that "How hard can it be" is a dangero
 
 "Language is fluid. So words are being added all the time. [Selfie](https://www.oed.com/viewdictionaryentry/Entry/390063;jsessionid=16BED3E15F1FEE88514BDF0D4CDA3962#:~:text=A%20photograph%20that%20one%20has,and%20shared%20via%20social%20media.) just became an official English word the other day.
 
-Assuming you have cracked the problem of keeping track of these changes and updating your databases, how do you get these out to users?"
+Plus, if you don't update it regularly users will get frustrated they can't find *selfie* or *stan* in the dictionary then they will start saying "this dictionary sucks" and promptly stop using it. In which case there are lots of people spending a lot of money and time working on a thing nobody wants to use.
+
+Assuming you have cracked the problem of keeping track of these changes and updating your dictionary databases, how do you get these out to users?"
 
 "Ah. Gotcha. I guess there will need to be machinery to keep track of all these additions to all these databases and maybe using Windows Update or something push out the changes?"
 
@@ -175,6 +177,7 @@ In summary these are the problems this will introduce:
 1. How will this affect metrics like maintenance, security and risk?
 1. How will this affect user experience and expectations?
 1. What will the the effect on this operationally on other parts of the business
+
     1. Marketing & sales
     1. Finance
     1. HR (staffing)
