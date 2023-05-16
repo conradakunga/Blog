@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Doesn't Windows Have A Dictionary
+title: Why Doesn't Windows Have A Built In Dictionary?
 date: 2023-05-16 07:18:22 +0300
 categories:
     - Business Of Software
@@ -15,11 +15,11 @@ categories:
 
 If there's one thing I know for a fact is that "How hard can it be" is a dangerous, dangerous sentiment.
 
-"I don't know, to be honest. But I am 100% sure at some point someone thought about it, put int on the group to-do list and wanted to do it and then ran into some challenges."
+"I don't know, to be honest. But I am 100% sure at some point someone thought about it, put in on the division to-do list and fully wanted to do it and then ran into some complications."
 
-"What sort of challenges?"
+"What sort of complications?"
 
-"The first one is very simple. Which dictionary are you going to include?"
+"The first one is very simple. Which language dictionary are you going to include?"
 
 "English I guess. You can detect which version of Windows someone is using and then just use the corresponding language."
 
@@ -37,7 +37,7 @@ If there's one thing I know for a fact is that "How hard can it be" is a dangero
 
 "Now that I didn't know."
 
-"If you have them all downloaded, customers are going to complain about "bloated" OS. But if you download on selection - what happens if there is no internet? Or it is offline? Or unreliable? Plus you have just added complexities to the operating system, not to mention increased the volume of support calls and emails"
+"If you have them all downloaded, customers are going to complain about a ["bloated" OS]({% post_url 2021-08-30-about-software-bloat %}). But if you download on selection - what happens if there is no internet? Or it is offline? Or unreliable? Plus you have now just added complexities to the operating system, not to mention increased the potential volume of support calls and emails"
 
 "Oh my!"
 
@@ -53,6 +53,8 @@ If there's one thing I know for a fact is that "How hard can it be" is a dangero
 
 Plus, if you don't update it regularly users will get frustrated they can't find *selfie* or *stan* in the dictionary then they will start saying "this dictionary sucks" and promptly stop using it. In which case there are lots of people spending a lot of money and time working on a thing nobody wants to use.
 
+![](../images/2023/05/thisSucks.png)
+
 Assuming you have cracked the problem of keeping track of these changes and updating your dictionary databases, how do you get these out to users?"
 
 "Ah. Gotcha. I guess there will need to be machinery to keep track of all these additions to all these databases and maybe using Windows Update or something push out the changes?"
@@ -67,8 +69,8 @@ Assuming you have cracked the problem of keeping track of these changes and upda
 
 "You also have the question of whether you currently have the capacity at all to be managing dictionaries for [about 46 languages](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/available-language-packs-for-windows?view=windows-10). You probably don't. So you have two choices:
 
-1. Hire dedicated resources for this. A team and infrastructure to support said team. Which costs money
-2. License from companies that do this as their bread and butter. Which costs money.
+1. Hire dedicated resources for this. A team and infrastructure to support said team. Which costs money. And time.
+2. License from companies that do this as their bread and butter. Which costs money. And time.
 
 Especially in this current recessionary environment, who is looking to raise their costs?"
 
@@ -110,7 +112,6 @@ So, which ones will include the dictionary?"
 
 "OK, this is getting a bit complicated."
 
-![](../images/2023/05/WindowsVersions.png)
 
 "It is. And we have just discussed the client OS. What about the server operating systems. Should they have the dictionary as well?"
 
@@ -127,6 +128,8 @@ But now you have a similar problem. The most current version of Windows Sever is
 
 Which ones will include this?
 
+![](../images/2023/05/WindowsVersions.png)
+
 So if you add that to the server operating system that means they have yet another thing to include in their build. Which means:
 
 1. Increased size
@@ -139,13 +142,13 @@ In short, increased costs, increased bother, increased complexity and increased 
 
 "Er... OK. But why doesn't Apple have this problem with OSX?"
 
-"Well, OSX has only two versions - OSX and OSX Server, and they have [discontinued the latter](https://support.apple.com/en-us/HT208312). So there is only one place to maintain."
+"Well, they do. But to a lesser extent. OSX has only two versions - [OSX](https://www.apple.com/macos/ventura/) and OSX Server, and they have [discontinued the latter](https://support.apple.com/en-us/HT208312). So there is only one place to maintain.
 
-"Were you thinking about the dictionary as a standalone app or as a thing available across the system? I imagine the latter."
+Were you thinking about the dictionary as a standalone app or as a thing available across the system? I imagine the latter."
 
 "Yes."
 
-"Then that means this dictionary is something that the operating system will offer as a service. Which is the logical way to approach this. That means all user apps, old and new, can take advantage of it."
+"Then that means this dictionary is something that the operating system will offer as a service. Which is the logical way to approach this. That means all user apps, current and new, can take advantage of it."
 
 "That's right."
 
@@ -166,6 +169,8 @@ That now has to be done to accommodate the dictionary. You have to get the guys 
 You also need to get the documentation guys to update all the manuals and training materials with this new feature."
 
 "Oh!"
+
+"And you finally have the problem of once you put the thing in, it is going to be very difficult to take it out. Users who are used to finding it there will resent it mightily when it isn't. [And make themselves heard](https://answers.microsoft.com/en-us/windows/forum/all/why-do-windows-10-updates-always-remove-old/934cac1b-905b-44cd-beda-5c728385801f)."
 
 In summary these are the problems this will introduce:
 
@@ -197,3 +202,5 @@ But having said that:
 The closest thing to a system wide dictionary is software made by [WordWeb](https://wordweb.info/). There is a free and a paid version. The dictionary is activated by `Ctrl` + `Click` on any word in any application.
 
 ![](../images/2023/05/WordWeb.png)
+
+Happy hacking!
