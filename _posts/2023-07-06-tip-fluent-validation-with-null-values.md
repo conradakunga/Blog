@@ -6,6 +6,7 @@ categories:
     - .NET
     - Validation
     - Libraries
+    - Tips
 ---
 There is an excellent library, [FluentValidation](https://fluentvalidation.net/), that is very handy when it comes to expressing validation logic, and doing it centrally.
 
@@ -109,7 +110,6 @@ Validation failed:
 If you don't want to throw an exception but want to get the errors anyway, you can do it like this:
 
 ```csharp  
-
 var result = validator.Validate(person);
 ```
 
