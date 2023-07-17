@@ -55,7 +55,7 @@ Which is surprising, because the code works perfectly for a normal collection.
 var banks = new List<Bank>();
 banks.AddRange(new[] { 
     new Bank { BankID = Guid.NewGuid(), Code = "1", Name = "One" },
-    new Bank { BankID = Guid.NewGuid(), Code = "1", Name = "One" }
+    new Bank { BankID = Guid.NewGuid(), Code = "2", Name = "Two" }
 });
 
 banks.Select(b => (b.BankID, b.Code));
