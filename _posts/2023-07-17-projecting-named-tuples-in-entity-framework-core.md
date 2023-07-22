@@ -85,7 +85,7 @@ public List<(Guid BankID, string Code)> GetDetails()
 
 The reason this works is after the [AsEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.asenumerable?view=net-7.0#system-linq-enumerable-asenumerable-1(system-collections-generic-ienumerable((-0)))) call, we are no dealing with an [IEmunerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-7.0) instead of an [IQueryable](https://learn.microsoft.com/en-us/dotnet/api/system.linq.iqueryable?view=net-7.0).
 
-If you want to filter the returned data in some way, put the filter condition BEFOFE the .AsEnumerable() so that you don't unnecessarily load all the data only to filter and throw away what you don't need later.
+If you want to filter the returned data in some way, put the filter condition BEFOFE the [.AsEnumerable()](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.asenumerable?view=net-7.0) so that you don't unnecessarily load all the data only to filter and throw away what you don't need later.
 
 Like so:
 
