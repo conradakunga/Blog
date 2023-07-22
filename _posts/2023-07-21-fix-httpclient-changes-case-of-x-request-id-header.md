@@ -125,7 +125,7 @@ So our final passing test looks like this:
 
 This works for .NET 8 Preview (as at the time of writing this) and .NET 7.
 
-It also works for .NET 6 PROVIDED that you do not attempt to access the [DefaultRequestHeaders](https://learn.microsoft.com/en-us/uwp/api/windows.web.http.httpclient.defaultrequestheaders?view=winrt-22621) property of the `HttpClient`. Doing this **will silently remove them**.
+It also works for .NET 6 **PROVIDED that you do not attempt to access** the [DefaultRequestHeaders](https://learn.microsoft.com/en-us/uwp/api/windows.web.http.httpclient.defaultrequestheaders?view=winrt-22621) property of the `HttpClient`. Doing this **will silently remove them**.
 
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2023-07-22%20-%20Request%20Headers).
 
