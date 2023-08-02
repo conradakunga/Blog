@@ -32,6 +32,12 @@ public interface IEngine
 }
 ```
 
+The magic happens here:
+
+![](../images/2023/08/Refit.png)
+
+Refit uses this to generate the code responsible for sending a [HTTP GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) request, and pass the appropriate information in the URL, as well as de-serializing the returned JSON to a strongly typed object.
+
 The person class is as follows:
 
 ```csharp
