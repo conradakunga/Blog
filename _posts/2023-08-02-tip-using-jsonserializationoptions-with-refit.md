@@ -134,6 +134,6 @@ You should be able to successfully call your API now.
 
 ![](../images/2023/08/RefitAPI.png)
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2023-08-02%20-%20Refit%20JsonSerialization).
 
 Happy hacking!
