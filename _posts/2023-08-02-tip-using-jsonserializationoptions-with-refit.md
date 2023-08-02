@@ -18,12 +18,6 @@ var app = builder.Build();
 app.MapGet("/{idNumber}", (string idNumber) => new Person { Name = "Conrad", Age = "80" });
 
 app.Run();
-
-public record Person
-{
-    public string Name { get; set; }
-    public string Age { get; set; }
-}
 ```
 
 You can write a very quick application that can consume this.
@@ -31,12 +25,11 @@ You can write a very quick application that can consume this.
 First you define an interface of what you want to achieve:
 
 ```csharp
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
-
-app.MapGet("/{idNumber}", (string idNumber) => new Person { Name = "Conrad", Age = "80" });
-
-app.Run();
+public interface IEngine
+{
+    [Get("/{idNumber}")]
+    Task<Person> GetPerson(string idNumber);
+}
 ```
 
 The person class is as follows:
@@ -94,7 +87,7 @@ This is because the payloads are different:
 
 ![](../images/2023/08/DiffStringINt.png)
 
-Now an obvious solution is to update the class on the client side and change the type of Age to string.
+Now an obvious solution is to update the class on the client side and change the type of `Age` to `string`.
 
 But that is not always possible, or desirable.
 
