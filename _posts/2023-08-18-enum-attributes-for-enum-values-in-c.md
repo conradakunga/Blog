@@ -98,6 +98,8 @@ public enum Model
 
 Thus you can tell by looking what `Model` applies to which `Make`.
 
+![](../images/2023/08/Models.png)
+
 We can further make use of this to enforce the connection.
 
 We need to write some code that, given the `Model`, will get for us the `Make` specified as an attribute.
