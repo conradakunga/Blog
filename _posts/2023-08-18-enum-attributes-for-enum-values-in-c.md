@@ -62,7 +62,7 @@ This is not possible in C#. At least, not directly.
 
 One way to approach this would be to make use of [Attributes](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/reflection-and-attributes/), with which we can decorate our `enum` values.
 
-We start off my creating an attribute like this:
+We start off by creating an attribute like this:
 
 ```csharp
 [AttributeUsage(AttributeTargets.Field)]
