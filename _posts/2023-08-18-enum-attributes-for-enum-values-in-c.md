@@ -26,7 +26,7 @@ public enum Model
 }
 ```
 
-Finally suppose a Vehicle was defined as follows:
+Finally suppose a `Vehicle` was defined as follows:
 
 ```csharp
 public class Vehicle
@@ -78,6 +78,8 @@ public class MakeOfAttribute : Attribute
 
 The line `[AttributeUsage(AttributeTargets.Field)]` indicates that the attribute is meant to be applied to a `Field`, of which an `enum` value is.
 
+We are indicating the attribute takes as a parameter the `Make` of the `Vehicle`.
+
 We can then update our `Model` `enum` as follows:
 
 ```csharp
@@ -107,25 +109,23 @@ We can remove `Make` from the `Vehicle` class directly and retrieve it as follow
 ```csharp
 public class Vehicle
 {
-    Model _model;
-    private Make _Make
+    readonly Model _model;
+    public Make Make
     {
         get
         {
             return _model.GetType() // Retrieve the type
-                .GetMember(_model.ToString()) //Get the member info collection for the passed field (Camry)
+                .GetMember(_model.ToString()) //Get the member info for the passed field (Camry)
                 .First() // Retrieve the first item
-                .GetCustomAttribute<MakeOfAttribute>()! // Get the attribute specified, of which we are sure has been set (hence the !)
-                .Make; // Get the make
+                .GetCustomAttribute<MakeOfAttribute>()! // Get the attribute specified
+                .Make; // Get the make and return it
         }
     }
-    
     public Model Model => _model;
-    public Make Make => _Make;
     
     public Vehicle(Model model)
     {
-    	_model = model;
+        _model = model;
     }
 }
 ```
@@ -146,3 +146,7 @@ This should print the following to your console:
 Model: Camry
 Make: Toyota
 ```
+
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2023-08-18%20-%20Defining%20Relationships%20With%20Enum%20Attributes%20For%20Enum%20Values).
+
+Happy hacking!
