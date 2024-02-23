@@ -4,6 +4,8 @@ title: Tip - Don't Log Exceptions With Log.Information
 date: 2024-02-23 10:13:17 +0300
 categories:
     - C#
+    - .NET
+    - Tips
 ---
 When it comes to logging, many [ILogger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger?view=dotnet-plat-ext-8.0) implementations allow you to log errors [like this](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.loggerextensions.loginformation?view=dotnet-plat-ext-8.0#microsoft-extensions-logging-loggerextensions-loginformation(microsoft-extensions-logging-ilogger-system-exception-system-string-system-object())):
 
