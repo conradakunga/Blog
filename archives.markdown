@@ -7,6 +7,8 @@ permalink: /archives/
 
 <h3>Total Posts : {{count}}</h3>
 
+{% if jekyll.environment == "production" %}
+
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
   <h2>{{ year.name }}</h2>
@@ -24,3 +26,5 @@ permalink: /archives/
 
 {% endfor %}
 {% endfor %}
+
+{% endif %}

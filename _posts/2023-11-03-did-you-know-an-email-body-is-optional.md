@@ -7,7 +7,7 @@ categories:
 ---
 The other day while working with one of our internal libraries for sending email, I ran into an error where it complained about a missing body.
 
-I was curious to see if the specification for electronic mail had any such descriptions.
+I was curious to see if the specification for electronic mail had any such restrictions.
 
 So I looked for the appropriate RFC - [2882](https://www.rfc-editor.org/rfc/rfc2822)
 
