@@ -18,9 +18,9 @@ Take any software in popular use:
 
 I can bet you have heard someone say the following about any of these:
 
-> "This software sucks. Its too bloated and difficult to use. There needs to be something lighter weight and easier to use"
+> "This software sucks. It's too bloated and difficult to use. There needs to be something lighter weight and easier to use"
 
-![Softwares Sucks](../images/2024/03/SoftwaresSucks.png)
+![Software Sucks](../images/2024/03/SoftwaresSucks.png)
 
 You probably have said it yourself!
 
