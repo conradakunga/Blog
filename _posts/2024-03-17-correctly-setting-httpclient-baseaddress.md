@@ -37,7 +37,7 @@ var about = await client.GetStringAsync("about");
 var archive = await client.GetStringAsync("archives");
 ```
 
-Of not here is that the `BaseAddress` is a [URI](https://learn.microsoft.com/en-us/dotnet/api/system.uri?view=net-8.0), and not a string.
+Of note here is that the `BaseAddress` is a [URI](https://learn.microsoft.com/en-us/dotnet/api/system.uri?view=net-8.0), and not a string.
 
 Also, **you must have the trailing slash**, `/` at the end of the `BaseAddress`.
 
