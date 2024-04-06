@@ -132,7 +132,7 @@ public class TeacherCopyValidator : AbstractValidator<Teacher>
 
 Which works.
 
-The problem is now we have duplicate code in two places and you have to remember to make modifications / bug fixes in both places.
+The problem is now we have duplicate code in two places and you have to remember to make modifications / bug fixes in both places. And update two sets of tests.
 
 A bad thing.
 
@@ -253,7 +253,7 @@ Again, a `Headmaster` (at least the relevant attributes) can be validated by:
 1. `PersonValidator`
 1. `TeacherValidator`
 
-The beauty of this approach is that every inherited valiator has access to the child properties of the parent object being validated.
+The beauty of this approach is that every inherited validator has access to the child properties of the parent object being validated.
 
 you can cascade the validations and do things like this:
 
