@@ -4,6 +4,7 @@ title: Using Inheritance With FluentValidation
 date: 2024-04-06 12:29:39 +0300
 categories:
     - C#
+    - .NET
     - FluentValidation
 ---
 If you are a .NET developer, you really need to be using the [FluentValidation](https://fluentvalidation.net/) library.
