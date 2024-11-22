@@ -27,7 +27,7 @@ Next, you can proceed to install the .NET version you require
 brew install --cask <version>
 ```
 
-The list of versions available is as follows:
+The list of versions available is as follows, as of 22 November 2022:
 
 
 | Version | SDK |
