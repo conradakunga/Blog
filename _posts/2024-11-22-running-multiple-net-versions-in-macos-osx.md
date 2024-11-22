@@ -3,7 +3,7 @@ layout: post
 title: Running Multiple .NET Versions In MacOS OSX
 date: 2024-11-22 08:38:27 +0300
 categories:
-  -.NET
+  - .NET
   - C#
 ---
 
@@ -38,13 +38,13 @@ The list of versions available is as follows:
 So, for instance, to install .NET 9 you would do so as follows:
 
 ```powershell
-brew install dotnet-sdk9
+brew install --cask dotnet-sdk9
 ```
 
 And then to install .NET 8
 
 ```powershell
-brew install dotnet-sdk8
+brew install --cask dotnet-sdk8
 ```
 
 Once done you can verify both are installed by running the following command
