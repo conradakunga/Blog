@@ -33,7 +33,14 @@ The list of versions available is as follows, as of 22 November 2022:
 | Version | SDK |
 |---|---|
 | dotnet-sdk9	| 9.0.100 |
-| dotnet-sdk8	| 8.0.404 | 
+| dotnet-sdk8	| 8.0.404 |
+| *dotnet-sdk7* |	*7.0.410* |
+| *dotnet-sdk6* |	*6.0.428* |
+| *dotnet-sdk5* |	*5.0.408* |
+| *dotnet-sdk3* |	*3.1.426* |
+| *dotnet-sdk2* |	*2.2.402* |
+
+Remember, .NET 7 going backwards are [out of support](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core )!
 
 So, for instance, to install .NET 9 you would do so as follows:
 
