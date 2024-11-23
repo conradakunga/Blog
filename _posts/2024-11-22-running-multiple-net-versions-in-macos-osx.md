@@ -15,7 +15,7 @@ However there is a solution to this.
 
 First you need to install and setup [Homebrew](https://brew.sh) for OSX.
 
-Next you need to setup the cask that has the various .NET SDK Versions. This is done usng this command:
+Next you need to setup the cask that has the various .NET SDK Versions. This is done using this command:
 
 ```powershell
 brew tap isen-ng/dotnet-sdk-versions
