@@ -24,33 +24,8 @@ string json = """
 }
 """;
 
-// Create and set the serialization options
-var options = new JsonSerializerOptions
-{
-    // Specify that the attributes should be indented
-    WriteIndented = true
-};
-
-// Parse the json
-var jsonDocument = JsonDocument.Parse(json);
-// Serialize the json into a formatted string, passing the configured options
-var formattedJson = JsonSerializer.Serialize(jsonDocument, options);
-
-Console.WriteLine(formattedJson);
-```
-
-If you run the program you should see this as the result:
-
-```json
-{
-  "name": "James Bond",
-  "age": 45,
-  "agency": "MI-6",
-  "status": {
-    "retired": true,
-    "code": "007"
-  }
-}
+var formattedJson = JsonNode.Parse(json);
+Console.Write(formattedJson);
 ```
 
 It is trivial to refactor this to accept the unformatted json as input and then wrap the code  in a [LinqPad](https://www.linqpad.net/) script, or a [console](https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio?pivots=dotnet-9-0) application, or a [WebAP](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio) for routine access.
