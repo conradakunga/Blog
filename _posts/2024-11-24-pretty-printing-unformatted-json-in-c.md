@@ -53,6 +53,13 @@ If you run the program you should see this as the result:
 }
 ```
 
-It is trivial to wrap this in a LinqPad script, or a console application, or a WebAPI for quick access.
+It is trivial to refactor this to accept the unformatted json as input and then wrap the code  in a [LinqPad](https://www.linqpad.net/) script, or a [console](https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio?pivots=dotnet-9-0) application, or a [WebAP](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio) for routine access.
+
+If you are using [Newtonsoft.Json](https://www.newtonsoft.com/json), the code is even simpler:
+
+```csharp
+var formattedJson = JToken.Parse(json);
+Console.Write(formattedJson);
+```
 
 Happy hacking!
