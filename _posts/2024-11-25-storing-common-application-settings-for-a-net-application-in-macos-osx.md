@@ -48,7 +48,7 @@ C:\Users\rad\AppData\Local
 C:\ProgramData
 ```
 
-On my Mac OSX 14.7.1, I get the following:
+On my Mac OSX 14, I get the following:
 
 ```plaintext
 /Users/rad/Library/Application Support
@@ -58,7 +58,7 @@ On my Mac OSX 14.7.1, I get the following:
 
 Upon looking closer, `ApplicationData` and `LocalApplicaitonData` appear to be user specific i.e. are for a current user, factoring in whether the profile is local or [roaming](https://www.techtarget.com/searchvirtualdesktop/answer/How-does-a-roaming-user-profile-work)
 
-So the best option is `Common Application Data`
+So the best option is `CommonApplicationData` that maps to `/usr/share`
 
 You'd think this would be the end of it.
 
