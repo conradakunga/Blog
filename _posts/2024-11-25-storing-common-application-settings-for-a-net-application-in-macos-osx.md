@@ -40,7 +40,7 @@ Console.WriteLine(Environment.GetFolderPath(SpecialFolder.LocalApplicationData))
 Console.WriteLine(Environment.GetFolderPath(SpecialFolder.CommonApplicationData));
 ```
 
-On my Windows machine I get the following output:
+On my Windows 11 machine I get the following output:
 
 ```plaintext
 C:\Users\rad\AppData\Roaming
@@ -48,7 +48,7 @@ C:\Users\rad\AppData\Local
 C:\ProgramData
 ```
 
-On my Mac, I get the following:
+On my Mac OSX 14.7.1, I get the following:
 
 ```plaintext
 /Users/rad/Library/Application Support
