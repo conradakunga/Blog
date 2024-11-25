@@ -18,7 +18,7 @@ Here is the relevant passage:
 ![Email Body](../images/2023/11/EmailBody.png)
 
 Where would you use an email without a body?
-  
+
 A common use case is a scenario where the email's purpose is purely to send one or more attachments, in which case you don't need a body.
 
 Happy hacking!
