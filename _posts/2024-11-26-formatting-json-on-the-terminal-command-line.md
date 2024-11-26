@@ -24,7 +24,7 @@ The response is as follows:
 
 *Note: don't use [httpie](https://httpie.io) for the purposes of this demo - `httpie` will format the json for you!*
 
-If you are on Windows on [PowerShell](https://learn.microsoft.com/en-us/powershell/), run the command as follows:
+Also, If you are on Windows on [PowerShell](https://learn.microsoft.com/en-us/powershell/), run the command as follows:
 
 ```bash
 curl.exe https://microsoftedge.github.io/Demos/json-dummy-data/64KB-min.json
