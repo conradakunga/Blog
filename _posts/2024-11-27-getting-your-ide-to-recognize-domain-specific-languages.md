@@ -67,7 +67,7 @@ And if you hover your mouse ...
 
 ![vsCodeHintTooltip](../images/2024/11/vsCodeHintTooltip.png)
 
-This also works with **Rider**, but it does not tell you that the `json` is invalid.
+This also works with **Rider**
 
 ![riderHint](../images/2024/11/riderHint.png)
 
