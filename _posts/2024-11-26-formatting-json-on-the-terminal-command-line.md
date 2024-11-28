@@ -34,6 +34,8 @@ Note this is `curl.exe` and not `curl`. In Powershell, `curl` is an alias for [I
 
 To format the json, [pipe](https://www.geeksforgeeks.org/piping-in-unix-or-linux/) it to the very useful [jq](https://jqlang.github.io/jq/) program.
 
+`jq` is not installed by default, so install it using your favorite method ([winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) or [chocolatey](https://chocolatey.org/) on Windows, [homebrew](https://brew.sh/) on OSX, [apt](https://en.wikipedia.org/wiki/APT_(software)) on Linux)
+
 ```bash
 curl https://microsoftedge.github.io/Demos/json-dummy-data/64KB-min.json | jq
 ```
