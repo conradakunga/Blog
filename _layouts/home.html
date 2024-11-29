@@ -6,6 +6,11 @@ layout: default
         <article>
 		<span class="post-meta">{{ post.date | date: '%B %e, %Y' }}</span>
             <h2><a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a></h2>
+            <h5><b> {% if post.categories and post.categories.size > 0 %}
+                [{{ post.categories | join: ", " }}]
+              {% else %}
+                []
+              {% endif %}</b></h5>
             {{ post.excerpt }}
         </article>
     {% endfor %}
