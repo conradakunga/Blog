@@ -4,7 +4,6 @@ title: Improved Collection Shuffling In F# 9
 date: 2024-11-29 20:02:34 +0300
 categories:
     - F#
-    - .NET 9
 ---
 
 Suppose you needed to shuffle the numbers 0 to 9 in [F#](https://fsharp.org), perhaps for a game; or a data science exercise.
