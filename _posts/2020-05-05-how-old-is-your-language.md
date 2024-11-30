@@ -1,4 +1,4 @@
-﻿---
+---
 id: 264
 title: How Old Is Your Language?
 date: 2020-05-05T15:57:47+03:00

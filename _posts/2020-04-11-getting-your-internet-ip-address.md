@@ -14,7 +14,7 @@ Generally you’d launch a browser to do this, using a site like [WhatIsMyIP](ht
 You can get that information using this handy expression:
 
 ```powershell
-(curl ipinfo.io/io).Content
+(curl ipinfo.io/ip).Content
 ```
 
 You should get the following, outputting your IP address. This assumes you are connected to the Internet.
