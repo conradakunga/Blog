@@ -19,6 +19,8 @@ I have a keen interest in technology and software development in particular. I h
 
 My work is currently running in production in 10 countries across various industries.
 
+For the last 15 years I have specialized in the fintech space and in particular capital markets. I have also designed and built dozens of integrations to core banking systems, accounting systems and payment gateways.
+
 Some of the organizations I have worked with in developing solutions include
 
 * Microsoft
