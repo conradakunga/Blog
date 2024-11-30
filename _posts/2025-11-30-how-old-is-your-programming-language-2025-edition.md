@@ -3,7 +3,11 @@ layout: post
 title: How Old Is Your Programming Language (2025 Edition)
 date: 2025-11-30 12:24:59 +0300
 categories:
+  - Epiphanies
+  - Languages
 ---
+
+This is an update to [last year's post]({% post_url 2024-11-30-how-old-is-your-programming-language-2024-edition %}), that I will now be updating annually
 
 Ever wonder how old your favourite language is? You might be surprised!
 

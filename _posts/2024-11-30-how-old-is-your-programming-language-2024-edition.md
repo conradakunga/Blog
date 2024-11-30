@@ -7,6 +7,8 @@ categories:
   - Languages
 ---
 
+This is an update to a [post I wrote 4 years ago]({% post_url 2020-05-05-how-old-is-your-language %}), that I will now be updating annually
+
 Ever wonder how old your favourite language is? You might be surprised!
 
 Here are their ages as at 2024
