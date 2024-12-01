@@ -5,8 +5,6 @@ permalink: /categories/
 ---
 ## All posts by category
 
-{% if jekyll.environment == "production" %}
-
 {% assign sorted_cats = site.categories | sort %}
 {% for category in sorted_cats %}
   <h3>{{ category[0] }}</h3>
@@ -16,4 +14,3 @@ permalink: /categories/
     {% endfor %}
   </ul>
 {% endfor %}
-{% endif %}
