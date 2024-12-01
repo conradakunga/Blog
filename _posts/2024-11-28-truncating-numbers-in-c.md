@@ -7,11 +7,7 @@ categories:
     - .NET
 ---
 
-If you have the following number:
-
-`123.456`
-
-And you want to write it to the console, or anywhere for that matter to 2 decimal places, you would do it like so:
+If you have the following number, `123.456`, and you want to write it to the console, or anywhere for that matter to 2 decimal places, you would do it like so:
 
 ```csharp
 Console.WriteLine(123.456.ToString("#,0.00"));

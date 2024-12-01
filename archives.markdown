@@ -19,7 +19,7 @@ permalink: /archives/
 <ul>
   {% for post in month.items %}
     <li>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - {{ post.date | date: "%-d %B" }} <h5><b> {% if post.categories and post.categories.size > 0 %}
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - {{ post.date | date: "%A, %-d %B" }} <h5><b> {% if post.categories and post.categories.size > 0 %}
   [{{ post.categories | join: ", " }}]
 {% else %}
   []

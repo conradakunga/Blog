@@ -12,7 +12,7 @@ permalink: /categories/
   <h3>{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}
-      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {{ post.date | date_to_long_string: "ordinal" }}</li>
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - {{ post.date | date: "%a, %-d %B" }}</li>
     {% endfor %}
   </ul>
 {% endfor %}
