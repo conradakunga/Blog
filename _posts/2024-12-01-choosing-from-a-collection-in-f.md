@@ -29,7 +29,7 @@ let result = tossDice diceResults
 printfn "Dice result: %i" result
 ```
 
-In F# 9, this can be siplified even further with the addition of [randomChoice](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#randomChoice) to `Lists`, as well as `Sequences` and `Arrays` as part of the [FSharp.Core](https://fsharp.github.io/fsharp-core-docs/) package.
+In F#, this can be simplified even further with the addition of [randomChoice](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#randomChoice) to `Lists`, as well as `Sequences` and `Arrays` as part of the [FSharp.Core](https://fsharp.github.io/fsharp-core-docs/) package.
 
 The code can be simplified as follows:
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Improved Collection Shuffling In F# 9
+title: Improved Collection Shuffling In F#
 date: 2024-11-29 20:02:34 +0300
 categories:
     - F#
@@ -36,7 +36,7 @@ Shuffled: [0; 1; 3; 2; 7; 4; 5; 6; 9; 8]
 Shuffled: [1; 0; 2; 3; 5; 4; 7; 6; 8; 9]
 ```
 
-There have been some improvements in F# 9 that improves this.
+There have been some improvements in F# that improves this.
 
 Support for shuffling has directly been added to the various collections - `List`, `Seq` and `Array`
 
