@@ -6,7 +6,7 @@ categories:
     - F#
 ---
 
-Suppose you need to write a program to randomly sample a number of items from a list of numbers from `0-99`
+Suppose you need to write a program to randomly sample a number of items from a list of numbers from 0 to 99
 
 The algorithm to do this would look something like this:
 
