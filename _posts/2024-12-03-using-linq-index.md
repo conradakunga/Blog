@@ -5,6 +5,7 @@ date: 2024-12-03 23:31:06 +0300
 categories:
     - C#
     - LINQ
+    - .NET 9
 ---
 
 Here is a possible problem - you have a list of athletes and you would like to interate through them and generate an index for each.

@@ -4,7 +4,6 @@ title: Removing Items From A Priority Queue
 date: 2024-12-04 04:00:00 +0300
 categories:
     - C#
-    - .NET
     - .NET 9
 ---
 
