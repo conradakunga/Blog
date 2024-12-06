@@ -280,7 +280,7 @@ public record RegistrationRequest
 }
 ```
 
-Here we no longer use automatic properties and manage the private field for the `DateOfBirth` property ourselves.
+Here we no longer use [automatic properties](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) and manage the private field for the `DateOfBirth` property ourselves.
 
 However, personally I would not use this approach at all. I prefer to have a single external concern responsible for the validation for a couple of reasons:
 
