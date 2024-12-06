@@ -99,7 +99,7 @@ Death can occur if the body temperature drops below 35 degrees C.";
 
 }
 ```
-  
+
 If all goes well the following should be printed:
 
 ```plaintext
@@ -131,7 +131,7 @@ return $"{fahrenheit} ° F";
 ```
 
 This technique would be very useful on a scientific website serving both metric and non-metric users. Users can choose whichever notation they prefer and the code will seamlessly convert back and forth.
-  
+
 Contributors can write with whichever notation they are comfortable with and readers can read it in whichever notation they prefer.
 
 In this case we would write a second regex like so:
@@ -177,7 +177,6 @@ Note the last temperature is unchanged.
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2021-02-02%20-%20Using%20Regular%20Expression%20Match%20Evaluators).
 
 Happy hacking!
-
 
 
 
