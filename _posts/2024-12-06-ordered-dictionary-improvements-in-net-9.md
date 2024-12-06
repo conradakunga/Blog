@@ -4,7 +4,7 @@ title: Ordered Dictionary Improvements In .NET 9
 date: 2024-12-06 03:32:09 +0300
 categories:
     - C#
-    - .NET9
+    - .NET 9
 ---
 
 The [dictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-9.0) class is a workhorse of the developer. It is a data structure that allows you to store a `value` of any kind with an associated `key` to look up the said value. They key must be unique, and attempting to insert a duplicate throws an [exception](https://learn.microsoft.com/en-us/dotnet/api/system.argumentexception?view=net-9.0)
