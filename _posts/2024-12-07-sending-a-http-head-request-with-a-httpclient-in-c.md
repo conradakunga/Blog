@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sending a HTTP HEAD Request With A HttpClient In C#
-date: 2024-12-08 01:58:23 +0300
+date: 2024-12-07 01:58:23 +0300
 categories:
     - C#
     - HttpClient
