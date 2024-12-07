@@ -19,7 +19,7 @@ var payload = new { Name = "James Bond", Age = 50 };
 // Serlialize
 string jsonPayload = JsonSerializer.Serialize(payload);
 // Create a StringContent object with the serialized JSON.
-// The conent does not have to be JSON!
+// The content does not have to be JSON!
 var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
 
 // Sample get
