@@ -19,7 +19,7 @@ This would print the following:
 123.46
 ```
 
-What has happened here is tha C# has rounded the value for you to 2 decimal places.
+What has happened here is that C# has rounded the value for you to 2 decimal places.
 
 Suppose you don't want this, and actually want to **truncate** the number to 2 decimal places?
 
