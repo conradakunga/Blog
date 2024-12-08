@@ -28,9 +28,7 @@ If you want to **POST** JSON, you do it as follows:
 ```csharp
 // Sample request
 var payload = new { Name = "James Bond", Age = 50 };
-
 // Sample post
-
 var response = client.PostAsJsonAsync("URL", payload);
 ```
 
@@ -39,9 +37,7 @@ To **PUT** there is a corresponding method:
 ```csharp
 // Sample request
 var payload = new { Name = "James Bond", Age = 50 };
-
-// Sample post
-
+// Sample put
 var response = client.PutAsJsonAsync("URL", payload);
 ```
 
