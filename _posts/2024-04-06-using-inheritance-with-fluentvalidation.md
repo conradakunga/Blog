@@ -176,7 +176,7 @@ public class TeacherValidator : PersonValidator<Teacher>
 
 What we are getting here is the following:
 1. The ability for the `TeacherValidor` to leverage the code in the `PersonValidator`
-1. The ability for a `PersonValidator` to also validate a teacher directly.
+1. The ability for the `PersonValidator` to also validate a teacher directly.
 
     In other words, this code will work:
     
