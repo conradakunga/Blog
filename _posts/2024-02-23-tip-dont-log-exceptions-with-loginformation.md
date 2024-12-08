@@ -15,7 +15,7 @@ Log.LogException(Exception ex, string message)
 
 And it works.
 
-Take this code, using [Serilog](https://serilog.net/):
+Take this code using [Serilog](https://serilog.net/):
 
 ```csharp
 Log.Logger = new LoggerConfiguration()
@@ -81,5 +81,4 @@ And best of all, you can filter to quickly see your errors only:
 Which is VERY helpful in production.
 
 Happy hacking!
-
 

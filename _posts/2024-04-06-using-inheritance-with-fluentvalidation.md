@@ -23,7 +23,7 @@ public record Person
 }
 ```
 
-We can write a validator by first of all adding the library to our project.
+We can write a validator by, first of all, adding the library to our project.
 
  `dotnet add package fluentvalidation`
 
@@ -69,7 +69,7 @@ public void Person_When_Invalid_Throws_3_Errors()
 
 `Should()` here is from the use of the excellent [FluentAssertions](https://fluentassertions.com/) library.
 
-Here I am expecting a `ValidationException`, so after capturing the `Exception` from xUnit, I cast it to the appropriate type so that I can count the number of failed validations.
+Here, I am expecting a `ValidationException`, so after capturing the `Exception` from xUnit, I cast it to the appropriate type to count the number of failed validations.
 
 I am expecting 3:
 1. The name, an empty string, was not provided
@@ -96,9 +96,9 @@ public void Person_When_Valid_Succeeds()
 
 Great.
 
-Now, imagine we are building a school administration application, and we have a `Teacher` entity. A teacher is a `Person`, but has an additional Subject property.
+Now, imagine we are building a school administration application, and we have a `Teacher` entity. A teacher is a `Person` but has an additional Subject property.
 
-We can therefore inherit `Person` and add the new property.
+We can, therefore, inherit `Person` and add the new property.
 
 ```csharp
 public record Teacher : Person
@@ -109,7 +109,7 @@ public record Teacher : Person
 
 Now, we also need to write a validator for this.
 
-It is tempting to simply copy the validation code from the person and do this:
+It is tempting to copy the validation code from the person and do this:
 
 ```csharp
 public class TeacherCopyValidator : AbstractValidator<Teacher>
@@ -133,13 +133,13 @@ public class TeacherCopyValidator : AbstractValidator<Teacher>
 
 Which works.
 
-The problem is now we have duplicate code in two places and you have to remember to make modifications / bug fixes in both places. And update two sets of tests.
+The problem is that we now have duplicate code in two places, and you have to remember to make modifications/bug fixes in both places. And update two sets of tests.
 
 A bad thing.
 
-We can leverage the code that we have already written in the `PersonValidator` by using inheritance.
+Using inheritance, we can leverage the code we have already written in the `PersonValidator`.
 
-The first change is to make the `PersonValidator` generic. The rationale being we are making it aware that it can be passed anything inheriting `Person` - such as a `Teacher`.
+The first change is to make the `PersonValidator` generic. The rationale is that we are making it aware that it can be passed to an inheriting `Person` - such as a `Teacher`.
 
 It will now look like this:
 
@@ -175,8 +175,8 @@ public class TeacherValidator : PersonValidator<Teacher>
 ```
 
 What we are getting here is the following:
-1. Ability for the `TeacherValidor` to leverage the code in the `PersonValidator`
-1. Ability for a `PersonValidator` to also validate a teacher directly.
+1. The ability for the `TeacherValidor` to leverage the code in the `PersonValidator`
+1. The ability for a `PersonValidator` to also validate a teacher directly.
 
     In other words, this code will work:
     
@@ -190,7 +190,7 @@ What we are getting here is the following:
     
     var validator = new PersonValidator<Person>();
     ```
-      
+    
     As will this:
     
     
@@ -205,11 +205,11 @@ What we are getting here is the following:
     var validator = new PersonValidator<Teacher>();
     ```
 
-Now you might ask what if there is a third level of inheritance.
+Now, you might ask, what if there is a third level of inheritance?
 
 Not a problem.
 
-Suppose we have a `Headmaster`, who is also a `Teacher`.
+Suppose we have a `Headmaster` who is also a `Teacher`.
 
 ```csharp
 public record Headmaster : Teacher
@@ -256,7 +256,7 @@ Again, a `Headmaster` (at least the relevant attributes) can be validated by:
 
 The beauty of this approach is that every inherited validator has access to the child properties of the parent object being validated.
 
-you can cascade the validations and do things like this:
+You can cascade the validations and do things like this:
 
 1. A headmaster must be at least 20 years old
 1. A headmaster cannot be a Mathematics teacher

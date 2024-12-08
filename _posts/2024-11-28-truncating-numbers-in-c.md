@@ -21,11 +21,11 @@ This would print the following:
 
 What has happened here is that C# has rounded the value for you to 2 decimal places.
 
-Suppose you don't want this, and actually want to **truncate** the number to 2 decimal places?
+Suppose you don't want this and actually want to truncate the number to 2 decimal places.
 
 There is a [Math.Truncate](https://learn.microsoft.com/en-us/dotnet/api/system.math.truncate?view=net-9.0) method, but it doesn't do what you might think it does - it actually **removes all the decimal** values and returns the integral part.
 
-In other words `70.343` -> `70`
+In other words, `70.343` -> `70`
 
 However, you can achieve the result of truncating decimal places by using the [Math.Round](https://learn.microsoft.com/en-us/dotnet/api/system.math.round?view=net-9.0) method and passing telling it to round [towards zero](https://learn.microsoft.com/en-us/dotnet/api/system.midpointrounding?view=net-9.0#system-midpointrounding-tozero) using the `MidpointRounding.ToZero` enum, like this:
 

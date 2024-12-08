@@ -7,11 +7,11 @@ categories:
   - Languages
 ---
 
-This is an update to a [post I wrote 4 years ago]({% post_url 2020-05-05-how-old-is-your-language %}), that I will now be updating annually
+This is an update to a [post I wrote 4 years ago]({% post_url 2020-05-05-how-old-is-your-language %}), which I will now be updating annually
 
 Ever wonder how old your favourite language is? You might be surprised!
 
-Here are their ages as at 2024
+Here are their ages as of 2024
 
   * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is 29, and so is Java
   * [PHP](https://en.wikipedia.org/wiki/PHP) is 30

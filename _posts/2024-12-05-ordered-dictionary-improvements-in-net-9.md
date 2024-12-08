@@ -108,6 +108,6 @@ James Bond
 Modesty Blaise
 ```
 
-Of interest here is to access the element by position, you use the [GetAt method](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ordereddictionary-2.getat?view=net-9.0), rather than index access. This, I would imagine, would be to avoid the ambigutiy of your `OrderedDictionary` was `OrderdDictionary<int,[OtherType]>` - in that scenaro, what would `dict[0]` refer to?
+Of interest here is to access the element by position, you use the [GetAt method](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ordereddictionary-2.getat?view=net-9.0), rather than index access. This, I would imagine, would be to avoid the ambigutiy if your `OrderedDictionary` was defined as `OrderdDictionary<int,[OtherType]>` - in that scenaro, what would `dict[0]` refer to?
 
 Happy hacking!

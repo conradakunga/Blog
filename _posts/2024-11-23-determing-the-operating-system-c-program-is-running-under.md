@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Periodically, you will need to determine the operating system your code is running under in order to perform different logic. For example you want behavior to be different depending on of the code is running under Linux, Windows or OSX.
+Periodically, you will need to determine the operating system your code is running under in order to perform different logic. For example, you want the behaviour to be different depending on whether the code is running under Linux, Windows or OSX.
 
 Your first temptation would be to use the [Environment.OSVersion.Platform API](https://learn.microsoft.com/en-us/dotnet/api/system.environment.osversion?view=net-8.0) and retrieve the `PlatformID` property like so:
 
@@ -51,24 +51,24 @@ else
   Console.WriteLine($"Other -  - {RuntimeInformation.OSDescription}");
 }
 ```
-Running under **OSX** it prints the following:
+Running under **OSX**, it prints the following:
 
 ```plaintext
 OSX - Unix 14.7.1
 ```
 
-Under **Linux** it prints the following:
+Under **Linux,** it prints the following:
 
 ```plaintext
 OSX - Linux - Unix 5.15.0.122
 ```
 
-Under **Windows** it prints the following:
+Under **Windows,** it prints the following:
 
 ```plaintext
 Windows - Microsoft Windows NT 10.0.22631.0
 ```
 
-Thus the code will return the correct value whether running under Windows, OSX or Linux.
+Thus, the code will return the correct value whether running under Windows, OSX or Linux.
 
 Happy hacking!

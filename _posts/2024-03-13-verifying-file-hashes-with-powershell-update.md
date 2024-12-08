@@ -6,11 +6,11 @@ categories:
     - PowerShell
     - Tips
 ---
-A couple of years back I wrote a post of [how to get the hash of a file natively]({% post_url 2020-03-19-verifying-file-hashes-with-powershell %}) in [PowerShell](https://learn.microsoft.com/en-us/powershell/) in situations where you need to verify a download, like this one:
+A couple of years back, I wrote a post on [how to get the hash of a file natively]({% post_url 2020-03-19-verifying-file-hashes-with-powershell %}) in [PowerShell](https://learn.microsoft.com/en-us/powershell/) in situations where you need to verify a download, like this one:
 
 ![Handbrake](../images/2024/03/Handbrake.png)
 
-(You ARE using `PowerShell`, aren't you? It's **brilliant** and is cross platform so you can use the same knowledge in Windows, Linux and OSX)
+(You ARE using `PowerShell`, aren't you? It's **brilliant** and is cross-platform so you can use the same knowledge in Windows, Linux and OSX)
 
 All you need to do is run the cmdlet [Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.4&ref=troyhunt.com)
 

@@ -7,11 +7,11 @@ categories:
     - .NET
 ---
 
-Occasionally you will find yourself in a position where you have unformatted, or poorly formatted json and you would like to view it formatted, also knowns *pretty printed*.
+Occasionally, you will find yourself in a position where you have unformatted or poorly formatted JSON, and you would like to view it formatted, also known as *pretty printed*.
 
-There are a bunch of online resources for this, such as [this one](https://jsonformatter.org) , [this one](https://jsonformatter.curiousconcept.com) and [this one](https://jsoneditoronline.org)
+There are a bunch of online resources for this, such as [this one](https://jsonformatter.org), [this one](https://jsonformatter.curiousconcept.com) and [this one](https://jsoneditoronline.org)
 
-But it is very trivial to write a few lines of code to solve this problem, using the types found in the  [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-9.0) namsepace.
+But writing a few lines of code to solve this problem is very trivial, using the types found in the  [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-9.0) namespace.
 
 The code will be as follows:
 
@@ -42,7 +42,7 @@ This will output the following:
 }
 ```
 
-It is trivial to refactor this to accept the unformatted json as input and then wrap the code  in a [LinqPad](https://www.linqpad.net/) script, or a [console](https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio?pivots=dotnet-9-0) application, or a [WebAP](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio) for routine access.
+It is trivial to refactor this to accept the unformatted JSON as input and then wrap the code in a LinqPad script, a [console](https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio?pivots=dotnet-9-0) application, or a [WebAPI](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio) for routine access.
 
 If you are using [Newtonsoft.Json](https://www.newtonsoft.com/json), the code is even simpler:
 

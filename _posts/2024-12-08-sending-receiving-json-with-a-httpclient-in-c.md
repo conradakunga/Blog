@@ -71,7 +71,7 @@ var response = await client.GetAsync("URL");
 var person = await response.Content.ReadFromJsonAsync<Person>();
 ```
 
-This has been simplfied even further at the `HttpClient` level.
+This has been simplified even further at the `HttpClient` level.
 
 ```csharp
 var person = await client.GetFromJsonAsync<Person>("URL");

@@ -8,7 +8,7 @@ categories:
 ---
 Suppose you have the following C# program:
 
-It is composed of a main function, and two functions that are called by the main function.
+It is composed of a main function and two functions that are called by the main function.
 
 ```csharp
 void Main()
@@ -73,19 +73,19 @@ Function secondCheck() As Boolean
 End Function
 ```
 
-If we run this program, it also prints 'Skip work'. But if you look closely you will find a difference in the outputs; to whit:
+If we run this program, it will also print 'Skip work'. But if you look closely, you will find a difference in the outputs; to whit:
 
 ![VB Output](../images/2024/06/VBOutput.png)
 
 In the C# program, that line was not printed.
-  
+
 What does this mean?
 
-In C#, if the first check is `false`, it does not bother to evaluate the second check. This is called [short circuiting](https://www.geeksforgeeks.org/short-circuit-evaluation-in-programming/).
+In C#, if the first check is `false`, it does not bother to evaluate the second check. This is called [short-circuiting](https://www.geeksforgeeks.org/short-circuit-evaluation-in-programming/).
 
-VB.NET does not short circuit the `AND` operator. It will evaluate every condition in a logic statement.
+VB.NET does not short-circuit the `AND` operator. It will evaluate every condition in a logic statement.
 
-Which begs the question: what if you in fact wanted to short circuit in VB.NET?
+Which begs the question: what if you, in fact, wanted to short-circuit in VB.NET?
 
 This can be achieved using the [AndAlso](https://learn.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/andalso-operator) operator.
 
@@ -123,7 +123,7 @@ When is this useful?
 
 A simple case in use interface development is to validate a value **only** if it has been provided.
 
-For instance to check if a text is a certain length in a `TextBox`:
+For instance, to check if a text is a certain length in a `TextBox`:
 
 ```csharp
 if(textEdit.HasValue && textEdit.Length > 10)
@@ -132,7 +132,7 @@ if(textEdit.HasValue && textEdit.Length > 10)
 }
 ```
 
-This works out because the length is only checked if there is in fact a provided value.
+This works out because the length is only checked if there is, in fact, a provided value.
 
 The same code in VB is as follows:
 

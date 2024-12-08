@@ -6,7 +6,7 @@ categories:
     - F#
 ---
 
-Suppose you needed to shuffle the numbers 0 to 9 in [F#](https://fsharp.org), perhaps for a game; or a data science exercise.
+Suppose you needed to shuffle the numbers 0 to 9 in [F#](https://fsharp.org), perhaps for a game or a data science exercise.
 
 A simple way to do it would be as follows:
 
@@ -26,7 +26,7 @@ let shuffledNumbers = shuffle numbers
 printfn "Shuffled: %A" shuffledNumbers
 ```
 
-If you run this code a couple of times  you should see the following
+If you run this code a couple of times, you should see the following
 
 ```plaintext
 Shuffled: [3; 1; 0; 9; 2; 8; 6; 7; 4; 5]
@@ -47,7 +47,7 @@ let otherShuffledNumbers = numbers |> List.randomShuffle
 printfn "Other Shuffled: %A" shuffledNumbers
 ```
 
-To enjoy this goodness, you need to intall the [FSharp.Core](https://www.nuget.org/packages/fsharp.core/) nuget package to your program
+To enjoy this goodness, you need to install the [FSharp.Core](https://www.nuget.org/packages/fsharp.core/) nuget package to your program
 
 `Arrays` have the additional bonus that the original array can be mutated and shuffled in place
 

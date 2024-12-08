@@ -49,7 +49,7 @@ var json =
 """;
 ```
 
-It will look like this in **Visual Studio**, with a squiggly indicator.
+It will look like this in **Visual Studio**, with a squiggly indicator. Notice also the syntax highlighting
 
 ![vsHint](../images/2024/11/vsHint.png)
 

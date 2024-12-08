@@ -6,13 +6,13 @@ categories:
     - JSON
 ---
 
-In the spirit of the last post about [formatting unformatted JSON]({% post_url 2024-11-24-pretty-printing-unformatted-json-in-c %}) there are occasions where you need to process and format JSON in a hurry on a non develper machine.
+In the spirit of the last post about [formatting unformatted JSON]({% post_url 2024-11-24-pretty-printing-unformatted-json-in-c %}) there are occasions where you need to process and format JSON in a hurry on a non developer machine.
 
-Take the following example, that uses the [excellent service that generates test JSON](https://microsoftedge.github.io/Demos/json-dummy-data/) via an API endpoint
+Take the following example, which uses the [excellent service that generates test JSON](https://microsoftedge.github.io/Demos/json-dummy-data/) via an API endpoint
 
 Using your favourite command line tool, fetch the JSON from the following url [https://microsoftedge.github.io/Demos/json-dummy-data/64KB-min.json](https://microsoftedge.github.io/Demos/json-dummy-data/64KB-min.json)
 
-On my machine i run the following request using [curl](https://curl.se)
+On my machine, I run the following request using [curl](https://curl.se)
 
 ```bash
 curl https://microsoftedge.github.io/Demos/json-dummy-data/64KB-min.json

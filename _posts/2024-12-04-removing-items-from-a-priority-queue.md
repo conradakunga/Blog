@@ -86,7 +86,7 @@ Evelyn Salt
 Jason Bourne
 ```
 
-You might wonder why are we checking for the success of the removal here:
+You might wonder - why are we checking for the success of the removal here:
 
 ```csharp
 var success = spyQueue.Remove("James Bond", out var removedSpy, out var removedPriority);

@@ -81,7 +81,7 @@ We could of course eliminate the function altogether and directly sample like so
 let result = numbers |> List.randomSample requiredCount
 ```
 
-But it can be argued having the logic in a separate function is more maintainable given we can always change the sampling algorithm later without modifying the main body of the code.
+However, it can be argued that having the logic in a separate function is more maintainable, given that we can always change the sampling algorithm later without modifying the main body of the code.
 
 I tend to lean more towards clarity over brevity (and cleverness!)
 

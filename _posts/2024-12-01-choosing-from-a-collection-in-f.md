@@ -17,7 +17,7 @@ open System
 // Generate a list of the results
 let diceResults = [2..12]
 
-// Write a functon to return a random entry
+// Write a function to return a random entry
 let tossDice list = 
   let index = Random.Shared.Next(0, List.length list)
   list.[index]

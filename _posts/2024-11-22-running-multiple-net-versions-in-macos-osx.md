@@ -11,9 +11,9 @@ With .NET 9 [released the other day](https://devblogs.microsoft.com/dotnet/annou
 
 If you are on OSX, this presents some challenges, as using the .NET Installer does not allow you to run more than one version of the .NET SDK.
 
-However there is a solution to this.
+However, there is a solution to this.
 
-First you need to install and setup [Homebrew](https://brew.sh) for OSX.
+First, you need to install and setup [Homebrew](https://brew.sh) for OSX.
 
 Next you need to setup the cask that has the various .NET SDK Versions. This is done using this command:
 

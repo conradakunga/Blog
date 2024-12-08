@@ -24,7 +24,7 @@ I can bet you have heard someone say the following about any of these:
 
 You probably have said it yourself!
 
-There is nothing *wrong* per se with this statement. However it is important to reflect a little on how we got here and take some lessons from it.
+This statement is not necessarily wrong. However, it is important to reflect on how we got here and learn some lessons from it.
 
 I have in the past talked about [software bloat]({% post_url 2021-08-30-about-software-bloat %}) as well as how [the simple decision to release and improve software can quickly balloon into a monstrosity]({% post_url 2022-01-17-coding-is-easy-any-monkey-can-do-it-software-is-very-hard %}).
 
@@ -34,7 +34,7 @@ But at the same time wanting to improve things is not a bad thing. That is how i
 
 But what is important to ask yourself when it comes to the sentiment "this is too complicated and difficult to use" is this - **do you not think Microsoft / Apple / Oracle / Google etc. appreciate this**?
 
-The teams behind that software obviously read support tickets / blogs / tweets from users voicing that sentiment about complexity.
+The teams behind that software obviously read support tickets/blogs/tweets from users voicing that sentiment about complexity.
 
 Why do they not change the thing?
 
@@ -48,7 +48,7 @@ It is also due to [operational and strategic decisions]({% post_url 2022-07-19-p
 
 And such is the nature of this business.
 
-Which is not to say that we should stop looking to how to improve. But we should be cognisant of how we got here.
+This is not to say that we should stop looking at how to improve. But we should be cognizant of how we got here.
 
 Happy hacking!
 

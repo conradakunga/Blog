@@ -8,15 +8,15 @@ categories:
     - OSX
 ---
 
-Suppose, for whatever reason, you need to store some data such as data files in a specific location on the operating system, and populate them at runtime / initialization.
+Suppose, for whatever reason, you need to store some data, such as master files, in a specific location on the file system and populate them at runtime/initialization.
 
 Which would be the best place to put them?
 
-This is a common problem in most operating systems, and has been solved at the OS level where by default there exist a number of locations dedicated to the storage of user data.
+This is a common problem in most operating systems and has been solved at the OS level where, by default, there exist a number of locations dedicated to the storage of user data.
 
 There is a .NET API to interrogate these the [Environment.GetSpecialFolders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=net-9.0) that passes an enumeration of the folder that you want, [Special Folders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=net-9.0).
 
-For our case there are 3 candidates:
+In our case, there are 3 candidates:
 
 - ApplicationData
 - Common Applicaiton Data
@@ -30,7 +30,7 @@ What is the difference between these three?
 | Common Application Data | The directory that serves as a common repository for application-specific data that is used by all users. |
 | Local Application Data | The directory that serves as a common repository for application-specific data that is used by the current, non-roaming user. |
 
-This code will output these locations to the cosole
+This code will output these locations to the console
 
 ```csharp
 Console.WriteLine(Environment.GetFolderPath(SpecialFolder.ApplicationData));
@@ -40,7 +40,7 @@ Console.WriteLine(Environment.GetFolderPath(SpecialFolder.LocalApplicationData))
 Console.WriteLine(Environment.GetFolderPath(SpecialFolder.CommonApplicationData));
 ```
 
-On my Windows 11 machine I get the following output:
+On my Windows 11 machine, I get the following output:
 
 ```plaintext
 C:\Users\rad\AppData\Roaming
@@ -64,7 +64,7 @@ You'd think this would be the end of it.
 
 Not so fast.
 
-For OSX, the location for common application data, `/usr/share` is not writeable by the current user!
+For OSX, the location for common application data, `/usr/share,` is not writeable by the current user!
 
 ![Location](../images/2024/11/OSXPermissions.png)
 
