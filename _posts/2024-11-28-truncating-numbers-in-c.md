@@ -27,7 +27,7 @@ There is a [Math.Truncate](https://learn.microsoft.com/en-us/dotnet/api/system.m
 
 In other words `70.343` -> `70`
 
-However, you can achieve the result of truncating decimal places by using the [Math.Round](https://learn.microsoft.com/en-us/dotnet/api/system.math.round?view=net-9.0) method and passing telling it to round [towards zero](https://learn.microsoft.com/en-us/dotnet/api/system.midpointrounding?view=net-9.0#system-midpointrounding-tozero) using the `MidpointRounding.ToZero` enum,, like this:
+However, you can achieve the result of truncating decimal places by using the [Math.Round](https://learn.microsoft.com/en-us/dotnet/api/system.math.round?view=net-9.0) method and passing telling it to round [towards zero](https://learn.microsoft.com/en-us/dotnet/api/system.midpointrounding?view=net-9.0#system-midpointrounding-tozero) using the `MidpointRounding.ToZero` enum, like this:
 
 ```csharp
 Console.WriteLine(Math.Round(123.456,2,MidpointRounding.ToZero).ToString());
