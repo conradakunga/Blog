@@ -7,14 +7,14 @@ categories:
     - HttpClient
 ---
 
-In my previous post [Sending a HTTP HEAD Request With A HttpClient In C#]({% post_url 2024-12-07-sending-a-http-head-request-with-a-httpclient-in-c %}) I talked about how to send various requests using a [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-9.0).
+In my previous post, [Sending a HTTP HEAD Request With A HttpClient In C#]({% post_url 2024-12-07-sending-a-http-head-request-with-a-httpclient-in-c %}), I talked about how to send various requests using a [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-9.0).
 
 Of interest is this part where we prepare content for submission (for [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) and [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT) requests)
 
 ```csharp
 // Sample request
 var payload = new { Name = "James Bond", Age = 50 };
-// Serlialize
+// Serialize
 string jsonPayload = JsonSerializer.Serialize(payload);
 // Create a StringContent object with the serialized JSON.
 // The content does not have to be JSON!

@@ -35,7 +35,7 @@ The correct way is to use the [RuntimeInformation.IsOSPlatform](https://learn.mi
 ```csharp
 if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
 {
-  Console.WriteLine("OSX");
+  Console.WriteLine("OSX - {RuntimeInformation.OSDescription}");
 }
 else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 {
@@ -48,7 +48,7 @@ else if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 }
 else
 {
-  Console.WriteLine($"Other -  - {RuntimeInformation.OSDescription}");
+  Console.WriteLine($"Other - {RuntimeInformation.OSDescription}");
 }
 ```
 Running under **OSX**, it prints the following:
