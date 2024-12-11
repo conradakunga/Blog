@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Index A NVarchar(MAX) Table In SQL Server
+title: How To Index A NVarchar(MAX) Column In SQL Server
 date: 2022-11-26 15:49:54 +0300
 categories:
     - SQL Server
@@ -118,12 +118,12 @@ CREATE INDEX ixBooksAbstractChecksum
     ON dbo.Books (AbstactCheckSum);
 ```
 
-Here we are making use of the knowledge of the [CHECKSUM](https://learn.microsoft.com/en-us/sql/t-sql/functions/checksum-transact-sql?view=sql-server-ver16) SQL Server function, that given an input will generate a checksum value (a number).
+Here, we are making use of the knowledge of the [CHECKSUM](https://learn.microsoft.com/en-us/sql/t-sql/functions/checksum-transact-sql?view=sql-server-ver16) SQL Server function, which given an input, will generate a checksum value (a number).
 
 This approach is useful when you want to do something like:
 
 1. Enforce uniqueness (you can't have a unique constraint on a `NVARCHAR(MAX)` column)
-    
+   
     If you run this:
     
    ```sql
@@ -131,10 +131,10 @@ This approach is useful when you want to do something like:
     ADD
         UniqueAbstract NVARCHAR(MAX)
             UNIQUE;
-    ```
-    
+   ```
+   
     You will get the following error:
-    
+   
     ```plaintext
     Msg 1919, Level 16, State 1, Line 1
     Column 'UniqueAbstract' in table 'Books' is of a type that is invalid for use as a key column in an index.
@@ -142,11 +142,11 @@ This approach is useful when you want to do something like:
     Could not create constraint or index. See previous errors.
     ```
 
-1. Query presence or absence of a value in the column
+1. Query the presence or absence of a value in the column
 
-To achieve #1 you can [set your new index as unique](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/create-unique-indexes?view=sql-server-ver16) when creating it.
+To achieve #1, you can [set your new index as unique](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/create-unique-indexes?view=sql-server-ver16) when creating it.
 
-To achieve #2 you would query like this:
+To achieve #2, you would query like this:
 
 ```sql
 IF EXISTS
