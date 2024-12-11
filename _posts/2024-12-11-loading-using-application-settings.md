@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Loading & Using Application Settings In An API
+title: Loading & Using Application Settings
 date: 2024-12-11 17:07:00 +0300
 categories:
     - C#
