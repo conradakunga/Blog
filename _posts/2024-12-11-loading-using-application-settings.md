@@ -4,6 +4,7 @@ title: Loading & Using Application Settings
 date: 2024-12-11 17:07:00 +0300
 categories:
     - C#
+    - .NET
     - Configuration
 ---
 
@@ -287,6 +288,6 @@ In conclusion:
 1. If you need the settings immediately the app starts, bind directly from the configuration
 2. If you need the settings only in the context of configuring a service during DI, retrieve the settings from the container.
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2024-12-11%20-%20Loading%20%26%20Using%20Application%20Settings).
 
 Happy hacking!
