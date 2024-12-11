@@ -21,7 +21,7 @@ spyQueue.Enqueue("Evelyn Salt", 2);
 spyQueue.Enqueue("Jason Bourne", 4);
 spyQueue.Enqueue("George Smiley", 1);
 
-// Deque in order or priority
+// Dequeue in order or priority
 while (spyQueue.Count > 0)
 {
   var spy = spyQueue.Dequeue();
@@ -69,7 +69,7 @@ else
   Console.WriteLine("Failed to remove element");
 }
 
-// Deque in order or priority
+// Dequeue in order or priority
 while (spyQueue.Count > 0)
 {
   var spy = spyQueue.Dequeue();
