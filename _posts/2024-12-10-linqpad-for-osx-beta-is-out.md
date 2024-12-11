@@ -22,7 +22,7 @@ I am also running a [Windows 11 ARM](https://www.microsoft.com/en-us/windows/win
 
 `LinqPad` is not available on OSX, and the closest thing I have found is [NetPad](https://github.com/tareqimbasher/NetPad), which tries but lacks a lot of the polish and convenience of LinqPad.
 
-Until today, that is, when a pre-release beta was released.
+Until today, that is, when a [pre-release beta](https://www.linqpad.net/LINQPad8Mac.aspx) was released.
 
 It looks very promising.
 
