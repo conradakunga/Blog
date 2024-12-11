@@ -8,13 +8,15 @@ categories:
     - LinqPad
 ---
 
-I have been using a [MacBook Pro (M3)](https://www.apple.com/ke/macbook-pro/) as my primary development machine for almost 6 months. I use [JetBrains Rider](https://www.jetbrains.com/rider/) as my primary IDE, and occasionally, I use [VS Code.](https://code.visualstudio.com)
+I have been using a [MacBook Pro (M3)](https://www.apple.com/ke/macbook-pro/) as my primary development machine for almost 6 months. I use [JetBrains Rider](https://www.jetbrains.com/rider/) as my primary IDE, and occasionally, I use [VS Code](https://code.visualstudio.com).
 
 This arrangement works perfectly as .NET is a [first-class citizen on OSX](https://learn.microsoft.com/en-us/dotnet/core/install/macos), and Rider is a brilliant IDE.
 
 For software like databases ([PostgreSQL](https://www.postgresql.org), [SQL Server](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&tabs=cli&pivots=cs1-bash)) and the usual tools like [Redis](https://redis.io), [RabbitMQ](https://www.rabbitmq.com), [Seq](https://datalust.co/seq), [ElasticSearch](https://www.elastic.co/elasticsearch) and [Kibana](https://www.elastic.co/kibana), I run these on [Docker](https://www.docker.com) via the excellent [OrbStack](https://orbstack.dev).
 
 The biggest pain point has been when I needed to write some [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) or [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/) quickly to experiment or prototype without launching a full IDE and going through the edit - compile - run cycle.
+
+I should also point out that I have used a Mac as my primary machine for over 10 years, but my primary development was on a Windows Virtual Machine.
 
 I am also running a [Windows 11 ARM](https://www.microsoft.com/en-us/windows/windows-11) virtual machine on [Parallels](https://www.parallels.com), on which I run [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) for some legacy maintenance work. On that VM, I run [LinqPad](https://www.linqpad.net) for quick prototyping and experimentation.
 
