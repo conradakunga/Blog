@@ -118,7 +118,7 @@ When I run this in [Insomnia](https://insomnia.rest/) I get the following respon
 
 ![GitHubUserResponse](../images/2024/12/GitHubUserResponse.png)
 
-If I view the response in the debugger I can see the properties have been correctly serlialized to an object with the names I have specified.
+If I view the response in the debugger I can see the properties have been correctly serialized to an object with the names I have specified.
 
 ![GitHubUserObject](../images/2024/12/GitHubUserObject.png)
 
