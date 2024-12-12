@@ -7,7 +7,7 @@ categories:
     - RabbitMQ
 ---
 
-If you require a message queueing solution, [RabbitMQ](https://www.rabbitmq.com) is hard to beat. Not only is it an excellent piece of software, but it is also [cross-platform](https://www.rabbitmq.com/docs/platforms) and available as a [docker image](https://hub.docker.com/_/rabbitmq).
+If you require a [message queueing](https://www.ibm.com/topics/message-queues) solution, [RabbitMQ](https://www.rabbitmq.com) is hard to beat. Not only is it an excellent piece of software, but it is also [cross-platform](https://www.rabbitmq.com/docs/platforms) and available as a [docker image](https://hub.docker.com/_/rabbitmq).
 
 As a developer, I cannot stress enough the value of dockerizing your development infrastructure. It makes life so much easier in terms of quickly spinning up, running, administration and updates (or downgrades!) of required software and services.
 
