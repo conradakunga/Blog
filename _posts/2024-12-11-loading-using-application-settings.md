@@ -77,7 +77,7 @@ public sealed record GitHubUser
     public required string blog { get; init; }
     public required string location { get; init; }
     public required string bio { get; init; }
-    public required string created_at { get; init; }
+    public required DateTime created_at { get; init; }
 }
 ```
 
