@@ -140,7 +140,7 @@ public sealed record APISettings
 }
 ```
 
-Do not use the `init` modifier as the binding mutates the object.
+This class, you might notice, is NOT immutable - the values can be changed. This is important because the mechanism to bind settings to this class actually mutates the object.
 
 We then specify the values for these settings in the `appSettings.json` file.
 
@@ -188,7 +188,7 @@ builder.Services.AddHttpClient(httpClientName, (provider, client) =>
 });
 ```
 
-Finally, we inject a `IHttClientFactory` into our Minimal API EndPoint
+Finally, we inject a `IHttpClientFactory` into our Minimal API EndPoint
 
 Our API now looks like this:
 
@@ -303,7 +303,7 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 ```
 
-Finally we can use it whenever we need it, even before the applicaiton's own `Logger` is available.
+Finally we can use it whenever we need it, even before the application's own `Logger` is available.
 
 ```csharp
 //Fetch the API settings and bind them to a custom object
