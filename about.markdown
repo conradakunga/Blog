@@ -11,6 +11,8 @@ In this blog I will be writing primarily about:
 1. **The Business of software**
 2. **Software development**
 
+The posts on software development assume no, or litte, prior knowledge of the subject matter and therefore should be useful regardless of your level of experience.
+
 I am an entrepreneur, and co-founder of [Innova Limited](http://www.innova.co.ke/), where I lead the research and product development.
 
 I am also the co-founder and a trustee of [Mzalendo Trust](https://mzalendo.com).
