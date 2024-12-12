@@ -27,7 +27,7 @@ services:
 
 The entries are as follows:
 
-- `image` specifies the lightest RabbitMQ image that has the core software and the management interface, based on [Alpine Linux](https://alpinelinux.org) On my machine (MacOS M4 OS On Sonoma 14), it is 191.9 Mb.
+- `image` specifies the lightest RabbitMQ image that has the core software and the management interface, based on [Alpine Linux](https://alpinelinux.org) On my machine (MacOS M4 OS On Sonoma 14), it is 191.9 MB. The full image with the management interface, based on Ubuntu, is 284.5 MB
 - `container_name` is the name of the container. If you don't specify one, docker will generate one for you
 - `restart` specifies that the container should always be restarted if it stops
 - `host` removes network isolation between the container and the Docker host, and uses the host's networking directly
