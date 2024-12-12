@@ -66,7 +66,7 @@ Now, most of this information is unnecessary for my simple API. So let us pick o
 - bio
 - created_at
 
-The first thing is to create a type to represent this entity, and for this we can use a `record` that we make its properties immutable using the `init` modifier. We also make the properties `required`.
+The first thing is to create a type to represent this entity, and for this, we can use a record to make its properties immutable using the `init` modifier. We also make the properties `required`.
 
 ```csharp
 public sealed record GitHubUser
@@ -81,7 +81,7 @@ public sealed record GitHubUser
 }
 ```
 
-To make this more maintainable, it is probably better to rename the properties but at the same time let the [JsonSerlializer](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializer?view=net-9.0) know to preserve the original names.
+To make this more maintainable, it is probably better to rename the properties but, at the same time, let the [JsonSerlializer](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializer?view=net-9.0) know to preserve the original names.
 
 We achieve this using the [JsonPropertyName](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonpropertynameattribute?view=net-9.0) attribute.
 
@@ -114,6 +114,8 @@ app.MapGet("/Info/{username}", async (string username) =>
     .WithName("GetUserInfo");
 ```
 
+You must set the `User-Agent` header or GitHub will respond with a 403 (Forbidden) response
+
 When I run this in [Insomnia](https://insomnia.rest/) I get the following response:
 
 ![GitHubUserResponse](../images/2024/12/GitHubUserResponse.png)
@@ -122,7 +124,7 @@ If I view the response in the debugger I can see the properties have been correc
 
 ![GitHubUserObject](../images/2024/12/GitHubUserObject.png)
 
-So far so good.
+So far, so good.
 
 A couple of improvements need to be made.
 
@@ -130,7 +132,7 @@ A couple of improvements need to be made.
 2. Hard coding the URL for Github will be difficult to maintain should they decide to change the URL
 3. It is probably best to specify our `User-Agent` as a setting as well.
 
-To this end we can start by creating a class to store our settings as follows:
+To this end, we can start by creating a class to store our settings as follows:
 
 ```csharp
 public sealed record APISettings
@@ -140,7 +142,7 @@ public sealed record APISettings
 }
 ```
 
-This class, you might notice, is NOT immutable - the values can be changed. This is important because the mechanism to bind settings to this class actually mutates the object.
+You might notice that this class is NOT immutable - the values can be changed. This is important because the mechanism to bind settings to this class actually mutates the object.
 
 We then specify the values for these settings in the `appSettings.json` file.
 
@@ -183,7 +185,7 @@ builder.Services.AddHttpClient(httpClientName, (provider, client) =>
     var settings = provider.GetRequiredService<IOptions<APISettings>>().Value;
     // Set the base address with the configured settings
     client.BaseAddress = new Uri(settings.GitHubAPI);
-    // Set the user agent to be added by default to all requets
+    // Set the user agent to be added by default to all requests
     client.DefaultRequestHeaders.Add("User-Agent", settings.UserAgent);
 });
 ```
