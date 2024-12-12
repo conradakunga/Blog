@@ -43,7 +43,7 @@ This recreates the container (if the image file is a newer version) or just star
 
 If you view the logs, you should see that the container has started successfully.
 
-Here are some screenshots of my machine. I am using Orbstack to run and administer my docker. But you can view the logs using any tool, including the command line.
+Here are some screenshots of my machine. I am using [Orbstack](https://orbstack.dev/) to run and administer my docker. But you can view the logs using any tool, including the command line.
 
 ![OrbstackAdmin](../images/2024/12/OrbstackAdmin.png)
 
