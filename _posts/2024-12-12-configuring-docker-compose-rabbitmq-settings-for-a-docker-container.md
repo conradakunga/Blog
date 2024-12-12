@@ -11,7 +11,7 @@ If you require a [message queueing](https://www.ibm.com/topics/message-queues) s
 
 As a developer, I cannot stress enough the value of dockerizing your development infrastructure. It makes life so much easier in terms of quickly spinning up, running, administration and updates (or downgrades!) of required software and services.
 
-Assuming you have docker installed, this is the docker-compose.yaml for a RabbitMQ instance.
+Assuming you have [docker](https://www.docker.com/) installed, this is the `docker-compose.yaml` for a RabbitMQ instance.
 
 ```yaml
 services:
