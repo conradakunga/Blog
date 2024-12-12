@@ -284,7 +284,37 @@ Running this code shows the API configuration information is printed immediately
 
 ![StartWithLogs](../images/2024/12/StartWithLogs.png)
 
+Of interest is if you need to log **before** the application starts this means you cannot use the `Logger` from the `app` object as it has  not been created yet.
+
+In such a case the simplest way is to create and use your own [Logger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger?view=net-9.0-pp). There are lots of libraries for this but my go to is [Serilog](https://serilog.net/), and in particular the [Console sink](https://github.com/serilog/serilog-sinks-console).
+
+```bash
+dotnet add package Serilog.Sink.Console
+```
+If you want to log somewhere else, perhaps [Seq](https://github.com/datalust/serilog-sinks-seq) or [ElasticSearch](https://www.elastic.co/guide/en/ecs-logging/dotnet/current/serilog-data-shipper.html) you can use the appropriate sink, or one of the [many other available ones](https://github.com/serilog/serilog/wiki/provided-sinks).
+
+Then you create and configure the logger 
+
+```csharp
+// Create our own logger to use before the
+// application one can be spun up
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateLogger();
+```
+
+Finally we can use it whenever we need it, even before the applicaiton's own `Logger` is available.
+
+```csharp
+//Fetch the API settings and bind them to a custom object
+var apiSettings = new APISettings();
+builder.Configuration.GetSection(nameof(APISettings)).Bind(apiSettings);
+
+Log.Information("Custom logger reports the URL is {URL}", apiSettings.GitHubAPI);
+```
+
 In conclusion:
+
 1. If you need the settings immediately the app starts, bind directly from the configuration
 2. If you need the settings only in the context of configuring a service during DI, retrieve the settings from the container.
 
