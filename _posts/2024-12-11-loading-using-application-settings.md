@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Loading & Using Application Settings
+title: Loading & Using Application Settings In .NET
 date: 2024-12-11 17:07:00 +0300
 categories:
     - C#
