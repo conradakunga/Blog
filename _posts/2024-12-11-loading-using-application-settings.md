@@ -153,7 +153,7 @@ We then specify the values for these settings in the `appSettings.json` file.
     }
   },
   "AllowedHosts": "*",
-  "ApiSettings": {
+  "APISettings": {
     "GitHubAPI": "https://api.github.com/",
     "UserAgent": "AwesomeClient"
   }
