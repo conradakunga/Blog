@@ -8,9 +8,9 @@ categories:
     - Art Of Software
 ---
 
-One of the realities of writing software is dealing with objects, and how to not only communicate intent, but also helping developers fall into the pit of success. This is especially an issue when you are writing software or code that is meant to be used by other developers, perhaps in an SDK or some sort of API.
+One of the realities of writing software is dealing with objects, and how to communicate intent and help developers fall into the pit of success. This is especially an issue when you are writing software or code that is meant to be used by other developers, perhaps in an SDK or some sort of API.
 
-Take for example this problem:
+Take, for example, this problem:
 
 > Users are required to register and provide the following:
 > - Username
@@ -47,7 +47,7 @@ public class RegistrationRequest
 }
 ```
 
-Given the date of birth is actually a date, we don't care about the time componet. So we can use the [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-9.0) type instead.
+Given the date of birth is actually a date, we don't care about the time component. So we can use the [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-9.0) type instead.
 
 ```csharp
 public class RegistrationRequest
@@ -189,7 +189,7 @@ The difference is if you forget to set one, or more properties, you get this:
 
 The compiler will complain about every missing property until you provide them all.
 
-The beauty of this is if you subsequently add a new poperty to your type:
+The beauty of this is if you subsequently add a new property to your type:
 
 ```csharp
 public record RegistrationRequest
@@ -220,11 +220,11 @@ Is much easier to glean than this:
 
 ![Constructor](../images/2024/12/Constructor.png)
 
-In conclusion, this refactoring has yieled the following benefits:
+In conclusion, this refactoring has yielded the following benefits:
 
 1. Easier to **read** code
 2. Easier to **maintain** code - there is less of it, and it is doing less
-3. Type protection at **compiler** level
+3. Type protection at the **compiler** level
 
 **Remember, the primary consumer of source code is software developers!**
 
@@ -280,14 +280,14 @@ public record RegistrationRequest
 }
 ```
 
-Here we no longer use [automatic properties](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) and manage the private field for the `DateOfBirth` property ourselves.
+Here, we no longer use [automatic properties](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) and manage the private field for the `DateOfBirth` property ourselves.
 
-However, personally I would not use this approach at all. I prefer to have a single external concern responsible for the validation for a couple of reasons:
+However, personally, I would not use this approach at all. I prefer to have a single external concern responsible for the validation for a couple of reasons:
 
 1. When this request is received by the server API, it will still need to perform the exact same validations. You have no reason to trust user inputs.
-2. If the validation is a single concern, it can be re-used across application layers as well as across applications.
+2. If the validation is a single concern, it can be reused across application layers as well as across applications.
 3. Validations might be more complex, requiring database access or API access. Having these dependencies on a plain class is an overkill. Also, having such complex logic in a constructor is a code smell.
-4. Having all validation in a central place is better for understading and maintenance.
+4. Having all validation in a central place is better for understanding and maintenance.
 
 I would do this using the [FluentValidation](https://docs.fluentvalidation.net/en/latest/) library and write a validator like this:
 
