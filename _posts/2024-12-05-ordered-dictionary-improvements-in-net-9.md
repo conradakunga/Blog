@@ -7,7 +7,7 @@ categories:
     - .NET 9
 ---
 
-The [dictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-9.0) class is a workhorse of the developer. It is a data structure that allows you to store a `value` of any kind with an associated `key` to look up the said value. They key must be unique, and attempting to insert a duplicate throws an [exception](https://learn.microsoft.com/en-us/dotnet/api/system.argumentexception?view=net-9.0)
+The [dictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-9.0) class is a workhorse of the developer. It is a data structure that allows you to store a `value` of any kind with an associated `key` to look up the said value. The key must be unique, and attempting to insert a duplicate throws an [exception](https://learn.microsoft.com/en-us/dotnet/api/system.argumentexception?view=net-9.0)
 
 The following illustrates typical use:
 
@@ -56,13 +56,13 @@ The `OrderedDictionary` additionally allows you to access items by index, so you
 Console.WriteLine(spies[0])
 ```
 
-Technically, you can achieve something similar with. dictionary using the ElementAt method
+Technically, you can achieve something similar with a dictionary using the `ElementAt` method
 
 ```charp
 Console.WriteLine(spies.ElementAt(0))
 ```
 
-But remember - **the ordering of a dictionary is undefied!**
+But remember - **the ordering of a dictionary is undefined!**
 
 There is a major difference between a generic `Dictionary` and an `OrderedDictionary` - in an `OrderedDictionary` they `key` and the `value` are `objects`.
 
@@ -79,9 +79,9 @@ spies.Add(1, ConsoleColor.Gray);
 spies.Add(ConsoleColor.Yellow, new int[] { 1, 3, 4, 4, 5 });
 ```
 
-This type safety issue has been addressed in .NET 9 where a [generic verision of the OrderedDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ordereddictionary-2?view=net-9.0) has been introduced.
+This type safety issue has been addressed in .NET 9 where a [generic version of the OrderedDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ordereddictionary-2?view=net-9.0) has been introduced.
 
-The code now looks like this, and the compiler enforces the types at insertion point.
+The code now looks like this, and the compiler enforces the types at the insertion point.
 
 ```csharp
 var spies = new OrderedDictionary<string, string>();

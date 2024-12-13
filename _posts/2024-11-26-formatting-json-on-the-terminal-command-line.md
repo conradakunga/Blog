@@ -6,7 +6,7 @@ categories:
     - JSON
 ---
 
-In the spirit of the last post about [formatting unformatted JSON]({% post_url 2024-11-24-pretty-printing-unformatted-json-in-c %}) there are occasions where you need to process and format JSON in a hurry on a non developer machine.
+In the spirit of the last post about [formatting unformatted JSON]({% post_url 2024-11-24-pretty-printing-unformatted-json-in-c %}) there are occasions when you need to process and format JSON in a hurry on a non-developer machine.
 
 Take the following example, which uses the [excellent service that generates test JSON](https://microsoftedge.github.io/Demos/json-dummy-data/) via an API endpoint
 
@@ -34,7 +34,7 @@ Note this is `curl.exe` and not `curl`. In Powershell, `curl` is an alias for [I
 
 To format the json, [pipe](https://www.geeksforgeeks.org/piping-in-unix-or-linux/) it to the very useful [jq](https://jqlang.github.io/jq/) program.
 
-`jq` is not installed by default, so install it using your favorite method ([winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) or [chocolatey](https://chocolatey.org/) on Windows, [homebrew](https://brew.sh/) on OSX, [apt](https://en.wikipedia.org/wiki/APT_(software)) on Linux)
+`jq` is not installed by default, so install it using your favourite method ([Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) or [chocolatey](https://chocolatey.org/) on Windows, [homebrew](https://brew.sh/) on OSX, [apt](https://en.wikipedia.org/wiki/APT_(software)) on Linux)
 
 ```bash
 curl https://microsoftedge.github.io/Demos/json-dummy-data/64KB-min.json | jq

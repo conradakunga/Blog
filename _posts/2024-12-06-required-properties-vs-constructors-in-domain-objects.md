@@ -109,7 +109,7 @@ public class RegistrationRequest
 }
 ```
 
-With this update the developer will get a compiler error  is forced to pass all the values to the constructor.
+With this update, the developer will get a compiler error and will be forced to pass all the values to the constructor.
 
 ![CompilerError](../images/2024/12/CompilerError.png)
 
@@ -167,7 +167,7 @@ public record RegistrationRequest
 
 We have removed the constructor and implemented the required and init modifiers.
 
-Now to create a request, the code looks like this:
+Now, to create a request, the code looks like this:
 
 ```csharp
 var req = new RegistrationRequest
@@ -183,7 +183,7 @@ var req = new RegistrationRequest
 
 This looks a lot like our initial code, and indeed, it is exactly the same.
 
-The difference is if you forget to set one, or more properties, you get this:
+The difference is if you forget to set one or more properties, you get this:
 
 ![MissingProperty](../images/2024/12/MissingProperty.png)
 

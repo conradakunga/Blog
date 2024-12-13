@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Determing The Operating System C# .NET Program Is Running Under
+title: Determining The Operating System C# .NET Program Is Running Under
 date: 2024-11-23 11:56:40 +0300
 categories:	
     - C#

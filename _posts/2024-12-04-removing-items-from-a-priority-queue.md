@@ -92,6 +92,6 @@ You might wonder - why are we checking for the success of the removal here:
 var success = spyQueue.Remove("James Bond", out var removedSpy, out var removedPriority);
 ```
 
-This is because the removal might fail - for example if you had a typo in the element that you are trying to remove, in which case the element to remove does not exist. In that scenario `success` would return `false`.
+This is because the removal might fail - for example if you had a typo in the element that you are trying to remove, in which case the element to remove does not exist. In that scenario, `success` would return `false`.
 
 Happy hacking!

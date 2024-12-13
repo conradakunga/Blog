@@ -14,7 +14,7 @@ Which would be the best place to put them?
 
 This is a common problem in most operating systems and has been solved at the OS level where, by default, there exist a number of locations dedicated to the storage of user data.
 
-There is a .NET API to interrogate these the [Environment.GetSpecialFolders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=net-9.0) that passes an enumeration of the folder that you want, [Special Folders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=net-9.0).
+There is a .NET API to interrogate these - [Environment.GetSpecialFolders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=net-9.0) to which you pass an enumeration of the folder that you want, [Special Folders](https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=net-9.0).
 
 In our case, there are 3 candidates:
 
