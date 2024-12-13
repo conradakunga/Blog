@@ -28,7 +28,7 @@ public int DaysInYear(int year)
 
 A second way is to use the fact that [leap years have 366](https://en.wikipedia.org/wiki/Leap_year) days and the rest have 356 days.
 
-We can avoid the computations altogether and check if a year is a leap year. How do we tell if a year is a leap year? We could write a function, but there is a static method of [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-9.0) that we can use for this: [IsLeapYear](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.isleapyear?view=net-9.0)
+We can avoid the computations altogether and check if a year is a leap year. How do we tell if a year is a leap year? We could [write a function](https://en.wikipedia.org/wiki/Leap_year), but there is a static method of [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-9.0) that we can use for this: [IsLeapYear](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.isleapyear?view=net-9.0)
 
 ```csharp
 public int DaysInYear2(int year)
