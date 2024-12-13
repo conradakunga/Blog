@@ -10,7 +10,7 @@ Suppose we need to determine the number of days in a year, say this year (2024).
 
 There are a number of ways to do this:
 
-The first is to determine the date of the last day of the year and subtract that date from the first day of the year. To the result, we add now (as the computation is day inclusive).
+The first is to determine the date of the last day of the year and subtract that date from the first day of the year. To the result, we add now (as the computation is day-exclusive).
 
 ```csharp
 var daysInYear = (new DateTime(2024, 12, 31) - new DateTime(2024, 1, 1)).TotalDays + 1;
@@ -70,7 +70,7 @@ var koreanCalendar = new KoreanCalendar();
 Console.WriteLine($"Korean: {koreanCalendar.GetDaysInYear(hebrewCalendar.GetYear(dateTime))}");
 ```
 
-If you run this code it should print the following:
+If you run this code, it should print the following:
 
 ```plaintext
 Gregorian: 366
