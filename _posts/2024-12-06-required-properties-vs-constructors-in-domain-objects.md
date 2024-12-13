@@ -25,11 +25,11 @@ The first attempt would be to create a class like this:
 ```csharp
 public class RegistrationRequest
 {
-	public string Username { get; set; }
-	public string Password { get; set; }
-	public string FirstName { get; set; }
-	public string Surname { get; set; }
-	public DateTime DateOfBirth { get; set; }
+  public string Username { get; set; }
+  public string Password { get; set; }
+  public string FirstName { get; set; }
+  public string Surname { get; set; }
+  public DateTime DateOfBirth { get; set; }
 }
 ```
 
@@ -38,12 +38,12 @@ Given we want to ensure that the user has not inadvertently put a typo in their 
 ```csharp
 public class RegistrationRequest
 {
-	public string Username { get; set; }
-	public string Password { get; set; }
-	public string ConfirmPassword { get; set; }
-	public string FirstName { get; set; }
-	public string Surname { get; set; }
-	public DateTime DateOfBirth { get; set; }
+  public string Username { get; set; }
+  public string Password { get; set; }
+  public string ConfirmPassword { get; set; }
+  public string FirstName { get; set; }
+  public string Surname { get; set; }
+  public DateTime DateOfBirth { get; set; }
 }
 ```
 
@@ -52,12 +52,12 @@ Given the date of birth is actually a date, we don't care about the time compone
 ```csharp
 public class RegistrationRequest
 {
-	public string Username { get; set; }
-	public string Password { get; set; }
-	public string ConfirmPassword { get; set; }
-	public string FirstName { get; set; }
-	public string Surname { get; set; }
-	public DateOnly DateOfBirth { get; set; }
+  public string Username { get; set; }
+  public string Password { get; set; }
+  public string ConfirmPassword { get; set; }
+  public string FirstName { get; set; }
+  public string Surname { get; set; }
+  public DateOnly DateOfBirth { get; set; }
 }
 ```
 
@@ -65,14 +65,14 @@ So now the developer for the SDK can create a request as follows:
 
 ```csharp
 var req = new RegistrationRequest()
-	{
-		ConfirmPassword = "babelfish",
-		DateOfBirth = new DateOnly(1940, 1, 1),
-		FirstName = "James",
-		Password = "babelfish",
-		Surname = "Bond",
-		Username = "jbond"
-	};
+{
+  ConfirmPassword = "babelfish",
+  DateOfBirth = new DateOnly(1940, 1, 1),
+  FirstName = "James",
+  Password = "babelfish",
+  Surname = "Bond",
+  Username = "jbond"
+};
 ```
 
 The problem with doing it this way is that the developer can also do this:
@@ -83,21 +83,21 @@ var req = new RegistrationRequest()
 };
 ```
 
-Here the object created will only have default values.
+Here, the object created will only have default values.
 
-One way around this issue is to create a constructor, this forcing the developer to provide all the values.
+One way around this issue is to create a constructor, thus forcing the developer to provide all the values.
 
 ```csharp
 public class RegistrationRequest
 {
-    public string Username { get; set; }
-    public string Password { get; set; }
-    public string ConfirmPassword { get; set; }
-    public string FirstName { get; set; }
-    public string Surname { get; set; }
-    public DateOnly DateOfBirth { get; set; }
+  public string Username { get; set; }
+  public string Password { get; set; }
+  public string ConfirmPassword { get; set; }
+  public string FirstName { get; set; }
+  public string Surname { get; set; }
+  public DateOnly DateOfBirth { get; set; }
 
-    public RegistrationRequest(string username, string password, string confirmPassword, string firstName,
+  public RegistrationRequest(string username, string password, string confirmPassword, string firstName,
         string surname)
     {
         Username = username;
@@ -118,22 +118,22 @@ We can further improve the class by making the properties immutable by removing 
 ```csharp
 public class RegistrationRequest
 {
-	public string Username { get; }
-	public string Password { get; }
-	public string ConfirmPassword { get; }
-	public string FirstName { get; }
-	public string Surname { get; }
-	public DateOnly DateOfBirth { get; }
+  public string Username { get; }
+  public string Password { get; }
+  public string ConfirmPassword { get; }
+  public string FirstName { get; }
+  public string Surname { get; }
+  public DateOnly DateOfBirth { get; }
 
-	public RegistrationRequest(string username, string password, string confirmPassword, string firstName,
+  public RegistrationRequest(string username, string password, string confirmPassword, string firstName,
 		string surname)
-	{
-		Username = username;
-		Password = password;
-		ConfirmPassword = confirmPassword;
-		FirstName = firstName;
-		Surname = surname;
-	}
+  {
+    Username = username;
+    Password = password;
+    ConfirmPassword = confirmPassword;
+    FirstName = firstName;
+    Surname = surname;
+  }
 }
 ```
 
@@ -156,12 +156,12 @@ The type now looks like this:
 ```csharp
 public record RegistrationRequest
 {
-	public required string Username { get; init; }
-	public required string Password { get; init; }
-	public required string ConfirmPassword { get; init; }
-	public required string FirstName { get; init; }
-	public required string Surname { get; init; }
-	public required DateOnly DateOfBirth { get; init; }
+  public required string Username { get; init; }
+  public required string Password { get; init; }
+  public required string ConfirmPassword { get; init; }
+  public required string FirstName { get; init; }
+  public required string Surname { get; init; }
+  public required DateOnly DateOfBirth { get; init; }
 }
 ```
 
@@ -171,14 +171,14 @@ Now to create a request, the code looks like this:
 
 ```csharp
 var req = new RegistrationRequest
-	{
-		ConfirmPassword = "babelfish",
-		DateOfBirth = new DateOnly(1940, 1, 1),
-		FirstName = "James",
-		Password = "babelfish",
-		Surname = "Bond",
-		Username = "jbond"
-	};
+{
+  ConfirmPassword = "babelfish",
+  DateOfBirth = new DateOnly(1940, 1, 1),
+  FirstName = "James",
+  Password = "babelfish",
+  Surname = "Bond",
+  Username = "jbond"
+};
 ```
 
 This looks a lot like our initial code, and indeed, it is exactly the same.
@@ -194,13 +194,13 @@ The beauty of this is if you subsequently add a new poperty to your type:
 ```csharp
 public record RegistrationRequest
 {
-	public required string Username { get; init; }
-	public required string Password { get; init; }
-	public required string ConfirmPassword { get; init; }
-	public required string FirstName { get; init; }
-	public required string Surname { get; init; }
-	public required DateOnly DateOfBirth { get; init; }
-	public required string Email { get; init; }
+  public required string Username { get; init; }
+  public required string Password { get; init; }
+  public required string ConfirmPassword { get; init; }
+  public required string FirstName { get; init; }
+  public required string Surname { get; init; }
+  public required DateOnly DateOfBirth { get; init; }
+  public required string Email { get; init; }
 }
 ```
 
@@ -233,25 +233,25 @@ Now, it can be argued that a benefit of using a constructor is that you can vali
 ```csharp
 public class RegistrationRequest
 {
-	public string Username { get; }
-	public string Password { get; }
-	public string ConfirmPassword { get; }
-	public string FirstName { get; }
-	public string Surname { get; }
-	public DateOnly DateOfBirth { get; }
+  public string Username { get; }
+  public string Password { get; }
+  public string ConfirmPassword { get; }
+  public string FirstName { get; }
+  public string Surname { get; }
+  public DateOnly DateOfBirth { get; }
 
-	public RegistrationRequest(string username, string password, string confirmPassword, string firstName,
+  public RegistrationRequest(string username, string password, string confirmPassword, string firstName,
 		string surname)
-	{
-		if (DateOfBirth > DateOnly.FromDateTime(DateTime.Now))
-			throw new ArgumentException("You cannot be born in the future!");
+  {
+    if (DateOfBirth > DateOnly.FromDateTime(DateTime.Now))
+      throw new ArgumentException("You cannot be born in the future!");
 
-		Username = username;
-		Password = password;
-		ConfirmPassword = confirmPassword;
-		FirstName = firstName;
-		Surname = surname;
-	}
+    Username = username;
+    Password = password;
+    ConfirmPassword = confirmPassword;
+    FirstName = firstName;
+    Surname = surname;
+  }
 ```
 
 You can still achieve this using our new approach but you will have to do a little more work.
@@ -294,16 +294,16 @@ I would do this using the [FluentValidation](https://docs.fluentvalidation.net/e
 ```csharp
 public class RegistrationRequestValidator : AbstractValidator<RegistrationRequest>
 {
-	public RegistrationRequestValidator()
-	{
-		RuleFor(x => x.Username).NotEmpty();
-		RuleFor(x => x.FirstName).NotEmpty();
-		RuleFor(x => x.Password).NotEmpty();
-		RuleFor(x => x.ConfirmPassword).NotEmpty();
-		// Check passwords match
-		RuleFor(x => x.Password).Equal(x => x.ConfirmPassword);
-		RuleFor(x => x.DateOfBirth).LessThanOrEqualTo(DateOnly.FromDateTime(DateTime.Today));
-	}
+  public RegistrationRequestValidator()
+  {
+    RuleFor(x => x.Username).NotEmpty();
+    RuleFor(x => x.FirstName).NotEmpty();
+    RuleFor(x => x.Password).NotEmpty();
+    RuleFor(x => x.ConfirmPassword).NotEmpty();
+    // Check passwords match
+    RuleFor(x => x.Password).Equal(x => x.ConfirmPassword);
+    RuleFor(x => x.DateOfBirth).LessThanOrEqualTo(DateOnly.FromDateTime(DateTime.Today));
+  }
 }
 ```
 
