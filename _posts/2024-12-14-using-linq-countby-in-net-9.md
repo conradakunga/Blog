@@ -75,4 +75,60 @@ foreach (var result in results)
 
 Much terser, easier to read and easier to understand.
 
+CountBy does not need to be a property - it can be something evaluated.
+
+If we re-work our domain like this:
+
+```csharp
+record Spy(string Name, int Age, string Service);
+```
+
+And our data like this:
+
+```csharp
+Spy[] spies =
+  [
+    new Spy("James Bond (007)",50,"MI-6"),
+    new Spy("Vesper Lynd",35,"MI-6"),
+    new Spy("Q",30,"MI-6"),
+    new Spy("Ethan Hunt",45,"IMF"),
+    new Spy("Luther Stickell",48,"IMF"),
+    new Spy("Benji Dunn",36,"IMF"),
+    new Spy("Jason Bourne",55,"CIA"),
+    new Spy("Harry Pearce",60,"MI-5"),
+    new Spy("Adam Carter",40,"MI-5"),
+    new Spy("Ros Myers",37,"MI-5")
+  ];
+```
+
+We can do this:
+
+```csharp
+var results = spies.CountBy(s => s.Age >= 50);
+foreach (var result in results)
+{
+	Console.WriteLine($"{(result.Key ? "50 Or Older" : "Less Than 50")} : ({result.Value})");
+}
+```
+
+Which prints this:
+
+```plaintext
+50 Or Older : (3)
+Less Than 50 : (7)
+```
+
+You can also improve the clarity of your returned results by projecting them into anonymous types, because dealing with `Key` and `Value` can quickly get confusing.
+
+```csharp
+var results = spies.CountBy(s => s.Age >= 50)
+  //Project the result into a new type
+  .Select(x => new { GreaterThanFifty = x.Key, Count = x.Value });
+
+foreach (var result in results)
+{
+	Console.WriteLine($"{(result.GreaterThanFifty ? "50 Or Older" : "Less Than 50")} : ({result.Count})");
+}
+```
+
 Happy hacking!
