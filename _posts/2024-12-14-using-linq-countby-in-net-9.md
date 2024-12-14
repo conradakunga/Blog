@@ -75,7 +75,7 @@ foreach (var result in results)
 
 Much terser, easier to read and easier to understand.
 
-CountBy does not need to be a property - it can be something evaluated.
+`CountBy` cannot be levereaged by a property only - it can be something evaluated.
 
 If we re-work our domain like this:
 
