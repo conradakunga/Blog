@@ -31,7 +31,7 @@ var hashedData = SHA512.HashData(originalData);
 
 For the examples here, I have used a simple `string` that I converted to a byte array, but the `byte` array could be anything, including a file, which is probably one of the [most common use cases for this](https://codesigningstore.com/what-is-a-file-hash-definition).
 
-.NET 9 has some improvements around this, such as centralizing the hashing into the HashData method from the CryptographicOperations class.
+.NET 9 has some improvements around this, such as centralizing the hashing into the [HashData](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.cryptographicoperations.hashdata?view=net-9.0) method from the [CryptographicOperations](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.cryptographicoperations?view=net-9.0) class.
 
 The above two examples can be written as follows:
 
@@ -53,7 +53,7 @@ The magic is in the new static struct [HashAlgorithmName](https://learn.microsof
 - SHA384
 - SHA512
 
-If the data you are processing is very large, you can call an async version of the method - [HashDataAsync](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.cryptographicoperations.hashdataasync?view=net-9.0)
+If the data you are processing is very large, you can call an [async](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/) version of the method - [HashDataAsync](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.cryptographicoperations.hashdataasync?view=net-9.0)
 
 ```csharp
 // Hash using SHA256, passing the cancellation token from the context
