@@ -11,7 +11,7 @@ If you are dealing with security, no matter how peripherally, you will have deal
 
 Let us take the case where we need to hash some data using the [SHA265](https://www.movable-type.co.uk/scripts/sha256.html) algorithm,
 
-We would do it like this:
+We would do it like this, using that [SHA256](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.sha256?view=net-9.0) class:
 
 ```csharp
 // Build a byte array of our original data
@@ -20,7 +20,7 @@ var originalData = Encoding.Default.GetBytes("This is some data");
 var hashedData = SHA256.HashData(originalData);
 ```
 
-If we needed to use a different algorithm, say [SHA512](https://medium.com/@zaid960928/cryptography-explaining-sha-512-ad896365a0c1), the code would be very similar:
+If we needed to use a different algorithm, say [SHA512](https://medium.com/@zaid960928/cryptography-explaining-sha-512-ad896365a0c1), the code would be very similar, using the [SHA512](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.sha512?view=net-9.0) class.
 
 ```csharp
 // Build a byte array of our original data
