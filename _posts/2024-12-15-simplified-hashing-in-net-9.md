@@ -42,7 +42,7 @@ var sha256HashedData = CryptographicOperations.HashData(HashAlgorithmName.SHA256
 var sha512HashedData = CryptographicOperations.HashData(HashAlgorithmName.SHA512, originalData);
 ```
 
-The magic is in the new static struct [HashAlgorithmName](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hashalgorithmname?view=net-9.0) that you can use to specify the following algorithms:
+The magic is in the struct [HashAlgorithmName](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hashalgorithmname?view=net-9.0) that you can use to specify the following algorithms:
 
 - MD5	
 - SHA1
