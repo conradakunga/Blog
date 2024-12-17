@@ -12,9 +12,9 @@ If you are invoking a web request from your application, you may get the followi
 System.AggregateException: One or more errors occurred. (The SSL connection could not be established, see inner exception.) ---> System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
 ```
 
-If the request you were making was a HTTPS request, this essentially means that the runtime is attempting to validate the SSL certificate of the target, and this validation is failing.
+If the request you were making was a HTTPS request, this essentially means that the runtime is attempting to validate the target's SSL certificate, and this validation is failing.
 
-This could be for any number of reasons, ranging from the certificate is self signed to the certificate has expired, or even it has been revoked.
+This could be for any number of reasons, ranging from the certificate being self-signed to the certificate having expired or even it has been revoked.
 
 Whatever the case may be, there are times when you do not want this validation to take place - perhaps you are doing some internal development.
 
@@ -43,9 +43,9 @@ httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, ch
 httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(EndPoint) };
 ```
 
-The `HttpClient` now will not throw any SSL validation errors.
+The `HttpClient` will not throw any SSL validation errors now.
 
-This approach is actually more flexible because you can control the validation - you can have some requests that you want validated and others that you do not. 
+This approach is more flexible because you can control the validation - you can have some requests you want validated and others that you do not. 
 
 In this case you create a second `HttpClient` the usual way without the handler - that one's requests will always be validated.
 
