@@ -64,10 +64,10 @@ var hebrewCalendar = new HebrewCalendar();
 Console.WriteLine($"Hebrew: {hebrewCalendar.GetDaysInYear(hebrewCalendar.GetYear(dateTime))}");
 
 var hijiriCalendar = new HijriCalendar();
-Console.WriteLine($"Hijri: {hijiriCalendar.GetDaysInYear(hebrewCalendar.GetYear(dateTime))}");
+Console.WriteLine($"Hijri: {hijiriCalendar.GetDaysInYear(hijiriCalendar.GetYear(dateTime))}");
 
 var koreanCalendar = new KoreanCalendar();
-Console.WriteLine($"Korean: {koreanCalendar.GetDaysInYear(hebrewCalendar.GetYear(dateTime))}");
+Console.WriteLine($"Korean: {koreanCalendar.GetDaysInYear(koreanCalendar.GetYear(dateTime))}");
 ```
 
 If you run this code, it should print the following:
@@ -76,7 +76,7 @@ If you run this code, it should print the following:
 Gregorian: 366
 Hebrew: 383
 Hijri: 355
-Korean: 365
+Korean: 366
 ```
 
 All the days are different!
