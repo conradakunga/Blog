@@ -113,4 +113,6 @@ first.Should().BeEquivalentTo(second);
 first.Should().BeEquivalentTo(third);
 ```
 
+The examples in this post use the `Array` collection but will also work for most collections that implement [IEnumberable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-9.0) - such as [Lists](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-9.0).
+
 Happy hacking!
