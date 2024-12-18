@@ -89,9 +89,9 @@ Console.WriteLine(first.ToHashSet().SetEquals(second.ToHashSet()));
 
 ### FluentAssertions
 
-If you are doing these comparisons in the context of unit testing, an even better way to do this is to use the [FluentAssertions](https://fluentassertions.com/) library, which has extension methods to help with this sort of problem.
+If you are conducting these comparisons in the context of unit testing, an even better approach is to use the [FluentAssertions](https://fluentassertions.com/) library, which has extension methods for this sort of problem.
 
-If we want to verify that two collections have the same elements, and in the same order, we do it like this:
+If we want to verify that two collections have the same elements **and in the same order,** we do it like this:
 
 ```csharp
 // Check have the same elements, in the same order
