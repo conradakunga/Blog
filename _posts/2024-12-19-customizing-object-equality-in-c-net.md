@@ -158,11 +158,9 @@ Console.WriteLine(first == second);
 
 With this update the code now prints what we expect - `true`.
 
-The final improvement is to make our type `LINQ`- friendly; luckily, this is very trivial.
+The final improvement is to make sure our type [behaves properly and will be performant in the larger .NET ecosystem](https://dev.to/phougatv/implementing-iequatable-on-user-defined-types-lmm). Luckily, this is very trivial.
 
 All we need to do is indicate that our type implements the [IEquatable<<T>>](https://learn.microsoft.com/en-us/dotnet/api/system.iequatable-1?view=net-9.0) interface. We don't actually need to implement any new logic - what we have already meets the requirements.
-
-This is because, under the hood, there are lots of places where `LINQ` operates with` IEquitable;` therefore supporting types need to able to be cast to this interface.
 
 Our final class looks like this:
 
