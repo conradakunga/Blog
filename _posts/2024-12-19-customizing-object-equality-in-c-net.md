@@ -53,7 +53,7 @@ var marc = new Contact
 };
 ```
 
-Unsurprisingly, it returns `false`. Remember, for a `class`, equality means [reference equality](https://essentialcsharp.com/reference-equality-versus-value-equality) - both references point at the same object.
+Unsurprisingly, it returns `false`. Remember, for a `class` equality means [reference equality](https://essentialcsharp.com/reference-equality-versus-value-equality) - both references point at the same object.
 
 We could solve this problem by making the type a `Record`.
 
@@ -161,6 +161,8 @@ With this update the code now prints what we expect - `true`.
 The final improvement is to make our type `LINQ`- friendly; luckily, this is very trivial.
 
 All we need to do is indicate that our type implements the [IEquatable<<T>>](https://learn.microsoft.com/en-us/dotnet/api/system.iequatable-1?view=net-9.0) interface. We don't actually need to implement any new logic - what we have already meets the requirements.
+
+This is because, under the hood, there are lots of places where `LINQ` operates with` IEquitable;` therefore supporting types need to able to be cast to this interface.
 
 Our final class looks like this:
 
