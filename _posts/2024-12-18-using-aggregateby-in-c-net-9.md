@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using AggegateBy In C# & .NET 9
+title: Using AggregateBy In C# & .NET 9
 date: 2024-12-18 12:12:08 +0300
 categories:
     - C#
