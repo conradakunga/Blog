@@ -16,7 +16,7 @@ var second = 1;
 Console.WriteLine(first == second);
 ```
 
-And so too these:
+As are these:
 
 ```csharp
 var first = "apple";
@@ -66,9 +66,9 @@ public record Contact
 }
 ```
 
-Here the compiler will compare the properties of the type and if they are all equal, then two classes with the same properties are equal.
+Here, the compiler will compare the properties of the type and if they are all equal, then two classes with the same properties are equal.
 
-The check
+The check:
 
 ```csharp
 Console.WriteLine(first == second);
@@ -134,6 +134,14 @@ public class Contact
 
     return this == other;
   }
+  
+  public bool Equals(Contact contact)
+  {
+    if (contact is not Contact other)
+    	return false;
+
+  	return this == other;
+  }
 
   public override int GetHashCode()
   {
@@ -142,8 +150,69 @@ public class Contact
 }
 ```
 
-With this update the code now prints what we expect - `true`.
+Finally, we re-run our check:
 
 ```csharp
 Console.WriteLine(first == second);
 ```
+
+With this update the code now prints what we expect - `true`.
+
+The final improvement is to make our type `LINQ`- friendly; luckily, this is very trivial.
+
+All we need to do is indicate that our type implements the [IEquatable<<T>>](https://learn.microsoft.com/en-us/dotnet/api/system.iequatable-1?view=net-9.0) interface. We don't actually need to implement any new logic - what we have already meets the requirements.
+
+Our final class looks like this:
+
+```csharp
+public class Contact : IEquatable<Contact>
+{
+  public required string FirstName { get; init; }
+  public required string MiddleName { get; init; }
+  public required string Surname { get; init; }
+  public required string Notes { get; init; }
+
+  public static bool operator ==(Contact? left, Contact? right)
+  {
+  	// If either is null, return true
+    if (ReferenceEquals(left, right))
+    	return true;
+		
+		// If either (at least one) is null, return false
+    if (left is null || right is null)
+    	return false;
+
+		// Implement our equality check
+    return left.FirstName == right.FirstName &&
+      left.MiddleName == right.MiddleName &&
+      left.Surname == right.Surname;
+  }
+
+  public override bool Equals(object? obj)
+  {
+    if (obj is not Contact other)
+    	return false;
+
+    return this == other;
+  }
+
+  public bool Equals(Contact contact)
+  {
+    if (contact is not Contact other)
+    	return false;
+
+  	return this == other;
+  }
+  public static bool operator !=(Contact? left, Contact? right)
+  {
+  	return !(left == right);
+  }
+
+  public override int GetHashCode()
+  {
+  	return HashCode.Combine(FirstName, MiddleName, Surname);
+  }
+}
+```
+
+Happy hacking!
