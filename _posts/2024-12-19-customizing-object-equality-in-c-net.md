@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing Object Equality In C# & .NET
-date: 2024-12-19 12:45:08 +0300
+date: 2024-12-19 00:45:08 +0300
 categories:
     - C#
     - .NET
@@ -24,7 +24,7 @@ var second = "apple";
 Console.WriteLine(first == second);
 ```
 
-Let us introduce a new type:
+Let us introduce a new type, the `Contact`.
 
 ```csharp
 public class Contact
@@ -53,7 +53,7 @@ var marc = new Contact
 };
 ```
 
-Unsurprisingly, it returns `false`. Remember, for a `class` equality means reference equality - both references point at the same object.
+Unsurprisingly, it returns `false`. Remember, for a `class`, equality means [reference equality](https://essentialcsharp.com/reference-equality-versus-value-equality) - both references point at the same object.
 
 We could solve this problem by making the type a `Record`.
 
