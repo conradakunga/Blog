@@ -5,6 +5,7 @@ date: 2024-12-14 22:18:22 +0300
 categories:
     - C#
     - .NET 9
+    - LINQ
 ---
 
 Often in the course of your regular programming, you will need to do some basic analysis of data by aggregation, and the goto method here is typically [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) and it's [GroupBy](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.groupby?view=net-9.0).
