@@ -57,7 +57,7 @@ True
 True
 ```
 
-Which makese sense.
+Which makes sense.
 
 The challenge is to verify that two collections contain the same elements, **regardless of order**. In our example `first` (`[1, 2, 3, 4, 5]`) and `second` (`[5, 2, 3, 4, 1]`).
 
@@ -105,7 +105,7 @@ This will throw an exception for the first comparison, with this message
 Expected collection to be equal to {5, 2, 3, 4, 1}, but {1, 2, 3, 4, 5} differs at index 0.
 ```
 
-If we want to check that two collections have the same elements, regardless of order, we do it like this:
+If we want to check that two collections have the same elements, **regardless of order**, we do it like this:
 
 ```csharp
 // Check have the same elements, regardless of order
@@ -113,6 +113,6 @@ first.Should().BeEquivalentTo(second);
 first.Should().BeEquivalentTo(third);
 ```
 
-The examples in this post use the `Array` collection but will also work for most collections that implement [IEnumberable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-9.0) - such as [Lists](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-9.0).
+The examples in this post use the `Array` but will also work for most collections that implement [IEnumberable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-9.0) - such as [Lists](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-9.0).
 
 Happy hacking!
