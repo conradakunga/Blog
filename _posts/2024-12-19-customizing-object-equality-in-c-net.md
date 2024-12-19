@@ -160,7 +160,7 @@ With this update the code now prints what we expect - `true`.
 
 The final improvement is to make sure our type [behaves properly and will be performant in the larger .NET ecosystem](https://dev.to/phougatv/implementing-iequatable-on-user-defined-types-lmm). Luckily, this is very trivial.
 
-All we need to do is indicate that our type implements the [IEquatable<<T>>](https://learn.microsoft.com/en-us/dotnet/api/system.iequatable-1?view=net-9.0) interface. We don't need to implement any new logic - we have already met the requirements - we have implemented the [Equals](https://learn.microsoft.com/en-us/dotnet/api/system.iequatable-1.equals?view=net-9.0) method.
+All we need to do is indicate that our type implements the generic [IEquatable<<T>>](https://learn.microsoft.com/en-us/dotnet/api/system.iequatable-1?view=net-9.0) interface. We don't need to implement any new logic - we have already met the requirements - we have implemented the [Equals](https://learn.microsoft.com/en-us/dotnet/api/system.iequatable-1.equals?view=net-9.0) method.
 
 Our final class looks like this:
 
@@ -174,18 +174,18 @@ public class Contact : IEquatable<Contact>
 
   public static bool operator ==(Contact? left, Contact? right)
   {
-  	// If either is null, return true
-    if (ReferenceEquals(left, right))
-    	return true;
-		
-		// If either (at least one) is null, return false
-    if (left is null || right is null)
-    	return false;
+      // If either is null, return true
+      if (ReferenceEquals(left, right))
+      	return true;
 
-		// Implement our equality check
-    return left.FirstName == right.FirstName &&
-      left.MiddleName == right.MiddleName &&
-      left.Surname == right.Surname;
+      // If either (at least one) is null, return false
+      if (left is null || right is null)
+      	return false;
+
+      // Implement our equality check
+      return left.FirstName == right.FirstName &&
+        left.MiddleName == right.MiddleName &&
+        left.Surname == right.Surname;
   }
 
   public override bool Equals(object? obj)
