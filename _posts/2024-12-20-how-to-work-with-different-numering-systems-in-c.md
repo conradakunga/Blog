@@ -18,7 +18,7 @@ We (human beings) and the C# compiler and runtime understand this to mean `1,000
 
 The C# compiler and runtime, however, support multiple numbering systems.
 
-If we wanted to use a base of [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal), or hex, which is to say base `16`,  we prefix the number with `Ox`. This is called a number literal.
+If we wanted to use a base of [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal), or hex, which is to say base `16`,  we prefix the number with `Ox`. This is called a [number literal](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types).
 
 ```
 int number = 0x1000;
