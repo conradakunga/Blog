@@ -36,7 +36,7 @@ the following will be printed
 4096
 ```
 
-We can also get a hex representation of a number by using the [format specifier](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) x.
+We can also get a hex representation of a number by using the [format specifier](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) `x`.
 
 ```csharp
 int number = 1000;
