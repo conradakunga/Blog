@@ -397,7 +397,7 @@ await cache.RemoveByTagAsync(["Any", "Of", "These"], token);
 
 
 
-Thus, the Hybrid Cache, when completed, will offer a very powerful way to utilize caching, whether locally in memory or distributed.
+Thus, the Hybrid Cache, when completed, will offer a very powerful way to utilize caching, whether locally in memory or distributed. It is [not specific to .NET 9](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Hybrid/#supportedframeworks-body-tab) and should be usable by most .NET implementations.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2024-12-23%20-%20Caching%20In%20.NET%20Applications).
 
