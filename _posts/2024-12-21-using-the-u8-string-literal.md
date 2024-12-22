@@ -8,7 +8,7 @@ categories:
 
 A number of processing APIs and modules operate on `byte` arrays rather than discrete structures like `strings`.
 
-You will, therefore find yourself often doing the following:
+You will, therefore, find yourself often doing the following:
 
 ```csharp
 // Get a byte array of the data
