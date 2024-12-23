@@ -95,7 +95,7 @@ If we run the application and query the endpoint, we should get our result.
 
 Of note is the [MemoryCacheEntryOptions](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.caching.memory.memorycacheentryoptions?view=net-9.0-pp) - this is what is used to configure how long before to flush the cache. In our case, it is every 5 minutes. This is called **absolute expiry**.
 
-You can also set a **sliding expiration** that resets the counter every time an entry is accessed.
+You can also set a **sliding expiration** that resets the timer every time an entry is accessed.
 
 Also, note the use of a cache key, in our case `allSpiesKey`. This is what is used to refer to the data in the cache for setting and fetching.
 
