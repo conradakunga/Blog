@@ -39,7 +39,7 @@ Here, we have specified:
 
 Short form does not necessarily mean three letters. In French, June is *Juin,* and July is *Juillet*. The short forms for these are *juin* and *juil.* (note the full-stop).
 
-We can establish this with this code, where we pass a format provider based on the culture we want (in this case, fr-FR)
+We can establish this with this code, where we pass a format provider based on the culture we want (in this case, [fr-FR](https://simplelocalize.io/data/locales/))
 
 ```csharp
 var juneDate = new DateOnly(2024, 6, 1);
