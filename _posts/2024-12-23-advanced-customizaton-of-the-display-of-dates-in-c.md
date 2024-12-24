@@ -177,7 +177,8 @@ You can introduce a truly horrific behaviour by doing the following:
 
 ```csharp
 dateTimeFormat.AbbreviatedDayNames = dateTimeFormat.AbbreviatedDayNames.OrderBy(x => Random.Shared.Next(6)).ToArray();
-	dateTimeFormat.MonthGenitiveNames = dateTimeFormat.MonthGenitiveNames.OrderBy(x => Random.Shared.Next(11)).ToArray();
+dateTimeFormat.MonthGenitiveNames = dateTimeFormat.MonthGenitiveNames.OrderBy(x => Random.Shared.Next(11)).ToArray();
 ```
+Every time your run this code the days of the week and the months will be set in a random order.
 
 Happy hacking!
