@@ -171,7 +171,7 @@ Thur, 23 Octa, 2025
 Sund, 23 Nona, 2025
 ```
 
-BONUS
+### BONUS
 
 You can introduce a truly horrific behaviour by doing the following:
 
@@ -180,6 +180,6 @@ dateTimeFormat.AbbreviatedDayNames = dateTimeFormat.AbbreviatedDayNames.OrderBy(
 dateTimeFormat.MonthGenitiveNames = dateTimeFormat.MonthGenitiveNames.OrderBy(x => Random.Shared.Next(11)).ToArray();
 ```
 
-Every time your run this code the days of the week and the months will be set in a random order. To be truly thorugh, you need to also set the [DayNames](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.daynames?view=net-9.0) and the [AbbreviatedMonthGenitiveNames](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.abbreviatedmonthgenitivenames?view=net-9.0). You also need to ensure that the `DayNames` and the `AbbreviatedDayNames` sort in the same random order, and will the `MonthGenitiveNames` and `AbbreviatedMonthGenitiveNames`.
+Every time your run this code the abbreviated days of the week and the month names will be set in a **random order**. To be truly thorugh, you need to also set the [DayNames](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.daynames?view=net-9.0) and the [AbbreviatedMonthGenitiveNames](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.abbreviatedmonthgenitivenames?view=net-9.0). You also need to ensure that the `DayNames` and the `AbbreviatedDayNames` sort in the same random order, and will the `MonthGenitiveNames` and `AbbreviatedMonthGenitiveNames`.
 
 Happy hacking!
