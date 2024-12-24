@@ -144,8 +144,6 @@ We can update the code as follows:
 var customCulture = CultureInfo.CreateSpecificCulture("en-KE");
 // Get the date time format info
 var dateTimeFormat = customCulture.DateTimeFormat;
-// Set the abbreviated days
-dateTimeFormat.AbbreviatedDayNames = ["Sund", "Mond", "Tues", "Wedn", "Thur", "Fri", "Satu"];
 // Set the month names
 dateTimeFormat.MonthGenitiveNames = ["Janus", "Februar", "Mars", "Aprilis", "Maia", "Juno", "Julius", "Augustus", "Septa", "Octa", "Nona", "Deca", ""];
 
@@ -171,6 +169,15 @@ Satu, 23 Augustus, 2025
 Tues, 23 Septa, 2025
 Thur, 23 Octa, 2025
 Sund, 23 Nona, 2025
+```
+
+BONUS
+
+You can introduce a truly horrific behaviour by doing the following:
+
+```csharp
+dateTimeFormat.AbbreviatedDayNames = dateTimeFormat.AbbreviatedDayNames.OrderBy(x => Random.Shared.Next(6)).ToArray();
+	dateTimeFormat.MonthGenitiveNames = dateTimeFormat.MonthGenitiveNames.OrderBy(x => Random.Shared.Next(11)).ToArray();
 ```
 
 Happy hacking!
