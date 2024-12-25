@@ -45,7 +45,7 @@ public record Spy
 We could populate a collection as follows:
 
 ```csharp
-var data = File.ReadAllText("data.csv")
+var data = File.ReadAllText("Data.csv")
 // Create  collection - a list of spies
 List<Spy> spies = new();
 // Split the data into an array of rows, using the newline
