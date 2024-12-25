@@ -5,7 +5,7 @@ date: 2024-12-25 08:33:35 +0300
 categories:
     - C#
     - .NET
-    - UsefulLibraries
+    - StarLibrary
 ---
 
 One of the most popular formats for data interchange is the comma-separated-value, the [CSV](https://en.wikipedia.org/wiki/Comma-separated_values). In this format, data is delimited as follows:
