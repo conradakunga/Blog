@@ -9,13 +9,14 @@ permalink: /archives/
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
-  <h2>{{ year.name }}</h2>
+{% assign yearCount = year.items | size %}
+  <h2>{{ year.name }} : {{yearCount}}</h2>
   {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
 
 
 {% for month in postsByMonth %}
 {% assign monthCount = month.items | size %}
-<h2>{{ month.name }} : <i>{{monthCount}}</i></h2>
+<h3>{{ month.name }} : <i>{{monthCount}}</i></h3>
 <ul>
   {% for post in month.items %}
     <li>
