@@ -65,7 +65,7 @@ Download .NET:
   https://aka.ms/dotnet/download
 ```
 
-There are a couple of ways to do this:
+Traditionally, there are a couple of ways to do this:
 
 1. Leave it to your package manager
     - [Chocolatey](https://chocolatey.org/) or [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) for Windows
