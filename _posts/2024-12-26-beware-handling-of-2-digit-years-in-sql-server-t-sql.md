@@ -28,7 +28,7 @@ SET @Date = 'December 26 2024'
 SET @Date = 'December 26 24'
 ```
 
-You need to be extremely careful when you specify the year with only two digits.
+You need to be extremely careful when you specify the year with **only two digits**.
 
 Given the following assignments:
 
@@ -66,7 +66,7 @@ You will get the following results:
 
 Any two-digit year past **49** is considered part of the [20th century](https://en.wikipedia.org/wiki/20th_century) (1901-2000), so `26dec50` is considered **26 December 1950**, while `26dec99` is considered **26 December 1999**.
 
-If you want to change this behaviour, say to 2070, you can run the following script:
+If you want to change this behaviour, say to **2070**, you can run the following script:
 
 ```sql
 USE master;
