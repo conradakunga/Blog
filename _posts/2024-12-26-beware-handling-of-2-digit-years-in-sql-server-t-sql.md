@@ -64,7 +64,7 @@ You will get the following results:
 1999-12-26
 ```
 
-Any two-digit year past 49 is considered part of the [20th century](https://en.wikipedia.org/wiki/20th_century) (1901-2000), so `26dec50` is considered 26 December 1950, while `26dec99` is considered **26 December 1999**.
+Any two-digit year past **49** is considered part of the [20th century](https://en.wikipedia.org/wiki/20th_century) (1901-2000), so `26dec50` is considered **26 December 1950**, while `26dec99` is considered **26 December 1999**.
 
 If you want to change this behaviour, say to 2070, you can run the following script:
 
@@ -91,7 +91,7 @@ RECONFIGURE;
 GO
 ```
 
-The current default is 2049.
+The current default is **2049**.
 
 You will need `ALTER SETTINGS` permissions. The change takes place immediately.
 
