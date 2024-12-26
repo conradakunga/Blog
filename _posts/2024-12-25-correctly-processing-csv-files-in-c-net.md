@@ -99,17 +99,14 @@ We then change the code as follows:
 
 ```csharp
 // Create a reader
-using (var reader = new StreamReader("Data.csv"))
-// Create a csv reader
-using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+using var reader = new StreamReader("Data.csv");
+using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+// Create an IEnumerable of Spy
+var allSpies = csv.GetRecords<Spy>();
+// Actually read the spy from file and process
+foreach (var spy in allSpies)
 {
-  // Create an IEnumerable of Spy
-  var allSpies = csv.GetRecords<Spy>();
-  // Actually read the spy from file and process
-  foreach (var spy in allSpies)
-  {
-    Console.WriteLine($"Name {spy.Name}, Age {spy.Age}, Service {spy.Service}");
-  }
+  Console.WriteLine($"Name {spy.Name}, Age {spy.Age}, Service {spy.Service}");
 }
 ```
 
@@ -189,19 +186,18 @@ We then register the `ClassMap` with the parser and then execute the parsing.
 
 ```csharp
 // Create a reader
-using (var reader = new StreamReader("Data2.csv"))
+using var reader = new StreamReader("Data2.csv");
 // Create a csv reader
-using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+// Register our classmap
+csv.Context.RegisterClassMap<SpyMap>();
+// Create an IEnumerable of Spy
+var allSpies = csv.GetRecords<Spy>();
+// Actually read the spy from file and process
+foreach (var spy in allSpies)
 {
-  // Regiser our classmap
-  csv.Context.RegisterClassMap<SpyMap>();
-  // Create an IEnumerable of Spy
-  var allSpies = csv.GetRecords<Spy>();
-  // Actually read the spy from file and process
-  foreach (var spy in allSpies)
-  {
-    Console.WriteLine($"Name {spy.Name}, Age {spy.Age}, Service {spy.Service}");
-  }
+  Console.WriteLine($"Name {spy.Name}, Age {spy.Age}, Service {spy.Service}");
+}
 ```
 
 I prefer the `ClassMap` to the attributes approach, as it is cleaner and more flexible.
@@ -240,10 +236,10 @@ There are a lot of other things that you can configure for parsing in the `CsvCo
 
  - **Delimiter** - the delimter to use. The default is specific to the culture in use. (In English, this is usually the comma). But you can specify it to be a tab `\t` instead if the case arises.
 - **DetectDelimiter** - whether to detect the delimiter.
-- **IgnoreBlankLines** - What do with blank lines in the data.
+- **IgnoreBlankLines** - What to do with blank lines in the data.
 - **NewLine** - The new line for use in writing CSVs. For reading, the parser is smart enough to handle the three - `\n`, `\r`, `\r\n`
 
-Writing CSVs is almost exactly the opposite of reading them.
+Writing CSVs is almost exactly the opposite of reading them. Only instead of a `CSVReader`, we use a `CSVWriter`.
 
 If you have a collection of objects and want to write them to CSV, do so as follows:
 
@@ -257,10 +253,10 @@ If you want to write the data **without** a header, you can configure the writer
 
 ```csharp
 List<Spy> spies =
-[
-  new Spy{Name="James Bond",Age=50,Service="MI-6"},
-  new Spy{Name="Vesper Lynd",Age=35,Service="MI-6"}
-];
+  [
+      new Spy { Name = "James Bond", Age = 50, Service = "MI-6" },
+      new Spy { Name = "Vesper Lynd", Age = 35, Service = "MI-6" }
+  ];
 var config = new CsvConfiguration(CultureInfo.InvariantCulture)
 {
 	HasHeaderRecord = false
@@ -274,10 +270,10 @@ You can also configure the **column names** when writing to a file. This is also
 
 ```csharp
 List<Spy> spies =
-[
-  new Spy{Name="James Bond",Age=50,Service="MI-6"},
-  new Spy{Name="Vesper Lynd",Age=35,Service="MI-6"}
-];
+  [
+    new Spy { Name = "James Bond", Age = 50, Service = "MI-6" },
+    new Spy { Name = "Vesper Lynd", Age = 35, Service = "MI-6" }
+  ];
 using var writer = new StreamWriter("OutputNamedHeader.csv");
 using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
 csv.Context.RegisterClassMap<SpyMap>();
