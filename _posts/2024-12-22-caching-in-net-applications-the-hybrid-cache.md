@@ -7,7 +7,7 @@ categories:
     - Caching
 ---
 
-A large percentage of applications, web and otherwise, usually have a database of some sort somewhere. When it comes to improving performance, or throughput, a number of things can be done to improve the performance of the database
+A large percentage of applications, web and otherwise, usually have a database of some sort somewhere. When it comes to improving performance or throughput, a number of things can be done to improve the performance of the database
 
 1. [Indexing](https://www.atlassian.com/data/databases/how-does-indexing-work)
 2. Reducing data returned in queries
@@ -603,5 +603,7 @@ async Task AddSpyAsync(Spy spy, CancellationToken token)
 Thus, the Hybrid Cache, when completed, will offer a very powerful way to utilize caching, whether locally in memory or distributed. It is [not specific to .NET 9](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Hybrid/#supportedframeworks-body-tab) and should be usable by most .NET implementations.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2024-12-23%20-%20Caching%20In%20.NET%20Applications).
+
+> [This article is part of the 2024 C# Advent!](https://www.csadvent.christmas/)
 
 Happy hacking!
