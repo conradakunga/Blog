@@ -13,7 +13,7 @@ If you are on OSX, this presents some challenges, as using the .NET Installer do
 
 However, there is a solution to this.
 
-First, you need to install and setup [Homebrew](https://brew.sh) for OSX.
+First, you need to install and set up [Homebrew](https://brew.sh) for OSX.
 
 Next you need to setup the cask that has the various .NET SDK Versions. This is done using this command:
 
@@ -27,7 +27,7 @@ Next, you can proceed to install the .NET version you require
 brew install --cask <version>
 ```
 
-The list of versions available is as follows, as of 22 November 2022:
+The list of versions available is as follows as of 22 November 2022:
 
 
 | Version | SDK |
