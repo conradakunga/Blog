@@ -217,4 +217,6 @@ public class Contact : IEquatable<Contact>
 
 You will probably also need to do some work to tell the runtime how to [compare contacts for purposes of sorting]({% post_url 2022-10-14-how-to-order-classes-and-records-in-c %}).
 
+> [This article is part of the 2024 C# Advent!](https://www.csadvent.christmas/)
+
 Happy hacking!
