@@ -40,7 +40,6 @@ public sealed class Account
 We then have a simple program that **Deposits** 1,000 25 times and **Withdraws** 1,000 25 times in different threads so as to demonstrate the problems that can arise with multi-threaded code.
 
 ```csharp
-using LockingSupport;
 using Serilog;
 
 // Create logger configuration
