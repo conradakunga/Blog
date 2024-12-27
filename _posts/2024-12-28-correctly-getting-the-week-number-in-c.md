@@ -131,6 +131,6 @@ Note the number of years from which there is a variance.
 
 ### TLDR
 
-The `GreogrianCalendar` does not consistently correctly compute the week number using ISO rules. If you need that, use `NodaTime`
+The `GreogrianCalendar` does not consistently correctly compute the week number using ISO rules. If you need that, use `NodaTime` and its `WeekRules`
 
 Happy hacking!
