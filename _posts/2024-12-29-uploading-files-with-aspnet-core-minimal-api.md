@@ -20,8 +20,14 @@ The answers to these will inform how you tackle the problem.
 Let us implement a simple example that will store files on disk.
 
 ```csharp
+using Microsoft.AspNetCore.Http.Features;
 var builder = WebApplication.CreateBuilder(args);
-
+// Configure max form data size
+builder.Services.Configure<FormOptions>(options =>
+{
+    // Prevent upload of data greater than 5MB
+    options.MultipartBodyLengthLimit = 5 * 1024 * 1024;
+});
 var app = builder.Build();
 
 // The location that uploaded files will be stored
@@ -31,9 +37,6 @@ const string fileStoreLocation = "/Users/rad/Projects/Temp/Conrad/Uploaded";
 // Create the location, if it doesn't exist
 if (!Directory.Exists(fileStoreLocation))
     Directory.CreateDirectory(fileStoreLocation);
-
-// The max file size, 5MB
-const int maxFileSize = 5 * 1024 * 1024;
 
 // Allowed file extensions
 string[] allowedFileExtensions = [".jpg", ".jpeg", ".png", ".gif", ".pdf", ".docx", ".xlsx"];
@@ -47,17 +50,10 @@ app.MapPost("/Upload", async (IFormFile file, ILogger<Program> logger) =>
             return Results.BadRequest("File is empty");
         }
 
-        // Abort for files larger than the threshold
-        if (file.Length > maxFileSize)
-        {
-            logger.LogWarning("Uploaded file {FileName} is larger than the allowed size", maxFileSize);
-            return Results.BadRequest("File larger than the allowed size");
-        }
-
         // Validate the extension. If the extension is NOT in the array of allowed
         // extensions, block it
         var fileExtension = Path.GetExtension(file.FileName);
-        if (allowedFileExtensions.All(ext => fileExtension != ext))
+        if (!allowedFileExtensions.Contains(fileExtension))
         {
             logger.LogWarning("Uploaded file {FileName} is a {Extension} which is blocked", file.FileName,
                 fileExtension);
@@ -84,23 +80,23 @@ app.Run();
 
 This code does the following:
 
-1. Defines a **location where the files will be stored**, in this case,`/Users/rad/Projects/Temp/Conrad/Uploaded`. I have avoided using a relative location based on the web application because should you deploy multiple instances of this application, you will have a lot of problems around uploaded files being unable to be retrieved as the uploaded files will be stored on the root folder of each web application. In other words, users (assuming users can access their uploads) can only retrieve their uploaded file on the instance they uploaded the file to.
-2. It then **creates** the folder if it does not exist.
-3. It then **specifies a maximum file size of 5MB**. Ideally, this should be a system setting read at runtime.
+1. Configures the application to reject form data (that includes the file) greater than 5MB
+2. Defines a **location where the files will be stored**, in this case,`/Users/rad/Projects/Temp/Conrad/Uploaded`. I have avoided using a relative location based on the web application because should you deploy multiple instances of this application, you will have a lot of problems around uploaded files being unable to be retrieved as the uploaded files will be stored on the root folder of each web application. In other words, users (assuming users can access their uploads) can only retrieve their uploaded file on the instance they uploaded the file to.
+3. It then **creates the folder** if it does not exist.
 4. It then **specifies a list of allowed file extensions**. Note, that the period is part of the extension!
 5. It then defines the [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) endpoint, `/Upload`
 6. The end point
     1. Validates against **zero-length** files
-    2. Validates against files **bigger than the allowed limit**
-    3. Validates against the **allowed extensions**
-    4. If any validations fail, return a [BadRequest (400)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
-    5. Generates a filename at the Upload file location
-    6. Copies the contents of the [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-9.0) of the uploaded file to the new location
-    7. Returns a [Success (200)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
+    2. Validates against the **allowed extensions**
+    3. If any validations fail, return a [BadRequest (400)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
+    4. Generates a filename at the Upload file location
+    5. Copies the contents of the [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-9.0) of the uploaded file to the new location
+    6. Returns a [Success (200)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200)
 
 A couple of additional things of interest.
 
-1. The endpoint calls `DisableAntiforgery`. This is because, by default, the ASP.NET form mechanism has built-in protection from cross-site request forgery that you need to build into your forms. For this example, I have not done so, but in a real-world scenario, the form that submits the file would. You can read about this in detail [here](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-9.0).
+1. The endpoint calls `DisableAntiforgery()`. This is because, by default, the ASP.NET form mechanism has built-in protection from cross-site request forgery that you need to build into your forms. For this example, I have not done so, but in a real-world scenario, the form that submits the file would. You can read about this in detail [here](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-9.0).
+
 2. The generated file for storage simply appends the folder location with the file name of the upload. You probably will need to generate some prefix for all your uploaded files to avoid the issue of attempts to overwrite files that had previously been uploaded with the same name.
 
 You can test this API using [Postman](https://www.postman.com/), [Insomnia](https://insomnia.rest/), or your favourite tool (including command line tools like [curl](https://curl.se/) and [HTTPie](https://httpie.io/)).
