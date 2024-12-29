@@ -139,7 +139,7 @@ curl --request POST \
 
 ### TLDR
 
-This is an end-to-end, working tutorial on how to build a Minimal API endpoint that supports uploading of files
+**This is an end-to-end, working tutorial on how to build a Minimal API endpoint that supports uploading files**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2024-12-29%20-%20Minimal%20API%20File%20Upload).
 
