@@ -197,7 +197,7 @@ There are a couple be benefits to this:
 
 ### TLDR
 
-The new `Lock` class makes it easier to write thread-safe code that communicates intent and has better performance.
+**The new `Lock` class makes it easier to write thread-safe code that communicates intent and has better performance.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2024-12-27%20-%20Using%20Locks).
 
