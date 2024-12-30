@@ -85,7 +85,7 @@ This code does the following:
 3. It then **creates the folder** if it does not exist.
 4. It then **specifies a list of allowed file extensions**. Note that the period is part of the extension!
 5. It then defines the [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) endpoint, `/Upload`
-6. The end point
+6. The endpoint
     1. Validates against **zero-length** files
     2. Validates against the **allowed extensions**
     3. If any validations fail, return a [BadRequest (400)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400)
@@ -98,6 +98,8 @@ A couple of additional things of interest.
 1. The endpoint calls `DisableAntiforgery()`. This is because, by default, the ASP.NET form mechanism has built-in protection from cross-site request forgery that you need to build into your forms. For this example, I have not done so, but in a real-world scenario, the form that submits the file would. You can read about this in detail [here](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-9.0).
 
 2. The generated file for storage simply appends the folder location with the file name of the upload. You probably will need to generate some prefix for all your uploaded files to avoid the issue of attempts to overwrite files that had previously been uploaded with the same name.
+
+3. The technique of validating a file type, by its extension, is not 100% bulletproof. It is trivial to change a file extension and then upload the file anyway.
 
 You can test this API using [Postman](https://www.postman.com/), [Insomnia](https://insomnia.rest/), or your favourite tool (including command line tools like [curl](https://curl.se/) and [HTTPie](https://httpie.io/)).
 
@@ -123,7 +125,7 @@ The response should be as follows:
 
 ![InsomniaUpload](../images/2024/12/InsomniaUpload.png)
 
-The equivalent curl request for this is as follows:
+The equivalent `curl` request for this is as follows:
 
 ```bash
 curl --request POST \
