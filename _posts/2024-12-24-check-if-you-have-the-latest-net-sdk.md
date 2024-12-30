@@ -11,7 +11,7 @@ How do you know if you have the latest version of the SDK?
 
 The first question is to determine what version do you have now.
 
-This is done using the info tool
+This is done using the info tool:
 
 ```bash
 dotnet --info
@@ -70,10 +70,10 @@ Traditionally, there are a couple of ways to do this:
 1. Leave it to your package manager
     - [Chocolatey](https://chocolatey.org/) or [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) for Windows
     - [Homebrew](https://brew.sh/) for OSX
-    - Linux Package Manager (e.g. apt for Debian based, etc)
-2. Perodically check yourself on the [.NET home page](https://dotnet.microsoft.com/en-us/)
+    - Linux Package Manager (e.g. apt for Debian-based, etc)
+2. Periodically check yourself on the [.NET home page](https://dotnet.microsoft.com/en-us/)
 
-The best way to do this that requires no additional software or extra work is to use the [tool built into the .NET SDK for this purpose](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-sdk-check). To check, run the following command
+The best way to do this, which requires no additional software or extra work, is to use the [tool built into the .NET SDK for this purpose](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-sdk-check). To check, run the following command
 
 ```bash
 dotnet sdk check
@@ -98,7 +98,7 @@ Microsoft.NETCore.App         9.0.0        Up to date.
 
 It has indicated that there is a patch available.
 
-Which you can proceed to install depending on your OS and how you installed it in the first place.
+You can proceed to install it depending on your OS and how you installed it in the first place.
 
 If you are up to date, you will see the following:
 
