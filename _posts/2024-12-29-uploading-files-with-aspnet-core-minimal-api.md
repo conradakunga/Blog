@@ -83,7 +83,7 @@ This code does the following:
 1. Configures the application to reject form data (that includes the file) greater than 5MB
 2. Defines a **location where the files will be stored**, in this case,`/Users/rad/Projects/Temp/Conrad/Uploaded`. I have avoided using a relative location based on the web application because should you deploy multiple instances of this application, you will have a lot of problems around uploaded files being unable to be retrieved as the uploaded files will be stored on the root folder of each web application. In other words, users (assuming users can access their uploads) can only retrieve their uploaded file on the instance they uploaded the file to.
 3. It then **creates the folder** if it does not exist.
-4. It then **specifies a list of allowed file extensions**. Note, that the period is part of the extension!
+4. It then **specifies a list of allowed file extensions**. Note that the period is part of the extension!
 5. It then defines the [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) endpoint, `/Upload`
 6. The end point
     1. Validates against **zero-length** files
