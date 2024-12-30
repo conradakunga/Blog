@@ -72,7 +72,7 @@ The following is a valid CSV row for the above data
 
 Note that this data has three commas, unlike two in all the other rows. `Salt, Evelyn` is the entirety of the name.
 
-The parsing code will, therefore think `Evelyn` is the second column, whereas it is in fact, part of the first, and will throw an exception:
+The parsing code will, therefore, think `Evelyn` is the second column, whereas it is in fact, part of the first, and will throw an exception:
 
 ```plaintext
 Unhandled exception. System.FormatException: The input string 'Evelyn"' was not in a correct format.
@@ -221,7 +221,7 @@ var config = new CsvConfiguration(CultureInfo.InvariantCulture)
 using var reader = new StreamReader("Data3.csv");
 // Create a csv reader, passing the configuration
 using var csv = new CsvReader(reader, config);
-// Regiser our classmap
+// Register our classmap
 csv.Context.RegisterClassMap<SpyMap>();
 // Create an IEnumerable of Spy
 var allSpies = csv.GetRecords<Spy>();
