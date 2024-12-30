@@ -114,6 +114,6 @@ This header tells the browser to download the file directly.
 
 **Using Minimal API you can build secure, performant APIs that allow for the download of files.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2024-12-30%20-%20Minimal%20API%20File%20Download).
 
 Happy hacking!
