@@ -286,9 +286,9 @@ To make life simpler, whenever an endpoint is invoked, the runtime scans all the
 
 This is all held together by what is called a **dependency injection container**. From .NET Core 1, one has been built into the applications (specifically Web and API applications, but it was also available in the console and services if you did some extra work).
 
-We can make use of this information because one of the services available for injection is an ILogger. We can use this to log messages.
+We can make use of this information because one of the services available for injection is an [ILogger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger?view=net-9.0-pp). We can use this to log messages.
 
-For example, to verify our settings are loaded correctly, we can inject an [ILogger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger?view=net-9.0-pp) and use that to print the configuration of our `GmailAlertSender`. We can update our endpoint as follows:
+For example, to verify our settings are loaded correctly, we can inject an `ILogger` and use that to print the configuration of our `GmailAlertSender`. We can update our endpoint as follows:
 
 ```c#
 app.MapPost("/v3/SendGmailEmergencyAlert", async ([FromBody] Alert alert, [FromServices] GmailAlertSender mailer,
