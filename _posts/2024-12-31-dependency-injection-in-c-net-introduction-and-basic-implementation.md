@@ -29,17 +29,18 @@ The class responsible for sending the alerts is the `GmailAlertSender`.
 ```c#
 public sealed class GmailAlertSender
 {
-    private int _port;
-    private string _username;
-    private string _password;
+    private readonly int _port;
+    private readonly string _username;
+    private readonly string _password;
+    public string Configuration { get; }
 
     public GmailAlertSender(int port, string username, string password)
     {
         _port = port;
         _username = username;
         _password = password;
+        Configuration = $"Configuration - Port: {_port}; Username: {_username}; Password: {_password}";
     }
-
     public async Task<string> SendAlert(GmailAlert message)
     {
         await Task.Delay(TimeSpan.FromSeconds(5));
@@ -141,10 +142,10 @@ We can add our own settings to the bottom, like this:
     }
   },
   "AllowedHosts": "*",
-  "GmailSettings": {
+   "Settings": {
     "GmailUserName": "username",
     "GmailPassword": "password",
-    "Port": 4000
+    "GmailPort": 4000
   }
 }
 ```
@@ -284,6 +285,30 @@ app.MapPost("/v3/SendGmailEmergencyAlert", async ([FromBody] Alert alert, [FromS
 To make life simpler, whenever an endpoint is invoked, the runtime scans all these sources and binds them to the specified types as soon as a match is found. **It is probably better to be explicit and decorate the parameters with the appropriate attribute.**
 
 This is all held together by what is called a **dependency injection container**. From .NET Core 1, one has been built into the applications (specifically Web and API applications, but it was also available in the console and services if you did some extra work).
+
+We can make use of this information because one of the services available for injection is an ILogger. We can use this to log messages.
+
+For example, to verify our settings are loaded correctly, we can inject an [ILogger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger?view=net-9.0-pp) and use that to print the configuration of our `GmailAlertSender`. We can update our endpoint as follows:
+
+```c#
+app.MapPost("/v3/SendGmailEmergencyAlert", async ([FromBody] Alert alert, [FromServices] GmailAlertSender mailer,
+    [FromServices] ILogger<Program> logger) =>
+{
+    logger.LogInformation("{Info}", mailer.Configuration);
+    var gmailAlert = new GmailAlert(alert.Title, alert.Message);
+    var alertID = await mailer.SendAlert(gmailAlert);
+    return Results.Ok(alertID);
+});
+```
+
+In our console, the following should be printed:
+
+```plaintext
+info: Program[0]
+      Configuration - Port: 4000; Username: username; Password: password
+```
+
+
 
 If you don't want to use the .NET built-in DI container, there are alternatives like [AutoFac](https://autofac.org/) and [Lamar](https://jasperfx.github.io/lamar/).
 
