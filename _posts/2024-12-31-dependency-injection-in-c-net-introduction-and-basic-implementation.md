@@ -5,7 +5,7 @@ date: 2024-12-31 17:57:32 +0300
 categories:
     - C#
     - .NET
-    - Domain Design
+    - Architecture
 ---
 
 Unless you have been living under a rock, you cannot have escaped coming across the term "**dependency injection**" or **DI**. But what really is it?
