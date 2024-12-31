@@ -8,13 +8,13 @@ categories:
     - Domain Design
 ---
 
-Unless you have been living under a rock, you cannot have escaped coming across the term "dependency injection", or DI. But what really is it?
+Unless you have been living under a rock, you cannot have escaped coming across the term "**dependency injection**" or **DI**. But what really is it?
 
-In this post, we shall build out an explanation for this with an example to illustrate the various ideas and concepts and how to implement them. And then at the end, we can see what it is, what problems it solves and how to use it in your applications.
+In this series of posts, we shall build out an explanation for this with an example to illustrate the various ideas and concepts and how to implement them. And then at the end, we can see what it is, what problems it solves and how to use it in your applications.
 
 Suppose we have an alerting system that we expose via an API.
 
-Our alerting system uses Google Email (Gmail) to send either a warning or an information message.
+Our alerting system uses Google Email ([Gmail](https://www.gmail.com)) to send either a warning or an information message.
 
 Our first step is to build the class responsible for sending the email and its supporting types. (This class has dummy functionality to simplify this post).
 
@@ -79,10 +79,10 @@ app.Run();
 
 There are a couple of problems with this code.
 
-1. The `port`, `username` and `password` are hard coded into the controller, which means if they change, all the endpoints must be updated.
+1. The `port`, `username` and `password` are **hard coded** into the endpoints, which means if they change, **all the endpoints must be updated**.
 2. The endpoints all need to know:
-    1. How to create a GmailAlertSender
-    2. What parameters it requires
+    1. **How** to create a `GmailAlertSender`
+    2. What **parameters** it requires
 3. The code to create a GmailSender is repeated on every endpoint.
 
 Let us start with the first.
@@ -99,7 +99,7 @@ This presents an additional challenge - there are very many ways that configurat
 - Environment variables
 - Databases
 
-This is such a common problem that .NET applications have come up with a service that we can leverage to make loading of settings and their use largely abstracted away from the application. You can read about it [here](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-9.0) or in a [previous post where I touched on this]({% post_url 2024-12-11-loading-using-application-settings %}), but we shall step by step implement this in our API.
+This is such a common problem that .NET applications have come up with a service that we can leverage to make loading of settings and their use largely **abstracted away** from the application. You can read about it [here](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-9.0) or in a [previous post where I touched on this]({% post_url 2024-12-11-loading-using-application-settings %}), but we shall step by step implement this in our API.
 
 The first step is to come up with a class that will store our settings.
 
@@ -159,7 +159,7 @@ builder.Services.Configure<Settings>(builder.Configuration.GetSection(nameof(Set
 var app = builder.Build();
 ```
 
-The code `nameof(Settings)` merely returns the string "**Settings**". It is good practice to avoid hard-coding strings because if you supply the string directly and later decide to rename the settings to `GmailSettings`, you will almost certainly forget to change the string in the startup code.
+The code `nameof(Settings)` merely returns the string "**Settings**". It is good practice to avoid hard-coding strings because if you supply the string directly and later decide to rename the settings to `GmailSettings`, you will almost certainly **forget to change the string** in the startup code.
 
 We add this new line just after creating the builder.
 
@@ -208,7 +208,7 @@ app.MapPost("/v2/SendGmailEmergencyAlert", async (Alert alert, IOptions<Settings
 
 There are two important points:
 
-1. The parameter `IOptions<Settings> settings` that we are passing isn't, in fact, the `Settings` class, as you might expect. It is actually a generic interface of `IOptions`, for which `Settings` is the type we are passing.
+1. The parameter `IOptions<Settings> settings` that we are passing isn't, in fact, the `Settings` class, as you might expect. It is actually a generic interface of [IOptions](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.options.ioptions-1?view=net-9.0-pp), for which `Settings` is the type we are passing.
 2. To get the actual `Settings`, we access the `Value` property of this parameter.
 
 Why, you might ask, do it this way? Wouldn't it be simpler to pass the `Settings` directly? The main reason is that while, in most cases, settings are loaded once and remain static until the application is reloaded, it is possible to have a situation where you want `Settings` to be loaded **each time** an API is accessed or a service is requested. Having the `Settings` passed as a class would not work here. But the .NET configuration mechanism supports this, and so in such a situation it will read the `Settings` from storage again.
@@ -219,7 +219,7 @@ The API does not know the parameters for the `GmailAlertSender`, where to get th
 
 Can we extend this knowledge to inject a `GmailAlertSender`?
 
-In the words of Barack Obama - yes, we can.
+In the words of Barack Obama - **yes, we can**.
 
 We will have to do some extra work in the startup
 
@@ -259,9 +259,9 @@ app.MapPost("/v3/SendGmailEmergencyAlert", async (Alert alert, GmailAlertSender 
 
 A couple of things to point out:
 
-1. We are no longer injecting the settings. We don't need to, as the `GmailAlertSender` is already preconfigured and ready to go.
-2. The code in the controllers is less
-3. If we need to extend the `GmailAlertSender`, we can do so without the APIs having to know anything about it.
+1. We are **no longer injecting the settings**. We don't need to, as the `GmailAlertSender` is already preconfigured and ready to go.
+2. The **code** in the controllers is **less**
+3. If we need to extend the `GmailAlertSender`, we can do so **without the APIs having to know anything about it**.
 
 Given this method signature:
 
@@ -281,12 +281,12 @@ app.MapPost("/v3/SendGmailEmergencyAlert", async ([FromBody] Alert alert, [FromS
 
 To make life simpler, whenever an endpoint is invoked, the runtime scans all these sources and binds them to the specified types as soon as a match is found. **It is probably better to be explicit and decorate the parameters with the appropriate attribute.**
 
-This is all held together by what is called a dependency injection container. From .NET Core 1, one has been built into the applications (specifically Web and API applications, but it was also available in the console and services if you did some extra work).
+This is all held together by what is called a **dependency injection container**. From .NET Core 1, one has been built into the applications (specifically Web and API applications, but it was also available in the console and services if you did some extra work).
 
 If you don't want to use the .NET built-in DI container, there are alternatives like [AutoFac](https://autofac.org/) and [Lamar](https://jasperfx.github.io/lamar/).
 
-In the next post, we will see how to extend this even further to be able to quickly adapt applications to changing business, technology and environmental needs.
+In the next post, we will explore how to extend this even further to quickly adapt applications to changing business, technology, and environmental needs.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer).
 
 Happy hacking!
