@@ -217,12 +217,14 @@ builder.Services.AddHttpClient(httpClientName, (provider, client) =>
     var settings = provider.GetRequiredService<IOptions<APISettings>>().Value;
     // Set the base address with the configured settings
     client.BaseAddress = new Uri(settings.GitHubAPI);
-    // Set the user agent to be added by default to all requets
+    // Set the user agent to be added by default to all requests
     client.DefaultRequestHeaders.Add("User-Agent", settings.UserAgent);
 });
 ```
 
-It is very important to note that **this code does not run when the application starts - it runs when the HttpClient is *requested***
+It is very important to note that **this code does not run when the application starts - it runs when the HttpClient is *requested***.
+
+This is called **IOptions or Lazy Binding**.
 
 In other words, this call:
 
@@ -230,7 +232,7 @@ In other words, this call:
 var client = factory.CreateClient(httpClientName);
 ```
 
-is what will cause the request to the DI container for the `HttpClient` to be constructed and returned, and for that configuration code to run and carry out those actions..
+is what will cause the request to the DI container for the `HttpClient` to be constructed and returned, and for that configuration code to run and carry out those actions.
 
 You can verify this by changing that code and adding this:
 
@@ -239,7 +241,7 @@ builder.Services.AddHttpClient(httpClientName, (provider, client) =>
 {
     // Get a logger from the DI contaoner
     var logger = provider.GetRequiredService<ILogger<APISettings>>();
-    // Log some infromation
+    // Log some information
     logger.LogInformation("Call to retrieve HttpClient");
     // Get the settings from the DI container
     var settings = provider.GetRequiredService<IOptions<APISettings>>().Value;
@@ -256,13 +258,13 @@ If we start the app, we won't actually see anything logged to the console:
 
 ![InitialRun](../images/2024/12/InitialRun.png)
 
-However if we make a request we see our logging code now fires:
+However, if we make a request, we see our logging code now fires:
 
 ![WithLogging](../images/2024/12/WithLogging.png)
 
 Most of the time, this will be good enough for your needs.
 
-However there are times when you require the settings values very early in the application pipeline.
+However, you sometimes require the settings values very early in the application pipeline.
 
 In this case you will need to do things a bit differently by requesting the application to bind a section of the settings to a custom instance of the `APISettings` class.
 
@@ -281,21 +283,23 @@ app.Logger.LogInformation("The configured API URL is {URL}", apiSettings.GitHubA
 app.Logger.LogInformation("The configured User Agent is {UserAgent}", apiSettings.UserAgent);
 ```
 
+This approach is called **Direct or Manual Binding**, and you should only do this if you need the settings values **BEFORE** the application starts.
+
 Running this code shows the API configuration information is printed immediately after the app actually starts.
 
 
 ![StartWithLogs](../images/2024/12/StartWithLogs.png)
 
-Of interest is if you need to log **before** the application starts this means you cannot use the `Logger` from the `app` object as it has  not been created yet.
+If you need to log **before** the application starts, you cannot use the `Logger` from the `app` object as it has not been created yet.
 
-In such a case the simplest way is to create and use your own [Logger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger?view=net-9.0-pp). There are lots of libraries for this but my go to is [Serilog](https://serilog.net/), and in particular the [Console sink](https://github.com/serilog/serilog-sinks-console).
+In such a case, the simplest way is to create and use your own [Logger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger?view=net-9.0-pp). There are many libraries for this; my go-to is [Serilog](https://serilog.net/), particularly, the [Console sink](https://github.com/serilog/serilog-sinks-console).
 
 ```bash
 dotnet add package Serilog.Sink.Console
 ```
-If you want to log somewhere else, perhaps [Seq](https://github.com/datalust/serilog-sinks-seq) or [ElasticSearch](https://www.elastic.co/guide/en/ecs-logging/dotnet/current/serilog-data-shipper.html) you can use the appropriate sink, or one of the [many other available ones](https://github.com/serilog/serilog/wiki/provided-sinks).
+If you want to log somewhere else, perhaps [Seq](https://github.com/datalust/serilog-sinks-seq) or [ElasticSearch](https://www.elastic.co/guide/en/ecs-logging/dotnet/current/serilog-data-shipper.html), you can use the appropriate sink or one of the [many other available ones](https://github.com/serilog/serilog/wiki/provided-sinks).
 
-Then you create and configure the logger 
+Then, you create and configure the logger 
 
 ```csharp
 // Create our own logger to use before the
@@ -305,7 +309,7 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 ```
 
-Finally we can use it whenever we need it, even before the application's own `Logger` is available.
+Finally, we can use it whenever we need it, even before the application's own `Logger` is available.
 
 ```csharp
 //Fetch the API settings and bind them to a custom object

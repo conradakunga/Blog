@@ -83,7 +83,7 @@ There are a couple of problems with this code.
 2. The endpoints all need to know:
     1. **How** to create a `GmailAlertSender`
     2. What **parameters** it requires
-3. The code to create a GmailSender is repeated on every endpoint.
+3. The code to create a `GmailSender` is repeated on every endpoint.
 
 Let us start with the first.
 
@@ -231,12 +231,14 @@ I have talked about loading settings in the post [Loading & Using Application Se
 We achieve this as follows:
 
 ```csharp
-// Declare our class and bind it to the settings
-var appSettings = new Settings();
-builder.Configuration.GetSection(nameof(Settings)).Bind(appSettings);
 // Register our GmailSender, passing our settings
-builder.Services.AddSingleton(new GmailAlertSender(appSettings.GmailPort, appSettings.GmailUserName,
-    appSettings.GmailPassword));
+builder.Services.AddSingleton<GmailAlertSender>(provider =>
+{
+    // Fetch the settings from the DI Container
+    var settings = provider.GetService<IOptions<Settings>>()!.Value;
+    return new GmailAlertSender(settings.GmailPort, settings.GmailUserName,
+        settings.GmailPassword);
+});
 ```
 
 Finally, we update our API endpoints to inform them that we are injecting our `GmailAlertSender`
