@@ -16,7 +16,7 @@ Suppose we have an alerting system that we expose via an API.
 
 Our alerting system uses Google Email ([Gmail](https://www.gmail.com)) to send either a warning or an information message.
 
-Our first step is to build the class responsible for sending the email and its supporting types. (This class has dummy functionality to simplify this post).
+Our first step is to build the class responsible for sending the email and its supporting types. (This class has dummy functionality to simplify these posts).
 
 The first type is a `GmailAlert`.
 
