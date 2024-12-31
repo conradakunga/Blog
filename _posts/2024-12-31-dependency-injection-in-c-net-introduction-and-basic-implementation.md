@@ -294,7 +294,7 @@ For example, to verify our settings are loaded correctly, we can inject an [ILog
 app.MapPost("/v3/SendGmailEmergencyAlert", async ([FromBody] Alert alert, [FromServices] GmailAlertSender mailer,
     [FromServices] ILogger<Program> logger) =>
 {
-    logger.LogInformation("{Info}", mailer.Configuration);
+    logger.LogInformation("Active Configuration: {Configuration}", mailer.Configuration);
     var gmailAlert = new GmailAlert(alert.Title, alert.Message);
     var alertID = await mailer.SendAlert(gmailAlert);
     return Results.Ok(alertID);
@@ -305,10 +305,8 @@ In our console, the following should be printed:
 
 ```plaintext
 info: Program[0]
-      Configuration - Port: 4000; Username: username; Password: password
+      Active Configuration: Configuration - Port: 4000; Username: username; Password: password
 ```
-
-
 
 If you don't want to use the .NET built-in DI container, there are alternatives like [AutoFac](https://autofac.org/) and [Lamar](https://jasperfx.github.io/lamar/).
 
