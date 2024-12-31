@@ -81,7 +81,7 @@ public sealed record GitHubUser
 }
 ```
 
-To make this more maintainable, it is probably better to rename the properties but, at the same time, let the [JsonSerlializer](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializer?view=net-9.0) know to preserve the original names.
+To make this more maintainable, it is probably better to rename the properties and let the [JsonSerlializer](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializer?view=net-9.0) know to preserve the original names.
 
 We achieve this using the [JsonPropertyName](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonpropertynameattribute?view=net-9.0) attribute.
 
