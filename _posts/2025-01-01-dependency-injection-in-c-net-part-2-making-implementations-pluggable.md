@@ -13,7 +13,7 @@ This is Part 2 of a series on Dependency Injection
 
 - [Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation]({% post_url 2024-12-31-dependency-injection-in-c-net-introduction-and-basic-implementation %})
 - **Dependency Injection In C# & .NET Part 2 - Making Implementations Swappable (this post)**
-- [Dependency Injection In C# & .NET Part 3 - Making Implementations Pluggable]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-hot-pluggable %})
+- [Dependency Injection In C# & .NET Part 3 - Making Implementations Pluggable]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-pluggable %})
 
 In our last post, we looked at what dependency injection is, how to set it up, and how it works to address some basic problems.
 
