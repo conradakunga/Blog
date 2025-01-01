@@ -10,7 +10,7 @@ categories:
 
 This is Part 1 of a series on Dependency Injection
 
-- Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation (this article)
+- **Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation (this article)**
 - [Dependency Injection In C# & .NET Part 2 - Making Implementations Pluggable]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %})
 
 Unless you have been living under a rock, you cannot have escaped coming across the term "**dependency injection**" or **DI**. But what really is it?
