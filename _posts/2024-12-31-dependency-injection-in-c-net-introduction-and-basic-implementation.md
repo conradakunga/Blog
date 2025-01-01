@@ -10,8 +10,9 @@ categories:
 
 This is Part 1 of a series on Dependency Injection
 
-- **Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation (this article)**
-- [Dependency Injection In C# & .NET Part 2 - Making Implementations Pluggable]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %})
+- **Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation (this post)**
+- [Dependency Injection In C# & .NET Part 2 - Making Implementations Swappable]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %})
+- [Dependency Injection In C# & .NET Part 3 - Making Implementations Pluggable]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-hot-pluggable %})
 
 Unless you have been living under a rock, you cannot have escaped coming across the term "**dependency injection**" or **DI**. But what really is it?
 
@@ -317,8 +318,8 @@ info: Program[0]
 
 If you don't want to use the .NET built-in DI container, there are alternatives like [AutoFac](https://autofac.org/) and [Lamar](https://jasperfx.github.io/lamar/).
 
-In the next post, we will explore how to extend this even further to quickly adapt applications to changing business, technology, and environmental needs.
+In the [next post]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %}), we will explore how to extend this even further to quickly adapt applications to changing business, technology, and environmental needs.
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
 
 Happy hacking!
