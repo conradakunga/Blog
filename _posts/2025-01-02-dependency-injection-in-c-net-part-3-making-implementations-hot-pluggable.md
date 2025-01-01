@@ -106,9 +106,9 @@ switch (generalSettings.AlertSender)
 }
 ```
 
-Only one provider will be configured for injection when the application starts up. Thus, when the endpoint receives a request, the correct implementation will be injected to process it.
+Only **one provider** will be configured for injection when the application starts up. Thus, when the endpoint receives a request, the correct implementation will be injected to process it.
 
-This is an improvement from the previous post. When we need to change the provider, we simply update the setting in the appsettings.json and then restart the application.
+This is an improvement over the previous post. When we need to change the provider, we simply **update the setting** in `appsettings.json` and **restart** the application.
 
 
 
