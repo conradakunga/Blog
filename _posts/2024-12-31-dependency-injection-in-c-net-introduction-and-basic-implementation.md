@@ -214,7 +214,7 @@ app.MapPost("/v2/SendGmailEmergencyAlert", async (Alert alert, IOptions<GmailSet
 
 There are two important points:
 
-1. The parameter `IOptions<Settings> settings` that we are passing isn't, in fact, the `GmailSettings` class, as you might expect. It is actually a generic interface of [IOptions](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.options.ioptions-1?view=net-9.0-pp), for which `Settings` is the type we are passing.
+1. The parameter `IOptions<Settings> settings` that we are passing isn't, in fact, the `GmailSettings` class, as you might expect. It is a generic interface of [IOptions](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.options.ioptions-1?view=net-9.0-pp), for which Settings is the type we pass.
 2. To get the actual `GmailSettings`, we access the `Value` property of this parameter.
 
 Why, you might ask, do it this way? Wouldn't it be simpler to pass the `GmailSettings` directly? The main reason is that while, in most cases, settings are loaded once and remain static until the application is reloaded, it is possible to have a situation where you want `GmailSettings` to be loaded **each time** an API is accessed or a service is requested. Having the `GmailSettings` passed as a class would not work here. But the .NET configuration mechanism supports this, and so in such a situation it will read the `GmailSettings` from storage again.
