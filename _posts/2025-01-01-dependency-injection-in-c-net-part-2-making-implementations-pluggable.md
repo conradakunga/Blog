@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - Architecture
+    - Domain Design
 ---
 
 This is Part 2 of a series on Dependency Injection
