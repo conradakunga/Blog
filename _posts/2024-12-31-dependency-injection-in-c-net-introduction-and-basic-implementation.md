@@ -8,6 +8,11 @@ categories:
     - Architecture
 ---
 
+This is Part 1 of a series on Dependency Injection
+
+- Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation (this article)
+- [Dependency Injection In C# & .NET Part 2 - Making Implementations Pluggable]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %})
+
 Unless you have been living under a rock, you cannot have escaped coming across the term "**dependency injection**" or **DI**. But what really is it?
 
 In this series of posts, we shall build out an explanation for this with an example to illustrate the various ideas and concepts and how to implement them. And then at the end, we can see what it is, what problems it solves and how to use it in your applications.
@@ -107,7 +112,7 @@ The first step is to come up with a class that will store our settings.
 This class must have **public**, **writable** properties, as the configuration engine **sets** them.
 
 ```c#
-public class Settings
+public class GmailSettings
 {
     public string GmailUserName { get; set; } = "";
     public string GmailPassword { get; set; } = "";
@@ -142,7 +147,7 @@ We can add our own settings to the bottom, like this:
     }
   },
   "AllowedHosts": "*",
-   "Settings": {
+    "GmailSettings": {
     "GmailUserName": "username",
     "GmailPassword": "password",
     "GmailPort": 4000
@@ -156,22 +161,22 @@ The startup looks like this
 
 ```c#
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.Configure<Settings>(builder.Configuration.GetSection(nameof(Settings)));
+builder.Services.Configure<GmailSettings>(builder.Configuration.GetSection(nameof(GmailSettings)));
 var app = builder.Build();
 ```
 
-The code `nameof(Settings)` merely returns the string "**Settings**". It is good practice to avoid hard-coding strings because if you supply the string directly and later decide to rename the settings to `GmailSettings`, you will almost certainly **forget to change the string** in the startup code.
+The code `nameof(GmailSettings)` merely returns the string "**GmailSettings**". It is good practice to avoid hard-coding strings because if you supply the string directly and later decide to rename the settings to `GmailSettings`, you will almost certainly **forget to change the string** in the startup code.
 
 We add this new line just after creating the builder.
 
 ```c#
-builder.Services.Configure<Settings>(builder.Configuration.GetSection(nameof(Settings)));
+builder.Services.Configure<GmailSettings>(builder.Configuration.GetSection(nameof(GmailSettings)));
 ```
 
 This code essentially instructs the application as follows:
 
-- Wherever the settings are stored, look for a section named **Settings**
-- Load those values into a class of type `Settings`
+- Wherever the settings are stored, look for a section named **GmailSettings**
+- Load those values into a class of type `GmailSettings`
 - **When asked**, provide said values to whoever asked for them
 
 
@@ -179,14 +184,14 @@ The code now looks like this:
 
 ```c#
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.Configure<Settings>(builder.Configuration.GetSection(nameof(Settings)));
+builder.Services.Configure<GmailSettings>(builder.Configuration.GetSection(nameof(GmailSettings)));
 var app = builder.Build();
 ```
 
 Finally, we update our endpoints to indicate that we are passing to them something that they will use to retrieve the settings.
 
 ```c#
-app.MapPost("/v2/SendGmailNormalAlert", async (Alert alert, IOptions<Settings> settings) =>
+app.MapPost("/v2/SendGmailNormalAlert", async (Alert alert, IOptions<GmailSettings> settings) =>
 {
     var gmailSettings = settings.Value;
     var mailer =
@@ -196,7 +201,7 @@ app.MapPost("/v2/SendGmailNormalAlert", async (Alert alert, IOptions<Settings> s
     return Results.Ok(alertID);
 });
 
-app.MapPost("/v2/SendGmailEmergencyAlert", async (Alert alert, IOptions<Settings> settings) =>
+app.MapPost("/v2/SendGmailEmergencyAlert", async (Alert alert, IOptions<GmailSettings> settings) =>
 {
     var gmailSettings = settings.Value;
     var mailer =
@@ -209,10 +214,10 @@ app.MapPost("/v2/SendGmailEmergencyAlert", async (Alert alert, IOptions<Settings
 
 There are two important points:
 
-1. The parameter `IOptions<Settings> settings` that we are passing isn't, in fact, the `Settings` class, as you might expect. It is actually a generic interface of [IOptions](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.options.ioptions-1?view=net-9.0-pp), for which `Settings` is the type we are passing.
-2. To get the actual `Settings`, we access the `Value` property of this parameter.
+1. The parameter `IOptions<Settings> settings` that we are passing isn't, in fact, the `GmailSettings` class, as you might expect. It is actually a generic interface of [IOptions](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.options.ioptions-1?view=net-9.0-pp), for which `Settings` is the type we are passing.
+2. To get the actual `GmailSettings`, we access the `Value` property of this parameter.
 
-Why, you might ask, do it this way? Wouldn't it be simpler to pass the `Settings` directly? The main reason is that while, in most cases, settings are loaded once and remain static until the application is reloaded, it is possible to have a situation where you want `Settings` to be loaded **each time** an API is accessed or a service is requested. Having the `Settings` passed as a class would not work here. But the .NET configuration mechanism supports this, and so in such a situation it will read the `Settings` from storage again.
+Why, you might ask, do it this way? Wouldn't it be simpler to pass the `GmailSettings` directly? The main reason is that while, in most cases, settings are loaded once and remain static until the application is reloaded, it is possible to have a situation where you want `GmailSettings` to be loaded **each time** an API is accessed or a service is requested. Having the `GmailSettings` passed as a class would not work here. But the .NET configuration mechanism supports this, and so in such a situation it will read the `GmailSettings` from storage again.
 
 **At this point, we have implemented *dependency injection* for our settings.**
 
@@ -224,7 +229,7 @@ In the words of Barack Obama - **yes, we can**.
 
 We will have to do some extra work in the startup
 
-1. Load the Settings
+1. Load the `GmailSettings`
 2. Register our `GmailAlertSender`
 
 I have talked about loading settings in the post [Loading & Using Application Settings In .NET]({% post_url 2024-12-11-loading-using-application-settings %})
@@ -236,11 +241,13 @@ We achieve this as follows:
 builder.Services.AddSingleton<GmailAlertSender>(provider =>
 {
     // Fetch the settings from the DI Container
-    var settings = provider.GetService<IOptions<Settings>>()!.Value;
+    var settings = provider.GetService<IOptions<GmailSettings>>()!.Value;
     return new GmailAlertSender(settings.GmailPort, settings.GmailUserName,
         settings.GmailPassword);
 });
 ```
+
+As a reminder `AddSingleton` means that a single instance of the registered type is created **once** and **every time it is requested, that instance is returned.**
 
 Finally, we update our API endpoints to inform them that we are injecting our `GmailAlertSender`
 
