@@ -247,7 +247,7 @@ builder.Services.AddSingleton<GmailAlertSender>(provider =>
 });
 ```
 
-As a reminder `AddSingleton` means that a single instance of the registered type is created **once** and **every time it is requested, that instance is returned.**
+As a reminder, `AddSingleton` means that a single instance of the registered type is created **once**, and **every time it is requested, that instance is returned.**
 
 Finally, we update our API endpoints to inform them that we are injecting our `GmailAlertSender`
 

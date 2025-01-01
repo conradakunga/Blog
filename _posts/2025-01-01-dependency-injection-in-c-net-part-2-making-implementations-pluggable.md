@@ -167,9 +167,9 @@ I am calling it `GeneralAlert` and not `Alert` because Alert is already in use t
 
 Which begs the question why don't we use **that** `Alert` directly? Why create a totally new type? It would certainly be simpler.
 
-That is true. But this potentially could be a problem downstream if we use the **same** object on the **client** and **server** sides. Perhaps in the future, we want the client to provide additional information, perhaps a username and a timestamp for logging passwords. Now, our server-side code would need to change, regardless of the fact that those parameters are not necessary for sending alerts. And vice-versa - we might need to change the object on the API side to pass additional properties to the sender, which would break the client.
+That is true. But this potentially could be a problem downstream if we use the **same** object on the **client** and **server** sides. Perhaps in the future, we want the client to provide additional information, perhaps a username and a timestamp for logging passwords. Now, our **server-side code would need to change**, regardless of the fact that those parameters are not necessary for sending alerts. And vice-versa - we might need to change the object on the API side to pass additional properties to the sender, **which would break the client**.
 
-In short, it is important to segregate client-side concerns from server-side concerns.
+In short, it is important to **segregate client-side concerns from server-side concerns**.
 
 Next, let us look at the senders closely, particularly what each requires to send a message.
 
