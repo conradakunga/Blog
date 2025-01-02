@@ -113,7 +113,7 @@ When the application starts, only one provider is configured for injection. Thus
 
 This is an improvement over the previous post. When we need to change the provider, we simply **update the setting** in `appsettings.json` and **restart** the application.
 
-In our [next post]({% post_url 2025-01-03-dependency-injection-in-c-net-part-4-making-implementations-hot-pluggable %}), we will look at how to have the application automatically change provider **without restarting the application**.
+In our next post we will look at how to have the application automatically change provider **without restarting the application**.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
 
