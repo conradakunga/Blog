@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dependency Injection In C# & .NET Part 4 - Making Implementations Hot-Pluggable
-date: 2025-01-03 12:46:32 +0300
+date: 2025-01-03 00:00:32 +0300
 categories:
     - C#
     - .NET
@@ -200,56 +200,31 @@ For example, we can use the `AlertSender` enum as a key for DI and register the 
 
 ```c#
 // Register GmailAlertSender as a keyed singleton
-builder.Services.AddKeyedSingleton<GmailAlertSender>(AlertSender.Gmail, (provider, _) =>
+builder.Services.AddKeyedSingleton<IAlertSender, GmailAlertSender>(AlertSender.Gmail, (provider, _) =>
 {
     var settings = provider.GetRequiredService<IOptions<GmailSettings>>().Value;
     return new GmailAlertSender(settings.GmailPort, settings.GmailUserName, settings.GmailPassword);
 });
 
 // Register Office365AlertSender as a keyed singleton
-builder.Services.AddKeyedSingleton<Office365AlertSender>(AlertSender.Office365, (provider, _) =>
+builder.Services.AddKeyedSingleton<IAlertSender, Office365AlertSender>(AlertSender.Office365, (provider, _) =>
 {
     var settings = provider.GetRequiredService<IOptions<Office365Settings>>().Value;
     return new Office365AlertSender(settings.Key);
 });
 
 // Register ZohoAlertSender as a keyed singleton
-builder.Services.AddKeyedSingleton<ZohoAlertSender>(AlertSender.Zoho, (provider, _) =>
+builder.Services.AddKeyedSingleton<IAlertSender, ZohoAlertSender>(AlertSender.Zoho, (provider, _) =>
 {
     var settings = provider.GetRequiredService<IOptions<ZohoSettings>>().Value;
     return new ZohoAlertSender(settings.OrganizationID, settings.SecretKey);
 });
 ```
 
-We then update our endpoint to inject the keyed services we are interested in.
+We then update our endpoint to inject a ServiceProvider, from which we can retrieve our services by key from the DI container..
 
 ```c#
-app.MapPost("/v9/SendEmergencyAlert", async ([FromBody] Alert alert, IOptionsMonitor<GeneralSettings> settingsMonitor,
-    [FromKeyedServices(AlertSender.Zoho)] IAlertSender zohoAlertSender,
-    [FromKeyedServices(AlertSender.Office365)] IAlertSender office365AlertSender,
-    [FromKeyedServices(AlertSender.Gmail)] IAlertSender gmailAlertSender, [FromServices] ILogger<Program> logger) =>
-{
-    var settings = settingsMonitor.CurrentValue;
-    logger.LogInformation("Current Sender: {Configuration}", settings.AlertSender);
-    // Retrieve sender from DI 
-    IAlertSender mailer = settings.AlertSender switch
-    {
-        AlertSender.Gmail => gmailAlertSender,
-        AlertSender.Office365 => office365AlertSender,
-        AlertSender.Zoho => zohoAlertSender,
-        _ => throw new ArgumentException("Unsupported alert sender selected")
-    };
-    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    await mailer.SendAlert(genericAlert);
-
-    return Results.Ok();
-});
-```
-
-We can simplify this even further by making use of the fact that the `KeyedServices` is a `dictionary` and make use of that in the injection.
-
-```c#
-app.MapPost("/v10/SendEmergencyAlert", async ([FromBody] Alert alert,
+app.MapPost("/v9/SendEmergencyAlert", async ([FromBody] Alert alert,
     IOptionsMonitor<GeneralSettings> settingsMonitor, IServiceProvider provider,
     [FromServices] ILogger<Program> logger) =>
 {
@@ -261,14 +236,18 @@ app.MapPost("/v10/SendEmergencyAlert", async ([FromBody] Alert alert,
     await mailer.SendAlert(genericAlert);
 
     return Results.Ok();
-});
+})
 ```
+
+We can simplify this even further by making use of the fact that the `KeyedServices` is a `dictionary` and make use of that in the injection.
 
 The magic is taking place here:
 
 ```c#
  var mailer = provider.GetRequiredKeyedService<IAlertSender>(settings.AlertSender);
 ```
+
+We are passing the eky (in this case the enum) to the generic [GetRequiredKeyedService](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.serviceproviderkeyedserviceextensions.getrequiredkeyedservice?view=net-9.0-pp) method so that the container will return the correct service for us.
 
 Thus, you can see we have **several options** if we want to dynamically change the provider without restarting the application. **The best option for you will depend on your needs and constraints.**
 
