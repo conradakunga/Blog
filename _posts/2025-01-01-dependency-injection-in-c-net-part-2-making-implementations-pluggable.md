@@ -321,7 +321,7 @@ Notice the parameter here to `AddSingleton` is an `IAlertSender` and not a `Gmai
 
 What this means is **"any request for an IAlertSender should have a Office365AlertSender returned."**
 
-Finally, we update our endpoints to inject an `IAlertSender`, rather than the GmailAlertSender or the Office365AlertSender. And since we now use a single endpoint regardless of the sender, we can also rename those to the generic `SendEmergencyAlert` and `SendNormalAlert`.
+Finally, we update our endpoints to inject an `IAlertSender`, rather than the GmailAlertSender or the Office365AlertSender. And since we now use a single endpoint regardless of the sender, we can also rename those to the generic `SendEmergencyAlert`.
 
 Our endpoints now look like this:
 
