@@ -58,7 +58,7 @@ public sealed class GmailAlertSender
 
 In a real-world scenario, this class would be responsible for connecting to and authenticating to Gmail and then actually sending the message, but here, we simulate work by waiting 5 seconds and then returning an identifier.
 
-Finally, we have a simple API with two endpoints - one to send normal alerts and the other to send emergency alerts. Both of these use the `GmailAlertSender` class we have defined above.
+Finally, we have a simple API with an endpoint to send emergency alerts using the GmailAlertSender` class we have defined above.
 
 ```c#
 var builder = WebApplication.CreateBuilder(args);
