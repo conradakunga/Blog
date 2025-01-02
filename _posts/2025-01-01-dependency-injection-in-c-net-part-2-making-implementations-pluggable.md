@@ -106,13 +106,6 @@ builder.Services.AddSingleton<Office365AlertSender>(provider =>
 Finally, we update our endpoints to replace the injected `GmailAlertSender` with an `Office365AlertSender`.
 
 ```c#
-app.MapPost("/v4/SendOffice365NormalAlert", async (Alert alert, Office365AlertSender mailer) =>
-{
-    var office365Alert = new Office365Alert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(office365Alert);
-    return Results.Ok(alertID);
-});
-
 app.MapPost("/v4/SendOffice365EmergencyAlert", async ([FromBody] Alert alert,
     [FromServices] Office365AlertSender mailer, [FromServices] ILogger<Program> logger) =>
 {
@@ -333,14 +326,6 @@ Finally, we update our endpoints to inject an `IAlertSender`, rather than the Gm
 Our endpoints now look like this:
 
 ```c#
-app.MapPost("/v5/SendNormalAlert", async ([FromBody] Alert alert,
-    [FromServices] IAlertSender mailer) =>
-{
-    // Map the client provide alert to the server side alert
-    var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(genericAlert);
-    return Results.Ok(alertID);
-});
 app.MapPost("/v5/SendEmergencyAlert", async ([FromBody] Alert alert,
     [FromServices] Office365AlertSender mailer, [FromServices] ILogger<Program> logger) =>
 {

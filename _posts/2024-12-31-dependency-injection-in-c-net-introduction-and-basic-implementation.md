@@ -64,15 +64,6 @@ Finally, we have a simple API with two endpoints - one to send normal alerts and
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapPost("/v1/SendGmailNormalAlert", async (Alert alert) =>
-{
-    var mailer =
-        new GmailAlertSender(400, "username", "password");
-    var gmailAlert = new GmailAlert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(gmailAlert);
-    return Results.Ok(alertID);
-});
-
 app.MapPost("/v1/SendGmailEmergencyAlert", async (Alert alert) =>
 {
     var mailer =
@@ -193,16 +184,6 @@ var app = builder.Build();
 Finally, we update our endpoints to indicate that we are passing to them something that they will use to retrieve the settings.
 
 ```c#
-app.MapPost("/v2/SendGmailNormalAlert", async (Alert alert, IOptions<GmailSettings> settings) =>
-{
-    var gmailSettings = settings.Value;
-    var mailer =
-        new GmailAlertSender(gmailSettings.GmailPort, gmailSettings.GmailUserName, gmailSettings.GmailPassword);
-    var gmailAlert = new GmailAlert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(gmailAlert);
-    return Results.Ok(alertID);
-});
-
 app.MapPost("/v2/SendGmailEmergencyAlert", async (Alert alert, IOptions<GmailSettings> settings) =>
 {
     var gmailSettings = settings.Value;
@@ -254,13 +235,6 @@ As a reminder, `AddSingleton` means that a single instance of the registered typ
 Finally, we update our API endpoints to inform them that we are injecting our `GmailAlertSender`
 
 ```c#
-app.MapPost("/v3/SendGmailNormalAlert", async (Alert alert, GmailAlertSender mailer) =>
-{
-    var gmailAlert = new GmailAlert(alert.Title, alert.Message);
-    var alertID = await mailer.SendAlert(gmailAlert);
-    return Results.Ok(alertID);
-});
-
 app.MapPost("/v3/SendGmailEmergencyAlert", async (Alert alert, GmailAlertSender mailer) =>
 {
     var gmailAlert = new GmailAlert(alert.Title, alert.Message);

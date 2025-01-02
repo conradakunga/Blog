@@ -166,7 +166,7 @@ app.MapPost("/v7/SendEmergencyAlert", async ([FromBody] Alert alert,
 });
 ```
 
-At this point, many purists will object to the factory as an **anti-pattern**, but I try to avoid such debates. This code does what it says on the tin and is easy to read and modify. If, of course, it has pros and cons, but you are placed to decide if it works for you.
+At this point, many purists will object to the factory as an **anti-pattern**, but I try to avoid such debates. This code does what it says on the tin and is easy to read and modify. It, of course, has pros and cons, but you are placed to decide if it works for you.
 
 You can **avoid the factory altogether and leverage DI directly** in the endpoint. Like this:
 
@@ -192,9 +192,9 @@ app.MapPost("/v8/SendEmergencyAlert", async ([FromBody] Alert alert,
 });
 ```
 
-Another way you can achieve this is to use dependency injection keyed services.
+Another way you can achieve this is to use dependency injection [keyed services](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.fromkeyedservicesattribute?view=net-9.0-pp).
 
-Keyed services allow you to register services using a key to refer to them. The key usually is a string, but you can make anything a key - provided it is uniquely identifiable.
+Keyed services allow you to register services and refer to them using a **key**. The key is usually a string, but you can make anything a key—provided it is **unique**.
 
 For example, we can use the `AlertSender` enum as a key for DI and register the services like this:
 
@@ -270,7 +270,11 @@ The magic is taking place here:
  var mailer = provider.GetRequiredKeyedService<IAlertSender>(settings.AlertSender);
 ```
 
-Thus, you can see we have **several options** if we want to dynamically change the provider without restarting the application. **The best option for you will depend on whatever your needs and constraints are.**
+Thus, you can see we have **several options** if we want to dynamically change the provider without restarting the application. **The best option for you will depend on your needs and constraints.**
+
+Personally, I would lean on the **keyed services approach**.
+
+In the next post we will look at additional improvements - if we needed to use ALL the providers, or if we had logic within the endpoint that determined which prioviders to use.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
 
