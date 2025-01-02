@@ -14,10 +14,11 @@ This is Part 2 of a series on Dependency Injection
 - [Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation]({% post_url 2024-12-31-dependency-injection-in-c-net-introduction-and-basic-implementation %})
 - **Dependency Injection In C# & .NET Part 2 - Making Implementations Swappable (this post)**
 - [Dependency Injection In C# & .NET Part 3 - Making Implementations Pluggable]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-pluggable %})
+- [Dependency Injection In C# & .NET Part 4 - Making Implementations Hot-Pluggable]({% post_url 2025-01-03-dependency-injection-in-c-net-part-4-making-implementations-hot-pluggable %})
 
 In our last post, we looked at what dependency injection is, how to set it up, and how it works to address some basic problems.
 
-In this post, we will extend this further.
+In this post, we will extend this further by allowing swapping. **For purposes of this post I am defining swapping as achieving the changing of functionality of the system by making trivial changes in the application startup.**
 
 Suppose the business decides that due to whatever reasons, they want to use [Office365](https://www.office.com/) as the service to send alerts.
 
@@ -478,6 +479,8 @@ What improvements have we made here?
 2. We have **eliminated provider-specific endpoints** (for Gmail and Office365) and now have a single generic endpoint capable of sending alerts to any provider.
 3. We have made it very **easy to add a new provider** - just implement the `IAlertSender` interface and register it for DI
 4. The endpoints will **generally** never need to change when implementing a new provider - making maintenance and improvements much easier.
+
+**It is inportant to note that only one `IAlertSender` should be registered at a time.**
 
 There are definitely great improvements, but we are not quite there.
 
