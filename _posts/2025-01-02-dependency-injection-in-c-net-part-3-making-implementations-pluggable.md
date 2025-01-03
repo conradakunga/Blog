@@ -33,7 +33,7 @@ public class GeneralSettings
 }
 ```
 
-AlertSender is an enum we will use to indicate which sender to use. It is defined thus:
+`AlertSender` is an enum we will use to indicate which sender to use. It is defined thus:
 
 ```c#
 public enum AlertSender
