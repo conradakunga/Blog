@@ -15,6 +15,7 @@ This is Part 3 of a series on Dependency Injection
 - [Dependency Injection In C# & .NET Part 2 - Making Implementations Swappable]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %})
 - **Dependency Injection In C# & .NET Part 3 - Making Implementations Pluggable (this post)**
 - [Dependency Injection In C# & .NET Part 4 - Making Implementations Hot-Pluggable]({% post_url 2025-01-03-dependency-injection-in-c-net-part-4-making-implementations-hot-pluggable %})
+- [Dependency Injection In C# & .NET Part 5 - Making All Services Available]({% post_url 2025-01-04-dependency-injection-in-c-net-part-5-making-all-services-available %})
 
 In [our last post]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %}), we had largely solved the problem of choosing which sender to use. However, the challenge was that this meant **changing the DI code whenever we needed to change the provider,** commenting out the ones we didn't want and leaving the one we do.
 
@@ -43,8 +44,6 @@ public enum AlertSender
     Zoho
 }
 ```
-
-
 
 Next, we update our settings to add our new values.
 

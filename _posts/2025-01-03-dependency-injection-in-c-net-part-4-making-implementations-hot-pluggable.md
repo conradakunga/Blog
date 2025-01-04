@@ -14,6 +14,7 @@ This is Part 4 of a series on dependency injection.
 - [Dependency Injection In C# & .NET Part 2 - Making Implementations Swappable]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %})
 - [Dependency Injection In C# & .NET Part 3 - Making Implementations Pluggable]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-pluggable %})
 - **Dependency Injection In C# & .NET Part 4 - Making Implementations Hot-Pluggable (this post)**
+- [Dependency Injection In C# & .NET Part 5 - Making All Services Available]({% post_url 2025-01-04-dependency-injection-in-c-net-part-5-making-all-services-available %})
 
 In our [last post,]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-pluggable %}) we implemented the ability to change the provider to use by allowing the required provider to be set in the `appsettings.json` and then restarting the application.
 
@@ -253,7 +254,7 @@ Thus, you can see we have **several options** if we want to dynamically change t
 
 Personally, I would lean on the **keyed services approach**.
 
-In the next post we will look at additional improvements - if we needed to use ALL the providers, or if we had logic within the endpoint that determined which prioviders to use.
+In the [next post]({% post_url 2025-01-03-dependency-injection-in-c-net-part-4-making-implementations-hot-pluggable %}) we will look at additional improvements - if we needed to use ALL the providers, or if we had logic within the endpoint that determined which prioviders to use.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
 
