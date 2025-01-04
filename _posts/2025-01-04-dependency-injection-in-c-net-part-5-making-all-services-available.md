@@ -130,7 +130,7 @@ If we run this endpoint, we should get a result like this:
 
 ![DualAlerts](../images/2025/01/DualAlerts.png)
 
-Personally, I would use the latter approach as the strategy of the former, direct injection of each `AlertSender` , could become noisy over time
+Personally, I would use the latter approach as the strategy of the former, direct injection of each `AlertSender`, could become noisy over time
 
 There are two IDs because we ran two tasks in parallel, and each returned an identifier as a `string`.
 
