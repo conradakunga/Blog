@@ -134,6 +134,6 @@ Personally, I would use the latter approach as the strategy of the former, direc
 
 There are two IDs because we ran two tasks in parallel, and each returned an identifier as a `string`.
 
-In the next post we will look at how to leverage dependency injection to aid in testing.
+In the next post we will look at how to **leverage dependency injection to aid in testing**.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
