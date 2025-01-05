@@ -325,7 +325,7 @@ The reason we have gone to all the trouble to create a new interface, `IGmailAle
 
 In other words, we cannot swap a `FakeGmailAlertSender` with a `FakeOffice365AlertSender`—the compiler will raise a compile error because they are not compatible. `FakeOffice365AlertSender` does not implement the `IGmailAlertSender` interface. However, we can safely swap `FakeGmailAlertSender` with `GmailAlertSender`.
 
-The class `FakeGmailAlertSender` is called a **fake** in the test parlay.
+The class `FakeGmailAlertSender` is called a **fake** in the test parley.
 
 In our next post, we will look at how to leverage dependency injection for **integration testing** so that we don't need to change our application code for testing purposes.
 
