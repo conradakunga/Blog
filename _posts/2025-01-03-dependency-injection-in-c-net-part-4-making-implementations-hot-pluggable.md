@@ -15,6 +15,7 @@ This is Part 4 of a series on dependency injection.
 - [Dependency Injection In C# & .NET Part 3 - Making Implementations Pluggable]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-pluggable %})
 - **Dependency Injection In C# & .NET Part 4 - Making Implementations Hot-Pluggable (this post)**
 - [Dependency Injection In C# & .NET Part 5 - Making All Services Available]({% post_url 2025-01-04-dependency-injection-in-c-net-part-5-making-all-services-available %})
+- [Dependency Injection In C# & .NET Part 6 - Implementation Testing]({% post_url 2025-01-05-dependency-injection-in-c-net-part-6-implementation-testing %})
 
 In our [last post,]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-pluggable %}) we implemented the ability to change the provider to use by allowing the required provider to be set in the `appsettings.json` and then restarting the application.
 
