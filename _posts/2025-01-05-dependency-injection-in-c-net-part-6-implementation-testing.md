@@ -121,7 +121,7 @@ This is to say, invoking those endpoints has **implications** in terms of resour
 
 This complicates things if you need to run tests to ensure the system functions correctly.
 
-There are several schools of thought on how to test this scenario. This is one of those debates that are very polarizing due to strong opinions. As always, I prefer a pragmatic approach.
+There are several schools of thought on how to test this scenario. This is one of those debates that are very **polarizing** due to strong opinions. As always, I prefer a pragmatic approach.
 
 Personally, I would approach this as follows.
 
@@ -137,7 +137,7 @@ public interface IGmailAlertSender;
 
 The real implementation and the fake implementation will implement this interface.
 
-Given that we also want this interface to implement the contract for all `AlertSender`, we will next inherit from the `IAlertSender` interface.
+Given that we also want this interface to implement the contract for all `AlertSenders`, we will next inherit from the `IAlertSender` interface.
 
 ```c#
 public interface IGmailAlertSender : IAlertSender;
@@ -265,9 +265,9 @@ If we hit the endpoint, the logs will look like this:
 
 We can see on line 3 that our fake implementation is the one being called.
 
-At this point, you might ask - we have registered an `IGmailAlertSender` service and specified a return of either `GmailAlertSender` or `FakeGmailAlertSender`. What happens if we register an `IAlertSender` service? Would that still work?
+At this point, you might ask - we have registered an `IGmailAlertSender` service and specified a return of either `GmailAlertSender` or `FakeGmailAlertSender`. What happens if we request an `IAlertSender` service from an endpoint? Would that still work?
 
-Yes. We can update our keyed service registration that looks like this:
+**Yes**. We can update our keyed service registration that looks like this:
 
 ```c#
 // Register GmailAlert sender that can have swapped implementations
@@ -324,6 +324,8 @@ Yes. Our code will still run correctly, given the `IGmailAlertSender` inherits f
 The reason we have gone to all the trouble to create a new interface, `IGmailAlertSender` and had two implementations to that is that not only do we want to implement a fake implementation, but that fake implementation **needs to be compatible** with the real implementation of the service we are interested in.
 
 In other words, we cannot swap a `FakeGmailAlertSender` with a `FakeOffice365AlertSender`—the compiler will raise a compile error because they are not compatible. `FakeOffice365AlertSender` does not implement the `IGmailAlertSender` interface. However, we can safely swap `FakeGmailAlertSender` with `GmailAlertSender`.
+
+The class `FakeGmailAlertSender` is called a **fake** in the test parlay.
 
 In our next post, we will look at how to leverage dependency injection for **integration testing** so that we don't need to change our application code for testing purposes.
 
