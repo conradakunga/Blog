@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependency Injection In C# & .NET Part 5 - Making All Implenentations Available
+title: Dependency Injection In C# & .NET Part 5 - Making All Implementations Available
 date: 2025-01-04 09:26:10 +0300
 categories:
     - C#
@@ -15,7 +15,7 @@ This is Part 5 of a series on dependency injection.
 - [Dependency Injection In C# & .NET Part 2 - Making Implementations Swappable]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %})
 - [Dependency Injection In C# & .NET Part 3 - Making Implementations Pluggable]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-pluggable %})
 - [Dependency Injection In C# & .NET Part 4 - Making Implementations Hot-Pluggable]({% post_url 2025-01-03-dependency-injection-in-c-net-part-4-making-implementations-hot-pluggable %})
-- **Dependency Injection In C# & .NET Part 5 - Making All Services Available (this post)**
+- **Dependency Injection In C# & .NET Part 5 - Making All Implementations Available (this post)**
 - [Dependency Injection In C# & .NET Part 6 - Implementation Testing]({% post_url 2025-01-05-dependency-injection-in-c-net-part-6-implementation-testing %})
 
 In our [last post]({% post_url 2025-01-03-dependency-injection-in-c-net-part-4-making-implementations-hot-pluggable %}), we looked at how to dynamically **swap out the implementations** we want to use **without restarting** the application so as to maximize uptime.
