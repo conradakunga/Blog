@@ -8,6 +8,7 @@ categories:
     - Architecture
     - Domain Design
 ---
+This is Part 6 of a series on dependency injection.
 
 - [Dependency Injection In C# & .NET Part 1 - Introduction & Basic Implementation]({% post_url 2024-12-31-dependency-injection-in-c-net-introduction-and-basic-implementation %})
 - [Dependency Injection In C# & .NET Part 2 - Making Implementations Swappable]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %})
@@ -15,6 +16,7 @@ categories:
 - [Dependency Injection In C# & .NET Part 4 - Making Implementations Hot-Pluggable]({% post_url 2025-01-03-dependency-injection-in-c-net-part-4-making-implementations-hot-pluggable %})
 - [Dependency Injection In C# & .NET Part 5 - Making All Implementations Available]({% post_url 2025-01-04-dependency-injection-in-c-net-part-5-making-all-services-available %})
 - **Dependency Injection In C# & .NET Part 6 - Implementation Testing (this post)**
+- [Dependency Injection In C# & .NET Part 7 - Integration Testing]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %})
 
 In our [last post]({% post_url 2025-01-04-dependency-injection-in-c-net-part-5-making-all-services-available %}), we saw how we can leverage dependency injection to allow **all our service implementations to be available** for use, in order to implement some business logic.
 
@@ -327,6 +329,8 @@ In other words, we cannot swap a `FakeGmailAlertSender` with a `FakeOffice365Ale
 
 The class `FakeGmailAlertSender` is called a **fake** in the test parley.
 
-In our next post, we will look at how to leverage dependency injection for **integration testing** so that we don't need to change our application code for testing purposes.
+In our [next post]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %}), we will look at how to leverage dependency injection for **integration testing** so that we don't need to change our application code for testing purposes.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
+
+Happy hacking!
