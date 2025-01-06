@@ -162,9 +162,8 @@ app.MapPost("/v7/SendEmergencyAlert", async ([FromBody] Alert alert,
     // Create a mailer using the injected factory
     var mailer = factory.CreateAlertSender(settings.AlertSender);
     var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    await mailer.SendAlert(genericAlert);
-
-    return Results.Ok();
+    var result = await mailer.SendAlert(genericAlert);
+    return Results.Ok(result);
 });
 ```
 
@@ -188,9 +187,8 @@ app.MapPost("/v8/SendEmergencyAlert", async ([FromBody] Alert alert,
         _ => throw new ArgumentException("Unsupported alert sender selected")
     };
     var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    await mailer.SendAlert(genericAlert);
-
-    return Results.Ok();
+    var result = await mailer.SendAlert(genericAlert);
+    return Results.Ok(result);
 });
 ```
 
@@ -235,9 +233,8 @@ app.MapPost("/v9/SendEmergencyAlert", async ([FromBody] Alert alert,
     // Retrieve sender from DI 
     var mailer = provider.GetRequiredKeyedService<IAlertSender>(settings.AlertSender);
     var genericAlert = new GeneralAlert(alert.Title, alert.Message);
-    await mailer.SendAlert(genericAlert);
-
-    return Results.Ok();
+    var result = await mailer.SendAlert(genericAlert);
+    return Results.Ok(result);
 })
 ```
 
