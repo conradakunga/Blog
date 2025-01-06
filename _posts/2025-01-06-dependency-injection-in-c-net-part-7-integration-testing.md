@@ -363,7 +363,7 @@ public class MailerApplicationFactory<T> : WebApplicationFactory<T>, IAsyncLifet
 
 Next, we create an `appsettings.json` to store the settings specific to our tests. We will name this `appSettings.Test.json` so that we can dynamically build the name, as **Test** here is going to be the **environment**.
 
-Simply copy the contents of the existing **appsettings.json**
+Simply copy the contents of the existing **appsettings.json** to `appSettings.Test.json` and then modify the settings you want for the tests.
 
 The next thing is to create a test class, into which we inject the `WebApplicationFactory` that we have just subclassed.
 
@@ -521,7 +521,7 @@ To recap:
 4. We have overridden the `WebApplicationFactory` to customize our DI - we want to **remove all concrete implementations and replace them with our fake ones**.
 5. We have **written three tests**, two of which require customization of the `TimeProvider` - morning and after noon prior to injection.
 
-Thus, we can see that dependency injection is a very powerful tool not only for writing our application but also for allowing us flexibility around testing.
+Thus, we can see that dependency injection is a very powerful tool for writing our application and allowing us flexibility around testing.
 
 In our next post we will look at **types of dependency injection**.
 
