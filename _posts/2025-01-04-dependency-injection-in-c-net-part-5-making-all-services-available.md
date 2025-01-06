@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependency Injection In C# & .NET Part 5 - Making All Services Available
+title: Dependency Injection In C# & .NET Part 5 - Making All Implenentations Available
 date: 2025-01-04 09:26:10 +0300
 categories:
     - C#
