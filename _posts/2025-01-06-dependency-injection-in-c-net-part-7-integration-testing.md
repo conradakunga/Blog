@@ -368,7 +368,7 @@ Simply copy the contents of the existing **appsettings.json**
 The next thing is to create a test class, into which we inject the `WebApplicationFactory` that we have just subclassed.
 
 ```c#
-public class TimedAlertSender : IClassFixture<MailerApplicationFactory<Program>>
+public class TimedAlertSenderTests : IClassFixture<MailerApplicationFactory<Program>>
 {
     private readonly MailerApplicationFactory<Program> _factory;
     private readonly HttpClient _client;
