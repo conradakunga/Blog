@@ -184,6 +184,8 @@ Drawbacks:
 1. Testing is more **complicated**
 2. The fact that the dependency can be mutated elsewhere makes **behaviour difficult to predict**.
 
+In our next post we will look at **dependency injection life cycles**.
+
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
 
 Happy hacking!
