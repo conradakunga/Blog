@@ -18,6 +18,7 @@ This is Part 5 of a series on dependency injection.
 - **Dependency Injection In C# & .NET Part 5 - Making All Implementations Available (this post)**
 - [Dependency Injection In C# & .NET Part 6 - Implementation Testing]({% post_url 2025-01-05-dependency-injection-in-c-net-part-6-implementation-testing %})
 - [Dependency Injection In C# & .NET Part 7 - Integration Testing]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %})
+- [Dependency Injection In C# & .NET Part 8 - Types Of Dependency Injection]({%  post_url 2025-01-07-dependency-injection-in-c-net-part-8-types-of-depedency-injection %})
 
 In our [last post]({% post_url 2025-01-03-dependency-injection-in-c-net-part-4-making-implementations-hot-pluggable %}), we looked at how to dynamically **swap out the implementations** we want to use **without restarting** the application so as to maximize uptime.
 

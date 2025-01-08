@@ -17,6 +17,7 @@ This is Part 6 of a series on dependency injection.
 - [Dependency Injection In C# & .NET Part 5 - Making All Implementations Available]({% post_url 2025-01-04-dependency-injection-in-c-net-part-5-making-all-services-available %})
 - **Dependency Injection In C# & .NET Part 6 - Implementation Testing (this post)**
 - [Dependency Injection In C# & .NET Part 7 - Integration Testing]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %})
+- [Dependency Injection In C# & .NET Part 8 - Types Of Dependency Injection]({% post_url 2025-01-07-dependency-injection-in-c-net-part-8-types-of-depedency-injection %})
 
 In our [last post]({% post_url 2025-01-04-dependency-injection-in-c-net-part-5-making-all-services-available %}), we saw how we can leverage dependency injection to allow **all our service implementations to be available** for use, in order to implement some business logic.
 
