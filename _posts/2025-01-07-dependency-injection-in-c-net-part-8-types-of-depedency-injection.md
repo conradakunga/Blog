@@ -19,6 +19,7 @@ This is Part 8 of a series on dependency injection.
 - [Dependency Injection In C# & .NET Part 6 - Implementation Testing]({% post_url 2025-01-05-dependency-injection-in-c-net-part-6-implementation-testing %})
 - [Dependency Injection In C# & .NET Part 7 - Integration Testing]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %})
 - **Dependency Injection In C# & .NET Part 8 - Types Of Dependency Injection (this post)**
+- [Dependency Injection In C# & .NET Part 9 - Life Cycles]({% post_url 2025-01-08-dependency-injection-in-c-net-part-9-life-cycles %})
 
  In our [last post,]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %}) we looked at how to leverage dependency injection for testing. In this post, we will look at the three different types of dependency injection.
 
