@@ -32,7 +32,7 @@ Passing the dependency through the constructor has the following implications:
 2. The dependency is typically **immutable**
 2. The dependency is **immediately available** after the object has been instantiated
 
-For example, let us say we want to create a `GeneralAlertSenderAlpha and inject an `AlertSender` through the constructor.
+For example, let us say we want to create a `GeneralAlertSenderAlpha` and inject an `AlertSender` through the constructor.
 
 Our class would look like this:
 
@@ -78,7 +78,7 @@ The main drawbacks  are:
 
 ### Property Injection
 
-This type of injection is also called Setter injection.
+This type of injection is also called **setter injection**.
 
 In this type, dependencies are provided via **public properties** after the object has been instantiated.
 
