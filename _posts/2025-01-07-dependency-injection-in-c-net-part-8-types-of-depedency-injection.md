@@ -65,13 +65,13 @@ As indicated earlier:
 1. You must supply an `AlertSender` during the **instantiation** of this object
 2. Once you have supplied the `AlertSender`, you (generally) **cannot change it**
 
-The benefits of this type of injection are
+The benefits of this type of injection are:
 
 1. The class is **easy to test**
 2. The requirements are **explicit**
 3. By reading the code, it is easy to understand **how to instantiate the class and how it works**
 
-The main drawbacks  are :
+The main drawbacks  are:
 
 1. When there are many types to be injected, the constructor can become very **unwieldy and verbose**
 2. Additionally, when there are many injected types, the object can be **expensive to instantiate**
@@ -98,8 +98,8 @@ public class GeneralAlertSenderBeta
 
 Passing a dependency as a property has the following implications:
 
-1. Their instantiation can be deferred until they are needed after the construction of the object
-2. They can be swapped out when needed
+1. Their instantiation can be **deferred** until they are needed after the construction of the object
+2. They can be **swapped out** when needed during the lifetime of the class
 
 We can implement this as follows:
 
@@ -177,7 +177,7 @@ charlieResult = await senderCharlie.SendAlert(office365AlertSender, genericAlert
 Benefits:
 
 1. Objects and their dependencies are completely **decoupled**
-2. **Different dependencies** can be used at the point of invocation
+2. **Different dependencies** can be used at the point of invocation during the lifetime of the class
 
 Drawbacks:
 
