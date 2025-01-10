@@ -20,6 +20,7 @@ This is Part 3 of a series on Dependency Injection
 - [Dependency Injection In C# & .NET Part 7 - Integration Testing]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %})
 - [Dependency Injection In C# & .NET Part 8 - Types Of Dependency Injection]({%  post_url 2025-01-07-dependency-injection-in-c-net-part-8-types-of-depedency-injection %})
 - [Dependency Injection In C# & .NET Part 9 - Life Cycles]({% post_url 2025-01-08-dependency-injection-in-c-net-part-9-life-cycles %})
+- [Dependency Injection In C# & .NET Part 10 - Conclusion]({% post_url 2025-01-09-dependency-injection-in-c-net-part-10-conclusion %})
 
 In [our last post]({% post_url 2025-01-01-dependency-injection-in-c-net-part-2-making-implementations-pluggable %}), we had largely solved the problem of choosing which sender to use. However, the challenge was that this meant **changing the DI code whenever we needed to change the provider,** commenting out the ones we didn't want and leaving the one we do.
 

@@ -20,6 +20,7 @@ This is Part 9 of a series on dependency injection.
 - [Dependency Injection In C# & .NET Part 7 - Integration Testing]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %})
 - [Dependency Injection In C# & .NET Part 8 - Types Of Dependency Injection]({% post_url 2025-01-07-dependency-injection-in-c-net-part-8-types-of-depedency-injection %})
 - **Dependency Injection In C# & .NET Part 9 - Life Cycles (this post)**
+- [Dependency Injection In C# & .NET Part 10 - Conclusion]({% post_url 2025-01-09-dependency-injection-in-c-net-part-10-conclusion %})
 
 In our [last post]({% post_url 2025-01-07-dependency-injection-in-c-net-part-8-types-of-depedency-injection %}), we looked at types of dependency injection, considerations, pros and cons.
 
@@ -195,7 +196,7 @@ Notice here that the generated numbers are identical because the same instance o
 
 There are also methods that allow keyed **scoped**,  **singleton** and **transient** services - [AddKeyedScoped](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.servicecollectionserviceextensions.addkeyedscoped?view=net-9.0-pp), [AddKeyedSingleton](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.servicecollectionserviceextensions.addkeyedsingleton?view=net-9.0-pp) and [AddKeyedTransient](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.servicecollectionserviceextensions.addkeyedtransient?view=net-9.0-pp).
 
-In our final post, we will **recap what we have learnt over this series**.
+In our [final post]({% post_url 2025-01-09-dependency-injection-in-c-net-part-10-conclusion %}), we will **recap what we have learnt over this series**.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
 

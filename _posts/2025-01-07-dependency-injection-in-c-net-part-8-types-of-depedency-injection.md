@@ -20,12 +20,13 @@ This is Part 8 of a series on dependency injection.
 - [Dependency Injection In C# & .NET Part 7 - Integration Testing]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %})
 - **Dependency Injection In C# & .NET Part 8 - Types Of Dependency Injection (this post)**
 - [Dependency Injection In C# & .NET Part 9 - Life Cycles]({% post_url 2025-01-08-dependency-injection-in-c-net-part-9-life-cycles %})
+- [Dependency Injection In C# & .NET Part 10 - Conclusion]({% post_url 2025-01-09-dependency-injection-in-c-net-part-10-conclusion %})
 
- In our [last post,]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %}) we looked at how to leverage dependency injection for testing. In this post, we will look at the three different types of dependency injection.
+ In our [last post,]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %}) we discussed how to use dependency injection for testing. In this post, we will examine the three different types of dependency injection.
 
 ### Constructor Injection
 
-The first type is constructor injection. Here,  the dependency is passed through the constructor during object creation. This is generally the most common type, and throughout our series of posts, this is, in fact, the type we used.
+The first type is **constructor injection**. Here,  the dependency is passed through the **constructor** during object creation. This is generally the most common type, and throughout our series of posts, this is, in fact, the type we used.
 
 Passing the dependency through the constructor has the following implications:
 
@@ -81,7 +82,7 @@ The main drawbacks  are:
 
 This type of injection is also called **setter injection**.
 
-In this type, dependencies are provided via **public properties** after the object has been instantiated.
+This type provides dependencies via **public properties** after the object has been instantiated.
 
 ```c#
 public class GeneralAlertSenderBeta
@@ -185,7 +186,7 @@ Drawbacks:
 1. Testing is more **complicated**
 2. The fact that the dependency can be mutated elsewhere makes **behaviour difficult to predict**.
 
-In our next post we will look at **dependency injection life cycles**.
+In our [next post]({% post_url 2025-01-08-dependency-injection-in-c-net-part-9-life-cycles %}), we will look at **dependency injection life cycles**.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
 

@@ -20,6 +20,7 @@ This is Part 7 of a series on dependency injection.
 - **Dependency Injection In C# & .NET Part 7 - Integration Testing (this post)**
 - [Dependency Injection In C# & .NET Part 8 - Types Of Dependency Injection]({%  post_url 2025-01-07-dependency-injection-in-c-net-part-8-types-of-depedency-injection %})
 - [Dependency Injection In C# & .NET Part 9 - Life Cycles]({% post_url 2025-01-08-dependency-injection-in-c-net-part-9-life-cycles %})
+- [Dependency Injection In C# & .NET Part 10 - Conclusion]({% post_url 2025-01-09-dependency-injection-in-c-net-part-10-conclusion %})
 
 In our [last post,]({% post_url 2025-01-05-dependency-injection-in-c-net-part-6-implementation-testing %}) we looked at how we can leverage dependency injection to ease **implementation testing**.
 
@@ -525,7 +526,7 @@ To recap:
 
 Thus, we can see that dependency injection is a very powerful tool for writing our application and allowing us flexibility around testing.
 
-In our next post we will look at **types of dependency injection**.
+In our [next post]({% post_url 2025-01-07-dependency-injection-in-c-net-part-8-types-of-depedency-injection  %}) we will look at **types of dependency injection**.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
 

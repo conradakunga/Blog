@@ -20,8 +20,9 @@ This is Part 2 of a series on Dependency Injection
 - [Dependency Injection In C# & .NET Part 7 - Integration Testing]({% post_url 2025-01-06-dependency-injection-in-c-net-part-7-integration-testing %})
 - [Dependency Injection In C# & .NET Part 8 - Types Of Dependency Injection]({%  post_url 2025-01-07-dependency-injection-in-c-net-part-8-types-of-depedency-injection %})
 - [Dependency Injection In C# & .NET Part 9 - Life Cycles]({% post_url 2025-01-08-dependency-injection-in-c-net-part-9-life-cycles %})
+- [Dependency Injection In C# & .NET Part 10 - Conclusion]({% post_url 2025-01-09-dependency-injection-in-c-net-part-10-conclusion %})
 
-In our last post, we looked at what dependency injection is, how to set it up, and how it works to address some basic problems.
+In our [last post]({% post_url 2024-12-31-dependency-injection-in-c-net-introduction-and-basic-implementation %}), we looked at what dependency injection is, how to set it up, and how it works to address some basic problems.
 
 In this post, we will extend this further by allowing swapping. **For purposes of this post I am defining swapping as achieving the changing of functionality of the system by making trivial changes in the application startup.**
 
@@ -470,11 +471,11 @@ What improvements have we made here?
 3. We have made it very **easy to add a new provider** - just implement the `IAlertSender` interface and register it for DI
 4. The endpoints will **generally** never need to change when implementing a new provider - making maintenance and improvements much easier.
 
-**It is inportant to note that only one `IAlertSender` should be registered at a time.**
+**It is important to note that only one `IAlertSender` should be registered at a time.**
 
 There are definitely great improvements, but we are not quite there.
 
-In the next post, we will look at how to use dependency injection to dynamically change providers.
+In the [next post]({% post_url 2025-01-02-dependency-injection-in-c-net-part-3-making-implementations-pluggable %}), we will look at how to use dependency injection to change providers dynamically.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Mailer). *The source code builds from first principles as outlined in this series of posts with different versions of the API demonstrating the improvements.*
 
