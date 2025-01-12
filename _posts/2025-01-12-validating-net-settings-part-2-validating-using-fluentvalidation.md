@@ -157,6 +157,6 @@ This approach has a number of benefits over manual validation:
 
 In our next post, we will examine how the built-in .NET pipeline can help validate our settings.
 
-The code is in my [GitHub]().
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-12%20-%20Validating%20Settings%20-%20FluentValidation).
 
 Happy hacking!

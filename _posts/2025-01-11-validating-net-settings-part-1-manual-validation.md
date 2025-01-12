@@ -10,6 +10,7 @@ categories:
 This is Part 1 of a series on validating application settings.
 
 - **Validating .NET Settings Part 1 - Manual Validation (this post)**
+- [Validating .NET Settings Part 2 - Validating Using FluentValidation]({% post_url 2025-01-12-validating-net-settings-part-2-validating-using-fluentvalidation %})
 
 When it comes to  .NET applications, you have a number of options:
 
@@ -75,11 +76,11 @@ builder.Services.AddOptions<ApplicationOptions>();
 var app = builder.Build();
 ```
 
-But then remember that we want to validate these options before we configure the pipeline.
+But then remember that we want to validate these options **before configuring the pipeline**.
 
 A very simple way to do this would be to use **direct binding**, [which we have discussed]({% post_url 2024-12-11-loading-using-application-settings %}) before.
 
-Here, we would **create an object and directly bind it**; then we can **validate** that object. If at any point we find an invalid value, we **throw an exception**.
+Here, we would **create and directly bind an object**; then, we can **validate** that object. If at any point we find an invalid value, we **throw an exception**.
 
 ```c#
 var settings = new ApplicationOptions();
