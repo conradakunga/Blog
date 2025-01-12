@@ -292,7 +292,7 @@ Running this code shows the API configuration information is printed immediately
 
 If you need to log **before** the application starts, you cannot use the `Logger` from the `app` object as it has not been created yet.
 
-In such a case, the simplest way is to create and use your own [Logger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger?view=net-9.0-pp). There are many libraries for this; my go-to is [Serilog](https://serilog.net/), particularly, the [Console sink](https://github.com/serilog/serilog-sinks-console).
+In such a case, the simplest way is to create and use your own [Logger](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger?view=net-9.0-pp). There are many libraries for this; my go-to is [Serilog](https://serilog.net/), particularly the [Console sink](https://github.com/serilog/serilog-sinks-console).
 
 ```bash
 dotnet add package Serilog.Sink.Console
