@@ -5,6 +5,7 @@ date: 2025-01-10 21:40:14 +0300
 categories:
     - C#
     - .NET
+    - Testing
 ---
 
 Suppose you have some logic that computes a value and returns potentially a fractional result.
