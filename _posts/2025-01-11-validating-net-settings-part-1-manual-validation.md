@@ -111,6 +111,12 @@ But if we changed the API key to `abcdefghij`
 
 ![Settings2Error](../images/2025/01/Settings2Error.png)
 
+This approach has a number of problems:
+
+1. It is **difficult to test** the validation code
+2. The validation code is **mixed in with the application startup code**
+3. The validation code can be **difficult to read, understand and maintain**
+
 In our next post, we will see how to validate more robustly using a library dedicated to validation.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-11%20-%20Validating%20Settings%20-%20Manual%20Validation).
