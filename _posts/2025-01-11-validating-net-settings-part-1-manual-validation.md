@@ -107,7 +107,7 @@ If we start our application, it will start as usual because our settings are val
 
 ![Settings1OK](../images/2025/01/Settings1OK.png)
 
-But if we changed the API key to `abcdefghij`
+But if we changed the API key to `abcdefghij` and restarted the application:
 
 ![Settings2Error](../images/2025/01/Settings2Error.png)
 
@@ -117,7 +117,7 @@ This approach has a number of problems:
 2. The validation code is **mixed in with the application startup code**
 3. The validation code can be **difficult to read, understand and maintain**
 
-In our next post, we will see how to validate more robustly using a library dedicated to validation.
+In our [next post]({% post_url 2025-01-12-validating-net-settings-part-2-validating-using-fluentvalidation %}), we will see how to validate more robustly using a library dedicated to validation.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-11%20-%20Validating%20Settings%20-%20Manual%20Validation).
 
