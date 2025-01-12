@@ -113,6 +113,6 @@ But if we changed the API key to `abcdefghij`
 
 In our next post, we will see how to validate more robustly using a library dedicated to validation.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-11%20-%20Validating%20Settings%20-%20Manual%20Validation).
 
 Happy hacking!
