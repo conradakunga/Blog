@@ -4,6 +4,7 @@ title: Validating .NET Settings Part 2 - Validating Using FluentValidation
 date: 2025-01-12 12:24:43 +0300
 categories:
     - C#
+    - Validation
 ---
 
 This is Part 2 of a series on validating application settings.
