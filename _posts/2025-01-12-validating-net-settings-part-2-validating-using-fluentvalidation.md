@@ -82,15 +82,66 @@ validator.ValidateAndThrow(settings);
 
 ![SettingsFluentValidationError](../images/2025/01/SettingsFluentValidationError.png)
 
+We can also write tests to verify our validation logic. This test verifies valid settings are accepted
+
+```c#
+  [Fact]
+  public void Valid_Settings_Are_Validated()
+  {
+      var settings = new ApplicationOptions
+      {
+          APIKey = "ABCDEFGHIJ",
+          RetryCount = 3,
+          RequestsPerMinute = 3,
+          RequestsPerDay = 500
+      };
+
+      var validator = new ApplicationOptionsValidator();
+      var result = validator.Validate(settings);
+      result.IsValid.Should().BeTrue();
+  }
+```
+
+This test verifies one of the invalid cases - an invalid `RequestsPerMinute`
+
+```c#
+[Fact]
+public void Invalid_RetryCount_Is_Validated()
+{
+    var settings = new ApplicationOptions
+    {
+        APIKey = "ABCDEFGHIJ",
+        RetryCount = 5,
+        RequestsPerMinute = 5,
+        RequestsPerDay = 500
+    };
+
+    var validator = new ApplicationOptionsValidator();
+    var result = validator.Validate(settings);
+    // It should not be valid
+    result.IsValid.Should().BeFalse();
+    // Should have only one error
+    result.Errors.Should().HaveCount(1);
+    // Error message should be as follows
+    result.Errors[0].ErrorMessage.Should().Be("'Requests Per Minute' must be less than or equal to '3'.");
+}
+```
+
+If we run our tests, we should see the following:
+
+![SettingsFluentValidationTests](../images/2025/01/SettingsFluentValidationTests.png)
+
 This approach has a number of benefits over manual validation:
 
 1. The code to validate is in **one place**
 
-2. This validator can be used **across the application layers** or even **other applications** if they have the same problem domain
+2. It is **easy to test** the validation code
 
-3. Validation rules are **easy to read, write and understand**
+3. This validator can be used **across the application layers** or even **other applications** if they have the same problem domain
 
-4. If any validation fails, **you have options** — you do not have to throw an exception. You can also perform the validation, check whether it succeeded, and get information on why it didn't.
+4. Validation rules are **easy to read, write and understand**
+
+5. If any validation fails, **you have options** — you do not have to throw an exception. You can also perform the validation, check whether it succeeded, and get information on why it didn't.
 
     ```c#
     var result = validator.Validate(settings);
