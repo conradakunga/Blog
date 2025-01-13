@@ -106,6 +106,6 @@ Check the [documentation](https://learn.microsoft.com/en-us/dotnet/api/system.co
 
 Our next post will examine how to write more complex validation without annotation.
 
-The code is in my [GitHub]().
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-13%20-%20Validating%20Settings%20-%20Data%20Annotations).
 
 Happy hacking!
