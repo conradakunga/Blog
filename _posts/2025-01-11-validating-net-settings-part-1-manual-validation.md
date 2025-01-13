@@ -11,6 +11,7 @@ This is Part 1 of a series on validating application settings.
 
 - **Validating .NET Settings Part 1 - Manual Validation (this post)**
 - [Validating .NET Settings Part 2 - Validating Using FluentValidation]({% post_url 2025-01-12-validating-net-settings-part-2-validating-using-fluentvalidation %})
+- [Validating .NET Settings Part 3 - Validating Using Data Annotations]({% post_url 2025-01-13-validating-net-settings-part-3-validating-using-data-annotations %})
 
 When it comes to  .NET applications, you have a number of options:
 

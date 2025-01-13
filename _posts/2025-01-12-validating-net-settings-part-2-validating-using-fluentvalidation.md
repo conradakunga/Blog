@@ -11,8 +11,9 @@ This is Part 2 of a series on validating application settings.
 
 - [Validating .NET Settings Part 1 - Manual Validation]({% post_url 2025-01-11-validating-net-settings-part-1-manual-validation %})
 - **Validating .NET Settings Part 2 - Validating Using FluentValidation (this post)**
+- [Validating .NET Settings Part 3 - Validating Using Data Annotations]({% post_url 2025-01-13-validating-net-settings-part-3-validating-using-data-annotations %})
 
-In our [last post]({% post_url 2025-01-11-validating-net-settings-part-1-manual-validation %}), we looked at how to manually validate startup application settings.
+In our [last post]({% post_url 2025-01-11-validating-net-settings-part-1-manual-validation %}), we looked at how to validate startup application settings manually.
 
 In this post we will look at how to use a library specialized for validation, [FluentValidation](https://docs.fluentvalidation.net/en/latest/).
 
