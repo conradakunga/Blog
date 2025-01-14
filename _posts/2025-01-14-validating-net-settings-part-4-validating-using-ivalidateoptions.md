@@ -121,6 +121,12 @@ A request would return the following:
 
 ![ValidateOptions](../images/2025/01/ValidateOptions.png)
 
+The benefit of this is that **the code for validation is encapsulated in a single class**.
+
+Given the four options we have discussed, which would I personally use? 
+
+Absolutely the [FluentValidations]({% post_url 2025-01-12-validating-net-settings-part-2-validating-using-fluentvalidation %}) route. More **expressive**, easier to **test**, and easier to **reuse** across application layers and applications.
+
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-14%20-%20Validating%20Settings%20-%20IValidateOptions)
 
 Happy hacking!
