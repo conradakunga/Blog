@@ -12,6 +12,7 @@ This is Part 2 of a series on validating application settings.
 - [Validating .NET Settings Part 1 - Manual Validation]({% post_url 2025-01-11-validating-net-settings-part-1-manual-validation %})
 - **Validating .NET Settings Part 2 - Validating Using FluentValidation (this post)**
 - [Validating .NET Settings Part 3 - Validating Using Data Annotations]({% post_url 2025-01-13-validating-net-settings-part-3-validating-using-data-annotations %})
+- [Validating .NET Settings Part 4 - Validating Using IValidateOptions]({% post_url 2025-01-14-validating-net-settings-part-4-validating-using-ivalidateoptions %})
 
 In our [last post]({% post_url 2025-01-11-validating-net-settings-part-1-manual-validation %}), we looked at how to validate startup application settings manually.
 
@@ -31,9 +32,8 @@ public class ApplicationOptions
 
 Our constraints are these:
 
-- The `APIKey` must be composed of **uppercase characters with a **maximum length of 10**
+- The `APIKey` must be composed of **uppercase characters** with a **maximum length of 10**
 - The `RetryCount` must be between `1` and 5
-- The `RequetsPerMinute` must be less than `3`
 - The `RequestsPerMinute` cannot be more than `1000`
 - The `RequestsPerDay` cannot be more than the `RequetsPerMinute`
 - All of these settings are mandatory

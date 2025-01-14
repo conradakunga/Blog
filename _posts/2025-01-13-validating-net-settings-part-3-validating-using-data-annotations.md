@@ -12,6 +12,7 @@ This is Part 3 of a series on validating application settings.
 - [Validating .NET Settings Part 1 - Manual Validation]({% post_url 2025-01-11-validating-net-settings-part-1-manual-validation %})
 - [Validating .NET Settings Part 2 - Validating Using FluentValidation]({% post_url 2025-01-12-validating-net-settings-part-2-validating-using-fluentvalidation %})
 - **Validating .NET Settings Part 3 - Validating Using Data Annotations (this post)**
+- [Validating .NET Settings Part 4 - Validating Using IValidateOptions]({% post_url 2025-01-14-validating-net-settings-part-4-validating-using-ivalidateoptions %})
 
 In our [last post]({% post_url 2025-01-12-validating-net-settings-part-2-validating-using-fluentvalidation %}), we looked at how to use [FluentValidation](https://docs.fluentvalidation.net/en/latest/) to carry out our settings validation.
 
@@ -31,9 +32,8 @@ public class ApplicationOptions
 
 Our constraints are these:
 
-- The `APIKey` must be composed of **uppercase characters with a **maximum length of 10**
+- The `APIKey` must be composed of **uppercase characters** with a **maximum length of 10**
 - The `RetryCount` must be between `1` and 5
-- The `RequetsPerMinute` must be less than `3`
 - The `RequestsPerMinute` cannot be more than `1000`
 - The `RequestsPerDay` cannot be more than the `RequetsPerMinute`
 - All of these settings are mandatory
@@ -45,25 +45,25 @@ So, we update our class as follows:
 ```c#
 public class ApplicationOptions
 {
-    [Required]
-    [StringLength(10)]
-    [RegularExpression("^[A-Z]{10}$")]
-    public string APIKey { get; set; } = null!;
-    [Required]
-  	[Range(1, 5)]
-  	public int RetryCount { get; set; }
-    [Range(0, 1_000)]
-  	[Required] 
-  	public int RequestsPerMinute { get; set; }
-    [Required]
-  	public int RequestsPerDay { get; set; }
+  [Required]
+  [StringLength(10)]
+  [RegularExpression("^[A-Z]{10}$")]
+  public string APIKey { get; set; } = null!;
+  [Required]
+  [Range(1, 5)]
+  public int RetryCount { get; set; }
+  [Range(0, 1_000)]
+  [Required] 
+  public int RequestsPerMinute { get; set; }
+  [Required]
+  public int RequestsPerDay { get; set; }
 }
 ```
 
 Next, we update our `Program.cs` startup as follows:
 
 ```c#
-bbuilder.Services.AddOptions<ApplicationOptions>()
+builder.Services.AddOptions<ApplicationOptions>()
     .Bind(builder.Configuration.GetSection(nameof(ApplicationOptions)))
     .ValidateDataAnnotations()
     .ValidateOnStart();
@@ -104,7 +104,7 @@ builder.Services.AddOptionsWithValidateOnStart<ApplicationOptions>()
 
 Check the [documentation](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=net-9.0) for a list of attributes you can use to validate various properties by type.
 
-Our next post will examine how to write more complex validation without annotation.
+Our [next post]({% post_url 2025-01-14-validating-net-settings-part-4-validating-using-ivalidateoptions %}) will examine how to write more complex validation without annotation.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-13%20-%20Validating%20Settings%20-%20Data%20Annotations).
 
