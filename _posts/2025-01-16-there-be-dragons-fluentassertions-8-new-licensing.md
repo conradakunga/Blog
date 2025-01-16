@@ -10,7 +10,7 @@ I have long been a proponent of the [FluentAssertions](https://www.nuget.org/pac
 
 A few days ago, there was an [announcement](https://xceed.com/blog/news/xceed-software-partners-with-fluent-assertions-to-elevate-developer-tools-and-community-support/) that the [author](https://x.com/ddoomen/status/1879164019229036908) of the library had entered into a "partnership" with [Xceed](https://xceed.com/) software.
 
-From version 8, you will required to pay a license for commercial use.
+**From version 8, you will required to pay a license for commercial use per developer**.
 
 ![XceedPricing](../images/2025/01/XceedPricing.png)
 
@@ -21,11 +21,11 @@ As usual there is [considerable](https://www.youtube.com/watch?v=ZFc6jcaM6Ms) [d
 
 This debate is **as old as open-source software.** What are the rights and obligations of the author of the software vis a vis those of the users of the software? Who, if not the author, has the right to decide whether and how much to charge? How should an author be compensated for his time and money?
 
-**I don't think Dennis is wrong in wanting to get something in return for his dedication**, given the software has been available since [2011](https://www.nuget.org/packages/fluentassertions/#versions-body-tab). The software and [documentation](https://fluentassertions.com/introduction) are excellent and of very high quality.
+**I don't think Dennis is wrong to want something in return for his dedication, given that the software has been available since [2011](https://www.nuget.org/packages/fluentassertions/#versions-body-tab). The software and [documentation](https://fluentassertions.com/introduction) are excellent and of very high quality.
 
 If you currently  use `FluentAssertions` you do have options:
 
-1. Continue to use the current version - 7
-2. Investigate alternatives. A promisiing one is [Shouldly](https://docs.shouldly.org/)
+1. Continue to use the **current version** - 7
+2. Investigate **alternatives**. A promising one is [Shouldly](https://docs.shouldly.org/)
 
 Happy hacking!
