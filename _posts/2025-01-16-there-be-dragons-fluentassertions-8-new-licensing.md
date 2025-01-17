@@ -30,4 +30,8 @@ If you currently  use `FluentAssertions` you do have options:
 1. Continue to use the **current version** - 7
 2. Investigate **alternatives**. A promising one is [Shouldly](https://docs.shouldly.org/)
 
+#### TLDR
+
+The [FluentAssertions](https://fluentassertions.com) library has a significant change in version 8 that potentially affects developers in terms of cost and license.
+
 Happy hacking!
