@@ -88,7 +88,7 @@ This, unsurprisingly, prints the following:
 Name: Jason Bourne; Agency: CIA
 ```
 
-In other words, the parameters are mutable.
+In other words, **the parameters are mutable**.
 
 We cannot do this in the type with the normal constructor - we get a compiler error.
 
