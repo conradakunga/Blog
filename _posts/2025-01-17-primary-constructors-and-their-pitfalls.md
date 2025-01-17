@@ -66,7 +66,7 @@ A primary constructor allows you to specify constructor parameters **in the clas
 
 Are these types the same? They certainly look the same.
 
-The answer is no.
+**The answer is no**.
 
 In our type with the primary constructor, we can do the following:
 
