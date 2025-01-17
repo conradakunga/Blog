@@ -143,6 +143,6 @@ If you haven't experienced this in any of the IDEs I have mentioned, create an e
 
 #### TLDR
 
-Primary constructors, introduced in .NET 8, can save you some boilerplate code. However be very careful that you do not inadvertently mutate the parameters within the body of your class.
+**Primary constructors, introduced in .NET 8, can save you some boilerplate code. However be very careful that you do not inadvertently mutate the parameters within the body of your class.**
 
 Happy hacking!
