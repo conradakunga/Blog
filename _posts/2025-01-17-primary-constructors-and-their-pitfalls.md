@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-When declaring a type, you will typically create it with a [constructor](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors), through which you will **initialize any state** that is necessary for the class to carry out its intended functions.
+When declaring a type, you typically create it with a constructor, which **initializes any state necessary** for the class to carry out its intended functions.
 
 Let us take, for example, the following simple type:
 
@@ -62,7 +62,7 @@ The code, unsurprisingly, still functions as expected.
 Name: James Bond; Agency: MI-6
 ```
 
-A primary constructor allows you to specify constructor parameters **in the class definition itself**, thus avoiding creating your own constructor as a method within which you perform any necessary initialization. The rationale here, I would imagine, is for developers to have less boilerplate code to write.
+A primary constructor allows you to specify constructor parameters **in the class definition itself**, thus avoiding creating your own constructor as a method within which you perform any necessary initialization. The rationale here, I would imagine, is for developers to have **less boilerplate code to write**.
 
 Are these types the same? They certainly look the same.
 
