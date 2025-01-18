@@ -362,7 +362,7 @@ async Task<Spy[]> GetAllSpiesAsync(CancellationToken token)
 
 A couple of things to note here.
 
-1. When using the `HybridCache`, you do not need to register the InMemory Cache. It is registered and used automatically.
+1. When using the `HybridCache`, you do not need to register the `InMemory` Cache. It is registered and used automatically.
 2. If you register a distributed cache, the hybrid cache will use that as a secondary cache.
 
 Removing items from the `HybridCache` is as simple as calling the `RemoveAsync` method, passing the **key** and (optionally) the `CancellationToken`
@@ -371,7 +371,7 @@ Removing items from the `HybridCache` is as simple as calling the `RemoveAsync` 
 await cache.RemoveAsync(allSpiesKey, token);
 ```
 
-A final benefit of the `HybridCache` is that it allows you to tag entries. This is information provided as an `IEnumerable<T>` of `string` that is attached to the cache entry. This is an elegant solution to a common problem where you are required to invalidate related cache data, for instance, a customer, their orders and their invoices.
+A final benefit of the `HybridCache` is that it allows you to tag entries. This is information provided as an `IEnumerable<T>` of `string` attached to the cache entry. This is an elegant solution to a common problem where you are required to invalidate related cache data, for instance, a customer, their orders and their invoices.
 
 This is achieved using one of the overloads for `GetOrCreateAsync`.
 
@@ -401,7 +401,7 @@ You can then eject any entries by their tags like this:
 await cache.RemoveByTagAsync(["Any", "Of", "These"], token);
 ```
 
-**The logic around removal by tag is currently work in progress and is not currently functional.**
+**The logic around removal by tag is currently a work in progress and is not currently functional.**
 
 To demonstrate a complete API with cache invalidation, we can create three more APIs that use the `HybridCache`  -  one to **View** a `Spy`, one to **Create** a `Spy` and one to **Delete** a `Spy`. For a more complete example, we will start by modifying the `Spy` to add an ID property like this:
 
