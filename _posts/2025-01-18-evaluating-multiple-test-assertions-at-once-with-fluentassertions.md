@@ -29,7 +29,7 @@ public class SquareTests
     public void Square_Computes_Correctly(int number, int square)
     {
         var result = Squares.Square(number);
-        result.Should().BePositive();
+        result.Should().BeNegative();
         result.Should().Be(square);
     }
 }
