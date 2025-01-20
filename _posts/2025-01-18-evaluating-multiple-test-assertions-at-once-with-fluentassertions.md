@@ -43,7 +43,7 @@ If we run these tests, they will **fail** with the following error:
 
 What is happening here is that the **first** assertion, `result.Should().BePositive()` fails, and the test runner **stops immediately and moves on to the next test**.
 
-Sometimes, you want to **evaluate all the assertions at once so that you can know well in advance how badly off you are around your logic. It can be **tedious** to **fix one error, run and then find you have yet another error**. In this scenario, you would want to know **all the failed assertions** so that you can fix the logic once and for all.
+Sometimes, you want to **evaluate all the assertions at once** so that you can know well in advance how badly off you are around your logic. It can be **tedious** to fix one error, run and then find you have yet another error. In this scenario, you would want to know **all the failed assertions** so that you can fix the logic once and for all.
 
 This can be resolved using an [AssertionScope](https://fluentassertions.com/introduction#assertion-scopes).
 

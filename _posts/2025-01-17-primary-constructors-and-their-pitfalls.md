@@ -141,7 +141,7 @@ If you haven't experienced this in any of the IDEs I have mentioned, create an e
 
 **I do not feel that less typing is an acceptable price for the risk of accidentally mutating parameters you did not mean to.**
 
-## TLDR
+### TLDR
 
 **Primary constructors, introduced in .NET 8, can save you some boilerplate code. However be very careful that you do not inadvertently mutate the parameters within the body of your class.**
 

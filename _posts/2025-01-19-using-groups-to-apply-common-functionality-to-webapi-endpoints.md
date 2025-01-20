@@ -155,4 +155,8 @@ If we make a request to each endpoint, the results should be as follows:
 
 This doesn't just apply to authorization. **Where it makes sense**, you can use most of the same extension methods that apply to the `WebApplication` to the `group`
 
+### TLDR
+
+**Groups allow you to collect API endpoints you want to apply common treatment to, such as security.**
+
 Happy hacking!

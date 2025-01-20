@@ -10,7 +10,7 @@ I have long been a proponent of the [FluentAssertions](https://www.nuget.org/pac
 
 A few days ago, there was an [announcement](https://xceed.com/blog/news/xceed-software-partners-with-fluent-assertions-to-elevate-developer-tools-and-community-support/) that the [author](https://x.com/ddoomen/status/1879164019229036908) of the library had entered into a "partnership" with [Xceed](https://xceed.com/) software.
 
-**From version 8, you will required to pay a license for commercial use per developer**.
+**From version 8, you will required to pay a license for commercial use per developer, per year**.
 
 ![XceedPricing](../images/2025/01/XceedPricing.png)
 
@@ -30,7 +30,7 @@ If you currently  use `FluentAssertions` you do have options:
 1. Continue to use the **current version** - 7
 2. Investigate **alternatives**. A promising one is [Shouldly](https://docs.shouldly.org/)
 
-#### TLDR
+### TLDR
 
 The [FluentAssertions](https://fluentassertions.com) library has a significant change in version 8 that potentially affects developers in terms of cost and license.
 
