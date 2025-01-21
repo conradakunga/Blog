@@ -118,7 +118,7 @@ Letter - d; Count - 1
 Letter - u; Count - 1
 ```
 
-
+It is true that the version using a dictionary is much **terser**, but remember the true target demographic of source code is **other developers** (usually **you** in 6 months!) **Less typing is a pretty pedestrian objective at the cost of clarity**.
 
 
 ### TLDR
