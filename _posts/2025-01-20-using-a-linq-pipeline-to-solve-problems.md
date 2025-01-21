@@ -98,6 +98,29 @@ foreach (var item in result)
   Console.WriteLine($"Letter - {item.Letter}; Count - {item.Count}");
 ```
 
+This should print the following:
+
+```plaintext
+Letter - a; Count - 8
+Letter - r; Count - 5
+Letter - n; Count - 3
+Letter - p; Count - 3
+Letter - g; Count - 2
+Letter - o; Count - 2
+Letter - B; Count - 1
+Letter - m; Count - 1
+Letter - i; Count - 1
+Letter - s; Count - 1
+Letter - t; Count - 1
+Letter - h; Count - 1
+Letter - e; Count - 1
+Letter - d; Count - 1
+Letter - u; Count - 1
+```
+
+
+
+
 ### TLDR
 
 **LINQ pipelines can very elegantly solve a number of algorithmic problems.**
