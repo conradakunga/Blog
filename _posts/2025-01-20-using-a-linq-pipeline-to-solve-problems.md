@@ -8,7 +8,7 @@ categories:
     - LINQ
 ---
 
-I recently encountered a very simple problem: Given a string, I needed to get **each letter's occurrence and its corresponding count** and then **print them from the most frequently occurring to the least**.
+I recently encountered a very simple problem: Given a `string`, I needed to get **each letter's occurrence and its corresponding count** and then **print them from the most frequently occurring to the least**.
 
 A quick way to resolve this would be to use a [dictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-9.0). Like this:
 
