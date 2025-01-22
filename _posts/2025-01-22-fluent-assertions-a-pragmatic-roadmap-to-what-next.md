@@ -24,7 +24,23 @@ I first ran into it when I found myself working with two sets of projects - some
 
 Remembering to switch content between xUnit assertions and NUnit assertions while writing and maintaining tests can be quite **annoying**. Using `FluentAssertions` meant **I did not need to care what testing framework I used**. The syntax for assertions was the same.
 
-Another benefit was realized when we migrated from `NUnit` and standardized on `xUnit` as our testing framework. This simply meant (mainly) **changing the referenced libraries and re-compiling**. I hardly needed to touch the existing test code.
+Another key benefit was realized when we migrated from `NUnit` and standardized on `xUnit` as our testing framework. This simply meant (mainly) **changing the referenced libraries and re-compiling**. I hardly needed to touch the existing test code.
+
+Another benefit was the error messages had a lot more context, especially when run on a build server outside the IDE.
+
+Compare:
+
+```plaintext
+Expected 18 but was 17
+```
+
+Against:
+
+```plaintext
+Age should be 18 but was 17
+```
+
+
 
 It is an excellent library.
 
