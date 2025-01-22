@@ -52,7 +52,7 @@ If you further read the licensing terms:
 
 ![FluentAssertionsOptions](../images/2025/01/FluentAssertionsOptions.png)
 
-Yes, you read correctly. That 130 $ is payable **per developer per year**.
+Yes, you read correctly. That $130 is payable **per developer per year**.
 
 That price point is **absurd**.
 
