@@ -5,6 +5,7 @@ date: 2025-01-22 20:25:13 +0300
 categories:
     - C#
     - .NET
+    - FluentAssertions
 ---
 
 So, in a [past post]({%  post_url 2025-01-16-there-be-dragons-fluentassertions-8-new-licensing %}), I covered the debacle around the recent change in the [FluentAssertions](https://fluentassertions.com/) library. But the hawk-eyed among you noticed that despite being a [huge]({% post_url 2025-01-18-evaluating-multiple-test-assertions-at-once-with-fluentassertions %}) [proponent]({% post_url 2021-07-25-better-assertion-testing-with-fluentassertions %}) of the library, **I did not, in fact, say what I intended to do about the situation** and emailed me to ask.
