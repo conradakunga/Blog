@@ -11,7 +11,7 @@ So, in a [past post]({%  post_url 2025-01-16-there-be-dragons-fluentassertions-8
 
 My thoughts are as follows:
 
-I want to start by gratefully thanking the library's authors, led by [Dennis Doomen](https://twitter.com/ddoomen) and [Jonas Nyrup](https://github.com/jnyrup). It is a first-class library with [excellent documentation](https://fluentassertions.com/introduction) I have used for many years.
+I want to start by gratefully **thanking the library's authors**, led by [Dennis Doomen](https://twitter.com/ddoomen) and [Jonas Nyrup](https://github.com/jnyrup). It is a first-class library with [excellent documentation](https://fluentassertions.com/introduction) I have used for many years.
 
 I first ran into it when I found myself working with two sets of projects - some that had their tests written in [xUnit](https://xunit.net/) and the others written in [NUnit](https://nunit.org/). In case you have yet to use either, they have unique ways of asserting, which are **similar** but **different**.
 
