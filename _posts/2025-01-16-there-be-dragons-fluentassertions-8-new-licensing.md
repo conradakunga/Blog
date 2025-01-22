@@ -4,6 +4,7 @@ title: There Be Dragons - FluentAssertions 8 New Licensing
 date: 2025-01-16 20:38:02 +0300
 categories:
     - Testing
+    - FluentAssertions
 ---
 
 I have long been a proponent of the [FluentAssertions](https://www.nuget.org/packages/fluentassertions/) library, which allows you to write clearer assertion statements in your code fluently, regardless of [your](https://github.com/thomhurst/TUnit) [particular](https://xunit.net/) [testing](https://nunit.org/) [library](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-intro). I have written a post on this in the past - [Better Assertion Testing With FluentAssertions]({% post_url 2021-07-25-better-assertion-testing-with-fluentassertions %}).

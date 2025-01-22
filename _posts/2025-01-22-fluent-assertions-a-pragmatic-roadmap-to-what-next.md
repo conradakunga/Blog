@@ -3,8 +3,7 @@ layout: post
 title: FluentAssertions - A Pragmatic Roadmap To What Next
 date: 2025-01-22 20:25:13 +0300
 categories:
-    - C#
-    - .NET
+    - Testing
     - FluentAssertions
 ---
 
