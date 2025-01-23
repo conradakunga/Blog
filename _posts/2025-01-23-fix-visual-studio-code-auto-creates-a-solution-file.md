@@ -17,15 +17,15 @@ You can always **delete the solution file**, but it can get annoying after a whi
 
 The solution to this is as follows:
 
-Open the extensions panel
+Open the **extensions** panel
 
 ![Extensions](../images/2025/01/Extensions.png)
 
-From there, click the C# Dev Kit Extension
+From there, click the **C# Dev Kit** Extension
 
 ![DevKit](../images/2025/01/DevKit.png)
 
-On the pane for C# Dev Kit, locate and click the gear to pull up a menu
+On the pane for C# Dev Kit, locate and click the gear to pull up a menu. Click the **Settings** menu.
 
 ![DevKitMenu](../images/2025/01/DevKitMenu.png)
 
