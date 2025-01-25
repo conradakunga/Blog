@@ -161,6 +161,6 @@ Judo is a hobby of Wanda
 
 **`SelectMany` is a powerful `LINQ` method that allows us to flatten child collections into a single collection and access them in their parent's context.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-25%20-%20Select%20Many).
 
 Happy Hacking!
