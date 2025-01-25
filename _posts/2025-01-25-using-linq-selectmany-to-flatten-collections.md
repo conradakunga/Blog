@@ -109,6 +109,21 @@ Karate
 Judo
 ```
 
+Note that some hobbies appear more than once. This is by design—the method **just flattens the collection** and does nothing about duplicates. If you don't want duplicates, you have to modify the LINQ pipeline and **indicate that yourself** using the [Distinct](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct?view=net-9.0) method.
+
+```c#
+var distinctHobbies = people.SelectMany(x => x.Hobbies)
+    .Distinct()
+    .ToArray();
+
+foreach (var hobby in distinctHobbies)
+{
+    Console.WriteLine(hobby);
+}
+```
+
+
+
 Another way to leverage `SelectMany` is when we need to access the **parent object from within the context of the flattening**.
 
 For example, suppose we needed to print the **hobby** and the `Person` it belonged to.
