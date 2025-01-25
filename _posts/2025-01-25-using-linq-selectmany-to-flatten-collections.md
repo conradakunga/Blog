@@ -4,6 +4,7 @@ title: Using LINQ SelectMany To Flatten Collections
 date: 2025-01-25 20:33:25 +0300
 categories:
     - C#
+    - .NET
     - LINQ
 ---
 
