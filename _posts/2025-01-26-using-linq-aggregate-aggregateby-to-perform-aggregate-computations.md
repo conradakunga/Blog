@@ -181,6 +181,6 @@ Weighted Average Price For Apple is 104.4444
 Weighted Average Price For Microsoft is 100.2941
 ```
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2025-01-26%20-%20Aggregate).
 
 Happy hacking!
