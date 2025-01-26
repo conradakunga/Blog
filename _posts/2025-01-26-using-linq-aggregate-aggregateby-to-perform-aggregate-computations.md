@@ -21,7 +21,7 @@ Console.WriteLine(sum);
 
 What is happening here is that `runningTotal` is the value we are using to store the intermediate computations (the **seed**). This is initialized to zero at the start of the aggregation, and as the `Aggregate` method evaluates each element, the **element value is added to the seed**.
 
-**You do not need to aggregate to sum yourself as LINQ already provides a method that does this - *Sum***.
+**You do not need to aggregate to sum yourself as LINQ already provides a method that does this - [Sum](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.sum?view=net-9.0).**
 
 We can also use the `Aggregate` method to do something more elaborate - to compute the **average**.
 
