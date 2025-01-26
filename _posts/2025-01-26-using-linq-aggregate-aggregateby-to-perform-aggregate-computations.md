@@ -8,7 +8,7 @@ categories:
     - LINQ
 ---
 
-Another of the more complex [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) methods is the [Aggregate](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.aggregate?view=net-9.0) method. This is the method you use to compute some sort of aggregate method where each element in the [IEnumerable<T>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-9.0) is being used in the computation. 
+Another of the more complex [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) methods is the [Aggregate](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.aggregate?view=net-9.0) method. This is the method you use to compute some sort of aggregate method where each element in the [IEnumerable<<T>>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-9.0) is being used in the computation. 
 
 For example, if you wanted to **sum** up all the elements in a collection, you would do it like this:
 
