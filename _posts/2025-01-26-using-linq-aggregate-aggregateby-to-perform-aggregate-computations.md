@@ -50,7 +50,7 @@ var sum = numbers.Aggregate(
     result => result.elementCount > 0 ? result.runningTotal / result.elementCount : 0);
 ```
 
-Note here that the type of `intermediateComputation` is a tuple whose members are our intermediate values.
+Note here that the type of `intermediateComputation` is a [tuple](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples) whose members are our intermediate values.
 
 ![AggregateTuple](../images/2025/01/AggregateTuple.png)
 
