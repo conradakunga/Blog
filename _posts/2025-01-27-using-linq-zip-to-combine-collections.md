@@ -61,7 +61,7 @@ var products = firstNames.Zip(surnames, (firstName, surname) => $"{firstName} {s
 products.ForEach(Console.WriteLine);
 ```
 
-Here, we combine each corresponding element from each collection by [concatenating](https://en.wikipedia.org/wiki/Concatenation) them.
+Here, we **combine** each corresponding element from each collection by [concatenating](https://en.wikipedia.org/wiki/Concatenation) them.
 
 The code prints the following:
 
