@@ -131,6 +131,6 @@ You can see the extra elements for `quantities`, and `prices` are ignored.
 
 **The [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) [Zip](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.zip?view=net-9.0) method is a very useful method when you want to combine two collections of the same length. If you have more collections, you can nest your `Zip` operations.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-27%20-%20Zip).
 
 Happy hacking!
