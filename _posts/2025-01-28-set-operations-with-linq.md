@@ -8,7 +8,7 @@ categories:
     - LINQ
 ---
 
-One of the more brilliant abilities that [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) exposes is the support for a number of key **set operations**. These can come in very useful when solving a lot of algorithmic problems.
+One of the more brilliant abilities that [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) exposes is the support for a number of key **set operations**. These can come in very useful when solving many algorithmic problems.
 
 The best way to illustrate this is by example.
 
