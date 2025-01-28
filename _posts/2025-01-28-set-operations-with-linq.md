@@ -110,7 +110,7 @@ This should print the following:
 
 ### TLDR
 
-LINQ exposes a number of methods that allow you to utilize set theory in your algorithms.
+**LINQ exposes a number of methods that allow you to utilize set theory in your algorithms.**
 
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2025-01-28%20-%20Sets).
 
