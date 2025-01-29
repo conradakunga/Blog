@@ -17,6 +17,7 @@ Assume we have the following collections:
 ```c#
 int[] left = [1, 2, 3, 4, 5, 6, 7];
 int[] right = [5, 6, 7, 8, 9, 10];
+int[] other = [1, 1, 1, 2]
 ```
 
 We can then go through a bunch of operations.
@@ -111,6 +112,26 @@ This should print the following:
 ```plaintext
 1 2 3 4 8 9 10 
 ```
+
+### Distinct
+
+We can also determine the unique members of a collection using the [Distinct](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct?view=net-9.0) method.
+
+```c#
+// Returns distinct elements in collection
+var distinct = other.Distinct().ToList();
+// Write to console
+distinct.ForEach(x => Console.Write($"{x} "));
+Console.WriteLine();
+```
+
+This will print the following:
+
+```plaintext
+1 2
+```
+
+
 
 ### TLDR
 
