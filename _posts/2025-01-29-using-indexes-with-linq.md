@@ -5,6 +5,7 @@ date: 2025-01-29 20:30:48 +0300
 categories:
     - C#
     - LINQ
+    - .NET
 ---
 
 A common algorithmic challenge you will probably run into is having a collection of items and then, for whatever reason, **requiring the index of each item relative to the others in the collection**.
