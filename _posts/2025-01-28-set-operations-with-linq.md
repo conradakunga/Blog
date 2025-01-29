@@ -115,7 +115,7 @@ This should print the following:
 
 ### Distinct
 
-We can also determine the unique members of a collection using the [Distinct](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct?view=net-9.0) method.
+We can also determine the **unique members** of a collection using the [Distinct](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct?view=net-9.0) method.
 
 ```c#
 // Returns distinct elements in collection
