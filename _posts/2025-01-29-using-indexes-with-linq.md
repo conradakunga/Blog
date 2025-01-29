@@ -107,6 +107,6 @@ LaToya
 
 **LINQ has several methods that allow you to access the index of items in your collection that you can leverage in your logic.**
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2025-01-29%20-%20Index).
 
 Happy hacking!
