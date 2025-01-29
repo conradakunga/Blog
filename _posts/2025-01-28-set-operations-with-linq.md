@@ -67,6 +67,8 @@ var both = left.Intersect(right).ToList().ToList();
 both.ForEach(x => Console.Write($"{x} "));
 Console.WriteLine();
 ```
+For `Intersect`, it does not matter which collection is intersecting the other.
+
 This should print the following:
 
 ```plaintext
@@ -84,6 +86,8 @@ var combined = left.Union(right).ToList();
 combined.ForEach(x => Console.Write($"{x} "));
 Console.WriteLine();
 ```
+Similar to `Intersect`, the order for `Union` does not matter.
+
 This should print the following:
 
 ```plaintext
