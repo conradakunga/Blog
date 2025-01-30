@@ -43,6 +43,8 @@ public sealed class ATM
 }
 ```
 
+In our program, we are using [Serilog](https://serilog.net/) and logging to the console using [Serilog.Sinks.Console](https://www.nuget.org/packages/Serilog.Sinks.Console/) package.
+
 Then, let us take a look at this class that models an **ATM Booth**.
 
 ```c#
