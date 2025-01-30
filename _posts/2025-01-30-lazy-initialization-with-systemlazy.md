@@ -251,6 +251,6 @@ The code is much **simpler**. The `Lazy` object and the delegate that tells it h
 
 **The `Lazy` class offers the ability to indicate objects that we want to be initialized lazily, and we can indicate thread-safety of the same.**
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2025-01-29%20-%20Lazy).
 
 Happy hacking!
