@@ -226,7 +226,7 @@ A couple of things to notice here:
 
 This pattern is called [double-checked locking](https://en.wikipedia.org/wiki/Double-checked_locking).
 
-There is an even better solution to this problem that saves us all the heavy lifting of having to manage the locks ourselves - functionality in the [System.Lazy](https://learn.microsoft.com/en-us/dotnet/api/system.lazy-1?view=net-9.0) class.
+There is an even better solution to this problem that saves us all the heavy lifting of having to manage creaton of the object and the managing of locks ourselves - functionality in the [System.Lazy](https://learn.microsoft.com/en-us/dotnet/api/system.lazy-1?view=net-9.0) class.
 
 We can rewrite our class as follows:
 
