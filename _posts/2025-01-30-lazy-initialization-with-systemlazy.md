@@ -171,7 +171,7 @@ If we look closely at the timestamps:
 2. The 30-second initialization hit was taken **when we attempted to make the first withdrawal**.
 3. The subsequent withdrawal is **instantaneous**.
 
-This is a much better design, but it has one fatal problem - it is **not** [thread-safe](https://en.wikipedia.org/wiki/Thread_safety). If we had **several withdrawals** to make and wanted to do them in **several threads**, we have a potential edge case when **multiple threads attempt to access an ATM at the same time**, find it is null, and then there are multiple attempts to create an ATM.
+This is a much better design, but it has one fatal problem - it is **not** [thread-safe](https://en.wikipedia.org/wiki/Thread_safety). If we had **several withdrawals** to make and wanted to do them in **several threads**, we have a potential edge case when **multiple threads attempt to access an ATM at the same time**, find it is `null`, and then there are potentially **multiple attempts to create an ATM**.
 
 This section, in particular, is the problem:
 
@@ -222,7 +222,7 @@ public sealed class ATMBooth
 A couple of things to notice here:
 
 1. We create a `Lock` at the `ATMBooth` level as a `private` `readonly` field
-2. In the ATM property **getter**, we first check if the private `_atm` field is null. If it isn't, we **immediately return the instance**. If not, we **use the lock to control access** to the field as we **initialize** it.
+2. In the ATM property **getter**, we first check if the private `_atm` field is `null`. If it isn't, we **immediately return the instance**. If not, we **use the lock to control access** to the field as we **initialize** it.
 
 This pattern is called [double-checked locking](https://en.wikipedia.org/wiki/Double-checked_locking).
 
