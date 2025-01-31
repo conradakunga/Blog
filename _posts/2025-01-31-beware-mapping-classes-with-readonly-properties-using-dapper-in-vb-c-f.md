@@ -132,7 +132,7 @@ What has happened here?
 
 `Dapper` has been unable to map the property and has thus returned the default em**p**ty `DateTime` - year, month, date, hour, minute, and second are all 0.
 
-This means that the behavior is different with VB.NET - it is unable to bind to read-only properties.
+This means that the behavior is different with VB.NET - **it is unable to bind to read-only properties**.
 
 You might be wondering if [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/what-is-fsharp) has this problem.
 
