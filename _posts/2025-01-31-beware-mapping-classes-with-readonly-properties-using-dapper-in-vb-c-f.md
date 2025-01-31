@@ -169,6 +169,6 @@ This, unsurprisingly, prints the correct result:
 
 **`Dapper` cannot bind to read-only properties when implemented in a VB.NET program.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-01-30%20-%20Dapper).
 
 Happy hacking!
