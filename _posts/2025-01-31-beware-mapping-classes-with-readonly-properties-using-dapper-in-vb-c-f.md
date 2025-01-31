@@ -6,6 +6,7 @@ categories:
     - C#
     - Dapper
     - VB.NET
+    - F#
 ---
 
 One of the most monotonous tasks in building applications is **mapping data between your domain types and storage**.
@@ -14,7 +15,7 @@ There are, of course, a number of solutions to this problem - you could always u
 
 Of, especially if you have **legacy code**, you can use an excellent library called [Dapper](https://github.com/DapperLib/Dapper).
 
-`Dapper` is implemented as several [extension methods](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) to objects extending the [DbConnection](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection?view=net-9.0) object. This means it will work for SQL Server, PostgreSQL, SQLite, etc.
+`Dapper` is implemented as several [extension methods](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) to objects extending the [DbConnection](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection?view=net-9.0) object. This means it will work for any complete [ADO.NET providers](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) for [SQL Server](https://www.microsoft.com/en-gb/sql-server/sql-server-2022), [PostgreSQL](https://www.postgresql.org), [MySQL](https://www.mysql.com), [SQLite](https://www.sqlite.org), etc.
 
 Let us assume we had this very simple object with a single property:
 
