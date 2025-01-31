@@ -28,7 +28,7 @@ public sealed class ATM
     {
         if (amount < Balance)
         {
-            Log.Information("Withdrawing  {Amount:#,0.00}", amount);
+            Log.Information("Withdrawing {Amount:#,0.00}", amount);
             Balance -= amount;
         }
         else
