@@ -158,6 +158,6 @@ while (await periodicTimer.WaitForNextTickAsync(cts.Token))
 
 **The `PeriodicTimer` allows for programs that execute tasks periodically to be written easily. You can also change the period after the timer has started.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-01%20-%20PeriodicTimer).
 
 Happy hacking!
