@@ -11,7 +11,7 @@ Suppose your program needs to carry out a task **periodically**, say every five 
 
 Before you write a single line of code, you need to take a minute to figure out what "**every five minutes**" means, as it will affect how you go about writing your program.
 
-One interpretation is that you want the program to run from a reference time every five minutes at the top of the minute.
+One interpretation is that you want the program to run from a reference time **every five minutes at the top of the minute**.
 
 For example:
 
