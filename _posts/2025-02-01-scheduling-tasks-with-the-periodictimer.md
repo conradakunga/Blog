@@ -59,6 +59,8 @@ void RunTask(object? state)
 
 ***I've changed the period to wait to 2 minutes to make it easier to write this post!***
 
+As usual, I am using [Serilog](https://serilog.net/) and logging with the [console sink](https://github.com/serilog/serilog-sinks-console).
+
 The results should be as follows:
 
 ```plaintext
