@@ -112,6 +112,6 @@ Agent: Luther Stickell, Age: 37
 
 **`LINQ` `UnionBy` allows you to specify a function allowing the runtime to segregate unique members of two collections when performing a set union.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-02%20-%20UnionBy).
 
 Happy hacking!
