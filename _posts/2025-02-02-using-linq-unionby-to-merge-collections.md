@@ -8,7 +8,7 @@ categories:
     - LINQ
 ---
 
-In the post [Set Operations With LINQ,]({% post_url 2025-01-28-set-operations-with-linq %}) we looked at how to use LINQ Union to merge two collections into a third collection.
+In the post [Set Operations With LINQ,]({% post_url 2025-01-28-set-operations-with-linq %}) we looked at how to use `LINQ` `Union` to merge two collections into a third collection.
 
 This normally is pretty straightforward when both collections have **heterogeneous** types, such as primitives or simple classes, where the logic to merge is straightforward.
 
