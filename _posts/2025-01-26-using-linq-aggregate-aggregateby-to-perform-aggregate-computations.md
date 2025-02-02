@@ -183,6 +183,8 @@ Weighted Average Price For Apple is 104.4444
 Weighted Average Price For Microsoft is 100.2941
 ```
 
+This post is an elaboration of [this introductory post]({%  post_url 2024-12-18-using-aggregateby-in-c-net-9 %})
+
 The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2025-01-26%20-%20Aggregate).
 
 Happy hacking!
