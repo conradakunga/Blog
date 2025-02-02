@@ -75,7 +75,7 @@ Given that `Dapper` is a .NET library, it would work the same with other languag
 dotnet new console -o DapperTestVB -lang VB
 ```
 
-We then add the `Dapper` and `Microsoft.Data.SqlClient`.
+We then add the `Dapper` and `Microsoft.Data.SqlClient`, as explained above.
 
 Finally, we create our types.
 
