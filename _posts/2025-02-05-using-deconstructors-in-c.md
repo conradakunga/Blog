@@ -135,7 +135,7 @@ We can extract the properties as follows:
 ```c#
 var (name, motto, dateFounded) = agency;
 
-Log.Information("The agency ßname is {Name}, founded in {DateFounded}", name, dateFounded);
+Log.Information("The agency name is {Name}, founded in {DateFounded}", name, dateFounded);
 Log.Information("The motto is {Motto}", motto);
 ```
 
