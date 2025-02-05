@@ -149,6 +149,6 @@ Notice that **we did not need to write our own deconstructor**.
 
 **Object deconstructors allow you to extract the properties of an object into its constituent parameters.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-05%20-%20Deconstructors).
 
 Happy hacking!
