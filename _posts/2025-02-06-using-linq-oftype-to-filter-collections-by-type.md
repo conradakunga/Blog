@@ -123,6 +123,6 @@ This is because *James Bond* and *Jason Bourne* are `FieldAgents`. *Evelyn Salt*
 
 **The `OfType` method allows you to filter a collection of types for objects that are of a particular type.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-06%20-%20OfType).
 
 Happy hacking!
