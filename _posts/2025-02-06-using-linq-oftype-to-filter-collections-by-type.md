@@ -119,7 +119,7 @@ Jason Bourne
 
 This is because *James Bond* and *Jason Bourne* are `FieldAgents`. *Evelyn Salt* and *Phil Jennings* are `SleeperAgents`. And remember that `SleeperAgent` inherits from `FieldAgent`. Thus four agents are returned.
 
-### TLDRD
+### TLDR
 
 **The `OfType` method allows you to filter a collection of types for objects that are of a particular type.**
 
