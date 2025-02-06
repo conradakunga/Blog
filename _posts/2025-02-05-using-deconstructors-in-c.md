@@ -104,6 +104,18 @@ Log.Information("The surname name is {Surname}", surname);
 Log.Information("The date of birth is {DateOfBirth}", dateOfBirth);
 ```
 
+You can also do it like this:
+
+```c#
+(string firstName, string surname, DateOnly dateOfBirth) = spy;
+
+Log.Information("The first name is {FirstName}", firstName);
+Log.Information("The surname name is {Surname}", surname);
+Log.Information("The date of birth is {DateOfBirth}", dateOfBirth);
+```
+
+
+
 Suppose, for whatever reason, we **did not care about the date of birth** despite it being factored into the deconstructor.
 
 We can **ignore** it or any members we are not interested in from the deconstruction by using the [discard](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/discards).
