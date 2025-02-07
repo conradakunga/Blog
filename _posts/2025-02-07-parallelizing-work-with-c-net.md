@@ -202,6 +202,6 @@ Of interest here is that, unlike the previous technique, the requests are **star
 
 **.NET offers a couple of ways to execute parallel work - `Parallel.ForEach` and `Task.WhenAll` that can allow you to improve system response times for work that is parallelizable.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-07%20-%20Parallelism).
 
 Happy hacking!
