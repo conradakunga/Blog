@@ -181,9 +181,9 @@ async Task FetchLink(string link)
 {
     try
     {
-        Log.Information("Fetching {Link}", link);
+        Log.Information("Fetching {URL}", link);
         await client.GetStringAsync(link);
-        Log.Information("Successfully fetched {Link}", link);
+        Log.Information("Successfully fetched {URL}", link);
     }
     catch (Exception ex)
     {
