@@ -137,6 +137,6 @@ This prints the following:
 
 **Immutable types are a powerful aid to writing predictable, debuggable & maintainable programs**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-09%20-%20Immutability).
 
 Happy hacking!
