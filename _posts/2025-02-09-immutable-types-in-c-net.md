@@ -120,7 +120,7 @@ This prints the following:
 [02:41:46 INF] Agent details: Vesper Bond
 ```
 
-This operation is supported natively by the C# record, using the with keyword, where you specify the **changes** to the type. The other values are **copied** over to the new type.
+This operation is supported natively by the C# [record](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record), using the [with](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/with-expression) keyword, where you specify the **properties with changes** to the type. The other unchanged properties are **copied** over to the new type.
 
 ```c#
 vesperLynd = vesperLynd with { Surname = "Bond II" };
