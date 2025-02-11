@@ -100,6 +100,6 @@ Only one technique - using the method `string.IsNullOrWhiteSpace` passes all the
 
 Use the method `string.IsNullOrWhiteSpace` to reliably check if a string has data.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-11%20-%20Empty%20String%20Tests).
 
 Happy hacking!
