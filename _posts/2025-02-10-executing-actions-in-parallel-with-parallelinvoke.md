@@ -74,6 +74,6 @@ We can see here that the program now takes **30 seconds**, because all the tasks
 
 **`Parallel.Invoke` allows tasks that do not return anything ([Actions](https://learn.microsoft.com/en-us/dotnet/api/system.action-1?view=net-9.0)) to be run in parallel.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-10%20-%20Parallel.Invoke).
 
 Happy hacking!
