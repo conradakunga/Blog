@@ -9,7 +9,7 @@ categories:
 
 In the post [Parallelizing Work With C# & .NET]({%  post_url 2025-02-07-parallelizing-work-with-c-net %}) we discussed using [Parallel.ForEach](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.parallel.foreach?view=net-9.0) to process [Tasks](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=net-9.0) **in parallel** and consume their **results**.
 
-Occasionally, the problem is that you have to process several tasks, **neither of which returns results**. One opportunity for improvement is **running these in parallel**.
+Occasionally, the problem is that you are required to process several tasks, **neither of which returns results**. One opportunity for improvement is **running these in parallel**.
 
 This is an opportunity to use [Parallel.Invoke](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.parallel.invoke?view=net-9.0).
 
@@ -50,7 +50,7 @@ Running this program will produce the following:
 
 ![ParallelForEach1](../images/2025/02/ParallelInvoke1.png)
 
-We can see here that this program has taken over **three minutes** to run.
+We can see here that this program has taken over **three minutes** to run, as each task is run **sequentially**.
 
 We can improve this to run in parallel like so:
 
@@ -68,7 +68,7 @@ This will return the following:
 
 ![ParallelInvoke2](../images/2025/02/ParallelInvoke2.png)
 
-We can see here that the program now takes **30 seconds**, because all the tasks are run in parallel.
+We can see here that the program now takes **30 seconds**, because all the tasks are run in **parallel**.
 
 ### TLDR
 
