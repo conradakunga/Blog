@@ -36,37 +36,37 @@ We can write a small program to print these values.
 
 ```c#
 Console.WriteLine($"The largest value for sbyte is {sbyte.MaxValue:#,0.00}");
-	Console.WriteLine($"The smallest value for sbyte is {sbyte.MinValue:#,0.00}");
+Console.WriteLine($"The smallest value for sbyte is {sbyte.MinValue:#,0.00}");
 
-	Console.WriteLine($"The largest value for byte is {byte.MaxValue:#,0.00}");
-	Console.WriteLine($"The smallest value for byte is {byte.MinValue:#,0.00}");
+Console.WriteLine($"The largest value for byte is {byte.MaxValue:#,0.00}");
+Console.WriteLine($"The smallest value for byte is {byte.MinValue:#,0.00}");
 
-	Console.WriteLine($"The largest value for short  is {short.MaxValue:#,0.00}");
-	Console.WriteLine($"The smallest value for short  is {short.MinValue:#,0.00}");
+Console.WriteLine($"The largest value for short  is {short.MaxValue:#,0.00}");
+Console.WriteLine($"The smallest value for short  is {short.MinValue:#,0.00}");
 
-	Console.WriteLine($"The largest value for ushort is {ushort.MaxValue:#,0.00}");
-	Console.WriteLine($"The smallest value for ushort is {ushort.MinValue:#,0.00}");
+Console.WriteLine($"The largest value for ushort is {ushort.MaxValue:#,0.00}");
+Console.WriteLine($"The smallest value for ushort is {ushort.MinValue:#,0.00}");
 
-	Console.WriteLine($"The largest value for int is {int.MaxValue:#,0.00}");
-	Console.WriteLine($"The smallest value for int is {int.MinValue:#,0.00}");
+Console.WriteLine($"The largest value for int is {int.MaxValue:#,0.00}");
+Console.WriteLine($"The smallest value for int is {int.MinValue:#,0.00}");
 
-	Console.WriteLine($"The largest value for uint is {uint.MaxValue:#,0.00}");
-	Console.WriteLine($"The smallest value for uint is {uint.MinValue:#,0.00}");
+Console.WriteLine($"The largest value for uint is {uint.MaxValue:#,0.00}");
+Console.WriteLine($"The smallest value for uint is {uint.MinValue:#,0.00}");
 
-	Console.WriteLine($"The largest value for long is {long.MaxValue:#,0.00}");
-	Console.WriteLine($"The smallest value for long is {long.MinValue:#,0.00}");
+Console.WriteLine($"The largest value for long is {long.MaxValue:#,0.00}");
+Console.WriteLine($"The smallest value for long is {long.MinValue:#,0.00}");
 
-	Console.WriteLine($"The largest value for ulong  is {ulong.MaxValue:#,0.00}");
-	Console.WriteLine($"The smallest value for ulong  is {ulong.MinValue:#,0.00}");
+Console.WriteLine($"The largest value for ulong  is {ulong.MaxValue:#,0.00}");
+Console.WriteLine($"The smallest value for ulong  is {ulong.MinValue:#,0.00}");
 
-	Console.WriteLine($"The largest value for float is {float.MaxValue:E}");
-	Console.WriteLine($"The smallest value for float is {float.MinValue:E}");
+Console.WriteLine($"The largest value for float is {float.MaxValue:E}");
+Console.WriteLine($"The smallest value for float is {float.MinValue:E}");
 
-	Console.WriteLine($"The largest value for double is {double.MaxValue:E}");
-	Console.WriteLine($"The smallest value for double is {double.MinValue:E}");
+Console.WriteLine($"The largest value for double is {double.MaxValue:E}");
+Console.WriteLine($"The smallest value for double is {double.MinValue:E}");
 
-	Console.WriteLine($"The largest value for decimal is {decimal.MaxValue:#,0.00}");
-	Console.WriteLine($"The smallest value for decimal is {decimal.MinValue:#,0.00}");
+Console.WriteLine($"The largest value for decimal is {decimal.MaxValue:#,0.00}");
+Console.WriteLine($"The smallest value for decimal is {decimal.MinValue:#,0.00}");
 ```
 
 For the `float` and `double` types, we are outputting the values in [E notation](https://en.wikipedia.org/wiki/Scientific_notation#E_notation).
