@@ -9,7 +9,7 @@ categories:
 
 We have talked about immutable types in [previous posts]({% post_url 2025-02-09-immutable-types-in-c-net %}) when it comes to designing, creating and manipulating types.
 
-The same problems presents itself when you have a **collection of types**.
+The same problems present themselves when you have a **collection of types**.
 
 Take the following example:
 
@@ -44,7 +44,7 @@ Evelyn Salt
 
 Suppose we did not want the list of spies to be **modifiable**.
 
-We can achieve it by calling the [AsReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.array.asreadonly?view=net-9.0) method of the array, which returns a generic read-only collection. The method `AsReadOnly` is available for most  of the collections you would typically use.
+We can achieve it by calling the [AsReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.array.asreadonly?view=net-9.0) method of the array, which returns a **generic read-only collection**. The method `AsReadOnly` is available for most collections you typically use.
 
 The code is as follows:
 
@@ -85,7 +85,7 @@ Evelyn Salt
 
 We can see here that **if we change the original collection, the read-only collection returned by `AsReadOnly` updates accordingly**, so this does not solve our problem.
 
-For this we can turn to the [ToFrozenSet](https://learn.microsoft.com/en-us/dotnet/api/system.collections.frozen.frozenset.tofrozenset?view=net-9.0) method.
+For this, we can use the [ToFrozenSet](https://learn.microsoft.com/en-us/dotnet/api/system.collections.frozen.frozenset.tofrozenset?view=net-9.0) method.
 
 The code looks like this:
 
@@ -117,10 +117,12 @@ We can see here that despite **manipulating the original collection**, the **fro
 
 Of interest is that this method returns a **set**, which means there will be **no duplicates**.
 
+A method, [ToFrozenDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.frozen.frozendictionary.tofrozendictionary?view=net-9.0), also exists that achieves the same result as a generic dictionary.
+
 ### TLDR
 
-**`FrozenCollections` solves a common problem when your program has some sort of static master data that will not change during the lifetime of the program execution and you expect to frequently access it.**
+**`FrozenCollections` solves a common problem when your program has some static master data that will not change during the lifetime of the program execution and you expect to access it frequently.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-15%20-%20FrozenCollections).
 
 Happy hacking!
