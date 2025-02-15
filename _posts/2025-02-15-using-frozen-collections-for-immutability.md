@@ -117,7 +117,7 @@ We can see here that despite **manipulating the original collection**, the **fro
 
 Of interest is that this method returns a **set**, which means there will be **no duplicates**.
 
-A method, [ToFrozenDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.frozen.frozendictionary.tofrozendictionary?view=net-9.0), also exists that achieves the same result as a generic dictionary.
+A method, [ToFrozenDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.frozen.frozendictionary.tofrozendictionary?view=net-9.0), also exists that achieves the same result, but for a generic dictionary.
 
 ### TLDR
 
