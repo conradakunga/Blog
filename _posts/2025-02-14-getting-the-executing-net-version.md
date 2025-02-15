@@ -119,7 +119,7 @@ This will print the following:
 9.0.2
 ```
 
-Note that with this technique, the trailing zeroes are not returned.
+Note that with this technique, the **trailing zeroes are not returned**.
 
 ### TLDR
 
