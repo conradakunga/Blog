@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Knowing the .NET version at compile time is as simple as executing a command on the console.
+Knowing the .NET version at **compile time** is as simple as executing a command on the console.
 
 ```bash
 dotnet --version
@@ -19,13 +19,13 @@ This will print for you the following (which is true on my machine on February 1
 9.0.200
 ```
 
-If you want a little more information, you execute the following command
+If you want a little more information, you execute the following command:
 
 ```bash
 dotnet --info
 ```
 
-This will print for you much more detailed information
+This will print for you much more detailed information:
 
 ```plaintext
 .NET SDK:
@@ -61,7 +61,7 @@ Host:
   Microsoft.NETCore.App 9.0.2 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 ```
 
-Here you can see my machine is a [Mac](https://www.apple.com/ke/macbook-pro/) running [OSX Sonoma, and I have two .NET versions installed - 8 and 9, but the active one on the current path is 9. This can be changed using a [global.json](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json) file.
+Here you can see my machine is a [Mac](https://www.apple.com/ke/macbook-pro/) running [OSX Sonoma](https://en.wikipedia.org/wiki/MacOS_Sonoma), and I have **two** .NET versions installed - 8 and 9, but the active one on the current path is 9. This can be changed using a [global.json](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json) file.
 
 Now suppose, for whatever reason, you needed the current SDK version at **runtime**?
 
@@ -125,6 +125,6 @@ Note that with this technique, the trailing zeroes are not returned.
 
 **`Environment.Version` will return the .NET version of the executing application at runtime.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-14%20-%20Executing%20.NET%20Version).
 
 Happy hacking!
