@@ -1,6 +1,6 @@
 ---
 layout: post
-title: View Request & Response Headers For Http Requests In C#
+title: View Request & Response Headers For HTTP Requests In C#
 date: 2025-02-16 19:33:09 +0300
 categories:
     - C#
