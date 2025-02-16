@@ -171,6 +171,6 @@ foreach (var url in urls)
 
 **`DelegatingHandlers` allow you to access data from any of the points of a HTTP request, such as the complete set of headers and content headers.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-16%20-%20Delegating%20Handlers).
 
 Happy hacking!
