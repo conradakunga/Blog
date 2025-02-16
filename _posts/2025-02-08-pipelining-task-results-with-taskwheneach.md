@@ -106,7 +106,7 @@ The results are as follows:
 
 ### TLDR
 
-**`Task.ForEach` allows for asynchronous processing of multiple tasks, returning results per task immediately they are available for processing.**
+**`Task.WhenEach` allows for asynchronous processing of multiple tasks, returning results per task immediately they are available for processing.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-08%20-%20WhenEach).
 
