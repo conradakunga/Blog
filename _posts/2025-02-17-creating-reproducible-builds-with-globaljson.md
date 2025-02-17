@@ -3,7 +3,7 @@ layout: post
 title: Creating Reproducible Builds With global.json
 date: 2025-02-17 07:33:52 +0300
 categories:
-    . NET
+    - .NET
 ---
 
 When working independently, it is pretty easy to **avoid surprises** when you build your code. After all, your environment is the only environment. If you want to change the .NET version you are targeting, you can make that change in the relevant **project file**.
