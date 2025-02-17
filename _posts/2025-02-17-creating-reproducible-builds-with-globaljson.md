@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating Reproducible Builds When Working In A Team With global.json
+title: Creating Reproducible Builds With global.json
 date: 2025-02-17 07:33:52 +0300
 categories:
     . NET
