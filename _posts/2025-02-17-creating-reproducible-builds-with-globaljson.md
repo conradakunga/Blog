@@ -26,7 +26,7 @@ For example, if I have this .csproj file:
 </Project>
 ```
 
-If I want to upgrade it to version 9, I just need to update the `TargetFramework` tag as follows:
+If I want to upgrade it to version **9**, I just need to update the `TargetFramework` tag as follows:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
