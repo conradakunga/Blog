@@ -61,7 +61,7 @@ This returns the following:
 8.16.1
 ```
 
-Much less noisy, but needs to be sorted.
+Much less **noisy**, but needs to be **sorted**.
 
 We can pipe this to the [sort](https://en.wikipedia.org/wiki/Sort_(Unix)) command and specify that we want a ***reverse*** **sort**. Like so:
 
