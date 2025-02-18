@@ -6,9 +6,9 @@ categories:
     - Docker
 ---
 
-For logging, I generally use [Elasticsearch](https://www.elastic.co/elasticsearch) to *store* the logs themselves, and [Kibana](https://www.elastic.co/kibana) for **visualizing** said logs.
+For logging, I generally use [Elasticsearch](https://www.elastic.co/elasticsearch) to **store** the logs themselves, and [Kibana](https://www.elastic.co/kibana) for **visualizing** said logs.
 
-Naturally, I use them via [Docker](https://www.docker.com/).
+Naturally, I use the software via [Docker](https://www.docker.com/).
 
 Unlike most Docker images, **Elasticsearch** and **Kibana** do not have a rolling `latest` tag. This means you must request a **specific image** to run a container. The supported images are listed on the page.
 
