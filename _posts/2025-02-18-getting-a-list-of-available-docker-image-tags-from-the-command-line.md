@@ -6,7 +6,7 @@ categories:
     - Docker
 ---
 
-For logging, I generally use [Elasticsearch](https://www.elastic.co/elasticsearch) for the logs themselves, and [Kibana](https://www.elastic.co/kibana) for visualizing said logs.
+For logging, I generally use [Elasticsearch](https://www.elastic.co/elasticsearch) to *store* the logs themselves, and [Kibana](https://www.elastic.co/kibana) for **visualizing** said logs.
 
 Naturally, I use them via [Docker](https://www.docker.com/).
 
@@ -36,11 +36,11 @@ This returns a large JSON object
 
 ![dockerJSON](../images/2025/02/dockerJSON.png)
 
-We need to only fetch the interesting bits:
+We need only to fetch the interesting bits:
 
 ![dockerTag](../images/2025/02/dockerTag.png)
 
-We can extract this tag that is in the `name` property from the results array using the [jq](https://jqlang.org/) tool, like this:
+We can extract this tag that is in the `name` property from the `results` array using the [jq](https://jqlang.org/) tool, like this:
 
 ```bash
 http "https://registry.hub.docker.com/v2/repositories/library/elasticsearch/tags/" | jq -r '.results[].name'
@@ -63,7 +63,7 @@ This returns the following:
 
 Much less noisy, but needs to be sorted.
 
-We can pipe this to the [sort](https://en.wikipedia.org/wiki/Sort_(Unix)) command, and specify we want a ***reverse*** **sort**. Like so:
+We can pipe this to the [sort](https://en.wikipedia.org/wiki/Sort_(Unix)) command and specify that we want a ***reverse*** **sort**. Like so:
 
 ```bash
 http "https://registry.hub.docker.com/v2/repositories/library/elasticsearch/tags/" | jq -r '.results[].name' | sort -r
