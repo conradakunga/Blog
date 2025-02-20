@@ -115,12 +115,12 @@ bool IsPowerOfTwo(int value)
 }
 ```
 
-There is a subtle bug here because zero will also return true, and **zero is not a power of 2**.
+There is a subtle bug here because zero will also return true, and **zero is not a power of 2**. We can fix that as follows:
 
 ```c#
 bool IsPowerOfTwo(int value)
 {
-    return value >0 && Math.Log2(value) % 1 == 0;
+    return value > 0 && Math.Log2(value) % 1 == 0;
 }
 ```
 
