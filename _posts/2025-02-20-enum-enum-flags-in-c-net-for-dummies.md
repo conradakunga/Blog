@@ -459,7 +459,21 @@ A couple of additional things:
 
 1. Putting `[Flags]` on your enum **does not generate for you the values**! You must still define them yourself.
 
-2. You can directly assign **any integer value to a member expecting an `enum`**. However, it is trivial to validate the values before setting them.
+2. The compiler will allow you to shoot yourself in the foot by supplying duplicate values. This will happily compile:
+
+    ```c#
+    public enum Condiments
+    {
+    	TomatoSauce = 1,
+    	Mayonnaise = 1,
+    	BarbequeSauce = 1,
+    	Ketchup = 1,
+    }
+    ```
+
+    
+
+3. You can directly assign **any integer value to a member expecting an `enum`**. However, it is trivial to validate the values before setting them.
 
     ```c#
     if (!Enum.IsDefined(typeof(Condiments), 1000))
