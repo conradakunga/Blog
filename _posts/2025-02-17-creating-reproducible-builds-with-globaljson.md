@@ -6,9 +6,9 @@ categories:
     - .NET
 ---
 
-When working independently, it is pretty easy to **avoid surprises** when you build your code. After all, your environment is the only environment. If you want to change the .NET version you are targeting, you can make that change in the relevant **project file**.
+When working independently, it is **easy** to avoid surprises when building your code. After all, your environment is the only environment. If you want to change the .NET version you are targeting, you can make that change in the relevant **project file**.
 
-For example, if I have this .csproj file:
+For example, if I have this `.csproj` file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
