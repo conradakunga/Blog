@@ -9,7 +9,7 @@ categories:
 
 Recently, I discovered several helper integer methods that I had never noticed before, making code much easier to read and understand.
 
-### Odd Number Detection
+### Even Number Detection
 
 Typically, you would do it like this:
 
@@ -24,7 +24,7 @@ else
 
 Here, we use [modulus division](https://en.wikipedia.org/wiki/Modulo) to detect whether there is a **remainder** after dividing by 2. If there **isn't** - the number is **odd**.
 
-This can be rewritten as follows using the int.IsEvenInteger method.
+This can be rewritten as follows using the [int.IsEvenInteger](https://learn.microsoft.com/en-us/dotnet/api/system.int32.iseveninteger?view=net-9.0) method.
 
 ```c#
 if (int.IsEvenInteger(input))
@@ -35,11 +35,11 @@ else
 
 Much easier to scan through and understand, even for a junior developer or a developer for whom C# is not their native language.
 
-### Even Number Detection
+### Odd Number Detection
 
 This is a minor alteration of the above.
 
-Traditionally you would do it this way, a negation of the even logic:
+Traditionally you would do it this way, a negation of the **even** logic:
 
 ```c#
 if (input % 2 != 0)
@@ -48,7 +48,7 @@ else
     Console.WriteLine($"{input} is even");
 ```
 
-You can rewrite this to use the int.IsOddInteger method
+You can rewrite this to use the [int.IsOddInteger](https://learn.microsoft.com/en-us/dotnet/api/system.int32.isoddinteger?view=net-9.0) method
 
 ```c#
 if (int.IsOddInteger(input))
@@ -68,7 +68,7 @@ else
     Console.WriteLine($"{input} is negative");
 ```
 
-You can rewrite this to use the int.IsPositive method:
+You can rewrite this to use the [int.IsPositive](https://learn.microsoft.com/en-us/dotnet/api/system.int32.ispositive?view=net-9.0) method:
 
 ```c#
 if (int.IsPositive(input))
@@ -90,7 +90,7 @@ else
     Console.WriteLine($"{input} is positive");
 ```
 
-We can rewrite this to use the int.IsNegative method:
+We can rewrite this to use the [int.IsNegative](https://learn.microsoft.com/en-us/dotnet/api/system.int32.isnegative?view=net-9.0) method:
 
 ```c#
 if (int.IsNegative(input))
@@ -115,7 +115,7 @@ bool IsPowerOfTwo(int value)
 }
 ```
 
-There is a bug here because zero will also return true, and zero is not a power of 2.
+There is a subtle bug here because zero will also return true, and **zero is not a power of 2**.
 
 ```c#
 bool IsPowerOfTwo(int value)
@@ -130,9 +130,9 @@ You can avoid writing your own method and use the int.Pow2 method like so:
 Console.WriteLine(int.IsPow2(8));
 ```
 
-Over and above saving you writing code, this method is faster than our algorithm above, as it uses bitwise operations for this check.
+Over and above saving you writing code, this method is **faster** than our algorithm above, as it uses [bitwise operations](https://en.wikipedia.org/wiki/Bitwise_operation) for this check.
 
-The code for int.Pow2 is as follows:
+The code for [int.Pow2](https://learn.microsoft.com/en-us/dotnet/api/system.int32.ispow2?view=net-9.0) is as follows:
 
 ```c#
 [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -141,20 +141,20 @@ public static bool IsPow2(int value) => (value & (value - 1)) == 0 && value > 0;
 
 The logic here is as follows:
 
-1. Take a number, and express it in binary
-2. Subtract one from that number, and express it in binary
-3. Perform a bitwise AND for each corresponding digit of the two numbers
+1. Take a number, and express it in **binary**
+2. Subtract one from that number, and express it in **binary**
+3. Perform a [bitwise AND](https://learn.microsoft.com/en-us/cpp/cpp/bitwise-and-operator-amp?view=msvc-170) for each **corresponding digit** of the two numbers
 
-For powers of two, this computation always returns all zeros.
+**For powers of two, this computation returns all zeros**.
 
-Take 16 and 15:
+Take `16` and 15:
 
 ```plaintext
 	10000
 	01111
 ```
 
-If you do a bitwise and of each corresponding digit, and the first number is a power of two, the result will be zero.
+If you do a bitwise AND of each corresponding digit, and the first number is a power of two, the result will be zero.
 
 ![bitwise](../images/2025/02/bitwise.png)
 
