@@ -158,6 +158,6 @@ If you do a bitwise AND of each corresponding digit, and the first number is a p
 
 ![bitwise](../images/2025/02/bitwise.png)
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-19%20-%20Integer%20Helpers).
 
 Happy hacking!
