@@ -472,6 +472,6 @@ A couple of additional things:
 
 **`Enums` allow for the design of fields and properties that can capture discrete or combined values into a single member of a type.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-20%20-%20Enums).
 
 Happy hacking!
