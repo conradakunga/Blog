@@ -176,6 +176,6 @@ If we run the `/Formatted`, we get the following:
 
 **You can configure ASP.NET to control the output of JSON responses, either at the global level or at the endpoint level, using an appropriately configured `JsonSerializerOptions` object.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-21%20-%20Format%20Json).
 
 Happy hacking!
