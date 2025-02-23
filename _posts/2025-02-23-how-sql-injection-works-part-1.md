@@ -243,7 +243,9 @@ That is a very valid observation.
 
 Attackers have also addressed this. They build tools that send several carefully crafted payloads optimized for various scenarios with the probability that at least once would work. These attacks are usually **automated**, and **one will be tried after another until one works**, at which point the tool will **signal to the attacker** using logs or another such mechanism that a breach has been successful.
 
-In the next post, we will look at h**ow to defend against this** on the .NET platform.
+**This technique is just as effective against other database engines - [SQL Server,](https://www.microsoft.com/en-us/sql-server) [Oracle](https://www.oracle.com/database/), [PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), etc. It is just a matter of tweaking the input to accommodate each engine's peculiarities.**
+
+In the next post, we will look at **how to defend against this** on the .NET platform.
 
 ### TLDR
 
