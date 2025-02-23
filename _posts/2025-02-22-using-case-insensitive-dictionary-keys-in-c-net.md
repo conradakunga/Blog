@@ -46,7 +46,7 @@ else
 
 If we entered ***James*** we would still get `50` printed.
 
-Suppose we entered JAMES instead?
+Suppose we entered ***JAMES*** instead?
 
 ```plaintext
 Unhandled exception. System.Collections.Generic.KeyNotFoundException: The given key 'JAMES' was not present in the dictionary.
@@ -61,7 +61,7 @@ But there are cases where we want it **NOT** to be so.
 
 How do we go about this?
 
-The `Dictionary` class has a [constructor](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.-ctor?view=net-9.0#system-collections-generic-dictionary-2-ctor(system-collections-generic-iequalitycomparer((-0)))) that allows you to pass it an [IEqualityComparer](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1?view=net-9.0), allowing you to tell the runtime **how to perform comparisons** of `key` values. This is especially useful when using a custom type as a dictionary key.
+The `Dictionary` class has a [constructor](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.-ctor?view=net-9.0#system-collections-generic-dictionary-2-ctor(system-collections-generic-iequalitycomparer((-0)))) that allows you to pass it an [IEqualityComparer](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1?view=net-9.0), allowing you to tell the runtime **how to perform comparisons** of `key` values. This is especially useful when using a **custom type** as a dictionary key.
 
 In this case, we can pass a [StringComparer](https://learn.microsoft.com/en-us/dotnet/api/system.stringcomparer?view=net-9.0) that satisfies our current problem.
 
@@ -71,7 +71,7 @@ Our `dictionary` definition now looks like this:
 var dict = new Dictionary<string, int>(StringComparer.CurrentCultureIgnoreCase);
 ```
 
-Our program now prints 50 regardless of how we input James - JAMES, James, james, or JaMeS.
+Our program prints `50` regardless of how we input ***James*** - ***JAMES***, ***James***, ***james***, or ***JaMeS***.
 
 ### TLDR
 
