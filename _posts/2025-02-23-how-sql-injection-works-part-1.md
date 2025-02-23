@@ -126,13 +126,14 @@ app.MapPost("/Login", (SqliteConnection cn, ILogger<Program> logger, LoginReques
     // Check the returned number
     if (status == 1)
     {
-      	// We are logged in
+        // We are now logged in
         logger.LogInformation("User logged in successfully");
+        return Results.Ok();
     }
-    else
-    {
-        logger.LogError("Login Failed");
-    }
+
+    logger.LogError("Login Failed");
+    // Return a 401
+    return Results.Unauthorized();
 });
 
 app.Run();
