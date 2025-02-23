@@ -249,6 +249,6 @@ In the next post, we will look at h**ow to defend against this** on the .NET pla
 
 **SQL Injection is the ability for attackers to craft a payload in such a manner that insecure applications submit to the database engine a totally different query than was intended by the developers.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-23%20-%20SQL%20Injection).
 
 Happy hacking!
