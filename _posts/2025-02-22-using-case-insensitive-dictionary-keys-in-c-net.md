@@ -75,8 +75,8 @@ Our program now prints 50 regardless of how we input James - JAMES, James, james
 
 ### TLDR
 
-The dictionary class has an overload that allows you to pass an IEqualityComparer so that it knows how to match keys.
+**The `dictionary` class has an overload that allows you to pass an `IEqualityComparer` so that it knows how to match keys.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-22%20-%20Dictionary%20Case%20Insensitive).
 
 Happy hacking!
