@@ -80,9 +80,9 @@ cmd.CommandText = "SELECT 1 FROM USERS WHERE Username=@Username AND Password=@Pa
 var paramUsername = cmd.CreateParameter();
 // Set the data type
 paramUsername.SqliteType = SqliteType.Text;
-// Set the paramter name
+// Set the parameter name
 paramUsername.ParameterName = "@Username";
-// Set the paramter size
+// Set the parameter size
 paramUsername.Size = 100;
 // Set the parameter value
 paramUsername.Value = request.Username;
