@@ -91,6 +91,6 @@ cmd.Parameters.AddWithValue("@Password", request.Password).Size = 100;
 
 **`Parameters` can be used to mitigate SQL injection, by setting the values directly so that the database engine will correctly interpret the query command text.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-24%20-%20SQL%20Injection%20Part%202).
 
 Happy hacking!
