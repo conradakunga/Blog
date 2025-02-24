@@ -20,9 +20,9 @@ Instead of **concatenating strings** to build queries, we can make use of an [AD
 
 All [providers](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) have implementations of this object. `Parameters` essentially allow you to directly set values for the provider to construct queries correctly. The implementation of this is that every [command](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite.sqlitecommand?view=msdata-sqlite-9.0.0) has a [Parameters](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite.sqlitecommand.parameters?view=msdata-sqlite-9.0.0) collection to which you can add parameters by specifying their **names** and their **values**.
 
-Rather than build the query through string concatenation, you specify in the **command text** of the query the `parameters` that you will provide by **name**, prefixed with a `@` (or a `:`, or a `$` for [Sqlite](https://www.sqlite.org/)).
+Rather than build the query through **string concatenation**, you specify in the **command text** of the query the `parameters` that you will provide by **name**, prefixed with a `@` (or a `:`, or a `$` for [Sqlite](https://www.sqlite.org/)).
 
-``` SQL
+``` C#
 // Set the command query text
 cmd.CommandText = "SELECT 1 FROM USERS WHERE Username=@Username AND Password=@Password";
 // Add the parameters
@@ -34,11 +34,11 @@ If we now try to submit an attack payload, it fails.
 
 ![InjectionParameterFail](../images/2025/02/InjectionParameterFail.png)
 
-This is because the entirety of the payload is **substituted** for the parameter **value**. In other words, the entirety of the password payload, `FAKE' UNION ALL Select 1 --` is considered as the password. This is why it fails because that is not a valid password.
+This is because the entirety of the payload is **substituted** for the parameter **value**. In other words, the entirety of the password payload, `FAKE' UNION ALL Select 1 --` is considered the password. This is why it fails because that is not a valid password.
 
 Another benefit of using **parameters** is it avoids the problems you will get with string concatenation when the payload contains **characters that are considered special by the database engine**, such as **apostrophes**.
 
-A name like ***Ng'ang'a*** will trip up the database engine if you build the query using string concatenation, as it will consider the `username` to have **ended** at the `Ng`, thus the rest is **invalid SQL**.
+A name like ***Ng'ang'a*** will trip up the database engine if you build the query using string concatenation, as it will consider the `username` to have **ended** at the `Ng`. Thus, the rest is **invalid SQL**.
 
 We can visualize how the parameters are populated like this:
 
@@ -59,9 +59,9 @@ If we re-run the API and view the logs, we will see the following:
 
 ![InjectionViewParameters](../images/2025/02/InjectionViewParameters.png)
 
-Parameter also allow you to mitigate against another attack - excessively **large payloads**.
+Parameters also allow you to mitigate against another attack - excessively **large payloads**.
 
-For example in our database we have specified that the size of the `Username` and `Password` columns is **100** characters. We can therefore **truncte** any incoming payloads to that length with this knowledge. You do that by setting the `Size` property as follows:
+For example in our database we have specified that the size of the `Username` and `Password` columns is **100** characters. We can therefore **truncate** any incoming payloads to that length with this knowledge. You do that by setting the `Size` property as follows:
 
 ```c#
 cmd.Parameters.AddWithValue("@Username", request.Username).Size = 100;
