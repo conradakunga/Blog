@@ -16,11 +16,11 @@ The fact that the attacker can run any query means they can also execute queries
 
 To protect from this, we approach constructing queries differently.
 
-Instead of concatenating strings to build queries, we can make use of an [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) object - the [DBParameter](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbparameter?view=net-9.0).
+Instead of **concatenating strings** to build queries, we can make use of an [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) object - the [DBParameter](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbparameter?view=net-9.0).
 
 All [providers](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) have implementations of this object. `Parameters` essentially allow you to directly set values for the provider to construct queries correctly. The implementation of this is that every [command](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite.sqlitecommand?view=msdata-sqlite-9.0.0) has a [Parameters](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite.sqlitecommand.parameters?view=msdata-sqlite-9.0.0) collection to which you can add parameters by specifying their **names** and their **values**.
 
-Rather than build the query through string concatenation, you specify in the **command text** of the query the `parameters` that you will provide by **name**, prefixed with a `@` (,or a `:`, or a `$` for [Sqlite](https://www.sqlite.org/)).
+Rather than build the query through string concatenation, you specify in the **command text** of the query the `parameters` that you will provide by **name**, prefixed with a `@` (or a `:`, or a `$` for [Sqlite](https://www.sqlite.org/)).
 
 ``` SQL
 // Set the command query text
