@@ -59,9 +59,9 @@ If we re-run the API and view the logs, we will see the following:
 
 ![InjectionViewParameters](../images/2025/02/InjectionViewParameters.png)
 
-Parameters also allow you to mitigate against another attack - excessively **large payloads**.
+`Parameters` also allow you to mitigate against another attack - excessively **large payloads**.
 
-For example in our database we have specified that the size of the `Username` and `Password` columns is **100** characters. We can therefore **truncate** any incoming payloads to that length with this knowledge. You do that by setting the `Size` property as follows:
+For example, in our database we have specified that the size of the `Username` and `Password` columns is **100** characters. We can therefore **truncate** any incoming payloads to that length with this knowledge. You do that by setting the `Size` property as follows:
 
 ```c#
 cmd.Parameters.AddWithValue("@Username", request.Username).Size = 100;
@@ -76,13 +76,19 @@ cmd.CommandText = "SELECT 1 FROM USERS WHERE Username=@Username AND Password=@Pa
 // Add the parameters
 //
 
-// Username
+// Create the Username parameter
 var paramUsername = cmd.CreateParameter();
+// Set the data type
 paramUsername.SqliteType = SqliteType.Text;
+// Set the paramter name
 paramUsername.ParameterName = "@Username";
+// Set the paramter size
 paramUsername.Size = 100;
+// Set the parameter value
 paramUsername.Value = request.Username;
+// Add the parameter to the command object
 cmd.Parameters.Add(paramUsername);
+
 // Password
 cmd.Parameters.AddWithValue("@Password", request.Password).Size = 100;
 ```
