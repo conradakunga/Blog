@@ -8,6 +8,8 @@ categories:
     - SQL
 ---
 
+**This is Part 1 of a series on SQL injection.**
+
 You must be living under a very big rock, indeed, if you have not heard of **SQL injection**.
 
 But what is SQL injection?
@@ -245,7 +247,7 @@ Attackers have also addressed this. They build tools that send several carefully
 
 **This technique is just as effective against other database engines - [SQL Server,](https://www.microsoft.com/en-us/sql-server) [Oracle](https://www.oracle.com/database/), [PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), etc. It is just a matter of tweaking the input to accommodate each engine's peculiarities.**
 
-In the next post, we will look at **how to defend against this** on the .NET platform.
+In the [next post]({% post_url 2025-02-24-how-sql-injection-works-part-2 %}), we will look at **how to defend against this** on the .NET platform.
 
 ### TLDR
 

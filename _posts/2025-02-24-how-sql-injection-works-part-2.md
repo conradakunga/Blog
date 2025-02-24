@@ -68,7 +68,7 @@ cmd.Parameters.AddWithValue("@Username", request.Username).Size = 100;
 cmd.Parameters.AddWithValue("@Password", request.Password).Size = 100;
 ```
 
-You can also **explicity** create [SqliteParameter](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite.sqliteparameter?view=msdata-sqlite-9.0.0) objects and then add them to the `command` like this:
+You can also **explicitly** create [SqliteParameter](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite.sqliteparameter?view=msdata-sqlite-9.0.0) objects and then add them to the `command` like this:
 
 ```c#
 cmd.CommandText = "SELECT 1 FROM USERS WHERE Username=@Username AND Password=@Password";
@@ -87,5 +87,10 @@ cmd.Parameters.Add(paramUsername);
 cmd.Parameters.AddWithValue("@Password", request.Password).Size = 100;
 ```
 
+### TLDR
 
+**`Parameters` can be used to mitigate SQL injection, by setting the values directly so that the database engine will correctly interpret the query command text.**
 
+The code is in my GitHub.
+
+Happy hacking!
