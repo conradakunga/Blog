@@ -147,7 +147,7 @@ The logic here is as follows:
 
 **For powers of two, this computation returns all zeros**.
 
-Take `16` and 15:
+Take `16` and `15`:
 
 ```plaintext
 	10000
