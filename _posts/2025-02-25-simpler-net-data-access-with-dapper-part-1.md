@@ -19,8 +19,8 @@ In our last two posts, we have used raw [ADO.NET](https://learn.microsoft.com/en
 4. Set the command **text**
 5. Set the **parameters**, if any
 6. **Execute** the query
-7. If there are results, map them to .NET types
-8. Close the connection
+7. If there are results, **map them to .NET types**
+8. **Close** the connection
 
 There are a bunch of drawbacks
 
@@ -217,6 +217,6 @@ The same will apply to other database engines.
 
 **Dapper makes it very simple to interact with databases, avoiding the complexity of directly using ADO.NET.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-25%20-%20Dapper).
 
 Happy hacking!
