@@ -141,7 +141,7 @@ In addition, it has the following problems:
 
 You can solve this problem using an **enumeration**, an [Enum](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum).
 
-An enum is a set of **named constants**, backed by an underlying numeric type.
+An enum is a set of **named constants** backed by an underlying numeric type.
 
 We define one as follows:
 
@@ -157,7 +157,7 @@ public enum Condiments
 
 What happens here is that the compiler will generate numeric values for each specified value for you, starting at `0`.
 
-In other words, behind the scenes this takes place:
+In other words, behind the scenes, this takes place:
 
 ```c#
 public enum Condiments
@@ -237,7 +237,7 @@ var burger = new Burger
 Console.WriteLine(burger.Condiment);
 ```
 
-Much easier to read.
+Much easier to **read** and **maintain**.
 
 It also has the additional benefit that it prints the following:
 
@@ -247,7 +247,7 @@ TomatoSauce
 
 Returning to our problem - how do we specify **more than one condiment**?
 
-We can use some boolean logic - [bit flags](https://developer.mozilla.org/en-US/docs/Glossary/Bitwise_flags) to address this.
+We can use some boolean logic-[bit flags](https://developer.mozilla.org/en-US/docs/Glossary/Bitwise_flags) to address this.
 
 We can redefine our enum as follows (note the values - they are all powers of `2`)
 
@@ -266,10 +266,10 @@ You don't need to compute the values for yourself - you can achieve the same res
 ```c#
 public enum Condiments
 {
-	TomatoSauce = 1 << 0,
-	Mayonnaise = 1 << 1,
-	BarbequeSauce = 1 << 2,
-	Ketchup = 1 << 3,
+  TomatoSauce = 1 << 0,
+  Mayonnaise = 1 << 1,
+  BarbequeSauce = 1 << 2,
+  Ketchup = 1 << 3,
 }
 ```
 
@@ -292,11 +292,27 @@ If we print this, we get the following result:
 3
 ```
 
+What does `3` here mean?
+
+Remember the definition of our `enum`:
+
+```c#
+public enum Condiments
+{
+  TomatoSauce = 1,
+  Mayonnaise = 2,
+  BarbequeSauce = 4,
+  Ketchup = 8,
+}
+```
+
+There is only one way to get `3` - by **combining** (adding) `1` (**TomatoSauce**) and 2 (**Mayonnaise**)
+
 Isn't this the same problem we started with?
 
 Not quite.
 
-We can interrogate the `enum` to determine what its constituents are, using the [HasFlag](https://learn.microsoft.com/en-us/dotnet/api/system.enum.hasflag?view=net-9.0) method.
+We can interrogate the `enum` to determine what its constituents are using the [HasFlag](https://learn.microsoft.com/en-us/dotnet/api/system.enum.hasflag?view=net-9.0) method.
 
 ```c#
 if (burger.Condiment.HasFlag(Condiment.TomatoSauce))
@@ -331,11 +347,11 @@ This burger does not have ketchup
 
 We can also introduce some flexibility.
 
-***Ketchup*** and ***tomato sauce*** have **tomato** as constituents. Our ***barbecue sauce*** and ***mayonnaise*** have **egg**.
+***Ketchup*** and ***tomato sauce*** have **tomatoes** as constituents. Our ***barbecue sauce*** and ***mayonnaise*** have **egg**.
 
-We can allow customers to specify they want all the egg condiments or all the tomato condiments.
+We can allow customers to specify whether they want all the egg condiments or all the tomato condiments.
 
-We update our enum as follows:
+We update our `enum` as follows:
 
 ```c#
 public enum Condiments
@@ -358,7 +374,7 @@ var burger = new Burger
 };
 ```
 
-If we re-run the interrogation code we get the following result:
+If we re-run the interrogation code, we get the following result:
 
 ```plaintext
 This burger has tomato sauce
@@ -402,7 +418,7 @@ This burger has ketchup
 
 What about a customer who doesn't want any condiments?
 
-We can update our enum to capture this, by adding an entry with a value of 0.
+We can update our enum to capture this by adding an entry with a value of 0.
 
 ```c#
 public enum Condiments
@@ -470,8 +486,6 @@ A couple of additional things:
     	Ketchup = 1,
     }
     ```
-
-    
 
 3. You can directly assign **any integer value to a member expecting an `enum`**. However, it is trivial to validate the values before setting them.
 
