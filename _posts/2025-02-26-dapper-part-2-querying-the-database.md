@@ -356,7 +356,11 @@ app.MapGet("/ActiveSpyCount/", (SqlConnection cn, ILogger<Program> logger) =>
 });
 ```
 
-Here, `QuerySingle` is taking an int as the generic parameter
+Here, `QuerySingle` is taking an `int` as the generic parameter.
+
+The result is as follows:
+
+![ActiveCount](../images/2025/02/ActiveCount.png)
 
 ## Bonus
 
