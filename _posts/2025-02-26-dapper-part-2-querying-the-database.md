@@ -371,7 +371,7 @@ In our next post, we will look at how to execute queries in the database that do
 
 ### TLDR
 
-**Dapper can map types from database queries for you.**
+**Dapper can map complex types or primitive return types from database queries for you.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-26%20-%20Dapper%20Part%202).
 
