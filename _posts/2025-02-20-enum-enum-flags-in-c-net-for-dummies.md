@@ -349,7 +349,7 @@ We can also introduce some flexibility.
 
 ***Ketchup*** and ***tomato sauce*** have **tomatoes** as constituents. Our ***barbecue sauce*** and ***mayonnaise*** have **egg**.
 
-We can allow customers to specify whether they want all the egg condiments or all the tomato condiments.
+We can allow customers to specify whether they want **all the egg condiments** or **all the tomato condiments**.
 
 We update our `enum` as follows:
 
@@ -418,7 +418,7 @@ This burger has ketchup
 
 What about a customer who doesn't want any condiments?
 
-We can update our enum to capture this by adding an entry with a value of 0.
+We can update our `enum` to capture this by adding an entry with a value `0`.
 
 ```c#
 public enum Condiments
