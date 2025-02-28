@@ -224,6 +224,6 @@ If you run this, you get the following:
 
 In our next post, we will look at how to pass [table-valued parameters](https://learn.microsoft.com/en-us/sql/relational-databases/tables/use-table-valued-parameters-database-engine?view=sql-server-ver16) to the database engine using `Dapper`.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-28%20-%20Dapper%20Part%204).
 
 Happy hacking!
