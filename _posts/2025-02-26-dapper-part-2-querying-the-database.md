@@ -14,6 +14,7 @@ This is Part 2 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Simpler .NET Data Access With Dapper - Part 1]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %})
 * **Dapper Part 2 - Querying The Database (This post)**
 * [Dapper Part 3 - Executing Queries]({% post_url 2025-02-27-dapper-part-3-executing-queries %})
+* [Dapper Part 4 - Passing Data To And From The Database]({% post_url 2025-02-28-dapper-part-4-passing-data-to-and-from-the-database %})
 
 In our [last post]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %}), we saw an introduction to how [Dapper](https://github.com/DapperLib/Dapper) makes life simpler for data access.
 

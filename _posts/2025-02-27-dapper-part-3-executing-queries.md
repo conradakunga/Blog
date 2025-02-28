@@ -14,6 +14,7 @@ This is Part 3 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Simpler .NET Data Access With Dapper - Part 1]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %})
 * [Dapper Part 2 - Querying The Database]({% post_url 2025-02-26-dapper-part-2-querying-the-database %})
 * **Dapper Part 3 - Executing Queries (This post)**
+* [Dapper Part 4 - Passing Data To And From The Database]({% post_url 2025-02-28-dapper-part-4-passing-data-to-and-from-the-database %})
 
 In our [last post]({% post_url 2025-02-26-dapper-part-2-querying-the-database %}), we looked at how to use [Dapper](https://github.com/DapperLib/Dapper) to query a database and return results, either a **collection** of types, a **single type**, or a **single value**.
 
