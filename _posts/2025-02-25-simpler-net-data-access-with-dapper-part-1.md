@@ -13,6 +13,7 @@ This is Part 1 of a series on using `Dapper` to simplify data access with `ADO.N
 
 * Simpler .NET Data Access With Dapper - Part 1 (This post)
 * [Dapper Part 2 - Querying The Database]({% post_url 2025-02-26-dapper-part-2-querying-the-database %})
+* [Dapper Part 3 - Executing Queries]({% post_url 2025-02-27-dapper-part-3-executing-queries %})
 
 In our last two posts, we have used raw [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) for data access. You will realize that there is quite a bit of ceremony involved whenever you need to execute a query.
 

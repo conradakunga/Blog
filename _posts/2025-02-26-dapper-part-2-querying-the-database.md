@@ -13,6 +13,7 @@ This is Part 2 of a series on using `Dapper` to simplify data access with `ADO.N
 
 * [Simpler .NET Data Access With Dapper - Part 1]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %})
 * **Dapper Part 2 - Querying The Database (This post)**
+* [Dapper Part 3 - Executing Queries]({% post_url 2025-02-27-dapper-part-3-executing-queries %})
 
 In our [last post]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %}), we saw an introduction to how [Dapper](https://github.com/DapperLib/Dapper) makes life simpler for data access.
 
@@ -356,16 +357,25 @@ app.MapGet("/ActiveSpyCount/", (SqlConnection cn, ILogger<Program> logger) =>
 });
 ```
 
-Here, `QuerySingle` is taking an `int` as the generic parameter.
+Here, `QuerySingle` takes an `int` as the generic parameter.
 
 The result is as follows:
 
 ![ActiveCount](../images/2025/02/ActiveCount.png)
 
+Here, we are certain that a result will return - `0` or anything else.
+
+However, there are scenarios where your query will not return anything. In this case, an exception will be thrown.
+
+If you are unsure of getting a result, use `QuerySingleOrDefault<T>` instead. If nothing is returned, the default value of the type `<T>` will be returned instead - `0` for numerics, DateTime.MinValue for dates, `false` for `booleans,` and `null` for everything else, including your own custom types.
+
+If there are multiple results and you only want one, use `QueryFirst<T>` or `QueryFirstOrDefault<T>`.
+
 ## Bonus
 
 1. Your types **do not need to have setters** - `Dapper` will use **reflection** and correctly set the properties of types that have read-only public properties. This, however, is [not the case if you are using VB.NET]({% post_url 2025-01-31-beware-mapping-classes-with-readonly-properties-using-dapper-in-vb-c-f %}). **Mapping will fail if your type has no setters**.
 2. If you use `Query<T>` and omit `AsList()`, you will get back an `IEnumerable<T>`, which you can use for intermediate lazy processing.
+3. All the methods mentioned in this post - `Query`, `QuerySingle`, `QuerySingleOrDefault,` `QueryFirst`, `QueryFirstOrDefault` have `async` equivalents that you can execute [asynchronously](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/).
 
 In our next post, we will look at how to execute queries in the database that do not return results.
 
