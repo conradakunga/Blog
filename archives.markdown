@@ -16,7 +16,7 @@ permalink: /archives/
 
 {% for month in postsByMonth %}
 {% assign monthCount = month.items | size %}
-<h3>{{ month.name }} Posts : <i>{{monthCount}}</i></h3>
+<h3>{{ month.name }} {{ year.name }} - <i>{{monthCount}}  Posts</i></h3>
  {% assign postsByWeek = month.items | group_by_exp:"post", "post.date | date: '%V'"  %}
 
   {% for week in postsByWeek %}
