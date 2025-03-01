@@ -177,7 +177,7 @@ AS
         DECLARE @Count AS INT;
 
         SELECT
-            @Count = SUM(1)
+            @Count = Count(1)
         FROM
             dbo.Spies
         WHERE
