@@ -15,6 +15,7 @@ This is Part 1 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 2 - Querying The Database]({% post_url 2025-02-26-dapper-part-2-querying-the-database %})
 * [Dapper Part 3 - Executing Queries]({% post_url 2025-02-27-dapper-part-3-executing-queries %})
 * [Dapper Part 4 - Passing Data To And From The Database]({% post_url 2025-02-28-dapper-part-4-passing-data-to-and-from-the-database %})
+* [Dapper Part 5 - Passing Data In Bulk To The Database]({% post_url 2025-03-01-dapper-part-5-passing-data-in-bulk-to-the-database %})
 
 In our last two posts, we have used raw [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) for data access. You will realize that there is quite a bit of ceremony involved whenever you need to execute a query.
 
