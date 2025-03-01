@@ -196,10 +196,11 @@ app.MapPost("/Login", (SqliteConnection cn, ILogger<Program> logger, LoginReques
 A couple of things of interest:
 
 1. The code is much **less**.
-2. When it comes to `parameters`, you can either specify exhaustively each `parameter` setting - **name**, **value**, **data type**, **[direction](https://learn.microsoft.com/en-us/dotnet/api/system.data.parameterdirection?view=net-9.0)** (input or output parameter), and **size**, or you can just specify the **minimum** required settings - the **name** and the **value**. **Most of the time, the latter is sufficient**.
-3. We are using the generic `QuerySingleOrDefault<T>` rather than `QuerySingle<T>,` which we used in the initialization code. The difference is that `QuerySingle` will **throw an exception if you are expecting a result and none returns** (as is the case with a failed login) but `QuerySingleOrDefault` will return the **default of the expected type**  - `0` for `int`.
-4. `Parameter` names do not need a prefix like `@`, $ or `:`
-5. We don't need to manage the **opening** and **closing** of **connections** for ourselves.
+2. You don't need to do a lot of the **routime** work of opening the connection yourself, or dealing with the [DBCommand](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbcommand?view=net-9.0) class; in the case of [Sqlite](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite?view=msdata-sqlite-9.0.0), the [SqliteCommand](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite.sqlitecommand?view=msdata-sqlite-8.0.0)
+3. When it comes to `parameters`, you can either specify exhaustively each `parameter` setting - **name**, **value**, **data type**, **[direction](https://learn.microsoft.com/en-us/dotnet/api/system.data.parameterdirection?view=net-9.0)** (input or output parameter), and **size**, or you can just specify the **minimum** required settings - the **name** and the **value**. **Most of the time, the latter is sufficient**.
+4. We are using the generic `QuerySingleOrDefault<T>` rather than `QuerySingle<T>,` which we used in the initialization code. The difference is that `QuerySingle` will **throw an exception if you are expecting a result and none returns** (as is the case with a failed login) but `QuerySingleOrDefault` will return the **default of the expected type**  - `0` for `int`.
+5. `Parameter` names do not need a prefix like `@`, $ or `:`
+6. We don't need to manage the **opening** and **closing** of **connections** for ourselves.
 
 Currently, we are using the Sqlite [SqliteConnection](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite.sqliteconnection?view=msdata-sqlite-9.0.0) object to interface with the database. If, in the future, we needed to upgrade to SQLServer, we would do the following:
 

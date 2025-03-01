@@ -22,7 +22,7 @@ In this post, we will examine how to execute database queries that do not return
 
 ## 1. Ad Hoc SQL
 
-Occasionally, you might need to execute some queries against your database, for example, ad-hoc SQL, to delete some records.
+Occasionally, you might need to execute some queries against your database. For example, some ad-hoc SQL to delete some records.
 
 You do this using the `Execute` method or the `async` equivalent, `ExecuteAsync`.
 
