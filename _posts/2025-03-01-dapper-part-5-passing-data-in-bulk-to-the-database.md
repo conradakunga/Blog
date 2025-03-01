@@ -374,6 +374,6 @@ There are several ways to tackle this problem, one of which is **Bulk Inserting*
 
 **Table-valued parameters allow you to submit data in bulk to your database engine.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-01%20-%20Dapper%20Part%205).
 
 Happy hacking!
