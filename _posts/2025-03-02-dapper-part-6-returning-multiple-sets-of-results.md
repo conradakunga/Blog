@@ -123,7 +123,7 @@ app.MapGet("/Info/v2", async (SqlConnection cn) =>
 
 **`Dapper` allows you to submit multiple queries and retrieve the results from the aggregate returned results.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-02%20-%20Dapper%20Part%206).
 
 Happy hacking!
 
