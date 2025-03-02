@@ -16,12 +16,13 @@ This is Part 5 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 3 - Executing Queries]({% post_url 2025-02-27-dapper-part-3-executing-queries %})
 * [Dapper Part 4 - Passing Data To And From The Database]({% post_url 2025-02-28-dapper-part-4-passing-data-to-and-from-the-database %})
 * **Dapper Part 5 - Passing Data In Bulk To The Database (This Post)**
+* [Dapper Part 6 - Returning Multiple Sets Of Results]({% post_url 2025-03-02-dapper-part-6-returning-multiple-sets-of-results %})
 
 In our [last post]({% post_url 2025-02-28-dapper-part-4-passing-data-to-and-from-the-database %}), we looked at how to pass data to and from the database using **input parameters**, **output parameters,** and **calling functions**.
 
 Today, we will tackle the problem of **how to pass data to the database in bulk**.
 
-We want to add functionalilty to add a `Spy`.
+We want to add functionality to add a `Spy`.
 
 This is the definition of the type:
 
@@ -373,7 +374,7 @@ We can see our new rows have been inserted.
 
 There are several ways to tackle this problem, one of which is **Bulk Inserting**. Depending on your circumstances and data, this might be a better solution. I will write a post on that later this month.
 
-## TLDR
+### TLDR
 
 **Table-valued parameters allow you to submit data in bulk to your database engine.**
 
