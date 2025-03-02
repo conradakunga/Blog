@@ -40,11 +40,12 @@ public sealed class Spy
 We also have several applications interfacing with the *Spies* database, and we want to harmonize the logic. So, we are going to use a stored procedure for this.
 
 ```sql
-CREATE OR ALTER PROC dbo.[Spies.Create]
+CREATE   PROC dbo.[Spies.Create]
     @Name        NVARCHAR(100),
     @DateOfBirth DATE,
     @Height      DECIMAL(3, 2),
-    @Active      BIT
+    @Active      BIT,
+    @SpyID       INT OUTPUT
 AS
     BEGIN
         INSERT INTO dbo.Spies
@@ -58,6 +59,8 @@ AS
             (
                 @Name, @DateOfBirth, @Height, @Active
             );
+
+        SET @SpyID = scope_identity()
     END;
 ```
 
@@ -86,7 +89,7 @@ app.MapPost("/Spy/", async (SqlConnection cn, Spy spy) =>
 
 This example also demonstrates one of the **practical uses of an output parameter** - to capture the newly inserted primary key - `SpyID`.
 
-This endpoint will create a `Spy` and then return an [HTTP 201](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201). with the newly created Spy in the response.
+This endpoint will create a `Spy` and then return an [HTTP 201](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201). with the newly created `Spy` in the response.
 
 Finally, we have an endpoint to view a `Spy`.
 
@@ -115,14 +118,14 @@ app.MapGet("/Spy/{id:int}", async (SqlConnection cn, int id) =>
 });
 ```
 
-Next, we submit a test payload to our endpoint as a POST request.
+Next, we submit a test payload to our endpoint as a [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) request.
 
 ```json
 {
-	"name": "Evelyn Salt",
-	"dateOfBirth": "1980-01-01T00:00:00",
-	"height": 5.90,
-	"active": true
+  "name": "Evelyn Salt",
+  "dateOfBirth": "1980-01-01T00:00:00",
+  "height": 5.90,
+  "active": true
 }
 ```
 
@@ -162,7 +165,7 @@ app.MapGet("/Seed", (SqlConnection cn) =>
     faker.RuleFor(x => x.DateOfBirth, y => y.Date.Past(50));
     // Active should always be true
     faker.RuleFor(x => x.Active, true);
-    // Height should be between 5 feet and 6'3
+    // Height should be between 5 feet and 6'2
     faker.RuleFor(x => x.Height, y => y.Random.Decimal(5.0M, 6.2M));
 
     // Generate 10 spies and print to screen
@@ -318,14 +321,13 @@ app.MapGet("/Seed/v2", async (SqlConnection cn) =>
     faker.RuleFor(x => x.DateOfBirth, y => y.Date.Past(50));
     // Active should always be true
     faker.RuleFor(x => x.Active, true);
-    // Height should be between 5 feet and 6'3
+    // Height should be between 5 feet and 6'2
     faker.RuleFor(x => x.Height, y => y.Random.Decimal(5.0M, 6.2M));
 
     // Generate our spies
     var spies = faker.Generate(100);
 
     // Create a datatable
-
     var dt = new DataTable();
 
     // Add columns
@@ -336,7 +338,7 @@ app.MapGet("/Seed/v2", async (SqlConnection cn) =>
 
     // Loop through the collection, create a datarow,
     // populate it with data and add it to he rows
-    // collection of the datarow
+    // collection of the datatable
 
     foreach (var spy in spies)
     {
@@ -350,6 +352,7 @@ app.MapGet("/Seed/v2", async (SqlConnection cn) =>
 
     // Populate our parameters
     var param = new DynamicParameters();
+  	// Call dapper method that converts a datatable to a table valued parameter
     param.Add("Spies", dt.AsTableValuedParameter());
     
     // Execute the query
