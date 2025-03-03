@@ -17,6 +17,7 @@ This is Part 3 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 4 - Passing Data To And From The Database]({% post_url 2025-02-28-dapper-part-4-passing-data-to-and-from-the-database %})
 * [Dapper Part 5 - Passing Data In Bulk To The Database]({% post_url 2025-03-01-dapper-part-5-passing-data-in-bulk-to-the-database %})
 * [Dapper Part 6 - Returning Multiple Sets Of Results]({% post_url 2025-03-02-dapper-part-6-returning-multiple-sets-of-results %})
+* [Dapper Part 7 - Adding DateOnly & TimeOnly Support]({% post_url 2025-03-03-dapper-part-7-adding-dateonly-timeonly-support %})
 
 In our [last post]({% post_url 2025-02-26-dapper-part-2-querying-the-database %}), we looked at how to use [Dapper](https://github.com/DapperLib/Dapper) to query a database and return results, either a **collection** of types, a **single type**, or a **single value**.
 
