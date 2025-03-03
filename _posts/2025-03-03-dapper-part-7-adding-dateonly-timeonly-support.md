@@ -231,7 +231,7 @@ app.MapGet("/Info/v4", async (SqlConnection cn) =>
 {
     const string query = """
                          SELECT
-                         'CurrentDate' Name,
+                         'CurrentTime' Name,
                          GETDATE()     Time;
                          """;
     var result = await cn.QuerySingleAsync<V4.DateInfo>(query);
@@ -270,7 +270,7 @@ If we run our endpoint, we will see the following:
 
 ```json
 {
-	"name": "CurrentDate",
+	"name": "CurrentTime",
 	"time": "21:48:41.9730000"
 }
 ```
