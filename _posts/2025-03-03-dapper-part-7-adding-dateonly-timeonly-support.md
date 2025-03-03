@@ -282,6 +282,6 @@ In our next post, we will look at how to configure `Dapper` globally.
 
 **Dapper allows you to write your own *type handlers* to handle conversions to and from native .NET types.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-03%20-%20Dapper%20Part%207).
 
 Happy hacking!
