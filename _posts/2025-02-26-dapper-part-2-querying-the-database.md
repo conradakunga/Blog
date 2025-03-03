@@ -381,7 +381,7 @@ If there are multiple results and you only want one, use `QueryFirst<T>` or `Que
 2. If you use `Query<T>` and omit `AsList()`, you will get back an `IEnumerable<T>`, which you can use for intermediate lazy processing.
 3. All the methods mentioned in this post - `Query`, `QuerySingle`, `QuerySingleOrDefault,` `QueryFirst`, `QueryFirstOrDefault` have `async` equivalents that you can execute [asynchronously](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/).
 
-In our next post, we will look at how to execute queries in the database that do not return results.
+In our [next post]({% post_url 2025-02-27-dapper-part-3-executing-queries %}), we will look at how to execute queries in the database that do not return results.
 
 ### TLDR
 

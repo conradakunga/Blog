@@ -222,6 +222,8 @@ The same will apply to other database engines.
 | MySQL      | [MySql.Data](https://www.nuget.org/packages/mysql.data/)     | `MySqlConnection`  |
 | Oracle     | [Oracle.ManagedDataAccess](https://www.nuget.org/packages/oracle.manageddataaccess) | `OracleConnection` |
 
+In our [next post]({% post_url 2025-02-26-dapper-part-2-querying-the-database %}), we will look at how to fetch data from the database.
+
 ### TLDR
 
 **Dapper makes it very simple to interact with databases, avoiding the complexity of directly using ADO.NET.**

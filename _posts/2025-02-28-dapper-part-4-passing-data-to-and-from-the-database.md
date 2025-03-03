@@ -225,7 +225,7 @@ If you run this, you get the following:
 
 **You can pass data between the SQL server and the client using *input parameters*, *output parameters*, and *functions*.**
 
-In our next post, we will look at how to pass [table-valued parameters](https://learn.microsoft.com/en-us/sql/relational-databases/tables/use-table-valued-parameters-database-engine?view=sql-server-ver16) to the database engine using `Dapper`.
+In our [next post]({% post_url 2025-03-01-dapper-part-5-passing-data-in-bulk-to-the-database %}), we will look at how to pass [table-valued parameters](https://learn.microsoft.com/en-us/sql/relational-databases/tables/use-table-valued-parameters-database-engine?view=sql-server-ver16) to the database engine using `Dapper`.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-02-28%20-%20Dapper%20Part%204).
 

@@ -120,6 +120,8 @@ app.MapGet("/Info/v2", async (SqlConnection cn) =>
 
 **The order in which you capture the results must match the order of the queries.**
 
+In our [next post]({% post_url 2025-03-03-dapper-part-7-adding-dateonly-timeonly-support %}), we will look at how to add custom mapping to types.
+
 ### TLDR
 
 **`Dapper` allows you to submit multiple queries and retrieve the results from the aggregate returned results.**

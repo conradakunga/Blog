@@ -127,7 +127,7 @@ app.MapGet("/Admin", async (SqlConnection cn, ILogger<Program> logger) =>
 });
 ```
 
-In our next post, we will examine the **various methods for passing data between a database and a client**.
+In our [next post]({% post_url 2025-02-28-dapper-part-4-passing-data-to-and-from-the-database %}), we will examine the **various methods for passing data between a database and a client**.
 
 ### TLDR
 
