@@ -63,8 +63,8 @@ This will return the following:
 
 ```json
 {
-	"name": "CurrentDate",
-	"dateAndTime": "2025-03-03T21:20:04.527"
+  "name": "CurrentDate",
+  "dateAndTime": "2025-03-03T21:20:04.527"
 }
 ```
 
@@ -148,9 +148,9 @@ If we run this:
 
 ```json
 {
-	"name": "CurrentDate",
-	"dateAndTime": "2025-03-03T21:35:11.947",
-	"date": "2025-03-03"
+  "name": "CurrentDate",
+  "dateAndTime": "2025-03-03T21:35:11.947",
+  "date": "2025-03-03"
 }
 ```
 
@@ -206,8 +206,8 @@ This will return the following:
 
 ```json
 {
-	"name": "CurrentDate",
-	"date": "2025-03-03"
+  "name": "CurrentDate",
+  "date": "2025-03-03"
 }
 ```
 
@@ -247,6 +247,7 @@ public class SqlTimeOnlyTypeHandler : SqlMapper.TypeHandler<TimeOnly>
 {
 	public override void SetValue(IDbDataParameter parameter, TimeOnly time) => parameter.Value = time.ToString();
 	public override TimeOnly Parse(object value) => TimeOnly.FromTimeSpan(((DateTime)value).TimeOfDay);
+}
 
 ```
 
@@ -270,8 +271,8 @@ If we run our endpoint, we will see the following:
 
 ```json
 {
-	"name": "CurrentTime",
-	"time": "21:48:41.9730000"
+  "name": "CurrentTime",
+  "time": "21:48:41.9730000"
 }
 ```
 
