@@ -137,6 +137,6 @@ Now, all your queries will be processed using this timeout.
 
 **`Dapper` allows you to set a timeout at the query level or globally that controls how long to wait before throwing a timeout exception.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-04%20-%20Dapper%20Part%208).
 
 Happy hacking!
