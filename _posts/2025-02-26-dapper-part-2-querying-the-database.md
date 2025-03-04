@@ -18,6 +18,7 @@ This is Part 2 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 5 - Passing Data In Bulk To The Database]({% post_url 2025-03-01-dapper-part-5-passing-data-in-bulk-to-the-database %})
 * [Dapper Part 6 - Returning Multiple Sets Of Results]({% post_url 2025-03-02-dapper-part-6-returning-multiple-sets-of-results %})
 * [Dapper Part 7 - Adding DateOnly & TimeOnly Support]({% post_url 2025-03-03-dapper-part-7-adding-dateonly-timeonly-support %})
+* [Dapper Part 8 - Controlling Database Timeouts]({% post_url 2025-03-04-dapper-part-8-controlling-database-timeouts %})
 
 In our [last post]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %}), we saw an introduction to how [Dapper](https://github.com/DapperLib/Dapper) makes life simpler for data access.
 
