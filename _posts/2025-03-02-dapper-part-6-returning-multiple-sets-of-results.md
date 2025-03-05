@@ -19,6 +19,7 @@ This is Part 6 of a series on using `Dapper` to simplify data access with `ADO.N
 * **Dapper Part 6 - Returning Multiple Sets Of Results (This Post)**
 * [Dapper Part 7 - Adding DateOnly & TimeOnly Support]({% post_url 2025-03-03-dapper-part-7-adding-dateonly-timeonly-support %})
 * [Dapper Part 8 - Controlling Database Timeouts]({% post_url 2025-03-04-dapper-part-8-controlling-database-timeouts %})
+* [Dapper Part 9 - Using Dynamic Types]({% post_url 2025-03-05-dapper-part-9-using-dynamic-types %})
 
 In our last post, we looked at how to pass data in bulk to the database using **table-valued functions**.
 

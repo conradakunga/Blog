@@ -18,6 +18,7 @@ This is Part 8 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 6 - Returning Multiple Sets Of Results]({% post_url 2025-03-02-dapper-part-6-returning-multiple-sets-of-results %})
 * [Dapper Part 7 - Adding DateOnly & TimeOnly Support]({% post_url 2025-03-03-dapper-part-7-adding-dateonly-timeonly-support%})
 * **Dapper Part 8 - Controlling Database Timeouts (This post)**
+* [Dapper Part 9 - Using Dynamic Types]({% post_url 2025-03-05-dapper-part-9-using-dynamic-types %})
 
 In our [last post]({% post_url 2025-03-03-dapper-part-7-adding-dateonly-timeonly-support %}), we looked at how to add support for DateOnly and TimeOnly types to Dapper.
 
