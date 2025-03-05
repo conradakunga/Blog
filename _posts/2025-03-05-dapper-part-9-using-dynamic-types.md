@@ -148,6 +148,6 @@ This returns the following:
 
 ***Dapper* can also work in situations where you need dynamic typing.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-05%20-%20Dapper%20Part%209).
 
 Happy hacking!
