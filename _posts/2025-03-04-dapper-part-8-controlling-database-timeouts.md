@@ -134,6 +134,8 @@ var app = builder.Build()
 
 Now, all your queries will be processed using this timeout.
 
+In our [next post,]({% post_url 2025-03-05-dapper-part-9-using-dynamic-types %}) we will look at how to use **dynamic types** with `Dapper`.
+
 ### TLDR
 
 **`Dapper` allows you to set a timeout at the query level or globally that controls how long to wait before throwing a timeout exception.**
