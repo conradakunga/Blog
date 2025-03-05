@@ -144,7 +144,7 @@ This returns the following:
 
 ![DynamicCollections](../images/2025/03/DynamicCollections.png)
 
-### T**LDR**
+### **TLDR**
 
 ***Dapper* can also work in situations where you need dynamic typing.**
 
