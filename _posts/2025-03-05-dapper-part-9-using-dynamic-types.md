@@ -109,7 +109,7 @@ app.MapGet("/Info/Interact/{spyID:int}", async (SqlConnection cn, int spyID) =>
     // Create an anonymous object
     var spy = new
     {
-        result.ID,
+        result.SpyID,
         result.Name,
         result.DateOfBirth,
         // This property does not exist
