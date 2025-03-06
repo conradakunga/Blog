@@ -20,6 +20,7 @@ This is Part 7 of a series on using `Dapper` to simplify data access with `ADO.N
 * **Dapper Part 7 - Adding DateOnly & TimeOnly Support (This Post)**
 * [Dapper Part 8 - Controlling Database Timeouts]({% post_url 2025-03-04-dapper-part-8-controlling-database-timeouts %})
 * [Dapper Part 9 - Using Dynamic Types]({% post_url 2025-03-05-dapper-part-9-using-dynamic-types %})
+* [Dapper Part 10 - Handling Cancellations]({% post_url 2025-03-06-dapper-part-10-handling-cancellations %})
 
 In our [last post]({% post_url 2025-03-02-dapper-part-6-returning-multiple-sets-of-results %}), we looked at how to **send a batch of SQL statements and retrieve their results in a batch**.
 
