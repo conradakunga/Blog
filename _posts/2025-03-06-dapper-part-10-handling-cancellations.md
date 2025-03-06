@@ -87,6 +87,6 @@ But having said that, it is important to think about **what** is being canceled 
 
 **We can pass a `CancellationToken` to `Dapper` to propagate cancellations from client requests to the database.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-06%20-%20Dapper%20Part%2010).
 
 Happy hacking!
