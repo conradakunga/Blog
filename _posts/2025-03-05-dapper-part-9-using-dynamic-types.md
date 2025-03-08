@@ -22,6 +22,7 @@ This is Part 9 of a series on using `Dapper` to simplify data access with `ADO.N
 * **Dapper Part 9 - Using Dynamic Types (This Post)**
 * [Dapper Part 10 - Handling Cancellations]({% post_url 2025-03-06-dapper-part-10-handling-cancellations %})
 * [Dapper Part 11 - Using Inheritance]({% post_url 2025-03-07-dapper-part-11-using-inheritance %})
+* [Dapper Part 12 - Alternative Bulk Insert Technique]({% post_url 2025-03-08-dapper-part-12-alternative-bulk-insert-technique %})
 
 In our [last post]({% post_url 2025-03-04-dapper-part-8-controlling-database-timeouts %}), we looked at controlling **database timeouts** with `Dapper`.
 

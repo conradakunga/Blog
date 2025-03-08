@@ -22,6 +22,7 @@ This is Part 11 of a series on using `Dapper` to simplify data access with `ADO.
 * [Dapper Part 9 - Using Dynamic Types]({% post_url 2025-03-05-dapper-part-9-using-dynamic-types %})
 * [Dapper Part 10 - Handling Cancellations]({% post_url 2025-03-06-dapper-part-10-handling-cancellations %})
 * **Dapper Part 11 - Using Inheritance (This Post)**
+* [Dapper Part 12 - Alternative Bulk Insert Technique]({% post_url 2025-03-08-dapper-part-12-alternative-bulk-insert-technique %})
 
 In our [last post]({% post_url 2025-03-06-dapper-part-10-handling-cancellations %}), we looked at using [cancellation tokens](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-9.0) to cancel queries.
 
