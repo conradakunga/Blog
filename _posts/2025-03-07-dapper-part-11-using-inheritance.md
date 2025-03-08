@@ -63,7 +63,7 @@ public class FieldAgent : Agent
 }
 ```
 
-What if we were to store these in a database table? The schema would look like this:
+What if we were to store these in a **database table**? The schema would look like this:
 
 | Name               | Type            |
 | ------------------ | --------------- |
@@ -210,6 +210,6 @@ And our results will be as follows:
 
 **`Dapper` allows you to retrieve data stored in a hierarchical tabble in the table per concrete class pattern.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-07%20-%20Dapper%20Part%2011).
 
 Happy hacking!
