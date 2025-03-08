@@ -117,6 +117,6 @@ We can verify this by checking the table.
 
 **Rather than writing your own loop, you can provide a collection of entities for entry, and `Dapper` will execute the relevant queries for each element.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-08%20-%20Dapper%20Part%2012).
 
 Happy hacking!
