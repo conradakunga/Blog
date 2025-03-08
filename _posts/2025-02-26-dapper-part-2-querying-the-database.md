@@ -21,6 +21,7 @@ This is Part 2 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 8 - Controlling Database Timeouts]({% post_url 2025-03-04-dapper-part-8-controlling-database-timeouts %})
 * [Dapper Part 9 - Using Dynamic Types]({% post_url 2025-03-05-dapper-part-9-using-dynamic-types %})
 * [Dapper Part 10 - Handling Cancellations]({% post_url 2025-03-06-dapper-part-10-handling-cancellations %})
+* [Dapper Part 11 - Using Inheritance]({% post_url 2025-03-07-dapper-part-11-using-inheritance %})
 
 In our [last post]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %}), we saw an introduction to how [Dapper](https://github.com/DapperLib/Dapper) makes life simpler for data access.
 

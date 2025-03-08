@@ -21,6 +21,7 @@ This is Part 10 of a series on using `Dapper` to simplify data access with `ADO.
 * [Dapper Part 8 - Controlling Database Timeouts]({% post_url 2025-03-04-dapper-part-8-controlling-database-timeouts %})
 * [Dapper Part 9 - Using Dynamic Types]({% post_url 2025-03-05-dapper-part-9-using-dynamic-types %})
 * **Dapper Part 10 - Handling Cancellations (This Post)**
+* [Dapper Part 11 - Using Inheritance]({% post_url 2025-03-07-dapper-part-11-using-inheritance %})
 
 In our last post, we looked at how to use `Dapper` to manage **dynamic types** in scenarios where we cannot or don't want to use **strong types.**
 
@@ -82,6 +83,8 @@ This time, **we get an explicit exception from a cancellation**.
 In this manner, **we avoid wasting resources executing a query the client has canceled**.
 
 But having said that, it is important to think about **what** is being canceled and the **impact**. Our query is a `SELECT` query, so cancellation will have no impact. But what if it was a complex **insert** query with multiple steps? What would canceling before completion mean to the state of the system? **Whether to allow canceling at all and when to do so is subjective to the circumstances of the problem domain**.
+
+Cancellation is not unique to Dapper - the underlying ADO.NET providers are the ones that expose the cancellation ability.
 
 ### TLDR
 
