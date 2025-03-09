@@ -43,6 +43,8 @@ docker.elastic.co/elasticsearch/elasticsearch:8.17.2 - elasticsearch: 15.2MB (vi
 
 If you don't use `ripgrep`, standard [grep](https://en.wikipedia.org/wiki/Grep) will work just as well.
 
+We can see here that my containers are using version `8.17.2`.
+
 I can then check if there is a later version of the [elastic images](https://hub.docker.com/_/elasticsearch). This I have covered in a [previous post]({% post_url 2025-02-18-getting-a-list-of-available-docker-image-tags-from-the-command-line %}).
 
 The command returns the following as of today (9 March 2025)
