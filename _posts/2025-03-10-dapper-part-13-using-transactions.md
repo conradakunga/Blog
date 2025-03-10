@@ -180,6 +180,6 @@ Here we can see that much as the queries themselves **should have executed succe
 
 **`Dapper`, through the underling `DbConnection`, allows us to use database transactions in our logic.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-10%20-%20Dapper%20Part%2013).
 
 Happy hacking!
