@@ -23,6 +23,7 @@ This is Part 10 of a series on using `Dapper` to simplify data access with `ADO.
 * **Dapper Part 10 - Handling Cancellations (This Post)**
 * [Dapper Part 11 - Using Inheritance]({% post_url 2025-03-07-dapper-part-11-using-inheritance %})
 * [Dapper Part 12 - Alternative Bulk Insert Technique]({% post_url 2025-03-08-dapper-part-12-alternative-bulk-insert-technique %})
+* [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
 
 In our last post, we looked at how to use `Dapper` to manage **dynamic types** in scenarios where we cannot or don't want to use **strong types.**
 

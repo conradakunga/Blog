@@ -23,6 +23,7 @@ This is Part 12 of a series on using `Dapper` to simplify data access with `ADO.
 * [Dapper Part 10 - Handling Cancellations]({% post_url 2025-03-06-dapper-part-10-handling-cancellations %})
 * [Dapper Part 11 - Using Inheritance]({% post_url 2025-03-07-dapper-part-11-using-inheritance %})
 * **Dapper Part 12 - Alternative Bulk Insert Technique (This Post)**
+* [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
 
 In a [previous post]({% post_url 2025-03-01-dapper-part-5-passing-data-in-bulk-to-the-database %}), we discussed inserting multiple entities in a **loop**.
 

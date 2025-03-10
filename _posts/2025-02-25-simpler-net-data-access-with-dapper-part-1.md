@@ -23,6 +23,7 @@ This is Part 1 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 10 - Handling Cancellations]({% post_url 2025-03-06-dapper-part-10-handling-cancellations %})
 * [Dapper Part 11 - Using Inheritance]({% post_url 2025-03-07-dapper-part-11-using-inheritance %})
 * [Dapper Part 12 - Alternative Bulk Insert Technique]({% post_url 2025-03-08-dapper-part-12-alternative-bulk-insert-technique %})
+* [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
 
 In our last two posts, we have used raw [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) for data access. You will realize that there is quite a bit of ceremony involved whenever you need to execute a query.
 

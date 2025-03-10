@@ -22,6 +22,7 @@ This is Part 8 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 10 - Handling Cancellations]({% post_url 2025-03-06-dapper-part-10-handling-cancellations %})
 * [Dapper Part 11 - Using Inheritance]({% post_url 2025-03-07-dapper-part-11-using-inheritance %})
 * [Dapper Part 12 - Alternative Bulk Insert Technique]({% post_url 2025-03-08-dapper-part-12-alternative-bulk-insert-technique %})
+* [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
 
 In our [last post]({% post_url 2025-03-03-dapper-part-7-adding-dateonly-timeonly-support %}), we looked at how to add support for DateOnly and TimeOnly types to Dapper.
 
