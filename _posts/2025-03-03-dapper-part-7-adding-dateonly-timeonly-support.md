@@ -24,6 +24,7 @@ This is Part 7 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 11 - Using Inheritance]({% post_url 2025-03-07-dapper-part-11-using-inheritance %})
 * [Dapper Part 12 - Alternative Bulk Insert Technique]({% post_url 2025-03-08-dapper-part-12-alternative-bulk-insert-technique %})
 * [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
+* [Dapper Part 14 - Multithreading]({% post_url 2025-03-11-dapper-part-14-multithreading %})
 
 In our [last post]({% post_url 2025-03-02-dapper-part-6-returning-multiple-sets-of-results %}), we looked at how to **send a batch of SQL statements and retrieve their results in a batch**.
 
