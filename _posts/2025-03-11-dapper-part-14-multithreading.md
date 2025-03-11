@@ -93,6 +93,6 @@ And our data is updated:
 
 **The `DbConnection` object is not thread-safe, and should you wish to run queries in parallel, create connections for each thread.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-11%20-%20Dapper%20Part%2014).
 
 Happy hacking!
