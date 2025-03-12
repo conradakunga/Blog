@@ -25,6 +25,7 @@ This is Part 5 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 12 - Alternative Bulk Insert Technique]({% post_url 2025-03-08-dapper-part-12-alternative-bulk-insert-technique %})
 * [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
 * [Dapper Part 14 - Multithreading]({% post_url 2025-03-11-dapper-part-14-multithreading %})
+* [Dapper Part 15 - Using The IN Clause]({% post_url 2025-03-12-dapper-part-15-using-the-in-clause %})
 
 In our [last post]({% post_url 2025-02-28-dapper-part-4-passing-data-to-and-from-the-database %}), we looked at how to pass data to and from the database using **input parameters**, **output parameters,** and **calling functions**.
 

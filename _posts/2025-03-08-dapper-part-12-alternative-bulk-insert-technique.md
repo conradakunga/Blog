@@ -25,6 +25,7 @@ This is Part 12 of a series on using `Dapper` to simplify data access with `ADO.
 * **Dapper Part 12 - Alternative Bulk Insert Technique (This Post)**
 * [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
 * [Dapper Part 14 - Multithreading]({% post_url 2025-03-11-dapper-part-14-multithreading %})
+* [Dapper Part 15 - Using The IN Clause]({% post_url 2025-03-12-dapper-part-15-using-the-in-clause %})
 
 In a [previous post]({% post_url 2025-03-01-dapper-part-5-passing-data-in-bulk-to-the-database %}), we discussed inserting multiple entities in a **loop**.
 

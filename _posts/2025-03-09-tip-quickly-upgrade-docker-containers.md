@@ -98,7 +98,7 @@ This will stop the container, pull down the latest image (if not already present
 If we re-run our command to list running images, filtered by `elastic`
 
 ```bash
-docker ps --format "{{.Image}} - {{.Names}}: {{.Size}}" | rg elastic
+docker ps --format '{{.Image}} - {{.Names}}: {{.Size}}' | rg elastic
 ```
 
 We will see the following:
