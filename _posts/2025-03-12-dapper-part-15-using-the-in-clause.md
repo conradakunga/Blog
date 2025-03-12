@@ -90,6 +90,6 @@ WHERE Spies.SpyID IN @Spies
 
 **Dapper can construct and execute valid `IN` clause statements using collections.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-12%20-%20Dapper%20Part%2015).
 
 Happy hacking!
