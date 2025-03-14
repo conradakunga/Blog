@@ -199,6 +199,6 @@ The long and short of it is that **you must define the data table columns in the
 
 **Columns for data tables that map data to user-defined table types must be defined in the same order as they are on the type.**
 
-The code is in my GitHub,
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-13%20Beware%20UDTs).
 
 Happy hacking!
