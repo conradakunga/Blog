@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beware - Order Of DataTable Column Definitions Matters For User Defined Table Type Mapping
-date: 2025-03-14 16:48:12 +0300
+date: 2025-03-13 16:48:12 +0300
 categories:
     - SQL Server
     - C#
