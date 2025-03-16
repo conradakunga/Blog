@@ -88,7 +88,7 @@ If you open it, it will look like this:
 }
 ```
 
-To specify the ports to use, add the setting `Urls`, specifying the **protocol and ports you want to use as semicolon delimited strings**.
+To specify the ports to use, add the setting `Urls`, specifying the **protocol and ports you want to use as semicolon delimited strings**. Note the **plural**. Even if you are providing only one, you still say `Urls`.
 
 ```json
 {
