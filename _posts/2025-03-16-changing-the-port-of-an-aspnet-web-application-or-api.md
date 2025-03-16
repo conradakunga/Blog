@@ -16,7 +16,7 @@ Let us start by creating a new application
 dotnet new web -o TestAPI
 ```
 
-We then change to the new directory TestAPI and run the application
+We then change to the new directory `TestAPI` and run the application
 
 ```bash
 dotnet run
@@ -70,7 +70,7 @@ These are the places where the **ports** are specified.
 
 If you want to change them during the **debug** stage, change them to an available port and **restart** your application.
 
-If the project has been deployed, this will not work, as there is no l`aunchSettings.json` for deployed files.
+If the project **has been deployed, this will not work**, as there is no `launchSettings.json` for deployed files.
 
 In this case you need to make the change to the `appsettings.json` file.
 
@@ -88,7 +88,7 @@ If you open it, it will look like this:
 }
 ```
 
-To specify the ports to use, add the setting Urls, specifying the protocol and ports you want to use.
+To specify the ports to use, add the setting `Urls`, specifying the **protocol and ports you want to use as semicolon delimited strings**.
 
 ```json
 {
