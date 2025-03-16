@@ -63,6 +63,8 @@ For instance, if I also want **French** and **Spanish** ...
 <SatelliteResourceLanguages>en;fr;es</SatelliteResourceLanguages>
 ```
 
+We the re-publish:
+
 ```bash
 dotnet publish
 ```
