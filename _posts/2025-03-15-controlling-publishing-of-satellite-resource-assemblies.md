@@ -69,6 +69,6 @@ For instance, if I also want **French** and **Spanish** ...
 
 **The `<SatelliteResourceLanguages>` tags allow the specification of languages and locales to support when publishing localized applications.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-15%20-%20Publish%20Satellite%20Assemblies).
 
 Happy hacking!
