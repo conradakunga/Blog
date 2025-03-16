@@ -111,7 +111,7 @@ If you run the application now:
 
 ![RemappedPorts](../images/2025/03/RemappedPorts.png)
 
-You can also pass the ports you want to use as arguments to the run command
+You can also pass the ports you want to use as **arguments to the run command**.
 
 ```bash
 dotnet run -- --urls "http://*:6100;http://localhost:6101"
