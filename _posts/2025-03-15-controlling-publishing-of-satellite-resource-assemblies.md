@@ -63,6 +63,10 @@ For instance, if I also want **French** and **Spanish** ...
 <SatelliteResourceLanguages>en;fr;es</SatelliteResourceLanguages>
 ```
 
+```bash
+dotnet publish
+```
+
 ![SatelliteLanguages](../images/2025/03/SatelliteLanguages.png)
 
 ### TLDR
