@@ -185,7 +185,7 @@ Our API can now respond in both `XML` and `JSON`
 
 **To allow handling multiple response formats, implement the `IResponseNegotiator` method and register that class with `Carter` at the application startup.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-17%20-%20Content%20Negotiation).
 
 Happy Hacking!
 
