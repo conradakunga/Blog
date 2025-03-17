@@ -92,9 +92,9 @@ The raw request to the API looks like this:
 
 ![CarterRawRequest](../images/2025/03/CarterRawRequest.png)
 
-Clients who wish to specify an alternate format do so by setting the appropriate request header - `Accept`.
+Clients who wish to specify an alternate format do so by **setting the appropriate request header** - `Accept`.
 
-If we wanted to request the data in XML, we would set the following header:
+If we wanted to request the data in `XML`, we would set the following header:
 
 ```plaintext
 Accept: application/xml
@@ -106,7 +106,7 @@ Despite this, the response is still in `JSON`.
 
 We need to update our endpoint so that it **interrogates the request and then decides how to respond**, a process called [negotiation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/formats-and-model-binding/content-negotiation).
 
-Given there is already a handler for `JSON`, we need to write one for `XML`, and we do this by writing a class that implements the *IResponseNegotiator* interface.
+Given there is already a handler for `JSON`, we need to write one for `XML`, and we do this by writing a class that implements the `IResponseNegotiator` interface.
 
 It will look like this:
 
