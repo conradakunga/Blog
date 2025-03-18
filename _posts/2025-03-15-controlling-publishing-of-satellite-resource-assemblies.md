@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Controlling Publishing Of Satellite Resource Assemblies
-date: 2025-03-16 11:11:50 +0300
+date: 2025-03-15 11:11:50 +0300
 categories:
     - C#
     - .NET
