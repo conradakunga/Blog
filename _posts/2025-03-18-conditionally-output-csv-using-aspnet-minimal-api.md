@@ -20,7 +20,7 @@ The first thing is to install the [CSVHelper](https://joshclose.github.io/CsvHel
 dotnet add package CSVHelper
 ```
 
-Next, we create a content negotiation for `CSV`, by implementing the `IResponseNegotiator` interface. The client will [specify]({% post_url 2024-12-25-correctly-processing-csv-files-in-c-net %}) the header "`text/csv`", which is available as a constant from `MediaTypeNames.Text.Csv`
+Next, we create a content negotiation for `CSV`, by implementing the `IResponseNegotiator` interface. The client will specify the header "`text/csv`", which is available as a constant from `MediaTypeNames.Text.Csv`
 
 The class will look like this:
 
