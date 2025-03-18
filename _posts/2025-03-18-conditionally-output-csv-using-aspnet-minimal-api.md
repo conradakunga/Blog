@@ -129,6 +129,6 @@ To view the raw response we can use [Httpie](https://httpie.io) or [curl](https:
 
 **You can implement an endpoint that returns CSV data by implementing the `IResponseNegotiator` interface and the `CSVHelper` library.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-18%20-%20CSV%20Content).
 
 Happy hacking!
