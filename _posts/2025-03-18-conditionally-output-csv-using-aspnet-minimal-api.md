@@ -33,7 +33,7 @@ using Microsoft.Net.Http.Headers;
 
 public class CSVResponseNegotiator : IResponseNegotiator
 {
-    // Establish if the client had indicated it will accept xml
+    // Establish if the client had indicated it will accept csv
     public bool CanHandle(MediaTypeHeaderValue accept)
     {
         return accept.MatchesMediaType(MediaTypeNames.Text.Csv);
