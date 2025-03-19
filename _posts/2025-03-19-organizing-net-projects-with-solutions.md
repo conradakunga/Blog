@@ -243,6 +243,16 @@ ConsoleUI/ConsoleUI.csproj
 Library/Library.csproj
 ```
 
+Finally, having more than one solution file for your own reasons is also possible. Perhaps one will include the test projects, and the other won't.
+
+In this scenario, pass the solution name as a parameter when building.
+
+```bash
+dotnet build WizardApp.sln 
+```
+
+
+
 ### TLDR
 
 **When handling software projects with multiple projects, it is beneficial to organize them into solution (`sln`) files.**
