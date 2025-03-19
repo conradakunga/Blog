@@ -133,7 +133,7 @@ To migrate to the new solution, run the command `dotnet sln migrate` from the di
 dotnet sln migrate
 ```
 
-You will see a new file has been created with a .`slnx` extension.
+You will see a new file has been created with a .`slnx` extension - the original `sln` file is not deleted.
 
 ![NewSolutionExtension](../images/2025/03/NewSolutionExtension.png)
 
