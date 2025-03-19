@@ -245,6 +245,6 @@ Library/Library.csproj
 
 **When handling software projects with multiple projects, it is beneficial to organize them into solution (`sln`) files.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-19%20-%20Solutions).
 
 Happy hacking!
