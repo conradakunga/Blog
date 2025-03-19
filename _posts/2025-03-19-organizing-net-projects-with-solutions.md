@@ -51,7 +51,9 @@ dotnet build ConsoleUI/ConsoleUI.csproj
 
 A **solution** can help in this situation.
 
-The first step is to create a **blank solution using the `dotnet new sln` command. From within the current directory, type the following
+The first step is to create a **blank** solution using the `dotnet new sln` command. 
+
+From within the current directory, type the following:
 
 ```bash
 dotnet new sln
