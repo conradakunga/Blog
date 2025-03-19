@@ -3,7 +3,8 @@ layout: post
 title: SLNX - New .NET Solution File Format
 date: 2025-03-20 21:34:40 +0300
 categories:
-    
+    - .NET
+    - Visual Studio
 ---
 
 In the [last post]({% post_url 2025-03-19-organizing-net-projects-with-solutions %}), we looked at how to manage **multi-project software** using **solutions**.

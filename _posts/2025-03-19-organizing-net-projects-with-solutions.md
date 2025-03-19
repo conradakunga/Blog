@@ -3,7 +3,8 @@ layout: post
 title: Organizing .NET Projects With Solutions
 date: 2025-03-19 20:33:24 +0300
 categories:
-    - .NET
+     - .NET
+    - Visual Studio
 ---
 
 Whenever you create a .NET application, one of the essential files created is the project file. In C#, it is named `xxxx.csproj`; in VB.NET, it is named `xxxx.vbproj`; and in F#, it is named `xxxx.fsproj`.
