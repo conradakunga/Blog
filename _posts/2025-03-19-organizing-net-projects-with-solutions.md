@@ -3,7 +3,7 @@ layout: post
 title: Organizing .NET Projects With Solutions
 date: 2025-03-19 20:33:24 +0300
 categories:
-     - .NET
+    - .NET
     - Visual Studio
 ---
 
