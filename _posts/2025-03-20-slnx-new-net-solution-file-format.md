@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SLNX - New .NET Solution File Format
-date: 2025-03-20 21:34:40 +0300
+date: 2025-03-20 15:34:40 +0300
 categories:
     - .NET
     - Visual Studio
