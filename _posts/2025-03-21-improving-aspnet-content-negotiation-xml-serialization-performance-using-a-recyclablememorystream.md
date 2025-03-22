@@ -145,6 +145,6 @@ As you can see, it is almost a seamless replacement for the [MemoryStream](https
 
 **The `RecyclableMemoryStream` is a drop-in replacement for the `MemoryStream` in cases where you are potentially creating many `MemoryStream` objects  and want to optimize memory allocations and garbage collections.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-21%20-%20XML%20Performance).
 
 Happy hacking!
