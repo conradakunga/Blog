@@ -141,6 +141,25 @@ public sealed class XmlResponseNegotiator : IResponseNegotiator
 
 As you can see, it is almost a seamless replacement for the [MemoryStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.memorystream?view=net-9.0) class, as the `GetStream()` method returns a `RecyclableMemoryStream`.
 
+You can fine-tune performance even further by configuring the steam as follows:
+
+```c#
+var options = new RecyclableMemoryStreamManager.Options()
+{
+    BlockSize = 1024,
+    LargeBufferMultiple = 1024 * 1024,
+    MaximumBufferSize = 16 * 1024 * 1024,
+    GenerateCallStacks = true,
+    AggressiveBufferReturn = true,
+    MaximumLargePoolFreeBytes = 16 * 1024 * 1024 * 4,
+    MaximumSmallPoolFreeBytes = 100 * 1024,
+};
+
+var manager = new RecyclableMemoryStreamManager(options);
+```
+
+Details of these options are available in the [documentation](https://github.com/microsoft/Microsoft.IO.RecyclableMemoryStream).
+
 ### TLDR
 
 **The `RecyclableMemoryStream` is a drop-in replacement for the `MemoryStream` in cases where you are potentially creating many `MemoryStream` objects  and want to optimize memory allocations and garbage collections.**
