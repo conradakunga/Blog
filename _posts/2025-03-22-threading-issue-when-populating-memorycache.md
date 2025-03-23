@@ -7,7 +7,7 @@ categories:
     - MemoryCache
 ---
 
-The [MemoryCache](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.caching.memory?view=net-9.0-pp) is a lightweight, simple cache you can use in most applications to cache data and improve your application performance.
+The [MemoryCache](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.caching.memory?view=net-9.0-pp) is a lightweight, simple cache you can use in most applications to **cache data** and **improve** your application **performance**.
 
 You would typically use it like this:
 
@@ -82,7 +82,7 @@ If we look at the results:
 
 We can see here that after a 5-second delay, the second call to [GetOrCreateAsync](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.caching.memory.cacheextensions.getorcreateasync?view=net-9.0-pp) succeeds **immediately**, as the key is already in the cache.
 
-Now let us try and simulate a scenario where multiple threads are in play.
+Now let us try to simulate a scenario where multiple threads are in play.
 
 ```c#
 // Create 10 threads to generate the Thing
@@ -114,11 +114,11 @@ The logs show something interesting:
 [05:57:46 INF] The cached entry is 635424508
 ```
 
-We can see here that there are 10 attempts to generate the expensive resource.
+We can see here that there are **10 attempts** to generate the expensive resource.
 
-This generally isn't what we want. We want only one thread to make the attempt and the others to wait.
+This generally **isn't** what we want. We want only **one thread to make the attempt and the others to wait**.
 
-We can get this by using the [LazyCache](https://github.com/alastairtree/LazyCache) library.
+We can get this behaviour by using the [LazyCache](https://github.com/alastairtree/LazyCache) library.
 
 ```c#
 dotnet add package LazyCache
