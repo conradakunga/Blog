@@ -9,6 +9,8 @@ categories:
 
 **This is Part 1 of a series on using State Machines to express complex logic.**
 
+**Using State Machines - Part 1 - Introduction (This Post)**
+
 Suppose you are modeling a traffic light.
 
 This sounds simple enough.
