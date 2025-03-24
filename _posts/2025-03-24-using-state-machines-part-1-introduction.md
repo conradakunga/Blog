@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using State Machines - Part 1 : Introduction
+title: Using State Machines - Part 1 - Introduction
 date: 2025-03-24 19:30:33 +0300
 categories:
     - C#
