@@ -70,7 +70,7 @@ using (var ms = new MemoryStream())
 }
 ```
 
-The challenge here is that the runtime can potentially allocate, write to, and release a lot of memory stream objects, which, under high load, can cause memory pressure on the server in terms of allocations, fragmentation, and garbage collection.
+The challenge here is that the runtime can potentially allocate, write to, and release a lot of [MemoryStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.memorystream?view=net-9.0) objects, which, under high load, can cause memory pressure on the server in terms of allocations, fragmentation, and garbage collection.
 
 In this regard, we can use a library designed for this scenario - the [RecyclableMemoryStream](https://github.com/microsoft/Microsoft.IO.RecyclableMemoryStream).
 
@@ -141,7 +141,7 @@ public sealed class XmlResponseNegotiator : IResponseNegotiator
 
 As you can see, it is almost a seamless replacement for the [MemoryStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.memorystream?view=net-9.0) class, as the `GetStream()` method returns a `RecyclableMemoryStream`.
 
-You can fine-tune performance even further by configuring the steam as follows:
+You can fine-tune performance even further by configuring the steam as follows (these are just example values - adjust as needed fo your use case):
 
 ```c#
 var options = new RecyclableMemoryStreamManager.Options()
