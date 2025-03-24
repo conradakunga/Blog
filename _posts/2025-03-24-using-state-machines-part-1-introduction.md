@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-This is Part 1 of a series on using State Machines to express complex logic.
+**This is Part 1 of a series on using State Machines to express complex logic.**
 
 Suppose you are modeling a traffic light.
 
@@ -300,6 +300,6 @@ In the next post, we will examine how **State Machines** can help with such prob
 
 ***Tracking valid state transitions in an object can quickly become overwhelming.***
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-24%20-%20State%20Machines%20Part%201).
 
 Happy hacking!
