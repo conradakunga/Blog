@@ -242,7 +242,7 @@ Next, we update our state machine configuration:
   }
 ```
 
-Finally, we impement in the logic for detecting public holidays.
+Finally, we implement in the logic for detecting public holidays.
 
 ```c#
   public void Transition()
