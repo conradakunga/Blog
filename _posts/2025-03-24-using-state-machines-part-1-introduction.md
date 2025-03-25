@@ -302,7 +302,7 @@ In the next post, we will examine how **State Machines** can help with such prob
 
 ### TLDR
 
-***Tracking valid state transitions in an object can quickly become overwhelming as the number of states and valid transitions grows**
+**Tracking valid state transitions in an object can quickly become overwhelming as the number of states and valid transitions grows**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-24%20-%20State%20Machines%20Part%201).
 

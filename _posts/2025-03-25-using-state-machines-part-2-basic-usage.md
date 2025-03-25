@@ -13,11 +13,11 @@ This is Part 2 of a series on using State Machines to express complex logic.
 - [Using State Machines - Part 1 - Introduction]({% post_url 2025-03-24-using-state-machines-part-1-introduction %})
 - **Using State Machines - Part 2 - Basic Usage (This Post)**
 
-Our [last post]({% post_url 2025-03-24-using-state-machines-part-1-introduction %}) looked at how logic for correctly setting a state can quickly become complicated.
+Our [last post]({% post_url 2025-03-24-using-state-machines-part-1-introduction %}) examined how logic for correctly setting a state can quickly become complicated.
 
 This post will examine how state machines can help with such problems.
 
-At it's core, the rationale of a state machines boils down to the following:
+At its core, the rationale of a state machines boils down to the following:
 
 1. An entity can be in one of a number of known **states**.
 2. The entity can **transition from one state to another**.
