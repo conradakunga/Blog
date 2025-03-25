@@ -5,11 +5,13 @@ date: 2025-03-24 19:30:33 +0300
 categories:
     - C#
     - .NET
+    - Stateless
 ---
 
-**This is Part 1 of a series on using State Machines to express complex logic.**
+This is Part 1 of a series on using State Machines to express complex logic.
 
-**Using State Machines - Part 1 - Introduction (This Post)**
+- **Using State Machines - Part 1 - Introduction (This Post)**
+- [Using State Machines - Part 2 - Basic Usage]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %})
 
 Suppose you are modeling a traffic light.
 
