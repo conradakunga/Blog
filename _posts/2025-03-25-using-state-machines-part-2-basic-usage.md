@@ -118,6 +118,10 @@ We can verify our logic is sound because our tests still pass.
 
 ![StateMachineInitialTests](../images/2025/03/StateMachineInitialTests.png)
 
+The state diagram is as follows:
+
+![NormalTick](../images/2025/03/NormalTick.png)
+
 Our logic is much less, much cleaner, and more expressive.
 
 Let us now amend it to factor in the following example from the previous post:
@@ -185,6 +189,10 @@ Finally, we update our **state machine configuration** to indicate that **multip
   }
 ```
 
+The state diagram is as follows:
+
+![NightTick](../images/2025/03/NightTick.png)
+
 If we run our tests for night-time, they now pass.
 
 ![StateMachineNightTestResults](../images/2025/03/StateMachineNightTestResults.png)
@@ -195,7 +203,7 @@ Let us finally tackle the requirement that we have different logic for public ho
 
 > During public holidays, the lights should be permanently on Amber.
 
-As usual, we add a new Trigger.
+As usual, we add a new `Trigger`.
 
 ```c#
 public enum Trigger
@@ -270,6 +278,10 @@ Finally, we implement in the logic for detecting public holidays.
       }
   }
 ```
+
+The state diagram is as follows:
+
+![PublicHolidayTick](../images/2025/03/PublicHolidayTick.png)
 
 To verify all works correctly, we create tests.
 
