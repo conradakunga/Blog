@@ -206,6 +206,6 @@ In our next post we will look at how to tackle transitions via different trigger
 
 **State machines can be initialized from any state to address scenarios like persistence to a data store.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-26%20-%20State%20Machines%20Part%203).
 
 Happy hacking!
