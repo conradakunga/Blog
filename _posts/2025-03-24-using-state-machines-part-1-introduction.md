@@ -300,7 +300,7 @@ Our already busy logic will get even busier as we need to do a lot of work to en
 
 This class of problem lends itself well to a construct known as a [State Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
 
-In the next post, we will examine how **State Machines** can help with such problems.
+In the [next post]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %}), we will examine how **State Machines** can help with such problems.
 
 ### TLDR
 

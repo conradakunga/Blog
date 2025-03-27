@@ -201,7 +201,7 @@ Our tests pass successfully.
 
 ![TrafficLightsLoadedState](../images/2025/03/TrafficLightsLoadedState.png)
 
-In our next post we will look at how to tackle transitions via different triggers.
+In our [next post]({% post_url 2025-03-27-using-state-machines-part-4-using-multiple-triggers %}) we will look at how to tackle transitions via different triggers.
 
 ### TLDR
 

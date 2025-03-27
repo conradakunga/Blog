@@ -232,6 +232,8 @@ Adding tests for other states and allowable transitions I leave as an exercise t
 
 Thus, we can see here that even without a deep understanding of the state transitions, it is possible to **prevent the system from getting into an invalid state** without having complex logic to enforce this.
 
+In our next post, we will look at complex / nested states.
+
 ### TLDR
 
 **State machines allow for multiple triggers to transition between states.**

@@ -314,7 +314,7 @@ public void Lights_Change_Correctly_On_Public_Holidays(int day, int month, int h
 }
 ```
 
-In our next post, we shall look at **how to deal with initial state.**
+In our [next post]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %}), we shall look at **how to deal with initial state.**
 
 ### TLDR
 
