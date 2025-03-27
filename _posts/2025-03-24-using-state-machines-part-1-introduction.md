@@ -11,10 +11,10 @@ categories:
 
 This is Part 1 of a series on using State Machines to express complex logic.
 
-- **Using State Machines - Part 1 - Introduction (This Post)**
-- [Using State Machines - Part 2 - Basic Usage]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %})
-- [Using State Machines - Part 3 - Setting Initial State]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %})
-- [Using State Machines - Part 4 - Using Multiple Triggers]({% post_url 2025-03-27-using-state-machines-part-4-using-multiple-triggers %})
+- **Using State Machines In .NET - Part 1 - Introduction (This Post)**
+- [Using State Machines In .NET  - Part 2 - Basic Usage]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %})
+- [Using State Machines In .NET  - Part 3 - Setting Initial State]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %})
+- [Using State Machines In .NET  - Part 4 - Using Multiple Triggers]({% post_url 2025-03-27-using-state-machines-part-4-using-multiple-triggers %})
 
 Suppose you are modeling a traffic light.
 

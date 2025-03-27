@@ -10,10 +10,10 @@ categories:
 ---
 This is Part 4 of a series on using State Machines to express complex logic.
 
-- [Using State Machines - Part 1 - Introduction]({% post_url 2025-03-24-using-state-machines-part-1-introduction %})
-- [Using State Machines - Part 2 - Basic Usage]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %})
-- [Using State Machines - Part 3 - Setting Initial State]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %})
-- **Using State Machines - Part 4 - Using Multiple Triggers (This Post)**
+- [Using State Machines In .NET  - Part 1 - Introduction]({% post_url 2025-03-24-using-state-machines-part-1-introduction %})
+- [Using State Machines In .NET  - Part 2 - Basic Usage]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %})
+- [Using State Machines In .NET  - Part 3 - Setting Initial State]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %})
+- **Using State Machines In .NET  - Part 4 - Using Multiple Triggers (This Post)**
 
 In our last [two]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %}) [posts]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %}), we looked at how to **configure** a state machine and **set its initial state**.
 
