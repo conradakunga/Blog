@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using State Machines - Part 2 - Basic Usage
+title: Using State Machines In .NET - Part 2 - Basic Usage
 date: 2025-03-25 18:25:50 +0300
 categories:
     - C#

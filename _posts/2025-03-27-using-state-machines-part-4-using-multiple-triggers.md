@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using State Machines - Part 4 - Using Multiple Triggers
+title: Using State Machines In .NET  - Part 4 - Using Multiple Triggers
 date: 2025-03-27 22:38:18 +0300
 categories:
     - C#
@@ -17,16 +17,16 @@ This is Part 4 of a series on using State Machines to express complex logic.
 
 In our last [two]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %}) [posts]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %}), we looked at how to **configure** a state machine and **set its initial state**.
 
-In both examples there was a **single trigger** that we used to cycle through the traffic light states.
+In both examples, there was a **single trigger** that we used to cycle through the traffic light states.
 
-But usually you will have a more complex problem where there are **multiple triggers** that you use to transition states.
+But usually, you will have a more complex problem where there are **multiple triggers** that you use to transition states.
 
 Take for example an `Order`.
 
 - An Order starts off as `Incomplete`
-- Customers can **compete** the order, transitioning to `OrderComplete`.
-- When it is complete, customers get a prompt to make payment.
-- At this point they can **cancel**, at which point it is `Cancelled` or they can make payment, at which point it is `OrderPaid`.
+- Customers can **complete** the order by transitioning to `OrderComplete`.
+- When it is complete, customers will get a prompt to make a payment.
+- At this point, they can cancel, at which point it is `Canceled`, or they can make payment, at which point it is `Ordered`.
 - It can then be **dispatched**, at which point it transitions to `Dispatched`.
 - The order can then be **delivered**, after which it is `Delivered`.
 - If the customer rejects it, it is `Rejected`.

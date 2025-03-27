@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using State Machines - Part 3 - Setting Initial State
+title: Using State Machines In .NET  - Part 3 - Setting Initial State
 date: 2025-03-26 10:15:33 +0300
 categories:
     - C#
