@@ -4,7 +4,9 @@ title: Threading Issue When Populating MemoryCache
 date: 2025-03-22 05:29:02 +0300
 categories:
     - C#
-    - MemoryCache
+    - MemoryCache	
+    - StarLibrary
+    - LazyCache
 ---
 
 The [MemoryCache](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.caching.memory?view=net-9.0-pp) is a lightweight, simple cache you can use in most applications to **cache data** and **improve** your application **performance**.

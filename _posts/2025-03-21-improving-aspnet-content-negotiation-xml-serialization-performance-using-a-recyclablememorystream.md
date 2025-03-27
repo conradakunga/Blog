@@ -7,6 +7,8 @@ categories:
     - C#
     - XML
     - JSON
+    - StarLibrary
+    - Carter
 ---
 
 In a [previous post]({% post_url 2025-03-17-conditionally-output-xml-or-json-using-aspnet-minimal-api %}), we looked at how to use **content negotiation** to have an API produce `XML` instead of `JSON` by writing a `ResponseNegotiator` class that implements the `IResponseNegotiator` interface from the [Carter](https://github.com/CarterCommunity/Carter) library.

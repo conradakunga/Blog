@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - Stateless
+    - StarLibrary
 ---
 This is Part 4 of a series on using State Machines to express complex logic.
 

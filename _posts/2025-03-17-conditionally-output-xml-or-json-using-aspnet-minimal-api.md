@@ -7,6 +7,8 @@ categories:
     - C#
     - XML
     - JSON
+    - StarLibrary
+    - Carter
 ---
 
 Today, in 2025, a vast majority of APIs are JSON APIs. 

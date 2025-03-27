@@ -8,6 +8,9 @@ categories:
     - XML
     - JSON
     - CSV
+    - StarLibrary
+    - Carter
+    - CSVHelper
 ---
 
 In our [last post]({% post_url 2025-03-17-conditionally-output-xml-or-json-using-aspnet-minimal-api %}), we looked at how to use Carter in an ASP.NET minimal API to return either `JSON` or `XML`, as client specified.
