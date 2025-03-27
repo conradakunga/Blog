@@ -13,6 +13,7 @@ This is Part 2 of a series on using State Machines to express complex logic.
 - [Using State Machines - Part 1 - Introduction]({% post_url 2025-03-24-using-state-machines-part-1-introduction %})
 - **Using State Machines - Part 2 - Basic Usage (This Post)**
 - [Using State Machines - Part 3 - Setting Initial State]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %})
+- [Using State Machines - Part 4 - Using Multiple Triggers]({% post_url 2025-03-27-using-state-machines-part-4-using-multiple-triggers %})
 
 Our [last post]({% post_url 2025-03-24-using-state-machines-part-1-introduction %}) examined how logic for correctly setting a state can quickly become complicated.
 
