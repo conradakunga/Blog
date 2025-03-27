@@ -236,6 +236,6 @@ Thus, we can see here that even without a deep understanding of the state transi
 
 **State machines allow for multiple triggers to transition between states.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-27%20-%20State%20Machines%20Part%204).
 
 Happy hacking!
