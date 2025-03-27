@@ -12,6 +12,7 @@ This is Part 1 of a series on using State Machines to express complex logic.
 
 - **Using State Machines - Part 1 - Introduction (This Post)**
 - [Using State Machines - Part 2 - Basic Usage]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %})
+- [Using State Machines - Part 3 - Setting Initial State]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %})
 
 Suppose you are modeling a traffic light.
 
