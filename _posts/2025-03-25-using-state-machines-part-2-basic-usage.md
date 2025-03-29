@@ -15,6 +15,7 @@ This is Part 2 of a series on using State Machines to express complex logic.
 - **Using State Machines In .NET  - Part 2 - Basic Usage (This Post)**
 - [Using State Machines In .NET  - Part 3 - Setting Initial State]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %})
 - [Using State Machines In .NET  - Part 4 - Using Multiple Triggers]({% post_url 2025-03-27-using-state-machines-part-4-using-multiple-triggers %})
+- [Using State Machines In .NET - Part 5 - Using Complex & Nested States]({% post_url 2025-03-28-using-state-machines-in-net-part-5-using-complex-nested-states %})
 
 Our [last post]({% post_url 2025-03-24-using-state-machines-part-1-introduction %}) examined how logic for correctly setting a state can quickly become complicated.
 

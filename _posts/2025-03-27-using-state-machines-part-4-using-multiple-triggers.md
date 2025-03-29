@@ -14,18 +14,19 @@ This is Part 4 of a series on using State Machines to express complex logic.
 - [Using State Machines In .NET  - Part 2 - Basic Usage]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %})
 - [Using State Machines In .NET  - Part 3 - Setting Initial State]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %})
 - **Using State Machines In .NET  - Part 4 - Using Multiple Triggers (This Post)**
+- [Using State Machines In .NET - Part 5 - Using Complex & Nested States]({% post_url 2025-03-28-using-state-machines-in-net-part-5-using-complex-nested-states %})
 
-In our last [two]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %}) [posts]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %}), we looked at how to **configure** a state machine and **set its initial state**.
+In our last [two]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %}) [posts]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %}), we looked at configuring a state machine and setting its **initial state**.
 
-In both examples, there was a **single trigger** that we used to cycle through the traffic light states.
+In both examples, we used a **single trigger** to cycle through the traffic light states.
 
 But usually, you will have a more complex problem where there are **multiple triggers** that you use to transition states.
 
-Take for example an `Order`.
+Take, for example, an `Order`.
 
 - An Order starts off as `Incomplete`
 - Customers can **complete** the order by transitioning to `OrderComplete`.
-- When it is complete, customers will get a prompt to make a payment.
+- When it is complete, customers will get a prompt to pay.
 - At this point, they can cancel, at which point it is `Canceled`, or they can make payment, at which point it is `Ordered`.
 - It can then be **dispatched**, at which point it transitions to `Dispatched`.
 - The order can then be **delivered**, after which it is `Delivered`.
