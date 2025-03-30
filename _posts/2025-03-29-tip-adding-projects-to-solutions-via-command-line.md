@@ -44,7 +44,7 @@ dotnet sln remove TrafficLights
 dotnet sln remove TrafficLights.Tests
 ```
 
-This, naturally, will only work if there is a **single** .csproj file in the specified folder. If there is more than one you will be required to **specify which you mean**.
+This will only work if there is a **single** `.csproj` file in the specified folder. If there is more than one, you will need to **specify which you mean**.
 
 ### TLDR
 
