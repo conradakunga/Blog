@@ -17,6 +17,7 @@ This is Part 6 of a series on using State Machines to express complex logic.
 - [Using State Machines In .NET  - Part 4 - Using Multiple Triggers]({% post_url 2025-03-27-using-state-machines-part-4-using-multiple-triggers %})
 - [Using State Machines In .NET - Part 5 - Using Complex & Nested States]({% post_url 2025-03-28-using-state-machines-in-net-part-5-using-complex-nested-states %})
 - **Using State Machines In .NET - Part 6 - Firing Events On State Change (This Post)**
+- [Using State Machines In .NET - Part 7 - Conditional State Transitions]({% post_url 2025-03-31-using-state-machines-in-net-part-7-conditional-state-transitions %})
 
 Our [last post]({% post_url 2025-03-28-using-state-machines-in-net-part-5-using-complex-nested-states %}) examined how to model complex & nested states.
 
@@ -57,7 +58,7 @@ public void UnHold()
 
 No suppose we were to wire in some **hardware** to do the actual logic.
 
-To simlify the code, let us assume **logging** modeled the hardware.
+To simplify the code, let us assume **logging** modeled the hardware.
 
 It would now look like this:
 
