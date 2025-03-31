@@ -194,6 +194,6 @@ In our next post we will look at **conditional firing of triggers**.
 
 **The `OnEntry()` event allows for logic to fire whenever the state changes.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-30%20-%20State%20Machines%20Part%206).
 
 Happy Hacking!
