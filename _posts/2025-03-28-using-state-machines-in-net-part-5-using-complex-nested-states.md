@@ -16,6 +16,7 @@ This is Part 5 of a series on using State Machines to express complex logic.
 - [Using State Machines In .NET  - Part 3 - Setting Initial State]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %})
 - [Using State Machines In .NET  - Part 4 - Using Multiple Triggers]({% post_url 2025-03-27-using-state-machines-part-4-using-multiple-triggers %})
 - **Using State Machines In .NET - Part 5 - Using Complex & Nested States (This Post)**
+- [Using State Machines In .NET - Part 6 - Firing Events On State Change]({% post_url 2025-03-30-using-state-machines-in-net-part-6-firing-events-on-state-change %})
 
 Our last post examined how to use multiple triggers in your logic.
 
@@ -272,6 +273,8 @@ public void OnHold_Status_Is_Connected()
 ```
 
 ![CallStatesTests](../images/2025/03/CallStatesTests.png)
+
+In the [next post]({% post_url 2025-03-30-using-state-machines-in-net-part-6-firing-events-on-state-change %}), we will look at how to use events to react to state changes.
 
 ### TLDR
 
