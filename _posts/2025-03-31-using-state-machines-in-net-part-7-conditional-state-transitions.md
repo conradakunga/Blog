@@ -173,6 +173,6 @@ These tests should pass:
 
 **Transitions between states can be controlled by conditions using the PermitIf() method during configuration.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-31%20-%20State%20Machines%20Part%207).
 
 Happy hacking!
