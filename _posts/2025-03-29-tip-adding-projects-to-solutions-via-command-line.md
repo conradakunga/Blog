@@ -23,25 +23,25 @@ dotnet new sln
 We can then **add** the projects to the solution like this:
 
 ```bash
-dotnet sln add TrafficLights/TrafficLights.csproj
+dotnet sln add src/TrafficLights/StateMachine.csproj
 
-dotnet sln add TrafficLights.Tests/TrafficLightTests.csproj
+dotnet sln add src/TrafficLights.Tests/TrafficLightTests.csproj
 ```
 
 You can also achieve the same thing if you **omit the project altogether**:
 
 ```bash
-dotnet sln add TrafficLights
+dotnet sln add src/TrafficLights
 
-dotnet sln add TrafficLights.Tests
+dotnet sln add src/TrafficLights.Tests
 ```
 
 This also works for **removing** projects:
 
 ```bash
-dotnet sln remove TrafficLights
+dotnet sln remove src/TrafficLights
 
-dotnet sln remove TrafficLights.Tests
+dotnet sln remove src/TrafficLights.Tests
 ```
 
 This will only work if there is a **single** `.csproj` file in the specified folder. If there is more than one, you will need to **specify which you mean**.
