@@ -7,7 +7,7 @@ categories:
     - ASP.NET
 ---
 
-In a [recent post]({% post_url 2025-03-17-conditionally-output-xml-or-json-using-aspnet-minimal-api %}), we discussed using **content negotiation** to control the format of data returned by an API, using the `Accept` header as set by the client.
+In a [recent post]({% post_url 2025-03-17-conditionally-output-xml-or-json-using-aspnet-minimal-api %}), we discussed using **content negotiation** to control the **format of data** returned by an API, using the `Accept` header as set by the client.
 
 In all the examples, the requests were [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET) requests.
 
