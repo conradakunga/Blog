@@ -27,7 +27,7 @@ The payload is the following:
 
 ```xml
 {
-	"RequestDate": "2024-09-01T12:45:00Z"
+ "RequestDate": "2024-09-01T12:45:00Z"
 }
 ```
 
