@@ -201,8 +201,8 @@ In this way, we can have code that takes advantage of state changes **before** o
 
 ### TLDR
 
-Stateless offers an OnExit() method that you can use to write logic to fire just before the transition exits.
+**Stateless offers an `OnExit()` method that you can use to write logic to fire just before the transition exits.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-04-01%20-%20State%20Machines%20Part%208).
 
 Happy Hacking!
