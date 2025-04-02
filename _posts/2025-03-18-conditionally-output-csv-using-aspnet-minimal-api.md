@@ -13,17 +13,17 @@ categories:
     - CSVHelper
 ---
 
-In our [last post]({% post_url 2025-03-17-conditionally-output-xml-or-json-using-aspnet-minimal-api %}), we looked at how to use Carter in an ASP.NET minimal API to return either `JSON` or `XML`, as client specified.
+In our [last post]({% post_url 2025-03-17-conditionally-output-xml-or-json-using-aspnet-minimal-api %}), we looked at how to use Carter in an ASP.NET minimal API to return `JSON` or `XML`, as the client specifies.
 
-In this post we shall look at how to output `CSV` at client request.
+This post will look at how to output `CSV` at the client's request.
 
-The first thing is to install the [CSVHelper](https://joshclose.github.io/CsvHelper/) package, that we used in a [previous post]({% post_url 2024-12-25-correctly-processing-csv-files-in-c-net %}).
+The first thing is installing the [CSVHelper](https://joshclose.github.io/CsvHelper/) package that we used in a [previous post]({% post_url 2024-12-25-correctly-processing-csv-files-in-c-net %}).
 
 ```c#
 dotnet add package CSVHelper
 ```
 
-Next, we create a content negotiation for `CSV`, by implementing the `IResponseNegotiator` interface. The client will specify the header "`text/csv`", which is available as a constant from `MediaTypeNames.Text.Csv`
+Next, we create a content negotiation for `CSV` by implementing the `IResponseNegotiator` interface. The client will specify the header "`text/csv`", which is available as a **constant** from `MediaTypeNames.Text.Csv`
 
 The class will look like this:
 
@@ -122,9 +122,9 @@ If we run this endpoint, we get the following response:
 
 ![ContentCSV](../images/2025/03/ContentCSV.png)
 
-We can see that the data is formatted by [Insomnia](https://insomnia.rest) into rows and columns.
+We can see that [Insomnia](https://insomnia.rest) formats the data into rows and columns.
 
-To view the raw response we can use [Httpie](https://httpie.io) or [curl](https://curl.se).
+To view the raw response, we can use [Httpie](https://httpie.io) or [curl](https://curl.se).
 
 ![ContentRawCSV](../images/2025/03/ContentRawCSV.png)
 

@@ -88,7 +88,7 @@ If we run the endpoint, we will see the following:
 
 ![CarterJSON](../images/2025/03/CarterJSON.png)
 
-As I indicated earlier, `JSON` is the default format if none is specified.
+As indicated earlier, `JSON` is the default format if none is specified.
 
 The raw request to the API looks like this:
 
