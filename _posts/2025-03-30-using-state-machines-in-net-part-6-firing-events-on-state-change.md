@@ -18,6 +18,7 @@ This is Part 6 of a series on using State Machines to express complex logic.
 - [Using State Machines In .NET - Part 5 - Using Complex & Nested States]({% post_url 2025-03-28-using-state-machines-in-net-part-5-using-complex-nested-states %})
 - **Using State Machines In .NET - Part 6 - Firing Events On State Change (This Post)**
 - [Using State Machines In .NET - Part 7 - Conditional State Transitions]({% post_url 2025-03-31-using-state-machines-in-net-part-7-conditional-state-transitions %})
+- [Using State Machines In .NET - Part 8 - Firing Events Before State Change]({% post_url 2025-04-02-using-state-machines-in-net-part-8-firing-events-before-state-change %})
 
 Our [last post]({% post_url 2025-03-28-using-state-machines-in-net-part-5-using-complex-nested-states %}) examined how to model complex & nested states.
 

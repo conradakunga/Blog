@@ -18,12 +18,13 @@ This is Part 7 of a series on using State Machines to express complex logic.
 - [Using State Machines In .NET - Part 5 - Using Complex & Nested States]({% post_url 2025-03-28-using-state-machines-in-net-part-5-using-complex-nested-states %})
 - [Using State Machines In .NET - Part 6 - Firing Events On State Change]({% post_url 2025-03-30-using-state-machines-in-net-part-6-firing-events-on-state-change %})
 - **Using State Machines In .NET - Part 7 - Conditional State Transitions (This Post)**
+- [Using State Machines In .NET - Part 8 - Firing Events Before State Change]({% post_url 2025-04-02-using-state-machines-in-net-part-8-firing-events-before-state-change %})
 
-In our [last post]({% post_url 2025-03-30-using-state-machines-in-net-part-6-firing-events-on-state-change %}), we looked at how to use events to express logic we want whenever the **state changes**.
+In our [last post]({% post_url 2025-03-30-using-state-machines-in-net-part-6-firing-events-on-state-change %}), we examined how to use events to express the logic we want whenever the **state changes**.
 
-In this post we will look at situations where the state changes are **permissible only when some conditions are met**.
+In this post, we will examine situations in which **state changes are permissible only when certain conditions are met**.
 
-Assume this code is being used by some sort of call center, and we want the following:
+Assume some sort of call center is using this code, and we want the following:
 
 1. All calls **duration** must be recorded
 2. Being on hold does not stop timing.
