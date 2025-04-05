@@ -8,7 +8,7 @@ categories:
     - StarLibrary
 ---
 
-I have long used the [FluentAssertions](https://fluentassertions.com/) library to make my test code easier to **read** (and **write**). Recently, the authors converted the library to a commercial license (which is 100% in order), but at a [price point I found objectionable]({% post_url 2025-01-22-fluent-assertions-a-pragmatic-roadmap-to-what-next %}) for teams.
+I have long used the [FluentAssertions](https://fluentassertions.com/) library to make my test code easier to **read** (and **write**). Recently, the authors converted the library to a commercial license (**which is 100% in order**), but at a [price point I found objectionable]({% post_url 2025-01-22-fluent-assertions-a-pragmatic-roadmap-to-what-next %}) for teams.
 
 Checking today, I see there has been a concession in the form of a **small business license**.
 
