@@ -19,6 +19,7 @@ This is Part 8 of a series on using State Machines to express complex logic.
 - [Using State Machines In .NET - Part 6 - Firing Events On State Change]({% post_url 2025-03-30-using-state-machines-in-net-part-6-firing-events-on-state-change %})
 - [Using State Machines In .NET - Part 7 - Conditional State Transitions]({% post_url 2025-03-31-using-state-machines-in-net-part-7-conditional-state-transitions %})
 - **Using State Machines In .NET - Part 8 - Firing Events Before State Change (This Post)**
+- [Using State Machines In .NET - Part 9 - Calling Asynchronous Methods]({% post_url 2025-04-05-using-state-machines-in-net-part-9-calling-asynchronous-methods %})
 
 One of our [previous posts]({% post_url 2025-03-30-using-state-machines-in-net-part-6-firing-events-on-state-change %}) looked at how to have some logic fire when **entering** a state.
 
