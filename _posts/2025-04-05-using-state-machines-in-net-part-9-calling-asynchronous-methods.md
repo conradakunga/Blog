@@ -9,7 +9,7 @@ categories:
     - StarLibrary
 ---
 
-This is Part 8 of a series on using State Machines to express complex logic.
+This is Part 9 of a series on using State Machines to express complex logic.
 
 - [Using State Machines In .NET  - Part 1 - Introduction]({% post_url 2025-03-24-using-state-machines-part-1-introduction %})
 - [Using State Machines In .NET  - Part 2 - Basic Usage]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %})
@@ -87,7 +87,7 @@ public class MediaService : IMediaService
 }
 ```
 
-We then need something to actually play the song.
+We then need something to actually **play** the song.
 
 This is it's contract:
 
@@ -118,7 +118,7 @@ public class MediaPlayer : IMediaPlayer
 }
 ```
 
-Finally, our jukebox class:
+Finally, our `Jukebox` class:
 
 ```c#
 public sealed class Jukebox
@@ -166,7 +166,7 @@ public sealed class Jukebox
 }
 ```
 
-We then write some tests to make sure everything works correctly.
+We then write some **tests** to make sure everything works correctly.
 
 ```c#
 [Fact]
@@ -247,7 +247,7 @@ Let us proceed to do just that:
 
 ![StateMachineAsyncError](../images/2025/04/StateMachineAsyncError.png)
 
-The IDE is complaining that we are invoving an async method within a method that isn't.
+The IDE is complaining that we are invoking an `async` method within a method that isn't.
 
 We can force it by immediately retrieving the `Result`:
 
@@ -262,11 +262,11 @@ We can force it by immediately retrieving the `Result`:
 
 But forcing `sync` behaviour from `async` code is [not a good practice](https://devblogs.microsoft.com/dotnet/should-i-expose-synchronous-wrappers-for-asynchronous-methods/).
 
-Luckily `Stateless` has solved this problem very elegantly.
+Luckily, `Stateless` has solved this problem in a very elegant way.
 
-All the methods we have talked about in this seriies have **async counterparts**.
+All the methods we have talked about in this series have **async counterparts**.
 
-The solution is therefore to use the `OnEntryAsync()` method.
+The solution is, therefore, to use the `OnEntryAsync()` method.
 
 ```c#
 _stateMachine.Configure(Status.Playing)
@@ -281,7 +281,7 @@ _stateMachine.Configure(Status.Playing)
 
 Unfortunately, we are not done yet.
 
-Once you make any code in your system asynchronous, **that propates all the way up the chain**.
+Once you make **any** code in your system **asynchronous**, it **propagates all the way up the chain**.
 
 We now have to use `FireAsync()` to trigger, rather than just `Fire()`.
 
