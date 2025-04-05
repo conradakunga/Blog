@@ -347,11 +347,13 @@ public sealed class Jukebox
 }
 ```
 
+The final state diagram for the Jukebox is as follows:
 
+![JukebosState](../images/2025/04/JukebosState.png)
 
 ### TLDR
 
-**`Stateless` has async methods that can be used in siutatuons where your state transitions require *async* logic.**
+**`Stateless` has async methods that can be used when your state transitions require *async* logic.**
 
 The code is in my GitHub.
 
