@@ -123,25 +123,25 @@ Finally, our `Jukebox` class:
 ```c#
 public sealed class Jukebox
 {
-    private readonly IMediaService _service;
+    public Status CurrentStatus => _stateMachine.State;
 
     // State machine
     private readonly StateMachine<Status, Trigger> _stateMachine;
 
-    public Jukebox(IMediaService service) : this(Status.Ready, service)
+    public Jukebox(IMediaService service)
     {
-    }
-
-    private Jukebox(Status status, IMediaService service)
-    {
-        _service = service;
-        _stateMachine = new StateMachine<Status, Trigger>(status);
+        _stateMachine = new StateMachine<Status, Trigger>(Status.Ready);
+        var mediaPlayer = new MediaPlayer();
 
         //
         // Configure state machine
         //
         _stateMachine.Configure(Status.Ready)
             .Permit(Trigger.Play, Status.Playing)
+            .Permit(Trigger.Pause, Status.Paused);
+
+        _stateMachine.Configure(Status.Playing)
+            .Permit(Trigger.Stop, Status.Ready)
             .Permit(Trigger.Pause, Status.Paused);
 
         _stateMachine.Configure(Status.Paused)
