@@ -14,11 +14,13 @@ Checking today, I see there has been a concession in the form of a **small busin
 
 ![XceedSmallBusiness](../images/2025/04/XceedSmallBusiness.png)
 
-In the short period when alternatives like Shouldly were candidates for replacement, an even better alternative has emerged.
+In the short period when alternatives like [Shouldly](https://docs.shouldly.org) were candidates for replacement, an even better alternative has emerged.
 
 Thanks to the power of the community and open-source software, the code was forked into a new repository - [AwesomeAssertions](https://awesomeassertions.org). This is a **drop-in replacement** that preserves the same **namespaces** and **type names**.
 
 Another reason I prefer this is that they have also forked and published a corresponding [analyzer](https://github.com/AwesomeAssertions/AwesomeAssertions.analyzers) that can help you write better assertions.
+
+As a reminder, the new [license applies to the library's version 8](https://xceed.com/fluent-assertions-faq/). You can continue to uselder), version 7 (or prior) as those preserve the original license.
 
 ### TLDR
 
