@@ -138,8 +138,7 @@ public sealed class Jukebox
         // Configure state machine
         //
         _stateMachine.Configure(Status.Ready)
-            .Permit(Trigger.Play, Status.Playing)
-            .Permit(Trigger.Pause, Status.Paused);
+            .Permit(Trigger.Play, Status.Playing);
 
         _stateMachine.Configure(Status.Playing)
             .Permit(Trigger.Stop, Status.Ready)
@@ -350,7 +349,7 @@ public sealed class Jukebox
 
 The final state diagram for the Jukebox is as follows:
 
-![JukebosState](../images/2025/04/JukebosState.png)
+![JukebosState](../images/2025/04/JukeBoxState.png)
 
 ### TLDR
 
