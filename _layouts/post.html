@@ -22,5 +22,6 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+  <div><h5><b>This post, <a href="{{ page.url | relative_url }}">{{ page.title }}</a>, was posted on the blog <a href="{{ site.baseurl }}/">{{ site.title }}</a> on {{ page.date | date: date_format }}</b></h5></div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
