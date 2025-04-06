@@ -283,6 +283,6 @@ In the [next post]({% post_url 2025-03-30-using-state-machines-in-net-part-6-fir
 
 ***States can be configured to be SubStates of other states, so nested relationships can be captured.***
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-03-28%20-%20State%20Machines%20Part%205).
 
 Happy Hacking!
