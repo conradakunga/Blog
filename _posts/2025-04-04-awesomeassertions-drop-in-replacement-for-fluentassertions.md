@@ -20,7 +20,7 @@ Thanks to the power of the community and open-source software, the code was fork
 
 Another reason I prefer this is that they have also forked and published a corresponding [analyzer](https://github.com/AwesomeAssertions/AwesomeAssertions.analyzers) that can help you write better assertions.
 
-As a reminder, the new [license applies to the library's version 8](https://xceed.com/fluent-assertions-faq/). You can continue to uselder), version 7 (or prior) as those preserve the original license.
+As a reminder, the new [license applies to the library's version 8](https://xceed.com/fluent-assertions-faq/). You can continue to use the older version 7 (or prior) as those preserve the original license.
 
 ### TLDR
 
