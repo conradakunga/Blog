@@ -21,6 +21,7 @@ This is Part 8 of a series on using State Machines to express complex logic.
 - **Using State Machines In .NET - Part 8 - Firing Events Before State Change (This Post)**
 - [Using State Machines In .NET - Part 9 - Calling Asynchronous Methods]({% post_url 2025-04-05-using-state-machines-in-net-part-9-calling-asynchronous-methods %})
 - [Using State Machines In .NET - Part 10 - Generating State Diagrams]({% post_url 2025-04-06-using-state-machines-in-net-part-10-generating-state-diagrams %})
+- [Using State Machines In .NET - Part 11 - Logic Based On How A State Was Transitioned]({% post_url 2025-04-07-using-state-machines-in-net-part-11-logic-based-on-how-a-state-was-transitioned %})
 
 One of our [previous posts]({% post_url 2025-03-30-using-state-machines-in-net-part-6-firing-events-on-state-change %}) looked at how to have some logic fire when **entering** a state.
 
@@ -28,13 +29,13 @@ In this post, we will look at how to have some logic fire when exiting a state.
 
 Suppose our `Call` system supported playing music to users who are on hold.
 
-Given we are designing flexible, maintainable software, we want to be able to swap put streaming services:
+Given we are designing flexible, maintainable software, we want to be able to swap out streaming services:
 
 - [YouTube Music](https://music.youtube.com/)
 - [Spotify](https://open.spotify.com/)
 - [Apple Music](https://music.apple.com/us/new)
 
-We thus define our contract, via an interface:
+We thus define our contract via an interface:
 
 ```c#
 public interface IStreamingService

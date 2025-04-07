@@ -20,6 +20,7 @@ This is Part 4 of a series on using State Machines to express complex logic.
 - [Using State Machines In .NET - Part 8 - Firing Events Before State Change]({% post_url 2025-04-02-using-state-machines-in-net-part-8-firing-events-before-state-change %})
 - [Using State Machines In .NET - Part 9 - Calling Asynchronous Methods]({% post_url 2025-04-05-using-state-machines-in-net-part-9-calling-asynchronous-methods %})
 - [Using State Machines In .NET - Part 10 - Generating State Diagrams]({% post_url 2025-04-06-using-state-machines-in-net-part-10-generating-state-diagrams %})
+- [Using State Machines In .NET - Part 11 - Logic Based On How A State Was Transitioned]({% post_url 2025-04-07-using-state-machines-in-net-part-11-logic-based-on-how-a-state-was-transitioned %})
 
 In our last [two]({% post_url 2025-03-26-using-state-machines-part-3-setting-initial-state %}) [posts]({% post_url 2025-03-25-using-state-machines-part-2-basic-usage %}), we looked at configuring a state machine and setting its **initial state**.
 
