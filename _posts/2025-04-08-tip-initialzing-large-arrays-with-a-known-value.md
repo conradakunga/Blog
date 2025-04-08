@@ -51,4 +51,14 @@ var span = new Span<byte>(byteArray);
 span.Fill(1);
 ```
 
+### BONUS
+
+You can also quickly reset the array to all zeros using the [Array.Clear](https://learn.microsoft.com/en-us/dotnet/api/system.array.clear?view=net-9.0) method as follows:
+
+```c#
+Array.Clear(byteArray);
+```
+
+
+
 Happy hacking!
