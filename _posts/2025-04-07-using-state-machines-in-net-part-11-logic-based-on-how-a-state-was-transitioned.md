@@ -22,8 +22,9 @@ This is Part 11 of a series on using State Machines to express complex logic.
 - [Using State Machines In .NET - Part 9 - Calling Asynchronous Methods]({% post_url 2025-04-05-using-state-machines-in-net-part-9-calling-asynchronous-methods %})
 - [Using State Machines In .NET - Part 10 - Generating State Diagrams]({% post_url 2025-04-06-using-state-machines-in-net-part-10-generating-state-diagrams %})
 - **Using State Machines In .NET - Part 11 - Logic Based On How A State Was Transitioned (This Post)**
+- [Using State Machines In .NET - Part 12 - State Activation & Entry]({% post_url 2025-04-09-using-state-machines-in-net-part-12-state-activation-entry %})
 
-In several posts in this series, we looked at how to invoke logic when a state changes.
+Several posts in this series looked at how to **invoke logic when a state changes**.
 
 [This post]({% post_url 2025-04-05-using-state-machines-in-net-part-9-calling-asynchronous-methods %}) in particular, while technically correct, actually had a bug:
 

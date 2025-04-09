@@ -22,6 +22,7 @@ This is Part 9 of a series on using State Machines to express complex logic.
 - **Using State Machines In .NET - Part 9 - Calling Asynchronous Methods (This Post)**
 - [Using State Machines In .NET - Part 10 - Generating State Diagrams]({% post_url 2025-04-06-using-state-machines-in-net-part-10-generating-state-diagrams %})
 - [Using State Machines In .NET - Part 11 - Logic Based On How A State Was Transitioned]({% post_url 2025-04-07-using-state-machines-in-net-part-11-logic-based-on-how-a-state-was-transitioned %})
+- [Using State Machines In .NET - Part 12 - State Activation & Entry]({% post_url 2025-04-09-using-state-machines-in-net-part-12-state-activation-entry %})
 
 In our [last post in the series]({% post_url 2025-04-02-using-state-machines-in-net-part-8-firing-events-before-state-change %}), we looked at how to fire events **before** state change.
 
