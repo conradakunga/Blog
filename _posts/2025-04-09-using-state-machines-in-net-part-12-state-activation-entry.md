@@ -3,6 +3,10 @@ layout: post
 title: Using State Machines In .NET - Part 12 - State Activation & Entry
 date: 2025-04-09 20:44:59 +0300
 categories:
+    - C#
+    - .NET
+    - Stateless
+    - StarLibrary
 ---
 
 This is Part 12 of a series on using State Machines to express complex logic.
