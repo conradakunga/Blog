@@ -182,6 +182,14 @@ GitVersion_WeightedPreReleaseNumber='55011'
 
 These can be used to set [environment variables](https://www.dreamhost.com/blog/environment-variables/), or output to a .[env](https://dotenvx.com/docs/env-file) file.
 
+You can achieve that as follows as part of your build process:
+
+```bash
+gitversion /output dotenv > gitversion.env
+```
+
+
+
 ### TLDR
 
 **`GitVersion` is a dotnet tool that makes it easy to extract git information for use in a build process.**
