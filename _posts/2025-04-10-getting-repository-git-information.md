@@ -182,7 +182,19 @@ GitVersion_WeightedPreReleaseNumber='55011'
 
 These can be used to set [environment variables](https://www.dreamhost.com/blog/environment-variables/), or output to a .[env](https://dotenvx.com/docs/env-file) file.
 
-You can achieve that as follows as part of your build process:
+Given that the values come back with each on it's **own line**, you can use your favourite [grepping tool](https://en.wikipedia.org/wiki/Grep), so [ripgrep](https://github.com/BurntSushi/ripgrep) or [grep](https://man7.org/linux/man-pages/man1/grep.1.html).
+
+Using `ripgrep`:
+
+```bash
+dotnet gitversion /output dotenv | rg SemVer
+```
+
+The following will be the result.
+
+![GitVersionGrep](../images/2025/04/GitVersionGrep.png)
+
+To get all the values into a `.env` file, you can run the folowing command as part of your [build process](https://en.wikipedia.org/wiki/Software_build).
 
 ```bash
 gitversion /output dotenv > gitversion.env
