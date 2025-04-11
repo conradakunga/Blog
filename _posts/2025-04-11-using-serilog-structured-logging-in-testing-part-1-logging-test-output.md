@@ -189,6 +189,6 @@ We will look at that in our next post.
 
 **Testing can quickly get complicated, and one of the first steps in managing this is custom outputting to the test runner.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-11%20-%20Structured%20Logging%20%26%20Testing%20Part%201).
 
 Happy hacking! 
