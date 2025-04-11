@@ -18,9 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-author:
-   name: Conrad Akunga
-   email: conradakunga@gmail.com
+author: Conrad Akunga
 title: "Conrad Akunga, Esquire. Code"
 email: "conradakunga@gmail.com"
 description: "I have been writing software professionally in Nairobi, Kenya for over 26 years. And I'm still learning."

@@ -23,7 +23,7 @@ permalink: /feed.xml
     <div><h5><b>This post, <a href="{{ post.url | absolute_url}}">{{ post.title }}</a>, was originally posted on the blog <a href="{{ page.url | absolute_url }}">{{ site.title }}</a> on {{ post.date | date: date_format }}</b></h5></div>]]>
     </content>
     <author>
-        <name>{{ site.author.name }}</name>
+        <name>{{ site.author }}</name>
     </author>
 {% for category in post.categories %}
     <category term="{{ category | xml_escape }}"/>
