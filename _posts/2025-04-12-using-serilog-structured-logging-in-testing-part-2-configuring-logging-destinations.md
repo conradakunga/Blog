@@ -156,15 +156,15 @@ Once we re-run our tests, an expanded entry looks like this:
 
 ![SerilogCustomProperties](../images/2025/04/SerilogCustomProperties.png)
 
-The value of these properties is that they can be used to sort, search and filter.
+The value of these properties is that they can be used to **sort**, **search**, and **filter**.
 
 ![SerilogFilterSearch](../images/2025/04/SerilogFilterSearch.png)
 
-In this fashion, we can customize the properties that are written into our structured logs and use them to search and filter.
+In this fashion, we can not only store our logs in custom destinations, but we can also **enrich** them with additional properties.
 
 ### TLDR
 
-**We can leverage the power of structured logging to store information from test runs in central storage like `Seq` or `ElasticSearch`.**
+**We can leverage the power of structured logging to store enriched logs from test runs in central storage like `Seq` or `ElasticSearch`.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-13%20-%20Structured%20Logging%20%26%20Testing%20Part%202).
 
