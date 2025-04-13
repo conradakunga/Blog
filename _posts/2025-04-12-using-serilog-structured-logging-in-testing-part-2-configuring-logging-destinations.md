@@ -51,10 +51,10 @@ services:
 A couple of things to note:
 
 1. I am using the **preview** version. If you want the latest version, use `datalust/seq`. 
-2. I have set the timezone to where I am to make it easier to correlate the log timestamps with my current locale. You can pick yours from [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) (the TZ identifier column)
+2. I have set the **timezone to where I am** to make it easier to correlate the log timestamps with my current locale. Get into the habit of doing this for your docker containers. You can pick yours from [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) (the TZ identifier column)
 3. I have mapped the admin interface to port `81` from the default `80` but left the logging interface to `5431`
 
-From the folder the `docker-compose.yaml` file is in, run the following command:
+From the folder `docker-compose.yaml` file is in, run the following command:
 
 ```bash
 docker-compose up -d --build
@@ -162,6 +162,6 @@ In this fashion, we can customize the properties that are written into our struc
 
 **We can leverage the power of structured logging to store information from test runs in central storage like `Seq` or `ElasticSearch`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-13%20-%20Structured%20Logging%20%26%20Testing%20Part%202).
 
 Happy hacking!
