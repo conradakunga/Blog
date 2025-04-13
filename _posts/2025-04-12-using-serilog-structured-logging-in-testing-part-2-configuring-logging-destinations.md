@@ -12,6 +12,7 @@ This is Part 2 of a series on using Serilog & structured logging in testing
 
 - [Using Serilog & Structured Logging In Testing - Part 1 - Introduction]({% post_url 2025-04-11-using-serilog-structured-logging-in-testing-part-1-logging-test-output %})
 - **Using Serilog & Structured Logging In Testing - Part 2 - Configuring Logging Destinations (This post)**
+- [Using Serilog & Structured Logging In Testing - Part 3 - Testing Log Messages]({% post_url  2025-04-13-using-serilog-structured-logging-in-testing-part-3-testing-log-messages %})
 
 Our [last post]({% post_url 2025-04-11-using-serilog-structured-logging-in-testing-part-1-logging-test-output %}) looked at how to control logging to the test runner.
 
@@ -161,6 +162,45 @@ The value of these properties is that they can be used to **sort**, **search**, 
 ![SerilogFilterSearch](../images/2025/04/SerilogFilterSearch.png)
 
 In this fashion, we can not only store our logs in custom destinations, but we can also **enrich** them with additional properties.
+
+To log into `ElasticSearch`, you only need to do the following:
+
+1. Install the sink for `ElasticSearch` - [Elastic.Serilog.Sinks](https://www.nuget.org/packages/Elastic.Serilog.Sinks)
+2. Update the code to write to `ElasticSearch`
+
+The code will be as follows:
+
+
+```c#
+public CalculatorTests(ITestOutputHelper testOutputHelper)
+{
+    Log.Logger = new LoggerConfiguration()
+        // Add the machine name to the logged properties
+        .Enrich.WithMachineName()
+        // Add the logged-in username to the logged properties
+        .Enrich.WithEnvironmentUserName()
+        // Add a custom property
+        .Enrich.WithProperty("Codename", "Bond")
+        // Wire in the test output helper
+        .WriteTo.TestOutput(testOutputHelper)
+        // Wire in seq
+        .WriteTo.Seq("http://localhost:5341")
+        // Wire in ElasticSearch
+        .WriteTo.Elasticsearch([new Uri("http://localhost:9200")], opts =>
+        {
+            opts.DataStream = new DataStreamName("logs", "Innova", applicationName.Replace(" ", ""));
+            opts.BootstrapMethod = BootstrapMethod.Silent;
+            opts.ConfigureChannel = channelOpts => { channelOpts.BufferOptions = new BufferOptions(); };
+        }, transport =>
+        {
+            // transport.Authentication(new BasicAuthentication(username, password)); // Basic Auth
+            // transport.Authentication(new ApiKey(base64EncodedApiKey)); // ApiKey
+        })
+        .CreateLogger();
+}
+```
+
+In our next post, we will examine how to [test log messages]({% post_url 2025-04-13-using-serilog-structured-logging-in-testing-part-3-testing-log-messages %}).
 
 ### TLDR
 

@@ -12,6 +12,7 @@ This is Part 1 of a series on using Serilog & structured logging in testing
 
 - **Using Serilog & Structured Logging In Testing - Part 1 - Introduction (This Post)**
 - [Using Serilog & Structured Logging In Testing - Part 2 - Configuring Logging Destinations]({% post_url 2025-04-12-using-serilog-structured-logging-in-testing-part-2-configuring-logging-destinations %})
+- [Using Serilog & Structured Logging In Testing - Part 3 - Testing Log Messages]({% post_url  2025-04-13-using-serilog-structured-logging-in-testing-part-3-testing-log-messages %})
 
 [Testing](https://en.wikipedia.org/wiki/Software_testing) is a **vital** part of software development, and the complexity of this grows as the software gets more **complicated** and the **number of team members** working on the software grows.
 
@@ -184,7 +185,7 @@ This is well and good if you are running the tests **locally** and you happen to
 
 What if you have **no access to the test runner** but want to access your custom output? Or you want to see output from **previously ran tests**?
 
-We will look at that in our next post.
+We will look at that in our [next post]({% post_url 2025-04-12-using-serilog-structured-logging-in-testing-part-2-configuring-logging-destinations %}).
 
 ### TLDR
 
