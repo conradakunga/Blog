@@ -156,6 +156,10 @@ Once we re-run our tests, an expanded entry looks like this:
 
 ![SerilogCustomProperties](../images/2025/04/SerilogCustomProperties.png)
 
+The value of these properties is that they can be used to sort, search and filter.
+
+![SerilogFilterSearch](../images/2025/04/SerilogFilterSearch.png)
+
 In this fashion, we can customize the properties that are written into our structured logs and use them to search and filter.
 
 ### TLDR
