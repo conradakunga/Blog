@@ -8,9 +8,10 @@ categories:
     - Serilog
 ---
 
-This is Part 1 of a series on using Serilog & structured logging In testing
+This is Part 1 of a series on using Serilog & structured logging in testing
 
 - **Using Serilog & Structured Logging In Testing - Part 1 - Introduction (This Post)**
+- [Using Serilog & Structured Logging In Testing - Part 2 - Configuring Logging Destinations]({% post_url 2025-04-12-using-serilog-structured-logging-in-testing-part-2-configuring-logging-destinations %})
 
 [Testing](https://en.wikipedia.org/wiki/Software_testing) is a **vital** part of software development, and the complexity of this grows as the software gets more **complicated** and the **number of team members** working on the software grows.
 
