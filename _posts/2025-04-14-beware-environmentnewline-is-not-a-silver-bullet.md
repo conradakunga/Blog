@@ -28,9 +28,9 @@ You would do it like this in **OSX**:
 ```c#
 void Main()
 {
-	var filePath = Path.GetTempFileName();
-	File.WriteAllText(filePath, "One\nTwo\nThree - thousand problems");
-	File.ReadAllText(filePath);
+  var filePath = Path.GetTempFileName();
+  File.WriteAllText(filePath, "One\nTwo\nThree - thousand problems");
+  File.ReadAllText(filePath);
 }
 
 ```
@@ -40,9 +40,9 @@ And like this in **Windows**:
 ```c#
 void Main()
 {
-	var filePath = Path.GetTempFileName();
-	File.WriteAllText(filePath, "One\r\nTwo\r\nThree - thousand problems");
-	File.ReadAllText(filePath);
+  var filePath = Path.GetTempFileName();
+  File.WriteAllText(filePath, "One\r\nTwo\r\nThree - thousand problems");
+  File.ReadAllText(filePath);
 }
 
 ```
@@ -68,9 +68,9 @@ Our code will look like this:
 ```c#
 void Main()
 {
-	var filePath = Path.GetTempFileName();
-	File.WriteAllText(filePath, $"One{Environment.NewLine}Two{Environment.NewLine}Three - thousand problems");
-	File.ReadAllText(filePath);
+  var filePath = Path.GetTempFileName();
+  File.WriteAllText(filePath, $"One{Environment.NewLine}Two{Environment.NewLine}Three - thousand problems");
+  File.ReadAllText(filePath);
 }
 
 ```
@@ -94,11 +94,11 @@ Console.WriteLine($"{bytes.Length} bytes written");
 For Windows:
 
 ```c#
-	var osx = @"Y:\Windows.txt";
-	var text = $"One{Environment.NewLine}Two{Environment.NewLine}Three - thousand problems";
-	var bytes = Encoding.Default.GetBytes(text);
-	File.WriteAllBytes(osx, bytes);
-	Console.WriteLine($"{bytes.Length} bytes written");
+var osx = @"Y:\Windows.txt";
+var text = $"One{Environment.NewLine}Two{Environment.NewLine}Three - thousand problems";
+var bytes = Encoding.Default.GetBytes(text);
+File.WriteAllBytes(osx, bytes);
+Console.WriteLine($"{bytes.Length} bytes written");
 ```
 
 In my case, they are writing to the same location, a shared folder.
