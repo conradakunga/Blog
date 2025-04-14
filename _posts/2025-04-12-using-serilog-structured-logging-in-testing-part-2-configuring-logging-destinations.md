@@ -206,6 +206,6 @@ In our next post, we will examine how to [test log messages]({% post_url 2025-04
 
 **We can leverage the power of structured logging to store enriched logs from test runs in central storage like `Seq` or `ElasticSearch`.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-13%20-%20Structured%20Logging%20%26%20Testing%20Part%202).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-04-12%20-%20Structured%20Logging%20%26%20Testing%20Part%202).
 
 Happy hacking!

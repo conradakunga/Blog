@@ -156,7 +156,7 @@ Thus, we can always get a visual representation of our state machine to ensure t
 
 **The `Stateless` library can output the state transition diagrams in `Mermaid` or `DOTGraph` format.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-06%20-%20State%20Machines%20Part%2010).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-04-06%20-%20State%20Machines%20Part%2010).
 
 Happy hacking!
 

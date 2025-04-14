@@ -176,6 +176,6 @@ Thus, we can control **HOW** the state **transitioned into** and have logic appr
 
 **`Stateless` offers the `OnEntryFromAsync` and `OnEntryFrom` to have code conditional on which trigger transitioned the state.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-07%20-%20State%20Machines%20Part%2011).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-04-07%20-%20State%20Machines%20Part%2011).
 
 Happy hacking!

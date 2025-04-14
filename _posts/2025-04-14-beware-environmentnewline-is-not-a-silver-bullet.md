@@ -202,6 +202,6 @@ You can probably avoid this problem by using the [File.ReadAllLines()](https://l
 
 **There are nuances in dealing with end-of-line delimiters across operating systems that are not magically solved by using `Environment.NewLine`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-04-14%20-%20Newlines).
 
 Happy hacking!

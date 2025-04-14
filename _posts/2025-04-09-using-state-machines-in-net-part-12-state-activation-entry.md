@@ -209,6 +209,6 @@ The tests pass, as expected.
 
 **The `OnActivate()` and `OnActivateAsync()` can be used to control logic on state transition when invoked by calling the Activate() method of the state machine.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-09%20-%20State%20Machines%20Part%2012).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-04-09%20-%20State%20Machines%20Part%2012).
 
 Happy hacking!

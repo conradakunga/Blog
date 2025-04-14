@@ -357,6 +357,6 @@ The final state diagram for the Jukebox is as follows:
 
 **`Stateless` has async methods that can be used when your state transitions require *async* logic.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-05%20-%20State%20Machines%20Part%209).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-04-05%20-%20State%20Machines%20Part%209).
 
 Happy hacking!

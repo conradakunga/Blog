@@ -253,6 +253,6 @@ If `Debug` is still too noisy, for example the library is being consumed by a **
 
 **The `TestOutputHelper` has an `Output` property that we can use to access and interrogate whatever has been written to the logging pipeline.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-13%20-%20Structured%20Logging%20%26%20Testing%20Part%203).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-04-13%20-%20Structured%20Logging%20%26%20Testing%20Part%203).
 
 Happy hacking!
