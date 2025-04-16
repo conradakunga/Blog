@@ -114,6 +114,6 @@ Why the first line? Because a whois response looks like this:
 
 **The `Dns` class has methods that allow you to retrieve an `IPAddress` from a domain, and a host from an `IPAddress`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-04-16%20-%20DNS).
 
 Happy hacking!
