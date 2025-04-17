@@ -18,14 +18,14 @@ So this is an excellent opportunity to stitch together a lot of the things we ha
 
 We will therefore walk though the following:
 
-- Articulating our requirements
-- Preparing a design
-- Building the component
-- Testing the component
-- Packaging the component
-- Deploying the component
+- Articulating our **requirements**
+- Preparing a **design**
+- **Building** the component
+- **Testing** the component
+- **Packaging** the component
+- **Deploying** the component
 - Iterration
-- Documentation
+- **Documentation**
 
 This is something I will build in public, with the source code available to anyone interested in GitHub. I will do my best to document everything for clarity, as this is an opportunity to not only teach, but learn myself.
 
