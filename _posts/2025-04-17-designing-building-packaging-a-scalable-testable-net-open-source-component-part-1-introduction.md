@@ -27,7 +27,7 @@ We will therefore walk though the following:
 - Iterration
 - **Documentation**
 
-This is something I will build in public, with the source code available to anyone interested in GitHub. I will do my best to document everything for clarity, as this is an opportunity to not only teach, but learn myself.
+This is something I will build in public, with the source code available to anyone interested in [GitHub](https://github.com/). I will do my best to document everything for clarity, as this is an opportunity to not only teach, but learn myself.
 
 Topics I expect to cover in the course of this series are:
 
