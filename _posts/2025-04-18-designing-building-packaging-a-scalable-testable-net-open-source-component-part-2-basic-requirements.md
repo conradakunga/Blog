@@ -87,4 +87,8 @@ Given we are going to support encryption and compression, it will probably be a 
 
 In our next post we shall setup our project and start the preliminary work.
 
+### TLDR
+
+**This post outlines the requirements we want to address with the proposed software.**
+
 Happy hacking!
