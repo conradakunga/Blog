@@ -355,6 +355,6 @@ The final repo will look like this, with all our code pushed.
 
 **This post sets up the project in readiness for the implementation.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
