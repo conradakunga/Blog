@@ -13,6 +13,7 @@ This is Part 2 of a series on Designing, Building & Packaging A Scalable, Testab
 
 - [Building & Packaging A Scalable, Testable .NET Open Source Component - Part 1 - Introduction]({% post_url 2025-04-17-designing-building-packaging-a-scalable-testable-net-open-source-component-part-1-introduction %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 2 - Basic Requirements (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 3 - Project Setup]({% post_url 2025-04-19-designing-building-packaging-a-scalable-testable-net-open-source-component-part-3-project-setup %})
 
 [Our last post]({% post_url 2025-04-17-designing-building-packaging-a-scalable-testable-net-open-source-component-part-1-introduction %}) was an introduction to this series.
 
@@ -21,6 +22,8 @@ This post will look at defining the basic requirements.
 As explained earlier, I have a pet project that will require the uploading of files (PDFs to be precise), storage and then processing. These files may require re-processing, so I cannot discard them after completion.
 
 They therefore need to be stored.
+
+### Introduction
 
 This is the rationale of what we are building.
 
@@ -85,7 +88,7 @@ Files are usually uploaded with some **context** - e.g. an upload file will belo
 
 Given we are going to support encryption and compression, it will probably be a good idea to persist whatever encryption algorithm and compression algorithm were used at the point of storage as part of the metadata. This way should we need to change them, updating existing files will be much easier. It will look repetitive, but this is an acceptable choice to balance future changes.
 
-In our next post we shall setup our project and start the preliminary work.
+In our [next post]({% post_url 2025-04-19-designing-building-packaging-a-scalable-testable-net-open-source-component-part-3-project-setup %}) we shall setup our project and start the preliminary work.
 
 ### TLDR
 
