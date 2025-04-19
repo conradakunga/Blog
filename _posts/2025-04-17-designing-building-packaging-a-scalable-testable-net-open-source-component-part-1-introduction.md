@@ -6,11 +6,13 @@ categories:
     - .NET
     - C#
     - OpenSource
+    - Design
 ---
 
 This is Part 1 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
 
-- **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component (This Post)**
+- **Building & Packaging A Scalable, Testable .NET Open Source Component - Part 1 - Introduction (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 2 - Basic Requirements]({% post_url 2025-04-18-designing-building-packaging-a-scalable-testable-net-open-source-component-part-2-basic-requirements %})
 
 I am working on a pet project that requires the **uploading and storage of files before processing** them. As I was doing so I realized that this is a problem **I keep having**, and chances are **somebody else is too**.
 
