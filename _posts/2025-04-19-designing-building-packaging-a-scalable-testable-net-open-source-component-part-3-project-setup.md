@@ -19,7 +19,7 @@ In our [last post]({% post_url 2025-04-18-designing-building-packaging-a-scalabl
 
 In this post we will setup our project.
 
-**You do not need to do this yourself - you can just check out the code from [GitHub](https://github.com/conradakunga/UploadFileManager) like so:**
+**You do not carry out the steps outlined in this post yourself - you can just check out the code from [GitHub](https://github.com/conradakunga/UploadFileManager) like so:**
 
 ```bash
 git clone https://github.com/conradakunga/UploadFileManager.git
