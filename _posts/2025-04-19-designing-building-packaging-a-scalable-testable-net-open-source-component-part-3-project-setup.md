@@ -19,11 +19,13 @@ In our [last post]({% post_url 2025-04-18-designing-building-packaging-a-scalabl
 
 In this post we will setup our project.
 
-**You do not carry out the steps outlined in this post yourself - you can just check out the code from [GitHub](https://github.com/conradakunga/UploadFileManager) like so:**
+**NOTE: You do not carry out the steps outlined in this post yourself - you can just check out the code from [GitHub](https://github.com/conradakunga/UploadFileManager) like so:**
 
 ```bash
 git clone https://github.com/conradakunga/UploadFileManager.git
 ```
+
+The rest of this post is if you want to learn to setup a project yourself, via command line. Almost everything done here  around project creation can be accomplished using an IDE like [JetBrains Rider](https://www.jetbrains.com/rider/) or [Microosft Visual Studio](https://visualstudio.microsoft.com/).
 
 First, we will create an empty directory to store our projects.
 
