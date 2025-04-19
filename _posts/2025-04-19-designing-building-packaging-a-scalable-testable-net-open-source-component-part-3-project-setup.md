@@ -19,6 +19,12 @@ In our [last post]({% post_url 2025-04-18-designing-building-packaging-a-scalabl
 
 In this post we will setup our project.
 
+**You do not need to do this yourself - you can just check out the code from [GitHub](https://github.com/conradakunga/UploadFileManager) like so:**
+
+```bash
+git clone https://github.com/conradakunga/UploadFileManager.git
+```
+
 First, we will create an empty directory to store our projects.
 
 ```bash
@@ -33,9 +39,9 @@ dotnet new sln
 
 Next we will turn our attention to a common problem that can inadvertently trip you up.
 
-If you have multiple projects in a solution, each project has its own build configuration and installed packages. What happens when these are out of sync inadvertently? Project A is .NET 8 and B is .NET 9 and A depends on B? Or A is using version 1 of a package and B is using version 2?
+If you have **multiple projects** in a solution, each project has its **own build configuration** and **installed packages**. What happens when these are out of sync inadvertently? **Project A is .NET 8 and B is .NET 9** and A depends on B? Or **A is using version 1** of a package and **B is using version 2**?
 
-Central package management is the solution to this problem.
+[Central package management](https://devblogs.microsoft.com/dotnet/introducing-central-package-management/) is the solution to this problem.
 
 First, we run the following command to create the file that stores centrally the packages used in our component.
 
@@ -80,7 +86,7 @@ It will have the following contents:
 
 Next we will create the projects for our component.
 
-First is the project for the component itself, a class library.
+First is the project for the component itself, a [class library](https://learn.microsoft.com/en-us/dotnet/standard/class-libraries).
 
 ```bash
 dotnet new classlib -o src/UploadFileManager
@@ -119,7 +125,7 @@ We get the following error:
   /Users/rad/Projects/UploadFileManager/tests/UploadFileManagerTests/UploadFileManagerTests.csproj : error NU1008: Projects that use central package version management should not define the version on the PackageReference items but on the PackageVersion items: coverlet.collector;Microsoft.NET.Test.Sdk;xunit;xunit.runner.visualstudio.
 ```
 
-This is because we have configured central package management but the generated project files directly specify the versions.
+This is because we have configured central package management but the generated project files directly specify the **versions**.
 
 We need to update the test `.csproj` file.
 
@@ -149,7 +155,7 @@ Currently it is like this:
 </Project>
 ```
 
-The simplest way is to **delete** the `PackageReferences` and add them again afresh via command line.
+The simplest way is to **delete** all the `PackageReferences` and add them again afresh via command line.
 
 ```bash
 dotnet add package coverlet.collector
@@ -218,7 +224,7 @@ The file `Directory.Packages.props` now looks like this:
 </Project>
 ```
 
-Not that this file now has the version numbers, so if any project uses any of these packages, that is the version that will get used.
+Not that this file now **has the version numbers**, so if any project uses any of these packages, that is the version that will get used.
 
 If we now build, it will succeed.
 
@@ -324,7 +330,7 @@ Go to the [GitHub](https://github.com/) site and click the following button:
 
 ![NewRepo](../images/2025/04/NewRepo.png)
 
-Next we provide some information about the repository.
+Next we provide some **information** about the repository.
 
 For now, I have chosen the [MIT](https://opensource.org/license/mit) license but to be honest, I haven't thought all that much about it.
 
