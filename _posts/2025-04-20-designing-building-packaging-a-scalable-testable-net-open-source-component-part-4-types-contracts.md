@@ -82,7 +82,7 @@ namespace UploadFileManager;
 /// </summary>
 public sealed record FileMetadata
 {
-  	/// <summary>
+    /// <summary>
     /// File identifier
     /// </summary>
     public required Guid FileId { get; init; }
