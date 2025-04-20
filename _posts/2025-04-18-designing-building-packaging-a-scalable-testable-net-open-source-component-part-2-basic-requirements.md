@@ -14,6 +14,7 @@ This is Part 2 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Building & Packaging A Scalable, Testable .NET Open Source Component - Part 1 - Introduction]({% post_url 2025-04-17-designing-building-packaging-a-scalable-testable-net-open-source-component-part-1-introduction %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 2 - Basic Requirements (This Post)**
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 3 - Project Setup]({% post_url 2025-04-19-designing-building-packaging-a-scalable-testable-net-open-source-component-part-3-project-setup %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 4 - Types & Contracts]({% post_url 2025-04-20-designing-building-packaging-a-scalable-testable-net-open-source-component-part-4-types-contracts %})
 
 [Our last post]({% post_url 2025-04-17-designing-building-packaging-a-scalable-testable-net-open-source-component-part-1-introduction %}) was an introduction to this series.
 
@@ -84,11 +85,31 @@ If you upload two files with the same name, **the system will treat them as diff
 
 Files are usually uploaded with some **context** - e.g. an upload file will belong to the logged in user. **This component will make no effort to preserve this - that will be responsibility of the application**. The component will purely deal with the file alone.
 
-**Changes Of Settings**
+### Changes Of Settings
 
 Given we are going to support encryption and compression, it will probably be a good idea to persist whatever encryption algorithm and compression algorithm were used at the point of storage as part of the metadata. This way should we need to change them, updating existing files will be much easier. It will look repetitive, but this is an acceptable choice to balance future changes.
 
+### Hashing
+
+We will use SHA
+
 In our [next post]({% post_url 2025-04-19-designing-building-packaging-a-scalable-testable-net-open-source-component-part-3-project-setup %}) we shall setup our project and start the preliminary work.
+
+### Encryption
+
+We will use AES
+
+### Compression
+
+We will use Zip compression
+
+### File IDs
+
+We will use Guid as file IDs
+
+### Update
+
+There will be **no support for update**. To update, **delete** the existing and **upload** the replacement.
 
 ### TLDR
 

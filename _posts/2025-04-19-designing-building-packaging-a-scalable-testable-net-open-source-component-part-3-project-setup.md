@@ -14,6 +14,7 @@ This is Part 3 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Building & Packaging A Scalable, Testable .NET Open Source Component - Part 1 - Introduction]({% post_url 2025-04-17-designing-building-packaging-a-scalable-testable-net-open-source-component-part-1-introduction %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 2 - Basic Requirements]({% post_url 2025-04-18-designing-building-packaging-a-scalable-testable-net-open-source-component-part-2-basic-requirements %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 3 - Project Setup (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 4 - Types & Contracts]({% post_url 2025-04-20-designing-building-packaging-a-scalable-testable-net-open-source-component-part-4-types-contracts %})
 
 In our [last post]({% post_url 2025-04-18-designing-building-packaging-a-scalable-testable-net-open-source-component-part-2-basic-requirements %}) we outlined the basic requirements.
 
@@ -358,6 +359,8 @@ git push
 The final repo will look like this, with all our code pushed.
 
 ![FinalRepo](../images/2025/04/FinalRepo.png)
+
+In our [next post]({% post_url 2025-04-20-designing-building-packaging-a-scalable-testable-net-open-source-component-part-4-types-contracts %}), we shall begin to implement some types and contracts.
 
 ### TLDR
 
