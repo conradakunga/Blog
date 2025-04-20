@@ -281,6 +281,6 @@ In our next post, we will tie the types we have implemented together and write t
 
 **This post creats preliminary versions of some of the types and contracts we will be using.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager/).
 
 Happy hacking!
