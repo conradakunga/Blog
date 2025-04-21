@@ -15,10 +15,11 @@ This is Part 4 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 2 - Basic Requirements]({% post_url 2025-04-18-designing-building-packaging-a-scalable-testable-net-open-source-component-part-2-basic-requirements %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 3 - Project Setup]({% post_url 2025-04-19-designing-building-packaging-a-scalable-testable-net-open-source-component-part-3-project-setup %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 4 - Types & Contracts (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 5 - Component Implementation]({% post_url 2025-04-21-designing-building-packaging-a-scalable-testable-net-open-source-component-part-5-component-implementation %})
 
-In our [last post]({% post_url 2025-04-19-designing-building-packaging-a-scalable-testable-net-open-source-component-part-3-project-setup %}), we set-up our project structures.
+In our [last post]({% post_url 2025-04-19-designing-building-packaging-a-scalable-testable-net-open-source-component-part-3-project-setup %}), we set up our project structures.
 
-In this post we shall start implementing some **types** and **contracts**.
+In this post, we shall start implementing some **types** and **contracts**.
 
 The requirements for the file **metadata** were as follows:
 
@@ -165,9 +166,9 @@ We can redesign this as follows:
 3. The second will **encrypt** the data
 4. The third will **persist** the data
 
-Thus there is a pipeline that will process the incoming data.
+Thus, there is a pipeline that will process the incoming data.
 
-The **order of the pipeline matters** - compression of encrypted data ususally yields poor compression.
+The **order of the pipeline matters** - if we encrypt first, we will get poor compression.
 
 The component internally will look like this:
 
@@ -179,7 +180,7 @@ Let us define the following contracts:
 - `IFileEncryptor`
 - `IFilePersister`
 
-The `IFileCompressior` will look like this:
+The `IFileCompressor` will look like this:
 
 `````C#
 namespace UploadFileManager;
@@ -273,13 +274,13 @@ public interface IFileManager
 }
 ```
 
-What we have defined here is that the `IFileManager` will require the three services we have just designed to stitch them togther to carry out the required work.
+We have defined here that the `IFileManager` will require the three services we have just designed to be stitched together to carry out the required work.
 
 In our next post, we will tie the types we have implemented together and write tests to validate our assumptions and functionality.
 
 ### TLDR
 
-**This post creats preliminary versions of some of the types and contracts we will be using.**
+**This post creates preliminary versions of some of the types and contracts we will use.**
 
 The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager/).
 
