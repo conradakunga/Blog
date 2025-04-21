@@ -22,7 +22,7 @@ In our [last post]({% post_url 2025-04-20-designing-building-packaging-a-scalabl
 
 In this post, we will start **implementing** our component.
 
-We had previously discussed how the component would have **services injected** that performed the actual work.
+We previously discussed how the component would have **services injected** to perform the actual work.
 
 We shall have injected these via [constructor injection]({% post_url 2025-01-07-dependency-injection-in-c-net-part-8-types-of-depedency-injection %}), which we have discussed earlier.
 
@@ -36,17 +36,21 @@ public sealed class UploadFileManager : IUploadFileManager
     private readonly IFileCompressor _fileCompressor;
     private readonly IFileEncryptor _fileEncryptor;
     private readonly IFilePersistor _filePersistor;
+    private readonly TimeProvider _timeProvider;
 
-    public UploadFileManager(IFilePersistor filePersistor, IFileEncryptor fileEncryptor, IFileCompressor fileCompressor)
+    public UploadFileManager(IFilePersistor filePersistor, IFileEncryptor fileEncryptor, IFileCompressor fileCompressor,
+        TimeProvider timeProvider)
     {
-        // Check that the injected services are valid
-        ArgumentNullException.ThrowIfNull(filePersistor);
-        ArgumentNullException.ThrowIfNull(fileEncryptor);
-        ArgumentNullException.ThrowIfNull(fileCompressor);
+      // Check that the injected services are valid
+      ArgumentNullException.ThrowIfNull(filePersistor);
+      ArgumentNullException.ThrowIfNull(fileEncryptor);
+      ArgumentNullException.ThrowIfNull(fileCompressor);
+      ArgumentNullException.ThrowIfNull(timeProvider);
 
-        _filePersistor = filePersistor;
-        _fileEncryptor = fileEncryptor;
-        _fileCompressor = fileCompressor;
+      _filePersistor = filePersistor;
+      _fileEncryptor = fileEncryptor;
+      _fileCompressor = fileCompressor;
+      _timeProvider = timeProvider;
     }
 
     /// <summary>
@@ -173,7 +177,7 @@ public async Task<FileMetadata> UploadFileAsync(string fileName, string extensio
         FileId = fileID,
         Name = fileName,
         Extension = extension,
-        DateUploaded = DateTime.Now,
+        DateUploaded = _timeProvider.GetLocalNow().DateTime,
         OriginalSize = data.Length,
         PersistedSize = encrypted.Length,
         CompressionAlgorithm = _fileCompressor.CompressionAlgorithm,
@@ -187,7 +191,11 @@ public async Task<FileMetadata> UploadFileAsync(string fileName, string extensio
 }
 ```
 
-For clarity, we have modified the `FileMetadata` type and renamed `CompressedSize` to `PersistedSize`.
+A couple of things here:
+
+1. For clarity, we have modified the `FileMetadata` type and renamed `CompressedSize` to `PersistedSize`.
+2. We are using the [CreateVersion7](https://learn.microsoft.com/en-us/dotnet/api/system.guid.createversion7?view=net-9.0) of the [Guid](https://learn.microsoft.com/en-us/dotnet/api/system.guid?view=net-9.0) to generate sequential `Guids`, to reduce complications of storage if a database store is used.
+3. We are injecting a [TimeProvider](https://learn.microsoft.com/en-us/dotnet/api/system.timeprovider?view=net-9.0) to make date-based testing easier.
 
 Next, we will implement the `FetchMetadataAsync` method:
 
