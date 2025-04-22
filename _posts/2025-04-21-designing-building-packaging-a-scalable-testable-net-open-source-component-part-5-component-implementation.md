@@ -7,7 +7,6 @@ categories:
     - C#
     - OpenSource
     - Design
-    - Testing
 ---
 
 This is Part 5 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
@@ -17,6 +16,7 @@ This is Part 5 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 3 - Project Setup]({% post_url 2025-04-19-designing-building-packaging-a-scalable-testable-net-open-source-component-part-3-project-setup %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 4 - Types & Contracts]({% post_url 2025-04-20-designing-building-packaging-a-scalable-testable-net-open-source-component-part-4-types-contracts %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 5 - Component Implementation (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 6 - Mocking & Behaviour Tests]({% post_url 2025-04-22-designing-building-packaging-a-scalable-testable-net-open-source-component-part-6-mocking-behaviour-tests %})
 
 In our [last post]({% post_url 2025-04-20-designing-building-packaging-a-scalable-testable-net-open-source-component-part-4-types-contracts %}), we set up the contracts and types we will use.
 
@@ -263,7 +263,7 @@ public async Task DeleteFileAsync(Guid fileId, CancellationToken cancellationTok
 
 At this point, our implementation is complete, insofar as we are using **contracts** internally and no **concrete** types. We shall implement those later.
 
-In our next post, we will see how to **test our component design and contracts**, even though we haven't implemented any of its services.
+In our [next post]({% post_url 2025-04-22-designing-building-packaging-a-scalable-testable-net-open-source-component-part-6-mocking-behaviour-tests %}), we will see how to **test our component design and contracts**, even though we haven't implemented any of its services.
 
 ### TLDR
 
