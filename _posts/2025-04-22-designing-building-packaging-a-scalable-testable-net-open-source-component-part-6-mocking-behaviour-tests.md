@@ -377,6 +377,6 @@ In our next post, we will make some final improvements to the testing through mo
 4. **Articulate the functionality of the system**
 5. **Create templates for unit testing the implementations**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking
