@@ -8,6 +8,8 @@ categories:
     - OpenSource
     - Design
     - Testing
+    - StarLibrary
+    - Moq
 ---
 
 This is Part 6 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
@@ -18,6 +20,7 @@ This is Part 6 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 4 - Types & Contracts]({% post_url 2025-04-20-designing-building-packaging-a-scalable-testable-net-open-source-component-part-4-types-contracts %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 5 - Component Implementation]({% post_url 2025-04-21-designing-building-packaging-a-scalable-testable-net-open-source-component-part-5-component-implementation %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 6 - Mocking & Behaviour Tests (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 7 - Sequence Verification With Moq]({% post_url 2025-04-23-designing-building-packaging-a-scalable-testable-net-open-source-component-part-7-sequence-verification-with-moq %})
 
 In our [last post]({% post_url 2025-04-21-designing-building-packaging-a-scalable-testable-net-open-source-component-part-5-component-implementation %}), we implemented the functionality of our component.
 
@@ -365,7 +368,7 @@ public class ExtensionValidatorTests
 }
 ```
 
-In our next post, we will make some final improvements to the testing through mocking, as well as some cleanup.
+In our [next post]({% post_url 2025-04-23-designing-building-packaging-a-scalable-testable-net-open-source-component-part-7-sequence-verification-with-moq %}), we will make some final improvements to the testing through mocking, as well as some cleanup.
 
 ### TLDR
 
