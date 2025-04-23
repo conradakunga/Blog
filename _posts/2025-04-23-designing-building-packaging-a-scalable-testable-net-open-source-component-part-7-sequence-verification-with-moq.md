@@ -22,11 +22,11 @@ This is Part 7 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 6 - Mocking & Behaviour Tests]({% post_url 2025-04-22-designing-building-packaging-a-scalable-testable-net-open-source-component-part-6-mocking-behaviour-tests %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 7 - Sequence Verification With Moq (This Post)**
 
-Our last post looked at how to write **behaviour tests** via **mocking** using [Moq](https://github.com/devlooped/moq).
+Our last post explored how to write **behaviour tests** via **mocking** using [Moq](https://github.com/devlooped/moq).
 
-In this post we shall look at some **additional improvements** to verify our component behaves correctly.
+In this post, we shall look at additional improvements to verify that our component behaves correctly.
 
-In our code, the following take place:
+In our code, the following takes place:
 
 1. **Compression**
 2. **Encryption** 
@@ -34,7 +34,7 @@ In our code, the following take place:
 
 These have to take place in the **correct order**. How do we verify the correct order?
 
-As a reminder the signatures are as follows:
+As a reminder, the signatures are as follows:
 
 ```c#
 // Compress the data
@@ -49,7 +49,7 @@ await _filePersistor.StoreFileAsync(fileName, extension, encrypted, cancellation
         return metadata;
 ```
 
-One way would be to assert that the **specific arguments were called**, given we have set them up.
+One way would be to assert that the **specific arguments were called**, given that we have set them up.
 
 ```c#
 // Check that the compressor's Compress method was called once
@@ -63,9 +63,9 @@ persistor.Verify(
     Times.Once);
 ```
 
-This, however, does not work as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-9.0) is reference type, and therefore the **Moq** engine cannot determine **equality** out of the box without some extra work.
+This, however, does not work as a [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-9.0) is a reference type, and therefore the **Moq** engine cannot determine **equality** out of the box without some extra work.
 
-Luckily, there is a better solution to this: **Moq** supports a construct - the `MockSequence`. This can be used to setup the **order in which methods are expected to be called**.
+Luckily, a better solution exists: **Moq** supports a construct - the `MockSequence`. This can be used to set up the **order in which methods are expected to be called**.
 
 This is implemented as follows:
 
@@ -122,7 +122,7 @@ var compressed = _fileCompressor.Compress(data);
       return metadata;
 ```
 
-Upon running, the test now fails.
+Upon running, the test now **fails**.
 
 ![OrderFail](../images/2025/04/OrderFail.png)
 
@@ -137,12 +137,12 @@ All invocations on the mock must have a corresponding setup.
    at Moq.FailForStrictMock.Handle(Invocation invocation, Mock mock) in /_/src/Moq/Interception/InterceptionAspects.cs:line 182
 ```
 
-In our next post we will start to implement the concrete implementations of the services.
+In our next post, we will start to implement the concrete implementations of the services.
 
 ### TLDR
 
 **Using the `MockSequence`, `Moq` allows us to verify the sequence in which methods are called.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
