@@ -90,6 +90,8 @@ persistor.InSequence(sequence).Setup(x =>
     .ReturnsAsync(metaData)
 ```
 
+**Note that I have reorderd the setup to conform to the sequence, as now it matters.**
+
 If we run our code now, our tests will pass.
 
 To verify that the order is enforced, try modifying this code in the `UploadFileManager` to **swap** the order.
