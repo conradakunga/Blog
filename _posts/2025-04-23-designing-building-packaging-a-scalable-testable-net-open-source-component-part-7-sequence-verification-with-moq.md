@@ -148,7 +148,7 @@ All invocations on the mock must have a corresponding setup.
    at Moq.FailForStrictMock.Handle(Invocation invocation, Mock mock) in /_/src/Moq/Interception/InterceptionAspects.cs:line 182
 ```
 
-In our next post, we will start to implement the concrete implementations of the services.
+In our [next post]({% post_url 2025-04-24-designing-building-packaging-a-scalable-testable-net-open-source-component-part-8-compressor-implementation %}), we will start to implement the concrete implementations of the services.
 
 ### TLDR
 

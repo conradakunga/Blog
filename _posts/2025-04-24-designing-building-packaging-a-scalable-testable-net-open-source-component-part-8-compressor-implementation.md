@@ -23,9 +23,9 @@ This is Part 8 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 7 - Sequence Verification With Moq]({% post_url 2025-04-23-designing-building-packaging-a-scalable-testable-net-open-source-component-part-7-sequence-verification-with-moq %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 8 - Compressor Implementation (This Post)**
 
-Our last post looked at how to verify the sequencing of the services we are calling to verify our expected behaviour.
+Our [last post]({% post_url. 2025-04-23-designing-building-packaging-a-scalable-testable-net-open-source-component-part-7-sequence-verification-with-moq %}) looked at **verifying the sequencing** of the services we are calling to assert our **expected behaviour**.
 
-This post will look at the first of the concrete implementations - the `ZipCompressor`.
+This post will look at the first of the **concrete implementations** - the `ZipCompressor`.
 
 As a reminder, this is the interface of the `ICompressor`
 
@@ -116,7 +116,7 @@ public sealed class GZipCompressor : IFileCompressor
 }
 ```
 
-The next order of business is to test this.
+The next order of business is to **test** this.
 
 At this point, we need to ask ourselves, **what are we testing?**
 
@@ -171,7 +171,7 @@ public class GZipCompressorTests
 
 A couple of things to note:
 
-1. The constructor for the test is constructing an instance of the `GZipCompressor` that is used throughout the tests.
+1. The **constructor** for the test is constructing an instance of the `GZipCompressor` that is used throughout the tests.
 2. I am using the [Bogus](https://github.com/bchavez/Bogus) package to generate some random sentences (10) using the `Lorem.Sentences()` method in the `Faker`.
 3. I then use the [GetBytes](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.getbytes?view=net-9.0) method of the [Encoding](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding?view=net-9.0) to transform the string into an array of bytes, which I then use to construct a MemoryStream.
 4. I have created an extension method to assist with converting a [MemoryStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.memorystream?view=net-9.0) to a `byte` array.
@@ -250,9 +250,9 @@ If we run our tests, we should see the following:
 
 ![GzipVerification](../images/2025/04/GzipVerification.png)
 
-Success!
+**Success!**
 
-In our next post, we will create a concrete implementation of the IFileEncryptor.
+In our next post, we will create a **concrete implementation** of the `IFileEncryptor`.
 
 ### TLDR
 
