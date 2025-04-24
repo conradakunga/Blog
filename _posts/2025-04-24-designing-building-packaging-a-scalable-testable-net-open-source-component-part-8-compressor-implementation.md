@@ -258,6 +258,6 @@ In our next post, we will create a **concrete implementation** of the `IFileEncr
 
 **In this post, we created a concrete implementation of the `IFileCompressor` interface and wrote tests to verify that it performs as expected.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy Hacking!
