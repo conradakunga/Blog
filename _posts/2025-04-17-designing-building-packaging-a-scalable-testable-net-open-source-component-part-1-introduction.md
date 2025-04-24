@@ -18,12 +18,13 @@ This is Part 1 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 5 - Component Implementation]({% post_url 2025-04-21-designing-building-packaging-a-scalable-testable-net-open-source-component-part-5-component-implementation %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 6 - Mocking & Behaviour Tests]({% post_url 2025-04-22-designing-building-packaging-a-scalable-testable-net-open-source-component-part-6-mocking-behaviour-tests %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 7 - Sequence Verification With Moq]({% post_url 2025-04-23-designing-building-packaging-a-scalable-testable-net-open-source-component-part-7-sequence-verification-with-moq %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 8 - Compressor Implementation]({% post_url 2025-04-24-designing-building-packaging-a-scalable-testable-net-open-source-component-part-8-compressor-implementation %})
 
 I am working on a pet project that requires the **uploading and storage of files before processing** them. As I was doing so I realized that this is a problem **I keep having**, and chances are **somebody else is too**.
 
-So this is an excellent opportunity to stitch together a lot of the things we have been discussing over the last 6 months.
+This is an excellent opportunity to consolidate many of the topics we have discussed over the last six months.
 
-We will therefore walk though the following:
+We will therefore walk through the following:
 
 - Articulating our **requirements**
 - Preparing a **design**
@@ -34,7 +35,7 @@ We will therefore walk though the following:
 - Iterration
 - **Documentation**
 
-This is something I will build in public, with the source code available to anyone interested in [GitHub](https://github.com/). I will do my best to document everything for clarity, as this is an opportunity to not only teach, but learn myself.
+I will build this in public, with the source code available to anyone interested in [GitHub](https://github.com/). I will do my best to document everything for clarity, as this is an opportunity to not only **teach** but also **learn** myself.
 
 Topics I expect to cover in the course of this series are:
 
@@ -66,12 +67,12 @@ Topics I expect to cover in the course of this series are:
 - Continuous Integration
 - Logging
 
-As usual, I will **assume no prior knowledge** (other than basic programming experience - how to write a class, and how to compile your code.)
+As usual, I will **assume no prior knowledge** (besides basic programming experience - how to write a class and compile your code).
 
 **This should be fun!**
 
 ### TLDR
 
-**I am going to publicly build a very simple open source component to manage uploaded files.**
+**I am going to publicly build a very simple open-source component to manage uploaded files.**
 
 Happy hacking!
