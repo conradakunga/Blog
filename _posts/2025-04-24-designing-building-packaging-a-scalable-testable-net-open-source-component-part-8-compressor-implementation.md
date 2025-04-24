@@ -23,7 +23,7 @@ This is Part 8 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 7 - Sequence Verification With Moq]({% post_url 2025-04-23-designing-building-packaging-a-scalable-testable-net-open-source-component-part-7-sequence-verification-with-moq %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 8 - Compressor Implementation (This Post)**
 
-Our [last post]({% post_url. 2025-04-23-designing-building-packaging-a-scalable-testable-net-open-source-component-part-7-sequence-verification-with-moq %}) looked at **verifying the sequencing** of the services we are calling to assert our **expected behaviour**.
+Our [last post]({% post_url 2025-04-23-designing-building-packaging-a-scalable-testable-net-open-source-component-part-7-sequence-verification-with-moq %}) looked at **verifying the sequencing** of the services we are calling to assert our **expected behaviour**.
 
 This post will look at the first of the **concrete implementations** - the `ZipCompressor`.
 
