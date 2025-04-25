@@ -202,7 +202,7 @@ If we run this test:
 
 ![AESTests](../images/2025/04/AESTests.png)
 
-And with this, our service for encryption and decryption is complete.
+And with this, our service for **encryption** and **decryption** is complete.
 
 In our next post, we will implement the `IFilePersistor` interface to actually store the file.
 
