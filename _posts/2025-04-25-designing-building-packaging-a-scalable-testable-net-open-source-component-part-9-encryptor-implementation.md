@@ -62,6 +62,8 @@ The [AES standard for encryption](https://en.wikipedia.org/wiki/Advanced_Encrypt
 
 These must be provided to the service to carry out the encryption and decryption. To simplify it, we will have overloaded **constructors** that accept these parameters as `byte` arrays or `strings`.
 
+These values will be **stored and managed by the host application** and passed to the component at runtime.
+
 The implementation will look like this:
 
 ```c#
