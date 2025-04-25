@@ -9,6 +9,8 @@ categories:
     - Design
     - Testing
     - StarLibrary
+    - GZip	
+    - Compression
 ---
 
 This is Part 8 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.

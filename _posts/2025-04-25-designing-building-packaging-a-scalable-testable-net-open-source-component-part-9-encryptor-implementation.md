@@ -9,6 +9,8 @@ categories:
     - Design
     - Testing
     - StarLibrary
+    - Aes	
+    - Encryption
 ---
 
 This is Part 9 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
@@ -208,7 +210,7 @@ In our next post, we will implement the `IFilePersistor` interface to actually s
 
 ### TLDR
 
-**In this post, we created an `AesFileEncryptor` component that implemented the `IFIleEncryptor` interface and wrote tests to verify its functionality.**
+**In this post, we created an `AesFileEncryptor` component that implemented the `IFileEncryptor` interface and wrote tests to verify its functionality.**
 
 The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
