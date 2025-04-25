@@ -208,8 +208,8 @@ In our next post, we will implement the `IFilePersistor` interface to actually s
 
 ### TLDR
 
-**In this post, we created an `AesFileEncryptor` component that implemented the `IFIleEncryptor` interface and wrote tests to verify that it works.**
+**In this post, we created an `AesFileEncryptor` component that implemented the `IFIleEncryptor` interface and wrote tests to verify its functionality.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
