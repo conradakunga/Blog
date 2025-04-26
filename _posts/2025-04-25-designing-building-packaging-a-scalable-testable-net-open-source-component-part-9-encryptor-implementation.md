@@ -8,7 +8,6 @@ categories:
     - OpenSource
     - Design
     - Testing
-    - StarLibrary
     - Aes	
     - Encryption
 ---
