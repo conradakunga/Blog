@@ -3,6 +3,11 @@ layout: post
 title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 10 - In Memory Storage
 date: 2025-04-26 18:49:47 +0300
 categories:
+   - .NET
+    - C#
+    - OpenSource
+    - Design
+    - Testing
 ---
 
 This is Part 10 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
