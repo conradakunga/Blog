@@ -3,7 +3,7 @@ layout: post
 title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 11 - SQL Server Storage
 date: 2025-04-27 15:31:55 +0300
 categories:
-   - .NET
+    - .NET
     - C#
     - OpenSource
     - Design
