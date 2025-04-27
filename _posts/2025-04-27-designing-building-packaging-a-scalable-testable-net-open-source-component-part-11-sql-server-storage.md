@@ -459,12 +459,14 @@ Our tests should pass successfully:
 
 ![SqlServerStorageEngineTests](../images/2025/04/SqlServerStorageEngineTests.png)
 
+In a future post, we will look at how to configure the database for initial use, and possibly for upgrades.
+
 In our next post we will implement the PostgreSQL storage engine.
 
 ### TLDR
 
 **In this post, we implemented the `SqlServerStorage` engine to persist our files to a SQL Server Database.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!

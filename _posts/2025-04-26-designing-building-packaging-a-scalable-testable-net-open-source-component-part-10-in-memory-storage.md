@@ -353,7 +353,7 @@ Our tests should pass successfully.
 
 With that, we have a working component capable of **receiving**, **compressing**, **decrypting**, and **storing** files (in memory), as well as **retrieving** them, **retrieving** their **metadata**, checking whether they **exist**, and **deleting** them.
 
-In our next post, we will implement the SQL Server storage engine.
+In our [next post]({% post_url 2025-04-27-designing-building-packaging-a-scalable-testable-net-open-source-component-part-11-sql-server-storage %}), we will implement the SQL Server storage engine.
 
 ### TLDR
 
