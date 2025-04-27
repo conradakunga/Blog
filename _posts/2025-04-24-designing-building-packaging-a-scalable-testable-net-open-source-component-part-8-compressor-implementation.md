@@ -25,6 +25,7 @@ This is Part 8 of a series on Designing, Building & Packaging A Scalable, Testab
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 8 - Compressor Implementation (This Post)**
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 9 - Encryptor Implementation]({% post_url 2025-04-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-9-encryptor-implementation %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 10 - In Memory Storage]({% post_url 2025-04-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-10-in-memory-storage %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 11 - SQL Server Storage]({% post_url 2025-04-27-designing-building-packaging-a-scalable-testable-net-open-source-component-part-11-sql-server-storage %})
 
 Our [last post]({% post_url 2025-04-23-designing-building-packaging-a-scalable-testable-net-open-source-component-part-7-sequence-verification-with-moq %}) looked at **verifying the sequencing** of the services we are calling to assert our **expected behaviour**.
 
@@ -127,6 +128,8 @@ Two things:
 
 1. That the **compression** took place, i.e., the stream is smaller.
 2. That the compressed stream is a **valid** [Gzip](https://en.wikipedia.org/wiki/Gzip)
+
+If you are wondering why **GZip** and not **Zip**? **Gzip** supports compression of a **single file**. **Zip** allows compression of **one or more files**, plus additional options such as setting a **passwords\**
 
 The first is relatively straightforward -- we can **get the size** of the input `stream`, **compress** it, **get the size** of the compressed `stream`, **decompress** it, and then **validate that the final `stream` is the same as the original `stream`**. It is not sufficient to check the stream size after compression - for all you know, the code might have **corrupted** the `stream`.
 
