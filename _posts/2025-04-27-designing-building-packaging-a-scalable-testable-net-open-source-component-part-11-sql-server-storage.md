@@ -459,9 +459,9 @@ Our tests should pass successfully:
 
 ![SqlServerStorageEngineTests](../images/2025/04/SqlServerStorageEngineTests.png)
 
-In a future post, we will look at how to configure the database for initial use, and possibly for upgrades.
+In a future post, we will look at how to **configure the database for initial use**, and possibly for **upgrades**.
 
-In our next post we will implement the PostgreSQL storage engine.
+In our next post we will implement the **PostgreSQL** storage engine.
 
 ### TLDR
 
