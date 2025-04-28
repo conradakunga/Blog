@@ -423,6 +423,6 @@ In the next post we shall look at some of the improvements I have made to make t
 
 **In this post we have implemented the `IStorageEngine` for PostgreSQL**
 
-The code is in my GitHub,
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager),
 
 Happy hacking!
