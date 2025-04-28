@@ -44,13 +44,13 @@ We can start with targeting these versions.
 With regards to functionality, there are two options
 
 1. `Byte` arrays, as we implemented with the `SqlServerStorageEngine`
-2. [LargeObjects](https://www.postgresql.org/docs/current/largeobjects.html)
+2. [Large Object Storage](https://www.postgresql.org/docs/current/largeobjects.html)
 
 For this first iteration we will use `byte` arrays.
 
-We will also use Dapper as the data access library.
+We will also use [Dapper](https://github.com/DapperLib/Dapper) as the data access library.
 
-The first thing to do is create a table that creates the database, table and indexes.
+The first thing to do is to write a script that creates the **table** and **indexes**.
 
 ```sql
 CREATE DATABASE filestore

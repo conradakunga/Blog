@@ -464,7 +464,7 @@ In a future post, we will look at how to **configure the database for initial us
 
 We will also take into consideration that we should test against **multiple versions of SQL Server**.
 
-In our next post we will implement the **PostgreSQL** storage engine.
+In our [next post]({% post_url 2025-04-28-designing-building-packaging-a-scalable-testable-net-open-source-component-part-12-postgresql-storage %}) we will implement the **PostgreSQL** storage engine.
 
 ### TLDR
 
