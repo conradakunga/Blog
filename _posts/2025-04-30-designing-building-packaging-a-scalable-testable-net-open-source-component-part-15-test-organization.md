@@ -78,6 +78,6 @@ This makes it easier to **visualize** and **run** the tests. For example, if you
 
 **`Traits` allow for the organization of tests to make the testing experience smoother.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
