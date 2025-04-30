@@ -33,13 +33,13 @@ In our last post, we looked at how to virtualize infrastructure such as database
 
 In this post we will look at how to better organize our tests.
 
-Currently, if you look at the test runner, all the tests look like this:
+Currently, if you look at the **test runner**, all the tests look like this:
 
 ![AllTests](../images/2025/04/AllTests.png)
 
-This is a mix of unit tests, integration tests and behaviour tests.
+This is a mix of **unit** tests, **integration** tests and **behaviour** tests.
 
-Wouldn't it be nice if they could be categorized as such?
+Wouldn't it be nice if they could be **categorized** as such?
 
 This is possible using the `Trait` attribute.
 
@@ -70,7 +70,9 @@ The test runner will now look like this (depending on your IDE of choice)
 
 ![TestTraits](../images/2025/04/TestTraits.png)
 
-This makes it easier to visualize and run the tests.
+This makes it easier to **visualize** and **run** the tests. For example, if you want to run only the `unit` tests, you can **right click** that node and run them all collectively:
+
+![UnitTests](../images/2025/04/UnitTests.png)
 
 ### TLDR
 
