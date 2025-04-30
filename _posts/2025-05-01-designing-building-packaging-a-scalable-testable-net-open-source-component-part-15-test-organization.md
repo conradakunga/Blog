@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization
-date: 2025-05-01 00:00:00 +0300
+date: 2025-05-01 21:16:43 +0300
 categories:
     - .NET
     - C#
@@ -11,7 +11,7 @@ categories:
     - xUnit
 ---
 
-This is Part 16 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
+This is Part 15 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
 
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 1 - Introduction]({% post_url 2025-04-17-designing-building-packaging-a-scalable-testable-net-open-source-component-part-1-introduction %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 2 - Basic Requirements]({% post_url 2025-04-18-designing-building-packaging-a-scalable-testable-net-open-source-component-part-2-basic-requirements %})
