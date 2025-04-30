@@ -3,6 +3,14 @@ layout: post
 title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 13 - Database Configuration
 date: 2025-04-29 05:04:30 +0300
 categories:
+    - .NET
+    - C#
+    - OpenSource
+    - Design
+    - Testing
+    - PostgreSQL
+    - SQL Server
+    - Dapper
 ---
 
 This is Part 12 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
