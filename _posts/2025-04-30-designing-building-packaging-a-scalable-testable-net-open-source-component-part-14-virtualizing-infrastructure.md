@@ -454,6 +454,6 @@ If we re-run our tests, you will notice that they run much faster now, given the
 
 **We can leverage `fixtures` to share context between tests, increasing their performance.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
