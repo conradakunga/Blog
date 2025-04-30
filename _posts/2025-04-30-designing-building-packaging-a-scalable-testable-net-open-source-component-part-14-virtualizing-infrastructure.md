@@ -267,7 +267,7 @@ We can solve this using [shared fixtures](https://xunit.net/docs/shared-context)
 
 Let us start with **SQL Server**.
 
-The first step is to refactor the container setup into a separate class. This class will expose the container as a public property - `Container`.
+The first step is to **refactor** the container setup into a **separate class**. This class will expose the **container** as a public property - `Container`.
 
 ```c#
 public class SqlServerContainerFixture : IAsyncLifetime
@@ -366,7 +366,7 @@ public class SqlServerStorageEngineTests
 
 We then do the same for the **PostgreSQL** tests.
 
-First, the fixture:
+First, the `fixture`:
 
 ```c#
 public sealed class PostgreSQLContainerFixture : IAsyncLifetime
