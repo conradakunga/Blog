@@ -322,6 +322,6 @@ Thus we can ensure that the user has the responsibility to configure the databas
 
 **In this post we have written scripts for the configuration of the SQL Server and PostgreSQL storage engines, as well as code to ensure a database is specified at startup.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
