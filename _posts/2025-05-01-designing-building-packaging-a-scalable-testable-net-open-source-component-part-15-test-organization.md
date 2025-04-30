@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization
-date: 2025-05-01 21:16:43 +0300
+date: 2025-05-01 00:16:43 +0300
 categories:
     - .NET
     - C#
