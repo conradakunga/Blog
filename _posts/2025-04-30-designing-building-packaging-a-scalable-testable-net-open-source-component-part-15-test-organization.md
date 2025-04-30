@@ -1,17 +1,19 @@
 ---
 layout: post
-title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 1 - Introduction
-date: 2025-04-17 19:04:25 +0300
+title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization
+date: 2025-04-30 21:16:43 +0300
 categories:
     - .NET
     - C#
     - OpenSource
     - Design
+    - Testing
+    - xUnit
 ---
 
-This is Part 1 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
+This is Part 15 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
 
-- **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 1 - Introduction (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 1 - Introduction]({% post_url 2025-04-17-designing-building-packaging-a-scalable-testable-net-open-source-component-part-1-introduction %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 2 - Basic Requirements]({% post_url 2025-04-18-designing-building-packaging-a-scalable-testable-net-open-source-component-part-2-basic-requirements %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 3 - Project Setup]({% post_url 2025-04-19-designing-building-packaging-a-scalable-testable-net-open-source-component-part-3-project-setup %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 4 - Types & Contracts]({% post_url 2025-04-20-designing-building-packaging-a-scalable-testable-net-open-source-component-part-4-types-contracts %})
@@ -22,64 +24,58 @@ This is Part 1 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 9 - Encryptor Implementation]({% post_url 2025-04-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-9-encryptor-implementation %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 10 - In Memory Storage]({% post_url 2025-04-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-10-in-memory-storage %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 11 - SQL Server Storage]({% post_url 2025-04-27-designing-building-packaging-a-scalable-testable-net-open-source-component-part-11-sql-server-storage %})
-- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 11 - PostgreSQL Storage]({% post_url 2025-04-28-designing-building-packaging-a-scalable-testable-net-open-source-component-part-12-postgresql-storage %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 11 - PostgreSQL Storage]()
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 13 - Database Configuration]({% post_url 2025-04-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-13-database-configuration %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 14 - Virtualizing Infrastructure]({% post_url 2025-04-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-14-virtualizing-infrastructure %})
-- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization]({% post_url 2025-04-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-15-test-organization %})
+- **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization (This Post)**
 
-I am working on a pet project that requires the **uploading and storage of files before processing** them. As I was doing so I realized that this is a problem **I keep having**, and chances are **somebody else is too**.
+In our last post, we looked at how to virtualize infrastructure such as database engines ([SQL Server](https://www.microsoft.com/en-us/sql-server) and [PostgreSQL](https://www.postgresql.org/)).
 
-This is an excellent opportunity to consolidate many of the topics we have discussed over the last six months.
+In this post we will look at how to better organize our tests.
 
-We will therefore walk through the following:
+Currently, if you look at the test runner, all the tests look like this:
 
-- Articulating our **requirements**
-- Preparing a **design**
-- **Building** the component
-- **Testing** the component
-- **Packaging** the component
-- **Deploying** the component
-- Iterration
-- **Documentation**
+![AllTests](../images/2025/04/AllTests.png)
 
-I will build this in public, with the source code available to anyone interested in [GitHub](https://github.com/). I will do my best to document everything for clarity, as this is an opportunity to not only **teach** but also **learn** myself.
+This is a mix of unit tests, integration tests and behaviour tests.
 
-Topics I expect to cover in the course of this series are:
+Wouldn't it be nice if they could be categorized as such?
 
-- Testing
-    - Unit testing
-    - Mocking
-    - Integration testing
-- Classes & Types
-    - Interfaces
-    - Records & classes
-    - Enums
-- I/O
-    - File Streams
-    - Memory Streams
-    - Bytes & byte arrays
-    - Compression
-- Dependency injection
-- Database access & storage
-    - SQL Server
-    - PostgreSQL
-- File system access & storage
-- Cloud (Blob) storage and access
-    - Azure
-    - Amazon
-- Documentation
-    - OpenAI
-    - MarkDown
-    - XML Documentation
-- Continuous Integration
-- Logging
+This is possible using the `Trait` attribute.
 
-As usual, I will **assume no prior knowledge** (besides basic programming experience - how to write a class and compile your code).
+We can decorate each test class as appropriate.
 
-**This should be fun!**
+For the [unit tests](https://en.wikipedia.org/wiki/Unit_testing):
+
+```c#
+[Trait("Type", "Unit")]
+public class AesFileEncryptorTests
+```
+
+The `behavior` tests:
+
+```c#
+[Trait("Type", "Behaviour")]
+public class UploadFileManagerTests
+```
+
+The integration tests:
+
+```c#
+[Trait("Type", "Integration")]
+public class PostgreSQLStorageEngineTests
+```
+
+The test runner will now look like this (depending on your IDE of choice)
+
+![TestTraits](../images/2025/04/TestTraits.png)
+
+This makes it easier to visualize and run the tests.
 
 ### TLDR
 
-**I am going to publicly build a very simple open-source component to manage uploaded files.**
+**`Traits` allow for the organization of tests to make the testing experience smoother.**
+
+The code is in my GitHub.
 
 Happy hacking!
