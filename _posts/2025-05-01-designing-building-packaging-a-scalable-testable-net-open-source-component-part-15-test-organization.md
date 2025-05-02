@@ -28,6 +28,7 @@ This is Part 15 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 13 - Database Configuration]({% post_url 2025-04-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-13-database-configuration %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 14 - Virtualizing Infrastructure]({% post_url 2025-04-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-14-virtualizing-infrastructure %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 16 - Large File Consideration]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %})
 
 In our last post, we looked at how to virtualize infrastructure such as database engines ([SQL Server](https://www.microsoft.com/en-us/sql-server) and [PostgreSQL](https://www.postgresql.org/)).
 
