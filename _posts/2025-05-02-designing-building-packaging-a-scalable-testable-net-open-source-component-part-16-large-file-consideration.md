@@ -127,7 +127,7 @@ public class InMemoryStorageEngine : IStorageEngine
 }
 ```
 
-For the SQLServerStorageEngine, we pass the timeout in the **constructor**
+For the `SQLServerStorageEngine`, we pass the timeout in the **constructor**
 
 ```c#
 public sealed class SqlServerStorageEngine : IStorageEngine
