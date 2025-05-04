@@ -30,6 +30,7 @@ This is Part 17 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization]({% post_url 2025-05-01-designing-building-packaging-a-scalable-testable-net-open-source-component-part-15-test-organization %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 16 - Large File Consideration]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 17 - Large File Consideration On PostgreSQL (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 18 - Azure Blob Storage]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %})
 
 In our [last post]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %}), we made some optimizations around supporting **large files**, and ran into a problem with [PostgreSQL](https://www.postgresql.org/).
 
@@ -104,7 +105,7 @@ Anything larger than that is not safe for `byte` array storage.
 So what do we do with files bugger than that? We have two options:
 
 1. Discard them (no support)
-2. Implement large object storage.
+2. Implement [large object storage](https://www.postgresql.org/docs/current/largeobjects.html).
 
 For parity with SQL Server, let us take the latter route.
 

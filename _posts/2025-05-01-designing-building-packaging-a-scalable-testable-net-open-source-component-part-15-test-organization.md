@@ -30,10 +30,11 @@ This is Part 15 of a series on Designing, Building & Packaging A Scalable, Testa
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization (This Post)**
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 16 - Large File Consideration]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 17 - Large File Consideration On PostgreSQL]({% post_url 2025-05-03-designing-building-packaging-a-scalable-testable-net-open-source-component-part-17-large-file-consideration-on-postgresql %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 18 - Azure Blob Storage]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %})
 
 In our last post, we looked at how to virtualize infrastructure such as database engines ([SQL Server](https://www.microsoft.com/en-us/sql-server) and [PostgreSQL](https://www.postgresql.org/)).
 
-In this post we will look at how to better organize our tests.
+In this post, we will look at how to better organize our tests.
 
 Currently, if you look at the **test runner**, all the tests look like this:
 

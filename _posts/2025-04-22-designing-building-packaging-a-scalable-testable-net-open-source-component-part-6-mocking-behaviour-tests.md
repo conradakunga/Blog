@@ -31,16 +31,17 @@ This is Part 6 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization]({% post_url 2025-05-01-designing-building-packaging-a-scalable-testable-net-open-source-component-part-15-test-organization %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 16 - Large File Consideration]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 17 - Large File Consideration On PostgreSQL]({% post_url 2025-05-03-designing-building-packaging-a-scalable-testable-net-open-source-component-part-17-large-file-consideration-on-postgresql %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 18 - Azure Blob Storage]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %})
 
 In our [last post]({% post_url 2025-04-21-designing-building-packaging-a-scalable-testable-net-open-source-component-part-5-component-implementation %}), we implemented the functionality of our component.
 
-In this post we will look at how to **test our component without worrying about the actual implementation**.
+This post will look at how to **test our component without worrying about the actual implementation**.
 
-This is through a technique called **mocking** in the context of a practice called behaviour driven design.
+This is through a technique called **mocking** in the context of a practice called behaviour-driven design.
 
-**At this point let me pause to observe that there are a lot of schools of thought about this practice and whether or not it adds value. There are a lot of strong opinions on either side.**
+**At this point, let me pause to observe that there are a lot of schools of thought about this practice and whether or not it adds value. There are a lot of strong opinions on either side.**
 
-**My suggestion, as always, is pragmatism. I personally find there is a lot of value, and if you don't after reading this post - that's OK.**
+**My suggestion, as always, is pragmatism. I personally find there is a lot of value, and if you don't after reading this post, that's OK.**
 
 Back to the post.
 
