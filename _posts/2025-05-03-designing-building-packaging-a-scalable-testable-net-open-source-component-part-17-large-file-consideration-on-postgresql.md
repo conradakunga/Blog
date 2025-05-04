@@ -381,7 +381,9 @@ If we run our tests now, they should all pass.
 
 ![LargeFileTests](../images/2025/05/LargeFileTests.png)
 
-Thus our `PostgreSqlStorageEngine` now supports arbitrarily large files.
+Thus, our `PostgreSqlStorageEngine` now supports arbitrarily large files.
+
+In our [next post]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %}), we will implement Azure Blob storage.
 
 ### TLDR
 
