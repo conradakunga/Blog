@@ -389,6 +389,6 @@ In our [next post]({% post_url 2025-05-04-designing-building-packaging-a-scalabl
 
 **In this post, we implemented large object storage to allow PostgreSQL to store arbitrarily large files.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
