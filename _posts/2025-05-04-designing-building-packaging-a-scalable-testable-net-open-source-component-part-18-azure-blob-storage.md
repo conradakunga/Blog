@@ -57,6 +57,8 @@ This level is where the actual files are stored. This is accessed and manipulate
 
 In our design, we will have two containers - one will store the `FileMetadata`, and the other will contain the actual binary **data**.
 
+Next, we shall begin the implementation.
+
 To begin with, we need a way to pass some settings to [Azure](https://azure.microsoft.com/en-us/). We will create a class to store these settings:
 
 ```c#
@@ -123,7 +125,7 @@ public async Task<FileMetadata> StoreFileAsync(FileMetadata metaData, Stream dat
 }
 ```
 
-Next, `GetMetadataAsync`
+Next, `GetMetadataAsync`:
 
 ```c#
 /// <inheritdoc />
@@ -166,7 +168,7 @@ public async Task<Stream> GetFileAsync(Guid fileId, CancellationToken cancellati
 }
 ```
 
-Next, `DeleteFileAsync`
+Next, `DeleteFileAsync`:
 
 ```c#
 /// <inheritdoc />
@@ -183,7 +185,7 @@ public async Task DeleteFileAsync(Guid fileId, CancellationToken cancellationTok
 }
 ```
 
-Finally, `FileExistsAsync`
+Finally, `FileExistsAsync`:
 
 ```c#
   /// <inheritdoc />
