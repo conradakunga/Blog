@@ -24,24 +24,24 @@ This is Part 17 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 9 - Encryptor Implementation]({% post_url 2025-04-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-9-encryptor-implementation %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 10 - In Memory Storage]({% post_url 2025-04-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-10-in-memory-storage %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 11 - SQL Server Storage]({% post_url 2025-04-27-designing-building-packaging-a-scalable-testable-net-open-source-component-part-11-sql-server-storage %})
-- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 11 - PostgreSQL Storage]()
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 12 - PostgreSQL Storage]({% post_url 2025-04-28-designing-building-packaging-a-scalable-testable-net-open-source-component-part-12-postgresql-storage %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 13 - Database Configuration]({% post_url 2025-04-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-13-database-configuration %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 14 - Virtualizing Infrastructure]({% post_url 2025-04-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-14-virtualizing-infrastructure %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 15 - Test Organization]({% post_url 2025-05-01-designing-building-packaging-a-scalable-testable-net-open-source-component-part-15-test-organization %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 16 - Large File Consideration]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 17 - Large File Consideration On PostgreSQL (This Post)**
 
-In our [last post]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %}) we made some optimizations around supporting large files, and ran into a problem with PostgreSQL.
+In our [last post]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %}), we made some optimizations around supporting **large files**, and ran into a problem with [PostgreSQL](https://www.postgresql.org/).
 
 This test was failing.
 
 ![PostgreSQLAllFilesTest](../images/2025/05/PostgreSQLAllFilesTest.png)
 
-Which means that there is a threshold where **PostgreSQL** is unable to process the storage of the `byte` array.
+This means there is a threshold past which **PostgreSQL** cannot process the storage of the `byte` array.
 
-In this post we will look at how to resolve this.
+In this post, we will look at how to resolve this.
 
-From our tests we know that the threshold is somewhere between `512` MB and `1024` MB.
+From our tests, we know that the threshold is somewhere between `512` MB and `1024` MB.
 
 Let us introduce some intermediate test values to try and isolate the threshold, starting from `512` and adding `128` MB intervals.
 
@@ -67,7 +67,7 @@ public async Task Large_File_Upload_And_Download_Succeeds(int size)
 }
 ```
 
-If we run these tests we get the following results:
+If we run these tests, we get the following results:
 
 ![Threshold1](../images/2025/05/Threshold1.png)
 
