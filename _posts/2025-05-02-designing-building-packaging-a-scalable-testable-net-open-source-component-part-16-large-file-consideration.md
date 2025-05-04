@@ -554,7 +554,7 @@ For **PostgreSQL**, however, the **1GB file failed**
 
 ![PostgreSQLAllFilesTest](../images/2025/05/PostgreSQLAllFilesTest.png)
 
-In our next post, we will look at how to tackle this.
+In our [next post]({% post_url 2025-05-03-designing-building-packaging-a-scalable-testable-net-open-source-component-part-17-large-file-consideration-on-postgresql %}), we will look at how to tackle this.
 
 ### TLDR
 
