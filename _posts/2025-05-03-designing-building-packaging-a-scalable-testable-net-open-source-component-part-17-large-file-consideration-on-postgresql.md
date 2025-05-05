@@ -31,6 +31,7 @@ This is Part 17 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 16 - Large File Consideration]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 17 - Large File Consideration On PostgreSQL (This Post)**
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 18 - Azure Blob Storage]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %})
 
 In our [last post]({% post_url 2025-05-02-designing-building-packaging-a-scalable-testable-net-open-source-component-part-16-large-file-consideration %}), we made some optimizations around supporting **large files**, and ran into a problem with [PostgreSQL](https://www.postgresql.org/).
 
@@ -282,6 +283,7 @@ A couple of things to note about this code:
 2. The ID we get back, we persist in the `files` table.
 3. In the data column, we persist a magic value - the `byre` array `[0, 0, 0]`
 4. Manipulating the large objects storage requires the use of a [transaction](https://www.postgresql.org/docs/current/tutorial-transactions.html).
+5. The `NpgsqlLargeObjectManager` has been marked obsolete, and there doesn't seem to be a replacement in place. However, it still works.
 
 Next, the logic to retrieve files, 
 
