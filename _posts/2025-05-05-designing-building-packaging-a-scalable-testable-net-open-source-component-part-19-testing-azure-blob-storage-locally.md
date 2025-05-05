@@ -298,6 +298,6 @@ Now we can effectively test our component locally.
 
 **In this post we learned how to setup and configure `Azurite` for local testing of `Azure`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
