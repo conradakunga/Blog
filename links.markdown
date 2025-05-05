@@ -2,22 +2,16 @@
 layout: page
 title: Links
 permalink: /links/
+draft: true
 ---
 
 ## Individual Blobs
 
 - [Ben Roberts' Digital Economy](https://www.digitaleconomy.ke/blog) - Accelerating Africa's Digital Growth
-- [Billy Okeyo](https://billyokeyo.com/) - .NET
+- [Billy Okeyo](https://billy-okeyo.netlify.app/) - .NET
 - [Carlvin Mwange](https://carlvinjerry.com/) - F#, Python
+- [David Lemayian](https://davidlemayian.com/) - Technology
 - [Fredrick Kamau](https://fredkamau.com/) - .NET, Angular
-- Joseph Ndungi
-- Shawn Ng'iela
-- Margaret Maina
-- Carlvin Mwange
-- Joy Omomdi
-- Jimmy Gitonga
-- Bastian
-- Leonard Korir
 
 ## Company Blogs
 
