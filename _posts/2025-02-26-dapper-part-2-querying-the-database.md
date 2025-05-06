@@ -310,7 +310,7 @@ When using `QuerySingle`, if the database does not return a result or returns mo
 You can mitigate this (and improve your endpoint) by using `QuerySingleOrDefault` as follows:
 
 ```c#
-var spies = cn.QuerySingleOrDefault(query, new { ID = id });
+var spies = cn.QuerySingleOrDefault<V1.Spy>(query, new { ID = id });
 if (spies != null)
     return Results.Ok(spies);
 return Results.NotFound();
