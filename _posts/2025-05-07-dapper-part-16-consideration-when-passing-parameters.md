@@ -26,7 +26,7 @@ This is Part 16 of a series on using `Dapper` to simplify data access with `ADO.
 * [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
 * [Dapper Part 14 - Multithreading]({% post_url 2025-03-11-dapper-part-14-multithreading %})
 * [Dapper Part 15 - Using The IN Clause]({% post_url 2025-03-12-dapper-part-15-using-the-in-clause %})
-* Dapper Part 16 - Consideration When Passing Parameters (This Post)
+* **Dapper Part 16 - Consideration When Passing Parameters (This Post)**
 
 In a [previous post]({% post_url 2025-02-28-dapper-part-4-passing-data-to-and-from-the-database %}), I talked about passing data to `Dapper`.
 
@@ -64,7 +64,7 @@ and then I said the following:
 >
 > You generally do not need to do this - **the name and the value are usually enough**. The database engine will figure out the rest.
 
-Now this is normally true, but there are times when you need to be explicit about the type and the size.
+Now this is **normally** true, but there are times when you need to be **explicit** about the **type**.
 
 We shall demonstrate this using the following table:
 
@@ -78,8 +78,8 @@ create table Countries
 
 The scenarios are these:
 
-1. Output parameters
-2. Input parameters where the type is not coercible from `varchar`
+1. **Output** parameters
+2. **Input** parameters where the type is not [coercible](https://learn.microsoft.com/en-us/sql/relational-databases/native-client/features/using-user-defined-types?view=sql-server-ver15) from `varchar`
 
 ### Output Parameters
 
@@ -159,7 +159,7 @@ fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
 
 ### Non-coercible From VarChar Types
 
-Let us take a case where we need to maintain Bureau entities consisting of an ID, Name and Logo.
+Let us take a case where we need to maintain `Bureau` entities consisting of an `ID`, `Name` and `Logo`.
 
 The table will look like this:
 
@@ -183,7 +183,7 @@ begin
 end
 ```
 
-The Bureau type will look like this:
+The `Bureau` type will look like this:
 
 ```c#
 public sealed class Bureau
@@ -264,19 +264,19 @@ If we look in the database, we should see the data:
 
 Given we have defined that the `Logo` is **nullable**, let us test that scenario, but remove the code that specifies the type.
 
-We change the code from this:
+If we change the code from this:
 
 ```c#
 param.Add("Logo", imageData, dbType: DbType.Binary);
 ```
 
-To this
+To this:
 
 ```c#
 param.Add("Logo", imageData);
 ```
 
-Let us then request this payload:
+And then request this payload:
 
 ```json
 {
@@ -295,7 +295,7 @@ fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
 
 We can see here that the server is treating the data as a `varchar`.
 
-The fix for this is to specify the type.
+The fix for this is to **specify the type**.
 
 ```c#
 param.Add("Logo", imageData, dbType: DbType.Binary);
@@ -309,7 +309,7 @@ To avoid surprises, and for maximum clarity, it is advisable to specify the type
 
 ### TLDR
 
-It is probably advisable to always specify at least the type (and maybe the size) of parameters when submitting queries to the database.
+**It is probably advisable to always specify at least the type (and maybe the size) of parameters when submitting queries to the database.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-07%20-%20Parameters).
 
