@@ -115,6 +115,6 @@ It is, however, advisable to so that the intent is clear to whoever is reading t
 
 **You do not need to specify the `CommandType` when executing queries with Dapper.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-06%20-%20Commands).
 
 Happy hacking!
