@@ -95,6 +95,20 @@ var result = await cn.QueryAsync<Spy>("SELECT * FROM Spies", commandType: Comman
 
 So you do not need to specify the `CommandType`.
 
+Your code can now look like this:
+
+The procedure:
+
+```c#
+var result = await cn.QueryAsync<Spy>("[Spies.GetAll]");
+```
+
+The query:
+
+```c#
+var result = await cn.QueryAsync<Spy>("SELECT * FROM Spies");
+```
+
 It is, however, advisable to so that the intent is clear to whoever is reading the code.
 
 ### TLDR
