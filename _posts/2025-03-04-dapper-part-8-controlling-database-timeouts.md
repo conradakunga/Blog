@@ -25,6 +25,7 @@ This is Part 8 of a series on using `Dapper` to simplify data access with `ADO.N
 * [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
 * [Dapper Part 14 - Multithreading]({% post_url 2025-03-11-dapper-part-14-multithreading %})
 * [Dapper Part 15 - Using The IN Clause]({% post_url 2025-03-12-dapper-part-15-using-the-in-clause %})
+* [Dapper Part 16 - Consideration When Passing Parameters]({% post_url 2025-05-07-dapper-part-16-consideration-when-passing-parameters %})
 
 In our [last post]({% post_url 2025-03-03-dapper-part-7-adding-dateonly-timeonly-support %}), we looked at how to add support for DateOnly and TimeOnly types to Dapper.
 

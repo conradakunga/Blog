@@ -26,6 +26,7 @@ This is Part 10 of a series on using `Dapper` to simplify data access with `ADO.
 * [Dapper Part 13 - Using Transactions]({% post_url 2025-03-10-dapper-part-13-using-transactions %})
 * [Dapper Part 14 - Multithreading]({% post_url 2025-03-11-dapper-part-14-multithreading %})
 * [Dapper Part 15 - Using The IN Clause]({% post_url 2025-03-12-dapper-part-15-using-the-in-clause %})
+* [Dapper Part 16 - Consideration When Passing Parameters]({% post_url 2025-05-07-dapper-part-16-consideration-when-passing-parameters %})
 
 In our last post, we looked at how to use `Dapper` to manage **dynamic types** in scenarios where we cannot or don't want to use **strong types.**
 

@@ -26,6 +26,7 @@ This is Part 13 of a series on using `Dapper` to simplify data access with `ADO.
 * **Dapper Part 13 - Using Transactions (This Post)**
 * [Dapper Part 14 - Multithreading]({% post_url 2025-03-11-dapper-part-14-multithreading %})
 * [Dapper Part 15 - Using The IN Clause]({% post_url 2025-03-12-dapper-part-15-using-the-in-clause %})
+* [Dapper Part 16 - Consideration When Passing Parameters]({% post_url 2025-05-07-dapper-part-16-consideration-when-passing-parameters %})
 
 In the [last post of this series]({% post_url 2025-03-08-dapper-part-12-alternative-bulk-insert-technique %}), we looked at an alternative way to insert several rows at once.
 
