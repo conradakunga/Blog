@@ -311,6 +311,6 @@ To avoid surprises, and for maximum clarity, it is advisable to specify the type
 
 It is probably advisable to always specify at least the type (and maybe the size) of parameters when submitting queries to the database.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-07%20-%20Parameters).
 
 Happy hacking!
