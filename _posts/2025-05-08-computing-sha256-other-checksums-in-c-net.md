@@ -88,6 +88,6 @@ var hash = await CryptographicOperations.HashDataAsync(HashAlgorithmName.SHA256,
 
 **You can generate and validate checksums in your code using the `CryptographicOperations` class for any of the commonly used algorithms.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-08%20-%20Checksums).
 
 Happy hacking!
