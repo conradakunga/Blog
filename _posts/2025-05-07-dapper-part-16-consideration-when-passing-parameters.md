@@ -64,7 +64,7 @@ and then I said the following:
 >
 > You generally do not need to do this - **the name and the value are usually enough**. The database engine will figure out the rest.
 
-Now this is **normally** true, but there are times when you need to be **explicit** about the **type**.
+This is **normally** true, but there are times when you need to be **explicit** about the **type**.
 
 We shall demonstrate this using the following table:
 
@@ -83,7 +83,7 @@ The scenarios are these:
 
 ### Output Parameters
 
-Suppose we had this procedure that returned the primary key of a newly inserted `Country`.
+Suppose we had this procedure that returned the **primary key** of a newly inserted `Country`.
 
 ```c#
 create or alter proc [Countries.Insert] @Name nvarchar(250), @CountryID uniqueidentifier output
@@ -142,11 +142,11 @@ If we look at the logs, you will see the following:
 If you **omit** the type, such that your code is like this:
 
 ```c#
-  var param = new DynamicParameters();
-    param.Add("Name", request.Name);
-    param.Add("CountryID", direction: ParameterDirection.Output);
+var param = new DynamicParameters();
+param.Add("Name", request.Name);
+param.Add("CountryID", direction: ParameterDirection.Output);
 
-    var result = await cn.ExecuteAsync("[Countries.Insert]", param);
+var result = await cn.ExecuteAsync("[Countries.Insert]", param);
 ```
 
  you will get the following exception:
@@ -159,7 +159,7 @@ fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
 
 ### Non-coercible From VarChar Types
 
-Let us take a case where we need to maintain `Bureau` entities consisting of an `ID`, `Name` and `Logo`.
+Let us take a case where we need to maintain `Bureau` entities consisting of an `ID`, `Name,` and `Logo`.
 
 The table will look like this:
 
@@ -194,7 +194,7 @@ public sealed class Bureau
 }
 ```
 
-And the create DTO will look like this:
+And the created DTO will look like this:
 
 ```c#
 public sealed record CreateBureauRequest
@@ -204,9 +204,9 @@ public sealed record CreateBureauRequest
 }
 ```
 
-How this work is that the `LogoText` of the `CreateBureauRequest` will be used to generate a **Logo**, which will then be stored in the database.
+This works by using the `LogoText` of the `CreateBureauRequest` to generate a Logo, which is then stored in the database.
 
-For this we will require a library, [SkiaSharp](https://www.nuget.org/packages/SkiaSharp/)
+For this, we will require a library, [SkiaSharp](https://www.nuget.org/packages/SkiaSharp/)
 
 The endpoint will look like this:
 
@@ -254,7 +254,7 @@ app.MapPost("/Bureaus", async (SqlConnection cn, CreateBureauRequest request) =>
 });
 ```
 
-Next we start the app and make a request:
+Next, we start the app and make a request:
 
 ![CreateBureauRequest](../images/2025/05/CreateBureauRequest.png)
 
@@ -262,7 +262,7 @@ If we look in the database, we should see the data:
 
 ![CreateBureauData](../images/2025/05/CreateBureauData.png)
 
-Given we have defined that the `Logo` is **nullable**, let us test that scenario, but remove the code that specifies the type.
+Given that we have defined that the `Logo` is **nullable**, let us test that scenario, but remove the code that specifies the type.
 
 If we change the code from this:
 
