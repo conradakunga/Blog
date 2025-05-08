@@ -20,4 +20,4 @@ draft: true
 
 ## Link Blogs
 
-- [.NET Tips](https://www.dntips.ir/) - Link aggregator from Iran
+- [.NET Tips](https://www.dntips.ir/) - Vahid Nasiri runs this Link aggregator from Iran
