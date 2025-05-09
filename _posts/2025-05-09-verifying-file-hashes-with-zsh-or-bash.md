@@ -30,7 +30,7 @@ You should get the following output:
 
 ![shasum256](../images/2025/05/shasum256.png)
 
-The available options are
+The available options are:
 
 | Parameter | Algorithm |
 | --------- | --------- |
@@ -40,7 +40,7 @@ The available options are
 | 384       | SHA-384   |
 | 512       | SHA-512   |
 
-If you don't specify an algorithm, `SHA-1` will be used.
+If you don't specify an algorithm, `SHA-1`, the **default**, will be used.
 
 ![shasum](../images/2025/05/shasum.png)
 
