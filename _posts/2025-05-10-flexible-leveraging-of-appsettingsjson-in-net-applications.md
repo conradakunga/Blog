@@ -217,6 +217,18 @@ If we run this endpoint it will return the following:
 
 In this way we can take advantage of the options pattern  to handle very complex scenarios when it comes to overriding settings.
 
+To ensure developer settings are not considered for enviroments such as Staging and Production, we can improve our code to explicly check for that:
+
+```c#
+if (builder.Environment.IsDevelopment())
+{
+    // Load optional developer-specific settings
+    builder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: true);
+}
+```
+
+
+
 ### TLDR
 
 **The .NET options pattern allows for overriding of options specified in a file that allows for considerable flexibility.**
