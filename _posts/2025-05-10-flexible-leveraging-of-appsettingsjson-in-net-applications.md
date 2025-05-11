@@ -221,6 +221,6 @@ In this way we can take advantage of the options pattern  to handle very complex
 
 **The .NET options pattern allows for overriding of options specified in a file that allows for considerable flexibility.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-09%20-%20Layered%20Settings).
 
 Happy hacking!
