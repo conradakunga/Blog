@@ -8,11 +8,11 @@ categories:
     - Configuration
 ---
 
-In the post [Loading & Using Application Settings In .NET]({% post_url 2024-12-11-loading-using-application-settings %}), we looked at how to **load** and **utilize** application settings in a .NET application such as a WebAPI, background service or even a console application.
+In the post [Loading & Using Application Settings In .NET]({% post_url 2024-12-11-loading-using-application-settings %}), we looked at how to **load** and **utilize** application settings in a .NET application such as a **WebAPI**, **background service** or even a **console** application.
 
 In this post we will look at the **flexibility** the configuration infrastructure exposes for us to leverage.
 
-Let us use a simple example. We wish to allow configuration of a WebAPI using the following `SystemSettings` object.
+Let us use a simple example. We wish to allow configuration of a **WebAPI** using the following `SystemSettings` object.
 
 ```c#
 public class SystemSettings
