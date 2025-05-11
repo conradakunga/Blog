@@ -18,7 +18,7 @@ Let us again use our example, the utility [HandBrake](https://handbrake.fr/).
 
 ![HandbrakeChecksums](../images/2025/05/HandbrakeChecksums.png)
 
-To verify the `SHA-265` checksum, we would do it as follows:
+To verify the `SHA-256` checksum, we would do it as follows:
 
 ```bash
 shasum -a 256 HandBrake-1.9.2.dmg
@@ -36,7 +36,7 @@ The available options are:
 | --------- | --------- |
 | 1         | SHA-1     |
 | 224       | SHA-224   |
-| 256       | SHA-265   |
+| 256       | SHA-256   |
 | 384       | SHA-384   |
 | 512       | SHA-512   |
 
