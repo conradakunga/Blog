@@ -38,7 +38,6 @@ These would be setup in the `appsettings.json` as follows:
     "BackgroundColour": "Black"
   }
 }
-
 ```
 
 We configure our **dependency injection** to load the settings as follows:
@@ -69,7 +68,7 @@ In the course of development, it is common practice to have different environmen
 
 The file `appsettings.json` is **always loaded first**, and its settings are exposed to **all** the environments.
 
-If we wanted the settings to be different for our `Development` environment, we would modify the `appsettings.Development.json` and in that file specify what we want to override.
+If we wanted the settings to be different for our `Development` environment, we would modify the `appsettings.Development.json` and in that file specify what we want to **override**.
 
 For example, I want **Yellow** to be the foreground colour and **Red** to be the background color for my development environment.
 
@@ -158,13 +157,13 @@ builder.Services.AddOptions<SystemSettings>()
 var app = builder.Build();
 ```
 
-The parameter optional is used to control what happens if the file is missing. Here we are indicting it is mandatory.
+The parameter `optional` is used to control what happens if the file is missing. Here we are indicting it is mandatory.
 
 This will return the following:
 
 ![customfilesettings](../images/2025/05/customfilesettings.png)
 
-If it is not found, the application will throw an exception.
+If the file is not found, the application will throw an **exception**.
 
 ```plaintext
 Unhandled exception. System.IO.FileNotFoundException: The configuration file 'companysettings.json' was not found and is not optional. The expected physical path was '/Users/rad/Projects/blog/BlogCode/ApplicationSettings/companysettings.json'.
@@ -217,7 +216,7 @@ If we run this endpoint it will return the following:
 
 In this way we can take advantage of the options pattern  to handle very complex scenarios when it comes to overriding settings.
 
-To ensure developer settings are not considered for enviroments such as Staging and Production, we can improve our code to explicly check for that:
+To ensure developer settings are not considered for enviroments such as `Staging` and `Production`, we can improve our code to explicly check for that:
 
 ```c#
 if (builder.Environment.IsDevelopment())
