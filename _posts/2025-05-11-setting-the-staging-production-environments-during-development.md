@@ -31,7 +31,6 @@ So if we have an options file `appsettings.Staging.json` that looks like this:
     "BackgroundColour": "FireRed"
   }
 }
-
 ```
 
 If we run our app like this:
@@ -57,8 +56,6 @@ if (builder.Environment.IsDevelopment())
     // Load optional developer-specific settings
     builder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: true);
 }
-
-
 ```
 
 If we run our endpoint we should now see the correct results.
@@ -69,6 +66,6 @@ If we run our endpoint we should now see the correct results.
 
 **You can set the environment an application is running under by passing the command line environment `--Environment`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-10%20-%20Staging%20Environment).
 
 Happy hacking!
