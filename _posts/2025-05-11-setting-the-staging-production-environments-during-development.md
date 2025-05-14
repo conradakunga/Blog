@@ -8,11 +8,11 @@ categories:
     - Configuration
 ---
 
-In our [last post]({% post_url 2025-05-10-flexible-leveraging-of-appsettingsjson-in-net-applications %}), we looked at the flexibility offered by the .NET configuration infrastructure.
+In our previous post, we examined the **flexibility** provided by the .NET configuration infrastructure.
 
-In this case we will tackle a common problem - **you want to see how your application will behave in different environments** while it is still under development. In other words, you want to **simulate** other environments.
+In this case, we will tackle a common problem - **you want to see how your application will behave in different environments** while it is still under development. In other words, you want to **simulate** other environments.
 
-Remember, by default, if you don't do anything, `dotnet run` sets the environment to be  `Development`.
+Remember, by default, if you don't do anything, `dotnet run` sets the environment to `Development`.
 
 ![DevelopmentEnvironment](../images/2025/05/DevelopmentEnvironment.png)
 
