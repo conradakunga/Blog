@@ -79,6 +79,6 @@ This should result in the following:
 
 **You can override settings in `appsettings.json` by passing new ones via command line.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-13%20-%20Command%20Line%20Override).
 
 Happy hacking!
