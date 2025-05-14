@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overriding appsettings.json Via Command Line
-date: 2025-05-13 17:01:22 +0300
+title: Overriding appsettings.json Via Environment Variables
+date: 2025-05-14 20:55:46 +0300
 categories:
     - C#
     - .NET
@@ -12,7 +12,9 @@ In a **previous** post, [Flexible Leveraging Of appsettings.json In .NET Applica
 
 In a **subsequent** post, [Setting The Staging & Production Environments During Development]({% post_url 2025-05-11-setting-the-staging-production-environments-during-development %}), we talked about how to **set the environment** of an application so as to determine the settings to be loaded.
 
-In this post, we will look at how to **override the settings** in the `json` files via the **command line**.
+In the **last** post, [Overriding appsettings.json Via Command Line]({% post_url 2025-05-13-overriding-appsettingsjson-via-command-line %}), we looked at overriding settings via the **command line**.
+
+In this post, we will look at how to **override the settings** in the `json` files via [environment variables](https://medium.com/chingu/an-introduction-to-environment-variables-and-how-to-use-them-f602f66d15fa).
 
 As a recap, the test application has the following settings:
 
@@ -59,21 +61,54 @@ If we run this, we get the following result:
 
 ![DefaultSettings](../images/2025/05/DefaultSettings.png)
 
-It is possible to override this at **runtime**, by passing the required settings as **parameters via the command line**.
+It is possible to override this at **runtime**, by passing the required settings as **parameters via environment variables**.
 
-You do this as follows:
+Depending on your environment, there are various ways to pass environment variables:
+
+1. [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (Unix / Linux / macOS)
+2. [PowerShell](https://learn.microsoft.com/en-us/powershell/) (Unix / Linux / macOS / Windows)
+3. [Cmd](https://www.ninjaone.com/blog/how-to-use-windows-command-prompt/) (Windows)
+
+### Bash
+
+For `bash`, you can set the variables as follows:
 
 ```bash
-dotnet run --SystemSettings:ForegroundColour=Maroon --SystemSettings:BackgroundColour=Pink
+export SystemSettings__ForegroundColour=Neon
+export SystemSettings__BackgroundColour=Mauve
+```
+
+### PowerShell
+
+For `PowerShell`:
+
+```powershell
+$env:SystemSettings__ForegroundColour = "Neon"
+$env:SystemSettings__BackgroundColour = "Mauve"
+```
+
+### Cmd
+
+For `Cmd`:
+
+```bash
+set SystemSettings__ForegroundColour=Neon
+set SystemSettings__BackgroundColour=Mauve
+```
+
+Once you have set the variables, run the application as normal.
+
+```bash
+dotnet run
 ```
 
 Here we are setting the `ForegroundColour` and `BackgroundColour` at the command line.
 
-Of note is that for **hierarchical settings**, we denote the hierarchy with the colon `:` , as shown above.
+Of note is that for **hierarchical settings**, we denote the hierarchy with the colon `__` , as shown above.
 
 This should result in the following:
 
-![OverriddenSettingsCmd](../images/2025/05/OverriddenSettingsCmd.png)
+![EnvironmentSettings](../images/2025/05/EnvironmentSettings.png)
 
 ### TLDR
 
