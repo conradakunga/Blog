@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overriding appsettings.json Via Environment Variables
+title: Overriding appsettings.json via Environment Variables
 date: 2025-05-14 20:55:46 +0300
 categories:
     - C#

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flexible Leveraging Of appsettings.json In .NET Applications
+title: Flexible Leveraging of appsettings.json in .NET Applications
 date: 2025-05-10 11:50:15 +0300
 categories:
     - C#
