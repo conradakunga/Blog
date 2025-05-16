@@ -19,7 +19,7 @@ Given that zeros typically reflect a lack of change, an option is to use a dash.
 
 The [format string](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) for this would be as follows:
 
-```c#
+```plaintext
 #;(#);-
 ```
 
@@ -27,7 +27,7 @@ The first `#` before the ; is for **positive** values; then **negative** values,
 
 If you want to show thousand separators:
 
-```c#
+```plaintext
 #,0;(#,0);-
 ```
 
@@ -35,7 +35,7 @@ Some may find the dash too noisy, and prefer **nothing** at all.
 
 In which case, you would try the following:
 
-```c#
+```plaintext
 #;(#);
 ```
 
@@ -51,7 +51,7 @@ You therefore need to supply **something**.
 
 A simple solution is to provide a space.
 
-```c#
+```plaintext
 #;(#); 
 ```
 
@@ -59,7 +59,7 @@ This is technically cheating, but it is good enough for most scenarios.
 
 If you really want to have absolutely nothing in that cell, perhaps the grid is being exported, then you need to do some extra work and have some logic that controls the **formatting**.
 
-This will depend on the technology you are using for the grid, and most of them support some sort of conditional logic.
+This will depend on the technology you are using for the grid, and most of them support some sort of **conditional logic**.
 
 The algorithm would be as follows:
 
