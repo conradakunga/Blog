@@ -69,7 +69,7 @@ value == 0 ? "" : $"{value:#;(#)}"
 
 ### Bonus
 
-These tips also work with Microsoft Excel. Use the Custom format as indicated:
+These tips also work with [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel). Use the **Custom** format as indicated:
 
 ![ExcelFormat](../images/2025/05/ExcelFormat.png)
 
