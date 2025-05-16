@@ -67,6 +67,12 @@ The algorithm would be as follows:
 value == 0 ? "" : $"{value:#;(#)}"
 ```
 
+### Bonus
+
+These tips also work with Microsoft Excel. Use the Custom format as indicated:
+
+![ExcelFormat](../images/2025/05/ExcelFormat.png)
+
 ### TLDR
 
 **When displaying numbers that are zeros using a formatting string, you need to be extra careful to get the required results.**
