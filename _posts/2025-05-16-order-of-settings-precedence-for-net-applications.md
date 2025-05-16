@@ -108,13 +108,13 @@ You will see the following:
 The order is thus as follows:
 
 1. `appsettings.json` (and all its descendants)
-2. Environment Variables
-3. Command Line Arguments
+2. **Environment Variables**
+3. **Command Line Arguments**
 
 ### TLDR
 
 **Settings are loaded in the following order: `appsettings.json`, then *environment variables*, and finally *command-line arguments*.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-16%20-%20Precedence).
 
 Happy hacking!
