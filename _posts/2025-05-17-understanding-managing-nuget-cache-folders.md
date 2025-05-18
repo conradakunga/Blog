@@ -15,7 +15,7 @@ If the package that you are adding has been added to **another** project on your
 
 If it's a package you are installing for the **first time**, it will be **downloaded** from whichever source (probably nuget) and then added as a reference to your project.
 
-Have you ever wondered where these caches are, and how you can view their contents?
+Have you ever wondered **where** these caches are, and how you can **view their contents**?
 
 The caches are just normal **directories** on your machine, and can be viewed by running the following command:
 
