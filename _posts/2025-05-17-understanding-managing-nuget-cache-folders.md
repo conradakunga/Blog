@@ -7,7 +7,7 @@ categories:
     - Nuget
 ---
 
-In the context of NuGet packages, what happens when you run 'dotnet add package'?
+In the context of [NuGet](https://learn.microsoft.com/en-us/nuget/) packages, what happens when you run `dotnet add package`?
 
 It depends.
 
