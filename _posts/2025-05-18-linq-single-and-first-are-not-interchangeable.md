@@ -83,7 +83,7 @@ The question is, **under what circumstances would querying an `Order` for a part
 
 This likely indicates that something is seriously amiss.
 
-If you used `First` here, it would return a single result.
+If you used `First` here, it would return a **single** result, hiding the problem.
 
 ```c#
 orders.First(x => x.OrderID == "1000")
