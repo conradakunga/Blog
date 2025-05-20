@@ -70,7 +70,7 @@ The top level is the **version** of the package, into which goes the following:
 5. A **readme** (if provided)
 6. A **lib** folder
 
-The lib folder contains the actual **DLLs** themselves, packaged into **folders** according to the **target**.
+The lib folder contains the actual **DLLs** themselves, packaged into **folders** according to the **[target](https://learn.microsoft.com/en-us/dotnet/standard/frameworks)**.
 
 ### HTTP Cache
 
