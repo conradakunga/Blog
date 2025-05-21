@@ -146,7 +146,7 @@ using (var cn = new SqlConnection("data source=localhost;trustservercertificate=
 }
 ```
 
-Here, `result` is a `dynamic` type.
+Here, `result` is a `dynamic` type, as we are using `cn.QuerySingle` rather than `cn.QuerySingle<T>`
 
 Now, you may wonder if there are any [security implications](https://learn.microsoft.com/en-us/sql/relational-databases/security/securing-sql-server?view=sql-server-ver17) to this approach.
 
