@@ -164,6 +164,6 @@ The [documentation](https://learn.microsoft.com/en-us/sql/relational-databases/s
 
 **SQL Server exposes properties and system views that you can query to obtain some server information.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-21%20-%20SQL%20Server%20Info).
 
 Happy hacking!
