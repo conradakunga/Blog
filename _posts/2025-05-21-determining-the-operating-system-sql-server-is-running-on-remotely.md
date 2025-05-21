@@ -160,6 +160,8 @@ The [documentation](https://learn.microsoft.com/en-us/sql/relational-databases/s
 >
 > On SQL Server 2022 (16.x) and later versions, you require `VIEW SERVER PERFORMANCE STATE` permission on the server.
 
+However, the solution using `@@version` has no such restrictions; this information is available to low-privilege users.
+
 ### TLDR
 
 **SQL Server exposes properties and system views that you can query to obtain some server information.**
