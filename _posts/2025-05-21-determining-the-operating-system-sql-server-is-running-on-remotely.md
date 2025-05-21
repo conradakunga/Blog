@@ -82,10 +82,10 @@ SELECT dm_os_host_info.host_platform,
 
 From this, we have options:
 
-1. Create a type to store the information
+1. Create a **type** to store the information
 2. Leverage the fact that `Dapper` supports [dynamic types](https://www.conradakunga.com/blog/dapper-part-9-using-dynamic-types/).
 
-The type would look like this:
+The **type** would look like this:
 
 ```c#
 public sealed class HostInfo
