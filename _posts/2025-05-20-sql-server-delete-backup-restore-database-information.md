@@ -32,7 +32,7 @@ Turns out ...
 
 ![SQLServerAfter](../images/2025/05/SQLServerAfter.png)
 
-"Backup and restore information" does not, in fact, refer to your backup files. It refers to the internal information SQL Server stores in is [msdb](https://learn.microsoft.com/en-us/sql/relational-databases/databases/msdb-database?view=sql-server-ver16) database.
+"Backup and restore information" does not, in fact, refer to your backup files. It refers to the **internal information SQL Server stores** in is [msdb](https://learn.microsoft.com/en-us/sql/relational-databases/databases/msdb-database?view=sql-server-ver16) database.
 
 From the [SQL Server documentation](https://learn.microsoft.com/en-us/ssms/object/delete-objects?f1url=%3FappId%3DDev15IDEF1%26l%3DEN-US%26k%3Dk(sql13.swb.deleteobjects.f1)%26rd%3Dtrue):
 
