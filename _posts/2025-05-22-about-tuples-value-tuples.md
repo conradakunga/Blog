@@ -39,9 +39,11 @@ var items = Tuple.Create(1, 2, 3, 4, 5, 6, 7, 8);
 Console.WriteLine($"The last item is {items.Rest.Item1}");
 ```
 
+If you want to create **9** items, create the first **7** as normal but **the eighth is going to be a `Tuple` with two elements**.
+
 In other words, **you can create as many items as you want** if you keep this in mind.
 
-Of course you should be rethinking your type design if you ever find yourself doing this.
+Of course you should be rethinking your type design if you ever find yourself doing this regularly.
 
 In C# 7 there was a further improvement - `ValueTuples`.
 
@@ -147,7 +149,7 @@ The following code:
 
 ```c#
 var tupleSample = Tuple.Create("James Bond", 42);
-var valueTuuple = ("James Bond", 42);
+var valueTuple = ("James Bond", 42);
 ```
 
 Generates the following [lowered](https://steven-giesel.com/blogPost/69dc05d1-9c8a-4002-9d0a-faf4d2375bce) code:
