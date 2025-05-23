@@ -14,7 +14,9 @@ layout: default
   {% assign postsByWeek = month.items | group_by_exp:"post", "post.date | date: '%V'" %}
 
   {% for week in postsByWeek %}
+  <br/>
   <h4> 📅 <b>Week {{week.name}}</b></h4>
+  <br/>
   {% for post in week.items %}
   <article>
     <span class="post-meta">{{ post.date | date: '%A, %B %e, %Y' }}</span>
