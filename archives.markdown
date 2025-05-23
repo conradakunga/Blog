@@ -20,8 +20,8 @@ permalink: /archives/
  {% assign postsByWeek = month.items | group_by_exp:"post", "post.date | date: '%V'"  %}
 
   {% for week in postsByWeek %}
-  <h4>Week {{week.name}}</h4>
-  <ul>
+  <h4> 📅 Week {{week.name}}</h4>
+  <ol reversed type="i">
   {% for post in week.items %}
     <li>
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - {{ post.date | date: "%A, %-d %B %Y" }} <h5><b>{% if post.categories and post.categories.size > 0 %}
@@ -31,7 +31,7 @@ permalink: /archives/
 {% endif %}</b></h5>
     </li>
   {% endfor %}
-  </ul>
+  </ol>
 {% endfor %}
 {% endfor %}
 {% endfor %}

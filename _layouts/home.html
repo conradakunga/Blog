@@ -2,7 +2,20 @@
 layout: default
 ---
 <div class="posts">
-  {% for post in site.posts %}
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for year in postsByYear %}
+  {% assign yearCount = year.items | size %}
+  <h2><b>{{ year.name }} - {{yearCount}} Posts</b></h2>
+  {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+
+  {% for month in postsByMonth %}
+  {% assign monthCount = month.items | size %}
+  <h3><b>{{ month.name }} {{ year.name }} - {{monthCount}} Posts</b></h3>
+  {% assign postsByWeek = month.items | group_by_exp:"post", "post.date | date: '%V'" %}
+
+  {% for week in postsByWeek %}
+  <h4> 📅 <b>Week {{week.name}}</b></h4>
+  {% for post in week.items %}
   <article>
     <span class="post-meta">{{ post.date | date: '%A, %B %e, %Y' }}</span>
     <h2><a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a></h2>
@@ -13,5 +26,9 @@ layout: default
         {% endif %}</b></h5>
     {{ post.excerpt }}
   </article>
+  </ul>
+  {% endfor %}
+  {% endfor %}
+  {% endfor %}
   {% endfor %}
 </div>
