@@ -43,4 +43,6 @@ For **trivial** functionality such as **field assignments**, `tuples` can simpli
 
 You can use tuples in constructors to assign fields.
 
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-24%20-%20Constructors%20%26%20Tuples).
+
 Happy hacking!
