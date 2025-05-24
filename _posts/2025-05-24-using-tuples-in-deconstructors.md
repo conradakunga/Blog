@@ -73,7 +73,7 @@ public void Deconstruct(out string firstname, out string surname) => (firstname,
 
 ### TLDR
 
-You can use tuples in constructors to assign fields.
+**You can use tuples in constructors to *assign* fields, as well as to *deconstruct* types.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-24%20-%20Constructors%20%26%20Tuples).
 
