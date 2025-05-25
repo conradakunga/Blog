@@ -229,7 +229,7 @@ Finally, `FileExistsAsync`:
     }
 ```
 
-Our next post will look at how to test this locally.
+Our [next post]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %}) will look at how to test this locally.
 
 ### TLDR
 

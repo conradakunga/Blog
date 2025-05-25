@@ -245,7 +245,7 @@ public async Task<bool> FileExistsAsync(Guid fileId, CancellationToken cancellat
 }
 ```
 
-In our next post, we will look at how to test this locally.
+In our next post, we will look at how to **test this locally**.
 
 **Note, however, we have not yet tested against the actual Azure storage, which will likely require some modifications on our configuration of the client, as well as authentication.**
 

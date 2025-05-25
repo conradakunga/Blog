@@ -297,6 +297,8 @@ Now we can effectively test our component locally.
 
 **Note, however, we have not yet tested against the actual Azure storage, which will likely require some modifications on our configuration of the client, as well as authentication.**
 
+In our [next post]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %}), we will implement a storage engine for [Amazon S3]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %}).
+
 ### TLDR
 
 **In this post we learned how to setup and configure `Azurite` for local testing of `Azure`.**
