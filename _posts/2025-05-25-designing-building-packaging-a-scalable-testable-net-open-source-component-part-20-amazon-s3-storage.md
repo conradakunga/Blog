@@ -247,10 +247,12 @@ public async Task<bool> FileExistsAsync(Guid fileId, CancellationToken cancellat
 
 In our next post, we will look at how to test this locally.
 
+**Note, however, we have not yet tested against the actual Azure storage, which will likely require some modifications on our configuration of the client, as well as authentication.**
+
 ### TLDR
 
 **In this post, we implemented a storage engine for Amazon S3, `AmazonS3StorageEngine`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
