@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using Tuples In Deconstructors
+title: Using Tuples in Deconstructors
 date: 2025-05-24 23:15:30 +0300
 categories:
     - C#
     - .NET
 ---
 
-In .NET, you would typically write a [constructor](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) like this:
+In C#, you would typically write a [constructor](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) like this:
 
 ```c#
 public sealed class Spy

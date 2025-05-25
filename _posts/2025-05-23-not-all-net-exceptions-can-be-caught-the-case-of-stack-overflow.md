@@ -47,7 +47,7 @@ Running this code will return the following:
 You attempted to divide by zero. Please try again.
 ```
 
-The code above is **not correct**, because it assumes the only exception that can be throw is a `DivideByZero` exception.
+The code above is **not correct** because it assumes the only exception that can be thrown is a `DivideByZero` exception.
 
 It is better to write it like this:
 
@@ -76,9 +76,9 @@ You would assume that you can wrap all your programs with a try-catch and never 
 
 **You would be wrong**.
 
-There are some exceptions that **cannot be caugh**t.
+Some exceptions **cannot be caugh**t.
 
-Take for example this code:
+Take, for example, this code:
 
 ```c#
 // Call the recursive method
@@ -107,7 +107,7 @@ Process finished with exit code 134.
 
 This code has thrown a [StackOverflow](https://learn.microsoft.com/en-us/dotnet/api/system.stackoverflowexception?view=net-9.0) exception.
 
-Now let us try and wrap our code in a `try-catch` block.
+Now, let's try to wrap our code in a `try-catch` block.
 
 ```c#
 try
@@ -156,19 +156,19 @@ When `Add` completes and returns, it is popped from the stack and the pointer is
 
 ![InitStack](../images/2025/05/InitStack.png)
 
-Now let us examine our recursive function call program.
+Now, let us examine our recursive function call program.
 
 Given we are calling the function **recursively**, this will happen:
 
 ![RecursiveStack](../images/2025/05/RecursiveStack.png)
 
-The size of the stack is not finite ([and is about 1MB](https://website-development.ch/blog/stack-heap-memory)), and therefore at some point the stack will be full.
+The size of the stack is not finite ([and is about 1MB](https://website-development.ch/blog/stack-heap-memory)), and therefore, at some point, the stack will be full.
 
 The reason you cannot catch this exception is that **since the stack is full, the runtime has no idea where to return**.
 
 You might wonder why not just return to the top of the stack, position 0.
 
-Because you cannot assume that is the source of the problem.
+Because you cannot assume that it is the source of the problem.
 
 The state could have been this:
 
