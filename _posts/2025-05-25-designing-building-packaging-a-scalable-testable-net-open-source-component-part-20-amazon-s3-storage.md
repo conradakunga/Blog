@@ -33,11 +33,11 @@ This is Part 20 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage (This post)**
 
-In the last post in the series, we looked at how to test Azure Blob storage locally.
+In the [last post in the series]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %}), we looked at how to test [Azure Blob storage](https://azure.microsoft.com/en-us/products/storage/blobs) applications **locally**.
 
-In this post, we will implement storage on Amazon S3 - the `AmazonS3StorageEngine`.
+In this post, we will implement storage on [Amazon S3](https://aws.amazon.com/s3/) - the `AmazonS3StorageEngine`.
 
-The first step is understanding the Amazon product we will use for storage - [Amazon Simple Storage Service](https://aws.amazon.com/s3/), known as S3.
+The first step is understanding the [Amazon](https://aws.amazon.com/) product we will use for storage - [Amazon Simple Storage Service](https://aws.amazon.com/s3/), known as S3.
 
 The main concepts we will deal with are:
 
@@ -75,7 +75,7 @@ public class AmazonSettings
 }
 ```
 
-Next we begin to implement the `AmazonS3StroageEngine`.
+Next we begin to implement the `AmazonS3StrorageEngine`.
 
 ```c#
 public sealed class AmazonS3StorageEngine : IStorageEngine
@@ -136,7 +136,7 @@ public async Task InitializeAsync(CancellationToken cancellationToken = default)
 
 We then go on to implement the various methods of the `IStorageEngine` interface.
 
-First, a method that checks if a given fileID exists in a specified container:
+First, a method that checks if a given `FileID` exists in a specified `bucket`:
 
 ```c#
 private async Task<bool> FileExistsAsync(Guid fileId, string containerName,
