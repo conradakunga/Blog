@@ -31,6 +31,9 @@ This is Part 18 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 17 - Large File Consideration On PostgreSQL]({% post_url 2025-05-03-designing-building-packaging-a-scalable-testable-net-open-source-component-part-17-large-file-consideration-on-postgresql %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 18 - Azure Blob Storage (This Post)**
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %})
+
+**UPDATED to add Initialization method**
 
 In our [last post]({% post_url 2025-05-03-designing-building-packaging-a-scalable-testable-net-open-source-component-part-17-large-file-consideration-on-postgresql %}), we looked at implementing [large object storage](https://www.postgresql.org/docs/current/largeobjects.html) to give our `PostgreSQLStorageEngine` parity with the `SQLServerStorageEngine`.
 
@@ -93,16 +96,43 @@ public class AzureBlobStorageEngine : IStorageEngine
       var blobServiceClient = new BlobServiceClient(
           new Uri($"https://{account}.blob.core.windows.net"),
           new DefaultAzureCredential());
-
-      // Create container clients
-      _dataContainerClient = blobServiceClient.CreateBlobContainer(dataContainerName);
-      _metadataContainerClient = blobServiceClient.CreateBlobContainer(metadataContainerName);
-      // Ensure they exist
-      _dataContainerClient.CreateIfNotExists();
-      _metadataContainerClient.CreateIfNotExists();
 }
     
 ```
+
+We next implement an `Initialization` method that will **create our buckets if they don't already exist**. This method will be run once, perhaps at startup.
+
+```c#
+/// <summary>
+/// Initialize the engine
+/// </summary>
+/// <param name="accountName"></param>
+/// <param name="accountKey"></param>
+/// <param name="azureLocation"></param>
+/// <param name="dataContainerName"></param>
+/// <param name="metadataContainerName"></param>
+/// <param name="cancellationToken"></param>
+public async Task InitializeAsync(string accountName, string accountKey, string azureLocation,
+    string dataContainerName, string metadataContainerName, CancellationToken cancellationToken = default)
+{
+    // Create a service client
+    var blobServiceClient = new BlobServiceClient(
+        new Uri($"{azureLocation}/{accountName}/"),
+        new StorageSharedKeyCredential(accountName, accountKey));
+
+    // Get our container clients
+    var dataContainerClient = blobServiceClient.GetBlobContainerClient(dataContainerName);
+    var metadataContainerClient = blobServiceClient.GetBlobContainerClient(metadataContainerName);
+
+    // Ensure they exist
+    if (!await dataContainerClient.ExistsAsync(cancellationToken))
+        await dataContainerClient.CreateIfNotExistsAsync(cancellationToken: cancellationToken);
+    if (!await metadataContainerClient.ExistsAsync(cancellationToken))
+        await metadataContainerClient.CreateIfNotExistsAsync(cancellationToken: cancellationToken);
+}
+```
+
+
 
 We then go on to implement the various methods of the `IStorageEngine` interface.
 

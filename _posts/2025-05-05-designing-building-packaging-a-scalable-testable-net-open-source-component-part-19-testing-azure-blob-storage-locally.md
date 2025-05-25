@@ -31,6 +31,7 @@ This is Part 19 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 17 - Large File Consideration On PostgreSQL]({% post_url 2025-05-03-designing-building-packaging-a-scalable-testable-net-open-source-component-part-17-large-file-consideration-on-postgresql %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 18 - Azure Blob Storage]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %})
 
 In our [last post]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %}), we implemented a storage engine for [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs).
 
@@ -293,6 +294,8 @@ And if you look at the continer logs, you should see requests and responses bein
 ![AzuriteTraffic](../images/2025/05/AzuriteTraffic.png)
 
 Now we can effectively test our component locally.
+
+**Note, however, we have not yet tested against the actual Azure storage, which will likely require some modifications on our configuration of the client, as well as authentication.**
 
 ### TLDR
 
