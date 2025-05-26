@@ -40,7 +40,7 @@ Testing locally here means how do we test **without** connecting to the actual [
 
 This is possible using the tool [Minio](https://min.io/)
 
-This is available, like Azuite, as a Docker image.
+This is available, like [Azuite for Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=visual-studio%2Cblob-storage), as a [Docker](https://www.docker.com/) [image](https://hub.docker.com/r/microsoft/azure-storage-azurite).
 
 We can start by creating a `docker-compose.yaml` file to configure our settings.
 
