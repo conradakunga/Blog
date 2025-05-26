@@ -246,7 +246,7 @@ public async Task<bool> FileExistsAsync(Guid fileId, CancellationToken cancellat
 }
 ```
 
-In our next post, we will look at how to **test this locally**.
+In our [next post]({% post_url 2025-05-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-21-testing-amazon-s3-storage-locally %}), we will look at how to **test this locally**.
 
 **Note, however, we have not yet tested against the actual Amazon storage, which will likely require some modifications to our configuration of the client, as well as authentication.**
 
