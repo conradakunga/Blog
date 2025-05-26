@@ -32,12 +32,13 @@ This is Part 20 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 18 - Azure Blob Storage]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage (This post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 21 - Testing Amazon S3 Storage Locally]({% post_url 2025-05-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-21-testing-amazon-s3-storage-locally %}) 
 
 In the [last post in the series]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %}), we looked at how to test [Azure Blob storage](https://azure.microsoft.com/en-us/products/storage/blobs) applications **locally**.
 
-In this post, we will implement storage on [Amazon S3](https://aws.amazon.com/s3/) - the `AmazonS3StorageEngine`.
+This post will implement storage on [Amazon S3](https://aws.amazon.com/s3/) - the `AmazonS3StorageEngine`.
 
-The first step is understanding the [Amazon](https://aws.amazon.com/) product we will use for storage - [Amazon Simple Storage Service](https://aws.amazon.com/s3/), known as S3.
+The first step is to understand the Amazon product we will use for storage: [Amazon Simple Storage Service](https://aws.amazon.com/s3/), known as S3.
 
 The main concepts we will deal with are:
 
@@ -46,7 +47,7 @@ The main concepts we will deal with are:
 
 ### Account
 
-This is the top level. It is accessed and manipulated using the AmazonS3Client.
+This is the top level. It is accessed and manipulated using the [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Client.html).
 
 ### Bucket
 
@@ -58,11 +59,11 @@ An account can have more than one [bucket](https://www.techtarget.com/searchaws/
 
 This is accessed and manipulated using three objects:
 
-1. [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Client.html), that interfaces at a lower level,
-2. [TransferUtility](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TTransferUtility.html), a higher level interface with convenience methods for dealing with uploads and downloads
+1. [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Client.html), which interfaces at a lower level,
+2. [TransferUtility](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TTransferUtility.html), a higher-level interface with convenience methods for dealing with uploads and downloads
 3. [AmazonS3Util](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Util.html) for bucket verifications
 
-Similar to our `AzureBlobStorageEngine`, we will have **two** buckets - one to store the **file data**, and another to store the **file metadata**.
+Like our `AzureBlobStorageEngine`, we will have **two** buckets - one to store the **file data**, and another to store the **file metadata**.
 
 We will begin by implementing a class to store some preliminary settings (likely to change to factor in additional AWS concerns like authentication)
 
@@ -75,7 +76,7 @@ public class AmazonSettings
 }
 ```
 
-Next we begin to implement the `AmazonS3StrorageEngine`.
+Next,we begin to implement the `AmazonS3StrorageEngine`.
 
 ```c#
 public sealed class AmazonS3StorageEngine : IStorageEngine
@@ -247,7 +248,7 @@ public async Task<bool> FileExistsAsync(Guid fileId, CancellationToken cancellat
 
 In our next post, we will look at how to **test this locally**.
 
-**Note, however, we have not yet tested against the actual Azure storage, which will likely require some modifications on our configuration of the client, as well as authentication.**
+**Note, however, we have not yet tested against the actual Amazon storage, which will likely require some modifications to our configuration of the client, as well as authentication.**
 
 ### TLDR
 
