@@ -334,6 +334,6 @@ In our next post, we shall look at some additional improvements to prepare our c
 
 **In this post, we learned how to set up and configure `Minio` for local testing of `Amazon` storage.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 
 Happy hacking!
