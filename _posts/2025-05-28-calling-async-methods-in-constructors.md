@@ -128,6 +128,6 @@ Spy was created: James Bond
 
 **We can get around the fact that `constructors` cannot be `async` or call `async` methods by implementing a *factory* method with a *private constructor* to initiailize our objects.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-05-29%20-%20Async%20Construction).
 
 Happy hacking!
