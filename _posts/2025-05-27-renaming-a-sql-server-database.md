@@ -112,6 +112,8 @@ The database name 'Deploy2' has been set.
 Completion time: 2025-05-29T00:07:45.6467405+03:00
 ```
 
+To rename a database you require **ALTER** and **CONTROL** permissions on the database.
+
 ### TLDR
 
 **There are 3 ways to rename a SQL Server database (but one of them will be deprecated). For whichever you use, place the database into single-user mode first.**
