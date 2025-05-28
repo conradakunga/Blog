@@ -14,7 +14,7 @@ If you need to rename a SQL Server database, there are 3 ways you can do so:
 
 ### SQL Server Management Studio
 
-If you have access to SSMS, you can rename the database by right clicking the database and choosing **Rename** from the menu.
+If you have access to SSMS, you can rename the database by **right clicking the database** and choosing **Rename** from the menu.
 
 ![SSMSReme](../images/2025/05/SSMSReme.png)
 
@@ -28,15 +28,15 @@ sys.sp_renamedb
     @newname = 'Deploy2';
 ```
 
-However, in the documentation it says the following:
+However, in the [documentation](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-renamedb-transact-sql?view=sql-server-ver17) it says the following:
 
 > This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use `ALTER DATABASE MODIFY NAME` instead. For more information, see [ALTER DATABASE](https://learn.microsoft.com/en-us/sql/t-sql/statements/alter-database-transact-sql?view=sql-server-ver17).
 
-So, probably best to stop using this one.
+So, probably best to stop using this technique.
 
 ### ALTER DATABASE Command
 
-You can also use the ALTER DATABASE command as follows:
+You can also use the `ALTER DATABASE` command as follows:
 
 ```sql
 ALTER DATABASE Deploy
@@ -45,7 +45,7 @@ ALTER DATABASE Deploy
 
 This seems to be the recommended way.
 
-Now, if you try any of these techniques, all of them will probably fail.
+Now, if you try any of these techniques, **all of them will probably fail**.
 
 SSMS will fail like this:
 
@@ -55,7 +55,7 @@ SSMS will fail like this:
 
 ![spRename](../images/2025/05/spRename.png)
 
-ALTER DATABASE will fail like this:
+`ALTER DATABASE` will fail like this:
 
 ![AlterTableRename](../images/2025/05/AlterTableRename.png)
 
@@ -74,9 +74,9 @@ ALTER DATABASE Deploy
     WITH ROLLBACK IMMEDIATE;
 ```
 
-This places the database into [single user mode](https://learn.microsoft.com/en-us/sql/relational-databases/databases/set-a-database-to-single-user-mode?view=sql-server-ver17), which is what you need for maintenance tasks, and will disconnect all currently connected users.
+This places the database into [single user mode](https://learn.microsoft.com/en-us/sql/relational-databases/databases/set-a-database-to-single-user-mode?view=sql-server-ver17), which is what you need for maintenance tasks, and will **immediately disconnect** all currently connected users.
 
-You can now rename the database using any of the techniques.
+You can now rename the database using **any** of the techniques.
 
 When you are done you can bring the database back to multi-user mode.
 
