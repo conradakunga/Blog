@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calling Async Methods In Constructors
+title: Calling Async Methods In Constructors In C#
 date: 2025-05-28 00:30:12 +0300
 categories:
     - C#
