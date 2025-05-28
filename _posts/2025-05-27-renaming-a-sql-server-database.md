@@ -112,7 +112,7 @@ The database name 'Deploy2' has been set.
 Completion time: 2025-05-29T00:07:45.6467405+03:00
 ```
 
-To rename a database you require **ALTER** and **CONTROL** permissions on the database.
+To rename a database you require **ALTER** and **CONTROL** [permissions](https://learn.microsoft.com/en-us/sql/relational-databases/security/permissions-database-engine?view=sql-server-ver17) on the database.
 
 ### TLDR
 
