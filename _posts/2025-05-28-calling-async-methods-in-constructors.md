@@ -51,11 +51,10 @@ public Spy(string firstName, string surname)
 This code will fail to compile with the following errors:
 
 ```plaintext
-AsyncConstructors failed with 2 error(s) (1.0s)
-  /Users/rad/Projects/blog/BlogCode/AsyncConstructors/Spy.cs(10,9): error CS4033: The 'await' operator can only be used within an async method. Consider marking this method with the 'async' modifier and changing its return type to 'Task'.
-  /Users/rad/Projects/blog/BlogCode/AsyncConstructors/Spy.cs(10,9): error CS4008: Cannot await 'void'
+  AsyncConstructors failed with 1 error(s) (0.1s)
+    /Users/rad/Projects/blog/BlogCode/2025-05-29 - Async Construction/Spy.cs(12,13): error CS4033: The 'await' operator can only be used within an async method. Consider marking this method with the 'async' modifier and changing its return type to 'Task'.
 
-Build failed with 2 error(s) in 1.4s
+Build failed with 1 error(s) in 0.5s
 ```
 
 You might try to make the `constructor` `async` but that is **impossible** - the `constuctor` must return the **object**, and currently you **cannot change the return type of the constructor**.
