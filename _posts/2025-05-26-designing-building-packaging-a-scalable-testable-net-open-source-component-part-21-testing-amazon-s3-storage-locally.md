@@ -33,10 +33,11 @@ This is Part 21 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 21 - Testing Amazon S3 Storage Locally (This post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring For Proper Initialization]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %})
 
-In our [last post]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %}), we implemented the `AmazonS3Storage` engine - a storage engine for [Amazon](https://aws.amazon.com/) [S3](https://aws.amazon.com/s3/).
+In our [previous post]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %}), we implemented the `AmazonS3Storage` engine - a storage engine for [Amazon](https://aws.amazon.com/) [S3](https://aws.amazon.com/s3/).
 
-Testing locally here means how do we test **without** connecting to the actual [Amazon](https://aws.amazon.com/s3/) infrastructure. As part of integration testing, we will ultimately need to do this, but given that moving data in and out of Amazon costs actually money, it may not be desirable to do this frequently.
+Testing locally here means testing **without** connecting to the actual [Amazon](https://aws.amazon.com/s3/) infrastructure. As part of integration testing, we will ultimately need to do this, but given that moving data in and out of Amazon costs actual money, it may not be desirable to do this frequently.
 
 This is possible using the tool [Minio](https://min.io/)
 
