@@ -33,11 +33,12 @@ This is Part 21 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %})
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 21 - Testing Amazon S3 Storage Locally (This post)**
-- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring For Proper Initialization]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring Azure Storage Engine For Initializationinitialization]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 23 - Refactoring Amazon Storage Engine For Initialization]({% post_url 2025-05-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-23-refactoring-amazon-storage-engine-for-initialization %})
 
 In our [previous post]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %}), we implemented the `AmazonS3Storage` engine - a storage engine for [Amazon](https://aws.amazon.com/) [S3](https://aws.amazon.com/s3/).
 
-Testing locally here means testing **without** connecting to the actual [Amazon](https://aws.amazon.com/s3/) infrastructure. As part of integration testing, we will ultimately need to do this, but given that moving data in and out of Amazon costs actual money, it may not be desirable to do this frequently.
+Testing locally here means testing **without** connecting to the actual [Amazon](https://aws.amazon.com/s3/) infrastructure. As part of integration testing, we will ultimately need to do this; however, given that moving data in and out of Amazon incurs actual costs, it may not be desirable to do so frequently.
 
 This is possible using the tool [Minio](https://min.io/)
 

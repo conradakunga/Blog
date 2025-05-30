@@ -33,15 +33,16 @@ This is Part 19 of a series on Designing, Building & Packaging A Scalable, Testa
 - **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally (This Post)**
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 21 - Testing Amazon S3 Storage Locally]({% post_url 2025-05-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-21-testing-amazon-s3-storage-locally %}) 
-- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring For Proper Initialization]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring Azure Storage Engine For Initializationinitialization]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 23 - Refactoring Amazon Storage Engine For Initialization]({% post_url 2025-05-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-23-refactoring-amazon-storage-engine-for-initialization %})
 
 In our [last post]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %}), we implemented a storage engine for [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs).
 
-In this post we will look at how to test locally.
+In this post, we will look at how to test locally.
 
-Testing locally here means how do we test **without** connecting to the actual [Azure](https://azure.microsoft.com/en-us/) infrastructure. As part of integration testing we will ultimately need to do this, but given that moving data in and out of Azure costs actually money, it may not be desirable to do this frequently.
+Testing locally here means how do we test **without** connecting to the actual [Azure](https://azure.microsoft.com/en-us/) infrastructure. As part of integration testing, we will ultimately need to do this, but given that moving data in and out of Azure costs actual money, it may not be desirable to do this frequently.
 
-Luckily, Microsoft has availed a [docker](https://www.docker.com/) [container](https://hub.docker.com/r/microsoft/azure-storage-azurite) that encapsulates **Azure** functionality that we can use for this purpose.
+Luckily, Microsoft has provided a [Docker](https://www.docker.com/) [container](https://hub.docker.com/r/microsoft/azure-storage-azurite) that encapsulates **Azure** functionality that we can use for this purpose.
 
 The first order of business is to download the container.
 
@@ -49,9 +50,9 @@ The first order of business is to download the container.
 docker pull mcr.microsoft.com/azure-storage/azurite
 ```
 
-Next we will need to so some **configuration**, specifically to allow **Azurite** to run with [https](https://en.wikipedia.org/wiki/HTTPS).
+Next, we will need to do some **configuration**, specifically to allow **Azurite** to run with [HTTPS](https://en.wikipedia.org/wiki/HTTPS).
 
-For this we will require two tools:
+For this, we will require two tools:
 
 1. [mkcert](https://github.com/FiloSottile/mkcert)
 2. [nss](https://firefox-source-docs.mozilla.org/security/nss/index.html) Network security services.

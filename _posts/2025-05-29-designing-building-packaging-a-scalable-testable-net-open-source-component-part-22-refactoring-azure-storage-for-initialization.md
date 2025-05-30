@@ -7,7 +7,7 @@ categories:
     - C#
     - OpenSource
     - Design
-    - Azure	
+    - Azure
 ---
 
 This is Part 22 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
@@ -33,15 +33,14 @@ This is Part 22 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 21 - Testing Amazon S3 Storage Locally]({% post_url 2025-05-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-21-testing-amazon-s3-storage-locally %})
-- **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring For Proper Initialization (This Post)**
+- **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring Azure Storage Engine For Initialization (This Post)**
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring Amazon Storage Engine For Initialization]({% post_url 2025-05-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-23-refactoring-amazon-storage-engine-for-initialization %})
 
 In our [previous post]({% post_url 2025-05-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-21-testing-amazon-s3-storage-locally %}) in the series, we looked at how to test [Amazon Storage](https://aws.amazon.com/) locally.
 
 In this post, we will look at an issue we tackled in the previous post around async methods and how to **initialize** the `AzureStorageEngine` correctly.
 
-### Azure
-
-In the AzureStorageEngine, the constructor looks like this:
+In the `AzureStorageEngine`, the constructor looks like this:
 
 ```c#
 public AzureBlobStorageEngine(int timeoutInMinutes, string accountName, string accountKey, string azureLocation,
@@ -98,7 +97,7 @@ There are three possible solutions to this problem:
 2. Call `InitializeAsync` in every method, which is what we have currently done.
 3. Rewrite the code to have the **initialization** part of its construction, which is what we will do.
 
-The first step is to make the constructor private.
+The first step is to make the `constructor` **private**.
 
 ```c#
 private AzureBlobStorageEngine(int timeoutInMinutes, string accountName, string accountKey, string azureLocation,
@@ -121,30 +120,30 @@ Next, we make the `InitializeAsync` static and refactor it to construct and retu
 
 ```c#
 public static async Task<AzureBlobStorageEngine> InitializeAsync(int timeoutInMinutes, string accountName,
-        string accountKey,
-        string azureLocation,
-        string dataContainerName, string metadataContainerName, CancellationToken cancellationToken = default)
-    {
-        var engine = new AzureBlobStorageEngine(timeoutInMinutes, accountName, accountKey, azureLocation,
-            dataContainerName, metadataContainerName);
+    string accountKey,
+    string azureLocation,
+    string dataContainerName, string metadataContainerName, CancellationToken cancellationToken = default)
+{
+    var engine = new AzureBlobStorageEngine(timeoutInMinutes, accountName, accountKey, azureLocation,
+        dataContainerName, metadataContainerName);
 
-        // Create a service client
-        var blobServiceClient = new BlobServiceClient(
-            new Uri($"{azureLocation}/{accountName}/"),
-            new StorageSharedKeyCredential(accountName, accountKey));
+    // Create a service client
+    var blobServiceClient = new BlobServiceClient(
+        new Uri($"{azureLocation}/{accountName}/"),
+        new StorageSharedKeyCredential(accountName, accountKey));
 
-        // Get our container clients
-        var dataContainerClient = blobServiceClient.GetBlobContainerClient(dataContainerName);
-        var metadataContainerClient = blobServiceClient.GetBlobContainerClient(metadataContainerName);
+    // Get our container clients
+    var dataContainerClient = blobServiceClient.GetBlobContainerClient(dataContainerName);
+    var metadataContainerClient = blobServiceClient.GetBlobContainerClient(metadataContainerName);
 
-        // Ensure they exist
-        if (!await dataContainerClient.ExistsAsync(cancellationToken))
-            await dataContainerClient.CreateIfNotExistsAsync(cancellationToken: cancellationToken);
-        if (!await metadataContainerClient.ExistsAsync(cancellationToken))
-            await metadataContainerClient.CreateIfNotExistsAsync(cancellationToken: cancellationToken);
+    // Ensure they exist
+    if (!await dataContainerClient.ExistsAsync(cancellationToken))
+        await dataContainerClient.CreateIfNotExistsAsync(cancellationToken: cancellationToken);
+    if (!await metadataContainerClient.ExistsAsync(cancellationToken))
+        await metadataContainerClient.CreateIfNotExistsAsync(cancellationToken: cancellationToken);
 
-        return engine;
-    }
+    return engine;
+}
 ```
 
 You might have noticed that there is some element of **repetition** here, mostly around creating and initializing a separate `BlobServiceClient` to do some of the work.
@@ -352,6 +351,8 @@ Much cleaner.
 Our tests, of course, still pass.
 
 ![AzureBlobTestsRefactor](../images/2025/05/AzureBlobTestsRefactor.png)
+
+In our [next post]({% post_url 2025-05-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-23-refactoring-amazon-storage-engine-for-initialization %}), we will look at how to refactor the `AmazonS3StorageEngine` for **async initialization**.
 
 ### TLDR
 
