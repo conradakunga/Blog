@@ -7,7 +7,6 @@ categories:
     - C#
     - OpenSource
     - Design
-    - Amazon
     - Azure	
 ---
 
@@ -102,20 +101,19 @@ There are three possible solutions to this problem:
 The first step is to make the constructor private.
 
 ```c#
-private AmazonS3StorageEngine(string username, string password, string amazonLocation, string dataContainerName,
-    string metadataContainerName)
+private AzureBlobStorageEngine(int timeoutInMinutes, string accountName, string accountKey, string azureLocation,
+    string dataContainerName, string metadataContainerName)
 {
-    // Configuration for the amazon s3 client
-    var config = new AmazonS3Config
-    {
-        ServiceURL = amazonLocation,
-        ForcePathStyle = true
-    };
+    TimeoutInMinutes = timeoutInMinutes;
 
-    _dataContainerName = dataContainerName;
-    _metadataContainerName = metadataContainerName;
-    _client = new AmazonS3Client(username, password, config);
-    _utility = new TransferUtility(_client);
+    // Create a service client
+    var blobServiceClient = new BlobServiceClient(
+        new Uri($"{azureLocation}/{accountName}/"),
+        new StorageSharedKeyCredential(accountName, accountKey));
+
+    // Get our container clients
+    _dataContainerClient = blobServiceClient.GetBlobContainerClient(dataContainerName);
+    _metadataContainerClient = blobServiceClient.GetBlobContainerClient(metadataContainerName);
 }
 ```
 
@@ -149,11 +147,11 @@ public static async Task<AzureBlobStorageEngine> InitializeAsync(int timeoutInMi
     }
 ```
 
-You might have noticed that there is some element of **repetition** here, mostly around creating and initializing a separate `AmazonS3Client` to do some of the work.
+You might have noticed that there is some element of **repetition** here, mostly around creating and initializing a separate `BlobServiceClient` to do some of the work.
 
 I could have avoided this by exposing the internal client as a property, but I **deliberately chose not to do so, as I want the state within the object to be completely internal**.
 
-Finally I can refactor the methods, that are currently like this:
+Finally, I can refactor the methods that are currently like this:
 
 ```c#
 /// <inheritdoc />
