@@ -38,9 +38,9 @@ This is Part 23 of a series on Designing, Building & Packaging A Scalable, Testa
 
 Our [last post in the series]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %}) looked at how to refactor the `AzureBlobStorageEngine` to perform asynchronous initialization.
 
-This post will examine the refactoring required to enable the `AzureS3StorageEngine` to utilize asynchronous initialization.
+This post will examine the refactoring required to enable the `AmazonS3StorageEngine` to utilize asynchronous initialization.
 
-The `constructor` for the `AzureS3StorageEngine` currently looks like this:
+The `constructor` for the `Amazon3StorageEngine` currently looks like this:
 
 ```c#
 public AmazonS3StorageEngine(string username, string password, string amazonLocation, string dataContainerName,
