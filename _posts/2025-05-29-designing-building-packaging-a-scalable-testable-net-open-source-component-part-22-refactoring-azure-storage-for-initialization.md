@@ -359,6 +359,6 @@ Our tests, of course, still pass.
 
 **We have refactored the `AzureBlobStorageEngine` to ensure that it is initialized correctly upon object creation.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager/).
 
 Happy hacking!
