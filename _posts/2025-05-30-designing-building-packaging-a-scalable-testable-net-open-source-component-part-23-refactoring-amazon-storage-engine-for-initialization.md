@@ -174,7 +174,7 @@ public static async Task<AmazonS3StorageEngine> InitializeAsync(string username,
 }
 ```
 
-Again, we have some repetition here - we are creating another `AmazonS3Client`, but this one is specifically to perform initialization work, as well as its necessary configuration.
+Again, we have some repetition here - we are creating another `AmazonS3Client`, but this one is **specifically to perform initialization work**, as well as its necessary configuration.
 
 The last step is the methods that all currently call `InitializeAsync`:
 
@@ -297,7 +297,7 @@ private async Task<bool> FileExistsAsync(Guid fileId, string containerName,
 }
 ```
 
-We can remove all those calls, so that they now look like this:
+We can **remove all those calls**, so that they now look like this:
 
 ```c#
 /// <inheritdoc />
@@ -409,7 +409,7 @@ Our tests, we can confirm, still pass.
 
 ![AmazonsS3RefactorTests](../images/2025/05/AmazonsS3RefactorTests.png)
 
-### TLDRß
+### TLDR
 
 **We have refactored the `AmazonS3StorageEngine` to ensure that it is initialized correctly upon object creation.**
 
