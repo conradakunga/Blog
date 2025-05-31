@@ -5,7 +5,7 @@ permalink: /links/
 draft: true
 ---
 
-## Individual Blobs
+## Individual Blogs
 
 - [Ben Roberts' Digital Economy](https://www.digitaleconomy.ke/blog) - Accelerating Africa's Digital Growth
 - [Billy Okeyo](https://billy-okeyo.netlify.app/) - .NET
