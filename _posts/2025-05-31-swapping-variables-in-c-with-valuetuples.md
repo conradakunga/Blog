@@ -23,6 +23,8 @@ Console.WriteLine($"a is {a} and b is {b}");
 
 a = b;
 b = a;
+
+Console.WriteLine($"a is {a} and b is {b}");
 ```
 
 Which, of course, prints the wrong thing.
