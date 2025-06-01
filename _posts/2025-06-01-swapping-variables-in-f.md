@@ -9,6 +9,12 @@ categories:
 
 In the previous post, [Swapping Variables In C# With ValueTuples]({% post_url 2025-05-31-swapping-variables-in-c-with-valuetuples %}), we saw how to swap variables in C#.
 
+As a recap, the problem is as follows:
+
+> You have two variables, `a` and b, such that `a` is `10` and `b` is `20`. 
+>
+> Write a program that swaps the values.
+
 F# has some considerations when it comes to this problem, the most significant one being that values are [immutable by default](https://www.compositional-it.com/news-blog/immutable-data-structures-in-f/).
 
 The traditional solution using a **temporary value** would look like this:
