@@ -4,8 +4,11 @@ title: Archives
 permalink: /archives/
 ---
 {% assign count = site.posts | size %}
+{% capture total_words %}
+  {% posts_word_count total %}
+{% endcapture %}
 
-<h2>Total Posts : {{count}}</h2>
+<h2>Total Posts: {{ count }}</h2>
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
