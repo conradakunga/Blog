@@ -57,7 +57,7 @@ a is 10 and b is 30
 a is 30 and b is 10
 ```
 
-A creative way to solve this problem is to use the [ValueTuple](https://learn.microsoft.com/en-us/dotnet/api/system.valuetuple?view=net-9.0).
+A creative solution to this problem is to utilize the [ValueTuple](https://learn.microsoft.com/en-us/dotnet/api/system.valuetuple?view=net-9.0).
 
 ```c#
 var a = 10;
