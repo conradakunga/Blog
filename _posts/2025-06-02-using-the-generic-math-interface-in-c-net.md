@@ -252,6 +252,6 @@ The same technique can be used to provide implementations of **overloads** for [
 
 **The `INumber<T>` generic interface makes it much simpler to implement logic targeting base numeric types.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-06-02-%20Generic%20Math).
 
 Happy hacking!
