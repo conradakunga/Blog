@@ -7,9 +7,9 @@ categories:
     - .NET
 ---
 
-Suppose we wanted to implement a simple library that exposed the functions of a calculator.
+Suppose we wanted to implement a simple library that exposed the functions of a **calculator**.
 
-You would start with an interface that defines the contract, the `ICalculator`.
+You would start with an [interface](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface) that defines the contract, the `ICalculator`.
 
 ```c#
 public interface ICalculator
@@ -21,7 +21,7 @@ public interface ICalculator
 }
 ```
 
-Next, we implement the interface.
+Next, we [implement](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation) the interface.
 
 ```c#
 public sealed class Calculator : ICalculator
@@ -162,16 +162,16 @@ But what of other types?
 - `float`
 - `double`
 
-It will quickly become tiresome to define interfaces and implementations for all of these, especially given that they are identical.
+It will quickly become **tiresome to define interfaces and implementations for all of these**, especially given that the logic for all is identical.
 
 There are a number of solutions to this problem:
 
-1. Use dynamic types. The problem with this solution is that you lose all the benefits of strong typing.
-2. Define the methods on a type that is a superset of the rest, perhaps the decimal. The problem with this solution is that all types have some subtle and distinct differences. For example, `float` and `double` are approximate types.
+1. Use [dynamic types](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interop/using-type-dynamic). The problem with this solution is that you lose all the benefits of [strong typing](https://en.wikipedia.org/wiki/Strong_and_weak_typing).
+2. Define the methods on a type that is a superset of the rest, perhaps the `decimal`. The problem with this solution is that all types have some **subtle and distinct differences**. For example, `float` and `double` are [approximate](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types) types.
 
 From C# 11, there is a perfect solution to this problem: the [generic math](https://learn.microsoft.com/en-us/dotnet/standard/generics/math) interface, and in particular, the [INumber](https://learn.microsoft.com/en-us/dotnet/api/system.numerics.inumber-1?view=net-9.0) interface.
 
-Essentially, some refactoring was performed on the basic types to enable them to implement several generic interfaces.
+Some **refactoring** was performed on the basic types to enable them to implement several generic interfaces.
 
 We can start by rewriting our `ICalculator` interface as follows:
 
