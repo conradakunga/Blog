@@ -12,7 +12,7 @@ draft: true
 - [Carlvin Mwange](https://carlvinjerry.com/) - F#, Python
 - [David Lemayian](https://davidlemayian.com/) - Technology
 - [Fredrick Kamau](https://fredkamau.com/) - .NET, Angular
-- [Joseph Ndungi](https://dev.to/josephndungi) - Software Development
+- [Joseph Ndungi](https://dev.to/josephndungi) - Python, Software Development
 
 ## Company Blogs
 
