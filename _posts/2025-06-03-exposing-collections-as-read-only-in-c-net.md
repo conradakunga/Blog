@@ -76,19 +76,19 @@ A typical solution would be:
     
 
 ```c#
-public class Spy
+public sealed class Spy
 {
-	private readonly List<string> _agencies =[];
-	public IEnumerable<string> Agencies => _agencies.AsReadOnly();
-	
-	public required string FirstName { get; init; }
-	public required string Surname { get; init; }
+    private readonly List<string> _agencies = [];
+    public IEnumerable<string> Agencies => _agencies.AsReadOnly();
+    public required string FirstName { get; init; }
+    public required string Surname { get; init; }
 
-	public void AddAgency(string agency)
-	{
-		if (!_agencies.Contains(agency))
-		_agencies.Add(agency);
-	}
+
+    public void AddAgency(string agency)
+    {
+        if (!_agencies.Contains(agency))
+            _agencies.Add(agency);
+    }
 }
 ```
 
@@ -122,7 +122,8 @@ spy.Stations[0] = "Nairobi";
 The typical solution would be to do this:
 
 ```c#
-public IEnumerable Stations => _stations.AsReadOnly();
+    private readonly string[] _stations = ["London", "Barbados", "Jamaica"];
+    public IEnumerable<string> Stations => _stations.AsReadOnly();
 ```
 
 This `IEnumerable` would be, just like before, a `ReadOnlyCollection` of `string`.
