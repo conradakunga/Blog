@@ -136,6 +136,6 @@ Thus, your internal state cannot be interfered with from outside, unless you exp
 
 **When exposing collections from a type, consider using a `ReadOnlyCollection` to prevent inadvertent or deliberate manipulation of your collection.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-06-03-%20Readonly%20Collections).
 
 Happy hacking!
