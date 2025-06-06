@@ -122,8 +122,8 @@ spy.Stations[0] = "Nairobi";
 The typical solution would be to do this:
 
 ```c#
-    private readonly string[] _stations = ["London", "Barbados", "Jamaica"];
-    public IEnumerable<string> Stations => _stations.AsReadOnly();
+private readonly string[] _stations = ["London", "Barbados", "Jamaica"];
+public IEnumerable<string> Stations => _stations.AsReadOnly();
 ```
 
 This `IEnumerable` would be, just like before, a `ReadOnlyCollection` of `string`.
