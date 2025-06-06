@@ -3,6 +3,8 @@ layout: post
 title: How to Deserialize JSON Using HttpClient Using C# In .NET
 date: 2025-06-05 18:30:34 +0300
 categories:
+    - C# 
+    - .NET
 ---
 
 
@@ -400,6 +402,6 @@ Thus we can see that `GetAsync` is not only the most **flexible**, it has the ad
 
 **When fetching `JSON` for the server, use `GetFromJsonAsync` for the most part. If you need more flexibility such as reacting to different error codes or you want to be able to access the body even when the request failed, use `GetAsync`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-06-05%20-%20JSON%20Deserialization).
 
 Happy hacking!
