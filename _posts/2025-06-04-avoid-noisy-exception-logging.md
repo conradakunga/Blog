@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Avoid Noisy Exception Logging
-date: 2025-06-05 10:50:55 +0300
+date: 2025-06-04 10:50:55 +0300
 categories:
     - C#
     - .NET
