@@ -121,7 +121,7 @@ try
 }
 catch (Exception ex)
 {
-  Log.Error($"There was an error here: {ex}");
+	Log.Error($"There was an error here: {ex}");
 }
 `````
 
@@ -187,7 +187,7 @@ This will look like this:
 
 Context here would generally be **what was being carried out  when the exception was raised**.
 
-There is **no value in duplicating** the exception details - those are already logged together with the actual exception.
+There is **no value in duplicating the exception details** - those are already logged together with the actual exception.
 
 ### TLDR
 
