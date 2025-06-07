@@ -1,0 +1,49 @@
+---
+layout: post
+title: Required DevExpress References For XtraReports Generation And Printing
+date: 2025-06-06 18:19:09 +0300
+categories:
+    - C#
+    - .NET
+    - DevExpress
+---
+
+For many years, I have used the excellent [DevExpress](https://www.devexpress.com/) Component suite for my applications, and in particular for
+
+1. [Reporting](https://www.devexpress.com/subscriptions/reporting/)
+2. [Document generation and manipulation](https://www.devexpress.com/products/net/office-file-api/)
+3. [UI components](https://js.devexpress.com/)
+
+When deploying an application that generates and prints reports, make sure to reference the following libraries:
+
+- DevExpress.Charts.v23.2.Core
+- DevExpress.Docs.v23.2
+- DevExpress.Drawing.v23.2
+- DevExpress.Data.v23.2
+- DevExpress.Office.v23.2.Core
+- DevExpress.Pdf.v23.2.Core
+- DevExpress.Pdf.v23.2.Drawing
+- DevExpress.PivotGrid.v23.2.Core
+- DevExpress.Printing.v23.2.Core
+- DevExpress.RichEdit.v23.2.Core
+- DevExpress.Sparkline.v23.2.Core
+- DevExpress.Data.Desktop.v23.2
+- DevExpress.Utils.v23.2
+- DevExpress.Utils.v23.2.UI
+- DevExpress.XtraCharts.v23.2.Wizard
+- DevExpress.XtraCharts.v23.2
+- DevExpress.XtraEditors.v23.2
+- DevExpress.XtraGauges.v23.2.Core
+- DevExpress.XtraPrinting.v23.2
+- DevExpress.CodeParser.v23.2
+- DevExpress.RichEdit.v23.2.Export
+- DevExpress.XtraReports.v23.2
+- DevExpress.XtraReports.v23.2.Extensions
+
+Replace as appropriate for the DevExpress version you have installed.
+
+### TLDR
+
+**Some DevExpress libraries must be explicitly packaged for deployment when generating and printing reports and documents.**
+
+Happy hacking!
