@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Required DevExpress References For XtraReports Generation And Printing
+title: Required DevExpress References For XtraReports Document Generation And Printing
 date: 2025-06-06 18:19:09 +0300
 categories:
     - C#
