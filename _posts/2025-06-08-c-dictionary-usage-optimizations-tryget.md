@@ -84,6 +84,6 @@ This method will **check if the key exists for you**, and if it does, it **retri
 
 Use the `TryGetValue` method to safely retrieve values from a `dictionary`.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-06-08%20-%20TryGet).
 
 Happy hacking!
