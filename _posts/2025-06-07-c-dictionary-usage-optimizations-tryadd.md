@@ -150,8 +150,8 @@ This saves you the trouble of looking if the key exists yourself first.
 
 ### TLDR
 
-Call TryAdd when adding items to a dictionary and write your logic accordingly.
+**Call `TryAdd` when adding items to a dictionary and write your logic accordingly.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-06-07%20-%20TryAdd).
 
 Happy hacking!
