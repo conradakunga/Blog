@@ -80,7 +80,7 @@ This will print the following:
 Error fetching the page, server returned a NotFound
 ```
 
-As I have pointed out in a [previous post about fetching JSON]({% post_url 2025-06-05-how-to-deserialize-json-using-httpclient-in-using-c-in-net %}), this technique is more flexible because, in cases where the failure reason is returned in the response, you can read this yourself from the [Content](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpresponsemessage.content?view=net-9.0) property of the `HttpResponseMessage` object.
+As I have pointed out in a [previous post about fetching JSON]({% post_url 2025-06-05-how-to-deserialize-json-using-httpclient-in-using-c-in-net %}), this technique is more flexible because, in cases where the failure reason is returned in the response, **you can read this yourself** from the [Content](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpresponsemessage.content?view=net-9.0) property of the `HttpResponseMessage` object.
 
 **This is not possible using any of the other techniques.**
 
