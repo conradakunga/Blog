@@ -108,7 +108,7 @@ dotnet add Reference ../SpyLogic/
 
 Finally, we write a simple client to retrieve and display these `Spy` objects.
 
-There are 3 ways to achieve this using the [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-9.0) object
+There are 3 ways to achieve this using the [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-9.0) object.
 
 1. [GetStringAsync](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.getstringasync?view=net-9.0) (or [GetStreamAsync](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient.getstreamasync?view=net-9.0), which is very similar)
 2. [GetFromJsonAsync](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.json.httpclientjsonextensions.getfromjsonasync?view=net-9.0)
@@ -116,11 +116,11 @@ There are 3 ways to achieve this using the [HttpClient](https://learn.microsoft.
 
 ### GetStringAsync
 
-This method requires you to do the following
+This method requires you to do the following:
 
 1. Make a **request**
-2. Capture the `string` **response**
-3. Create an instance of [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-9.0) for [web](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions.web?view=net-9.0)
+2. Capture the `string` **response.**
+3. Create an instance of [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-9.0) for [web.](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions.web?view=net-9.0)
 4. [Deserialize](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/deserialization) the response
 
 ```c#
@@ -150,7 +150,7 @@ Which looks ok.
 
 ### GetFromJsonAsync
 
-This is the second, and **preferred** way to achieve this.
+This is the second, and **preferred**, way to achieve this.
 
 Rather than doing all the ground work above, you write a single line:
 
@@ -188,13 +188,13 @@ foreach (var spy in spies)
 Unlike the previous approaches, you have to do a lot of the **heavy lifting yourself**.
 
 1. Retrieve a [HttpResponseMessage](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpresponsemessage?view=net-9.0) from the request
-2. Read the response **content** into a `string`
+2. Read the response **content** into a `string`.
 3. Setup [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-9.0)
 4. Deserialize
 
 So those are the three options.
 
-The differences come into play **when there is a problem on the server**.
+The differences become apparent when a **problem arises on the server**.
 
 Let us introduce a second endpoint that does just that:
 
@@ -356,9 +356,9 @@ The magic is happening here
 response.IsSuccessStatusCode
 ```
 
-This allows us to write code for the two branches for our logic - success and failure.
+This allows us to write code for the two branches of our logic - success and failure.
 
-You can be even more flexible as you have very granular control as you can write code to cater for whatever status codes you are expecting.
+You can be even more flexible, as you have very granular control, as you can write code to cater for whatever status codes you are expecting.
 
 ```c#
 // Fetch a response from the end point
@@ -394,13 +394,13 @@ switch (response.StatusCode)
 }
 ```
 
-Thus we can see that `GetAsync` is not only the most **flexible**, it has the additional bonus that it allows you to **access and read the response body**, regardless if the response was a success or a failure. In the case of a failure, **the error details would probably be in the body and thus it is useful to be able to read the content and display the error details to the users**. 
+Thus, we can see that GetAsync is not only the most **flexible**, but it also has the additional bonus that it allows you to **access and read the response body, regardless of whether the response was a success or a failure**. In the case of a failure, **the error details would probably be in the body, and thus it is useful to be able to read the content and display the error details to the users**. 
 
 **This is not possible with `GetFromJsonAsync` and `GetFromStringAsync`**
 
 ### TLDR
 
-**When fetching `JSON` for the server, use `GetFromJsonAsync` for the most part. If you need more flexibility such as reacting to different error codes or you want to be able to access the body even when the request failed, use `GetAsync`.**
+**When fetching `JSON` for the server, use `GetFromJsonAsync` for the most part. If you need more flexibility, such as reacting to different error codes, or you want to be able to access the body even when the request failed, use `GetAsync`.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-06-05%20-%20JSON%20Deserialization).
 
