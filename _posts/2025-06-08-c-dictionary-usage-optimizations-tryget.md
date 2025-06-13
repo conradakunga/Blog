@@ -8,9 +8,9 @@ categories:
     - Data Structures
 ---
 
-This is a follow up post to yesterday's post on [C# Dictionary Usage Optimizations - TryAdd]({% post_url 2025-06-07-c-dictionary-usage-optimizations-tryadd %}).
+This is a follow-up post to yesterday's post on [C# Dictionary Usage Optimizations - TryAdd]({% post_url 2025-06-07-c-dictionary-usage-optimizations-tryadd %}).
 
-Today we will look at how to **optimize value retrieval**.
+Today, we will look at how to **optimize value retrieval**.
 
 Let us suppose we have the following `Dictionary` of a `int` **key** and and `string` **value**.
 
