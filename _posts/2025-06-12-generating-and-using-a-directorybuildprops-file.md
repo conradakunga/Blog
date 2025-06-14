@@ -93,6 +93,6 @@ The [target .NET framework](https://versionsof.net/). This is different from `La
 
 ### TLDR
 
-**You can generate a `Directory.Build.props` file using the `dotnet new dotnet new buildprops` command.**
+**You can generate a `Directory.Build.props` file using the `dotnet new buildprops` command.**
 
 Happy hacking!
