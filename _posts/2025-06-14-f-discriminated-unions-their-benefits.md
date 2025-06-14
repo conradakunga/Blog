@@ -94,7 +94,7 @@ type Account =
     | MobileMoney of MobileMoneyAccount
 ```
 
-We then define a list of Account, populating it with our accounts:
+We then define a list of `Account`, populating it with our accounts:
 
 ```F#
 // Create a list of Account
