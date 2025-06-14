@@ -11,19 +11,19 @@ If you have solutions with more than one project within them, you should **absol
 
 In the last post, we discussed how to generate and use a `Directory.Build.props` file.
 
-In this post we will look at how to address the inevitable problem where one project references version **X** of a [NuGet](https://www.nuget.org/) package and another references version **Y**.
+In this post we will look at how to address the inevitable problem where one project references version **X** of a [NuGet](https://www.nuget.org/) package and **another** references version **Y**.
 
 You achieve this with a file named `Directory.Packages.props`.
 
 This is a XML file that you can create yourself.
 
-But it is simpler to generate it using the command line tool:
+But it is simpler to **generate** it using the command line tool:
 
 ```bash
 dotnet new packagesprops
 ```
 
-This will generate a new file, `Directory.Packages.props`, with the following contents.
+This will generate a new file, `Directory.Packages.props`, with the following contents:
 
 ```xml
 <Project>
@@ -36,7 +36,7 @@ This will generate a new file, `Directory.Packages.props`, with the following co
 </Project>
 ```
 
-This will create the file that will be used to store the packages and versions used throughout the solution, as well as activating [central package management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management).
+This will create the file that will be used to store **the packages and corresponding versions** used throughout the solution, as well as activating [central package management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management).
 
 This will change the behavior of the .net tooling when you add a package to a solution.
 
