@@ -137,6 +137,6 @@ This means **you must provide logic for all branches**, eliminating a whole swat
 
 **Discriminated unions allow you to write code that allows you to define complex types that can be made up of alternative types.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-06-14%20-%20Discriminated%20Unions).
 
 Happy hacking!
