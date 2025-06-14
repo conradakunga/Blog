@@ -3,6 +3,8 @@ layout: post
 title: Generating and Using Directory.Packages.props file
 date: 2025-06-13 21:29:58 +0300
 categories:
+    - C#
+    - .NET
 ---
 
 If you have solutions with more than one project within them, you should **absolutely** be using [centralized package management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management).
