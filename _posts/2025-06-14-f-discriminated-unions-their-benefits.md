@@ -55,7 +55,7 @@ Two solutions present themselves:
 1. Treat each element as an `object` and cast repeatedly until you get the right type.
 2. Introduce a base `interface`, and cast to this.
 
-There is a third, more natural, and elegant solution, courtesy of [functional programming](https://www.geeksforgeeks.org/functional-programming-paradigm/): discriminated unions.
+There is a **third**, more natural, and elegant solution, courtesy of [functional programming](https://www.geeksforgeeks.org/functional-programming-paradigm/): **discriminated unions**.
 
 The premise is as follows:
 
@@ -98,7 +98,7 @@ We then define a list of Account, populating it with our accounts:
 
 ```F#
 // Create a list of Account
-let accounts : Account list = [
+let accounts = [
     Current myCurrentAccount
     Savings mySavingsAccount
     MobileMoney myMobileMoneyAccount
