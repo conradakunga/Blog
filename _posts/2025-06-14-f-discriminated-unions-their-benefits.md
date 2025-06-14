@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Discriminated Unions & Their Benefits
+title: F# Discriminated Unions & Their Benefits
 date: 2025-06-14 22:13:40 +0300
 categories:
     - F#
