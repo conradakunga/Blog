@@ -44,7 +44,6 @@ You can customize it as follows:
     <Description>Product Description</Description>
     <Company>Your Company Name Here</Company>
     <LangVersion>14.0</LangVersion>
-    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <ImplicitUsings>true</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -71,10 +70,6 @@ Your company name, if any. Or your name if an individual
 #### LangVersion
 
 The applicable C# version. You can get a listing [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version). It is probably best to specify an actual version rather than `latest` or `preview`.
-
-#### ManagePackageVersionsCentrally
-
-Turns on centralized package management
 
 #### TreatWarningsAsErrors
 
