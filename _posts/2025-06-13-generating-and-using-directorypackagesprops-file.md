@@ -38,7 +38,7 @@ This will generate a new file, `Directory.Packages.props`, with the following co
 
 This will create the file that will be used to store **the packages and corresponding versions** used throughout the solution, as well as activating [central package management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management).
 
-This will change the behavior of the .net tooling when you add a package to a solution.
+This will change the behavior of the .NET tooling when you add a package to a solution.
 
 For example, if we wanted to add the package [AwesomeAssertions](https://www.nuget.org/packages/AwesomeAssertions), we would do it as follows:
 
@@ -64,7 +64,7 @@ dotnet add package AwesomeAssertions
 With [central package management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management) enabled, the following will happen:
 
 1. Your `Directory.Packages.props` file will change
-2. Your `.csproj` will change
+2. Your `.csproj` will change.
 
 The `Directory.Packages.props` file will be updated as follows:
 
