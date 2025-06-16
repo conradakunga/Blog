@@ -101,6 +101,12 @@ Note in this technique that **no culture information is provided for parsing** -
 
 This is the most flexible technique.
 
+**The [DateTime.TryParse](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tryparse?view=net-9.0) method has overloads supporting these techniques.**
+
 ### TLDR
 
-Do not make any assumptions about the format of your data before parsing. Set the locale directly or use the relevant ParseExact method.
+**Do not make any assumptions about the format of your data before parsing. Set the locale directly or use the relevant `ParseExact` method.**
+
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-06-16%20-%20Parsing%20%26%20Locales)
+
+Happy hacking!
