@@ -122,6 +122,6 @@ Most key data types have such a method:
 
 **Most types have a `TryParse` method that you can use to attempt conversion and verify success or otherwise before proceeding with your logic.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-06-15%20-%20TryParse).
 
 Happy hacking!
