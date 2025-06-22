@@ -53,6 +53,8 @@ This returns the following:
 
 **WARNING: This technique will not return table-valued functions**
 
+Of interest is that there is **no** `sys.functions`, an equivalent of `sys.procedures`
+
 ### TLDR
 
 **You can use `sys.objects` and `INFORMATION_SCHEMA` to retrieve a list of functions**
