@@ -53,7 +53,7 @@ This returns the following:
 
 **WARNING: This technique will not return table-valued functions**
 
-Of interest is that there is **no** `sys.functions`, an equivalent of `sys.procedures`
+Of interest is that for SQL Server there is **no** `sys.functions`, an equivalent of `sys.procedures`
 
 ### TLDR
 
