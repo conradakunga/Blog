@@ -47,9 +47,9 @@ You need to provide some information to the runtime so that it knows how to pars
 
 There are three ways to go about it:
 
-### Set The Local For The Application
+### Set The Locale For The Application
 
-In this technique, we configure the application or thread locale and then parse our data as usual. The simplest way is by setting the [CurrentCulture](https://learn.microsoft.com/en-us/dotnet/fundamentals/runtime-libraries/system-globalization-cultureinfo-currentculture) of the [thread](https://learn.microsoft.com/en-us/dotnet/standard/threading/using-threads-and-threading). Here, the `thread` can be from any application - console, class library, web application, etc.
+In this technique, we configure the **application** or **thread** locale and then parse our data as usual. The simplest way is by setting the [CurrentCulture](https://learn.microsoft.com/en-us/dotnet/fundamentals/runtime-libraries/system-globalization-cultureinfo-currentculture) of the [thread](https://learn.microsoft.com/en-us/dotnet/standard/threading/using-threads-and-threading). Here, the `thread` can be from any application - console, class library, web application, etc.
 
 ```c#
 var japanDate = "2025/06/16 21:32:29";
