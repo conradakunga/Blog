@@ -195,7 +195,7 @@ sp_stored_procedures null,'dbo'
 
 ![spstoredprocedures](../images/2025/06/spstoredprocedures.png)
 
-You can run the procedure directly without any parameters, but the result will be... extensive.
+You can run the procedure directly **without any parameters,** but the result will be... extensive.
 
 ```sql
 sp_stored_procedures

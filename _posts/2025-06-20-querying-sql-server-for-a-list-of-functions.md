@@ -12,7 +12,7 @@ In this post, we will look at how to query [SQL Server](https://www.microsoft.co
 
 There are two ways to achieve this:
 
-1. sys.objects
+1. `sys.objects` system view
 2. `INFORMATION_SCHEMA`
 
 ## sys.objects
