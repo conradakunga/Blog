@@ -7,9 +7,9 @@ categories:
     - .NET
 ---
 
-I was recently helping a friend write some code to interface with some archaic system that was sending data (numbers) in hexadecimal format, which is to say base 16.
+I was recently helping a friend write some code to interface with some archaic system that was sending data (numbers) in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) format, which is to say base `16`.
 
-In case you have forgotten, here is a comparison of decimal and hex:
+In case you have forgotten, here is a comparison of `decimal` and `hex`:
 
 | Decimal | Hexadecimal |
 | ------- | ----------- |
@@ -31,7 +31,7 @@ In case you have forgotten, here is a comparison of decimal and hex:
 | 15      | F           |
 | 16      | 10          |
 
-If you already have the hex representation, it is trivial to convert that to a number for computation.
+If you already have the `hex` representation, it is trivial to convert that to a number for computation.
 
 You can do it using the [Convert.ToInt32](https://learn.microsoft.com/en-us/dotnet/api/system.convert.toint32?view=net-9.0) method, as follows:
 
@@ -51,10 +51,10 @@ You can do the same for:
 - 16 bit integers - [Convert.ToInt16](https://learn.microsoft.com/en-us/dotnet/api/system.convert.toint16?view=net-9.0)
 - Bytes - [Convert.ToByte](https://learn.microsoft.com/en-us/dotnet/api/system.convert.tobyte?view=net-9.0)
 
-There are also equivalent methods for the signed and unsigned equivalents.
+There are also equivalent methods for the [signed and unsigned](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) equivalents.
 
 ### TLDR
 
-C# & .NET is able to convert hex to corresponding integral values for computations.
+**C# & .NET is able to convert hex to corresponding integral values for computations.**
 
 Happy hacking!
