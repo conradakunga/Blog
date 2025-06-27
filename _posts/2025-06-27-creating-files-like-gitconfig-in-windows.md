@@ -28,6 +28,6 @@ This will create an empty file with the specified name.
 
 ![touch](../images/2025/06/touch.png)
 
-Alternatively, at least in Windows 11, most save file dialogs will allow you to save a file directly with the desired name. Windows Explorer also allows you to rename an existing file.
+Alternatively, at least in [Windows 11](https://www.microsoft.com/en-us/windows/windows-11?r=1), most save file dialogs will allow you to save a file directly with the desired name. Windows Explorer also allows you to rename an existing file.
 
 Happy hacking!
