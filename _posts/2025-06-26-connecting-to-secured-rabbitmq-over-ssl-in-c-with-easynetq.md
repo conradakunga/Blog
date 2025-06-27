@@ -8,7 +8,7 @@ categories:
     - RabbitMQ
 ---
 
-One of the most capable message brokers available is [RabbitMQ](https://www.rabbitmq.com/), built on the very robust [Erlang](https://www.erlang.org/) programming language.
+One of the most capable [message brokers](https://www.geeksforgeeks.org/system-design/what-are-message-brokers-in-system-design/) available is [RabbitMQ](https://www.rabbitmq.com/), built on the very robust [Erlang](https://www.erlang.org/) programming language.
 
 You can interface with it on .NET using the native client, [RabbitMQ.Client](https://www.nuget.org/packages/RabbitMQ.Client/).
 
