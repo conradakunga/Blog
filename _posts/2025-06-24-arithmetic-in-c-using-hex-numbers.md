@@ -53,8 +53,56 @@ You can do the same for:
 
 There are also equivalent methods for the [signed and unsigned](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) equivalents.
 
+It may also interest you to note that **you can also do arithmetic natively with hex numbers**, if you are sufficiently experienced (or motivated) to do so.
+
+All you need to do is **prefix** your numbers with `0x`, as follows:
+
+```c#
+// Pefrorm the computation
+
+var result = 0xA + 0xB + 0xC; // 10 + 11 + 12
+
+Console.WriteLine(result);
+```
+
+This will print the result (in `decimal`) of `33`.
+
+If you wanted the result in **hex**, for example to relay to an external system, you would output it like this:
+
+```c#
+var result = 255;
+
+Console.WriteLine(result);
+
+Console.WriteLine($"{result.ToString("X")}");
+```
+
+This will print the following:
+
+```plantext
+255
+FF
+```
+
+If, for whatever reason, you wanted the hex in lowercase, you would use a lowercase X, as follows:
+
+```c#
+var result = 255;
+
+Console.WriteLine(result);
+
+Console.WriteLine($"{result.ToString("x")}");
+```
+
+This will print the following:
+
+```plaintext
+255
+ff
+```
+
 ### TLDR
 
-**C# & .NET is able to convert hex to corresponding integral values for computations.**
+**C# (& .NET) is able to convert hex to corresponding integral values for computations. It can also natively do arithmetic with hex numbers.** 
 
 Happy hacking!
