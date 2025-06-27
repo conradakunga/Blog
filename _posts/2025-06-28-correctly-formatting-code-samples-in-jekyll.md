@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Correctly Formatting Code Samples in Jekyll
-date: 2025-06-28 22:28:21 +0300
+date: 2025-06-28 00:00:21 +0300
 categories:
     - Jekyll
 ---
