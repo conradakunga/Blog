@@ -6,7 +6,7 @@ categories:
     - Docker
 ---
 
-Currently on my machine I have a number of [Docker](https://www.docker.com/) images running.
+Currently, on my machine, I have a number of [Docker](https://www.docker.com/) images running.
 
 I can **list** them as follows:
 
