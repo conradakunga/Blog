@@ -10,9 +10,11 @@ Currently on my machine I have a number of [Docker](https://www.docker.com/) ima
 
 I can **list** them as follows:
 
-```text
-docker ps --format "{{.Image}}\t{{.Names}}\t{{.Size}}"
+{% raw %}
+```bash
+docker ps --format '{{.Image}}\t{{.Names}}\t{{.Size}}'
 ```
+{% endraw %}
 
 This returns the following:
 
@@ -30,9 +32,11 @@ mcr.microsoft.com/mssql/server:2022-latest	sql_server_2022	419MB (virtual 2.04GB
 
 I can **filter** to just view the elastic containers using [ripgrep](https://github.com/BurntSushi/ripgrep).
 
-```text
+{% raw %}
+```bash
 docker ps --format "{{.Image}} - {{.Names}}: {{.Size}}" | rg elastic
 ```
+{% endraw %}
 
 This returns the following:
 
@@ -45,7 +49,7 @@ If you don't use `ripgrep`, standard [grep](https://en.wikipedia.org/wiki/Grep) 
 
 We can see here that my containers are using version `8.17.2`.
 
-I can then check if there is a later version of the [elastic images](https://hub.docker.com/_/elasticsearch). This I have covered in a [previous post]({% post_url 2025-02-18-getting-a-list-of-available-docker-image-tags-from-the-command-line %}).
+I can then check if there is a later version of the [elastic images](https://hub.docker.com/_/elasticsearch). I have covered this in a [previous post]({% post_url 2025-02-18-getting-a-list-of-available-docker-image-tags-from-the-command-line %}).
 
 The command returns the following as of today (9 March 2025)
 
