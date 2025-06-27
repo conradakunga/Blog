@@ -16,7 +16,7 @@ These are very easy to create in the console.
 
 In the Linux & Unix world there is the touch command.
 
-This is not present in [PowerShell](https://learn.microsoft.com/en-us/powershell/), so you will need to implement it yourself. I have outlined how to create the command and alias in this post [Touch In PowerShell]({% post_url 2020-05-16-touch-in-powershell %}).
+This is not present in [PowerShell](https://learn.microsoft.com/en-us/powershell/), so you will need to implement it yourself. I have outlined how to create the command and alias in this post - [Touch In PowerShell]({% post_url 2020-05-16-touch-in-powershell %}).
 
 With this in place, you can now do the following:
 
