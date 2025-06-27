@@ -10,7 +10,7 @@ Currently on my machine I have a number of [Docker](https://www.docker.com/) ima
 
 I can **list** them as follows:
 
-```bash
+```text
 docker ps --format "{{.Image}}\t{{.Names}}\t{{.Size}}"
 ```
 
@@ -30,7 +30,7 @@ mcr.microsoft.com/mssql/server:2022-latest	sql_server_2022	419MB (virtual 2.04GB
 
 I can **filter** to just view the elastic containers using [ripgrep](https://github.com/BurntSushi/ripgrep).
 
-```c#
+```text
 docker ps --format "{{.Image}} - {{.Names}}: {{.Size}}" | rg elastic
 ```
 
