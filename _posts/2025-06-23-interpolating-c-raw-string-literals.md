@@ -211,11 +211,11 @@ and i'd like to take a minute, just sit right here
 I'll tell you how I became the prince of a town called """"Bel-Air""""
 ```
 
-Note that "Bel-Air" has 4 quotes.
+Note that "Bel-Air" has four quotes.
 
 This will refuse to compile.
 
-The fix for this is that the n**umber of quotes you use to delimit the string should be one more than the number of repetitions** within the string..
+The fix for this is that then **number of quotes you use to delimit the string should be one more than the number of repetitions** within the string..
 
 In other words, we can do this:
 
