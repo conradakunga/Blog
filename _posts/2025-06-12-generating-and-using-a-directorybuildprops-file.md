@@ -11,7 +11,7 @@ If you have solutions with more than one project within them, you should **absol
 
 This will help you avoid the inevitable problem where one project references version **X** of a [NuGet](https://www.nuget.org/) package and another references version **Y**.
 
-It also helps with the problem where one project is a **.NET 9** project and the other is a .**NET 10**.
+It also helps with the problem where one project is a **.NET 9** project and the other is a .**NET 10 project**.
 
 To solve the latter problem, you will need a file named `Directory.Build.props` in the root of your solution.
 
