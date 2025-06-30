@@ -119,7 +119,7 @@ I'll tell you how I became the prince of a town called ""Bel-Air""";
 Console.WriteLine(reallylongString);
 ```
 
-Note how you have to double the quotes for the quoted words.
+Note how you have to **double the quotes for the quoted words**.
 
 There is a solution for this - [raw string literals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/raw-string).
 
@@ -172,9 +172,9 @@ and i'd like to take a minute, just sit right here
     I'll tell you how I became the prince of a town called "Bel-Air"
 ```
 
-Raw string literals also support interpolation.
+Raw string literals also support [string interpolation](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/string-interpolation).
 
-Do you can do this:
+This means that you can do this:
 
 ```c#
 var town = "Bel-Air";
@@ -215,7 +215,7 @@ Note that "Bel-Air" has four quotes.
 
 This will refuse to compile.
 
-The fix for this is that then **number of quotes you use to delimit the string should be one more than the number of repetitions** within the string..
+The fix for this is that the **number of quotes you use to delimit the string should be one more than the number of repetitions** within the string.
 
 In other words, we can do this:
 
