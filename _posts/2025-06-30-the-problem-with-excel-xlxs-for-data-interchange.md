@@ -144,4 +144,6 @@ The code that imports should **ignore any type information** that the XLSX file 
 
 If you need a reliable, (mostly) foolproof format for data interchange, [CSV](https://en.wikipedia.org/wiki/Comma-separated_values), implemented via [RFC4180](https://datatracker.ietf.org/doc/html/rfc4180) is a good one.
 
+I have had a lot of success with [Josh Close's](https://github.com/joshclose) [CSVHelper](https://joshclose.github.io/CsvHelper/getting-started/).
+
 Happy hacking!
