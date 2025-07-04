@@ -4,7 +4,9 @@ title: Quickly Generating a Voice Prompt on macOS
 date: 2025-07-01 21:38:48 +0300
 categories:
     - .NET
+    - C#
     - MacOS
+    - Text To Speech
 ---
 
 Recently, I was executing a series of long-running jobs in a [LinqPad](https://www.linqpad.net/) script, and wondered if there was a way to be **alerted** when the work was complete, so that I didn't have to wait near my computer and could keep myself busy.
