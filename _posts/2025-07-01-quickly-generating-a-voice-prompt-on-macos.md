@@ -11,6 +11,8 @@ categories:
 
 Recently, I was executing a series of long-running jobs in a [LinqPad](https://www.linqpad.net/) script, and wondered if there was a way to be **alerted** when the work was complete, so that I didn't have to wait near my computer and could keep myself busy.
 
+My main development environment is a [MacBook Pro](https://www.apple.com/ke/macbook-pro/) running [macOS Sonoma](https://en.wikipedia.org/wiki/MacOS_Sonoma).
+
 It turns out that this is rather simple to accomplish - all I needed to do was [shell](https://www.techtarget.com/searchdatacenter/definition/shell) to the [macOS](https://www.apple.com/macos/macos-sequoia/) terminal and execute the [say](https://ss64.com/mac/say.html) command, and let macOS do the heavy lifting for me.
 
 The code took all of a few seconds to write.
