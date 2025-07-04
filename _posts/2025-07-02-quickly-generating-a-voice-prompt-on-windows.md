@@ -9,13 +9,13 @@ categories:
     - Text To Speech
 ---
 
-Yesterday, I wrote a post on [Quickly Generating a Voice Prompt on macOS]({% 2025-07-01-quickly-generating-a-voice-prompt-on-macos %}).
+Yesterday, I wrote a post on [Quickly Generating a Voice Prompt on macOS]({% post_url 2025-07-01-quickly-generating-a-voice-prompt-on-macos %}).
 
 Is the same possible on Windows?
 
 Yes. However, it requires a bit more work because the 'say' command is not available on Windows.
 
-First, you will need to download and install the System.Speech nuget package.
+First, you will need to download and install the [System.Speech](https://www.nuget.org/packages/System.Speech/) nuget package.
 
 ```bash
 dotnet add package System.Speech
