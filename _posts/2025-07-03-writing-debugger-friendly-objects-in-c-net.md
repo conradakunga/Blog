@@ -131,6 +131,6 @@ The `DebuggerDisplay` attribute also works with [records](https://learn.microsof
 
 **The `DebuggerDisplay` attribute allows you to write debugger-friendly objects that are easy to visualize.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-03%20-%20DebuggerDisplay).
 
 Happy hacking!
