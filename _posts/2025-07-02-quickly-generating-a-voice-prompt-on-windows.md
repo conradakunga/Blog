@@ -58,4 +58,8 @@ else
 }
 ```
 
+### TLDR
+
+**You can use the `System.Speech` package to leverage text-to-speech in scripts and programs.**
+
 Happy hacking!

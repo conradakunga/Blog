@@ -31,8 +31,12 @@ var span = TimeSpan.FromMinutes(8);
 Process.Start("say", $"Good {timeOfDay}, {name}. The task took {span.TotalMinutes} minutes to execute");
 ```
 
-Worked like a charm.
+**Worked like a charm.**
 
 When the task was completed, I could hear the announcement from across the room.
+
+### TLDR
+
+**You can shell to the operating system and use the `say` command for text to speech.**
 
 Happy hacking!
