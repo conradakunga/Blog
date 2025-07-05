@@ -9,7 +9,7 @@ categories:
 ---
 ### UPDATE
 
-There is a better solution to this problem outlined [here]({% post_url 2025-07-04-controlling-the-casing-of-submitted-request-headers-in-c-net %})
+**There is a better solution to this problem outlined [here]({% post_url 2025-07-04-controlling-the-casing-of-submitted-request-headers-in-c-net %})**
 
 When working with a [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-7.0), this is how you add a request header to each request:
 
