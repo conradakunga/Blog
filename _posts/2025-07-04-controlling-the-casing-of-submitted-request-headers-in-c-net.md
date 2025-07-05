@@ -82,6 +82,6 @@ Of interest is the fact that within the handler, the normal [Add](https://learn.
 
 **If you need to control the case of your `HTTP` request headers, write your own `HttpClientHandler`, as the default `HttpClient` will case them for you.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-04%20-%20HttpClientHandler).
 
 Happy hacking!
