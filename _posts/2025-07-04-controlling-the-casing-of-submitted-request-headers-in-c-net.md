@@ -8,7 +8,7 @@ categories:
     - HttpClient
 ---
 
-Two years ago, I wrote this post - [Fix - HttpClient Changes Case Of x-request-id Header]({% post_url 2023-07-21-fix-httpclient-changes-case-of-x-request-id-header %}) that discussed some challenges I was having submitting some [HTTP](https://en.wikipedia.org/wiki/HTTP) headers to a server that expected them to be in a particular case.
+Two years ago, I wrote this post - [Fix - HttpClient Changes Case Of x-request-id Header]({% post_url 2023-07-21-fix-httpclient-changes-case-of-x-request-id-header %}) that discussed some **challenges** I was having submitting some [HTTP](https://en.wikipedia.org/wiki/HTTP) headers to a server that expected them to be in a particular case.
 
 I discussed the challenge around the fact that the [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-9.0) automatically '**corrects**' the case of submitted headers, and how I worked around it by **sneaking in the headers I wanted wrapped in the values of another**.
 
