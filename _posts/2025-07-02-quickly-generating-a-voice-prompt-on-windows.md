@@ -58,6 +58,16 @@ else
 }
 ```
 
+The code above should print something like this:
+
+```plaintext
+Available voices:
+- Microsoft David Desktop (en-US)
+- Microsoft Zira Desktop (en-US)
+```
+
+
+
 ### TLDR
 
 **You can use the `System.Speech` package to leverage text-to-speech in scripts and programs.**
