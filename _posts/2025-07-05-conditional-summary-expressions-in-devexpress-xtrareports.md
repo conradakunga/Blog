@@ -16,9 +16,9 @@ Take this model:
 ```c#
 public class Person
 {
-	public string FullName { get; set; }
-	public string Active { get; set; }
-	public decimal Contribution { get; set; }
+  public string FullName { get; set; }
+  public string Active { get; set; }
+  public decimal Contribution { get; set; }
 }
 ```
 
