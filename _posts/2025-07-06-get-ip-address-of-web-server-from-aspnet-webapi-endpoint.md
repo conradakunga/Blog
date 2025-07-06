@@ -11,7 +11,7 @@ categories:
 
 This is not exactly a common scenario, but here it is just the same.
 
-From within a [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) [WebAPI](https://dotnet.microsoft.com/en-us/apps/aspnet/apis) end point, I need to know the IP addresses and the ports that the current web application is being served on.
+From within a [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) [WebAPI](https://dotnet.microsoft.com/en-us/apps/aspnet/apis) end point, I need to know the **IP addresses** and the **ports** that the current web application is being served on.
 
 There may be more than one, because the server might be supporting both [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) and [HTTPS](https://developer.mozilla.org/en-US/docs/Glossary/HTTPS) traffic.
 
@@ -64,6 +64,6 @@ With the URL and ports, you can then proceed to **use them as necessary.**
 
 **You can obtain the URL and ports of the running web server from an API endpoint by injecting the `IServer` interface.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-06%20-%20IServer).
 
 Happy hacking!
