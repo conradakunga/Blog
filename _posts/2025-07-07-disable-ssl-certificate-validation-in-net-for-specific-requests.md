@@ -3,6 +3,9 @@ layout: post
 title: Disable SSL Certificate Validation in .NET for Specific Requests
 date: 2025-07-07 22:37:48 +0300
 categories:
+    - .NET
+    - C#
+    - HttpClient
 ---
 
 About five years ago, I wrote a post on how to [Disable SSL Certificate Validation]({% post_url 2020-10-31-disable-ssl-certificate-validation-in-net %}) in .NET. You can read the post to catch up with the salient points.
