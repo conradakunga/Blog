@@ -58,7 +58,7 @@ ServicePointManager.ServerCertificateValidationCallback =
              };
 ```
 
-This code should run before any code that makes HTTP requests.
+This code should run **before any code that makes HTTP requests**.
 
 For .NET, we would do it like this:
 
