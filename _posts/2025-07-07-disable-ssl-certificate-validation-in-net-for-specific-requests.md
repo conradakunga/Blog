@@ -78,6 +78,8 @@ var client = new HttpClient(httpClientHandler);
 
 In this fashion, we can control **which** requests should have SSL certificate validation.
 
+You can extend this logic further for more complex conditions, perhaps by **path**. Or **date**. The world is your oyster!
+
 ### TLDR
 
 **It is bad practice to allow SSL validation skipping globally. Far better to selectively enforce it.**
