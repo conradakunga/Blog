@@ -81,6 +81,8 @@ var client = new HttpClient(httpClientHandler);
 
 In this fashion, we can control **which** requests should have SSL certificate validation.
 
+The solution for the HttpHandler also works with the .NET Framework.
+
 You can extend this logic further for more complex conditions, perhaps by **path**. Or **date**. The world is your oyster!
 
 ### TLDR

@@ -68,15 +68,15 @@ In other words, this:
 
 There are several ways to approach this problem.
 
-1. **Filter at source** and do simple binding with a summary function
-2. **Filter at the report level** using the [FilterString](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReportBase.FilterString) property  and do simple binding with a summary function
-3. **Manipulate the display of each row** perhaps using an [expression](https://docs.devexpress.com/XtraReports/120091/detailed-guide-to-devexpress-reporting/use-expressions), and have a custom summary function
+1. **Filter at source** and do simple binding with a summary function.
+2. **Filter at the report level** using the [FilterString](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReportBase.FilterString) property  and do simple binding with a summary function.
+3. **Manipulate the display of each row,** perhaps using an [expression](https://docs.devexpress.com/XtraReports/120091/detailed-guide-to-devexpress-reporting/use-expressions), and have a custom summary function
 
 The first two are the simplest. But are not always possible. 
 
-1. You have no control of the source data
-2. You have no control of the data source at the report level, and therefore cannot filter at that level
-3. You are manipulating the details row directly, perhaps using a formula to show / hide rows. This is common if you expose the end user designer.
+1. You have no control over the source data.
+2. You have no control over the data source at the report level, and therefore cannot filter at that level.
+3. You are manipulating the details row directly, perhaps using a formula to show/hide rows. This is common if you expose the end-user designer.
 4. Other reasons
 
 In such a situation, the default summary function **will do the wrong thing**:

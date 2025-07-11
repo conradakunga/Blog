@@ -20,7 +20,7 @@ Whatever the case may be, there are times when you do not want this validation t
 
 It is possible to turn this off.
 
-If you are running on **.NET Framework**, add this line of code to somewhere it will be executed, maybe in a constructor; or on a load event.
+If you are running on **.NET Framework**, add this line of code somewhere it will be executed, maybe in a constructor, or on a load event.
 
 ```csharp
 ServicePointManager.ServerCertificateValidationCallback +=
@@ -31,7 +31,7 @@ This code essentially forces the runtime to believe that the certificate validat
 
 If you're running in **.NET Core** you need to do it a bit differently, as the code above does not actually do anything.
 
-For .NET Core you need to do a bit more work and create a handler to perform this work. This handler is then passed to the `HttpClient` that you are using to invoke the requests.
+For .**NET Core** you need to do a bit more work and create a handler to perform this work. This handler is then passed to the `HttpClient` that you are using to invoke the requests.
 
 ```csharp
 var EndPoint = "https://192.168.0.1/api";
@@ -43,12 +43,14 @@ httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, ch
 httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(EndPoint) };
 ```
 
-The `HttpClient` will not throw any SSL validation errors now.
+The `HttpClient` will no longer throw SSL validation errors.
 
-This approach is more flexible because you can control the validation - you can have some requests you want validated and others that you do not. 
+This approach is more flexible because you can control the validation; you can have some requests that you want validated and others that you do not. 
 
-In this case you create a second `HttpClient` the usual way without the handler - that one's requests will always be validated.
+In this case, you create a second `HttpClient` the usual way without the handler - that one's requests will always be validated.
 
 The solution on the .NET Framework above has the disadvantage that **all** HTTPS requests in that application are not validated.
+
+You can also use the HttpClient technique on the full .NET Framework.
 
 Happy hacking!
