@@ -51,6 +51,6 @@ In this case, you create a second `HttpClient` the usual way without the handler
 
 The solution on the .NET Framework above has the disadvantage that **all** HTTPS requests in that application are not validated.
 
-You can also use the HttpClient technique on the full .NET Framework.
+You can also use the `HttpClient` technique on the full .NET Framework.
 
 Happy hacking!
