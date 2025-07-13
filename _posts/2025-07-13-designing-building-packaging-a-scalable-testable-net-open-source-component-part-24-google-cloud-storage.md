@@ -68,7 +68,7 @@ We will begin by implementing a class to store some preliminary settings (likely
 public class GoogleSettings
 {
     [Required] public string ProjectID { get; set; } = null!;
-    [Required] public string Location { get; set; } = null!;
+    [Required] public string BucketLocation { get; set; } = null!;
 }
 ```
 
@@ -117,7 +117,7 @@ public static async Task<GoogleCloudStorageEngine> InitializeAsync(string access
         await client.CreateBucketAsync(settings.ProjectID, new Bucket
         {
             Name = metadataContainerName,
-            Location = settings.Location,
+            Location = settings.BucketLocation,
             StorageClass = StorageClasses.Standard
         }, cancellationToken: cancellationToken);
     }
@@ -132,7 +132,7 @@ public static async Task<GoogleCloudStorageEngine> InitializeAsync(string access
         await client.CreateBucketAsync(settings.ProjectID, new Bucket
         {
             Name = dataContainerName,
-            Location = settings.Location,
+            Location = settings.BucketLocation,
             StorageClass = StorageClasses.Standard
         }, cancellationToken: cancellationToken);
     }
