@@ -13,7 +13,7 @@ If you need a message broker in the course of developing distributed application
 
 As part of its core functionality, it makes use of **queues**, message **buffers** that store data in the form of messages for consumption by **consumers**.
 
-You can log into your instance at any point and view the queues that are currently present, by accessing the admin interface on [http://localhost:15672/](http://localhost:15672/)
+You can log into your instance at any point and **view the queues that are currently present** by accessing the admin interface on [http://localhost:15672/](http://localhost:15672/) (Replace as appropritate for your environment).
 
 ![queues](../images/2025/07/queues.png)
 
@@ -63,7 +63,7 @@ var mc = new ManagementClient(new Uri($"http://{hostaddress}:{adminPort}"), user
 
   // Delete the queue
   Log.Information("Deleting {Queue} ...", queue.Name);
-  await mc.DeleteQueueAsync(queue.Vhost, queue.Name);
+  await mc.DeleteQueueAsync(queue);
 
   Log.Information("Deleted {Queue}", queue.Name);
 ```
@@ -93,7 +93,7 @@ try
 
   // Delete the queue
   Log.Information("Deleting {Queue} ...", queue.Name);
-  await mc.DeleteQueueAsync(queue.Vhost, queue.Name);
+  await mc.DeleteQueueAsync(queue);
 
   Log.Information("Deleted {Queue}", queue.Name);
 
@@ -108,6 +108,8 @@ A couple of things to note:
 
 1. If **HTTPS** secures your **RabbitMQ** instance, the URI to create the `ManagementClient` should be [HTTPS](https://www.nuget.org/packages/EasyNetQ.Management.Client) and not **HTTP**
 2. The port to pass to the URI is the **admin** port, which is different from the port for **messaging**. This is typically `15672` or `15671` in the case of **HTTPS**, but can be anything as configured at setup.
+
+If you need to delete **all the queues**, you can do it as outlined in this post [Deleting RabbitMQ Queues With EasyNetQ]({% post_url 2021-03-11-deleting-rabbitmq-queues-with-easynetq %})
 
 ### TLDR
 
