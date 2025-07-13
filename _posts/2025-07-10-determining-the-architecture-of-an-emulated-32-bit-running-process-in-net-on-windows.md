@@ -72,7 +72,7 @@ Running this code on a 32-bit process running in a Virtual Machine on my MacBook
 32-bit (WOW64) on ARM64
 ```
 
-**Note that the API `IsWow64Process2` is only available on Windows 10 onwads.**
+**Note that the API `IsWow64Process2` is only available on Windows 10 desktop and Windows 2016 Server onwards.**
 
 ### TLDR
 
