@@ -84,6 +84,6 @@ async Task Main()
 
 **You can programmatically check if the `EasyNetQ` error queue has any messages and handle them as appropriate.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-12%20-%20Error%20Queue%20Check).
 
 Happy hacking!
