@@ -17,11 +17,11 @@ This is a special queue created by `EasyNetQ` automatically, into which all prob
 
 This queue is typically named `EasyNetQ_Default_Error_Queue`.
 
-It is beneficial to check the queue for messages periodically.
+It is beneficial to **check the queue for messages periodically**.
 
-You can do this manually by logging into the admin interface and checking.
+You can do this **manually** by **logging into the admin interface** and checking.
 
-However, it is better to automate this process using code, as follows:
+However, it is better to **automate** this process using code, as follows:
 
 First, install the [EasyNetQ Management Client](https://www.nuget.org/packages/EasyNetQ.Management.Client) package:
 
