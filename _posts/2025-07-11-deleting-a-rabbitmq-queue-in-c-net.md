@@ -13,7 +13,7 @@ If you need a message broker in the course of developing distributed application
 
 As part of its core functionality, it makes use of **queues**, message **buffers** that store data in the form of messages for consumption by **consumers**.
 
-You can log into your instance at any point and **view the queues that are currently present** by accessing the admin interface on [http://localhost:15672/](http://localhost:15672/) (Replace as appropritate for your environment).
+You can log into your instance at any point and **view the queues that are currently present** by accessing the admin interface on [http://localhost:15672/](http://localhost:15672/) (Replace as appropriate for your environment).
 
 ![queues](../images/2025/07/queues.png)
 
