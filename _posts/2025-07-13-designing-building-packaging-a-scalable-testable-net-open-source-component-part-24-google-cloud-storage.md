@@ -39,7 +39,7 @@ This is Part 24 of a series on Designing, Building & Packaging A Scalable, Testa
 
 In the [last post in the series]({% post_url 2025-05-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-23-refactoring-amazon-storage-engine-for-initialization %}}), we looked at how to refactor the `AmazonStorageEngine` for asynchronous initialization.
 
-This post will implement storage on [Google Cloud Storage](https://cloud.google.com/storage?hl=en) - the `GoogleCloudStorageEngine`.
+This post will implement storage on [Google Cloud Storage](https://cloud.google.com/storage?hl=en) - the `GoogleCloudStorageEngine`, completing support for all the major cloud providers - [Microsoft Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs/), [Amazon S3](https://aws.amazon.com/s3/), and [Google Cloud Storage](https://cloud.google.com/storage?hl=en).
 
 The first step is to understand the [Google Cloud](https://cloud.google.com/?hl=en) product we will use for storage: [Google Cloud Storage](https://cloud.google.com/storage?hl=en).
 
