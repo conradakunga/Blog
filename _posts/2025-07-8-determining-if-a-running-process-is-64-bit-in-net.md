@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Determining If A Running Process Is 64 Bit In .NET
-date: 2025-08-13 13:25:55 +0300
+date: 2025-07-08 13:25:55 +0300
 categories:
     - C#
     - .NET
