@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage
-date: 2025-05-25 19:04:48 +0300
+title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 24 - Google Cloud Storage
+date: 2025-07-13 20:59:16 +0300
 categories:
     - .NET
     - C#
     - OpenSource
     - Design
-    - Amazon
+    - Google GCP	
 ---
 
-This is Part 20 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
+This is Part 24 of a series on Designing, Building & Packaging A Scalable, Testable .NET Open Source Component.
 
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 1 - Introduction]({% post_url 2025-04-17-designing-building-packaging-a-scalable-testable-net-open-source-component-part-1-introduction %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 2 - Basic Requirements]({% post_url 2025-04-18-designing-building-packaging-a-scalable-testable-net-open-source-component-part-2-basic-requirements %})
@@ -31,17 +31,17 @@ This is Part 20 of a series on Designing, Building & Packaging A Scalable, Testa
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 17 - Large File Consideration On PostgreSQL]({% post_url 2025-05-03-designing-building-packaging-a-scalable-testable-net-open-source-component-part-17-large-file-consideration-on-postgresql %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 18 - Azure Blob Storage]({% post_url 2025-05-04-designing-building-packaging-a-scalable-testable-net-open-source-component-part-18-azure-blob-storage %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %})
-- **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage (This post)**
-- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 21 - Testing Amazon S3 Storage Locally]({% post_url 2025-05-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-21-testing-amazon-s3-storage-locally %}) 
-- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring Azure Storage Engine For Initializationinitialization]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 21 - Testing Amazon S3 Storage Locally]({% post_url 2025-05-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-21-testing-amazon-s3-storage-locally %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring Azure Storage Engine For Initialization]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 23 - Refactoring Amazon Storage Engine For Initialization]({% post_url 2025-05-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-23-refactoring-amazon-storage-engine-for-initialization %})
-- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 24 - Google Cloud Storage]({% post_url 2025-07-13-designing-building-packaging-a-scalable-testable-net-open-source-component-part-24-google-cloud-storage %})
+- **Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 24 - Google Cloud Storage (This Post)**
 
-In the [last post in the series]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %}), we looked at how to test [Azure Blob storage](https://azure.microsoft.com/en-us/products/storage/blobs) applications **locally**.
+In the [last post in the series]({% post_url 2025-05-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-23-refactoring-amazon-storage-engine-for-initialization %}}), we looked at how to refactor the `AmazonStorageEngine` for asynchronous initialization.
 
-This post will implement storage on [Amazon S3](https://aws.amazon.com/s3/) - the `AmazonS3StorageEngine`.
+This post will implement storage on [Google Cloud Storage](https://cloud.google.com/storage?hl=en) - the `GoogleCloudStorageEngine`.
 
-The first step is to understand the Amazon product we will use for storage: [Amazon Simple Storage Service](https://aws.amazon.com/s3/), known as S3.
+The first step is to understand the [Google Cloud](https://cloud.google.com/?hl=en) product we will use for storage: [Google Cloud Storage](https://cloud.google.com/storage?hl=en).
 
 The main concepts we will deal with are:
 
@@ -50,7 +50,7 @@ The main concepts we will deal with are:
 
 ### Account
 
-This is the top level. It is accessed and manipulated using the [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Client.html).
+This is the top level. It is accessed and manipulated using the [StorageClient](https://cloud.google.com/php/docs/reference/cloud-storage/latest/StorageClient).
 
 ### Bucket
 
@@ -58,83 +58,86 @@ This level is the equivalent of a directory.
 
 An account can have more than one [bucket](https://www.techtarget.com/searchaws/definition/AWS-bucket). Objects are stored in the `buckets`.
 
-![](../images/2025/05/Amazons3.png)
+![GoogleStorage](../images/2025/07/GoogleStorage.png)
 
-This is accessed and manipulated using three objects:
+Like our other storage engines, we will have **two** buckets - one to store the **file data**, and another to store the **file metadata**.
 
-1. [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Client.html), which interfaces at a lower level,
-2. [TransferUtility](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TTransferUtility.html), a higher-level interface with convenience methods for dealing with uploads and downloads
-3. [AmazonS3Util](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Util.html) for bucket verifications
-
-Like our `AzureBlobStorageEngine`, we will have **two** buckets - one to store the **file data**, and another to store the **file metadata**.
-
-We will begin by implementing a class to store some preliminary settings (likely to change to factor in additional AWS concerns like authentication)
+We will begin by implementing a class to store some preliminary settings (likely to change to factor in additional GCP concerns like authentication)
 
 ```c#
-public class AmazonSettings
+public class GoogleSettings
 {
-    [Required] public string AccountName { get; set; } = null!;
-    [Required] public string DataContainerName { get; set; } = null!;
-    [Required] public string MetadataContainerName { get; set; } = null!;
+    [Required] public string ProjectID { get; set; } = null!;
+    [Required] public string Location { get; set; } = null!;
 }
 ```
 
-Next, we begin to implement the `AmazonS3StrorageEngine`.
+Next, we begin to implement the `GoogleCloudStorageEngine`.
 
-```c#
-public sealed class AmazonS3StorageEngine : IStorageEngine
+```C#
+public sealed class GoogleCloudStorageEngine : IStorageEngine
 {
-    private readonly string _dataContainerName;
-    private readonly string _metadataContainerName;
-    private readonly TransferUtility _utility;
-    private readonly AmazonS3Client _client;
+  private readonly string _dataContainerName;
+  private readonly string _metadataContainerName;
+  private readonly StorageClient _client;
 
-    public AmazonS3StorageEngine(string username, string password, string amazonLocation, string dataContainerName,
-        string metadataContainerName)
-    {
-      	// Configuration for the amazon s3 client
-        var config = new AmazonS3Config
-        {
-            ServiceURL = amazonLocation,
-            ForcePathStyle = true
-        };
-        
-        _dataContainerName = dataContainerName;
-        _metadataContainerName = metadataContainerName;
-        _client = new AmazonS3Client(username, password, config);
-        _utility = new TransferUtility(_client);
-    }
+  private GoogleCloudStorageEngine(string accessToken, string dataContainerName,
+  string metadataContainerName)
+  {
+    // Configuration for the Google client
+    var credential = GoogleCredential.FromAccessToken(accessToken);
+
+    _dataContainerName = dataContainerName;
+    _metadataContainerName = metadataContainerName;
+    _client = StorageClient.Create(credential);
+  }
 }
 ```
 
-We next need to implement an `Initialization` method that will **create our buckets if they don't already exist**. This will be run **once**, perhaps at **startup** so that the `AmazonS3StorageEngine` will always find the buckets when it needs them.
+We next need to implement an `Initialization` method that will **create our buckets if they don’t already exist**. This will be run **once**, perhaps at **startup** so that the `GoogleCloudStorageEngine` will always find the buckets when it needs them.
 
 ```c#
-public async Task InitializeAsync(CancellationToken cancellationToken = default)
+public static async Task<GoogleCloudStorageEngine> InitializeAsync(string accessToken, GoogleSettings settings,
+    string dataContainerName,
+    string metadataContainerName,
+    CancellationToken cancellationToken = default)
 {
+    var engine = new GoogleCloudStorageEngine(accessToken, dataContainerName,
+        metadataContainerName);
+
+    var client = await StorageClient.CreateAsync(GoogleCredential.FromAccessToken(accessToken));
+
     // Check if the metadata bucket exists
-    if (!await AmazonS3Util.DoesS3BucketExistV2Async(_client, _metadataContainerName))
+    try
     {
-        var request = new PutBucketRequest
+        await client.GetBucketAsync(metadataContainerName, cancellationToken: cancellationToken);
+    }
+    catch (GoogleApiException ex) when (ex.HttpStatusCode == HttpStatusCode.NotFound)
+    {
+        await client.CreateBucketAsync(settings.ProjectID, new Bucket
         {
-            BucketName = _metadataContainerName,
-            UseClientRegion = true
-        };
-
-        await _client.PutBucketAsync(request, cancellationToken);
+            Name = metadataContainerName,
+            Location = settings.Location,
+            StorageClass = StorageClasses.Standard
+        }, cancellationToken: cancellationToken);
     }
 
     // Check if the data bucket exists
-    if (!await AmazonS3Util.DoesS3BucketExistV2Async(_client, _dataContainerName))
+    try
     {
-        var request = new PutBucketRequest
-        {
-            BucketName = _dataContainerName,
-            UseClientRegion = true
-        };
-
-        await _client.PutBucketAsync(request, cancellationToken);
+        await client.GetBucketAsync(dataContainerName, cancellationToken: cancellationToken);
     }
+    catch (GoogleApiException ex) when (ex.HttpStatusCode == HttpStatusCode.NotFound)
+    {
+        await client.CreateBucketAsync(settings.ProjectID, new Bucket
+        {
+            Name = dataContainerName,
+            Location = settings.Location,
+            StorageClass = StorageClasses.Standard
+        }, cancellationToken: cancellationToken);
+    }
+
+    return engine;
 }
 ```
 
@@ -148,16 +151,11 @@ private async Task<bool> FileExistsAsync(Guid fileId, string containerName,
 {
     try
     {
-        await _client.GetObjectMetadataAsync(containerName, fileId.ToString(), cancellationToken);
+        await _client.GetObjectAsync(containerName, fileId.ToString(), cancellationToken: cancellationToken);
         return true;
     }
-    catch (AmazonS3Exception ex)
+    catch (GoogleApiException ex) when (ex.HttpStatusCode == HttpStatusCode.NotFound)
     {
-        if (ex.StatusCode == HttpStatusCode.NotFound)
-        {
-            throw new FileNotFoundException($"File {fileId} not found");
-        }
-
         return false;
     }
 }
@@ -166,16 +164,17 @@ private async Task<bool> FileExistsAsync(Guid fileId, string containerName,
 Next, `StoreFileAsync`:
 
 ```c#
-/// <inheritdoc />
 public async Task<FileMetadata> StoreFileAsync(FileMetadata metaData, Stream data,
     CancellationToken cancellationToken = default)
 {
     // Upload the data and the metadata in parallel
     await Task.WhenAll(
-        _utility.UploadAsync(new MemoryStream(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(metaData))),
-            _metadataContainerName, metaData.FileId.ToString(), cancellationToken),
-        _utility.UploadAsync(data, _dataContainerName, metaData.FileId.ToString(), cancellationToken)
-    );
+        _client.UploadObjectAsync(_metadataContainerName, objectName: metaData.FileId.ToString(),
+            MediaTypeNames.Application.Json,
+            source: new MemoryStream(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(metaData))),
+            cancellationToken: cancellationToken),
+        _client.UploadObjectAsync(_dataContainerName, objectName: metaData.FileId.ToString(),
+            null, source: data, cancellationToken: cancellationToken));
     return metaData;
 }
 ```
@@ -183,28 +182,18 @@ public async Task<FileMetadata> StoreFileAsync(FileMetadata metaData, Stream dat
 Next, `GetMetadataAsync`:
 
 ```c#
-/// <inheritdoc />
 public async Task<FileMetadata> GetMetadataAsync(Guid fileId, CancellationToken cancellationToken = default)
 {
     //Verify file exists
     if (!await FileExistsAsync(fileId, _metadataContainerName, cancellationToken))
         throw new FileNotFoundException($"File {fileId} not found");
 
-    // Create a request
-    var request = new GetObjectRequest
-    {
-        BucketName = _metadataContainerName,
-        Key = fileId.ToString()
-    };
-
     // Retrieve the data
-    using var response = await _client.GetObjectAsync(request, cancellationToken);
-    await using var responseStream = response.ResponseStream;
-    var memoryStream = new MemoryStream();
-    await responseStream.CopyToAsync(memoryStream, cancellationToken);
-
-    // Reset position
+    using var memoryStream = new MemoryStream();
+    await _client.DownloadObjectAsync(_metadataContainerName, fileId.ToString(), memoryStream,
+        cancellationToken: cancellationToken);
     memoryStream.Position = 0;
+
     using var reader = new StreamReader(memoryStream);
     var content = await reader.ReadToEndAsync(cancellationToken);
     return JsonSerializer.Deserialize<FileMetadata>(content) ?? throw new FileNotFoundException();
@@ -214,26 +203,15 @@ public async Task<FileMetadata> GetMetadataAsync(Guid fileId, CancellationToken 
 Next, `GetFileAsync`:
 
 ```c#
-/// <inheritdoc />
 public async Task<Stream> GetFileAsync(Guid fileId, CancellationToken cancellationToken = default)
 {
     //Verify file exists
     if (!await FileExistsAsync(fileId, _dataContainerName, cancellationToken))
         throw new FileNotFoundException($"File {fileId} not found");
 
-    // Create a request
-    var request = new GetObjectRequest
-    {
-        BucketName = _dataContainerName,
-        Key = fileId.ToString()
-    };
-
-    // Retrieve the data
-    using var response = await _client.GetObjectAsync(request, cancellationToken);
-    await using var responseStream = response.ResponseStream;
     var memoryStream = new MemoryStream();
-    await responseStream.CopyToAsync(memoryStream, cancellationToken);
-    // Reset position
+    await _client.DownloadObjectAsync(_dataContainerName, fileId.ToString(), memoryStream,
+        cancellationToken: cancellationToken);
     memoryStream.Position = 0;
     return memoryStream;
 }
@@ -242,20 +220,26 @@ public async Task<Stream> GetFileAsync(Guid fileId, CancellationToken cancellati
 Next, `DeleteFileAsync`:
 
 ```c#
-/// <inheritdoc />
-public async Task<bool> FileExistsAsync(Guid fileId, CancellationToken cancellationToken = default)
+public async Task DeleteFileAsync(Guid fileId, CancellationToken cancellationToken = default)
 {
-    return await FileExistsAsync(fileId, _dataContainerName, cancellationToken);
+  //Verify file exists
+  if (!await FileExistsAsync(fileId, _dataContainerName, cancellationToken))
+      throw new FileNotFoundException($"File {fileId} not found");
+
+  // Delete metadata and data in parallel
+  await Task.WhenAll(
+      _client.DeleteObjectAsync(_metadataContainerName, fileId.ToString(), cancellationToken: cancellationToken),
+      _client.DeleteObjectAsync(_dataContainerName, fileId.ToString(), cancellationToken: cancellationToken));
 }
 ```
 
-In our [next post]({% post_url 2025-05-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-21-testing-amazon-s3-storage-locally %}), we will look at how to **test this locally**.
+In our next post, we will look at how to **test this locally**.
 
-**Note, however, we have not yet tested against the actual Amazon storage, which will likely require some modifications to our configuration of the client, as well as authentication.**
+**Note, however, we have not yet tested against the actual Google Cloud Storage, which will likely require some modifications to our configuration of the client, as well as authentication.**
 
 ### TLDR
 
-**In this post, we implemented a storage engine for Amazon S3, `AmazonS3StorageEngine`**
+**In this post, we implemented a storage engine for Google Cloud Storage, `GoogleCloudStorageEngine`**
 
 The code is in my [GitHub](https://github.com/conradakunga/UploadFileManager).
 

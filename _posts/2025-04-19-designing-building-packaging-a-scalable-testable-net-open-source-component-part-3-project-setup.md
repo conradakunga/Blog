@@ -32,12 +32,13 @@ This is Part 3 of a series on Designing, Building & Packaging A Scalable, Testab
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 19 - Testing Azure Blob Storage Locally]({% post_url 2025-05-05-designing-building-packaging-a-scalable-testable-net-open-source-component-part-19-testing-azure-blob-storage-locally %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 20 - Amazon S3 Storage]({% post_url 2025-05-25-designing-building-packaging-a-scalable-testable-net-open-source-component-part-20-amazon-s3-storage %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 21 - Testing Amazon S3 Storage Locally]({% post_url 2025-05-26-designing-building-packaging-a-scalable-testable-net-open-source-component-part-21-testing-amazon-s3-storage-locally %}) 
-- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring Azure Storage Engine For Initializationinitialization]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 22 - Refactoring Azure Storage Engine For Initialization]({% post_url 2025-05-29-designing-building-packaging-a-scalable-testable-net-open-source-component-part-22-refactoring-azure-storage-for-initialization %})
 - [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 23 - Refactoring Amazon Storage Engine For Initialization]({% post_url 2025-05-30-designing-building-packaging-a-scalable-testable-net-open-source-component-part-23-refactoring-amazon-storage-engine-for-initialization %})
+- [Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 24 - Google Cloud Storage]({% post_url 2025-07-13-designing-building-packaging-a-scalable-testable-net-open-source-component-part-24-google-cloud-storage %})
 
-In our [last post]({% post_url 2025-04-18-designing-building-packaging-a-scalable-testable-net-open-source-component-part-2-basic-requirements %}) we outlined the basic requirements.
+In our [last post,]({% post_url 2025-04-18-designing-building-packaging-a-scalable-testable-net-open-source-component-part-2-basic-requirements %}) we outlined the basic requirements.
 
-In this post we will setup our project.
+In this post, we will set up our project.
 
 **NOTE: You do not carry out the steps outlined in this post yourself - you can just check out the code from [GitHub](https://github.com/conradakunga/UploadFileManager) like so:**
 
@@ -45,7 +46,7 @@ In this post we will setup our project.
 git clone https://github.com/conradakunga/UploadFileManager.git
 ```
 
-**The rest of this post is if you want to learn to setup a project yourself, via command line.** Almost everything done here  around project creation can be accomplished using an IDE like [JetBrains Rider](https://www.jetbrains.com/rider/) or [Microosft Visual Studio](https://visualstudio.microsoft.com/).
+**The rest of this post is if you want to learn to set up a project yourself, via the command line.** Almost everything done here around project creation can be accomplished using an IDE like [JetBrains Rider](https://www.jetbrains.com/rider/) or [Microsoft Visual Studio](https://visualstudio.microsoft.com/).
 
 First, we will create an empty directory to store our projects.
 
@@ -53,13 +54,13 @@ First, we will create an empty directory to store our projects.
 mkdir UploadFileManager/
 ```
 
-We will also create a solution file in the new folder
+We will also create a solution file in the new folder.
 
 ```bash
 dotnet new sln
 ```
 
-Next we will turn our attention to a common problem that can inadvertently trip you up.
+Next, we will turn our attention to a common problem that can inadvertently trip you up.
 
 If you have **multiple projects** in a solution, each project has its **own build configuration** and **installed packages**. What happens when these are out of sync inadvertently? **Project A is .NET 8 and B is .NET 9** and A depends on B? Or **A is using version 1** of a package and **B is using version 2**?
 
