@@ -9,17 +9,17 @@ categories:
 
 The previous post, [Determining If A Running Process Is 64 Bit In .NET]({% post_url 2025-07-8-determining-if-a-running-process-is-64-bit-in-net %}), discussed how to determine whether to shell to a 32 or a 64 bit process.
 
-If you use the Is64BitProcess property of the Environment class, there is a possible edge case to consider.
+If you use the [Is64BitProcess](https://learn.microsoft.com/en-us/dotnet/api/system.environment.is64bitprocess?view=net-9.0) property of the [Environment](https://learn.microsoft.com/en-us/dotnet/api/system.environment?view=net-9.0) class, there is a possible edge case to consider.
 
-64 bit Windows can absolutely run a 32 bit process. It does so using WOW, where it emulates a 32 bit environment.
+64 bit Windows can absolutely run a 32 bit process. It does so using [WOW](https://www.softwarekey.com/blog/support-articles/wow64-means-applications/), where it **emulates** a 32 bit environment.
 
 This means that there are  (theoretically) 3 possibilities to check for:
 
-1. A 64 bit process
-2. A 32 bit process
-3. A 32 bit process running in 64
+1. A `64` bit process
+2. A `32` bit process
+3. A `32` bit process running in `64` bit mode.
 
-If you need to conclusively check for the third, you will need to use the Windows API.
+If you need to conclusively check for the third, you will need to use the [Windows API](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list).
 
 ```c#
 // Reference the Windows API call
