@@ -12,7 +12,7 @@ The previous post, [Determining If A Running Process Is Emulated 32 Bit In .NET 
 
 This post looks at how to determine additional information, such as the **architecture** under which the emulation is taking place.
 
-For example, there are at least 3 valid 64-bit architectures:
+For example, there are at least 3 valid **64-bit** architectures:
 
 - 64 bit - Intel
 - 64 bit - AMD64
@@ -25,12 +25,13 @@ First, we create a data structure to hold our result:
 ```c#
 enum Architecture : ushort
 {
-	UNKNOWN = 0x0,
-	I386 = 0x014c,      // 32-bit
-	Intel64 = 0x020,    // Intel 64
-	AMD64 = 0x8664,     // 64-bit
-	ARM64 = 0xAA64      // 64-bit ARM
-	// There are others here ommited for bevity
+    Unknown = 0x0,
+    I386 = 0x014c, // 32-bit
+    Intel64 = 0x020, // Intel 64
+    Amd64 = 0x8664, // 64-bit
+    Arm64 = 0xAA64 // 64-bit ARM
+    
+    // There are others here omitted for brevity
 }
 ```
 
@@ -71,10 +72,12 @@ Running this code on a 32-bit process running in a Virtual Machine on my MacBook
 32-bit (WOW64) on ARM64
 ```
 
+**Note that the API `IsWow64Process2` is only available on Windows 10 onwads.**
+
 ### TLDR
 
 **The use `IsWow64Process2`  API call gives additional information about the *native* and *process* architectures of a running process.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-10%20-%20Emulation).
 
 Happy hacking!
