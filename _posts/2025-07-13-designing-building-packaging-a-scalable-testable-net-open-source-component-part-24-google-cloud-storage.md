@@ -74,7 +74,7 @@ public class GoogleSettings
 
 Next, we begin to implement the `GoogleCloudStorageEngine`.
 
-```C#
+```c#
 public sealed class GoogleCloudStorageEngine : IStorageEngine
 {
   private readonly string _dataContainerName;
