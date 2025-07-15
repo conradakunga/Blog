@@ -7,13 +7,13 @@ categories:
     - .NET
 ---
 
-In the course of building applications, it is common to have scenarios where you want your code to wait for a certain duration before proceeding.
+In the course of building applications, it is common to have scenarios where you want your code to **wait for a certain duration** before proceeding.
 
 There are various reasons why you would want to do this:
 
-1. To control the rate at which a computation takes place. For example, you want at least 30 seconds to elapse before the next attempt.
-2. You want to retry an operation after a transient failure. For example, if an API invocation fails, you want to wait briefly before retrying.
-3. For GUI applications, you want to give the UI thread time to update.
+1. To **control the rate at which a computation takes place**. For example, you want at least 30 seconds to elapse before the next attempt. This is also known as rate limiting.
+2. You want to **retry an operation after a transient failure**, but don't want to retry immediately. For example, if an API invocation fails, you want to wait briefly before retrying.
+3. For GUI applications, you want to give the **UI thread time to update**.
 
 There are two ways to achieve this, which are similar yet also distinct.
 
@@ -75,7 +75,7 @@ We can see that here as well, there is a 10-second delay
 
 ![Delay](../images/2025/07/Delay.png)
 
-A bonus of the `Task.Delay` method is that you can pass it a [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-9.0) if you want to be able to cancel the operation. This is useful if the Delay is in the context of other operations that have passed down the `CancellationToken`.
+A bonus of the `Task.Delay` method is that you can pass it a [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-9.0) if you want to be able to **cancel the operation**. This is useful if the delay is in the context of other operations that have **passed down** the `CancellationToken`.
 
 ```c#
 Log.Information("Starting a long task");
