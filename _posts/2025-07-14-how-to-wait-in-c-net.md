@@ -107,6 +107,6 @@ You can, however call `Thread.Sleep` from an asynchronous method. However, there
 
 **You can instruct your application to wait using either `Thread.Sleep` or Task.Delay, depending on whether your code is async or not. Wherever possible, use `Task.Delay`.**
 
-**The code is in my GitHub.**
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-14%20-%20Delays).
 
 Happy hacking!
