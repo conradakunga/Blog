@@ -1,5 +1,5 @@
 ---
-layout: post
+rilayout: post
 title: Designing, Building & Packaging A Scalable, Testable .NET Open Source Component - Part 24 - Google Cloud Storage
 date: 2025-07-13 20:59:16 +0300
 categories:
