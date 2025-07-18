@@ -75,11 +75,11 @@ This generates the following:
 
 This is **grammatically incorrect**.
 
-There are a number of solutions to this.
+There are a number of solutions to this:
 
 ## Generic Caption
 
-A popular solution is to have a generic caption, like this:
+A popular solution is to have a **generic caption**, like this:
 
 ```plaintext
 1 spy/spies was generated
@@ -96,7 +96,7 @@ These are **still grammatically incorrect**.
 
 ## Explicit Count
 
-A better approach is to do some heavy lifting by explicitly writing code to generate a conditional message.
+A better approach is to do some heavy lifting by **explicitly writing code to generate a conditional message**.
 
 We start with a function that does the work for us:
 
@@ -118,7 +118,7 @@ We then invoke it as follows:
 Console.WriteLine($"{GetCount(spies.Count)} generated");
 ```
 
-If we try with the use cases - `15`, 1 and `0`, we get the following results:
+If we try with the use cases - `15`, 1, and `0`, we get the following results:
 
 ```plaintext
 15 spies were generated
@@ -128,7 +128,7 @@ No spies were generated
 
 ## Humanizer
 
-Another approach is to use the Humanizer library, which has a solution for this problem.
+Another approach is to use the [Humanizer](https://github.com/Humanizr/Humanizer) library, which has a solution for this problem.
 
 First, add the library:
 
@@ -138,7 +138,7 @@ dotnet add package Humanizer.Core
 
 We can then leverage the `ToQuantity` extension method of the string object, which will be responsible for **pluralizing** or **singularizing** the quantity.
 
-We can then interpolate that into a `string`.
+We can then [interpolate](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/string-interpolation) that into a `string`.
 
 ```c#
 Console.WriteLine($"{"spy".ToQuantity(spies.Count)} generated");
