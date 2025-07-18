@@ -11,7 +11,7 @@ This is Part 1 of a series on sending email.
 
 - **Sending Email - Part 1 - Introduction (this post)**
 
-One of the things you will inevitably end up doing in the course of your software development career is sending email.
+One of the things you will inevitably end up doing in the course of your software development career is **sending email**.
 
 As [Jamie Zawinski](https://www.jwz.org/) (allegedly) once said:
 
@@ -25,11 +25,11 @@ Email, needless to say, is a very complex concept and is spread across the follo
 - [RFC 7208](https://datatracker.ietf.org/doc/html/rfc7208) - Sender Policy Framework (SPF) for authorizing the use of domains in email
 - [RFC 4021](https://datatracker.ietf.org/doc/html/rfc4021): - Registration of mail and MIME header fields.
 
-In this series, we will address the challenge of reliably sending email.
+In this series, we will address the challenge of **reliably sending email**.
 
 In .NET, a quick way to get started is to use the [MailMessage](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.mailmessage?view=net-9.0) object from the [System.Net.Mail](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail?view=net-9.0) namespace.
 
-Note that this is NOT the [MailMessage](https://learn.microsoft.com/en-us/dotnet/api/system.web.mail.mailmessage?view=netframework-4.8.1) class that is in [System.Web.Mail](https://learn.microsoft.com/en-us/dotnet/api/system.web.mail?view=netframework-4.8.1)
+Note that this is **NOT** the [MailMessage](https://learn.microsoft.com/en-us/dotnet/api/system.web.mail.mailmessage?view=netframework-4.8.1) class that is in [System.Web.Mail](https://learn.microsoft.com/en-us/dotnet/api/system.web.mail?view=netframework-4.8.1)
 
 ## Sending A Plain Text Email
 
@@ -48,9 +48,9 @@ mail.To.Add("recipient@example.com");
 
 By default, this message will be in **plain text**.
 
-## Sending A HTML Email
+## Sending an HTML Email
 
-If you want to send a HTML email, set the content as follows:
+If you want to send a [HTML email](https://en.wikipedia.org/wiki/HTML_email), set the content as follows:
 
 ```c#
 var mail = new MailMessage
@@ -66,7 +66,7 @@ mail.To.Add("recipient@example.com");
 
 ## Sending Email To Multiple Recipients
 
-You can also send an email to multiple recipients, which is to say multiple addressees in the TO: field, a collection of `MailAddress` objects.
+You can also send an email to **multiple recipients**, which is to say multiple addressees in the TO: field, a collection of `MailAddress` objects.
 
 ```c#
 var mail = new MailMessage
@@ -114,9 +114,9 @@ mail.CC.Add("secondrecipient@example.com");
 mail.Bcc.Add("thirdrecipient@example.com");
 ```
 
-## Attaching Files From File System
+## Attaching Files From the File System
 
-The `MailMessage` class also supports attaching files from the file system.
+The `MailMessage` class also supports **attaching files** from the file system.
 
 ```c#
 mail = new MailMessage
@@ -135,7 +135,7 @@ mail.Bcc.Add("thirdrecipient@example.com");
 
 ## Attaching Files From Streams
 
-Sometimes the attachments you want to add are not from the file system. Perhaps they are from blob storage, or from a database, or some sort of streaming service.
+Sometimes, the attachments you want to add are not located in the file system. Perhaps they are from **blob storage**, or from a **database**, or some sort of **streaming service**.
 
 In which case, we attach them like this:
 
