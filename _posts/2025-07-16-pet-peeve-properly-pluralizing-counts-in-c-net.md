@@ -156,6 +156,6 @@ This will print the following for our examples:
 
 **It is advisable to take some time to properly pluralize counts for messages to users, and there are three ways to do this**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-15%20-%20Counts).
 
 Happy hacking!
