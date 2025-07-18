@@ -101,9 +101,13 @@ This will stop the container, pull down the latest image (if not already present
 
 If we re-run our command to list running images, filtered by `elastic`
 
+{% raw %}
+
 ```bash
 docker ps --format '{{.Image}} - {{.Names}}: {{.Size}}' | rg elastic
 ```
+
+{% endraw %}
 
 We will see the following:
 

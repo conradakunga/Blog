@@ -8,7 +8,7 @@ categories:
     - Windows
 ---
 
-The previous post, [Determining If A Running Process Is 64 Bit In .NET]({% post_url 2025-07-8-determining-if-a-running-process-is-64-bit-in-net %}), discussed how to determine whether to shell to a 32 or a 64 bit process.
+The previous post, [Determining If A Running Process Is 64 Bit In .NET]({% post_url 2025-07-08-determining-if-a-running-process-is-64-bit-in-net %}), discussed how to determine whether to shell to a 32 or a 64 bit process.
 
 If you use the [Is64BitProcess](https://learn.microsoft.com/en-us/dotnet/api/system.environment.is64bitprocess?view=net-9.0) property of the [Environment](https://learn.microsoft.com/en-us/dotnet/api/system.environment?view=net-9.0) class, there is a possible edge case to consider.
 
