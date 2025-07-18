@@ -75,3 +75,5 @@ Drop me a line.
 conradakunga -at- gmail.com
 
 LinkedIn - [linkedin.com/in/conrad-akunga](https://www.linkedin.com/in/conrad-akunga)
+
+This blog is OpenSource, published using [Jekyll](https://jekyllrb.com/) and can be found in its entirety here [https://github.com/conradakunga/Blog](https://github.com/conradakunga/Blog)
