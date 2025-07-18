@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pet Peeve - Properly Pluralizing Counts
+title: Pet Peeve - Properly Pluralizing Counts In C# & .NET
 date: 2025-07-16 04:07:14 +0300
 categories:
     - C#
