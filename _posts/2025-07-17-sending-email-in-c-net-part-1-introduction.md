@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sending Email In C# & .NET - Part 1 - Introduction 
-date: 2025-07-16 04:55:20 +0300
+date: 2025-07-17 04:55:20 +0300
 categories:
     - C#
     - .NET
