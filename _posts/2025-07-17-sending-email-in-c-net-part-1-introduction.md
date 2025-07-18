@@ -201,6 +201,6 @@ This will be covered in the next post.
 
 **The `System.Net.Mail` class provides functionality for creating and sending email messages.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-15%20-%20Sending%20Email).
 
 Happy hacking!
