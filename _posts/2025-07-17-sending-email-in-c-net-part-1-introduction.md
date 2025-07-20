@@ -5,11 +5,13 @@ date: 2025-07-17 04:55:20 +0300
 categories:
     - C#
     - .NET
+    - Email
 ---
 
 This is Part 1 of a series on sending email.
 
 - **Sending Email - Part 1 - Introduction (this post)**
+- [Sending Email - Part 2 - Delivery]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %})
 
 One of the things you will inevitably end up doing in the course of your software development career is **sending email**.
 
@@ -195,7 +197,7 @@ The code this far is simply to create the `MailMessage`.
 
 The next step is actually **sending the messages**.
 
-This will be covered in the next post.
+This will be covered in the [next post]({%post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %}).
 
 ### TLDR
 
