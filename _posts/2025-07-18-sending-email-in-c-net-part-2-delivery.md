@@ -125,7 +125,7 @@ In a scenario where you are using your **already logged-in credentials**, you wo
 ```c#
 smtpClient = new SmtpClient
 {
-  Host = "102.168.0,67",
+  Host = "102.168.0.67",
   Port = 24,
   Credentials = CredentialCache.DefaultNetworkCredentials,
   EnableSsl = true
@@ -138,6 +138,6 @@ In our next post, we will look at how to set up a SMTP server specifically for t
 
 **The `SmtpClient` is the class tasked with doing the actual delivery of email, and can do so either using a pickup folder or using a SMTP server.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-16%20-%20Delivering%20Email).
 
 Happy hacking!
