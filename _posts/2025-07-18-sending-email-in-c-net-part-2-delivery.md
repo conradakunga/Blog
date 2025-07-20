@@ -11,11 +11,11 @@ categories:
 This is Part 2 of a series on sending email.
 
 - [Sending Email - Part 1 - Introduction]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %})
-- Sending Email - Part 2 - Delivery (this post)
+- **Sending Email - Part 2 - Delivery (this post)**
 
 In our [previous post]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %}), we looked at how to create email messages and configure various properties and parameters.
 
-In this post, we will explore how to actually deliver the email.
+In this post, we will explore how to actually **deliver** the email.
 
 The backbone of email delivery is the [SmtpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0) class, found in the [System.Net.Mail](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail?view=net-9.0) namespace.
 
@@ -25,9 +25,9 @@ It can be configured in the following ways.
 
 For testing without actually putting data into the ether, we can use a **pickup directory.**
 
-This means that the email, rather than going to the internet, will be deposited in a **designated folder**, with the email itself persisted in the [eml](https://en.wikipedia.org/wiki/Email#Filename_extensions) format.
+This means that the email, rather than going to the internet, will be deposited in a **designated file system folder**, with the email itself persisted in the [eml](https://en.wikipedia.org/wiki/Email#Filename_extensions) format.
 
-The first step is to select a folder for pickup. In my case, I will use the `Temp` folder, which I can retrieve using the `Path.GetTempPath()` method.
+The first step is to select a folder for pickup. In my case, I will use the `Temp` folder, which I can retrieve using the [Path.GetTempPath()](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.gettemppath?view=net-9.0&tabs=windows) method.
 
 Next is to configure the `SmtpClient` to deliver using the method by setting the [DeliveryMethod](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient.deliverymethod?view=net-9.0) property and setting the [PickupDirectoryLocation](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient.pickupdirectorylocation?view=net-9.0#system-net-mail-smtpclient-pickupdirectorylocation) to the folder specified earlier.
 
