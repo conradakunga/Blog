@@ -34,7 +34,7 @@ When you click create, you get the following screen:
 
 ![GeneratedPassword](../images/2025/07/GeneratedPassword.png)
 
-This is the password you will use, NOT your gmail password.
+This is the password you will use, NOT your **Gmail user password** that you use to log in.
 
 Once this is ready, you can proceed to write your code.
 
@@ -77,7 +77,7 @@ catch (Exception ex)
 }
 ```
 
-If you run this code you should see the following:
+If you run this code, you should see the following:
 
 ```plaintext
 Email sent successfully.
@@ -85,7 +85,7 @@ Email sent successfully.
 Process finished with exit code 0.
 ```
 
-You can then login to Gmail to verify the same:
+You can then log in to Gmail to verify the same:
 
 ![gmailInbox](../images/2025/07/gmailInbox.png)
 
