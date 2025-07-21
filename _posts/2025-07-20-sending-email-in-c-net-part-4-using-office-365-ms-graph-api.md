@@ -199,16 +199,20 @@ And our inbox should have the email:
 
 ![Email](../images/2025/07/Email.png)
 
-An important consideration to keep in mind is that there are throttling limits that prevent the abuse of this API, or denial of service degradation from code that has indadvertent bugs e.g. a loop with a bug in the exit clause.
+An important consideration to keep in mind is that there are **throttling limits** in place to prevent **abuse of this API** and **denial-of-service degradation** from code with inadvertent bugs, such as a loop with a bug in the exit clause.
 
 You can view these limits [here](https://learn.microsoft.com/en-us/graph/throttling-limits).
 
 The most pertinent ones are these:
 
-1. 150 requests per 15 minutes
-2. 10,000 requests per 24 hours
+1. **150** requests per **15** minutes
+2. **10,000** requests per **24 hours**
 
 There are per-tenant limits.
+
+This means that each tenant can send at most **150** emails every **15** minutes, and over a 12-hour period, at most **10,000** emails.
+
+In our next post, we will look at how to send email using the Google Cloud API.
 
 ### TLDR
 
