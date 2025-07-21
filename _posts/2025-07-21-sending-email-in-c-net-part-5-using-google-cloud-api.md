@@ -169,7 +169,32 @@ To ensure that this file is copied  to the build folder, add the following  `XML
 </ItemGroup>
 ```
 
-Finally, we write the code that sends the email.
+It should now look like this:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Apis.Auth" Version="1.70.0"/>
+        <PackageReference Include="Google.Apis.Gmail.v1" Version="1.70.0.3833"/>
+        <PackageReference Include="MimeKit" Version="4.13.0"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="client_secrets.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>
+
+```
+
+Finally, we write the code that **sends the email**.
 
 ```c#
 using System.Text;
