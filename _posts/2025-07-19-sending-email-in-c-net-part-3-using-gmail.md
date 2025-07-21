@@ -26,9 +26,9 @@ To do this, you need to visit this link ~> https://myaccount.google.com/apppassw
 
 ![AppPasswordSetup](../images/2025/07/AppPasswordSetup.png)
 
-You will be asked to provide a name for your app-specific password.
+You will be asked to provide a **name** for your **app-specific** password.
 
-This means that you can create **several**, each for a **different application**, and **revoke** them as and when necessary. 
+This means that you can create **several**, each for a **different application**, and **revoke** them as and when necessary. This is useful in situations where you **retire** an app or an app's **password is compromised**. You can **delete** or **regenerate** a new one under those circumstances.
 
 When you click create, you get the following screen:
 
