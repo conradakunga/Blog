@@ -10,8 +10,9 @@ categories:
 
 This is Part 1 of a series on sending email.
 
-- **Sending Email - Part 1 - Introduction (this post)**
-- [Sending Email - Part 2 - Delivery]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %})
+- **Sending Email in C# & .NET  - Part 1 - Introduction (this post)**
+- [Sending Email in C# & .NET - Part 2 - Delivery]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %})
+- [Sending Email in C# & .NET - Part 3 - Using Gmail]({% post_url 2025-07-19-sending-email-in-c-net-part-3-using-gmail %})
 
 One of the things you will inevitably end up doing in the course of your software development career is **sending email**.
 

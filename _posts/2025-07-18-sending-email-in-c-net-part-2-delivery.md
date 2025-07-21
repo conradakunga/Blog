@@ -10,8 +10,9 @@ categories:
 
 This is Part 2 of a series on sending email.
 
-- [Sending Email - Part 1 - Introduction]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %})
-- **Sending Email - Part 2 - Delivery (this post)**
+- [Sending Email in C# & .NET  - Part 1 - Introduction]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %})
+- **Sending Email in C# & .NET  - Part 2 - Delivery (this post)**
+- Sending Email in C# & .NET - Part 3 - Using Gmail
 
 In our [previous post]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %}), we looked at how to create email messages and configure various properties and parameters.
 
@@ -132,7 +133,7 @@ smtpClient = new SmtpClient
 };
 ```
 
-In our next post, we will look at how to set up a SMTP server specifically for testing purposes.
+In our next post, we will look at how to send email through [Gmail](https://www.gmail.com).
 
 ### TLDR
 
