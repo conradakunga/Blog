@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - Email
+    - Microsoft Graph
 ---
 
 This is Part 4 of a series on sending email.
