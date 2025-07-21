@@ -183,6 +183,19 @@ catch (Exception ex)
 }
 ```
 
+If we runt this code, it should print the following:
+
+```plaintext
+"/Users/rad/Projects/BlogCode/2025-07-17 - Sending To Office365/bin/Debug/net9.0/SendingEmail"
+Message sent
+
+Process finished with exit code 0.
+```
+
+And our inbox should have the email:
+
+![Email](../images/2025/07/Email.png)
+
 ### TLDR
 
 **The recommended way to send email using Office 365 is to use the `Graph API`**
