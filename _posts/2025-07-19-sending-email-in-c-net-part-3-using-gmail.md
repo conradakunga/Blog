@@ -13,6 +13,7 @@ This is Part 3 of a series on sending email.
 - [Sending Email in C# & .NET  - Part 1 - Introduction]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %})
 - [Sending Email in C# & .NET - Part 2 - Delivery]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %})
 - **Sending Email in C# & .NET - Part 3 - Using Gmail (This post)**
+- [Sending Email In C# & .NET. - Part 4 - Using Office 365 & MS Graph API]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %})
 
 In our [last post]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %}), we looked at how to deliver email using a [SmtpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0).
 
@@ -97,7 +98,9 @@ This flexibility, as with all things, is liable to be **abused**, so Gmail has p
 
 ![GmailLimits](../images/2025/07/GmailLimits.png)
 
-These are outlined in detail in this [Gmail support post](https://support.google.com/a/answer/166852?sjid=14094088538818961824-EU)
+These are outlined in detail in this [Gmail support post](https://support.google.com/a/answer/166852?sjid=14094088538818961824-EU).
+
+In our next post, we will look at how to send email using [Office 365]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %}).
 
 ### TLDR
 
