@@ -8,7 +8,7 @@ categories:
     - Email
 ---
 
-This is Part 3 of a series on sending email.
+This is Part 4 of a series on sending email.
 
 - [Sending Email in C# & .NET  - Part 1 - Introduction]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %})
 - [Sending Email in C# & .NET - Part 2 - Delivery]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %})
@@ -187,6 +187,6 @@ catch (Exception ex)
 
 **The recommended way to send email using Office 365 is to use the `Graph API`**
 
-**The code is in my GitHub.**
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-17%20-%20Sending%20To%20Office365).
 
 Happy hacking!
