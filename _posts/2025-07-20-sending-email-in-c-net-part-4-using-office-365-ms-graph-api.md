@@ -23,7 +23,7 @@ Historically, it was possible to send email through [SMTP](https://aws.amazon.co
 
 It requires quite a bit more legwork, as outlined below. 
 
-First, register an app in the [Azure Portal](https://portal.azure.com/). You will need to create an Azure account if you do not already have one.
+First, register an app in the [Azure Portal](https://portal.azure.com/). You will need to create an [Azure](https://azure.microsoft.com/en-us/) account if you do not already have one.
 
 Once logged in, search for **app registrations**.
 
