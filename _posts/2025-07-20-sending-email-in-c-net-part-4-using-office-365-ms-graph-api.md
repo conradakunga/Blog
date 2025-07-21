@@ -91,7 +91,9 @@ The next screen will allow you to configure your secret, typically a name and an
 
 ![ConfigureSecrets](../images/2025/07/ConfigureSecrets.png)
 
-Upon adding, you will get back to the listing screen that has two tokens - the **Secret ID** `(1) `and the **Value** `(2)`.
+Upon adding, you will return to the listing screen, which displays two tokens: the **Secret ID** `(1) `and the **Value** `(2)`.
+
+![SecretsListing](../images/2025/07/SecretsListing.png)
 
 What we need is the `Value`.
 
@@ -184,7 +186,7 @@ catch (Exception ex)
 }
 ```
 
-If we runt this code, it should print the following:
+If we run this code, it should print the following:
 
 ```plaintext
 "/Users/rad/Projects/BlogCode/2025-07-17 - Sending To Office365/bin/Debug/net9.0/SendingEmail"
@@ -196,6 +198,17 @@ Process finished with exit code 0.
 And our inbox should have the email:
 
 ![Email](../images/2025/07/Email.png)
+
+An important consideration to keep in mind is that there are throttling limits that prevent the abuse of this API, or denial of service degradation from code that has indadvertent bugs e.g. a loop with a bug in the exit clause.
+
+You can view these limits [here](https://learn.microsoft.com/en-us/graph/throttling-limits).
+
+The most pertinent ones are these:
+
+1. 150 requests per 15 minutes
+2. 10,000 requests per 24 hours
+
+There are per-tenant limits.
 
 ### TLDR
 
