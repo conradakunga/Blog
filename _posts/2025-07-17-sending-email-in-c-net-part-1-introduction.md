@@ -206,6 +206,6 @@ This will be covered in the [next post]({%post_url 2025-07-18-sending-email-in-c
 
 **The `System.Net.Mail` class provides functionality for creating and sending email messages.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-15%20-%20Sending%20Email).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-17%20-%20Sending%20Email).
 
 Happy hacking!

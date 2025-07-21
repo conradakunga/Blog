@@ -107,6 +107,6 @@ In our next post, we will look at how to send email using [Office 365]({% post_u
 
 **You can use the SMTPClient to send email through Gmail.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-17%20-%20Sending%20To%20Gmail).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-19%20-%20Sending%20To%20Gmail).
 
 Happy hacking!

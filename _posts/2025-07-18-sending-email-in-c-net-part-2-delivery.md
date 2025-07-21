@@ -141,6 +141,6 @@ In our next post, we will look at how to send email through [Gmail](https://www.
 
 **The `SmtpClient` is the class tasked with doing the actual delivery of email, and can do so either using a pickup folder or using a SMTP server.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-16%20-%20Delivering%20Email).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-18%20-%20Delivering%20Email).
 
 Happy hacking!

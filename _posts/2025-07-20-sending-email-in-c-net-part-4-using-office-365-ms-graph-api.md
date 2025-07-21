@@ -219,6 +219,6 @@ In our next post, we will look at how to send email using the [Google Cloud API]
 
 **The recommended way to send email using Office 365 is to use the `Graph API`**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-17%20-%20Sending%20To%20Office365).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-20%20-%20Sending%20To%20Office365).
 
 Happy hacking!

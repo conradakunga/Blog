@@ -276,6 +276,6 @@ As with all the other messaging APIs, there are **throttling limits in place to 
 
 **You can also use the Google Cloud APIs to send email and access additional Gmail functionality.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-21%20-%20Sending%20Via%20Google%20Cloud).
 
 Happy hacking!
