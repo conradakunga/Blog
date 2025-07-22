@@ -279,6 +279,8 @@ And if we refresh the PaperCut UI, we should see the following:
 
 ![PaperCutDelivery](../images/2025/07/PaperCutDelivery.png)
 
+You can **see every email that has been sent via PaperCut using this interface in a single view** (as opposed to individual mailboxes for each of the 'users'.)
+
 The value of this is apparent when we open one of the emails.
 
 ![EmailDetails](../images/2025/07/EmailDetails.png)
