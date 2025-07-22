@@ -16,6 +16,7 @@ This is Part 4 of a series on sending email.
 - [Sending Email in C# & .NET - Part 3 - Using Gmail]({% post_url 2025-07-19-sending-email-in-c-net-part-3-using-gmail %})
 - **Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API (This Post)** 
 - [Sending Email In C# & .NET - Part 5 - Using Google Cloud API]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %})
+- [Sending Email In C# & .NET - Part 6 - Testing SMTP Locally]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %})
 
 In our [last post]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %}), we looked at how to send email using [Gmail](https://mail.google.com/mail/).
 
@@ -213,7 +214,7 @@ There are per-tenant limits.
 
 This means that each tenant can send at most **150** emails every **15** minutes, and over a 12-hour period, at most **10,000** emails.
 
-In our next post, we will look at how to send email using the [Google Cloud API]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %}).
+In our [next post]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %}), we will look at how to send email using the [Google Cloud API]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %}).
 
 ### TLDR
 

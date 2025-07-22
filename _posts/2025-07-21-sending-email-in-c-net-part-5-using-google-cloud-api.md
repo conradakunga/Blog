@@ -16,6 +16,7 @@ This is Part 5 of a series on sending email.
 - [Sending Email in C# & .NET - Part 3 - Using Gmail]({% post_url 2025-07-19-sending-email-in-c-net-part-3-using-gmail %})
 - [Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %})
 - **Sending Email In C# & .NET - Part 5 - Using Google Cloud API (This Post)**
+- [Sending Email In C# & .NET - Part 6 - Testing SMTP Locally]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %})
 
 In our [previous post]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %}), we explored how to create and configure an application on [Azure](https://azure.microsoft.com/en-us/) to send email and how to utilize the [Microsoft Graph API](https://learn.microsoft.com/en-us/graph/use-the-api) for email sending.
 
@@ -279,7 +280,7 @@ Click continue.
 
 The next screen is a **confirmation of the requested security scope** - **sending** email.
 
-Click continue.
+Click **continue**.
 
 The final screen will inform you that your application is now **authenticated** and **authorized**.
 
@@ -296,6 +297,8 @@ Process finished with exit code 0.
 ```
 
 As with all the other messaging APIs, there are **throttling limits in place to prevent abuse**. You can read the limits [here](https://developers.google.com/workspace/gmail/api/reference/quota).
+
+In the [next post]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %}), we will look at how to test SMTP email delivery locally.
 
 ### TLDR
 
