@@ -21,13 +21,13 @@ In our [previous post]({% post_url 2025-07-20-sending-email-in-c-net-part-4-usin
 
 In an earlier post, we had looked at how to use the [SmtpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0) to send email using the Google SMTP server. 
 
-In this post, we will look at how to use the Google Cloud API to send email.
+In this post, we will look at how to use the [Google Cloud API](https://cloud.google.com/?hl=en) to send email.
 
-The first step is to create an account if you don't already have one, at [https://console.cloud.google.com/](https://console.cloud.google.com/).
+The first step is to **create an account** if you don't already have one, at [https://console.cloud.google.com/](https://console.cloud.google.com/).
 
 ![CloudDashboardPicker](../images/2025/07/CloudDashboard.png)
 
-Once you are logged in, click on the project picker here.
+Once you are logged in, click on the **project picker** indicated below.
 
 ![CloudDashboardPicker](../images/2025/07/CloudDashboardPicker.png)
 
