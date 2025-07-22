@@ -28,7 +28,7 @@ Also, perhaps you **don't want to send an actual email** over the internet to th
 
 One way is to **install and configure your own SMTP software**, like [sendmail](https://en.wikipedia.org/wiki/Sendmail). This, however, is probably overkill.
 
-A much simpler option is to use the [PaperCut](https://github.com/ChangemakerStudios/Papercut-SMTP) docker image.
+A much simpler option is to use the [PaperCut](https://github.com/ChangemakerStudios/Papercut-SMTP) [docker](https://www.docker.com/) [image](https://hub.docker.com/r/changemakerstudiosus/papercut-smtp).
 
 This consists of an **SMTP server** and a **user interface** that allows you to see exactly how your email was delivered.
 
