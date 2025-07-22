@@ -24,13 +24,13 @@ In the post [Sending Email In C# & .NET - Part 2 - Delivery]({% post_url 2025-07
 
 In the age of spam and bots, it is very difficult to find an open [SMTP relay](https://www.mailjet.com/blog/email-best-practices/what-is-an-smtp-relay/).
 
-Also, perhaps you don't want to send an actual email over the internet to the recipient, but instead simulate the experience, perhaps in a test environment, to confirm that your email is sent as you expect.
+Also, perhaps you **don't want to send an actual email** over the internet to the recipient, but instead **simulate the experience**, perhaps in a **test** environment, to confirm that your email is generated and sent as you expect.
 
 One way is to **install and configure your own SMTP software**, like [sendmail](https://en.wikipedia.org/wiki/Sendmail). This, however, is probably overkill.
 
 A much simpler option is to use the [PaperCut](https://github.com/ChangemakerStudios/Papercut-SMTP) docker image.
 
-This consists of an SMTP server and a user interface that allows you to see exactly how your email was delivered.
+This consists of an **SMTP server** and a **user interface** that allows you to see exactly how your email was delivered.
 
 Let us create a scenario where we need to send a number of emails.
 
