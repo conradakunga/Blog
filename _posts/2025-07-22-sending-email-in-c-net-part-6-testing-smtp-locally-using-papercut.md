@@ -301,7 +301,7 @@ And the sections are as follows:
 Here, there are two:
 
 1. The email **body**
-2. The **attachment**
+2. The **attachment**, here specified with it's corresponding file name.
 
 You can download them using the **Save** button to inspect them.
 
