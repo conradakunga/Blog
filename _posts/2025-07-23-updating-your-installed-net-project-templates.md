@@ -8,30 +8,36 @@ categories:
     - F#
 ---
 
-When creating a new project, you typically would do it like this in C#:
+When creating a new project, you typically would do it like this in [C#](https://dotnet.microsoft.com/en-us/languages/csharp):
 
 ```bash
 dotnet new console -o MyProject
 ```
 
-This would create a new C# project (C# is assumed to be the default).
+This would create a new `C#` project (`C#` is assumed to be the default).
 
-If you wanted a F# project, you would do it like so:
+If you wanted a [F#](https://dotnet.microsoft.com/en-us/languages/fsharp) project, you would do it like so:
 
 ```bash
 dotnet new console -o MyFSharpProject -lang F#
 ```
 
-These are console projects.
+The same applies to [Visual Basic .NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/).
 
-You can do the same for WebProjects as follows:
+```bash
+dotnet new console -o MyVBProject -lang VB
+```
+
+These are **console** projects.
+
+You can do the same for **WebProjects** as follows:
 
 ```bash
 dotnet new web -o MyWebProject
 dotnet new web -o MyWebFSharpProject -lang F#
 ```
 
-What is happening behind the scenes is that templates are used to generate your project on disk, referencing the appropriate SDKs and [Nuget](https://www.nuget.org/) packages.
+What is happening behind the scenes is that templates are used to generate your project files on disk, referencing the appropriate SDKs and [Nuget](https://www.nuget.org/) packages, as well as any boilerplate code.
 
 These templates are occasionally updated by the creators, and you may wonder how to update yours.
 
