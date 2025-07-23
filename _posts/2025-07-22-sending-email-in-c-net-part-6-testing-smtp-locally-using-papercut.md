@@ -307,7 +307,7 @@ You can download them using the **Save** button to inspect them.
 
 Thus, we can send as many emails as we want without the risk of being **flagged as spam** or encountering **throttling** bottlenecks by the main email providers.
 
-In the next post, we will look more closely at how **PaperCut** enables the detailed testing of generated emails.
+In the next post, we will look more closely at how **PaperCut** enables the detailed testing of generated email.
 
 ### TLDR
 
