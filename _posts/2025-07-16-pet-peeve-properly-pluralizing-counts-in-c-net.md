@@ -21,7 +21,7 @@ public record Spy
 }
 ```
 
-We want to generate a number of Spy objects, and to do this, we will use our friend the [Bogus](https://github.com/bchavez/Bogus) library.
+We want to generate a number of `Spy` objects, and to do this, we will use our friend the [Bogus](https://github.com/bchavez/Bogus) library.
 
 ```bash
 dotnet add package Bogus
