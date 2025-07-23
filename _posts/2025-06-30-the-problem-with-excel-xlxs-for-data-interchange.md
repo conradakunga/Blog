@@ -146,4 +146,6 @@ If you need a reliable, (mostly) foolproof format for data interchange, [CSV](ht
 
 I have had a lot of success with [Josh Close's](https://github.com/joshclose) [CSVHelper](https://joshclose.github.io/CsvHelper/getting-started/).
 
+You can read about that in the post [Correctly Processing CSV Files In C# & .NET]({% post_url 2024-12-25-correctly-processing-csv-files-in-c-net %})
+
 Happy hacking!
