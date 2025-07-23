@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Updating Your .NET Project Templates
+title: Updating Your Installed .NET Project Templates
 date: 2025-07-23 05:28:07 +0300
 categories:
     - C#
