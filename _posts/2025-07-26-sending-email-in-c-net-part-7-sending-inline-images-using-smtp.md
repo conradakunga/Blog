@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP
-date: 2025-07-25 23:20:30 +0300
+date: 2025-07-26 23:20:30 +0300
 categories:
     - C#
     - .NET
