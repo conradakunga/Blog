@@ -35,12 +35,12 @@ We shall look at two scenarios:
 
 The steps are as follows:
 
-1. Create a MailMessage.
+1. Create a [MailMessage](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.mailmessage?view=net-9.0).
 2. Create the email body in HTML.
-3. Create an alternate view with the HTML.
-4. Create a LinkedResource with an identifier.
-5. Link the alternate view HTML with the LinkedResource.
-6. Add the alternate view to the email.
+3. Create an [AlternateView](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.alternateview?view=net-9.0) with the HTML.
+4. Create a [LinkedResource](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.linkedresource?view=net-9.0) with an identifier.
+5. Link the alternate view HTML with the `LinkedResource`.
+6. Add the `AlternateView` to the email.
 7. Send email
 
 ```c#
@@ -103,6 +103,21 @@ catch (Exception ex)
     Log.Error(ex, "Error sending email");
 }
 ```
+
+The `ContentID` here is what you will use to link the `LinkedResource` to the HTML body, where the image source is specified using `cid:<ID>`:
+
+```html
+<html><body>
+Good afternoon.
+<br>
+Have a happy birthday today!
+<br>
+<br>
+<img src='cid:Image1' />
+</body></html>
+```
+
+
 
 For the SMTP server, we will use **PaperCut**.
 
