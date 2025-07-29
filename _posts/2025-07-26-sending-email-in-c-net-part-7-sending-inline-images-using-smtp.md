@@ -17,6 +17,7 @@ This is Part 7 of a series on sending email.
 - [Sending Email In C# & .NET - Part 5 - Using Google Cloud API]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %})
 - [Sending Email In C# & .NET - Part 6 - Testing SMTP Locally  Using PaperCut]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %})
 - **Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP (This Post)**
+- [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP]({% post_url 2025-07-27-sending-email-in-c-net-part-8-sending-html-email-using-smtp %})
 
 Our last post in the series, [Sending Email In C# & .NET - Part 6 - Testing SMTP Locally Using PaperCut]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %}), we looked at how to use [PaperCut](https://github.com/ChangemakerStudios/Papercut-SMTP) to test our email generation and sending.
 
