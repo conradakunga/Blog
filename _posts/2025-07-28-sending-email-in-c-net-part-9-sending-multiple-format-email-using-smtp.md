@@ -116,6 +116,6 @@ You can also directly view the [MIME](https://datatracker.ietf.org/doc/html/rfc2
 
 **To send a multi-format email, use two `AlternateViews`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-28%20-%20AlternateViews).
 
 Happy hacking!
