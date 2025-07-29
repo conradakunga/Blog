@@ -157,6 +157,6 @@ And the details are as expected:
 
 When using a `Stream`, **ensure that the stream is not disposed of prior to sending the email**.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-26%20-%20Inline%20Email).
 
 Happy hacking!
