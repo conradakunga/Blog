@@ -19,6 +19,7 @@ This is Part 5 of a series on sending email.
 - [Sending Email In C# & .NET - Part 6 - Testing SMTP Locally Using PaperCut]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %})
 - [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP]({% post_url 2025-07-26-sending-email-in-c-net-part-7-sending-inline-images-using-smtp %})
 - [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP]({% post_url 2025-07-27-sending-email-in-c-net-part-8-sending-html-email-using-smtp %})
+- [Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP]({% post_url 2025-07-28-sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp %})
 
 In our [previous post]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %}), we explored how to create and configure an application on [Azure](https://azure.microsoft.com/en-us/) to send email and how to utilize the [Microsoft Graph API](https://learn.microsoft.com/en-us/graph/use-the-api) for email sending.
 
