@@ -5,6 +5,8 @@ date: 2025-07-24 16:43:17 +0300
 categories:
     - C#
     - .NET
+    - StarLibrary
+    - Humanizer
 ---
 
 A [TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-9.0) can be defined as the difference between two [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-9.0) objects, an interval.
