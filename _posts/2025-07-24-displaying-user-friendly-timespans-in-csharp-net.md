@@ -43,7 +43,7 @@ This will print the following:
 
 This means that there is a complete minute (`60`/`60`), and 0.833 of a minute (`5`/`60`)
 
-We can also display it in seconds, using the [TotalSeconds](https://learn.microsoft.com/en-us/dotnet/api/system.timespan.totalminutes?view=net-9.0) property like this:
+We can also display it in **seconds**, using the [TotalSeconds](https://learn.microsoft.com/en-us/dotnet/api/system.timespan.totalminutes?view=net-9.0) property like this:
 
 ```plaintext
 Console.WriteLine(diff.TotalSeconds);
@@ -57,7 +57,7 @@ This will print the following:
 
 But what if we wanted to show **both**?
 
-This requires a little more work and uses the [Minutes](https://learn.microsoft.com/en-us/dotnet/api/system.timespan.minutes?view=net-9.0) and [Seconds](https://learn.microsoft.com/en-us/dotnet/api/system.timespan.seconds?view=net-9.0) property. We have discussed the difference in the post [Tip - TimeSpan Minutes vs TotalMinutes]({% post_url 2021-06-11-tip-timespan-minutes-vs-totalminutes %})
+This requires a little more work and uses the [Minutes](https://learn.microsoft.com/en-us/dotnet/api/system.timespan.minutes?view=net-9.0) and [Seconds](https://learn.microsoft.com/en-us/dotnet/api/system.timespan.seconds?view=net-9.0) property. (We have discussed the difference in the post [Tip - TimeSpan Minutes vs TotalMinutes]({% post_url 2021-06-11-tip-timespan-minutes-vs-totalminutes %}))
 
 ```c#
 Console.WriteLine($"{diff.Minutes} minute and {diff.Seconds} seconds");
