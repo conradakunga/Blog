@@ -219,6 +219,6 @@ Another bonus is that the `TimeSpan` allows the display of larger **intervals** 
 
 **The `Humanizer` package contains extension methods that can be very useful for displaying `TimeSpan` in a human-readable way.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-24%20-%20TimeSpan%20Display).
 
 Happy hacking!
