@@ -16,6 +16,7 @@ This is Part 6 of a series on sending email.
 - [Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %})
 - [Sending Email In C# & .NET - Part 5 - Using Google Cloud API]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %})
 - **Sending Email In C# & .NET - Part 6 - Testing SMTP Locally  Using PaperCut (This post)**
+- [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP]({% post_url 2025-07-26-sending-email-in-c-net-part-7-sending-inline-images-using-smtp %})
 
 In the post [Sending Email In C# & .NET - Part 2 - Delivery]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %}) we discussed how to deliver email, and mentioned that there were two methods:
 

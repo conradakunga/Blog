@@ -17,12 +17,13 @@ This is Part 4 of a series on sending email.
 - **Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API (This Post)** 
 - [Sending Email In C# & .NET - Part 5 - Using Google Cloud API]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %})
 - [Sending Email In C# & .NET - Part 6 - Testing SMTP Locally Using PaperCut]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %})
+- [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP]({% post_url 2025-07-26-sending-email-in-c-net-part-7-sending-inline-images-using-smtp %})
 
 In our [last post]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %}), we looked at how to send email using [Gmail](https://mail.google.com/mail/).
 
 In this post, we will look at how to send email using [Office 365](https://www.office.com/).
 
-Historically, it was possible to send email through [SMTP](https://aws.amazon.com/what-is/smtp/). However, Microsoft is [deprecating this](https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365), and recommending use of the [Graph API](https://learn.microsoft.com/en-us/graph/use-the-api).
+Historically, it was possible to send email through [SMTP](https://aws.amazon.com/what-is/smtp/). However, Microsoft is [deprecating this and recommending the use of the [Graph API](https://learn.microsoft.com/en-us/graph/use-the-api).
 
 It requires quite a bit more legwork, as outlined below. 
 
