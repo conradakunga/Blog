@@ -15,6 +15,10 @@ draft: true
 - [Kate Ratemo](https://kateratemo.co.ke/blog/) - Software Development, Web Applications
 - [Joseph Ndungi](https://dev.to/josephndungi) - Python, Software Development
 
+## Communities
+
+- [TechTwirls](https://techtwirls.co.ke/) - Technology & Students
+
 ## Company Blogs
 
 - [Afroshok](https://afroshok.com/work) - Design, Softare
