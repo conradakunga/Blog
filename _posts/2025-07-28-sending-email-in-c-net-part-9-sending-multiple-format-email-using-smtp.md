@@ -22,7 +22,7 @@ This is Part 9 of a series on sending email.
 
 In our last post, [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP]({% post_url 2025-07-27-sending-email-in-c-net-part-8-sending-html-email-using-smtp %}), we looked at how to send **HTML email** via SMTP.
 
-In this post, we will look at how to create an email with multiple formats.
+In this post, we will look at how to create an email with **multiple formats**.
 
 The use case here is that, on paper, HTML **seems** to be the **superior** format.
 
@@ -35,12 +35,12 @@ The use case here is that, on paper, HTML **seems** to be the **superior** forma
 
 The reality is that HTML email can also cause problems.
 
-1. Some **mail clients** do not support HTML email
-2. Even those that do, they support different **subsets** of the specification
+1. Some **mail clients** do not support HTML email.
+2. Even those that do, they support different **subsets** of the specification.
 3. Even for those subsets universally supported, there are subtle **differences in the rendering**
-4. **Some people do not want** to read HTML email
+4. **Some people do not want** to read HTML email.
 
-To work around this issue, it is advisable to **always send a plain text version of your HTML email**.
+To work around this issue, it is advisable always to **send a plain text version of your HTML email**.
 
 To achieve this, we create two `AlternateViews` - one for the **HTML** content and the other for the **plain text** content.
 
@@ -93,7 +93,7 @@ If we run this code, we should see our delivered email in PaperCut.
 
 ![Delivered](../images/2025/07/Delivered.png)
 
-If we open the email we see the followning:
+If we open the email, we see the following:
 
 ![MultiformatEmail](../images/2025/07/MultiformatEmail.png)
 
@@ -102,13 +102,13 @@ Here we can see the two views:
 1. HTML
 2. Plain Text
 
-The HTML view is the default rendered one by the client, and here we can see an inline image.
+The HTML view is the **default rendered** one by the client, and here we can see an inline image.
 
 The plain text view looks like this:
 
 ![PlainTextSection](../images/2025/07/PlainTextSection.png)
 
-You can also directly view the MIME sections:
+You can also directly view the [MIME](https://datatracker.ietf.org/doc/html/rfc2045) sections:
 
 ![AllSections](../images/2025/07/AllSections.png)
 
