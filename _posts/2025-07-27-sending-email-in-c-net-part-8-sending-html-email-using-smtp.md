@@ -21,7 +21,7 @@ This is Part 8 of a series on sending email.
 
 In our last post in the series, [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP]({% post_url 2025-07-26-sending-email-in-c-net-part-7-sending-inline-images-using-smtp %}), we discussed how to send email with inline images over SMTP.
 
-In this post, we will look at how to send an HTML email.
+In this post, we will look at **how to send an [HTML email](https://mailtrap.io/blog/html-email/)**.
 
 There are two ways to do it:
 
@@ -117,8 +117,8 @@ Why use this way over simply setting the `IsBodyHTML` property?
 
 ## TLDR
 
-You can send HTML email either by setting the `IsBodyHTML` property of the MailMessage or by using an `AlternateView`.
+**You can send HTML email either by setting the `IsBodyHTML` property of the MailMessage or by using an `AlternateView`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-07-27%20-%20HTML%20Email).
 
 Happy hacking!
