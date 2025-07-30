@@ -25,7 +25,7 @@ In our [last post]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery
 
 In this post, we will look at how to send email using [Office 365](https://www.office.com/).
 
-Historically, it was possible to send email through [SMTP](https://aws.amazon.com/what-is/smtp/). However, Microsoft is [deprecating this and recommending the use of the [Graph API](https://learn.microsoft.com/en-us/graph/use-the-api).
+Historically, it was possible to send email through [SMTP](https://aws.amazon.com/what-is/smtp/). However, Microsoft is deprecating this and recommending the use of the [Graph API](https://learn.microsoft.com/en-us/graph/use-the-api).
 
 It requires quite a bit more legwork, as outlined below. 
 
@@ -60,7 +60,7 @@ The next step is to navigate to the API permissions.
 
 ![APIPermissions](../images/2025/07/APIPermissions.png)
 
-This will take you to a listing of the granted permissions. Typically, there will be at least one automatically granted - `User.Read`.
+This will take you to a listing of the granted permissions. Typically, there will be at least one automatically granted - User.Read`.
 
 Click on **Add Permission**
 
@@ -82,11 +82,11 @@ There is one more step in the permissions setup - you need to **Grant Admin Cons
 
 ![GrantConsent](../images/2025/07/GrantConsent.png)
 
-The final step is to generate the client secret, from the overview screen. This is part of the information that you will need to provide to authenticate your application.
+The final step is to generate the **client secret** from the overview screen. This is part of the information that you will need to provide to **authenticate** your application.
 
 ![AddSecets](../images/2025/07/AddSecets.png)
 
-The next screen will list your client current secrets.
+The next screen will list your client's current secrets.
 
 ![CurrentSecrets](../images/2025/07/CurrentSecrets.png)
 
@@ -106,7 +106,7 @@ Finally, we are ready to write the code.
 
 This process was **surprisingly difficult because a lot of the documentation and samples online are either incorrect or out of date.**.
 
-Install the following package - [Microsoft.Graph](https://www.nuget.org/packages/Microsoft.Graph/). **Make sure the version is version 5 and above**. **Version 4** will give you **problems**.
+Install the following package - [Microsoft.Graph](https://www.nuget.org/packages/Microsoft.Graph/). **Make sure the version is version 5 or above**. **Version 4** will give you **problems**.
 
 At the time of writing this, the latest version is 5.86
 
@@ -114,7 +114,7 @@ At the time of writing this, the latest version is 5.86
 dotnet add package Microsoft.Graph --version 5.86.0
 ```
 
-Next, add the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity/) package. This has been necessary since the introduction of version 5 of the Graph API.
+Next, add the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity/) package. This has been necessary since the introduction of version `5` of the Graph API.
 
 ```bash
 dotnet add package Azure.Identity --version 1.14.2
@@ -124,9 +124,9 @@ Next is to write the code that sends the email, which is composed of these steps
 
 1. Define the [scope](https://learn.microsoft.com/en-us/entra/identity-platform/scopes-oidc) for the application
 2. Create a [ClientSecretCredential](https://learn.microsoft.com/en-us/dotnet/api/azure.identity.clientsecretcredential?view=azure-dotnet) from
-    1. TenantID
-    2. ClientID
-    3. ClientSecret
+    1. `TenantID`
+    2. `ClientID`
+    3. `ClientSecret`
 3. Create a `GraphServiceClient`
 4. Create a `Message` (email)
 5. Send the email
@@ -216,6 +216,8 @@ The most pertinent ones are these:
 There are per-tenant limits.
 
 This means that each tenant can send at most **150** emails every **15** minutes, and over a 12-hour period, at most **10,000** emails.
+
+This means that this solution will not work for mass email situations. We will look at how to achieve that in later posts.
 
 In our [next post]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %}), we will look at how to send email using the [Google Cloud API]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %}).
 
