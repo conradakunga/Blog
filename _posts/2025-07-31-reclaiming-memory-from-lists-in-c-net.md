@@ -3,6 +3,9 @@ layout: post
 title: Reclaiming Memory From Lists In C# & .NET
 date: 2025-07-31 15:14:56 +0300
 categories:
+    - C#
+    - .NET
+    - Data Structures
 ---
 
 In the post [Considerations When Adding Items To A List In C# & .NET]({% post_url 2025-07-29-considerations-when-adding-items-to-a-list-in-c-net %}), we discussed how the runtime **dynamically pre-allocates capacity** when you **add items** to a `List`.
