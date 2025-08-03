@@ -83,6 +83,6 @@ You can also use LINQ to add elements to an existing `List` and return a new `Li
 
 **There are several ways to add elements to a `List`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-01%20-%20Add%20Items%20To%20List).
 
 Happy hacking!
