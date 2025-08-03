@@ -24,6 +24,8 @@ You need to do two things:
 1. Set the [AutoWidth](https://docs.devexpress.com/WindowsForms/DevExpress.XtraTreeList.TreeListOptionsView.AutoWidth) property of the [OptionsView](https://docs.devexpress.com/WindowsForms/DevExpress.XtraTreeList.TreeList.OptionsView) to false.
 2. Call the `BestFitColumns()` method of the `XtraTreeList`.
 
+![Autowidth](../images/2025/07/Autowidth.png)
+
 If we re-run this application, we should see the following:
 
 ![Resized](../images/2025/07/Resized.png)
