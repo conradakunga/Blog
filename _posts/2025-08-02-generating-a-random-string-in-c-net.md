@@ -89,7 +89,7 @@ Generated string: r2zjEps7G9gVx6JCxy6VRZTwQsSJJ2PMHBA9ARwhRHkstu17wU of length 5
 
 These strings are not **cryptographically random**, and therefore aren't ideal for secure situations such as generating passwords and keys, but they are good enough for casual use.
 
-In our [next post]({% post_url 2025-08-03-generating-a-crytpgraphically-random-string-in-c-net %}), we will look at how to create **cryptographically secure**, truly **random** strings.
+In our [next post]({% post_url 2025-08-03-generating-a-cryptographically-random-string-in-c-net %}), we will look at how to create **cryptographically secure**, truly **random** strings.
 
 ### TLDR
 
