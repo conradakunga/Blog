@@ -211,7 +211,7 @@ Given that the underlying data structure of a list is an [array](https://learn.m
 
 Needless to say, this is an **expensive** operation, especially for a `List` that is **growing rapidly**.
 
-If you **know in advance** the number of the elements that will be contained, you can **pre-allocate the appropriate capacity** by calling the appropriate [constructor](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.-ctor?view=net-9.0#system-collections-generic-list-1-ctor(system-int32)), to which you pass the requested **capacity**.
+If you **know in advance** the number of elements that will be contained, you can **pre-allocate the appropriate capacity** by calling the appropriate [constructor](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.-ctor?view=net-9.0#system-collections-generic-list-1-ctor(system-int32)), to which you pass the requested **capacity**.
 
 ```c#
 var list = new List<int>(150);
