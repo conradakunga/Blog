@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-In our previous post, [Generating A Random String In C# & .NET]({% post_url 2025-08-02-generating-a-random-string-in-c-net %}), we looked at how to generate a random string of specified length.
+In our previous post, [Generating A Random String In C# & .NET]({% post_url 2025-08-02-generating-a-random-string-in-c-net %}), we looked at how to generate a **random string of specified length**.
 
 In this post, we will look at how to generate **cryptographically secure random strings**, especially in cases where the strings need to be truly **random**. This is important when requirements involve **security** and **encryption**.
 
@@ -22,7 +22,7 @@ public static class Constants
 }
 ```
 
-The code for the generation will make use of a true random number generator, found in the [RandomNumberGenerator](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator?view=net-9.0) class in the [System.Security.Cryptography](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography?view=net-9.0) namespace. 
+The code for the generation will make use of a true [random number generator](https://en.wikipedia.org/wiki/Random_number_generation), found in the [RandomNumberGenerator](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator?view=net-9.0) class in the [System.Security.Cryptography](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography?view=net-9.0) namespace. 
 
 ```c#
 public static string GenerateRandomString(int length)
@@ -61,9 +61,9 @@ public static string GenerateRandomString2(int length)
 }
 ```
 
-There is, however, a slight disadvantage of this technique - given that the length of the alphabet is not an exact power of 2, there is a **very slight bias** in terms of the returned distribution after  the modulo operation.
+There is, however, a **slight disadvantage** of this technique - given that the length of the alphabet is not an exact power of 2, there is a **very slight bias** in terms of the returned distribution after the modulo operation.
 
-We then write some tests to verify both methods return expected results:
+We then write some tests to verify that both methods return expected results:
 
 `````c#
 public static string GenerateRandomString(int length)
