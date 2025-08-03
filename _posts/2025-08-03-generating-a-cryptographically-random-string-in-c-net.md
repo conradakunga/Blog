@@ -113,6 +113,6 @@ Generated string: StZFAEjQBbU621DjVGcxD3abGcKjuVj5J1DAzWf8S7rD79ExyP of length 5
 
 **You can use the `RandomNumberGenerator` class to generate cryptographically random strings for use in scenarios where true randomness is key, such as security.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-02%20-%20Random%20String).
 
 Happy hacking!
