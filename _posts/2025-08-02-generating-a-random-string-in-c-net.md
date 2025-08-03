@@ -93,8 +93,8 @@ In our next post, we will look at how to create **cryptographically secure**, tr
 
 ### TLDR
 
-Using a known alphabet and the Random class, we can generate random strings of arbitrary lengths.
+**Using a known alphabet and the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) class, we can generate random strings of arbitrary lengths.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-02%20-%20Random%20String).
 
 Happy hacking!
