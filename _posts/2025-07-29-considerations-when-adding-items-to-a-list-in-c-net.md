@@ -36,12 +36,12 @@ The following code creates a list, adds items to the list, and prints the `Count
 
 ```c#
 var list = new List<int>();
-	Console.WriteLine($"Size is {list.Count} and capacity is {list.Capacity}");
-	for (var i = 0; i < 150; i++)
-	{
-		list.Add(i);
-		Console.WriteLine($"Size is {list.Count} and capacity is {list.Capacity}");
-	}
+Console.WriteLine($"Size is {list.Count} and capacity is {list.Capacity}");
+for (var i = 0; i < 150; i++)
+{
+  list.Add(i);
+  Console.WriteLine($"Size is {list.Count} and capacity is {list.Capacity}");
+}
 ```
 
 If you run this code, it will print the following:
