@@ -64,7 +64,7 @@ The difference is that in this second program, reversing the `List` **does not m
 list.OrderByDescending(x => x).ToList().ForEach(Console.Write);
 ```
 
-The code above returns a new `List`, that happens to contain the sorted elements.
+The code above returns a **new** `List`, that happens to contain the sorted elements.
 
 This is different from the first program:
 
