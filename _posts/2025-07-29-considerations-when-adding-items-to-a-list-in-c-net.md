@@ -5,6 +5,7 @@ date: 2025-07-29 14:10:20 +0300
 categories:
     - C#
     - .NET
+    - Data Structures
 ---
 
 One of the data structures you will probably frequently use is the generic [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-9.0).
