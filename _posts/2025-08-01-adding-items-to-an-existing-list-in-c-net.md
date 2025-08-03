@@ -73,7 +73,7 @@ list.ForEach(Console.Write);
 Console.WriteLine();
 ```
 
-You can also use LINQ to add elements to an existing `List` and return a new `List`:
+You can also use [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) to add elements to an existing `List` and return a new `List`:
 
 - [Prepend](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.prepend?view=net-9.0)
 - [Append](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.append?view=net-9.0)
