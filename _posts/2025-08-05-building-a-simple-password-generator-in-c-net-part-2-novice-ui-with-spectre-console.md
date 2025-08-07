@@ -72,7 +72,7 @@ catch (Exception ex)
 
 ![PasswordError](../images/2025/08/PasswordError.png)
 
-In our next post, we will look at how to support experienced users on the command line.
+In our [next post]({% post_url 2025-08-06-building-a-simple-password-generator-in-c-net-part-3-advanced-ui-with-spectreconsole %}), we will look at how to support experienced users on the command line.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/PassGen).
 
