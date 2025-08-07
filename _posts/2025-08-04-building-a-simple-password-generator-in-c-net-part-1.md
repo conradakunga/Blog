@@ -184,7 +184,7 @@ public class PasswordGeneratorTests
 }
 ```
 
-In our next post, we will write a simple console UI for this tool.
+In our [next post]({% post_url 2025-08-05-building-a-simple-password-generator-in-c-net-part-2-novice-ui-with-spectre-console %}), we will write a simple console UI for this tool.
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/PassGen).
 

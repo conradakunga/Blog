@@ -7,11 +7,11 @@ categories:
     - .NET
 ---
 
+**This is Part 2 in a series in which we will build a simple password generator.**
 
+In our last post, [Building A Simple Password Generator In C# & .NET - Part 1]({% post_url 2025-08-04-building-a-simple-password-generator-in-c-net-part-1 %}), we wrote the logic for a simple **password generator**.
 
-In our last post, Building A Simple Password Generator In C# & .NET - Part 1, we wrote the logic for a simple password manager.
-
-In this post, we will build a simple command-line interface for the logic.
+In this post, we will build a simple **command-line interface** for the logic.
 
 For this, we will use the [Spectre.Console](https://spectreconsole.net/) package.
 
