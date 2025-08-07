@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-**This is Part 3 in a series in which we will build a simple password generator.**
+**This is Part 4 in a series in which we will build a simple password generator.**
 
 In our last post, [Building A Simple Password Generator In C# & .NET - Part 3 - Advanced UI With Spectre.Console]({% post_url 2025-08-06-building-a-simple-password-generator-in-c-net-part-3-advanced-ui-with-spectreconsole %}), we looked at how to build a console application that allows **passing of command-line options** to generate passwords.
 
