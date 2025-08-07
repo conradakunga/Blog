@@ -19,7 +19,7 @@ Here are some of them:
 
 | Letters       | Description                                                  |
 | ------------- | ------------------------------------------------------------ |
-| o,O and 0     | Small o, capital 0 and zero (`0`)                            |
+| o,O and 0     | Small `o`, capital `0` and zero (`0`)                        |
 | i,j,I,J and 1 | Small `i`, capital `I` , small `j` and capital J and one (`1`) |
 
 We will update our password generator to allow specification of this.
