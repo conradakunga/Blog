@@ -9,11 +9,11 @@ categories:
 
 **This is Part 3 in a series in which we will build a simple password generator.**
 
-In our last post, [Building A Simple Password Generator In C# & .NET - Part 3 - Advanced UI With Spectre.Console]({% post_url 2025-08-06-building-a-simple-password-generator-in-c-net-part-3-advanced-ui-with-spectreconsole %}), we looked at how to build a console application that allows passing of command-line options to generate passwords.
+In our last post, [Building A Simple Password Generator In C# & .NET - Part 3 - Advanced UI With Spectre.Console]({% post_url 2025-08-06-building-a-simple-password-generator-in-c-net-part-3-advanced-ui-with-spectreconsole %}), we looked at how to build a console application that allows **passing of command-line options** to generate passwords.
 
 In this post, we will look at how to improve the password generator to generate **human-readable passwords**.
 
-The problem we are trying to work around here is password characters that are ambiguous / easily confused.
+The problem we are trying to work around here is password characters that are **ambiguous** / **easily confused**.
 
 Here are some of them:
 
@@ -24,7 +24,7 @@ Here are some of them:
 
 We will update our password generator to allow specification of this.
 
-The first thing is to build a second set of alphabets of ambiguous characters.
+The first thing is to build a **second set of alphabets** of ambiguous characters.
 
 ```c#
 public static class Constants
@@ -40,7 +40,7 @@ public static class Constants
 }
 ```
 
-Next, we update our password generation code to take as a parameter wither to respect non-ambiguous characters.
+Next, we update our password generation code to take as a parameter whether to respect non-ambiguous characters.
 
 ```c#
 public static string GeneratePassword(int numbers, int symbols, int passwordLength, bool humanReadable = false)
@@ -89,7 +89,7 @@ public static string GeneratePassword(int numbers, int symbols, int passwordLeng
 }
 ```
 
-Next, we update the command line settings:
+Next, we update the command line **settings**:
 
 ```c#
 public sealed class PasswordSettings : CommandSettings
@@ -128,9 +128,7 @@ public sealed class PasswordSettings : CommandSettings
 }
 ```
 
-
-
-Finally, we update our UI to add this new parameter.
+Finally, we **update our UI** to add this new parameter.
 
 ```c#
 public override int Execute(CommandContext context, PasswordSettings settings)
@@ -151,15 +149,15 @@ public override int Execute(CommandContext context, PasswordSettings settings)
 }
 ```
 
-If we run with the --help parameter, we get the following:
+If we run with the `--help` parameter, we get the following:
 
 ![UpdatedHelp](../images/2025/08/UpdatedHelp.png)
 
-We can  now run our tool twice; first for the default (all characters)
+We can  now run our tool twice; first for the **default** (all characters)
 
 ![GenerateWithAmbiguous](../images/2025/08/GenerateWithAmbiguous.png)
 
-Then, without ambiguous characters, passing the --readable argument
+Then, **without ambiguous characters**, passing the `--readable` argument
 
 ![GenerateWithoutAmbiguous](../images/2025/08/GenerateWithoutAmbiguous.png)
 
