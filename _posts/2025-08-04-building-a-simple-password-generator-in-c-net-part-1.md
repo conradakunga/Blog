@@ -9,9 +9,9 @@ categories:
 
 **This is Part 1 in a series in which we will build a simple password generator.**
 
-In our last post, [Generating A Cryptographically Random String in C# & .NET]({% post_url 2025-08-03-generating-a-cryptographically-random-string-in-c-net %}), we looked at how to generate cryptographically random strings.
+In our last post, [Generating A Cryptographically Random String in C# & .NET]({% post_url 2025-08-03-generating-a-cryptographically-random-string-in-c-net %}), we looked at how to generate **cryptographically random strings**.
 
-In this post, we will look at how to build a **password generator**.
+In this post, we will look at how to build a **simple password generator**.
 
 Currently, I am using [1Password](https://1password.com/) as my password manager.
 
@@ -112,7 +112,7 @@ public static class PasswordGenerator
 
 Of interest is the following:
 
-1. Our code uses the Serilog package to support **logging**. It is beneficial to see what is happening under the hood, and we will write log messages if the [level](https://sematext.com/blog/logging-levels/) is set to `Debug`.
+1. Our code uses the [Serilog](https://serilog.net/) package to support **logging**. It is beneficial to see what is happening under the hood, and we will write log messages if the [level](https://sematext.com/blog/logging-levels/) is set to `Debug`.
 2. We are using [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) to call the `GetRandomCharacter()` method the desired number of times.
 3. Once we have **concatenated** the three generated `strings`, we **shuffle** the result.
 
