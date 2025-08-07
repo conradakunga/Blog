@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generating A Cryptographically Random String In C# & .NET
+title: Generating A Cryptographically Random String in C# & .NET
 date: 2025-08-03 21:25:10 +0300
 categories:
     - C#
