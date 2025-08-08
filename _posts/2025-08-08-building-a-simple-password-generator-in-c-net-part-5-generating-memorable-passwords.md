@@ -261,6 +261,15 @@ Now, if we run our tests for capitalized passwords, we should get results like t
 
 We can see one word is being capitalized at random.
 
+You may find of interest one of the decisions here - to perform I/O whenever this `GenerateMemorablePassword` is called.
+
+Here, there are two main options:
+
+1. Have the **logic to load the words from disk within the library**, and perform this whenever a memorable password is required
+2. Have **the calling applicatio**n (say the console UI) **perform the I/O and pass the data** to the library.
+
+**For now, I decided to keep the logic in the library so that it can be used directly without a host application.**
+
 In our next post, we will look at **how to wire this implementation to the console application**.
 
 ### TLDR
