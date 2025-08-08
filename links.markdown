@@ -13,6 +13,7 @@ draft: true
 - [David Lemayian](https://davidlemayian.com/) - Technology
 - [Fredrick Kamau](https://fredkamau.com/) - .NET, Angular
 - [Jacob Chencha](http://blog.chenchatech.com/) - Technology
+- [Linet Kwamboka - The Economy Of Data](https://economyofdata.com/) - Data Science & AI
 - [Kate Ratemo](https://kateratemo.co.ke/blog/) - Software Development, Web Applications
 - [Joseph Ndungi](https://dev.to/josephndungi) - Python, Software Development
 

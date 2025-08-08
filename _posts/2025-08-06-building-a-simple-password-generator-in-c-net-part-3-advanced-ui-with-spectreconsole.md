@@ -159,6 +159,6 @@ return 0;
 
 **We can use `Sceptre.Console` to generate sophisticated command-line applications to expose library logic.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/PassGen).
 
 Happy hack

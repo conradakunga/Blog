@@ -5,6 +5,8 @@ date: 2025-08-07 18:37:49 +0300
 categories:
     - C#
     - .NET
+    - StarLibrary
+    - Spectre.Console
 ---
 
 **This is Part 4 in a series in which we will build a simple password generator.**
