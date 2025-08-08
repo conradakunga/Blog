@@ -155,6 +155,10 @@ AnsiConsole.MarkupLine($"[green]Generated Password successfully, and copied to c
 return 0;
 ```
 
+After running, the console now looks like this;
+
+![GeneratedPasswordSecure](../images/2025/08/GeneratedPasswordSecure.png)
+
 ### TLDR
 
 **We can use `Sceptre.Console` to generate sophisticated command-line applications to expose library logic.**
