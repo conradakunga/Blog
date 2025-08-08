@@ -17,6 +17,8 @@ In this post, we will look at how to generate **memorable passwords**.
 
 What is a memorable password?
 
+My interpretation is that they are **passwords that are relatively easy to remember because they are actual words**. What they lack in [entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)), they make up for in **length**.
+
 For this, I am taking inspiration from the excellent [1Password](https://1password.com/).
 
 ![1PasswordMemorable](../images/2025/08/1PasswordMemorable.png)
@@ -269,6 +271,14 @@ Here, there are two main options:
 2. Have **the calling application** (say, the console UI) **perform the I/O and pass the data** to the library.
 
 **For now, I decided to keep the logic in the library so that it can be used directly without a host application.**
+
+How secure are these passwords?
+
+Try this [utility](https://www.grc.com/haystack.htm) from [Gibson Research](https://www.grc.com)
+
+![GRC](../images/2025/08/GRC.png)
+
+I think we can conclude that these passwords are **pretty secure**.
 
 In our next post, we will look at **how to wire this implementation to the console application**.
 
