@@ -57,16 +57,15 @@ It seems to capitalize **one** of the words in the password.
 
 This should be enough to generate a simple implementation.
 
-The first order of business is to find a list of words.
+The first order of business is to **find a list of words**.
 
 From [this Git archive](https://github.com/dolph/dictionary/blob/master/popular.txt), there is a list of popular English words.
 
 We can start by :
 
 1. **Downloading** the file.
-2. **Remove** all words **shorter** than `3` characters
-3. **Remove** all words **longer** than `8` characters
-4. There are always `4` words
+2. **Remove** all words **shorter** than `3` characters.
+3. **Remove** all words **longer** than `8` characters.
 
 The following code executes the above.
 
@@ -105,18 +104,19 @@ Now, we can add a method to the library to generate the passwords.
 
 We will do the following:
 
-1. Pick a random number between 3 and 8, 4 times
-2. For each of these, randomly pick a word of corresponding length
+1. Pick a r**andom number** between `3` and 8, **four** times.
+2. For each of these, **randomly pick a word of corresponding length**.
 
-Let us start by defining some additional constants, in case we need to adjust our code later.
+Let us start by defining some additional **constants**, in case we need to adjust our code later.
 
 ```c#
 public const int MemorableWordCount = 4;
 public const int MinimumMemorableWordLength = 3;
 public const int MaximumMemorableWordLength = 8;
+public const char MemorablePasswordSeparator = '-';
 ```
 
-Next, we write the code to generate the passwords.
+Next, we write the code to **generate** the passwords.
 
 ```c#
 public static string GenerateMemorablePassword()
@@ -161,7 +161,7 @@ public static string GenerateMemorablePassword()
 }
 ```
 
-Finally, we write some tests to verify our functionality.
+Finally, we write some **tests** to verify our functionality.
 
 ```c#
 public void MemorablePasswordsAreGenerated(int count)
@@ -189,7 +189,7 @@ We should see something like this in the console:
 [17:13:15 INF] Generated password 9 : crimson-news-top-outfits
 ```
 
-Next, we add support for the capitalization of one of the words, starting by adding a **parameter** to the `GenerateMemorablePassword` method.
+Next, we add support for the **capitalization** of one of the words, starting by adding a **parameter** to the `GenerateMemorablePassword` method.
 
 ```c#
  public static string GenerateMemorablePassword(bool capitalize = false)
@@ -210,7 +210,7 @@ if (capitalize)
 }
 ```
 
-Finally some tests to verify our behaviour.
+Finally, some **tests** to verify our behaviour.
 
 ```c#
 public void MemorablePasswordsAreGenerated(int count)
@@ -244,7 +244,7 @@ public void MemorableCapitalizedPasswordsAreGenerated(int count)
 private static partial Regex HasUpperCaseRegex();
 ```
 
-Now if we run our tests for capitalized passwords, we should get results like this:
+Now, if we run our tests for capitalized passwords, we should get results like this:
 
 ```plaintext
 [17:23:15 INF] Generated password 0 : crusts-accept-SMOOCHY-gush
@@ -261,7 +261,7 @@ Now if we run our tests for capitalized passwords, we should get results like th
 
 We can see one word is being capitalized at random.
 
-In our next post, we will look at how to wire this to the console application.
+In our next post, we will look at **how to wire this implementation to the console application**.
 
 ### TLDR
 

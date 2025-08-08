@@ -163,6 +163,8 @@ Then, **without ambiguous characters**, passing the `--readable` argument
 
 ![GenerateWithoutAmbiguous](../images/2025/08/GenerateWithoutAmbiguous.png)
 
+In our [next post]({% post_url 2025-08-08-building-a-simple-password-generator-in-c-net-part-5-generating-memorable-passwords %}), we will look at how to generate memorable passwords.
+
 ### TLDR
 
 **We updated our password generator to optionally generate human-readable passwords without ambiguous characters.**
