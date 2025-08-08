@@ -159,7 +159,7 @@ After running, the console now looks like this;
 
 ![GeneratedPasswordSecure](../images/2025/08/GeneratedPasswordSecure.png)
 
-The final improvement is we might still want to allow the user to decide whether or not they want to se the generated password.
+The final improvement is we might still want to allow the user to **decide whether or not they want to see the generated password**.
 
 We can prompt them for this:
 
