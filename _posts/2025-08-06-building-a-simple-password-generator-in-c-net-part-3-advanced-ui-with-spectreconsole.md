@@ -159,6 +159,26 @@ After running, the console now looks like this;
 
 ![GeneratedPasswordSecure](../images/2025/08/GeneratedPasswordSecure.png)
 
+The final improvement is we might still want to allow the user to decide whether or not they want to se the generated password.
+
+We can prompt them for this:
+
+```c#
+// Ask the user to confirm
+var viewPassword = AnsiConsole.Prompt(
+    new ConfirmationPrompt("View password?"));
+
+// Echo the confirmation back to the terminal
+if (viewPassword)
+    AnsiConsole.MarkupLine($"[bold]{Markup.Escape(password)}[/]");
+```
+
+Here we use `Markup.Escape` to work around the potential issue that the generated password might contain `[` or `]`, which would break the `AnsiConsole` markup parsing.
+
+The final tool will work like this:
+
+![GeneratedPasswordWithPrompt](../images/2025/08/GeneratedPasswordWithPrompt.png)
+
 ### TLDR
 
 **We can use `Sceptre.Console` to generate sophisticated command-line applications to expose library logic.**
