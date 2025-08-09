@@ -217,7 +217,9 @@ There are per-tenant limits.
 
 This means that each tenant can send at most **150** emails every **15** minutes, and over a 12-hour period, at most **10,000** emails.
 
-This means that this solution will not work for mass email situations. We will look at how to achieve that in later posts.
+This means that this solution will not work for [mass/bulk email](https://www.twilio.com/en-us/resource-center/bulk-email-guide) situations. 
+
+We will look at how to achieve that in a future post.
 
 In our [next post]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %}), we will look at how to send email using the [Google Cloud API]({% post_url 2025-07-21-sending-email-in-c-net-part-5-using-google-cloud-api %}).
 
