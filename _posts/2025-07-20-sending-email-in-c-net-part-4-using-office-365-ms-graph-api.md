@@ -60,7 +60,7 @@ The next step is to navigate to the API permissions.
 
 ![APIPermissions](../images/2025/07/APIPermissions.png)
 
-This will take you to a listing of the granted permissions. Typically, there will be at least one automatically granted - User.Read`.
+This will take you to a listing of the granted permissions. Typically, there will be at least one automatically granted - `User.Read`.
 
 Click on **Add Permission**
 
