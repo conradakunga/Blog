@@ -11,7 +11,7 @@ categories:
 
 **This is Part 7 in a series in which we will build a simple password generator.**
 
-In our last post, [Building A Simple Password Generator In C# & .NET - Part 6 - Updating Console For Memorable Password Generation]({% post_url 2025-08-09-building-a-simple-password-generator-in-c-net-part-6-updating-console-for-memorable-password-generation %}), we updated our console application to generate memorable passwords.
+In our last post, [Building A Simple Password Generator In C# & .NET - Part 6 - Updating Console UI For Memorable Password Generation]({% post_url 2025-08-09-building-a-simple-password-generator-in-c-net-part-6-updating-console-ui-for-memorable-password-generation %}), we updated our console application to generate memorable passwords.
 
 Our password generator currently generates **one password at a time**.
 
