@@ -280,7 +280,7 @@ Try this [utility](https://www.grc.com/haystack.htm) from [Gibson Research](http
 
 I think we can conclude that these passwords are **pretty secure**.
 
-In our next post, we will look at **how to wire this implementation to the console application**.
+In our next post, we will look at [how to wire this implementation to the console application]({% post_url 2025-08-09-building-a-simple-password-generator-in-c-net-part-6-updating-console-ui-for-memorable-password-generation %}).
 
 ### TLDR
 
