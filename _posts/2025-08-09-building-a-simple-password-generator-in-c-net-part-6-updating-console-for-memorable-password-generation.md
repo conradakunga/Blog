@@ -123,6 +123,6 @@ This should print something like this:
 
 **In this post, we have added support for generating memorable passwords (capitalized and otherwise) to the console application.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/PassGen).
 
 Happy hacking!
