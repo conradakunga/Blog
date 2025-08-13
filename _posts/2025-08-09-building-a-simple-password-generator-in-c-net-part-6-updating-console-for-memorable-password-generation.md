@@ -99,7 +99,7 @@ public sealed class GeneratePasswordCommand : Command<PasswordSettings>
   }
 ```
 
-We can then run our console as follows, for capitalized memorable passwords:
+We can then run our console as follows, for **capitalized** memorable passwords:
 
 ```bash
 dotnet run -- -c
@@ -109,7 +109,7 @@ This should print something like this:
 
 ![MemorableCapitalized](../images/2025/08/MemorableCapitalized.png)
 
-We can then also run it for uncapitalized memorable passwords:
+We can then also run it for **uncapitalized** memorable passwords:
 
 ```bash
 dotnet run -- -m
