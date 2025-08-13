@@ -7,6 +7,7 @@ categories:
     - .NET
     - StarLibrary
     - Spectre.Console
+    - OpenSource
 ---
 
 **This is Part 3 in a series in which we will build a simple password generator.**

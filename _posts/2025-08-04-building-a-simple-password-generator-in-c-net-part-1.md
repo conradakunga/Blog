@@ -5,6 +5,7 @@ date: 2025-08-04 14:09:47 +0300
 categories:
     - C#
     - .NET
+    - OpenSource
 ---
 
 **This is Part 1 in a series in which we will build a simple password generator.**
