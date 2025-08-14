@@ -18,7 +18,7 @@ Our password generator currently generates **one password at a time**.
 
 It would be an idea if we could tell it how many to generate as a **command line argument**, and it generates the specified number. 
 
-Naturally, the default will be `0`.
+Naturally, the default will be `1`.
 
 We start by updating our `PasswordSettings` as follows:
 
