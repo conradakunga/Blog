@@ -3,6 +3,8 @@ layout: post
 title: Class That Stores Multiple Named, Typed Generic Lists - Improvement
 date: 2025-08-13 10:51:45 +0300
 categories:
+    - C#
+    - .NET
 ---
 
 In our last post, [Class That Stores Multiple Named, Typed Generic Lists]({% post_url 2025-08-12-class-that-stores-multiple-named-typed-generic-lists %}), we built a component that stores a collection of named, generic [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-9.0) objects.
