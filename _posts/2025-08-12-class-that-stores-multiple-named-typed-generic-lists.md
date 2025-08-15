@@ -190,6 +190,6 @@ Running the tests shows everything works as expected:
 
 **We have built a component that can store and retrieve a generic `Lists` identified by name.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/GenericListStore).
 
 Happy hacking!
