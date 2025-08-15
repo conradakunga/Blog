@@ -126,6 +126,10 @@ public void MemorableCapitalizedPasswordsAreGenerated(int count)
 }
 ```
 
+The test runner will look like this:
+
+![RepeatTests](../images/2025/08/RepeatTests.png)
+
 ### TLDR
 
 **We have created a `Repeat` attribute for the xUnit `Theory`, which allows running a test multiple times.**
