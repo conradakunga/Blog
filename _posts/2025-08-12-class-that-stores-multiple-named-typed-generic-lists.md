@@ -78,6 +78,21 @@ public sealed class GenericListStore
 
         throw new InvalidCastException($"List '{name}' does not store {typeof(T).Name} items");
     }
+    /// <summary>
+    /// Remove a list from the store
+    /// </summary>
+    /// <param name="name"></param>
+    /// <exception cref="ArgumentException"></exception>
+    /// <exception cref="KeyNotFoundException"></exception>
+    public void Remove(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            throw new ArgumentException("Name cannot be null or empty.", nameof(name));
+        }
+      
+        _dictLists.Remove(name);
+    }
 }
 ```
 
