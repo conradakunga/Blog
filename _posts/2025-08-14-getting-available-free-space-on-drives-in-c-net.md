@@ -14,28 +14,28 @@ You can write code like this to tell you what you need to know:
 ```c#
 void Main()
 {
-	// Get all the drives in the system
-	var allDrives = DriveInfo.GetDrives();
+  // Get all the drives in the system
+  var allDrives = DriveInfo.GetDrives();
 
-	foreach (var drive in allDrives)
-	{
-		// Output name
-		Console.WriteLine("Drive {0}", drive.Name);
-		// Output drive type
-		Console.WriteLine("\tType: {0}", drive.DriveType);
-		// Check if drive is ready (to cater for removeable drives)
-		if (drive.IsReady)
-		{
-			// Output label
-			Console.WriteLine("\tLabel: {0}", drive.VolumeLabel);
-			// Output format
-			Console.WriteLine("\tFile System: {0}", drive.DriveFormat);
-			// Output free space
-			Console.WriteLine("\tAvailable Space: \t\t{0:#,0} bytes", drive.AvailableFreeSpace);
-			// Output total size
-			Console.WriteLine("\tTotal Size :\t\t\t{0:#,0} bytes ", drive.TotalSize);
-		}
-	}
+  foreach (var drive in allDrives)
+  {
+    // Output name
+    Console.WriteLine("Drive {0}", drive.Name);
+    // Output drive type
+    Console.WriteLine("\tType: {0}", drive.DriveType);
+    // Check if drive is ready (to cater for removeable drives)
+    if (drive.IsReady)
+    {
+      // Output label
+      Console.WriteLine("\tLabel: {0}", drive.VolumeLabel);
+      // Output format
+      Console.WriteLine("\tFile System: {0}", drive.DriveFormat);
+      // Output free space
+      Console.WriteLine("\tAvailable Space: \t\t{0:#,0} bytes", drive.AvailableFreeSpace);
+      // Output total size
+      Console.WriteLine("\tTotal Size :\t\t\t{0:#,0} bytes ", drive.TotalSize);
+    }
+  }
 }
 ```
 
