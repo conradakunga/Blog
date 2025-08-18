@@ -8,7 +8,7 @@ categories:
     - Tips
 ---
 
-The DriveInfo class has two similar properties:
+The [DriveInfo](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo?view=net-9.0) class has two **similar** properties:
 
 - [AvailableFreeSpace](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo.availablefreespace?view=net-9.0)
 - [TotalFreeSpace](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo.totalfreespace?view=net-9.0)
