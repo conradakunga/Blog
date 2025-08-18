@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Disappeared Database Objects In DataGrip
+title: Tip - Disappeared Database Objects In DataGrip
 date: 2025-08-16 12:07:18 +0300
 categories:
     - Database
+    - Tips
 ---
 
 [Jetbrains](https://www.jetbrains.com/)  are the makers of the famous [IntelliJ IDEA](https://www.jetbrains.com/idea/) Java IDE, that is also the IDE that [Android Studio](https://developer.android.com/studio) is based off. 
