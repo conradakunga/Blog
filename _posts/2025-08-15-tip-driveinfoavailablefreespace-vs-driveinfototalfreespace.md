@@ -1,10 +1,11 @@
 ---
 layout: post
-title: DriveInfo.AvailableFreeSpace vs DriveInfo.TotalFreeSpace
+title: Tip DriveInfo.AvailableFreeSpace vs DriveInfo.TotalFreeSpace
 date: 2025-08-15 11:55:40 +0300
 categories:
     - C#
     - .NET
+    - Tips
 ---
 
 The DriveInfo class has two similar properties:
