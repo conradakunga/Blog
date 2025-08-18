@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-If you need to find out how much disk space is available on a particular drive, the place to look is in the [DriveInfo](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo?view=net-9.0) class.
+If you need to find out **how much disk space is available** on a particular drive, the place to look is in the [DriveInfo](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo?view=net-9.0) class.
 
 You can write code like this to tell you what you need to know:
 
