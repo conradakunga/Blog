@@ -134,6 +134,6 @@ Note that if you run this code repeatedly your **results about free space might 
 
 ### TLDR
 
-Use the `AvailableFreeSpace` property of the `DriveInfo` object to determine the available free space on your machine.
+**Use the `AvailableFreeSpace` property of the `DriveInfo` object to determine the available free space on your machine.**
 
 Happy hacking!
