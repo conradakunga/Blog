@@ -166,6 +166,7 @@ The `o` here is the format string we have introduced for ordinal.
 
 We can then write some tests to verify everything works well.
 
+{% raw %}
 ```c#
 [Theory]
 [InlineData(1, "do MMM yyyy", "1st Jan 2025")]
@@ -192,6 +193,7 @@ public void CultureTest(int day, string formatString, string ordinal, string cul
     result.Should().Be(ordinal);
 }
 ```
+{% endraw %}
 
 These should pass successfully.
 
