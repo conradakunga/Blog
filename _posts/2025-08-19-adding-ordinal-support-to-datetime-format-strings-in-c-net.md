@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-In the last two posts, we looked at how to handle the display of ordinal numbers in C# & .NET.
+In the last [two]({% post_url 2025-08-17-displaying-ordinal-numbers-in-c-net %}) [posts]({% post_url 2025-08-18-displaying-ordinal-words-in-c-net %}), we looked at how to handle the display of ordinal numbers in C# & .NET.
 
 As a recap, the following code:
 
