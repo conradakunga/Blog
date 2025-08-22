@@ -201,6 +201,6 @@ These should pass successfully.
 
 **We have implemented a custom formatter to allow specification of ordinals in `DateOnly` and `DateTime`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-9.0).
 
 Happy hacking!
