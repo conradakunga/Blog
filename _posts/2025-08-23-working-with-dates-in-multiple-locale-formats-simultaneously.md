@@ -66,9 +66,9 @@ This will print the following:
 8/23/2025 12:33:11 PM
 ```
 
-Similarly, we can achieve the same result when parsing.
+Similarly, we can achieve the same result when **parsing**.
 
-Assume that we have the dates and the corresponding formats in a database.
+Assume that we have the **dates** and the corresponding **country** in a database.
 
 | Date                  | Country |
 | --------------------- | ------- |
@@ -81,7 +81,7 @@ The challenge is to parse all these date strings into the **current locale's** d
 
 **WARNING: Don't store `DateTime` as `string` in the database!**
 
-For this, we will build a simple record type to store the information.
+For this, we will build a simple [record](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record) type to store the information.
 
 ```c#
 internal record DateEntry(string DateTime, string Country);
