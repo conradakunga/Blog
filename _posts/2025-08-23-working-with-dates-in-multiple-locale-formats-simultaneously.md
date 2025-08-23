@@ -8,7 +8,7 @@ categories:
     - Internationalization
 ---
 
-In a previous post, [Locale Considerations When Parsing Dates]({% post_url 2025-06-16-locale-considerations-when-parsing-dates %}), I discussed how locale considerations have a heavy influence on how dates get parsed.
+In a previous post, [Locale Considerations When Parsing Dates]({% post_url 2025-06-16-locale-considerations-when-parsing-dates %}), I discussed how **locale considerations have a heavy influence on how data gets parsed**.
 
 The example I used was as follows:
 
@@ -36,7 +36,7 @@ That printed the following:
 6/16/2025 9:32:29 PM
 ```
 
-You might have noticed that to achieve the different locales, I actually **changed the locale of the running thread**.
+You might have noticed that to change locales at runtime, I actually **changed the locale of the running thread**.
 
 This may work fine if the aim is for the **user's locale** to be detected and used.
 
@@ -68,7 +68,7 @@ This will print the following:
 
 Similarly, we can achieve the same result when parsing.
 
-Assume that we have the dates and the corresponding formats in some sort of database.
+Assume that we have the dates and the corresponding formats in a database.
 
 | Date                  | Country |
 | --------------------- | ------- |
@@ -79,13 +79,15 @@ Assume that we have the dates and the corresponding formats in some sort of data
 
 The challenge is to parse all these date strings into the **current locale's** date format.
 
+**WARNING: Don't store `DateTime` as `string` in the database!**
+
 For this, we will build a simple record type to store the information.
 
 ```c#
 internal record DateEntry(string DateTime, string Country);
 ```
 
-Then, a helper internal method that returns a [CultureInfo](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-9.0) object given a name.
+Then, a helper [local function](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions) that returns a [CultureInfo](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-9.0) object given a country `Name`.
 
 ```c#
 CultureInfo GetCultureInfo(string country)
@@ -141,7 +143,7 @@ Successfully parsed Date 8/23/2025 12:33:11 PM for Country USA: 23/08/2025 12:33
 
 The awesomeness of this is that, although the dates were stored in completely **different formats**, we were able to parse them into a `DateTime` that is **understood by the current locale**.
 
-We can prove this by rewriting the code to run against 4 different cultures.
+We can prove this by rewriting the code to run against 4 **different** cultures.
 
 ```c#
 
@@ -180,12 +182,12 @@ This prints the following:
 
 ![LocalDateOutput](../images/2025/08/LocalDateOutput.png)
 
-We can see here that the locales are all **different** (as evidenced by the default output for the dates as highlighted), but the parsing always succeeded.
+We can see here that the locales are all **different** (as evidenced by the default output for the dates as highlighted), but the parsing **always succeeded**.
 
 ### TLDR
 
 **It is possible to work with locale-specific data by using the `CultureInfo` object for parsing and display.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-23%20-%20AdvancedParsing).
 
 Happy hacking!
