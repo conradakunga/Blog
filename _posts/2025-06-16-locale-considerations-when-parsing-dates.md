@@ -5,6 +5,7 @@ date: 2025-06-16 21:12:03 +0300
 categories:
     - C#
     - .NET
+    - Internationalization
 ---
 
 The previous post, [Don't Parse - TryParse]({% post_url 2025-06-15-dont-parse-tryparse %}), talked about the safe way to attempt parsing of data and check for success.

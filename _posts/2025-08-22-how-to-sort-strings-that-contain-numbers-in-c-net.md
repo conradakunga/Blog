@@ -514,8 +514,8 @@ public class StringComparerTests
 
 We can improve this in several ways:
 
-1. Add support to locales that use `,` or anything else, as a `decimal` separator.
-2. Support sorting of complex items like versions e.g. 1.0.2.2 vs 2.0.1
+1. Add support to locales that use `,` or anything else, as a `decimal` separator - better localization support.
+2. Support sorting of complex items like versions e.g. `1.0.2.2` vs `2.0.1`
 
 Of interest is the fact that this has been properly [implemented](https://github.com/dotnet/runtime/pull/109861) in .NET 10, but it is always fun (and a learning experience) to try to implement some of these things.
 
