@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding A RaspberryPI to a WiFi Network On Command Line
+title: Adding A RaspberryPI Pi to a WiFi Network on Command Line
 date: 2025-08-21 16:16:44 +0300
 categories:
     - Linux
@@ -11,7 +11,9 @@ For many years, I have been a proud owner and user of a [Raspberry PI](https://w
 
 I use it to run a bunch of [Docker](https://www.docker.com/) containers, one of which is the excellent PiHole that keeps the traffic within my network ad-free.
 
-Recently I wanted to change the WiFi network it was operating on and found, to my consternation, that the mouse had died.
+![piHole](../images/2025/08/piHole.png)
+
+Recently, I wanted to change the WiFi network it was operating on and found, to my consternation, that the mouse had died.
 
 How then, could I get the device to join a network?
 
