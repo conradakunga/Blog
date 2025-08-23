@@ -518,6 +518,6 @@ Of interest is the fact that this has been [properly implemented in .NET 10](htt
 
 **We have written a `Comparer` that allows us to sort strings that optionally contain numbers.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/StringSorters).
 
 Happy hacking!
