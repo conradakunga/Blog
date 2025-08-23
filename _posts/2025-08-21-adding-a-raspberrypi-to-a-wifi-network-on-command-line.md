@@ -9,9 +9,9 @@ categories:
 
 For many years, I have been a proud owner and user of a [Raspberry PI](https://www.raspberrypi.com/), and in particular, a [Model 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/).
 
-I use it to run a bunch of [Docker](https://www.docker.com/) containers, one of which is the excellent [piHole](https://pi-hole.net/) that keep the traffic within my network ad-free.
+I use it to run a bunch of [Docker](https://www.docker.com/) containers, one of which is the excellent PiHole that keeps the traffic within my network ad-free.
 
-Recently I wanted to change the WiFi network it was operating on and found, to my consternatoon, that the mouse had died.
+Recently I wanted to change the WiFi network it was operating on and found, to my consternation, that the mouse had died.
 
 How then, could I get the device to join a network?
 
