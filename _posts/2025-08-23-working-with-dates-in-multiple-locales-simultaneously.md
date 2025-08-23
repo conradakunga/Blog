@@ -188,6 +188,6 @@ We can see here that the locales are all **different** (as evidenced by the defa
 
 **It is possible to work with locale-specific data by using the `CultureInfo` object for parsing and display.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-23%20-%20AdvancedParsing).
 
 Happy hacking!
