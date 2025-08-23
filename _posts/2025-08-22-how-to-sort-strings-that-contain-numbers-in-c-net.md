@@ -512,6 +512,8 @@ public class StringComparerTests
 }
 ```
 
+Of interest is the fact that this has been [properly implemented in .NET 10](https://towardsdev.com/harnessing-net-10s-numeric-string-comparison-a-game-changer-for-your-code-5c5275ace6ff), but it is always fun (and a learning experience) to try to implement some of these things.
+
 ### TLDR
 
 **We have written a `Comparer` that allows us to sort strings that optionally contain numbers.**
