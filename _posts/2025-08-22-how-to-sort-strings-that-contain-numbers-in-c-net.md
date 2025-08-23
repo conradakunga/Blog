@@ -114,7 +114,7 @@ public sealed class NumericStringComparer : IComparer<string>
 }
 ```
 
-The List class has a Sort method that allows sorting of the List in place.
+The [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-9.0) class has a [Sort](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.sort?view=net-9.0) method that allows sorting of the List in place.
 
 So we can do this:
 
@@ -129,9 +129,9 @@ This now prints as expected.
 
 But we can do one better.
 
-What if the number was within text?
+What if the **number was within text**?
 
-Suppose we have a bunch of Windows Versions that we want to sort.
+Suppose we have a bunch of [Windows Versions](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions) that we want to sort.
 
 ```c#
 string[] windowsVersons =
@@ -172,11 +172,11 @@ Windows 98
 
 Our comparer does not seem to know what to do if the entire value is not a number.
 
-Currently it is treating everything as a string, and is unable to convert each entry to a number.
+Currently, it is **treating everything** as a `string` and is **unable to convert each entry to a number**.
 
 There is room for improvement in our comparer.
 
-We can extract the number, and then sort using that.
+We can **extract the number and then sort using that**.
 
 ```c#
 public sealed class NaturalStringComparer : IComparer<string>
@@ -226,7 +226,7 @@ Looking good.
 
 But let us throw in a spanner into the works.
 
-I happen to now that there was Windows 3.1 and 3.11.
+I happen to know that there was a **Windows 3.1** and a **Windows 3.11**.
 
 Let's add those to the mix.
 
@@ -269,13 +269,13 @@ Windows 2000
 
 Our comparer gave up parsing after the `.`
 
-We can improve this by making it use a `decimal`, rather than an `int`.
+We can improve this by using a `decimal`, rather than an `int`.
 
-The logic is the same - find the first decimal in each string and use that for sorting purposes.
+The logic is the same - find the first `decimal` in each `string` and use that for sorting purposes.
 
-We also need to factor in the edge case that much as decimals have the format 0.00, 0 is also a valid decimal.
+We also need to factor in the edge case that much as decimals have the format `0.00`, `0` is also a valid decimal.
 
-This is what the following Regex does:
+This is what the following `regular expression` does:
 
 ```plaintext
 \d+(\.\d+)?
@@ -332,7 +332,7 @@ And we're done.
 
 Almost.
 
-Let us add some more strings.
+Let us add some more `string` entries for [DOS](https://en.wikipedia.org/wiki/DOS).
 
 ```c#
 string[] windowsVersons =
@@ -377,13 +377,13 @@ Windows 98
 Windows 2000
 ```
 
-This has been sorted by the numeric value, but has ignored the text values.
+This has been sorted by the **numeric** value, but has **ignored the text** values.
 
 Let's make a final set of changes, including those that will improve the performance.
 
-1. We can use a source-generated regex instead of constructing one at runtime
-2. We can cache the generated regex to improve performance regardless of the number of comparisons.
-3. Before we compare the numbers (if any), first compare the leading text.
+1. We can use a [source-generated regex](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-source-generators) instead of constructing one at runtime
+2. We can **cache** the generated regex to improve performance regardless of the number of comparisons.
+3. Before we compare the numbers (if any), first compare the **leading text**.
 
 Our final comparer looks like this:
 
@@ -512,7 +512,12 @@ public class StringComparerTests
 }
 ```
 
-Of interest is the fact that this has been [properly implemented in .NET 10](https://towardsdev.com/harnessing-net-10s-numeric-string-comparison-a-game-changer-for-your-code-5c5275ace6ff), but it is always fun (and a learning experience) to try to implement some of these things.
+We can improve this in several ways:
+
+1. Add support to locales that use `,` or anything else, as a `decimal` separator.
+2. Support sorting of complex items like versions e.g. 1.0.2.2 vs 2.0.1
+
+Of interest is the fact that this has been properly [implemented](https://github.com/dotnet/runtime/pull/109861) in .NET 10, but it is always fun (and a learning experience) to try to implement some of these things.
 
 ### TLDR
 
