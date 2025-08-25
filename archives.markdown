@@ -8,22 +8,27 @@ permalink: /archives/
   {% posts_word_count total %}
 {% endcapture %}
 
-<h2>Total Posts: {{ count }}</h2>
+## Total Posts: {{ count }}
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
 {% assign yearCount = year.items | size %}
-  <h3>{{ year.name }} Posts : {{yearCount}}</h3>
-  {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
 
+### {{ year.name }} Posts : {{yearCount}}
+
+{% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
 
 {% for month in postsByMonth %}
 {% assign monthCount = month.items | size %}
-<h3>{{ month.name }} {{ year.name }} - <i>{{monthCount}}  Posts</i></h3>
+
+### {{ month.name }} {{ year.name }} ({{monthCount}}  Posts)
+
  {% assign postsByWeek = month.items | group_by_exp:"post", "post.date | date: '%V'"  %}
 
   {% for week in postsByWeek %}
-  <h4> 📅 Week {{week.name}}</h4>
+
+#### 📅 Week {{week.name}}
+  
   <ol reversed type="i">
   {% for post in week.items %}
     <li>

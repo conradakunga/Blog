@@ -1,0 +1,15 @@
+---
+layout: null
+---
+[
+  {% assign count = 0 %}
+  {% for post in site.posts %}
+    {% if count > 0 %},{% endif %}
+    {
+      "title": {{ post.title | jsonify }},
+      "url": {{ post.url | jsonify }},
+      "content": {{ post.content | strip_html | normalize_whitespace | jsonify }}
+    }
+    {% assign count = count | plus: 1 %}
+  {% endfor %}
+]
