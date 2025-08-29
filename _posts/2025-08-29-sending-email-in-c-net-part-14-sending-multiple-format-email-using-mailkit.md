@@ -140,6 +140,6 @@ We also have the **plain text** version of the email.
 
 The `BodyBuilder` object in `MailKit` allows for the construction of elaborate, multi-format email messages.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-29%20-%20MailKit%20Multi%20Format).
 
 Happy hacking!
