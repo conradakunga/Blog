@@ -7,6 +7,7 @@ categories:
     - .NET
     - Email
     - StarLibrary
+    - MailKit
 ---
 
 This is Part 10 of a series on sending email.
@@ -22,6 +23,7 @@ This is Part 10 of a series on sending email.
 - [Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP]({% post_url 2025-07-28-sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp %})
 - **Sending Email In C# & .NET - Part 10 - Sending Plain Text Email Using MailKit (This Post)**
 - [Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit]({% post_url 2025-08-26-sending-email-in-c-net-part-11-sending-html-email-using-mailkit %})
+- [Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit]({% post_url 2025-08-27-sending-email-in-c-net-part-12-sending-email-with-attachments-using-mailkit %}) 
 
 In the previous post, "[Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP]({% post_url 2025-07-28-sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp %})," we explored how to send emails in multiple formats—plain text and HTML — using SMTP.
 
@@ -90,8 +92,8 @@ using (var client = new SmtpClient())
 {
     Log.Information("Connecting to smtp server...");
     await client.ConnectAsync("localhost", 25, false);
-    //Typically, authenticate here. But we are using PaperCut 
-    //await client.AuthenticateAsync("joey", "password");
+    // Typically, authenticate here. But we are using PaperCut 
+    //await client.AuthenticateAsync("username", "password");
     await client.SendAsync(message);
     Log.Information("Sent message");
     await client.DisconnectAsync(true);

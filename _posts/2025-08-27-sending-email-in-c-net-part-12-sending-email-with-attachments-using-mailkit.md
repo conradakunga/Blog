@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit
-date: 2025-08-26 05:51:48 +0300
+title: Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit
+date: 2025-08-27 06:16:32 +0300
 categories:
     - C#
     - .NET
@@ -10,7 +10,7 @@ categories:
     - MailKit
 ---
 
-This is Part 11 of a series on sending email.
+This is Part 12 of a series on sending email.
 
 - [Sending Email in C# & .NET  - Part 1 - Introduction]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %})
 - [Sending Email in C# & .NET - Part 2 - Delivery]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %})
@@ -22,23 +22,26 @@ This is Part 11 of a series on sending email.
 - [Sending Email In C# & .NET - Part 8 - Sending HTML Email Using SMTP]({% post_url 2025-07-27-sending-email-in-c-net-part-8-sending-html-email-using-smtp %})
 - [Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP]({% post_url 2025-07-28-sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp %})
 - [Sending Email In C# & .NET - Part 10 - Sending Plain Text Email Using MailKit]({% post_url 2025-08-25-sending-email-in-c-net-part-10-sending-plain-text-email-using-mailkit %})
-- **Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit (This post)**
-- [Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit]({% post_url 2025-08-27-sending-email-in-c-net-part-12-sending-email-with-attachments-using-mailkit %}) 
+- [Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit]({% post_url 2025-08-26-sending-email-in-c-net-part-11-sending-html-email-using-mailkit %})
+- **Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit (This post)**
 
-Our last post, "[Sending Email In C# & .NET - Part 10 - Sending Plain Text Email Using MailKit]({% post_url 2025-08-25-sending-email-in-c-net-part-10-sending-plain-text-email-using-mailkit %})", looked at how to send plain text email using [MailKit](https://github.com/jstedfast/MailKit).
+Our last post, "[Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit]({% post_url 2025-08-26-sending-email-in-c-net-part-11-sending-html-email-using-mailkit %})", looked at how to send HTML email using `MailKit`.
 
-In this post, we will look at how to send an **HTML** email.
+In this post, we will look at how to send an email with **attachments**.
 
-The process is **exactly the same as before**:
+The process is as follows:
 
 1. Create a `MimeMessage`
 2. Create one (or more) `MailboxAddress` for the recipients and add to the `To` collection of the `MimeMessage`
 3. Create one `MailboxAddress` for the sender and add it to the `From` collection of the `MimeMessage`
 4. Set  the `Subject` of the `MimeMessage`
-5. Set the `Body` of the `MimeMessage`
-6. Send the message using the `SmtpClient`. This is the `SmtpClient` from `MailKit`, not the one in [System.Net](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0).
+5. Create a `TextPart` for the email body.
+6. Create a `MimePart` for the attachment
+7. Create a `Multipart` (mixed), to which we add the `TextPart` and the `MimePart`.
+8. Set the message `Body` to be the `Multipart`.
+9. Send the message using the `SmtpClient`. This is the `SmtpClient` from `MailKit`, not the one in [System.Net](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0).
 
-The difference is how the `Body` is set.
+The code is as follows:
 
 ```c#
 using MailKit.Net.Smtp;
@@ -57,26 +60,37 @@ message.From.Add(new MailboxAddress("James Bond", "james@mi5.org"));
 // Set the recipient
 message.To.Add(new MailboxAddress("M", "m@mi5.org"));
 // Set the email subject
-message.Subject = "Deployment Status - Follow Up";
+message.Subject = "Mission Listing";
 
-var textBody = new TextPart("html")
+// Create the text body
+var textBody = new TextPart("plain")
 {
     Text = """
            Dear M,
-           <br/>
-           <br/>
-           Subject Refers.
-           <br/>
-           <br/>
-           I would like to <i>kindly</i> follow up on my last email requesting to know my deployment
-           status.
-           <br/>
-           <br/>
-           <b>I have been at home for six weeks now!<b>.
+
+           As requested, kindly find attached a list of the missions I have carried
+           out since you took over command.
+
+           Warest regards
            """
 };
 
-message.Body = textBody;
+// create the attachment
+var attachment = new MimePart("text", "plain")
+{
+    Content = new MimeContent(File.OpenRead("Missions.txt")),
+    ContentDisposition = new ContentDisposition(ContentDisposition.Attachment),
+    ContentTransferEncoding = ContentEncoding.Base64,
+    FileName = "Missions.txt"
+};
+
+// Create a container for the body text & attachment
+var parts = new Multipart("mixed");
+parts.Add(textBody);
+parts.Add(attachment);
+
+// Set the body
+message.Body = parts;
 
 // Now send the email
 using (var client = new SmtpClient())
@@ -92,39 +106,16 @@ using (var client = new SmtpClient())
 }
 ```
 
-The magic is happening here, where we construct the `TextPart`.
+If we run this code, the email will look like this:
 
-```c#
-var textBody = new TextPart("html")
-{
-    Text = """
-           Dear M,
-           <br/>
-           <br/>
-           Subject Refers.
-           <br/>
-           <br/>
-           I would like to <i>kindly</i> follow up on my last email requesting to know my deployment
-           status.
-           <br/>
-           <br/>
-           <b>I have been at home for six weeks now!<b>.
-           """
-};
-```
+![MimeKitAttachmentsBody](../images/2025/08/MimeKitAttachmentsText.png)
 
-The argument value `"html"` is what is used to construct the **HTML body** for the email.
-
-If we run this code to send the email, it will appear as follows at the client:
-
-![MailKitHtml](../images/2025/08/MailKitHtml.png)
-
-We can see here that the email is sent in `HTML` format.
+![MimeKitAttachmentsBody](../images/2025/08/MimeKitAttachmentsBody.png)
 
 ### TLDR
 
-**In this post, we looked at how to send HTML email using `MailKit`, where we create a `TextPart` and pass `"html"` as the argument.**
+**In this post, we looked at how to send an email with attachments using `MailKit`.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-26%20-%20MailKit%20HTMLEmail).
+The code is in my GitHub.
 
 Happy hacking!
