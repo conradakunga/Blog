@@ -116,6 +116,6 @@ If we run this code, the email will look like this:
 
 **In this post, we looked at how to send an email with attachments using `MailKit`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-27%20-%20MailKit%20Attachments).
 
 Happy hacking!
