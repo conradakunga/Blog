@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit
-date: 2025-08-27 06:16:32 +0300
+title: Sending Email In C# & .NET - Part 14 - Sending Multiple Format Email Using MailKit
+date: 2025-08-29 09:42:38 +0300
 categories:
     - C#
     - .NET
@@ -10,7 +10,7 @@ categories:
     - MailKit
 ---
 
-This is Part 12 of a series on sending email.
+This is part 14 of a series on sending Email
 
 - [Sending Email in C# & .NET  - Part 1 - Introduction]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %})
 - [Sending Email in C# & .NET - Part 2 - Delivery]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %})
@@ -23,13 +23,13 @@ This is Part 12 of a series on sending email.
 - [Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP]({% post_url 2025-07-28-sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp %})
 - [Sending Email In C# & .NET - Part 10 - Sending Plain Text Email Using MailKit]({% post_url 2025-08-25-sending-email-in-c-net-part-10-sending-plain-text-email-using-mailkit %})
 - [Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit]({% post_url 2025-08-26-sending-email-in-c-net-part-11-sending-html-email-using-mailkit %})
-- **Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit (This post)**
-- [Sending Email In C# & .NET - Part 13 - Sending Email With Inline Attachments Using MailKit]({% post_url 2025-08-28-sending-email-in-c-net-part-13-sending-email-with-inline-attachments-using-mailkit%})
-- [Sending Email In C# & .NET - Part 14 - Sending Multiple Format Email Using MailKit]({% post_url 2025-08-29-sending-email-in-c-net-part-14-sending-multiple-format-email-using-mailkit %})
+- [Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit]({% post_url 2025-08-27-sending-email-in-c-net-part-12-sending-email-with-attachments-using-mailkit %}) 
+- [Sending Email In C# & .NET - Part 13 - Sending Email With Inline Attachments Using MailKit]({% post_url 2025-08-28-sending-email-in-c-net-part-13-sending-email-with-inline-attachments-using-mailkit %})
+- **Sending Email In C# & .NET - Part 14 - Sending Multiple Format Email Using MailKit (This post)**
 
-Our last post, "[Sending Email In C# & .NET - Part 11 - Sending HTML Email Using MailKit]({% post_url 2025-08-26-sending-email-in-c-net-part-11-sending-html-email-using-mailkit %})", looked at how to send HTML email using `MailKit`.
+In our last post, "[Sending Email In C# & .NET - Part 13 - Sending Email With Inline Attachments Using MailKit]({% post_url 2025-08-28-sending-email-in-c-net-part-13-sending-email-with-inline-attachments-using-mailkit  %})", we looked at how to send inline attachments using MailKit.
 
-In this post, we will look at how to send an email with **attachments**.
+In this post, we will look at how to send an email with **multiple formats**.
 
 The process is as follows:
 
@@ -37,17 +37,19 @@ The process is as follows:
 2. Create one (or more) `MailboxAddress` for the recipients and add to the `To` collection of the `MimeMessage`
 3. Create one `MailboxAddress` for the sender and add it to the `From` collection of the `MimeMessage`
 4. Set  the `Subject` of the `MimeMessage`
-5. Create a `TextPart` for the email body.
-6. Create a `MimePart` for the attachment
-7. Create a `Multipart` (mixed), to which we add the `TextPart` and the `MimePart`.
-8. Set the message `Body` to be the `Multipart`.
-9. Send the message using the `SmtpClient`. This is the `SmtpClient` from `MailKit`, not the one in [System.Net](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0).
+5. Create a `BodyBuilder`
+6. Add `LinkedResources` to the `BodyBuilder` (if any)
+7. Set the `TextBody` of the the `BodyBuilder`
+8. Set the `HtmlBody` of the the `BodyBuilder`
+9. Set the body from the `BodyBuilder`
+10. Send the message using the `SmtpClient`. This is the `SmtpClient` from `MailKit`, not the one in [System.Net](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0).
 
 The code is as follows:
 
 ```c#
 using MailKit.Net.Smtp;
 using MimeKit;
+using MimeKit.Utils;
 using Serilog;
 
 // Configure logging to the console
@@ -62,37 +64,46 @@ message.From.Add(new MailboxAddress("James Bond", "james@mi5.org"));
 // Set the recipient
 message.To.Add(new MailboxAddress("M", "m@mi5.org"));
 // Set the email subject
-message.Subject = "Mission Listing";
+message.Subject = "Christmas Card";
 
-// Create the text body
-var textBody = new TextPart("plain")
-{
-    Text = """
+var builder = new BodyBuilder();
+
+// Create a LinkedResource with the image
+var image1 = builder.LinkedResources.Add("Bond1.jpeg");
+// Generate an ID for use in linkage
+image1.ContentId = MimeUtils.GenerateMessageId();
+
+// Add the card attachment
+builder.Attachments.Add("Card.txt");
+
+// Build the html version of the message text using the IDs
+var htmlBody = $"""
+                <p>Dear M,<br/>
+                <p>Merry Christmas From Me<br/>
+                <br/
+                <center>
+                <img src="cid:{image1.ContentId}">
+                </center>
+                <p>James<br>
+                """;
+
+// Set the html body
+builder.HtmlBody = htmlBody;
+
+// Build the html version of the message text using the IDs
+var body = """
            Dear M,
 
-           As requested, kindly find attached a list of the missions I have carried
-           out since you took over command.
+           Merry Christmas From Me
 
-           Warmest regards
-           """
-};
+           James
+           """;
 
-// create the attachment
-var attachment = new MimePart("text", "plain")
-{
-    Content = new MimeContent(File.OpenRead("Missions.txt")),
-    ContentDisposition = new ContentDisposition(ContentDisposition.Attachment),
-    ContentTransferEncoding = ContentEncoding.Base64,
-    FileName = "Missions.txt"
-};
+// Set the plain text body
+builder.TextBody = body;
 
-// Create a container for the body text & attachment
-var parts = new Multipart("mixed");
-parts.Add(textBody);
-parts.Add(attachment);
-
-// Set the body
-message.Body = parts;
+// Set the message body 
+message.Body = builder.ToMessageBody();
 
 // Now send the email
 using (var client = new SmtpClient())
@@ -108,16 +119,27 @@ using (var client = new SmtpClient())
 }
 ```
 
-If we run this code, the email will look like this:
+If we run this code, the resulting email will be as follows:
 
-![MimeKitAttachmentsBody](../images/2025/08/MimeKitAttachmentsText.png)
+![MailKitMultiEmail](../images/2025/08/MailKitMultiEmail.png)
 
-![MimeKitAttachmentsBody](../images/2025/08/MimeKitAttachmentsBody.png)
+Of particular interest:
+
+![MailKitMultiAttachments](../images/2025/08/MailKitMultiAttachments.png)
+
+Where we are seeing:
+
+- **Inline attachment** for the HTML body
+- **File attachment** for the card
+
+We also have the **plain text** version of the email.
+
+![MailKitMultiText](../images/2025/08/MailKitMultiText.png)
 
 ### TLDR
 
-**In this post, we looked at how to send an email with attachments using `MailKit`.**
+The `BodyBuilder` object in `MailKit` allows for the construction of elaborate, multi-format email messages.
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-27%20-%20MailKit%20Attachments).
+The code is in my GitHub.
 
 Happy hacking!
