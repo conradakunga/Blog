@@ -26,6 +26,7 @@ This is part 14 of a series on sending Email
 - [Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit]({% post_url 2025-08-27-sending-email-in-c-net-part-12-sending-email-with-attachments-using-mailkit %}) 
 - [Sending Email In C# & .NET - Part 13 - Sending Email With Inline Attachments Using MailKit]({% post_url 2025-08-28-sending-email-in-c-net-part-13-sending-email-with-inline-attachments-using-mailkit %})
 - **Sending Email In C# & .NET - Part 14 - Sending Multiple Format Email Using MailKit (This post)**
+- [Sending Email In C# & .NET - Part 15 - Sending Calendar Invites Using MailKit]({% post_url 2025-08-30-sending-email-in-c-net-part-15-sending-calendar-invites-using-mailkit %})
 
 In our last post, "[Sending Email In C# & .NET - Part 13 - Sending Email With Inline Attachments Using MailKit]({% post_url 2025-08-28-sending-email-in-c-net-part-13-sending-email-with-inline-attachments-using-mailkit  %})", we looked at how to send inline attachments using MailKit.
 
@@ -40,7 +41,7 @@ The process is as follows:
 5. Create a `BodyBuilder`
 6. Add `LinkedResources` to the `BodyBuilder` (if any)
 7. Set the `TextBody` of the the `BodyBuilder`
-8. Set the `HtmlBody` of the the `BodyBuilder`
+8. Set the `HtmlBody` of the `BodyBuilder`
 9. Set the body from the `BodyBuilder`
 10. Send the message using the `SmtpClient`. This is the `SmtpClient` from `MailKit`, not the one in [System.Net](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0).
 

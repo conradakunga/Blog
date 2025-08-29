@@ -25,12 +25,13 @@ This is Part 4 of a series on sending email.
 - [Sending Email In C# & .NET - Part 12 - Sending Email With Attachments Using MailKit]({% post_url 2025-08-27-sending-email-in-c-net-part-12-sending-email-with-attachments-using-mailkit %}) 
 - [Sending Email In C# & .NET - Part 13 - Sending Email With Inline Attachments Using MailKit]({% post_url 2025-08-28-sending-email-in-c-net-part-13-sending-email-with-inline-attachments-using-mailkit%})
 - [Sending Email In C# & .NET - Part 14 - Sending Multiple Format Email Using MailKit]({% post_url 2025-08-29-sending-email-in-c-net-part-14-sending-multiple-format-email-using-mailkit %})
+- [Sending Email In C# & .NET - Part 15 - Sending Calendar Invites Using MailKit]({% post_url 2025-08-30-sending-email-in-c-net-part-15-sending-calendar-invites-using-mailkit %})
 
 In our [last post]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %}), we looked at how to send email using [Gmail](https://mail.google.com/mail/).
 
 In this post, we will look at how to send email using [Office 365](https://www.office.com/).
 
-Historically, it was possible to send email through [SMTP](https://aws.amazon.com/what-is/smtp/). However, Microsoft is deprecating this and recommending the use of the [Graph API](https://learn.microsoft.com/en-us/graph/use-the-api).
+Historically, it was possible to send email through [SMTP](https://aws.amazon.com/what-is/smtp/). However, Microsoft is deprecating this and recommending the use of the [Graph API](https://learn.microsoft.com/en-us/graph/use-the-api) instead.
 
 It requires quite a bit more legwork, as outlined below. 
 
