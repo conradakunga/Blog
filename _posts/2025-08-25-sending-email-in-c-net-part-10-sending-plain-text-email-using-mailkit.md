@@ -45,7 +45,7 @@ To send an email using `MailKit`, the following are the steps:
 5. Set the `Body` of the `MimeMessage`
 6. Send the message using the `SmtpClient`. This is the `SmtpClient` from `MailKit`, not the one in [System.Net](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0).
 
-Before we write our code, we first run our local SMTP server, [PaperCut](https://github.com/ChangemakerStudios/Papercut-SMTP), via [Docker](https://www.docker.com/). We have discussed this before in the post [Sending Email In C# & .NET - Part 6 - Testing SMTP Locally Using PaperCut]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %})
+Before we write our code, we first run our **local SMTP server**, [PaperCut](https://github.com/ChangemakerStudios/Papercut-SMTP), via [Docker](https://www.docker.com/). We have discussed this before in the post [Sending Email In C# & .NET - Part 6 - Testing SMTP Locally Using PaperCut]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %})
 
 ```c#
 docker run -d -p 8080:80 -p 25:25 changemakerstudiosus/papercut-smtp:latest
@@ -116,6 +116,6 @@ If we check our **PaperCut** inbox:
 
 **In this post, we looked at how to send email using MailKit, which is the recommended way to send email going forward.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-29%20-%20MailKit%20Email).
 
 Happy hacking!
