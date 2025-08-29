@@ -117,6 +117,6 @@ Naturally, **inline** images are only supported for **HTML** email.
 
 **`MimeKit` supports sending of inline images for HTML using the `BodyBuilder` object.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-28%20-%20MailKit%20Inline%20Attachments).
 
 Happy hacking!
