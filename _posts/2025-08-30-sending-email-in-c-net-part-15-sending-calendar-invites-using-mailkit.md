@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sending Email In C# & .NET - Part 15 - Sending Calendar Invites Using MailKit
-date: 2025-08-30 11:12:54 +0300
+date: 2025-08-30 00:00:54 +0300
 categories:
     - C#
     - .NET
