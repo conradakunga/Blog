@@ -123,6 +123,6 @@ We can see here that the email is sent in `HTML` format.
 
 **In this post, we looked at how to send HTML email using `MailKit`, where we create a `TextPart` and pass `"html"` as the argument.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-26%20-%20MailKit%20HTMLEmail).
 
 Happy hacking!

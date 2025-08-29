@@ -117,6 +117,6 @@ If we check our **PaperCut** inbox:
 
 **In this post, we looked at how to send email using MailKit, which is the recommended way to send email going forward.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-29%20-%20MailKit%20Email).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-25%20-%20MailKit%20Email).
 
 Happy hacking!
