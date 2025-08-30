@@ -7,11 +7,11 @@ categories:
     - FluentAssertions
 ---
 
-So, in a [past post]({%  post_url 2025-01-16-there-be-dragons-fluentassertions-8-new-licensing %}), I covered the debacle around the recent change in the [FluentAssertions](https://fluentassertions.com/) library. But the hawk-eyed among you noticed that despite being a [huge]({% post_url 2025-01-18-evaluating-multiple-test-assertions-at-once-with-fluentassertions %}) [proponent]({% post_url 2021-07-25-better-assertion-testing-with-fluentassertions %}) of the library, **I did not, in fact, say what I intended to do about the situation** and emailed me to ask.
+So, in a [previous post]({%  post_url 2025-01-16-there-be-dragons-fluentassertions-8-new-licensing %}), I covered the debacle around the recent change in the [FluentAssertions](https://fluentassertions.com/) library. But the hawk-eyed among you noticed that, despite being a [huge]({% post_url 2025-01-18-evaluating-multiple-test-assertions-at-once-with-fluentassertions %}) [proponent]({% post_url 2021-07-25-better-assertion-testing-with-fluentassertions %}) of the library, **I did not, in fact, say what I intended to do about the situation** and emailed me to ask.
 
 My thoughts are as follows:
 
-I want to start by gratefully **thanking the library's authors**, led by [Dennis Doomen](https://twitter.com/ddoomen) and [Jonas Nyrup](https://github.com/jnyrup). It is a first-class library with [excellent documentation](https://fluentassertions.com/introduction) I have used for many years.
+I want to start by gratefully **thanking the library's authors**, led by [Dennis Doomen](https://twitter.com/ddoomen) and [Jonas Nyrup](https://github.com/jnyrup). It is a first-class library with [excellent documentation](https://fluentassertions.com/introduction) that I have used for many years.
 
 I first ran into it when I found myself working with two sets of projects - some that had their tests written in [xUnit](https://xunit.net/) and the others written in [NUnit](https://nunit.org/). In case you have yet to use either, they have unique ways of asserting, which are **similar** but **different**.
 
@@ -60,19 +60,19 @@ That price point is **absurd**.
 
 So here is what I intend to do.
 
-1. I will **not** be upgrading to version 8, the paid version.
+1. I will **not** be upgrading to the paid version 8.
 
 2. Any **new tests** will likely be written in a **different assertion library** - [Shoudly](https://docs.shouldly.org/)
 
-3. All my **existing** tests will remain as they are in version 7. 
+3. All my **existing** tests will remain unchanged in version 7. 
 
     
 
-    My rationale here is that there is no need to rewrite the tests - they work correctly as they are, and there is zero value in rewriting them - either to use `xUnit's` assertion clauses or `Shoudly's`
+    My rationale here is that there is no need to rewrite the tests - they work correctly as they are, and there is zero value in rewriting them, either to use `xUnit's` assertion clauses or `Shoudly's`
 
 ### TLDR
 
-**[FluentAssertiions](https://fluentassertions.com/introduction), while an excellent library, has a new price point that does not make fiscal sense. I will be migrating off it for new work to [Shouldy](https://docs.shouldly.org/) but will maintain existing tests in the last free version - 7.**
+**[FluentAssertions](https://fluentassertions.com/introduction), while an excellent library, has a new price point that does not make fiscal sense. I will be migrating off it for new work to [Shouldy,](https://docs.shouldly.org/) but will maintain existing tests in the last free version - 7.**
 
 Happy Hacking!
 
