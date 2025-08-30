@@ -27,7 +27,7 @@ This is Part 8 of a series on sending email.
 - [Sending Email In C# & .NET - Part 15 - Sending Calendar Invites Using MailKit]({% post_url 2025-08-30-sending-email-in-c-net-part-15-sending-calendar-invites-using-mailkit %})
 - [Sending Email In C# & .NET - Part 16 - Testing SMTP Locally Using Mailpit]({% post_url 2025-08-31-sending-email-in-c-net-part-16-testing-smtp-locally-using-mailpit %})
 
-In our last post in the series, [Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP]({% post_url 2025-07-26-sending-email-in-c-net-part-7-sending-inline-images-using-smtp %}), we discussed how to send email with inline images over SMTP.
+In our previous post in the series, "[Sending Email In C# & .NET - Part 7 - Sending Inline Images Using SMTP]({% post_url 2025-07-26-sending-email-in-c-net-part-7-sending-inline-images-using-smtp %})", we discussed how to send email with inline images over SMTP.
 
 In this post, we will look at **how to send an [HTML email](https://en.wikipedia.org/wiki/HTML_email)**.
 

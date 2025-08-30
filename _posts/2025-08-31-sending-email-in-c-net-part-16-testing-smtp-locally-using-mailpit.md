@@ -25,7 +25,7 @@ This is part 16 of a series on sending Email
 - [Sending Email In C# & .NET - Part 13 - Sending Email With Inline Attachments Using MailKit]({% post_url 2025-08-28-sending-email-in-c-net-part-13-sending-email-with-inline-attachments-using-mailkit %})
 - [Sending Email In C# & .NET - Part 14 - Sending Multiple Format Email Using MailKit]({ post_url 2025-08-29-sending-email-in-c-net-part-14-sending-multiple-format-email-using-mailkit })
 - [Sending Email In C# & .NET - Part 15 - Sending Calendar Invites Using MailKit]({% post_url 2025-08-30-sending-email-in-c-net-part-15-sending-calendar-invites-using-mailkit %})
-- **Sending Email In C# & .NET - Part 16 - Testing SMTP Locally Using PaperCut (This post)**
+- **Sending Email In C# & .NET - Part 16 - Testing SMTP Locally Using Mailpit (This post)**
 
 In a past post in this series, "[Sending Email In C# & .NET - Part 6 - Testing SMTP Locally Using PaperCut]({% post_url 2025-07-22-sending-email-in-c-net-part-6-testing-smtp-locally-using-papercut %})", we discussed how to use [PaperCut](https://github.com/ChangemakerStudios/Papercut-SMTP) as a local SMTP server to make it easier to test sending and visualizing sent email.
 
