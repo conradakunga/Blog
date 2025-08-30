@@ -24,7 +24,7 @@ draft: true
 
 ## Company Blogs
 
-- [Afroshok](https://afroshok.com/work) - Design, Softare
+- [Afroshok](https://afroshok.com/work) - Design, Software
 - [Innova](https://blogs.innova.co.ke/) - Software, Quants
 - [KopoKopo](https://kopokopo.medium.com/) - Payments
 - [PesaPal](https://www.pesapal.com/blog) - Payments

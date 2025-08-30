@@ -12,7 +12,7 @@ categories:
 
 This is part 15 of a series on sending Email
 
-- [Sending Email in C# & .NET  - Part 1 - Introduction]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %})
+- [Sending Email in C# & .NET - Part 1 - Introduction]({% post_url 2025-07-17-sending-email-in-c-net-part-1-introduction %})
 - [Sending Email in C# & .NET - Part 2 - Delivery]({% post_url 2025-07-18-sending-email-in-c-net-part-2-delivery %})
 - [Sending Email in C# & .NET - Part 3 - Using Gmail]({% post_url 2025-07-19-sending-email-in-c-net-part-3-using-gmail %})
 - [Sending Email In C# & .NET - Part 4 - Using Office 365 & MS Graph API]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %})
@@ -27,6 +27,7 @@ This is part 15 of a series on sending Email
 - [Sending Email In C# & .NET - Part 13 - Sending Email With Inline Attachments Using MailKit]({% post_url 2025-08-28-sending-email-in-c-net-part-13-sending-email-with-inline-attachments-using-mailkit %})
 - [Sending Email In C# & .NET - Part 14 - Sending Multiple Format Email Using MailKit]({ post_url 2025-08-29-sending-email-in-c-net-part-14-sending-multiple-format-email-using-mailkit })
 - **Sending Email In C# & .NET - Part 15 - Sending Calendar Invites Using MailKit (This post)**
+- [Sending Email In C# & .NET - Part 16 - Testing SMTP Locally Using Mailpit]({% post_url 2025-08-31-sending-email-in-c-net-part-16-testing-smtp-locally-using-mailpit %})
 
 Our last post, "[Sending Email In C# & .NET - Part 14 - Sending Multiple Format Email Using MailKit]({% post_url 2025-08-29-sending-email-in-c-net-part-14-sending-multiple-format-email-using-mailkit %})", looked at how to send multiple-format email.
 
@@ -169,7 +170,7 @@ We can see here that [Outlook](https://www.microsoft.com/en-us/microsoft-365/out
 
 ### TLDR
 
-**`MailKit` can send emails that can be rendered inline by sophisticated email clients.**
+**`MailKit` can send calendar invites that can be rendered inline by sophisticated email clients.**
 
 The code is in my GitHub.
 
