@@ -24,7 +24,7 @@ This will print the following:
 Aug 20th Aug
 ```
 
-I however noticed something curious when I attempted to use the [ToString()](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=net-9.0) method of the [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-9.0). Indeed, there is an [overload](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=net-9.0#system-datetime-tostring(system-iformatprovider)) supporting passing of am [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-9.0).
+I, however, noticed something curious when I attempted to use the [ToString()](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=net-9.0) method of the [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-9.0). Indeed, there is an [overload](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=net-9.0#system-datetime-tostring(system-iformatprovider)) supporting passing of an [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-9.0).
 
 ```c#
 Console.WriteLine(date.ToString("do MMM yyyy", new OrdinalDateFormatProvider()));
@@ -38,18 +38,18 @@ This prints the following:
 
 You can see here that the ordinal format string , `o`, is **ignored**.
 
-I found this curious, because on paper it should work.
+I found this curious because, on paper, it should work.
 
-I turns out that how `ToString()` and `String.Format()` work are different.
+It turns out that how `ToString()` and `String.Format()` work is different.
 
-`String.Format()` direcly **delegates the formatting to the specified provider**. It is up to the provider to either **handle** it or **delegate** it further..
+`String.Format()` directly **delegates the formatting to the specified provider**. It is up to the provider to either **handle** it or **delegate** it further..
 
-`ToString()` however **works the other way, and to get it to use the custom one, the entire string, treated as a block, must be rejected but the default provider**.
+`ToString()`, however, **works the other way. It will only use the custom provider if none of the components of the format string are recognized by the default provider**.
 
-In this case, it is recognizing `MMM` as a valid string **and deciding to use that instead**.
+In this case, it recognizes `MMM` as a valid string and decides to use it instead.
 
 ### TLDR
 
-To have maximum flexibility, use string.Format to be in full control of how your data is formatted.
+**To have maximum flexibility, use `String.Format` to be in full control of how your data is formatted.**
 
 Happy hacking!
