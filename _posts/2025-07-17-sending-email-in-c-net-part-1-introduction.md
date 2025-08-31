@@ -49,7 +49,7 @@ Note that this is **NOT** the [MailMessage](https://learn.microsoft.com/en-us/do
 
 ## Sending A Plain Text Email
 
-The following example will create a basic email message, from you `your-email@gmail.com` to a recipient, `recipient@example.com`
+The following example will create a basic email message, from you, `your-email@gmail.com` to a recipient, `recipient@example.com`
 
 ```c#
 var mail = new MailMessage
@@ -66,7 +66,7 @@ By default, this message will be in **plain text**.
 
 ## Sending an HTML Email
 
-If you want to send a [HTML email](https://en.wikipedia.org/wiki/HTML_email), set the content as follows:
+If you want to send an [HTML email](https://en.wikipedia.org/wiki/HTML_email), set the content as follows:
 
 ```c#
 var mail = new MailMessage
@@ -151,7 +151,7 @@ mail.Bcc.Add("thirdrecipient@example.com");
 
 ## Attaching Files From Streams
 
-Sometimes, the attachments you want to add are not located in the file system. Perhaps they are from **blob storage**, or from a **database**, or some sort of **streaming service**.
+Sometimes, the attachments you want to add are not located in the file system. Perhaps they are from **blob storage**, a database, or a **streaming service**.
 
 In which case, we attach them like this:
 
@@ -181,7 +181,7 @@ As mentioned earlier, email can be sent either as HTML or as plain text.
 
 The challenge arises when recipients are **unable** or **unwilling** to consume the email in the **sent format**. For example, thanks to spam and tracking, most people **disable HTML email** altogether.
 
-In this case, the solution is to send an email with both views, so that the downstream consumer can decide which one they want to view. This is to say, the email contains **BOTH** plain text and HTML.
+In this case, the solution is to send an email with both views, allowing the downstream consumer to decide which one they want to view. This is to say, the email contains **BOTH** plain text and HTML.
 
 ```c#
 var mail = new MailMessage

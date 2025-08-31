@@ -43,7 +43,7 @@ This means that the email, rather than going to the internet, will be deposited 
 
 The first step is to select a folder for pickup. In my case, I will use the `Temp` folder, which I can retrieve using the [Path.GetTempPath()](https://learn.microsoft.com/en-us/dotnet/api/system.io.path.gettemppath?view=net-9.0&tabs=windows) method.
 
-Next is to configure the `SmtpClient` to deliver using the method by setting the [DeliveryMethod](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient.deliverymethod?view=net-9.0) property and setting the [PickupDirectoryLocation](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient.pickupdirectorylocation?view=net-9.0#system-net-mail-smtpclient-pickupdirectorylocation) to the folder specified earlier.
+Next, configure the SmtpClient to deliver using the specified method by setting the [DeliveryMethod](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient.deliverymethod?view=net-9.0) property and setting the [PickupDirectoryLocation](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient.pickupdirectorylocation?view=net-9.0#system-net-mail-smtpclient-pickupdirectorylocation) to the folder specified earlier.
 
 ```c#
 // Get the temp folder
@@ -114,9 +114,9 @@ The other, and probably the method you use most of the time, is to set the SMTP 
 
 For this, you will need to know the following things:
 
-1. The address of the server
-2. The port to use
-3. Credentials to access the server
+1. The **address** of the server
+2. The **port** to use
+3. **Credentials** to access the server
 
 The server could be something you run on your own network or a third-party service, such as Gmail or Office 365.
 

@@ -15,7 +15,7 @@ I use it to run a bunch of [Docker](https://www.docker.com/) containers, one of 
 
 Recently, I wanted to change the WiFi network it was operating on and found, to my consternation, that the mouse had died.
 
-How then, could I get the device to join a network?
+How then could I get the device to join a network?
 
 The terminal to the rescue!
 

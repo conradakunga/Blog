@@ -25,7 +25,7 @@ dotnet add package Spectre.Console.Cli
 
 We will first start with a simple flow where we assume the user is a novice.
 
-We will ask for all the requirements from the user.
+We will request all the necessary requirements from the user.
 
 ```c#
 using Spectre.Console;

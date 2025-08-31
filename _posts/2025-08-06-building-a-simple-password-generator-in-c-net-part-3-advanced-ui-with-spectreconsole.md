@@ -129,7 +129,7 @@ Then we update our code to put the password in the clipboard.
 ClipboardService.SetText(password);
 ```
 
-Now, if we run our code, all we need to do is **paste the newly generated password** wherever we need to use it.
+Now, when we run our code, all we need to do is **paste the newly generated password** wherever we need to use it.
 
 Finally, as an additional enhancement and **security** improvement, we should **not openly display the password** that we have just generated.
 

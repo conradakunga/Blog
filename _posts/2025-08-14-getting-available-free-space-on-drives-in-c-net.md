@@ -128,9 +128,9 @@ A couple of things of interest:
 
 - The concept of a **Drive** goes beyond just physical disks
 - The [DriveTypes](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo.drivetype?view=net-9.0) map to [one of the following](https://learn.microsoft.com/en-us/dotnet/api/system.io.drivetype?view=net-9.0)
-- You should **check if the drive is ready** before attempting to access it - some drives, such as removable drives might throw exceptions if you try to access them before they are ready.
+- You should **check if the drive is ready** before attempting to access it - some drives, such as removable drives, might throw exceptions if you try to access them before they are ready.
 
-Note that if you run this code repeatedly your **results about free space might change depending on what else the operating system is doing**.
+Note that if you run this code repeatedly, your **results about free space might change depending on what else the operating system is doing**.
 
 ### TLDR
 

@@ -51,10 +51,10 @@ list.AddRange([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
 ## Insert Element In Position
 
-If you have an element and you want to insert it into a particular position, you can use the [Insert](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.insert?view=net-9.0) method, which specifies the **position** and the **element** to insert.
+If you have an element and you want to insert it into a specific position, you can use the [Insert](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.insert?view=net-9.0) method, which specifies the **position** and the **element** to insert.
 
 ```c#
-// Add elements at particular position
+// Add elements at a particular position
 List<int> list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 list.Insert(0, -1);
 list.ForEach(Console.Write);
@@ -63,7 +63,7 @@ Console.WriteLine();
 
 ## Inserting Multiple Elements In Position
 
-If you have a number of elements and you want to insert them into a particular position, you can use the [InsertRange](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.insertrange?view=net-9.0) method which specifies the **position** to insert and the **elements** to insert.
+If you have a number of elements and you want to insert them into a particular position, you can use the [InsertRange](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.insertrange?view=net-9.0) method, which specifies the **position** to insert and the **elements** to insert.
 
 ```c#
 // Add range of elements at particular position

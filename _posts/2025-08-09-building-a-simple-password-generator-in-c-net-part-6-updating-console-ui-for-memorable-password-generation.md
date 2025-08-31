@@ -28,7 +28,7 @@ We support two types of memorable passwords:
 1. Normal, **uncapitalized** ones, in the form `bye-porch-urchin-caddy`
 2. **Capitalized** ones, in the form `vroom-poach-war-vee`
 
-The first step is updating our PasswordSettings class to add switches to support this.
+The first step is updating our `PasswordSettings` class to add switches to support this.
 
 First, the **normal** case:
 
@@ -124,7 +124,7 @@ In our [next post]({% post_url 2025-08-10-building-a-simple-password-generator-i
 
 ### TLDR
 
-**In this post, we have added support for generating memorable passwords (capitalized and otherwise) to the console application.**
+**In this post, we have added support for generating memorable passwords (both capitalized and uncapitalized) to the console application.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/PassGen).
 

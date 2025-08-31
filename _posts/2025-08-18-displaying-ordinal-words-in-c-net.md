@@ -13,7 +13,7 @@ In the previous post, [Displaying Ordinal Numbers In C# & .NET]({% post_url 2025
 
 These are numbers like 1<sup>st</sup>, 2<sup>nd</sup>, 3<sup>rd</sup>, 4<sup>th</sup>.
 
-In today's post we will look at a similar problem - how to display ordinal words.
+In today's post, we will look at a similar problem - how to display ordinal words.
 
 > On the first day of Christmas ...
 >
@@ -23,9 +23,9 @@ In today's post we will look at a similar problem - how to display ordinal words
 >
 > On the fourth day of Christmas ...
 
-**Ordinal words** here would refer to `first`, `second`, `third` and `fourth`.
+**Ordinal words** here would refer to `first`, `second`, `third,` and `fourth`.
 
-The solution to this is also the Humanizer library, and in particular the `ToOrdinalWords()` method.
+The solution to this is also the [Humanizer](https://github.com/Humanizr/Humanizer) library, specifically the `ToOrdinalWords()` method.
 
 ```c#
 var numbers = Enumerable.Range(1, 12);

@@ -56,7 +56,7 @@ The algorithm is as follows:
 To get a random `string`, we can use the following simple algorithm:
 
 1. Get a random character from the alphabet
-2. Repeat until you we get the required length
+2. Repeat until we get the required length
 
 The extension method that gets a random character looks like this:
 

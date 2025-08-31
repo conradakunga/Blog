@@ -49,7 +49,7 @@ The process is as follows:
 4. Set  the `Subject` of the `MimeMessage`
 5. Create a `TextPart` that will have the plain text for the less sophisticated clients.
 6. Create a `TextPart` that will have the calendar text for the more sophisticated clients. This should be rendered **inline**.
-7. Finally, create a `MultiPart` for both `TextPart`, and set that to the `MessageBody`.
+7. Finally, create a `MultiPart` for both `TextPart` items, and set that to the `MessageBody`.
 8. Send the message using the `SmtpClient`. This is the `SmtpClient` from `MailKit`, not the one in [System.Net](https://learn.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-9.0).
 
 The code would look like this:

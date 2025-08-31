@@ -52,7 +52,7 @@ public static string GeneratePassword(int numbers, int symbols, int passwordLeng
     ArgumentOutOfRangeException.ThrowIfNegative(numbers);
     ArgumentOutOfRangeException.ThrowIfNegative(symbols);
 
-    // Ensure the password lenght is legit
+    // Ensure the password length is legit
     ArgumentOutOfRangeException.ThrowIfLessThan(passwordLength, Constants.MinimumPasswordLength);
 
     // Ensure the number and symbols are congruent with requested password length
