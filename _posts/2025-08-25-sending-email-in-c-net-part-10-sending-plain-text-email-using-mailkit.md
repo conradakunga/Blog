@@ -29,7 +29,7 @@ This is Part 10 of a series on sending email.
 - [Sending Email In C# & .NET - Part 15 - Sending Calendar Invites Using MailKit]({% post_url 2025-08-30-sending-email-in-c-net-part-15-sending-calendar-invites-using-mailkit %})
 - [Sending Email In C# & .NET - Part 16 - Testing SMTP Locally Using Mailpit]({% post_url 2025-08-31-sending-email-in-c-net-part-16-testing-smtp-locally-using-mailpit %})
 
-In the previous post, "[Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP]({% post_url 2025-07-28-sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp %})," we explored how to send emails in multiple formats—plain text and HTML — using SMTP.
+In the previous post in this series, "[Sending Email In C# & .NET - Part 9 - Sending Multiple Format Email Using SMTP]({% post_url 2025-07-28-sending-email-in-c-net-part-9-sending-multiple-format-email-using-smtp %})," we explored how to send emails in multiple formats—plain text and HTML — using SMTP.
 
 In this post, we will explore how to send email using a more **modern**, feature-rich library: [MailKit](https://www.nuget.org/packages/mailkit/).
 
@@ -121,7 +121,7 @@ If we check our **PaperCut** inbox:
 
 ### TLDR
 
-**In this post, we looked at how to send email using MailKit, which is the recommended way to send email going forward.**
+**In this post, we looked at how to send email using `MailKit`, which is the recommended way to send email going forward.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-25%20-%20MailKit%20Email).
 
