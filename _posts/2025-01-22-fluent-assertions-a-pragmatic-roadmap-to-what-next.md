@@ -7,7 +7,7 @@ categories:
     - FluentAssertions
 ---
 
-So, in a [previous post]({%  post_url 2025-01-16-there-be-dragons-fluentassertions-8-new-licensing %}), I covered the debacle around the recent change in the [FluentAssertions](https://fluentassertions.com/) library. But the hawk-eyed among you noticed that, despite being a [huge]({% post_url 2025-01-18-evaluating-multiple-test-assertions-at-once-with-fluentassertions %}) [proponent]({% post_url 2021-07-25-better-assertion-testing-with-fluentassertions %}) of the library, **I did not, in fact, say what I intended to do about the situation** and emailed me to ask.
+In a [previous post]({%  post_url 2025-01-16-there-be-dragons-fluentassertions-8-new-licensing %}), I covered the debacle around the recent change in the [FluentAssertions](https://fluentassertions.com/) library. But the hawk-eyed among you noticed that, despite being a [huge]({% post_url 2025-01-18-evaluating-multiple-test-assertions-at-once-with-fluentassertions %}) [proponent]({% post_url 2021-07-25-better-assertion-testing-with-fluentassertions %}) of the library, **I did not, in fact, say what I intended to do about the situation** and emailed me to ask.
 
 My thoughts are as follows:
 
@@ -26,7 +26,7 @@ Remembering to switch content between `xUnit` assertions and `NUnit` assertions 
 
 Another key benefit was realized when we migrated from `NUnit` and standardized on `xUnit` as our testing framework. This simply meant (mainly) **changing the referenced libraries and re-compiling**. I hardly needed to touch the existing test code.
 
-Another benefit was the **error messages had a lot more context**, especially when run on a build server outside the IDE.
+Another benefit was that the **error messages had a lot more context**, especially when run on a build server outside the IDE.
 
 Compare:
 
@@ -46,7 +46,7 @@ However, I fear **I cannot reconcile the new fee structure with reality**, and I
 
 ![FluentAssertionsLicense](../images/2025/01/FluentAssertionsLicense.png)
 
-That's 130 dollars.
+That's **130** dollars.
 
 If you further read the licensing terms:
 

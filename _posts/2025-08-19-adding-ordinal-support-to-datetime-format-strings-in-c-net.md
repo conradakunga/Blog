@@ -53,9 +53,9 @@ This will print the following:
 - 4th August 2025
 ```
 
-This is fine, but this is locale aware, and my current locale happens to be en-KE, which is loosely based on en-GB.
+This is fine, but this is locale-aware, and my current locale happens to be en-KE, which is loosely based on [en-GB](https://en.wikipedia.org/wiki/Language_code).
 
-If we run the code under the en-US culture:
+If we run the code under the `en-US` culture:
 
 ```c#
 // Change culture to en-US
@@ -77,11 +77,11 @@ The results now look like this:
 
 Note this is different from the previous display.
 
-You might want to control where exactly the ordinal appears in the output.
+You may want to control exactly where the ordinal appears in the output.
 
 Basically, the challenge here is that using the `Humanizer` `ToOrdinalWords()` method, the **control of the ordinal day display is out of your hands**.
 
-To get around this problem you have two options:
+To get around this problem, you have two options:
 
 - **Format the day component yourself**, as we did in the previous posts
 - Create a **custom format provider**
@@ -164,7 +164,7 @@ With this in place, we can write format strings like this:
 
 The `o` here is the format string we have introduced for ordinal.
 
-We can then write some tests to verify everything works well.
+We can then write some **tests** to verify everything works well.
 
 {% raw %}
 ```c#

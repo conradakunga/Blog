@@ -34,7 +34,7 @@ This, naturally, will print the following:
 9
 ```
 
-Now imagine we add one more number to the list, 10.
+Now, imagine we add one more number to the list, 10.
 
 ```c#
 var numbers = Enumerable.Range(1, 10).Select(x => $"{x}").Order().ToList();
@@ -56,13 +56,13 @@ This will now print the following:
 9
 ```
 
-Now, you can't tel by looking that these are string values.
+Now, you can't tell by looking that these are string values.
 
-For a `string` , `1`, `10`, `100`, `1,000`, `10,000` etc. all sort before `2`.
+For a `string`, `1`, `10`, `100`, `1,000`, `10,000`, etc., all sort before `2`.
 
-Suppose we really wanted to sort them as numeric values.
+Suppose we really wanted to sort them as **numeric** values.
 
-One way would be to convert the collection to one of numbers. Like so:
+One way would be to **convert the collection to one of numbers**. Like so:
 
 ```c#
 var numbers = Enumerable.Range(1, 10).Select(x => $"{x}").Order().ToList();
@@ -86,11 +86,11 @@ This now prints what we expect.
 10
 ```
 
-Now this is technically correct, but surely there is a better way?
+This is **technically** correct, but surely there must be a better way?
 
 There is!
 
-We can write our own Comparer by implementing the [IComparer](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1?view=net-9.0) interface.
+We can write our own `Comparer` by implementing the [IComparer](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1?view=net-9.0) interface.
 
 ```c#
 public sealed class NumericStringComparer : IComparer<string>
@@ -114,7 +114,7 @@ public sealed class NumericStringComparer : IComparer<string>
 }
 ```
 
-The [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-9.0) class has a [Sort](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.sort?view=net-9.0) method that allows sorting of the List in place.
+The [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-9.0) class has a [Sort](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.sort?view=net-9.0) method that allows sorting of the `List` in place.
 
 So we can do this:
 
@@ -129,7 +129,7 @@ This now prints as expected.
 
 But we can do one better.
 
-What if the **number was within text**?
+What if the **number was within text?**s
 
 Suppose we have a bunch of [Windows Versions](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions) that we want to sort.
 
@@ -170,7 +170,7 @@ Windows 95
 Windows 98
 ```
 
-Our comparer does not seem to know what to do if the entire value is not a number.
+Our comparer does not seem to know what to do if the **entire value is not a number**.
 
 Currently, it is **treating everything** as a `string` and is **unable to convert each entry to a number**.
 
@@ -224,7 +224,7 @@ Windows 2000
 
 Looking good.
 
-But let us throw in a spanner into the works.
+But let us throw a spanner into the works.
 
 I happen to know that there was a **Windows 3.1** and a **Windows 3.11**.
 
@@ -271,11 +271,11 @@ Our comparer gave up parsing after the `.`
 
 We can improve this by using a `decimal`, rather than an `int`.
 
-The logic is the same - find the first `decimal` in each `string` and use that for sorting purposes.
+The logic remains the same: find the first `decimal` in each `string` and use that for sorting purposes.
 
 We also need to factor in the edge case that much as decimals have the format `0.00`, `0` is also a valid decimal.
 
-This is what the following `regular expression` does:
+This is what the following [regular expression](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) does:
 
 ```plaintext
 \d+(\.\d+)?
@@ -310,7 +310,7 @@ public sealed class UltimateStringComparer : IComparer<string>
 }
 ```
 
-Now if we sort this, we get the following:
+Now, if we sort this, we get the following:
 
 ```plaintext
 Windows 1
@@ -379,10 +379,10 @@ Windows 2000
 
 This has been sorted by the **numeric** value, but has **ignored the text** values.
 
-Let's make a final set of changes, including those that will improve the performance.
+Let's make a final set of changes, including those that will enhance performance.
 
 1. We can use a [source-generated regex](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-source-generators) instead of constructing one at runtime
-2. We can **cache** the generated regex to improve performance regardless of the number of comparisons.
+2. We can **cache** the generated `regex` to improve performance regardless of the number of comparisons.
 3. Before we compare the numbers (if any), first compare the **leading text**.
 
 Our final comparer looks like this:
@@ -515,7 +515,7 @@ public class StringComparerTests
 We can improve this in several ways:
 
 1. Add support to locales that use `,` or anything else, as a `decimal` separator - better localization support.
-2. Support sorting of complex items like versions e.g. `1.0.2.2` vs `2.0.1`
+2. Support sorting of complex items like versions e.g., `1.0.2.2` vs `2.0.1`
 
 Of interest is the fact that this has been properly [implemented](https://github.com/dotnet/runtime/pull/109861) in .NET 10, but it is always fun (and a learning experience) to try to implement some of these things.
 
