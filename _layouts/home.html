@@ -12,17 +12,17 @@ layout: default
   {% assign postsByWeek = month.items | group_by_exp:"post", "post.date | date: '%V'" %}
   {% for week in postsByWeek %}
   <br />
-  <h4> 📅 <b>Week {{week.name}}</b></h4>
+  <h1> 📅 <b>Week {{week.name}}</b></h1>
   <br />
   {% for post in week.items %}
   <article>
     <span class="post-meta">{{ post.date | date: '%A, %B %e, %Y' }}</span>
     <h2><a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a></h2>
-    <h5><b> {% if post.categories and post.categories.size > 0 %}
+    <h3><b> {% if post.categories and post.categories.size > 0 %}
         [{{ post.categories | join: ", " }}]
         {% else %}
         []
-        {% endif %}</b></h5>
+        {% endif %}</b></h3>
     {{ post.excerpt }}
   </article>
   </ul>
@@ -36,4 +36,4 @@ layout: default
 <br/>
 <br/>
 
-<h2>📅 <a href="{% link archives.markdown %}">Archives ...</a></h2>
+📅 <a href="{% link archives.markdown %}">Archives ...</a>
