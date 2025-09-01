@@ -85,4 +85,6 @@ You can also use [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) t
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-08-01%20-%20Add%20Items%20To%20List).
 
+------
+
 Happy hacking!

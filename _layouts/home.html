@@ -2,14 +2,13 @@
 layout: default
 ---
 <div class="posts">
-  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% assign latest_posts = site.posts | slice: 0, 15 %}
+  {% assign postsByYear = latest_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
   {% assign yearCount = year.items | size %}
-  <h2><b>{{ year.name }} - {{yearCount}} Posts</b></h2>
   {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
   {% for month in postsByMonth %}
   {% assign monthCount = month.items | size %}
-  <h3><b>{{ month.name }} {{ year.name }} - {{monthCount}} Posts</b></h3>
   {% assign postsByWeek = month.items | group_by_exp:"post", "post.date | date: '%V'" %}
   {% for week in postsByWeek %}
   <br />
@@ -31,4 +30,10 @@ layout: default
   {% endfor %}
   {% endfor %}
   {% endfor %}
+
 </div>
+<br/>
+<br/>
+<br/>
+
+<h2>📅 <a href="{% link archives.markdown %}">Archives ...</a></h2>
