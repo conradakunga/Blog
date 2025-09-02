@@ -14,7 +14,7 @@ I have been admitted into the [Microsoft MVP Program](https://mvp.microsoft.com/
 
 Re-admitted, I should say, because I was a member for many years (from **2005**, if memory serves me right) until I voluntarily exited for personal reasons (had a motorcycle **accident** and recuperation)  in **2021**.
 
-If I am not wrong, I was the first C# MVP from Kenya, and the third ever (**Edgar Okioga** and **Michael Owuor** were the first, in VB, if I recall right).
+If I am not wrong, I was the first C# MVP from Kenya, and the third ever (**Edgar Okioga** and **Michael Owuor** were the first, in VB, if I recall right). Over the years, there has been rationalization and realignment, and now it is simply referred to as **Developer Technologies**.
 
 It came with the obligatory certificate.
 
