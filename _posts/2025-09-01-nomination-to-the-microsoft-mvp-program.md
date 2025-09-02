@@ -12,7 +12,7 @@ I was pleasantly surprised to get this email earlier today.
 
 I have been admitted into the [Microsoft MVP Program](https://mvp.microsoft.com/).
 
-Re-admitted, I should say, because I was a member for many years (from 2005, if memory serves me right) until I voluntarily exited for personal reasons (had a motorcycle accident and recuperation)  in 2021.
+Re-admitted, I should say, because I was a member for many years (from **2005**, if memory serves me right) until I voluntarily exited for personal reasons (had a motorcycle **accident** and recuperation)  in **2021**.
 
 If I am not wrong, I was the first C# MVP from Kenya, and the third ever (**Edgar Okioga** and **Michael Owuor** were the first, in VB, if I recall right).
 
