@@ -103,6 +103,6 @@ version - 4.1.4
 
 We can thus see a rich collection of information about the running **RabbitMQ** instance that can be used in your logic.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-03%20-%20RabbitMQProperties).
 
 Happy hacking!
