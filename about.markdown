@@ -6,18 +6,20 @@ permalink: /about/
 
 I have been writing software professionally for decades. 
 
+![MVP](../images/MVP_Badge_Avatar_Secondary_DarkBlue7694_RGB.png)
+
 In this blog I will be writing primarily about:
 
 1. **The Business of software**
 2. **Software development**
 
-The posts on software development assume no, or litte, prior knowledge of the subject matter and therefore should be useful regardless of your level of experience.
+The posts on software development assume no, or little, prior knowledge of the subject matter and therefore should be useful regardless of your level of experience.
 
 I am an entrepreneur, and co-founder of [Innova Limited](http://www.innova.co.ke/), where I lead the research and product development.
 
 I am also the co-founder and a trustee of [Mzalendo Trust](https://mzalendo.com).
 
-I have a keen interest in technology and software development in particular. I have architected, designed and developed solutions in supply chain, knowledge management, fintech and agritech.
+I have a keen interest in technology and software development in particular. I have architected, designed and developed solutions in supply chain, knowledge management, fintech and agri-tech.
 
 My work is currently running in production in 10 countries across various industries.
 
@@ -74,6 +76,6 @@ Drop me a line.
 
 conradakunga -at- gmail.com
 
-LinkedIn - [linkedin.com/in/conrad-akunga](https://www.linkedin.com/in/conrad-akunga)
+LinkedIn - [Linkedin.com/in/conrad-akunga](https://www.linkedin.com/in/conrad-akunga)
 
 This blog is OpenSource, published using [Jekyll](https://jekyllrb.com/) and can be found in its entirety here [https://github.com/conradakunga/Blog](https://github.com/conradakunga/Blog)
