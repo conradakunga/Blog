@@ -68,6 +68,6 @@ If you are not using EasyNetQ, you can directly reference the [RabbitMQ.Client](
 
 You can access the version of **RabbitMQ** from the `ServerProperties` object of the `IConnection`.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-02%20-%20RabbitMQVersion).
 
 Happy hacking!
