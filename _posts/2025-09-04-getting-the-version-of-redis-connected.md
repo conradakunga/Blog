@@ -17,6 +17,8 @@ And the answer is indeed, this is very possible.
 
 You send the server the [INFO](https://redis.io/docs/latest/commands/info/) command, and read the returned response.
 
+We do this using the built-in functionality of the [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis) package.
+
 The response is a structure that is a nested grouping of [KeyValue](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-9.0) pairs.
 
 You can extract the version as follows:
@@ -53,6 +55,10 @@ The caveat of this technique is that you must connect to Redis with [admin mode]
 This, naturally, is probably not going to be possible in production for obvious reasons - **security**!
 
 We will see how to achieve that in the next post.
+
+### TLDR
+
+**The `StackExchange.Redis` package offers a `Server` object against which you can call the `Info` method to retrieve Server configuration information.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-04%20-%20RedisVersion).
 
