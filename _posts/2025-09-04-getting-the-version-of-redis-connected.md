@@ -54,7 +54,7 @@ The caveat of this technique is that you must connect to Redis with [admin mode]
 
 This, naturally, is probably not going to be possible in production for obvious reasons - **security**!
 
-We will see how to achieve that in the next post.
+We will see how to achieve that in the [next post]({% post_url 2025-09-05-getting-the-version-of-redis-connected-without-admin-access-in-c-net %}).
 
 ### TLDR
 

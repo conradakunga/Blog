@@ -92,6 +92,6 @@ The code will print something like this to the console:
 
 **You can directly execute the `INFO` command against the `Database` object to retrieve Redis configurations.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-05%20-%20RedisVersion).
 
 Happy hacking!
