@@ -54,6 +54,6 @@ This, naturally, is probably not going to be possible in production for obvious 
 
 We will see how to achieve that in the next post.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-04%20-%20RedisVersion).
 
 Happy hacking!
