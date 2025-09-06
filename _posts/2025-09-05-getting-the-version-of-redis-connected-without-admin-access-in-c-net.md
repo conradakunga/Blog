@@ -17,7 +17,7 @@ In this post, we will explore how to achieve the same result **without requiring
 
 Since we cannot natively call the `Info` method of the `Server` object, we need to change our approach slightly.
 
-We can call the `Execute` method of the `Database` object and use that to directly run the INFO command.
+We can call the `Execute` method of the `Database` object and use that to directly run the `INFO` command.
 
 This returns a long `string` with all of the configuration information as follows:
 
@@ -52,7 +52,7 @@ listener0:name=tcp,bind=*,bind=-::*,port=6379
 
 From this, we can extract the line we want, which starts with `redis_version`.
 
-One way to approach this is to extract the large `string` into a `Dictionary`, that will be easuer to examine and query.
+One way to approach this is to extract the large `string` into a `Dictionary`, which will be easier to examine and query.
 
 The code will look something like this:
 
