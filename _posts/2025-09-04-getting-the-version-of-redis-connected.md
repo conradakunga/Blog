@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting the Version of Redis Connected
+title: Getting the Version of Redis Connected in C# & .MET
 date: 2025-09-04 11:14:50 +0300
 categories:
     - C#
@@ -9,7 +9,7 @@ categories:
     - StackExchange.Redis
 ---
 
-Now that we know the process of "[Getting the Version of RabbitMQ Connected]({% post_url 2025-09-02-getting-the-version-of-rabbitmq-connected %})", I wondered if it was possible to do the same for [Redis](https://redis.io/).
+Now that we know the process of "[Getting the Version of RabbitMQ Connected]({% post_url 2025-09-02-getting-the-version-of-rabbitmq-connected-c-net %})", I wondered if it was possible to do the same for [Redis](https://redis.io/).
 
 For **debugging** and **troubleshooting** purposes, it may be necessary to retrieve this information at **runtime** from within your application.
 

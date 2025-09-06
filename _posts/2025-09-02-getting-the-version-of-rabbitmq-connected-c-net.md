@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting the Version of RabbitMQ Connected
+title: Getting the Version of RabbitMQ Connected in C# & .NET
 date: 2025-09-02 16:39:54 +0300
 categories:
     - C#

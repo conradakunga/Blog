@@ -9,7 +9,7 @@ categories:
     - EasyNetQ
 ---
 
-In the previous post, "[Getting the Version of RabbitMQ Connected]({% post_url 2025-09-02-getting-the-version-of-rabbitmq-connected %})", we discussed how to obtain the version of the RabbitMQ instance connected to via the `ServerProperties` property.
+In the previous post, "[Getting the Version of RabbitMQ Connected]({% post_url 2025-09-02-getting-the-version-of-rabbitmq-connected-c-net %})", we discussed how to obtain the version of the RabbitMQ instance connected to via the `ServerProperties` property.
 
 This raises the question: **What other properties are available**?
 
