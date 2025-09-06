@@ -68,7 +68,7 @@ var db = connection.GetDatabase();
 // Run INFO Server command, casting result into a string
 var result = (string)(await db.ExecuteAsync("INFO", "Server"))!;
 
-// Extract the elements into an array
+// Extract the elements into a dictionary
 var info = result.Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries)
     .Where(line => line.Contains(':')) // only consider attribute lines 
     .Select(line => line.Split(':')) // project into attribute-value
