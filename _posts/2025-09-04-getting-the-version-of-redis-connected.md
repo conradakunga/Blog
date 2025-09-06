@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting the Version of Redis Connected in C# & .MET
+title: Getting the Version of Redis Connected in C# & .NET
 date: 2025-09-04 11:14:50 +0300
 categories:
     - C#
