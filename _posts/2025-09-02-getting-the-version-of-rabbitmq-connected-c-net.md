@@ -62,7 +62,7 @@ This should print something like this:
 RabbitMQ Version: 4.1.4
 ```
 
-If you are not using EasyNetQ, you can directly reference the [RabbitMQ.Client](https://www.rabbitmq.com/client-libraries/dotnet) package.
+If you are not using `EasyNetQ`, you can directly reference the [RabbitMQ.Client](https://www.rabbitmq.com/client-libraries/dotnet) package.
 
 ### TLDR
 
