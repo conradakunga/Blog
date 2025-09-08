@@ -8,27 +8,27 @@ categories:
     - ElasticSearch
 ---
 
-In the previous post, "Getting the Version of ElasticSearch Connected in C# & .NET", we looked at how to get the version of ElasticSearch connected using either the raw JSON returned by the endpoint or the ElasticSearch Client.
+In the previous post, "[Getting the Version of ElasticSearch Connected in C# & .NET]({% post_url 2025-09-06-getting-the-version-of-elasticsearch-connected-in-c-net %})", we looked at how to get the version of [ElasticSearch](https://www.elastic.co/elasticsearch) connected using either the raw JSON returned by the endpoint or the `ElasticSearch` Client.
 
-In this post, we shall look at how to do the same for Kibana.
+In this post, we shall look at how to do the same for [Kibana](https://www.elastic.co/kibans).
 
-Unlike its counterpart ElasticSearch, the only way to retrieve the connected version is to call an endpoint on Kibana and parse the returned JSON.
+Unlike its counterpart, `ElasticSearch`, the only way to retrieve the connected version of `Kibana` is to call an endpoint on `Kibana` and parse the returned `JSON`.
 
-This end point is /api/status.
+This endpoint is `/api/status`.
 
-So in a console, we can do the following using Httpie (or whatever utility you prefer - curl, wget, etc)
+So in a console, we can do the following using [httpie](https://httpie.io/) (or whatever utility you prefer - [curl](https://curl.se/), [wget](https://www.gnu.org/software/wget/), etc)
 
 ```bash
 http http://localhost:5601/api/status
 ```
 
-This returns a very large JSON document, whose tail end looks something like this:
+This returns a very large `JSON` document, whose tail end looks something like this:
 
 ![KibanaVersion](../images/2025/09/KibanaVersion.png)
 
-We can build a type to encapsulate this information.
+We can build a **type** to encapsulate this information.
 
-First, the root.
+First, the **root**.
 
 ```c#
 public sealed class KibanaResponse
@@ -75,7 +75,7 @@ If we view the `response` object in the debugger:
 
 All our properties are available.
 
-If you are really in a hurry and don't care about all the other properties now and in the future, you can deal with raw JSON and extract only what you want.
+If you are really in a hurry and don't care about all the other properties now and in the future, you can deal with raw `JSON` and extract only the properties that you want.
 
 Like this:
 
