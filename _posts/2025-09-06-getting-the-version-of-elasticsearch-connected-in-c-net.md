@@ -8,7 +8,7 @@ categories:
     - ElasticSearch
 ---
 
-In the previous post, "Getting the Version of Redis Connected in C# & .NET", we looked at how to get the version of [Redis](https://redis.io/) we are connected to without requiring a connection with admin privileges.
+In the previous post, "[Getting the Version of Redis Connected in C# & .NET]({% post_url 2025-09-04-getting-the-version-of-redis-connected %})", we looked at how to get the version of [Redis](https://redis.io/) we are connected to without requiring a connection with admin privileges.
 
 In this post, we will look at how to get the version of [ElasticSearch](https://www.elastic.co/elasticsearch) we are connected to.
 
