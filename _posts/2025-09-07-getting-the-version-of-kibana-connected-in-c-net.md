@@ -75,7 +75,7 @@ If we view the `response` object in the debugger:
 
 All our properties are available.
 
-If you are really in a hurry and don't care about all the other properties now and in the future, you can deal with raw `JSON` and extract only the properties that you want.
+If you are really in a hurry and don't care about all the other properties now and in the future, you can deal with raw `JSON` and extract **only the properties that you want**.
 
 Like this:
 
@@ -86,10 +86,10 @@ var json = JsonDocument.Parse(jsonString);
 Console.WriteLine($"Version: {json.RootElement.GetProperty("version").GetProperty("number").GetString()}");
 ```
 
-
+Here, I am only interested in the **child** property `number` in the **root** property `version`.
 
 ### TLDR
 
 **You can query the version info for Kibana by hitting the `api/status` endpoint and parsing the response.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-07%20-%20KibanaVersion).
