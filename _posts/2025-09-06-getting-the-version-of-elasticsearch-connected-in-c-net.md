@@ -131,6 +131,6 @@ If we view the `InfoResponse` object in the debugger, we can see that it has the
 
 **We can use the `ElasticSearchClient` and its `InfoAsyc()` method to get various properties of the *ElasticSearch* instance we are connected to.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-06%20-%20ElasticSearchVersion).
 
 Happy hacking!
