@@ -22,7 +22,7 @@ This is not the correct interpretation. Consider `MMM` as the **short form of th
 
 Let us take a look at some examples in various locales to illustrate.
 
-My environment (OS & .NET version) I can retrieve as follows:
+My environment (OS & .NET version), I can retrieve as follows:
 
 ```bash 
 dotnet --info
@@ -276,8 +276,6 @@ Runtime Environment:
  Base Path:   C:\Program Files\dotnet\sdk\10.0.100-rc.1.25451.107\
 ```
 
-
-
 What is the difference?
 
 **English (UK)**
@@ -420,7 +418,7 @@ This matches exactly with the output for Windows.
 
 What about [Linux](https://www.linux.org/)?
 
-For this we run the [.NET SDK image](https://hub.docker.com/r/microsoft/dotnet-nightly-sdk/) that it is based on [Debian](https://www.debian.org/).
+For this, we run the [.NET SDK image](https://hub.docker.com/r/microsoft/dotnet-nightly-sdk/), which is based on [Debian](https://www.debian.org/).
 
 ```bash
 dotnet run -it mcr.microsoft.com/dotnet/nightly/sdk:10.0-preview
@@ -432,7 +430,7 @@ The environment info I retrieved as follows:
 dotnet --info
 ```
 
-Which returns the following:
+Which returned the following:
 
 ```plaintext
 .NET SDK:
@@ -449,7 +447,7 @@ Runtime Environment:
  Base Path:   /usr/share/dotnet/sdk/10.0.100-rc.1.25425.114/
 ```
 
-From within this container we run the C# code above.
+From within this container, we run the C# code above.
 
 This prints the following:
 
@@ -552,11 +550,11 @@ In conclusion, it would appear that the **localization for the short month name 
 
 I thought it was a **macOS** issue, but the fact that **Java** correctly returns the expected output indicates otherwise.
 
-In the next post we will examine why is **September** shortened as **Sept**.
+In the next post, we will examine why **September** is abbreviated as **Sept**.
 
 ### TLDR
 
-**The short form of the month September is not consistent between macOS, Linux and Windows.**
+**The short form of the month September is inconsistent across macOS, Linux, and Windows, and appears to be problematic on macOS.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-08%20-%20MonthNames).
 
