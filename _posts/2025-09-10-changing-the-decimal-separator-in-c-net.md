@@ -135,6 +135,54 @@ Vietnamese (Vietnam) - (vi-VN)
 10.000,00
 ```
 
+If you're curious, these are the locales (and their codes)
+
+| Name | Code |
+| ---- | ---- |
+| Arabic (Egypt) | ar-EG |
+| Armenian (Armenia) | hy-AM |
+| Azerbaijani (Azerbaijan) | az-AZ |
+| Belarusian (Belarus) | be-BY |
+| Bulgarian (Bulgaria) | bg-BG |
+| Croatian (Croatia) | hr-HR |
+| Czech (Czechia) | cs-CZ |
+| Danish (Denmark) | da-DK |
+| Dutch (Netherlands) | nl-NL |
+| Finnish (Finland) | fi-FI |
+| French (Canada) | fr-CA |
+| French (France) | fr-FR |
+| Georgian (Georgia) | ka-GE |
+| German (Germany) | de-DE |
+| Greek (Greece) | el-GR |
+| Hungarian (Hungary) | hu-HU |
+| Indonesian (Indonesia) | id-ID |
+| Italian (Italy) | it-IT |
+| Kazakh (Kazakhstan) | kk-KZ |
+| Latvian (Latvia) | lv-LV |
+| Lithuanian (Lithuania) | lt-LT |
+| Norwegian Bokmål (Norway) | nb-NO |
+| Polish (Poland) | pl-PL |
+| Portuguese (Brazil) | pt-BR |
+| Portuguese (Portugal) | pt-PT |
+| Romanian (Romania) | ro-RO |
+| Russian (Russia) | ru-RU |
+| Serbian (Serbia) | sr-RS |
+| Slovak (Slovakia) | sk-SK |
+| Slovenian (Slovenia) | sl-SI |
+| Spanish (Argentina) | es-AR |
+| Spanish (Bolivia) | es-BO |
+| Spanish (Chile) | es-CL |
+| Spanish (Colombia) | es-CO |
+| Spanish (Ecuador) | es-EC |
+| Spanish (Paraguay) | es-PY |
+| Spanish (Spain) | es-ES |
+| Spanish (Uruguay) | es-UY |
+| Spanish (Venezuela) | es-VE |
+| Swedish (Sweden) | sv-SE |
+| Turkish (Türkiye) | tr-TR |
+| Ukrainian (Ukraine) | uk-UA |
+| Vietnamese (Vietnam) | vi-VN |
+
 The problem with this technique is that you get **all the other baggage of the locale** - thousand separators, date formats, etc.
 
 For example, in the extract above, some use a **space**, and others use a **decimal**.
