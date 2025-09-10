@@ -10,7 +10,7 @@ categories:
 
 In our last post, "[Sep Is The Short Date Format For September. Sometimes]({% post_url 2025-09-08-sep-is-the-short-date-format-for-september-sometimes %})", we looked at an issue where the short format for **September** would vary by operating system. (**Sept** vs **Sep**).
 
-As a recap, the short month format for months in English UK (and many locales based on it) is as follows:
+As a recap, the short month format for months in [English UK](https://en.wikipedia.org/wiki/British_English) (and many locales based on it) is as follows:
 
 ```plaintext
 1 Jan 2025
@@ -35,7 +35,7 @@ So, for many years, **Sep** was used until 2021 when the [ISO](https://www.iso.o
 
 The rationale appears to be that in the UK, **Sept** is the accepted abbreviation for **September**, as opposed to **Sep**. And so, in 2021, ISO decided to formalize this.
 
-This meant applications and vendors who followed the ISO standards implemented this change, and feedback came hot and heavy almost immediately.
+This meant **applications**, **vendors**, and programming languages that followed the ISO standards implemented this change, and feedback came hot and heavy almost immediately.
 
 Whether it was [StackOverflow](https://stackoverflow.com/questions/69267710/septembers-short-form-sep-no-longer-parses-in-java-17-in-en-gb-locale), [Google Sheets](https://issuetracker.google.com/issues/175332493?pli=1), [Excel](https://techcommunity.microsoft.com/discussions/excelgeneral/excel-365-dd-mmm-yyyy-now-gives-sept-instead-of-sep/4451187), or [programming language issue trackers](https://bugs.openjdk.org/browse/JDK-8329375), comments were **fast and furious**.
 
