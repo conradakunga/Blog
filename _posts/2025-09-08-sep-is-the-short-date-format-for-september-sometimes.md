@@ -259,6 +259,25 @@ English (Australia)
 1 Dec 2025
 ```
 
+My environment on Windows is as follow:
+
+```plaintext
+.NET SDK:
+ Version:           10.0.100-rc.1.25451.107
+ Commit:            2db1f5ee2b
+ Workload version:  10.0.100-manifests.0e2d47c4
+ MSBuild version:   17.15.0-preview-25451-107+2db1f5ee2
+
+Runtime Environment:
+ OS Name:     Windows
+ OS Version:  10.0.26100
+ OS Platform: Windows
+ RID:         win-arm64
+ Base Path:   C:\Program Files\dotnet\sdk\10.0.100-rc.1.25451.107\
+```
+
+
+
 What is the difference?
 
 **English (UK)**
