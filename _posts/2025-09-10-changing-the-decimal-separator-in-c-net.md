@@ -258,6 +258,6 @@ Then you can write your code as usual.
 
 **There are several ways to format a number in a desired format - choice of [locale](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-9.0), modification of an existing [locale](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-9.0) and creation of a [NumberFormatInfo](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo?view=net-9.0).**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-09%20-%20CustomSeparator).
 
 Happy hacking!
