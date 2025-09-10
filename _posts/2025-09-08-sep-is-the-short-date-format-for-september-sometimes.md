@@ -550,7 +550,7 @@ In conclusion, it would appear that the **localization for the short month name 
 
 I thought it was a **macOS** issue, but the fact that **Java** correctly returns the expected output indicates otherwise.
 
-In the next post, we will examine why **September** is abbreviated as **Sept**.
+In the [next post]({% post_url 2025-09-09-why-is-september-shortened-as-sept-and-not-sep %}). we will examine why **September** is abbreviated as **Sept**.
 
 ### TLDR
 
