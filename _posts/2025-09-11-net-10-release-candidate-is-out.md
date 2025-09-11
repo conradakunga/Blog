@@ -40,4 +40,6 @@ You can download it [here](https://dotnet.microsoft.com/en-us/download/dotnet/10
 
 If you are on macOS, you can use the [technique outlined here]({% post_url 2024-11-22-running-multiple-net-versions-in-macos-osx %}).
 
+You can get a list of the available versions [here](https://github.com/isen-ng/homebrew-dotnet-sdk-versions).
+
 Happy hacking!
