@@ -60,13 +60,13 @@ rs.Close
 %>
 ```
 
-There were no controllers, routes, and other fancy things like that.
+There were no **controllers**, **routes**, and other fancy things like are commonplace these days.
 
-Fun times!
+**Fun times!**
 
 You could also write ASP with [JScript](https://en.wikipedia.org/wiki/JScript), but the vast majority of developers used `VBScript`.
 
-You could also use `VBScript` to do Windows Automation, as well as write [macros](https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office) in Microsoft Office.
+You could also use `VBScript` to do **Windows Automation**, as well as write [macros](https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office) in Microsoft Office.
 
 You probably may have missed this, but last year, on May 22, 2024, [Microsoft announced the deprecation of VBScript](https://techcommunity.microsoft.com/blog/windows-itpro-blog/vbscript-deprecation-timelines-and-next-steps/4148301), recommending the use of `JavaScript` or `PowerShell` instead.
 
