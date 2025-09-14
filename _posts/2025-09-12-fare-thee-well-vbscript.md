@@ -26,6 +26,8 @@ Response.Write("Hello World!")
 </html>
 ```
 
+This code would send the string "Hello World" to the browser.
+
 Back then, [Microsoft Access](https://en.wikipedia.org/wiki/Microsoft_Access) was the go-to free database.
 
 Database access was via [ActiveX Data Objects](https://en.wikipedia.org/wiki/ActiveX_Data_Objects) (ADO), the ancestor of [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview).
