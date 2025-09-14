@@ -32,7 +32,7 @@ Database access was via [ActiveX Data Objects](https://en.wikipedia.org/wiki/Act
 
 You would access it like this:
 
-```vbscript
+```vb
 <%
 set conn = Server.CreateObject("ADODB.Connection")
 conn.Provider="Microsoft.Jet.OLEDB.4.0"
