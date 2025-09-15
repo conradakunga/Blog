@@ -41,6 +41,6 @@ The Downloads location is '/Users/rad/Downloads'
 
 **You can assume that the `Downloads` folder is always going to be `/Users/{username}/Downloads`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-14%20-%20KnownFoldersMacOS).
 
 Happy hacking!

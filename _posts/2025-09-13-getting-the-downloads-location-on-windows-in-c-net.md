@@ -145,6 +145,6 @@ You can see these options when you right-click the `Downloads` folder.
 
 **The most robust way to get the folder for known folders like `Downloads` on Windows is to use the Windows API.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-13%20-%20KnownFoldersWindows).
 
 Happy hacking!
