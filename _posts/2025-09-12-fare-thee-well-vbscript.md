@@ -26,7 +26,7 @@ Response.Write("Hello World!")
 </html>
 ```
 
-This code would send the string "Hello World" to the browser.
+This code would send the string "**Hello World**" to the browser.
 
 Back then, [Microsoft Access](https://en.wikipedia.org/wiki/Microsoft_Access) was the go-to free database.
 
