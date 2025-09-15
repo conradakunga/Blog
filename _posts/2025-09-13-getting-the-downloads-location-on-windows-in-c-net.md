@@ -67,7 +67,7 @@ However, the immediate hurdle is that `Downloads` is not one of the [SpecialFold
 | CommonOemLinks         | 58    |
 | CDBurning              | 59    |
 
-Therefore, we must resort to a different technique: interop with the Windows API.
+Therefore, we must resort to a different technique: [interop](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interop/) with the [Windows API](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list).
 
 The method we need is [SHGetKnownFolderPath](https://learn.microsoft.com/en-us/windows/win32/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath), to which we need to pass a number of parameters:
 
