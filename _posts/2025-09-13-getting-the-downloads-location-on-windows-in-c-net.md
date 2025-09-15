@@ -91,14 +91,14 @@ using System.Runtime.InteropServices;
 The method to call it is as follows:
 
 ```c#
-static string GetDownloadsPath()
+static string? GetDownloadsPath()
 {
-	// Define the ID
+    // Define the ID
     var downloadFolderID = new Guid("374DE290-123F-4565-9164-39C4925E467B");
-	// Invoke the method 
+    // Invoke the method 
     SHGetKnownFolderPath(downloadFolderID, 0, IntPtr.Zero, out IntPtr outPath);
-	// Retrieve the path
-    string path = Marshal.PtrToStringUni(outPath);
+    // Retrieve the path
+    string? path = Marshal.PtrToStringUni(outPath);
     Marshal.FreeCoTaskMem(outPath);
     return path;
 }
@@ -107,8 +107,11 @@ static string GetDownloadsPath()
 Finally, we invoke it like this:
 
 ```c#
-string downloadsPath = GetDownloadsPath();
-Console.WriteLine(downloadsPath);
+var downloadsPath = GetDownloadsPath();
+if (downloadsPath is null)
+    Console.WriteLine("Could not find downloads path");
+else
+    Console.WriteLine(downloadsPath);
 ```
 
 This prints something like the following:
