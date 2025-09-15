@@ -136,6 +136,7 @@ There are two problems with this approach:
 
 1. A user can **move** their `Downloads` path to another drive, for example, if they run out of disk space on their system drive.
 2. A user can **rename** it from `Downloads` to something else.
+3. You cannot assume that in all **languages**, the `Downloads` folder will be named thus.
 
 You can see these options when you right-click the `Downloads` folder.
 
