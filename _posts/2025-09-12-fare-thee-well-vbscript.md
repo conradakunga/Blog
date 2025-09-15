@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fare Thee Well VBScript
+title: Fare Thee Well, VBScript
 date: 2025-09-12 22:24:06 +0300
 categories:
     - VBScript
