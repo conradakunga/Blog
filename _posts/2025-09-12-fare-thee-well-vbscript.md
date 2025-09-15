@@ -7,7 +7,7 @@ categories:
     - Windows
 ---
 
-If you are old enough to have remembered [ASP](https://en.wikipedia.org/wiki/Active_Server_Pages) (not [ASP.NET](https://www.asp.net/)), then you almost certainly used [VBScript](https://en.wikipedia.org/wiki/VBScript).
+If you are old enough to have developed websites and web applications in [ASP](https://en.wikipedia.org/wiki/Active_Server_Pages) (not [ASP.NET](https://www.asp.net/)), then you almost certainly used [VBScript](https://en.wikipedia.org/wiki/VBScript).
 
 `ASP`, you may be interested to know, stood for **Active Server Pages**.
 
