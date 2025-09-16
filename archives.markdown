@@ -8,13 +8,13 @@ permalink: /archives/
   {% posts_word_count total %}
 {% endcapture %}
 
-## Total Posts: {{ count }}
+## Total ({{ count }} Posts)
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
 {% assign yearCount = year.items | size %}
 
-### {{ year.name }} Posts : {{yearCount}}
+### {{ year.name }} ({{yearCount}} Posts)
 
 {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
 
