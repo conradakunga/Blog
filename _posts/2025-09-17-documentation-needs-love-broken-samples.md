@@ -259,6 +259,6 @@ Which takes you to this dialog:
 
 **The Microsoft Graph samples don't work out of the box (as of 17 September 2025)**
 
-The (**working**) code is in my GitHub.
+The (**working**) code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-17%20-%20MSGraphCompilingSample).
 
 Happy hacking!
