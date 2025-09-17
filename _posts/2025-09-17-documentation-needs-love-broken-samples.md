@@ -5,6 +5,7 @@ date: 2025-09-17 19:58:09 +0300
 categories:
     - Documentation
     - C#
+    - .NET
 ---
 
 I recently wrote a post on how to [send email using C# & the Graph API]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %}), and was surprised how much time it took me to get it working due to **incomplete** documentation.
