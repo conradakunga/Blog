@@ -7,7 +7,7 @@ categories:
     - C#
 ---
 
-I recently wrote a post on how to [send email using C# & the Graph API]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %}), and was surprised how much time it took me to get it working.
+I recently wrote a post on how to [send email using C# & the Graph API]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %}), and was surprised how much time it took me to get it working due to **incomplete** documentation.
 
 Let me try again, now that it is **two months later**, **only using the instructions in the documentation**.
 
