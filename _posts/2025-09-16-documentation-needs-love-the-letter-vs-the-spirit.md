@@ -21,11 +21,11 @@ Let us take an example of a method you will almost certainly use if you are buil
 
 ![AddSingleton](../images/2025/09/AddSingleton.png)
 
-Everything in this documentation is completely true.
+Everything in this documentation is **completely accurate **.
 
-However, someone learning to write a web application or migrating from another platform will encounter a hurdle.
+However, someone learning to write a web application or migrating from another platform will encounter a **hurdle**.
 
-1. What is a [singleton,](https://en.wikipedia.org/wiki/Singleton_pattern) and what is a **service**? What does this line even mean?
+1. What is a [singleton,](https://en.wikipedia.org/wiki/Singleton_pattern) and what is a **service**? What does the following line even mean?
 
     > Adds a singleton service of the type specified in `serviceType` with an instance specified in `implementationInstance` to the specified [IServiceCollection](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection?view=net-9.0-pp).
 
@@ -35,11 +35,11 @@ However, someone learning to write a web application or migrating from another p
 
 	> Specifies the contract for a collection of service descriptors.
 
-	**What does that mean**?
+	**What does all that mean?**
 	
 3. Then there is "**A reference to this instance after the operation has completed**". Presumably, the operation being referred to here is the **addition of the service**?
 
-Again, all these definitions are 100% accurate, but do they cater to someone exploring ASP.NET for the very first time?
+Again, all these definitions are **100% accurate**, but do they cater to someone **exploring ASP.NET for the very first time**?
 
 Let us take another example - [Entity Framework](https://learn.microsoft.com/en-us/ef/).
 
@@ -59,13 +59,13 @@ Next is creating a project and installing EF.
 
 ![EFSetup](../images/2025/09/EFSetup.png)
 
-This looks straightforward enough.
+This looks straightforward enough. But then again, what is a **Database Provider**?
 
-Next, we have the section to create a model.
+Next, we have the section to **create a model**.
 
 ![Model](../images/2025/09/Model.png)
 
-You are on your own here. A `Model` perhaps a seasoned developer might now, but what is an `Entity` and a `Context` with respect to Entity Framework?
+You are on your own here. A `Model` perhaps a seasoned developer might now, but in this instance what is an `Entity` and a `Context` **with respect to Entity Framework**?
 
 There is some code provided:
 
@@ -115,9 +115,9 @@ public class Post
 
 Quick, which is the `Entity` and which is the `Model` referred to above? What is the `Context`?
 
-What is a `DbSet`? I just happen to know C# so I know that it is used in a context here for generic types. I wonder if such an assumption can be made for someone who wants to try out EF for the first time.
+What is a `DbSet`? I just happen to know C# so I know that it is used in a context here for [generic types](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics). I wonder if such an assumption can be made for someone who wants to try out EF for the first time.
 
-Next we have the section to create the database.
+Next we have the section to **create the database**.
 
 ![CreateDatabase](../images/2025/09/CreateDatabase.png)
 
@@ -131,11 +131,11 @@ Finally, there are CRUD examples.
 
 ![CRUD](../images/2025/09/CRUD.png)
 
-This is where you use everything setup earlier.
+This is where you use **everything setup earlier**.
 
 A couple of things to scratch your head:
 
-1. The `BloggingContext` was declared earlier. But what does it do? What is it's purpose? How does it work?
+1. The `BloggingContext` was declared earlier. Here, in the code, **we create one**. But what does it **do**? What is it's **purpose**? **How** does it work?
 2. `SaveChangesAsync` presumably saves changes to the database in an `asynchronous` fashion?
 3. Why is querying for a `Blog` necessitating use of [FirstAsync](https://learn.microsoft.com/en-us/dotnet/api/system.data.entity.queryableextensions.firstasync?view=entity-framework-6.2.0)? This is in fact a [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) thing, but there is nothing in this tutorial explaining the **connection between LINQ and Entity Framework**. Is it a a valid assumption to make that **somone who wants to use Entity Framework already knows LINQ**?
 
