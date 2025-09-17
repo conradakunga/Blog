@@ -4,6 +4,8 @@ title: Documentation Needs Love - Running Samples
 date: 2025-09-15 17:59:16 +0300
 categories:
     - Documentation
+    - C#
+    - .NET
 ---
 
 One of the brilliant innovations when it comes to the .NET documentation is the **ability to run (some) samples in your browser**.

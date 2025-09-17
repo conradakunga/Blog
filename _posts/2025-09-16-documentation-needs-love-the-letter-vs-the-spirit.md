@@ -4,6 +4,7 @@ title: Documentation Needs Love - The Letter vs The Spirit
 date: 2025-09-16 18:49:59 +0300
 categories:
     - Documentation
+    - .NET
 ---
 
 When learning a new technology or library, the first port of call is usually the **documentation**.
