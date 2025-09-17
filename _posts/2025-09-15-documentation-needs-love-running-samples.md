@@ -78,6 +78,6 @@ One (or more of these is possible)
 
 ### TLDR
 
-The runnable sample for [DateTime.ToString](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=net-9.0#code-try-2) does not run.
+**The runnable sample for [DateTime.ToString](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=net-9.0#code-try-2) does not run.**
 
 Happy hacking!
