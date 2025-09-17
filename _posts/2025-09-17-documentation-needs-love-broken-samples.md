@@ -9,7 +9,7 @@ categories:
 
 I recently wrote a post on how to [send email using C# & the Graph API]({% post_url 2025-07-20-sending-email-in-c-net-part-4-using-office-365-ms-graph-api %}), and was surprised how difficult it was.
 
-Let me try again, now that it is two months later.
+Let me try again, now that it is **two months later**, only using the instructions in the documentation.
 
 The sample code is on the documentation page, [here](https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0&tabs=csharp).
 
@@ -211,29 +211,29 @@ Above which there is is this comment:
 // https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
 ```
 
-This just dumps you [here](https://learn.microsoft.com/en-us/dotnet/api/azure.identity.devicecodecredential?view=azure-dotnet):
+This link takes you [here](https://learn.microsoft.com/en-us/dotnet/api/azure.identity.devicecodecredential?view=azure-dotnet):
 
 ![DeviceCodeCredential](../images/2025/09/DeviceCodeCredential.png)
 
-You can see here that it references a package, [Azure.Identity](https://www.nuget.org/packages/azure.identity), which, remember,  has not been mentioned anywhere in the documentation.
+You can see here that it references a package, [Azure.Identity](https://www.nuget.org/packages/azure.identity), which, remember,  has **not been mentioned anywhere in the documentation**.
 
-Let's try adding this:
+Let's try adding it directly:
 
 ```c#
 dotnet add package Azure.Identity
 ```
 
-The code now builds.
+The code now **builds**.
 
 Which got me thinking.
 
-1. At some point, this code must have worked.
-2. This comment, presumably, at some point was correct:
+1. At some point, this code **must have worked**.
+2. This comment, presumably, **at some point was correct**:
     > // Code snippets are only available for the latest version. Current version is 5.x
 
 When did it break?
 
-I wonder why the **Azure.Identity** package isn't a transient dependency.
+I also wonder why the **Azure.Identity** package isn't a transient dependency.
 
 And most importantly, what does it mean for something to be broken for this long? As hypothesized [recently]({% post_url 2025-09-15-documentation-needs-love-running-samples %}).
 
