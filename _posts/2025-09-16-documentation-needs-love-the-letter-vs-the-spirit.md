@@ -43,7 +43,7 @@ Again, all these definitions are **100% accurate**, but do they cater to someone
 
 Let us take another example - [Entity Framework](https://learn.microsoft.com/en-us/ef/).
 
-Assume you have never used Entity Framework before and want to try it out.
+Assume you have **never used Entity Framework before and want to try it out**.
 
 You go to the home page.
 
