@@ -11,7 +11,7 @@ If you have an array of numbers (of any numeric type) and you need to shuffle it
 
 ## Random Ordering
 
-The first is to use the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) object to order the values randomly using [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/), and project that into a new array.
+The first is to use the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) object to order the values randomly using [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/), and [project](https://learn.microsoft.com/en-us/dotnet/csharp/linq/standard-query-operators/projection-operations) that into a new `array`.
 
 Like so:
 
@@ -53,7 +53,9 @@ foreach (var number in numbers)
 
 Unlike the previous technique, this one **mutates the array in place**.
 
-This is simpler, and easier to read than the previous technique.
+This is simpler and easier to read than the previous technique.
+
+This will also work with Span
 
 ### TLDR
 
