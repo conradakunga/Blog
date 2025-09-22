@@ -9,11 +9,11 @@ categories:
 
 A problem you might run to in the course of your application development is that given a `array` of items, sample a number of elements **randomly**.
 
-There are two ways we can go about this:
+There are two ways we can go attempt this:
 
 ## Random Sorting, Take N Elements
 
-The first way (and more inefficient way) is to **sort** the `array` randomly, and then **pick the desired number of elements** from the head of the array.
+The first way (and more **inefficient** way) is to **sort** the `array` randomly, and then **pick the desired number of elements** from the head of the array.
 
 ```c#
 var numbers = Enumerable.Range(1, 25).ToArray();
@@ -31,6 +31,8 @@ This code will return `10` elements.
 ```plaintext
 2 10 6 18 14 17 22 16 4 19 
 ```
+
+The **drawback** of this technique is that it **sorts the entire array** before sampling. Which can be **inefficient** if the array is **large** but you just want to sample a **few** items.
 
 ## Random.GetItems Method
 
