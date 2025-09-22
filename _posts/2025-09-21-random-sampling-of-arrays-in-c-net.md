@@ -9,7 +9,7 @@ categories:
 
 A problem you might run to in the course of your application development is that given a `array` of items, sample a number of elements **randomly**.
 
-There are two ways we can go attempt this:
+There are two ways we can attempt this:
 
 ## Random Sorting, Take N Elements
 
