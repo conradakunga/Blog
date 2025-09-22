@@ -13,7 +13,7 @@ There are two ways we can go about this:
 
 ## Random Sorting, Take N Elements
 
-The first way (and more inefficient way) is to sort the `array` randomly, and then pick the desired number of elements from the head of the array.
+The first way (and more inefficient way) is to **sort** the `array` randomly, and then **pick the desired number of elements** from the head of the array.
 
 ```c#
 var numbers = Enumerable.Range(1, 25).ToArray();
@@ -53,7 +53,7 @@ This code will return `10` elements.
 24 3 22 9 3 10 2 18 15 21 
 ```
 
-GetItems also works with [Spans](https://learn.microsoft.com/en-us/dotnet/api/system.span-1?view=net-9.0).
+`Random.GetItems` also works with [Spans](https://learn.microsoft.com/en-us/dotnet/api/system.span-1?view=net-9.0).
 
 ### TLDR
 
