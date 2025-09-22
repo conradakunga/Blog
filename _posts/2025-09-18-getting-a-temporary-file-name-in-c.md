@@ -90,15 +90,15 @@ Something like this:
 ```c#
 public sealed class RandomFileNameGenerator()
 {
-	private const string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  private const string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-	public static string Generate(int length = 12)
-	{
-		var name = new string(Enumerable.Range(0, length)
-			.Select(_ => alphabet[Random.Shared.Next(alphabet.Length)]).ToArray());
+    public static string Generate(int length = 12)
+    {
+    var name = new string(Enumerable.Range(0, length)
+    .Select(_ => alphabet[Random.Shared.Next(alphabet.Length)]).ToArray());
 
-		return name;
-	}
+    return name;
+  }
 }
 ```
 
@@ -108,7 +108,7 @@ You can use the [Path.GetTempPath](https://learn.microsoft.com/en-us/dotnet/api/
 
 ```c#
 var tempPath = Path.Combine(Path.GetTempPath(), RandomFileNameGenerator.Generate());
-	Console.WriteLine(tempPath);
+Console.WriteLine(tempPath);
 ```
 
 This will print something like this:
