@@ -13,7 +13,7 @@ There are two ways we can attempt this:
 
 ## Random Sorting, Take N Elements
 
-The first way (and more **inefficient** way) is to **sort** the `array` randomly, and then **pick the desired number of elements** from the head of the array.
+The first (and more **inefficient** way) is to **sort** the `array` randomly, and then **pick the desired number of elements** from the head of the array.
 
 ```c#
 var numbers = Enumerable.Range(1, 25).ToArray();
