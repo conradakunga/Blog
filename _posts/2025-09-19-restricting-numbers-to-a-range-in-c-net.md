@@ -136,6 +136,6 @@ public class SensorTests
 
 **`Math.Clamp()` is a useful method for restricting numeric values to a known range.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-19%20-%20DigitalSensor).
 
 Happy hacking!
