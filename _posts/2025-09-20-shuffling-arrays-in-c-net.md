@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-If you have an array of numbers (of any numeric type) and you need to shuffle it, you have two options.
+If you have an `array` of numbers (of any numeric type) and you need to shuffle it, you have two options.
 
 ## Random Ordering
 
