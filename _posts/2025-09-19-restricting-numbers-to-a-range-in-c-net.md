@@ -26,7 +26,7 @@ public class Sensor
 
   public Sensor(int input)
   {
-  	Display = input;
+    Display = input;
   }
 }
 ```
