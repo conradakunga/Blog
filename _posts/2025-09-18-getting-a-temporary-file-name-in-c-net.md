@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting A Temporary File Name in C#
+title: Getting A Temporary File Name in C# & .NET
 date: 2025-09-18 10:02:06 +0300
 categories:
     - C#
