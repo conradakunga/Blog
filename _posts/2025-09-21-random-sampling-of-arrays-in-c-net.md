@@ -18,7 +18,9 @@ The first way (and more **inefficient** way) is to **sort** the `array` randomly
 ```c#
 var numbers = Enumerable.Range(1, 25).ToArray();
 
-var shuffled = numbers.OrderBy(n => Random.Shared.Next()).Take(10).ToArray();
+var shuffled = numbers.OrderBy(n => Random.Shared.Next())
+  .Take(10)
+  .ToArray();
 
 foreach (var number in shuffled)
 {
