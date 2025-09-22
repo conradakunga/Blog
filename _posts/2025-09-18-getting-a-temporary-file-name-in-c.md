@@ -94,8 +94,7 @@ public sealed class RandomFileNameGenerator()
 
     public static string Generate(int length = 12)
     {
-    var name = new string(Enumerable.Range(0, length)
-    .Select(_ => alphabet[Random.Shared.Next(alphabet.Length)]).ToArray());
+    var name = new string(Enumerable.Range(0, length).Select(_ => alphabet[Random.Shared.Next(alphabet.Length)]).ToArray());
 
     return name;
   }
