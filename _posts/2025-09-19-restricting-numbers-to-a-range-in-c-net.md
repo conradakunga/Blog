@@ -53,7 +53,7 @@ namespace V2
 }
 ```
 
-We can also write it like this, using switch expressions:
+We can also write it like this, using [switch expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression):
 
 ```c#
 namespace V2
