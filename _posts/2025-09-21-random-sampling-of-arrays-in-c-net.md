@@ -32,7 +32,7 @@ This code will return `10` elements.
 2 10 6 18 14 17 22 16 4 19 
 ```
 
-## GetItems Method
+## Random.GetItems Method
 
 A much better way is to make use of the [Random.GetItems](https://learn.microsoft.com/en-us/dotnet/api/system.random.getitems?view=net-9.0) method that achieves precisely this.
 
@@ -53,10 +53,12 @@ This code will return `10` elements.
 24 3 22 9 3 10 2 18 15 21 
 ```
 
+GetItems also works with [Spans](https://learn.microsoft.com/en-us/dotnet/api/system.span-1?view=net-9.0).
+
 ### TLDR
 
-The `Random.GetItems` method can be used to randomly sample elements of an `array`.
+**The `Random.GetItems` method can be used to randomly sample elements of an `array`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-21%20-%20RandomSample).
 
 Happy hacking!
