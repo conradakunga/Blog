@@ -84,6 +84,6 @@ We will look at how to generate a random `uint` and `ulong` in future posts.
 
 **We can make use of the `Random` class to contrain the bounds of generated values to generate random values of integral types.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-24%20-%20RandomIntegralTypes).
 
 Happy hacking!
