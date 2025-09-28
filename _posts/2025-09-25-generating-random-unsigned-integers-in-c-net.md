@@ -8,7 +8,7 @@ categories:
 
 ---
 
-In the previous post, ["Generating Random Values For Other Integral Types In C# & .NET"]({% post_urll 2025-09-24-generating-random-values-for-other-integral-types-in-c-net %}), we looked at how to generate random `integers` for other **unsigned integral types**.
+In the previous post, ["Generating Random Values For Other Integral Types In C# & .NET"]({% post_url 2025-09-24-generating-random-values-for-other-integral-types-in-c-net %}), we looked at how to generate random `integers` for other **unsigned integral types**.
 
 The technique of using the [Next()](https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0) method of the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) class, however, would not work for this case, given that returns a signed `int`, which is **constrained** between `2,147,483,647` and `2,147,483,647`.
 
