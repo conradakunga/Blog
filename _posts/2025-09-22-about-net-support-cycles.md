@@ -3,16 +3,16 @@ layout: post
 title: About .NET & Support Cycles
 date: 2025-09-22 16:41:52 +0300
 categories:
-    . NET
+    - .NET
 ---
 
-**Every year**,  there is a new release of the latest .NET SDK & runtime, incorporating a year of development, innovation and improvements.
+**Every year**,  there is a new release of the latest .NET SDK & runtime, incorporating a year of development, innovation, and improvements.
 
 From .NET 5, this has been in November.
 
-The releases are designated either as **STS** (Standard Term Support) or **LTS** (Long Term Support). 
+The releases are designated as either **STS** (Standard Term Support) or **LTS** (Long-Term Support). 
 
-The even numbered versions are **LTS** versions, and the odd numbered versions are **LTS**.
+The even-numbered versions are LTS versions, and the odd-numbered versions are **LTS**.
 
 The current situation is as follows:
 
