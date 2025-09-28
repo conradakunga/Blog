@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-When generating random integers in .NET, the goto is the [Next()](https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0) method of the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) class.
+When generating [random](https://en.wikipedia.org/wiki/Randomness) `integers` in .NET, the goto is the [Next()](https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0) method of the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) class.
 
 ```c#
 var randomNumber = Random.Shared.Next();
