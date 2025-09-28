@@ -21,14 +21,14 @@ The current situation is as follows:
 | .NET 8  | November 14, 2023 | LTS  | November 10, 2026 |
 | .NET 9  | November 12, 2024 | STS  | November 10, 2026 |
 
-This means that both will be fully supported until November 2026.
+This means that **both will be fully supported until November 2026**.
 
-Previously, the STS versions had shorter support cycles, which created:
+Previously, the **STS** versions had **shorter support cycles**, which created:
 
-1. A perception that it was of lower quality
-2. A window between versions where the STS was not supported
+1. A **perception** that it was of lower quality
+2. A window between versions where the **STS was not supported**
 
-This inadvertently created a reluctance to use STS versions in production.
+This inadvertently created a **reluctance to use STS versions in production**.
 
 Now, the [STS support period has been increased to 24 months](https://devblogs.microsoft.com/dotnet/dotnet-sts-releases-supported-for-24-months/#comments), which means that STS and LTS versions will be fully supported in sync.
 
