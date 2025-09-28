@@ -7,9 +7,9 @@ categories:
     - .NET
 ---
 
-In our last post, ["Generating Random 64 Bit Integers In C# & .NET"]({% post_url 2025-09-23-generating-random-64-bit-integers-in-c-net %}), we looked at how to generate 64 bit integral values.
+In our last post, ["Generating Random 64 Bit Integers In C# & .NET"]({% post_url 2025-09-23-generating-random-64-bit-integers-in-c-net %}), we looked at how to generate `64` bit `integral` values.
 
-But, as we had discussed before in the post  ["The Other Integer Types"]({% post_url 2021-05-24-the-other-integer-types %}), there are a number of other integral types:
+But, as we had discussed before in the post  ["The Other Integer Types"]({% post_url 2021-05-24-the-other-integer-types %}), there are a number of other `integral` types:
 
 - [sbyte](https://learn.microsoft.com/en-us/dotnet/api/system.sbyte)
 - [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte)
@@ -18,7 +18,7 @@ But, as we had discussed before in the post  ["The Other Integer Types"]({% post
 - [uint](https://learn.microsoft.com/en-us/dotnet/api/system.uint32)
 - [ulong](https://learn.microsoft.com/en-us/dotnet/api/system.uint64)
 
-Suppose we wanted to generate random values for these?
+Suppose we wanted to generate **random** values for these?
 
 The [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) class **does not have equivalent methods** for these.
 
@@ -26,7 +26,7 @@ But this is not a problem.
 
 For `sbyte`, `byte`, `short`, `ushort` we can make use of the fact that all these are smaller than the `32` bit `integer`, int.
 
-And this we can make use of the Next() overload that accepts bounds.
+And this we can make use of the [Next()](https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0#system-random-next(system-int32-system-int32)) overload that accepts bounds.
 
 Note that this overload is exclusive of the upper bound, so we have to add `1` to our bounds.
 
