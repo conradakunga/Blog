@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-While idly going through the documentation, or while the intellisense of your favourite IDE, you will almost certainly always stumble across a **method** or **property** you **did not know existed**.
+While idly going through the **documentation**, or the **intellisense** of your favourite IDE, you will almost certainly always stumble across a **method** or **property** you **did not know existed**.
 
 **There is no shame in this**!
 
@@ -20,7 +20,7 @@ Assuming you know at least the **year** (this matters for [leap years!](https://
 var startOfCurrentMonth = new DateOnly(2020, 2, 1);
 // Add a month to this date, to get the start of the next month	
 var startOfNextMonth = startOfCurrentMonth.AddMonths(1);
-// Move back one day to get the last day of the prevous month
+// Move back one day to get the last day of the previos month
 var endOfPreviousMonth = startOfNextMonth.AddDays(-1);
 // Get the day
 var day = endOfPreviousMonth.Day;
@@ -34,13 +34,13 @@ This will print the following:
 February, 2020 has 29 days
 ```
 
-If we run it for the next year, 2021
+If we run it for the next year, 2021:
 
 ```plaintext
 February, 2021 has 28 days
 ```
 
-It turns out there is a method of the DateTime class that can do this - [DaysInMonth](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.daysinmonth?view=net-9.0)
+It turns out there is a method of the [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-9.0) class that can do this - [DaysInMonth](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.daysinmonth?view=net-9.0)
 
 The above code can be rewritten as follows:
 
