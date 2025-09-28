@@ -7,11 +7,11 @@ categories:
     - .NET
 ---
 
-Over the past week, we have been looking at some of the challenges of generating random values of the various **integral** types from `bytes` to **unsigned** 64 bit `integers`.
+[Over]({% post_url 2025-09-23-generating-random-64-bit-integers-in-c-net %}) [the]({% post_url 2025-09-24-generating-random-values-for-other-integral-types-in-c-net %}) [past]({% post_url 2025-09-25-generating-random-unsigned-integers-in-c-net %}) [week]({% post_url 2025-09-26-generating-random-unsigned-64-bit-integers-in-c-net %}), we have been looking at some of the challenges of generating random values of the various **integral** types from `bytes` to **unsigned** 64 bit `integers`.
 
 There is, however, a case that you will encounter - generating a **random** `boolean`.
 
-This is a common use case for scenarios where you need to generate a choice, like a coin toss.
+This is a common use case for scenarios where you need to generate a **choice**, like a coin toss.
 
 A simple way to achieve this is to use [Random.Next()](https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0), and pass an upper bound of `2`.
 
