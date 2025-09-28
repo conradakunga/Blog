@@ -37,8 +37,8 @@ Console.WriteLine(randomNumber);
 
 ### TLDR
 
-We can generate random bytes to fill a 64 bit buffer, and use that to generate unsigned 64 bit integers.
+**We can use the `Random` class to generate random bytes to fill a 64 bit buffer, and use that to generate unsigned 64 bit integers.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-26%20-%20RandomULong).
 
 Happy hacking!
