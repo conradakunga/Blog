@@ -29,7 +29,7 @@ Random.Shared.NextDouble() < 0.5;
 
 For most purposes, these techniques are **good enough**.
 
-If, however, for security purposes you require a [cryptographically secure](https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator) random generator, you can use the [RandomNumberGenerator](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator?view=net-9.0) for this purpose, using its [Fill](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator.fill?view=net-9.0) method to generate random values into a buffer.
+If, however, for security purposes, you require a [cryptographically secure](https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator) random generator, you can use the [RandomNumberGenerator](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator?view=net-9.0) for this purpose, using its [Fill](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator.fill?view=net-9.0) method to generate random values into a buffer.
 
 Your code would look like this:
 

@@ -9,13 +9,13 @@ categories:
 
 In a previous post, ["Generating Random Values For Other Integral Types In C# & .NET"]({% post_url 2025-09-24-generating-random-values-for-other-integral-types-in-c-net %}) we looked at the challenges of generating **random values for other integral types**, outlined here in the post ["The Other Integer Types"]({% post_url 2021-05-24-the-other-integer-types %}).
 
-One of the types outlined was the **unsigned** `64` bit `integer`, [ulong](https://learn.microsoft.com/en-us/dotnet/api/system.int64).
+One of the types outlined was the **unsigned** `64-bit integer`, [ulong](https://learn.microsoft.com/en-us/dotnet/api/system.int64).
 
-We cannot use the [Next64()](https://learn.microsoft.com/en-us/dotnet/api/system.random.nextint64?view=net-9.0) method of the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) class for this purpose, as it returns an `64` bit `integer` ([long](https://learn.microsoft.com/en-us/dotnet/api/system.uint64)) that is constrained between `-9223372036854775808` and `9223372036854775807`.
+We cannot use the [Next64()](https://learn.microsoft.com/en-us/dotnet/api/system.random.nextint64?view=net-9.0) method of the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) class for this purpose, as it returns an `64-bit integer` ([long](https://learn.microsoft.com/en-us/dotnet/api/system.uint64)) that is constrained between `-9223372036854775808` and `9223372036854775807`.
 
-The **unsigned** `64` bit `integer`, `ulong`, however, is constrained between `0` and `18446744073709551615`.
+The **unsigned** `64-bit integer`, `ulong`, however, is constrained between `0` and `18446744073709551615`.
 
-This means that the largest signed `integer` is **too smal**l to accommodated the largest **unsigned** `integer`.
+This means that the largest signed `integer` is **too small** to accommodate the largest **unsigned** `integer`.
 
 Luckily, there is a solution to this problem.
 
@@ -37,7 +37,7 @@ Console.WriteLine(randomNumber);
 
 ### TLDR
 
-**We can use the `Random` class to generate random bytes to fill a 64 bit buffer, and use that to generate unsigned 64 bit integers.**
+**We can use the `Random` class to generate random bytes to fill a 64-bit buffer, and use that to generate unsigned 64-bit integers.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-26%20-%20RandomULong).
 

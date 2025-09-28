@@ -10,9 +10,9 @@ categories:
 
 In the previous post, ["Generating Random Values For Other Integral Types In C# & .NET"]({% post_url 2025-09-24-generating-random-values-for-other-integral-types-in-c-net %}), we looked at how to generate random `integers` for other **unsigned integral types**.
 
-The technique of using the [Next()](https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0) method of the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) class, however, would not work for this case, given that returns a signed `int`, which is **constrained** between `2,147,483,647` and `2,147,483,647`.
+The technique of using the [Next()](https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0) method of the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-9.0) class, however, would not work for this case, given that it returns a signed `int`, which is **constrained** between `2,147,483,647` and `2,147,483,647`.
 
-This eliminates **half of the range**, given that an unsigned integer unit is contrained between `0` and `4,294,967,295`.
+This eliminates **half of the range**, given that an unsigned integer unit is constrained between `0` and `4,294,967,295`.
 
 To work around this, we can use the [NextInt64()](https://learn.microsoft.com/en-us/dotnet/api/system.random.nextint64?view=net-9.0) method instead, and constrain that.
 
