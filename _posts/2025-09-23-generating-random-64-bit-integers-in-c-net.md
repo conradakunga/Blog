@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generating Random 64 Bit Integers In .NET
+title: Generating Random 64 Bit Integers In C# & .NET
 date: 2025-09-23 16:58:33 +0300
 categories:
     - C#
