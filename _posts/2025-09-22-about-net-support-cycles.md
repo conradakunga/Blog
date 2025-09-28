@@ -34,4 +34,8 @@ Now, the [STS support period has been increased to 24 months](https://devblogs.m
 
 Note, however, that this policy [does not apply to some of the components of the framework](https://dotnet.microsoft.com/en-us/platform/support/policy).
 
+### TLDR
+
+**The support cycle for STS versions has been increased to 24 months.**
+
 Happy hacking!

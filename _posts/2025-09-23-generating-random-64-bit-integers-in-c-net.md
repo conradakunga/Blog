@@ -21,11 +21,9 @@ This will print something like this:
 34234234
 ```
 
-
-
 This, however, just gives you a 32 bit `integer` [int](https://learn.microsoft.com/en-us/dotnet/api/system.int32?view=net-9.0), bounded from [int.MinValue](https://learn.microsoft.com/en-us/dotnet/api/system.int32.minvalue?view=net-9.0) (-2,147,483,648) and [int.MaxValue](https://learn.microsoft.com/en-us/dotnet/api/system.int32.maxvalue?view=net-9.0) (`2,147,483,648`)
 
-What if you wanted a larger number, an 64 bit integer - [Int64](https://learn.microsoft.com/en-us/dotnet/api/system.int64?view=net-9.0) (or `long`).
+What if you wanted a **larger** number, an 64 bit `integer` - [Int64](https://learn.microsoft.com/en-us/dotnet/api/system.int64?view=net-9.0) (or `long`).
 
 This is bounded by [long.MinValue](https://learn.microsoft.com/en-us/dotnet/api/system.int64.minvalue?view=net-9.0) (`-9,223,372,036,854,775,808`) and [long.MaxValue](https://learn.microsoft.com/en-us/dotnet/api/system.int64.maxvalue?view=net-9.0) (`-9,223,372,036,854,775,808`)
 
