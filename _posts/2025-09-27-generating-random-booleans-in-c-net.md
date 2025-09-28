@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generating Random Booleans C# & .NET
+title: Generating Random Booleans In C# & .NET
 date: 2025-09-27 18:54:43 +0300
 categories:
     - C#
