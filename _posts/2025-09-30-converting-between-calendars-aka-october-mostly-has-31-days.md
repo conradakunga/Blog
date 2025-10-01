@@ -7,9 +7,9 @@ categories:
     - .NET
 ---
 
-How many days does [October](https://en.wikipedia.org/wiki/October) have?
+Quick, how many **days** does [October](https://en.wikipedia.org/wiki/October) have?
 
-This one (**2025**) has `31` days.
+This year's (**2025**) has `31` days.
 
 ![october2025](../images/2025/10/october2025.png)
 
@@ -63,6 +63,6 @@ There is also a problematic year, **1900**, that was a leap year in the **Julian
 
 **Calendar conversions are crucial for accurately performing date arithmetic. This can be done using the `NodaTime` package.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-30%20-%20CalendarConversions).
 
 Happy hacking!
