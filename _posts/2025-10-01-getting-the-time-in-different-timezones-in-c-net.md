@@ -37,16 +37,18 @@ internal record ZoneInfo(string City, string TimeZone);
 Then the code that does the actual work:
 
 ```c#
-// Get the current time
-var now = SystemClock.Instance.GetCurrentInstant();
-
-Console.WriteLine($"It is {now:ddd, d MMM yyyy h:mm tt} in Nairobi");
+// Print current system date
+Console.WriteLine($"It is {DateTime.Now:ddd, d MMM yyyy h:mm tt} in Nairobi");
 Console.WriteLine();
+
+// Get the current time as an Instant
+var now = SystemClock.Instance.GetCurrentInstant();
 
 // Build an array of zone info types
 ZoneInfo[] zones =
 [
     new("Algiers", "Africa/Algiers"),
+    new("Atlanta", "America/Los_Angeles"),
     new("Wollongong", "Australia/Sydney"),
     new("London", "Europe/London"),
     new("Dublin", "Europe/Dublin"),
@@ -57,7 +59,7 @@ ZoneInfo[] zones =
 // Build the display pattern for the date and time
 var pattern = ZonedDateTimePattern.CreateWithInvariantCulture("ddd d MMM yyyy, h:mm tt", DateTimeZoneProviders.Tzdb);
 
-foreach (var zone in zones)
+foreach (var zone in zones.OrderBy(x => x.City))
 {
     // Get the current zone date time
     var zonedDateTime = now.InZone(DateTimeZoneProviders.Tzdb[zone.TimeZone]);
@@ -69,15 +71,15 @@ foreach (var zone in zones)
 This prints something like this:
 
 ```plaintext
-It is Wed, 1 Oct 2025 7:49 PM in Nairobi
+It is Wed, 1 Oct 2025 11:00 PM in Nairobi
 
-Algiers - Wed 1 Oct 2025, 8:49 PM
-Wollongong - Thu 2 Oct 2025, 5:49 AM
-London - Wed 1 Oct 2025, 8:49 PM
-Dublin - Wed 1 Oct 2025, 8:49 PM
-Cape Town - Wed 1 Oct 2025, 9:49 PM
-San Francisco - Wed 1 Oct 2025, 12:49 PM
-
+Algiers - Wed 1 Oct 2025, 9:00 PM
+Atlanta - Wed 1 Oct 2025, 1:00 PM
+Cape Town - Wed 1 Oct 2025, 10:00 PM
+Dublin - Wed 1 Oct 2025, 9:00 PM
+London - Wed 1 Oct 2025, 9:00 PM
+San Francisco - Wed 1 Oct 2025, 1:00 PM
+Wollongong - Thu 2 Oct 2025, 6:00 AM
 ```
 
 Now I can tell whether it is a **reasonable** hour to call or [Whatsapp](https://www.whatsapp.com/) my friends.
