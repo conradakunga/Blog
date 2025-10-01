@@ -5,6 +5,7 @@ date: 2025-09-30 21:32:37 +0300
 categories:
     - C#
     - .NET
+    - Dates
 ---
 
 Quick, how many **days** does [October](https://en.wikipedia.org/wiki/October) have?

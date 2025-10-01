@@ -5,6 +5,7 @@ date: 2025-09-29 20:51:49 +0300
 categories:
     - C#
     - .NET
+    - Dates
 ---
 
 Our last post, ["Getting The Number Of Days In A Month In C# & .NET"]({% post_url 2025-09-28-getting-the-number-of-days-in-a-month-in-c-net %}), looked at two ways to get the **number of days in a particular month**.

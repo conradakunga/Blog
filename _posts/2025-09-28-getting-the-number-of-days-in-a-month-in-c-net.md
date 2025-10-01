@@ -5,6 +5,7 @@ date: 2025-09-28 19:25:57 +0300
 categories:
     - C#
     - .NET
+    - Dates
 ---
 
 While idly going through the **documentation**, or the **intellisense** of your favourite IDE, you will almost certainly always stumble across a **method** or **property** you **did not know existed**.
