@@ -54,7 +54,6 @@ The following are some other dates where days were **adjusted**:
 | ---------------- | -------------- |
 | 4 Oct 1582       | 14 Oct 1582    |
 | 2 Sep 1752 (UK)  | 13 Sep 1752    |
-| 15 Oct 1582      | 15 Oct 1582    |
 | 14 Feb 1918 (RU) | 14 Feb 1918    |
 
 There is also a problematic year, **1900**, that was a leap year in the **Julian** calendar but wasn't in the **Gregorian** calendar. This has famously led to a [debatable bug](https://learn.microsoft.com/en-us/troubleshoot/microsoft-365-apps/excel/wrongly-assumes-1900-is-leap-year) in [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel).
