@@ -95,6 +95,6 @@ These are the **calendars** currently supported by .NET.
 
 **Days in the month are a construct of a calendar, as well as the year and the month.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-09-29%20-%20DaysInMonth).
 
 Happy hacking!
