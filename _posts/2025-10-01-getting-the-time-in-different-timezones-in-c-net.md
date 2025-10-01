@@ -86,6 +86,6 @@ Now I can tell whether it is a **reasonable** hour to call or [Whatsapp](https:/
 
 **`NodaTime` is a powerful library that can assist in the conversion and display of dates across time zones.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-01%20-%20TimezoneInfo).
 
 Happy hacking!
