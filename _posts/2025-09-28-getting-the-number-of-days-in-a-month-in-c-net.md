@@ -20,7 +20,7 @@ Assuming you know at least the **year** (this matters for [leap years!](https://
 var startOfCurrentMonth = new DateOnly(2020, 2, 1);
 // Add a month to this date, to get the start of the next month	
 var startOfNextMonth = startOfCurrentMonth.AddMonths(1);
-// Move back one day to get the last day of the previos month
+// Move back one day to get the last day of the previous month
 var endOfPreviousMonth = startOfNextMonth.AddDays(-1);
 // Get the day
 var day = endOfPreviousMonth.Day;
