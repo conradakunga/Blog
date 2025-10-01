@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Our last post, ["Getting The Number Of Days In A Month In C# & .NET"]({% post_url 2025-09-28-getting-the-number-of-days-in-a-month-in-c-net %}), looked at two ways to get the number of days in a particular month.
+Our last post, ["Getting The Number Of Days In A Month In C# & .NET"]({% post_url 2025-09-28-getting-the-number-of-days-in-a-month-in-c-net %}), looked at two ways to get the **number of days in a particular month**.
 
 The code is correct, but it may potentially be **wrong**..
 
@@ -15,7 +15,7 @@ Why?
 
 [Calendar systems](https://en.wikipedia.org/wiki/Calendar)!
 
-The calendar most of the world currently uses is the [Gregorian Calendar](https://en.wikipedia.org/wiki/Gregorian_calendar).
+The calendar **most** of the world currently uses is the [Gregorian Calendar](https://en.wikipedia.org/wiki/Gregorian_calendar).
 
 The **proper** way to get the days in the month in this calendar is to use the [GregorianCalendar](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.gregoriancalendar?view=net-9.0) class as follows:
 
@@ -46,6 +46,50 @@ This will print the following:
 ```plaintext
 January 2000 has 30 days in the Hijri Calendar
 ```
+
+We can pull a list of calendars using reflection as folllows:
+
+```c#
+var calendar = typeof(Calendar);
+// Get the assembly
+var calendars = calendar.Assembly
+    // Get the types in the assembly
+    .GetTypes()
+    // Filter out the non-abstract classes, and get those that are assignable
+    .Where(t => !t.IsAbstract && calendar.IsAssignableFrom(t))
+    // Order by name
+    .OrderBy(t => t.Name);
+
+Console.WriteLine("Calendars:");
+
+foreach (var type in calendars!)
+{
+    Console.WriteLine($"- {type.Name}");
+}
+```
+
+This code will print the following:
+
+```c#
+Calendars:
+- ChineseLunisolarCalendar
+- GregorianCalendar
+- HebrewCalendar
+- HijriCalendar
+- JapaneseCalendar
+- JapaneseLunisolarCalendar
+- JulianCalendar
+- KoreanCalendar
+- KoreanLunisolarCalendar
+- PersianCalendar
+- TaiwanCalendar
+- TaiwanLunisolarCalendar
+- ThaiBuddhistCalendar
+- UmAlQuraCalendar
+
+```
+
+These are the **calendars** currently supported by .NET.
 
 ### TLDR
 
