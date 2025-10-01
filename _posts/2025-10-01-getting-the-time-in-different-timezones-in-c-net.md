@@ -37,6 +37,9 @@ internal record ZoneInfo(string City, string TimeZone);
 Then the code that does the actual work:
 
 ```c#
+using NodaTime;
+using NodaTime.Text;
+
 // Print current system date
 Console.WriteLine($"It is {DateTime.Now:ddd, d MMM yyyy h:mm tt} in Nairobi");
 Console.WriteLine();
@@ -53,7 +56,8 @@ ZoneInfo[] zones =
     new("London", "Europe/London"),
     new("Dublin", "Europe/Dublin"),
     new("Cape Town", "Africa/Johannesburg"),
-    new("San Francisco", "America/Los_Angeles")
+    new("San Francisco", "America/Los_Angeles"),
+    new("San José", "America/Los_Angeles")
 ];
 
 // Build the display pattern for the date and time
@@ -71,15 +75,16 @@ foreach (var zone in zones.OrderBy(x => x.City))
 This prints something like this:
 
 ```plaintext
-It is Wed, 1 Oct 2025 11:00 PM in Nairobi
+It is Wed, 1 Oct 2025 11:27 PM in Nairobi
 
-Algiers - Wed 1 Oct 2025, 9:00 PM
-Atlanta - Wed 1 Oct 2025, 1:00 PM
-Cape Town - Wed 1 Oct 2025, 10:00 PM
-Dublin - Wed 1 Oct 2025, 9:00 PM
-London - Wed 1 Oct 2025, 9:00 PM
-San Francisco - Wed 1 Oct 2025, 1:00 PM
-Wollongong - Thu 2 Oct 2025, 6:00 AM
+Algiers - Wed 1 Oct 2025, 9:27 PM
+Atlanta - Wed 1 Oct 2025, 1:27 PM
+Cape Town - Wed 1 Oct 2025, 10:27 PM
+Dublin - Wed 1 Oct 2025, 9:27 PM
+London - Wed 1 Oct 2025, 9:27 PM
+San Francisco - Wed 1 Oct 2025, 1:27 PM
+San José - Wed 1 Oct 2025, 1:27 PM
+Wollongong - Thu 2 Oct 2025, 6:27 AM
 ```
 
 Now I can tell whether it is a **reasonable** hour to call or [Whatsapp](https://www.whatsapp.com/) my friends.
