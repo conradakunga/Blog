@@ -21,7 +21,7 @@ var randomuInt = (uint)Random.Shared.NextInt64(uint.MinValue, ((long)uint.MaxVal
 Console.WriteLine(randomuInt);
 ```
 
-Here we are casting the value of [uint.MaxValue](https://learn.microsoft.com/en-us/dotnet/api/system.uint32.maxvalue?view=net-9.0) to a `long`, then adding 1 to that so that the **upper bound is included**.
+Here we are casting the value of [uint.MaxValue](https://learn.microsoft.com/en-us/dotnet/api/system.uint32.maxvalue?view=net-9.0) to a `long`, then adding `1` to that so that the **upper bound is included**.
 
 This will print something like this:
 
