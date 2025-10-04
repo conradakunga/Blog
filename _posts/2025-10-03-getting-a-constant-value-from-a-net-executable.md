@@ -11,13 +11,13 @@ categories:
 
 I use it for a bunch of quick scripts and utilities across the various devices I work on.
 
-Recently, I needed to load the value of a constant that was in a .NET application, so that I could use it for registration of the application.
+Recently, I needed to load the value of a **constant** that was in a .NET application, so that I could use it for registration of the application.
 
 The steps are as follows:
 
-1. Obtain the path to the actual application
-2. Load the assembly
-3. Extract the constant value
+1. Obtain the **path** to the actual application
+2. Load the **assembly**
+3. Extract the **constant** value
 
 Given that the application was in the **same path as the application executable**, I made use of the knowledge from the last post, ["Getting The Current Path Of An Executing PowerShell Script"]({% post_url 2025-10-02-getting-the-current-path-of-an-executing-powershell-script %}), and then used the [Join-Path](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/join-path?view=powershell-7.5) [cmdlet](https://learn.microsoft.com/en-us/powershell/scripting/powershell-commands?view=powershell-7.5) to build the path.
 
