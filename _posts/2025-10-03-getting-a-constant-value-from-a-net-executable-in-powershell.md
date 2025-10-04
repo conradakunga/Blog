@@ -37,7 +37,7 @@ This, however, is just a **bootstrapper**. Your code actually gets compiled into
 
 It is in this DLL that we can find our constant.
 
-We then use native PowerShell `cmdLet`, Add-Type, to load the type, passing it the path.
+We then use native PowerShell `cmdLet`, [Add-Type](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/add-type?view=powershell-7.5), to load the type, passing it the path.
 
 ```powershell
 # Load the type
