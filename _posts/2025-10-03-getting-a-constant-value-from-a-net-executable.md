@@ -92,6 +92,6 @@ If you don't have PowerShell installed, here are the [installation instructions]
 
 **PowerShell can extract constants and other values from .NET assemblies.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-03%20-%20MyKillerApp).
 
 Happy hacking!
