@@ -12,7 +12,7 @@ From .NET 5, this has been in November.
 
 The releases are designated as either **STS** (Standard Term Support) or **LTS** (Long-Term Support). 
 
-The even-numbered versions are LTS versions, and the odd-numbered versions are **LTS**.
+The **even**-numbered versions are **LTS** versions, and the **odd**-numbered versions are **STS**.
 
 The current situation is as follows:
 
