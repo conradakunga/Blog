@@ -4,7 +4,7 @@ title: Getting The Current Path Of An Executing PowerShell Script
 date: 2025-10-02 10:26:20 +0300
 categories:
     - PowerShell
-    - .NET
+    -.NET
 ---
 
 [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.5) is an excellent, [cross-platform](https://en.wikipedia.org/wiki/Cross-platform_software) scripting solution that you can use to automate various tasks in Windows, Linux, and Unix environments. The fact that it has full access to the entire .[NET ecosystem](https://dotnet.microsoft.com/en-us/) is the icing on the cake.
