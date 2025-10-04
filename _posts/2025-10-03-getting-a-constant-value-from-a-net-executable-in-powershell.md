@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting A Constant Value From A .NET Executable
+title: Getting A Constant Value From A .NET Executable in PowerShell
 date: 2025-10-03 11:10:32 +0300
 categories:
     - PowerShell
