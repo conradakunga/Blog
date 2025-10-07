@@ -29,7 +29,7 @@ This will return the following across 3 operating systems.
 | macOS 15 (Sequoia) | Unix    |
 | Ubuntu 24.04       | Unix    |
 
-Of interest is that Ubuntu, a [Linux](https://en.wikipedia.org/wiki/Linux) distribution, reports [Unix](https://en.wikipedia.org/wiki/Unix).
+Of interest is that [Ubuntu](https://ubuntu.com/), a [Linux](https://en.wikipedia.org/wiki/Linux) distribution, reports [Unix](https://en.wikipedia.org/wiki/Unix).
 
 We'll look into why that is the case in the next post.
 
