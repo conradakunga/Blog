@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Unit Test A Class With Options
+title: How To Unit Test A Class With Options In C# & .NET
 date: 2025-10-05 21:46:02 +0300
 categories:
     - C#
