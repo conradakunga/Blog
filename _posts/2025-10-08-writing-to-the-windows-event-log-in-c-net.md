@@ -155,6 +155,6 @@ If you omit the [EventLogEntryType](https://learn.microsoft.com/en-us/dotnet/api
 
 You can access and manipulate the Windows Event Log using the `EventLog` class.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-08%20-%20WriteToEventLog).
 
 Happy hacking!
