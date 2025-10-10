@@ -10,7 +10,7 @@ categories:
     - Logging
 ---
 
-On the Windows platform, the canonical place to write logs is the [Windows Event Log](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-logging).
+On the [Windows](https://www.microsoft.com/en-us/windows?r=1) platform, the canonical place to write logs is the [Windows Event Log](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-logging).
 
 You view this using the [Event Viewer](https://learn.microsoft.com/en-us/shows/inside/event-viewer), which looks like this:
 
