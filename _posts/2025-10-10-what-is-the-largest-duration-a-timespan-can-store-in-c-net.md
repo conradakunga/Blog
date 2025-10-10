@@ -11,7 +11,7 @@ While writing yesterday's post, "[Getting The System Uptime In C# & .NET]({% pos
 
 I found myself wondering - **what is the largest duration this can store**?
 
-I need not have looked far. there is a [TimeSpan.MaxValue](https://learn.microsoft.com/en-us/dotnet/api/system.timespan.maxvalue?view=net-9.0) property that has everything we need.
+I need not have looked far - there is a [TimeSpan.MaxValue](https://learn.microsoft.com/en-us/dotnet/api/system.timespan.maxvalue?view=net-9.0) property that has everything we need.
 
 ```c#
 Console.WriteLine($"{TimeSpan.MaxValue.TotalDays:#,0} days");
