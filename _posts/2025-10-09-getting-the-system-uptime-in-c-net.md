@@ -22,7 +22,7 @@ It returns:
 
 > A 64-bit signed integer containing the amount of time in milliseconds that has passed since the last time the computer was started.
 
-We can get the time for this using the TimeStamp object.
+We can get the time for this using the [TimeStamp](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-9.0) class.
 
 ```c#
 var uptime = TimeSpan.FromMilliseconds(Environment.TickCount64);
@@ -39,7 +39,7 @@ Here we are using the [Humanizer](https://github.com/Humanizr/Humanizer) library
 
 It is important to use the `TickCount64` and not the similar `TickCount`, as the latter returns a `32-bit integer`.
 
-The last bit is important - given a 32 bit signed integer is in the range `-2,147,483,648` to `2,147,483,647`, that means we have a range of 4,294,967,295 milliseconds, which works out to about `49.7` days.
+The last bit is important - given a `32-bit` signed integer is in the range `-2,147,483,648` to `2,147,483,647`, that means we have a range of 4,294,967,295 milliseconds, which works out to about `49.7` days.
 
 This essentially means that the value **rolls over every `50` or so days**.
 
