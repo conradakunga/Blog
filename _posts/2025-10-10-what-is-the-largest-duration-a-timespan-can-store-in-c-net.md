@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-While writing yesterday's post, "[Getting The System Uptime In C# & .NET]({% post_url 2025-10-09-getting-the-system-uptime-in-c-net %})", I learned that the Environment.TickCount64 returns a `64-bit` [integer](https://learn.microsoft.com/en-us/dotnet/api/system.int64?view=net-9.0).
+While writing yesterday's post, "[Getting The System Uptime In C# & .NET]({% post_url 2025-10-09-getting-the-system-uptime-in-c-net %})", I learned that the [Environment.TickCount64](https://learn.microsoft.com/en-us/dotnet/api/system.environment.tickcount64?view=net-9.0) returns a `64-bit` [integer](https://learn.microsoft.com/en-us/dotnet/api/system.int64?view=net-9.0).
 
 I found myself wondering - **what is the largest duration this can store**?
 
