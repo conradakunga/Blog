@@ -4,7 +4,7 @@ title: Getting The System Directory In C# & .NET
 date: 2025-10-11 16:33:17 +0300
 categories:
     - C#
-    - .NETs
+    - .NET
 ---
 
 After installing an [operating system](https://www.ibm.com/think/topics/operating-systems) on your device, the various files, libraries and executables are stored in what is called the [system directory](https://www.sciencedirect.com/topics/computer-science/system-directory).
