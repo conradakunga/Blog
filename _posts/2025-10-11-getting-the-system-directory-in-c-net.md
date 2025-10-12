@@ -7,11 +7,11 @@ categories:
     - .NETs
 ---
 
-After installing the operating system, the various files, libraries and executables are stored in what is called the [system directory](https://www.sciencedirect.com/topics/computer-science/system-directory).
+After installing an [operating system](https://www.ibm.com/think/topics/operating-systems) on your device, the various files, libraries and executables are stored in what is called the [system directory](https://www.sciencedirect.com/topics/computer-science/system-directory).
 
 In [Windows](https://www.microsoft.com/en-us/windows), it is usually `C:\Windows\System32`
 
-But not always! The user can decide to install it to any other drive, perhaps `D:` or `E:`
+But **not always**! The user can decide to install it to any other drive, perhaps `D:` or `E:`
 
 Further, this has (historically) been different depending on the flavour and version of the operating system.
 
