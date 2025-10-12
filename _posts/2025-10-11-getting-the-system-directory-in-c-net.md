@@ -13,7 +13,7 @@ In [Windows](https://www.microsoft.com/en-us/windows), it is usually `C:\Windows
 
 But **not always**! The user can decide to install it to any other drive, perhaps `D:` or `E:`
 
-Further, this has (historically) been different depending on the flavour and version of the operating system.
+Further, this has (historically) been different depending on the flavour and version of the operating system. For example, in [Windows NT 4](https://en.wikipedia.org/wiki/Windows_NT_4.0) it was `C:\WINNT\System32`.
 
 In short - **you cannot make any assumptions** as to where this is.
 
