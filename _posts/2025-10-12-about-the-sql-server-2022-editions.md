@@ -4,11 +4,12 @@ title: About The SQL Server 2022 Editions
 date: 2025-10-12 21:23:30 +0300
 categories:	
     - SQL Server
+    - SQL Server 2022
 ---
 
 [Microsoft SQL Server](https://www.microsoft.com/en-gb/sql-server/sql-server-2022) is one of the mainstream database engines that is used daily for workloads ranging from single user application to application platforms that support entire enterprises.
 
-When it comes to acquiring and using SQL Server, one must be cognisant of the **various editions** that are available.
+When it comes to acquiring and using [SQL Server](https://www.microsoft.com/en-us/sql-server), one must be cognisant of the **various editions** that are available.
 
 These are as follows:
 
