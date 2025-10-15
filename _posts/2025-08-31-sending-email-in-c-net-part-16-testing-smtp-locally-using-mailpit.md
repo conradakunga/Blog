@@ -39,7 +39,7 @@ It works in exactly the same way, except that it uses **different default ports*
 
 You can [install](https://mailpit.axllent.org/docs/install/) it on your development environment (or anywhere, really), or you can use it as a [Docker](https://www.docker.com/) container.
 
-Without hesitation, I recommend the latter.
+**Without hesitation**, I recommend the latter.
 
 ```bash
 docker run -d --name mailpit -p 25:1025 -p 8080:8025 axllent/mailpit
