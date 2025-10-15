@@ -52,7 +52,7 @@ A couple of things of note:
 
 ## GOTCHA
 
-Given that the developer edition is the same as the enterprise edition, it is very easy to use features that are [not available in the production environment that you are deploying to](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17).
+Given that the **developer** edition ***is the same*** as the **enterprise** edition feature-wise, it is very easy to use features that are [not available in the production environment that you are deploying to](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17).
 
 This means that it is possible to run into application failures, or reduced performance when deploying your application.
 
