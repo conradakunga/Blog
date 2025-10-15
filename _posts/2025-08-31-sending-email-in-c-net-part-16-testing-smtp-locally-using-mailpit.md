@@ -37,7 +37,7 @@ I have recently come across a tool that, I feel, is even better - [Mailpit](http
 
 It works in exactly the same way, except that it uses **different default ports**. Which, naturally, you can change.
 
-You can [install](https://mailpit.axllent.org/docs/install/) it on your development environment (or anywhere, really), or you can use it as a Docker](https://www.docker.com/) container.
+You can [install](https://mailpit.axllent.org/docs/install/) it on your development environment (or anywhere, really), or you can use it as a [Docker](https://www.docker.com/) container.
 
 Without hesitation, I recommend the latter.
 
