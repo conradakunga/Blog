@@ -53,7 +53,7 @@ Why am I switching to this over **PaperCut** for testing email sending? A number
 
 1. Ability to **persist** email (useful for multi-session development and debugging)
 2. Email is **searchable**
-3. The [Docker](https://www.docker.com/) image is only **39.5 MB**, as opposed to PaperCut's **269 MB** (Though in the larger scheme of things, does the size really matter for a one-off download?)
+3. The [Docker](https://www.docker.com/) image is only **39.5 MB**, as opposed to PaperCut's **269 MB** (Though in the larger scheme of things, **does the size really matter for a one-off download**?)
 
 Note: I am making comparisons here against the **PaperCut** **web UI**, not the **desktop application**.
 
