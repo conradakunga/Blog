@@ -20,7 +20,7 @@ These are the available editions of SQL Server 2025:
 | Express                  | Free, entry level database                                   |
 | Web                      | Low cost edtiion primary for web hosting scenarios           |
 | Standard                 | Edition with standard funcitonality to support small enterprise as a database management system and business intelligece platform |
-| **Standard Developer**   | This is the same as the enterpise version, but only licensed for development use |
+| **Standard Developer**   | This is the same as the standard version, but only licensed for development use |
 | Enterprise               | Premium edition with all the bells and whistles, including virtualization |
 | **Enterprise Developer** | This is the same as the enterpise version, but only licensed for development use |
 
