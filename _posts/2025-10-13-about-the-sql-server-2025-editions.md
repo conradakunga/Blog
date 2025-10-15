@@ -26,7 +26,7 @@ These are the available editions of SQL Server 2025:
 
 As you can see, there are **two different editions** for developers - **standard developer** and **enterprise developer.**
 
-This means that out of the gate, you can **use the appropriate version** targeting the deployment edition and avoid surprises on deployment and use.
+This means that out of the gate, you can **use the appropriate version** targeting the deployment edition and avoid **surprises** on deployment and use.
 
 You can read more about **SQL Server 2025** editions and features [here](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-editions-and-components-2025?view=sql-server-ver17).
 
