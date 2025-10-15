@@ -59,3 +59,9 @@ This means that it is possible to run into application failures, or reduced perf
 Ensure you test against the edition of the database you are deploying to.
 
 A simple solution for this is to grab an evaluation version [from here](https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2022) to test against.
+
+### TLDR
+
+**Microsoft SQL Server is available in various editions. Pick the one best suited for your requirements.**
+
+Happy hacking!
