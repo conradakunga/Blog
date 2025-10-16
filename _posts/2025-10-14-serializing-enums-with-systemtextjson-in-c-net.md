@@ -9,7 +9,7 @@ categories:
 
 One of the data structures that you will almost certainly use as a developer is the [enumeration](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum), or `enum`.
 
-This is basically a collection of known values grouped together that offer more **clarity** and **usability** than a [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)).
+This is basically a collection of **known values grouped together** that offer more **clarity** and **usability** than a [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)).
 
 Take, for example, this `enum`, which we can use to describe an `AnimalType`:
 
@@ -70,21 +70,21 @@ This would print the following:
 
 Note here that the `AnimalType` enum has been serialized as a 0, because at the end of the day, an enum represents an `int`.
 
-This can safely be deserialized as follows:
+This can safely be **deserialized** as follows:
 
 ```c#
 var deserializedCat = JsonSerializer.Deserialize<Animal>(defaultString, defaultOptions);
 ```
 
-If we inspect the `Animal` in the debugger, we can see it has been deserialized correctly.
+If we inspect the `Animal` in the debugger, we can see it has been **deserialized** correctly.
 
 ![DeserializedCat](../images/2025/10/DeserializedCat.png)
 
-When it comes to serializing `enums`, we have other **options**.
+When it comes to **serializing** `enums`, we have other **options**.
 
-We can also serialize it as a **string**.
+We can also **serialize** it as a **string**.
 
-To do so, we need to configure the options that our serializer will use.
+To do so, we need to configure the **options** that our serializer will use.
 
 For this, we will use the [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-9.0) class, and to this, add a built-in [converter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-9.0) to address this, the [JsonStringEnumConverter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonstringenumconverter?view=net-9.0).
 
@@ -110,7 +110,9 @@ This will print the following:
 
 Here we can see that the `AnimalType` is now serialized as "`Mammal`" and not `0`.
 
-Why would you want to do this a couple of reasons:
+**Why** would you want to do this?
+
+ A couple of reasons:
 
 1. Easier to **read** and **debug**
 2. You can later **change the order and values** of the enum without breaking code
@@ -126,7 +128,7 @@ You would probably start off like this:
 var otherCat = JsonSerializer.Deserialize<Animal>(enumString);
 ```
 
-This will throw the following exception:
+This will throw the following [exception](https://learn.microsoft.com/en-us/dotnet/api/system.exception?view=net-9.0):
 
 ```plaintext
 Unhandled exception. System.Text.Json.JsonException: The JSON value could not be converted to AnimalType. Path: $.AnimalType | LineNumber: 2 | BytePositionInLine: 24.
