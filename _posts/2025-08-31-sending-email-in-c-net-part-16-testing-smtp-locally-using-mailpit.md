@@ -169,7 +169,7 @@ You can **mark email as unread**.
 
 **PaperCut** served me well, but time to move on to a more capable replacement.
 
-You can run the following command to spin up MailPit as in place replacement of the **PaperCut** docker image. Be sure to **stop the PaperCut cointainer first** to free its ports.
+You can run the following command to spin up **MailPit** as in place replacement of the **PaperCut** docker image. Be sure to **stop the PaperCut cointainer first** to free its ports.
 
 ```bash
 docker run -d --name mailpit -p 25:1025 -p 8080:8025 axllent/mailpit
