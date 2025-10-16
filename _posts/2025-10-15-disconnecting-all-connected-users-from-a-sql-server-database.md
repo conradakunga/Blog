@@ -8,7 +8,7 @@ categories:
 
 Occasionally, you might run into a situation where there are **very many open connections** to a [SQL Server database](https://www.microsoft.com/en-us/sql-server), and for whatever reason, you want to **kick them all out**.
 
-You can see the active connections using the [sp_who](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-who-transact-sql?view=sql-server-ver17) or the [sp_who2](https://sqlserverplanet.com/dba/using-sp_who2) system stored procedure.
+You can see the active connections using the [sp_who](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-who-transact-sql?view=sql-server-ver17) or the [sp_who2](https://sqlserverplanet.com/dba/using-sp_who2), which are part of the [system stored procedures](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/system-stored-procedures-transact-sql?view=sql-server-ver17).
 
 ```sql
 sp_who
@@ -56,6 +56,8 @@ GO
 ```
 
 You can read more about the available options [here](https://learn.microsoft.com/en-us/sql/t-sql/statements/alter-database-transact-sql-set-options?view=sql-server-ver17).
+
+**Note that this method is also pretty violent as it kicks out anyone connected without warning. Use this at your discretion!**
 
 ### TLDR
 
