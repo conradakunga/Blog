@@ -18,6 +18,8 @@ This will return something like this:
 
 ![OpenConnections](../images/2025/10/OpenConnections.png)
 
+You might then want to **kick out all the connected users**.
+
 Why? A number of reasons:
 
 1. **Maintenance** of schemas and objects
