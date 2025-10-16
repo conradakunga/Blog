@@ -16,10 +16,10 @@ These are as follows:
 | Edition    | Description                                                  |
 | ---------- | ------------------------------------------------------------ |
 | Express    | Free, entry level database                                   |
-| Web        | Low cost edtiion primary for web hosting scenarios           |
-| Standard   | Edition with standard funcitonality to support small enterprise as a database management system and business intelligece platform |
+| Web        | Low cost edition primary for web hosting scenarios           |
+| Standard   | Edition with standard functionality to support small enterprise as a database management system and business intelligence platform |
 | Enterprise | Premium edition with all the bells and whistles, including virtualization |
-| Developer  | This is the same as the enterpise version, but only licensed for development use. |
+| Developer  | This is the same as the enterprise version, but only licensed for development use. |
 
 As a developer, you would naturally develop using the **Developer** edition, which is available both as an installable package and as a [docker](https://www.docker.com/) container. You can get various images of SQL Server [here](https://hub.docker.com/r/microsoft/mssql-server).
 
