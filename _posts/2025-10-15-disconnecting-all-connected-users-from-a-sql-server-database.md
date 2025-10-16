@@ -8,6 +8,16 @@ categories:
 
 Occasionally, you might run into a situation where there are **very many open connections** to a [SQL Server database](https://www.microsoft.com/en-us/sql-server), and for whatever reason, you want to **kick them all out**.
 
+You can see the active connections using the [sp_who](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-who-transact-sql?view=sql-server-ver17) or the [sp_who2](https://sqlserverplanet.com/dba/using-sp_who2) system stored procedure.
+
+```sql
+sp_who
+```
+
+This will return something like this:
+
+![OpenConnections](../images/2025/10/OpenConnections.png)
+
 Why? A number of reasons:
 
 1. **Maintenance** of schemas and objects
