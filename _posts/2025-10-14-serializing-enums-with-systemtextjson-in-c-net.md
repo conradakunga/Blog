@@ -191,6 +191,6 @@ This is important in the case where you are **interfacing with a REST API that y
 
 **You can control how to serialize `enums` either as `numbers` or as `strings` using `JsonSerializerOptions`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-14%20-%20EnumSerialize).
 
 Happy hacking!
