@@ -153,7 +153,9 @@ var otherCat = JsonSerializer.Deserialize<Animal>(enumString, enumStringOptions)
 
 You can further customize the **serialization** and **deserialization**, such as changing the naming policy.
 
-For this we use the overloaded [constructor](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonstringenumconverter.-ctor?view=net-9.0#system-text-json-serialization-jsonstringenumconverter-ctor(system-text-json-jsonnamingpolicy-system-boolean)).
+For this, we use the overloaded [constructor](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonstringenumconverter.-ctor?view=net-9.0#system-text-json-serialization-jsonstringenumconverter-ctor(system-text-json-jsonnamingpolicy-system-boolean)).
+
+Suppose, for example, you want [upper-case kebab](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/) casing.
 
 The code would look like this:
 
@@ -185,7 +187,7 @@ This will print the following:
 
 The other available naming policies are outlined [here](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonnamingpolicy?view=net-9.0).
 
-This is important in the case where you are **interfacing with a REST API that you do not control** as a consumer.
+This is particularly important when **interfacing with a REST API that you do not control** as a consumer.
 
 ### TLDR
 
