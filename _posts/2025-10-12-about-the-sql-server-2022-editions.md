@@ -7,7 +7,7 @@ categories:
     - SQL Server 2022
 ---
 
-[Microsoft SQL Server](https://www.microsoft.com/en-gb/sql-server/sql-server-2022) is one of the mainstream database engines that is used daily for workloads ranging from single user application to application platforms that support entire enterprises.
+[Microsoft SQL Server](https://www.microsoft.com/en-gb/sql-server/sql-server-2022) is one of the mainstream database engines that is used daily for workloads ranging from single-user applications to application platforms that support entire enterprises.
 
 When it comes to acquiring and using [SQL Server](https://www.microsoft.com/en-us/sql-server), one must be cognisant of the **various editions** that are available.
 
@@ -15,9 +15,9 @@ These are as follows:
 
 | Edition    | Description                                                  |
 | ---------- | ------------------------------------------------------------ |
-| Express    | Free, entry level database                                   |
-| Web        | Low cost edition primary for web hosting scenarios           |
-| Standard   | Edition with standard functionality to support small enterprise as a database management system and business intelligence platform |
+| Express    | Free, entry-level database                                   |
+| Web        | Low-cost edition primarily for web hosting scenarios         |
+| Standard   | Edition with standard functionality to support small enterprises as a database management system and business intelligence platform |
 | Enterprise | Premium edition with all the bells and whistles, including virtualization |
 | Developer  | This is the same as the enterprise version, but only licensed for development use. |
 
