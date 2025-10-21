@@ -64,6 +64,6 @@ The same will work with whichever flavour of grep you use, plain vanilla grep, [
 
 ### TLDR
 
-**`Grep` (and its flavours) directly support searching in files, so piping `cat` to grep is unnecessary.**
+**`Grep` (and its flavours) directly support searching in files, so piping `cat` to `grep` is unnecessary.**
 
 Happy hacking!
