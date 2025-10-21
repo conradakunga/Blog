@@ -298,6 +298,6 @@ foreach (var movie in moviesV1)
 
 **A custom `Comparer` can be a very powerful technique to control how to do custom sorting.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-19%20-%20CustomMovieSorter).
 
 Happy hacking!
