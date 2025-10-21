@@ -37,7 +37,7 @@ Which prints what I expect:
 
 ![grepPassword](../images/2025/10/grepPassword.png)
 
-Much as it is working, I am in fact doing the wrong thing.
+Much as it is working, I am in fact **doing the wrong thing**.
 
 What this does is:
 
