@@ -60,10 +60,10 @@ This returns the following:
 
 In addition to being **simpler** and **faster**, this approach also has the added benefit of returning the **line number**.
 
-The same will work with whichever flavour of grep you use, plain vanilla grep, [ripgrep](https://github.com/BurntSushi/ripgrep) or [ugrep](https://github.com/Genivia/ugrep).
+The same will work with whichever flavour of grep you use, plain vanilla grep, [ripgrep,](https://github.com/BurntSushi/ripgrep) or [ugrep](https://github.com/Genivia/ugrep).
 
 ### TLDR
 
-**`Grep` (and its flavours) directly support searching in files, so piping cat to grep is unnecessary.**
+**`Grep` (and its flavours) directly support searching in files, so piping `cat` to grep is unnecessary.**
 
 Happy hacking!
