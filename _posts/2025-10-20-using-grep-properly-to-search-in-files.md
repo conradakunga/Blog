@@ -7,9 +7,9 @@ categories:
     - Tools
 ---
 
-I have mentioned a number of times that I make heavy use of Docker to spin up instances of infrastructure I use in development, like databases. 
+I have mentioned a number of times that I make heavy use of [Docker](https://www.docker.com/) to spin up instances of **infrastructure I use in development**, like databases. 
 
-For example, here is the `docker-compose.yaml` for my SQL Server that persists data to disk:
+For example, here is the `docker-compose.yaml` for my [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server) that persists data to disk:
 
 ```yaml
 services:
