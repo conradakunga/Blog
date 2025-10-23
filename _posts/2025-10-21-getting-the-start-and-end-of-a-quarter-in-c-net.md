@@ -9,7 +9,7 @@ categories:
 
 When doing [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-9.0) or [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-9.0) arithmetic and manipulations, it is common to come across a situation where you need to operate in **quarters**.
 
-A calendar year has `4` quarters, each of 3 months.
+A calendar year has `4` quarters, each of `3` months.
 
 - Quarter 1 - January, February, March
 - Quarter 2 - April, May, June
@@ -214,6 +214,6 @@ These, naturally, should pass.
 
 **We have implemented some extension methods that help us get the current quarter, the start of the current quarter, and the end of the current quarter.**
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2025-10-21%20-%20DateExtensions).
 
 Happy hacking!
