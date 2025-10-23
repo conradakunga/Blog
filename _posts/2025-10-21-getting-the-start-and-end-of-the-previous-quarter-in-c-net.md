@@ -60,8 +60,8 @@ public void EndOfPreviousQuarterTests(int testYear, int testMonth, int testDay, 
 
 To get this, we can use the following simple algorithm.
 
-1. Get the start of the current quarter
-2. Subtract 3 months from that
+1. Get the **start** of the **current** quarter
+2. **Subtract** `3` **months** from that
 
 The rationale here is that the **start** of each quarter is exactly `3` months **away from the next**.
 
@@ -111,6 +111,6 @@ The **tests** for these two extension methods should **pass**:
 1. **The last day of the previous quarter**
 2. **The first day of the previous quarter**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-22%20-%20DateExtensions).
 
 Happy hacking!
