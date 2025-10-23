@@ -34,12 +34,12 @@ The code is as follows:
 /// <param name="date"></param>
 /// <returns></returns>
 public static DateOnly GetEndOfPreviousQuarter(this DateOnly date)
-  {
-      // Get the start of the current quarter
-      var startOfCurrentQuarter = date.GetStartOfQuarter();
-      // Subtract one day
-      return startOfCurrentQuarter.AddDays(-1);
-  }
+{
+    // Get the start of the current quarter
+    var startOfCurrentQuarter = date.GetStartOfQuarter();
+    // Subtract one day
+    return startOfCurrentQuarter.AddDays(-1);
+}
 ```
 
 We then write some **tests** for this:
@@ -49,10 +49,10 @@ We then write some **tests** for this:
 [InlineData(2025, 4, 2, 2025, 3, 31)]
 [InlineData(2025, 1, 1, 2024, 12, 31)]
 public void EndOfPreviousQuarterTests(int testYear, int testMonth, int testDay, int actualYear, int actualMonth,
-    int actualDay)
+  int actualDay)
 {
-    var testDate = new DateOnly(testYear, testMonth, testDay);
-    testDate.GetEndOfPreviousQuarter().Should().Be(new DateOnly(actualYear, actualMonth, actualDay));
+  var testDate = new DateOnly(testYear, testMonth, testDay);
+  testDate.GetEndOfPreviousQuarter().Should().Be(new DateOnly(actualYear, actualMonth, actualDay));
 }
 ```
 
