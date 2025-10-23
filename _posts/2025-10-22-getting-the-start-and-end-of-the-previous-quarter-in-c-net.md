@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting The Start and End Of The Previous Quarter In C# & .NET
-date: 2025-10-21 22:02:13 +0300
+date: 2025-10-22 22:02:13 +0300
 categories:
     - C#
     - .NET
