@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-The previous post, "[Getting The Start and End Of The Previous Quarter In C# & .NET]({% post_url 2025-10-22-getting-the-start-and-end-of-the-previous-quarter-in-c-net %})" looked at how to compute the last day of the previous quarter and the first day of the previous quarter.
+The previous post, "[Getting The Start and End Of The Previous Quarter In C# & .NET]({% post_url 2025-10-22-getting-the-start-and-end-of-the-previous-quarter-in-c-net %})" looked at how to compute the **last day of the previous quarter** and the **first day of the previous quarter**.
 
 In this post, we will look at how to compute the following:
 
@@ -18,12 +18,12 @@ In this post, we will look at how to compute the following:
 
 To fetch this, we can do the following:
 
-1. Get the last date of the current quarter
-2. Add a day to that
+1. Get the **last** date of the **current quarter**
+2. **Add a day** to that
 
 So, given an example of **2nd April 2025**, we first compute the **last date of the current quarter** using the method `GetEndOfQuarter()` we have already [written]({% post_url 2025-10-21-getting-the-start-and-end-of-a-quarter-in-c-net %}). This will be **30 Jun 2025**.
 
-The first date of the next quarter is **a day after** this date, **1 Jul 2025.**
+The first date of the next quarter is **the day after** this date, **1 Jul 2025.**
 
 The code looks like this:
 
@@ -66,7 +66,7 @@ To get this is even simpler.
 
 So, given an example of **2nd April 2025**, we first compute the **first date of the next quarter** using the method `GetStartOfNextQuarter()` we have just written. This will be **1 July 2025**.
 
-We then get the end of this using the `GetEndOfQuarter` method we wrote [here]({% post_url 2025-10-21-getting-the-start-and-end-of-a-quarter-in-c-net %}), which is **30 September 2025**.
+We then get the end of this using the `GetEndOfQuarter()` method we wrote [here]({% post_url 2025-10-21-getting-the-start-and-end-of-a-quarter-in-c-net %}), which is **30 September 2025**.
 
 The code is as follows:
 
@@ -109,6 +109,6 @@ These tests should **pass**.
 1. **First day of the next quarter**
 2. **Last day of the next quarter**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-23%20-%20DateExtensions).
 
 Happy hacking!
