@@ -118,6 +118,6 @@ The tests should pass successfully.
 1. **First day of the current year**
 2. **Last day of the current year**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-24%20-%20DateExtensions).
 
 Happy hacking!
