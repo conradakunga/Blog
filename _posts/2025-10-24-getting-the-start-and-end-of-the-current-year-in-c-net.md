@@ -8,7 +8,7 @@ categories:
     - Dates
 ---
 
-The previous post, "[Getting The Start and End Of The Next Quarter In C# & .NET]({% post_url 2025-10-23-getting-the-start-and-end-of-the-next-quarter-in-c-net %})" looked at how to get the start and end of the next quarter, given a [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-9.0).
+The previous post, "[Getting The Start and End Of The Next Quarter In C# & .NET]({% post_url 2025-10-23-getting-the-start-and-end-of-the-next-quarter-in-c-net %})" looked at how to get the **start** and **end** of the **next quarter**, given a [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-9.0).
 
 In this post, we will look at how to compute the following:
 
