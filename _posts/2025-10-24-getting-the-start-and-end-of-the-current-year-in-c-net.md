@@ -71,7 +71,7 @@ So, given a date, 6 July 2025:
 - The **current** year is `2025`
 - **Increment** this to `2026`
 - Create a new `DateOnly`, **1 Jan 2026**
-- **Subtract** a **day**, **31 Dec 2026**
+- **Subtract** a **day**, **31 Dec 2025**
 
 The code is as follows:
 
