@@ -5,9 +5,10 @@ date: 2025-10-23 22:29:44 +0300
 categories:
     - C#
     - .NET
+    - Dates
 ---
 
-The previous post, "[Getting The Start and End Of The Previous Quarter In C# & .NET]({% post_url 2025-10-22-getting-the-start-and-end-of-the-previous-quarter-in-c-net %})" looked at how to compute the **last day of the previous quarter** and the **first day of the previous quarter**.
+The previous post, "[Getting The Start and End Of The Previous Quarter In C# & .NET]({% post_url 2025-10-22-getting-the-start-and-end-of-the-previous-quarter-in-c-net %})", looked at how to compute the **last and first** days of the previous quarter.
 
 In this post, we will look at how to compute the following:
 

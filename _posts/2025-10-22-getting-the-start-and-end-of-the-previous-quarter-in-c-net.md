@@ -5,6 +5,7 @@ date: 2025-10-22 22:02:13 +0300
 categories:
     - C#
     - .NET
+    - Dates
 ---
 
 The previous post, "[Getting The Start and End Of A Quarter In C# & .NET]({% post_url 2025-10-21-getting-the-start-and-end-of-a-quarter-in-c-net %})", looked at how to get the **start** and **end** of a **quarter**.

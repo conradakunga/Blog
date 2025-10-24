@@ -5,6 +5,7 @@ date: 2025-10-21 20:31:45 +0300
 categories:
     - C#
     - .NET
+    - Dates
 ---
 
 When doing [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-9.0) or [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-9.0) arithmetic and manipulations, it is common to come across a situation where you need to operate in **quarters**.
