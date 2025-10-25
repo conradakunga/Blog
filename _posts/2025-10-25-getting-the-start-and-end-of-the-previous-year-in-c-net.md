@@ -8,7 +8,7 @@ categories:
     - Dates
 ---
 
-The previous post, "[Getting The Start and End Of The Current Year In C# & .NET]({% psost_url 2025-10-24-getting-the-start-and-end-of-the-current-year-in-c-net %})", discussed how to get the **start** and **end** dates of the **current year** given a [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-9.0).
+The previous post, "[Getting The Start and End Of The Current Year In C# & .NET]({% post_url 2025-10-24-getting-the-start-and-end-of-the-current-year-in-c-net %})", discussed how to get the **start** and **end** dates of the **current year** given a [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-9.0).
 
 In this post, we will look at how to compute the following:
 
