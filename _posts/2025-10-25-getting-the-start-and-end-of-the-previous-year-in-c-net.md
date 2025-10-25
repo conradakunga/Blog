@@ -109,6 +109,6 @@ int actualDay)
 1. **First day of the previous year**
 2. **Last day of the previous year**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-25%20-%20DateExtensions).
 
 Happy hacking!
