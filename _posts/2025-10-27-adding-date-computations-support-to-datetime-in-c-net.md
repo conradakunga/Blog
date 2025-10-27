@@ -24,7 +24,7 @@ In this case, we would need to write the extension methods for the [DateTime](ht
 Here will will leverage the following:
 
 1. We have **already written all the code for the conversions** with the `DateOnly`
-2. The smallest unit of time is a **Microsecond**
+2. The smallest unit of time is a [Microsecond](https://simple.wikipedia.org/wiki/Microsecond)
 
 All the `Start` methods will remain as is - the start of any period is the smallest unit. For example, the time for the first quarter is going to be `00:00.0000`
 
