@@ -111,6 +111,6 @@ If we run our tests, they should pass.
 1. ***First* day of the *next* year**
 2. ***Last* day of the *next* year**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-26%20-%20DateExtensions).
 
 Happy hacking!
