@@ -36,9 +36,9 @@ We can get this as follows:
 TimeSpan.FromDays(1).Add(TimeSpan.FromTicks(-10))
 ```
 
-We are **subtracting** `10` because [Ticks](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.ticks?view=net-9.0)` advance in units of `10.
+We are **subtracting** `10` because [Ticks](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.ticks?view=net-9.0) advance in units of 10.
 
-We can then add this value to the start DateTime to get the end DateTime just short of crossing to the next day.
+We can then add this value to the **start** `DateTime` to get the **end** `DateTime` just short of crossing to the next day.
 
 ```c#
 private static readonly TimeSpan LargestTime = TimeSpan.FromDays(1).Add(TimeSpan.FromTicks(-10));
