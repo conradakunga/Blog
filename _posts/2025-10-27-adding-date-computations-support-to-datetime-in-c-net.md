@@ -24,7 +24,7 @@ In this case, we would need to write the extension methods for the [DateTime](ht
 Here will will leverage the following:
 
 1. We have **already written all the code for the conversions** already with the `DateOnly`
-2. The smallest unit of time is a [Tick](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.ticks?view=net-9.0)
+2. The smallest unit of time is a Microsecond
 
 All the `Start` methods will remain as is - the start of any period is the smallest unit. For example, the time for the first quarter is going to be `00:00.0000`
 
@@ -36,7 +36,7 @@ We can get this as follows:
 TimeSpan.FromDays(1).Add(TimeSpan.FromTicks(-10))
 ```
 
-We are **subtracting** `10` because `Ticks` advance in units of `10`.
+We are **subtracting** `10` because `[Ticks](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.ticks?view=net-9.0)` advance in units of `10`.
 
 We can then add this value to the start DateTime to get the end DateTime just short of crossing to the next day.
 
