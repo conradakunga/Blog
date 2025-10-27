@@ -44,9 +44,7 @@ We can then add this value to the start DateTime to get the end DateTime just sh
 private static readonly TimeSpan LargestTime = TimeSpan.FromDays(1).Add(TimeSpan.FromTicks(-10));
 ```
 
-
-
-The code for the DateTime extensions will look like this:
+The code for the `DateTime` extensions will look like this:
 
 ```c#
 public static class DateTimeExtensions
