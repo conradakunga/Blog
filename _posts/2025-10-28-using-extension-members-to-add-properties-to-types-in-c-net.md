@@ -331,6 +331,6 @@ public static class DateTimeExtensions
 
 **Extension properties allow the ability to write cleaner code by allowing for the definition of new properties on types.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-28%20-%20DateExtensions).
 
 Happy hacking!
