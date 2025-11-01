@@ -107,7 +107,7 @@ Typically, a friction point occurs when you deploy this application - you must *
 
 Many problems have arisen from **forgetting** this step. And sooner or later, **you WILL forget**.
 
-One elegant solution to this problem is to take advantage of the fact that the ASP.NET pipeline already has a solution to this problem.
+One elegant solution to this problem is to take advantage of the fact that the ASP.NET pipeline **already has a solution to this problem**.
 
 All we need to do is copy the **settings that we want to override** in development into the `appsettings.Development.json`.
 
@@ -138,8 +138,8 @@ Now, if I re-run the application, and call the endpoint, I should see the follow
 
 ```json
 {
-	"database": "data source=FRODO",
-	"redis": "ARWEN"
+  "database": "data source=FRODO",
+  "redis": "ARWEN"
 }
 ```
 
@@ -179,7 +179,7 @@ I then changed my startup to conditionally load this file if the environment is 
 ```c#
 if (builder.Environment.IsDevelopment())
 {
-    builder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: false);
+	builder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: false);
 }
 ```
 
@@ -200,45 +200,42 @@ var builder = WebApplication.CreateBuilder(args);
 // If running in devolopment, load settings by developer machine
 if (builder.Environment.IsDevelopment())
 {
-    builder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: false);
+	builder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: false);
 }
 
 // Register settings with DI
-builder.Services.AddOptions<ConnectionStrings>()
-    .Bind(builder.Configuration.GetSection("ConnectionStrings"));
+builder.Services.AddOptions<ConnectionStrings>().Bind(builder.Configuration.GetSection("ConnectionStrings"));
 
 var app = builder.Build();
 
 app.MapGet("/", (IOptions<ConnectionStrings> options) =>
 {
-    var settings = options.Value;
-    return new
-    {
-        Database = settings.DatabaseConnectionString,
-        Redis = settings.RedisConnectionString
-    };
+  var settings = options.Value;
+  return new
+  {
+    Database = settings.DatabaseConnectionString,
+    Redis = settings.RedisConnectionString
+  };
 });
 
 app.Run();
 ```
 
-
-
 If I now run the API, I get the following expected response:
 
 ```json
 {
-	"database": "data source=BOMBADIL",
-	"redis": "MERIADOC"
+  "database": "data source=BOMBADIL",
+  "redis": "MERIADOC"
 }
 ```
 
-With this strategy, there are several benefits.
+This strategy offers several benefits.
 
-1. Multiple developers can work on a project without stepping on each other's toes
-2. Everyone' settings are version-controlled and tracked for posterity
-3. You have access to everyone else's settings to verify your own configuration 
-4. Very simple to implement
+1. **Multiple developers** can work on a project without stepping on each other's toes
+2. Everyone' settings are **version-controlled** and tracked for posterity
+3. You have access to everyone else's settings to **verify your own configuration** 
+4. Very **simple** to implement
 
 ### TLDR
 
