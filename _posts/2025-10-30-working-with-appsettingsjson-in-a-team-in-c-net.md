@@ -241,6 +241,6 @@ This strategy offers several benefits.
 
 **You can conditionally load developer-specific appsettings.json files, which are controlled by the developer's machine name.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-30%20-%20DBApi).
 
 Happy hacking!
