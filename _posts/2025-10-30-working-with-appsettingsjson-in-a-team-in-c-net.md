@@ -61,8 +61,6 @@ builder.Services.AddOptions<ConnectionStrings>()
     .Bind(builder.Configuration.GetSection("ConnectionStrings"));
 
 var app = builder.Build();
-
-
 ```
 
 Finally, we write a simple API that prints the connection strings.
