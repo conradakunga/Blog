@@ -4,6 +4,7 @@ title: Generating A .NET Friendly .gitignore
 date: 2025-10-29 12:48:28 +0300
 categories:
     - .NET
+    - Git
 ---
 
 When you create a new project in .NET, in whatever language - [C#](https://learn.microsoft.com/en-us/dotnet/csharp/), [F#](https://learn.microsoft.com/en-us/dotnet/fsharp/), or [VB.NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/), a number of **files** are **generated**.
