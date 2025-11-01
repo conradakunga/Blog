@@ -179,7 +179,7 @@ I then changed my startup to conditionally load this file if the environment is 
 ```c#
 if (builder.Environment.IsDevelopment())
 {
-	builder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: false);
+	Rbuilder.Configuration.AddJsonFile($"appsettings.{Environment.MachineName}.json", optional: false);
 }
 ```
 
