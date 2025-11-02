@@ -92,6 +92,6 @@ public class DateExtensionTests
 
 **You can now write static extension methods that allow the addition of static methods to existing types.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-01%20-%20DateExtensions).
 
 Happy hacking!
