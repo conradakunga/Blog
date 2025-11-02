@@ -95,6 +95,10 @@ public class GreeterTests
 
 Here we are passing the **hour** we want to test against, as well as the expected returned **greeting**.
 
+The tests should pass successfully:
+
+![TImeProviderTests](../images/2025/11/TImeProviderTests.png)
+
 ### TLDR
 
 **The `TimeProvider` class allows you to architect and abstract your types to avoid dependencies on `DateTime.Now` or DateTime.UtcNow offers a flexible setup for testing purposes using the `FakeDateTimeProvider`.**
