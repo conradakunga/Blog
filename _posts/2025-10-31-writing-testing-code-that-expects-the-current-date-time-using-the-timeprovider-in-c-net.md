@@ -103,6 +103,6 @@ The tests should pass successfully:
 
 **The `TimeProvider` class allows you to architect and abstract your types to avoid dependencies on `DateTime.Now` or DateTime.UtcNow offers a flexible setup for testing purposes using the `FakeDateTimeProvider`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-10-31%20-TimeDependentCode).
 
 Happy hacking!
