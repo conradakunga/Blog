@@ -62,6 +62,10 @@ public void CultureName_Is_Returned_Correctly()
 }
 ```
 
+The test should work:
+
+![ExtensionPropertyTests](../images/2025/11/ExtensionPropertyTests.png)
+
 In this manner, we have added a static extension property to a type.
 
 ### TLDR
