@@ -3,13 +3,7 @@ layout: default
 ---
 <div class="posts">
   {% assign latest_posts = site.posts | slice: 0, 15 %}
-  {% assign postsByYear = latest_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
-  {% for year in postsByYear %}
-  {% assign yearCount = year.items | size %}
-  {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
-  {% for month in postsByMonth %}
-  {% assign monthCount = month.items | size %}
-  {% assign postsByWeek = month.items | group_by_exp:"post", "post.date | date: '%V'" %}
+  {% assign postsByWeek = latest_posts | group_by_exp:"post", "post.date | date: '%V'" %}
   {% for week in postsByWeek %}
   <br />
   <h1> 📅 <b>Week {{week.name}}</b></h1>
@@ -26,8 +20,6 @@ layout: default
     {{ post.excerpt }}
   </article>
   </ul>
-  {% endfor %}
-  {% endfor %}
   {% endfor %}
   {% endfor %}
 
