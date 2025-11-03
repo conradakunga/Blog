@@ -72,6 +72,6 @@ In this manner, we have added a static extension property to a type.
 
 **You can also write *static extension properties* to complement the static properties available in an underlying type.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-02%20-%20DateExtensions).
 
 Happy hacking!
