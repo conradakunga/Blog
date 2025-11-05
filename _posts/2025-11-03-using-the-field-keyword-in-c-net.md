@@ -137,6 +137,6 @@ Thus, our code is much terser and easier to maintain.
 
 The `field` keyword allows flexible usage and validation of automatic properties.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-03%20-%20FieldKeyword).
 
 Happy hacking!
