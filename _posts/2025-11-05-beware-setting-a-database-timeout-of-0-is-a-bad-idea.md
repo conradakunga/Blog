@@ -8,15 +8,15 @@ categories:
     - Dapper
 ---
 
-When interacting with a database, of whatever kind, you will need to establish a connection to the database using the access technology of choice - either Entity Framework, Dapper, or direct ADO (ActiveX Data Objects).
+When interacting with a database, of whatever kind, you will need to establish a connection to the database using the access technology of choice - either [Entity Framework](https://learn.microsoft.com/en-us/ef/core/), [Dapper](https://github.com/DapperLib/Dapper), or direct [ADO](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) (ActiveX Data Objects).
 
 These connections usually have a default timeout, if you don't specify one.
 
-SQL Server, for example, has a 30-second timeout.
+[SQL Server](https://www.microsoft.com/en-us/sql-server), for example, has a 30-second timeout.
 
-You can, of course, change this.
+You can, of course, change this when providing a connection string. 
 
-I have discussed this extensively in this post - "Dapper Part 8 - Controlling Database Timeouts"
+I have discussed this extensively in this post - "[Dapper Part 8 - Controlling Database Timeouts]({% post_url 2025-11-05-beware-setting-a-database-timeout-of-0-is-a-bad-idea %})"
 
 Recently, when reviewing some old code, I came across this line:
 
@@ -42,6 +42,6 @@ You **will never know about this**, as the code will continue to run **indefinit
 
 ### TLDR
 
-Do not set database commands to wait infinitely in their connections.
+**Do not set database commands to wait infinitely in their connections.**
 
 Happy hacking!
