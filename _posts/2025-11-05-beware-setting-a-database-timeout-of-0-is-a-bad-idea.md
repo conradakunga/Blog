@@ -28,7 +28,7 @@ This essentially means that the connection will **never time out**.
 
 At first glance, this might appear to be a good thing.
 
-It isn't.
+**It isn't.**
 
 Database connections are **expensive**, and locking one away will cause problems, as you will eventually **run out of connections**. 
 
