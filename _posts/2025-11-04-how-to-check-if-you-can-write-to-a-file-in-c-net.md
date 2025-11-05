@@ -32,9 +32,9 @@ finally
 
 So far, so good.
 
-Complications arise when there are multiple applications manipulating the file at the same time.
+Complications arise when there are **multiple applications manipulating the file at the same time**.
 
-Take the following code, where I open the file twice - the first time **exclusively**, and the next for **writing**.
+Take the following code, where I open the file twice: the first time **exclusively**, and the second for **writing**.
 
 ```c#
 // Get a temp file name
