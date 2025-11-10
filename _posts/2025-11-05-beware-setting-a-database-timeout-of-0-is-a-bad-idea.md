@@ -24,6 +24,8 @@ Recently, when reviewing some old code, I came across this line:
 SqlMapper.Settings.CommandTimeout = 0
 ```
 
+This is some code that was using `Dapper`, which sets the default connection timeout.
+
 This essentially means that the connection will **never time out**.
 
 At first glance, this might appear to be a good thing.
