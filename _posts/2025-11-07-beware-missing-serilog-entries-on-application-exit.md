@@ -70,7 +70,7 @@ Here, we have wrapped the code in a **try-catch-finally** block.
 
 ### TLDR
 
-**Always *close* and *flush* your Log to ensure data is not lost on exit or exception.**
+**Always *close* and *flush* your Log to ensure data is not lost on exit or in the event of an exception.**
 
 The code is in my GitHub.
 
