@@ -47,6 +47,6 @@ In fact, it is possible to have an **infinite collection** (that makes use of [y
 
 ### TLDR
 
-It is advisable to use` Any()` rather than `Count` / `Length` to determine the **emptiness** of a collection.
+**It is advisable to use` Any()` rather than `Count` / `Length` to determine the emptiness of a collection.**
 
 Happy hacking
