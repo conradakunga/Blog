@@ -7,9 +7,9 @@ categories:
     - .NET
 ---
 
-When it comes to logging, the de facto standard is the Serilog library.
+When it comes to logging, the de facto standard is the [Serilog](https://serilog.net/) library.
 
-This works using the concepts of **sinks**, which are **targets** to which you send your log data.
+This works using the concepts of [sinks](https://github.com/serilog/serilog/wiki/provided-sinks), which are **targets** to which you send your log data.
 
 The most common sinks are 
 
@@ -35,7 +35,7 @@ string fruit = "Apple";
 Log.Information("The fruit is a {Fruit}", fruit);
 ```
 
-There are two important elements here - the string **template**, and the actual **value**.
+There are two important elements here - the string **template** and the actual **value**.
 
 If we view the logs in `Seq`, they look like this:
 
@@ -45,9 +45,9 @@ If we expand the entry, it looks like this:
 
 ![SeqValues](../images/2025/11/SeqValues.png)
 
-Here we can see that the **property** is `Fruit`, and the value is `Apple`.
+Here, we can see that the **property** is `Fruit`, and the value is `Apple`.
 
-Suppose we need to log a complex property, like this:
+Suppose we need to log a **complex property**, like this:
 
 ```c#
 public class Animal
@@ -74,7 +74,7 @@ And the expanded entry will look like this:
 
 ![AnimalExpanded](../images/2025/11/AnimalExpanded.png)
 
-The details of the animal object are lost.
+The **details** of the `Animal` object are lost.
 
 The correct way to log a complex object is to prefix the template placeholder with the `@` symbol.
 
@@ -108,7 +108,7 @@ We can filter on `Seq` like this:
 Animal.Legs = 2
 ```
 
-
+And this will be returned:
 
 ![SeqFilter](../images/2025/11/SeqFilter.png)
 
@@ -124,6 +124,6 @@ Animal.Legs > 2
 
 **The proper way to log complex objects with `Serilog` is to use *destructuring*.**
 
-The code is in my **GitHub**.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-05%20-%20ComplexLogging).
 
 Happy hacking!
