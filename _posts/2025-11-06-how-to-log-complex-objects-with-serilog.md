@@ -5,6 +5,8 @@ date: 2025-11-06 11:35:46 +0300
 categories:
     - C#
     - .NET
+    - Logging
+    - Serilog
 ---
 
 When it comes to logging, the de facto standard is the [Serilog](https://serilog.net/) library.
