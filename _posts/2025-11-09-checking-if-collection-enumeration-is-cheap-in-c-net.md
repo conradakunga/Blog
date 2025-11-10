@@ -82,6 +82,6 @@ else
 
 **The LINQ `TryGetNonEnumeratedCount` extension method allows you to check whether or not enumerating a collection to determine its length is an expensive operation.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-09%20-%20ExpensiveEnumeration).
 
 Happy hacking!

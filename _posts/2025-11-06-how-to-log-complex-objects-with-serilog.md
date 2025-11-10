@@ -126,6 +126,6 @@ Animal.Legs > 2
 
 **The proper way to log complex objects with `Serilog` is to use *destructuring*.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-05%20-%20ComplexLogging).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-06%20-%20ComplexLogging).
 
 Happy hacking!

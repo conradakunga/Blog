@@ -72,6 +72,6 @@ Here, we have wrapped the code in a **try-catch-finally** block.
 
 **Always *close* and *flush* your Log to ensure data is not lost on exit or in the event of an exception.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-07%20-%20ComplexLogging).
 
 Happy hacking!
