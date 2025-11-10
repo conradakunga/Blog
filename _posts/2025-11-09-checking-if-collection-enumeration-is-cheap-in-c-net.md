@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Our last post, "[Count vs Any To Check A If A Collection Has Elements In C# & .NET]({% post_url % 2025-11-08-count-vs-any-to-check-a-if-a-collection-has-elements-in-c-net })", looked at considerations around determining the length or size of a collection.
+Our last post, "[Count vs Any To Check A If A Collection Has Elements In C# & .NET]({% post_url 2025-11-08-count-vs-any-to-check-a-if-a-collection-has-elements-in-c-net %})", looked at considerations around determining the length or size of a collection.
 
 In this post, we will look at a potential middle ground that will allow you to **check whether the computations of a collection length are expensive beforehand**.
 
