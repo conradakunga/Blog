@@ -39,7 +39,7 @@ Here we are using the [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/lin
 
 They may return the same result, but **they are not the same thing**!
 
-Length makes use of the fact that the `array` *Length* is always known in advance, whereas `Any()` **tries to iterate** through the collection and **returns as soon as it is successful**.
+Length makes use of the fact that the `array` **Length** is always known in advance, whereas `Any()` **tries to iterate** through the collection and **returns as soon as it is successful**.
 
 **Not all collections store their lengths**, and thus, it may be **potentially expensive** to determine emptiness using this technique.
 
