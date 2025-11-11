@@ -13,9 +13,11 @@ This includes:
 
 - [C# 14](https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-14)
 - [F# 10](https://learn.microsoft.com/dotnet/fsharp/whats-new/fsharp-10)
-- ASP.NET
+- [ASP.NET](https://learn.microsoft.com/aspnet/core/release-notes/aspnetcore-10.0)
 - [Entity Framework Core 10](https://learn.microsoft.com/ef/core/what-is-new/ef-core-10.0/whatsnew)
 - Blazor
+- [Aspire](https://learn.microsoft.com/dotnet/aspire/whats-new/)
+- [MAUI](https://learn.microsoft.com/dotnet/maui/whats-new/dotnet-10)
 
 This is a **LTS** ([Long Term Support Release](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)), that will be supported for three years.
 
