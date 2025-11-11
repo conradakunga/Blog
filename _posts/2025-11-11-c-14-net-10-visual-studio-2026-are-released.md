@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C# 14 & .NET 10 Is Released
+title: C# 14, .NET 10 & Visual Studio 2026 Are Released
 date: 2025-11-11 20:28:14 +0300
 categories:
     - C#
