@@ -50,6 +50,8 @@ For example:
 This is a    string that   we want to   split
 ```
 
+Here, we can see there are multiple spaces following some of the words.
+
 The same code will print the following:
 
 ```plaintext
