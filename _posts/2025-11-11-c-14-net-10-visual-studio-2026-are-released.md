@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-After a year in development, the next version of .NET, .NET 10, [is out](https://devblogs.microsoft.com/dotnet/announcing-dotnet-10/).
+After a year in development, the next version of .NET, .NET 10, [is out](https://devblogs.microsoft.com/dotnet/announcing-dotnet-10/), as well as [Visual Studio 2026](https://aka.ms/vs/download).
 
 This includes:
 
