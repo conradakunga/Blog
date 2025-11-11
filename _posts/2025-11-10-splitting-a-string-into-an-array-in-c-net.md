@@ -22,7 +22,7 @@ var input = "This is a string that we want to split";
 var splitArray = input.Split(" ");
 foreach (var entry in splitArray)
 {
-	Console.WriteLine($"'{entry}'");
+  Console.WriteLine($"'{entry}'");
 }
 ```
 
@@ -81,7 +81,7 @@ Luckily, the `Split` method supports this natively - you pass it the [StringSpli
 splitArray = input.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 foreach (var entry in splitArray)
 {
-	Console.WriteLine($"'{entry}'");
+  Console.WriteLine($"'{entry}'");
 }
 ```
 
@@ -105,6 +105,6 @@ The enum instructs the `Split` operation to **remove all elements consisting onl
 
 **The `StringSplitOptions.RemoveEmptyEntries` *enum* when passed to `String.Split` removes all empty strings from the returned array.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-10%20-%20SplittingStrings).
 
 Happy hacking!
