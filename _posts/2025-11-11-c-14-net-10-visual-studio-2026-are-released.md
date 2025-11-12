@@ -21,8 +21,8 @@ This includes:
 
 This is a **LTS** ([Long Term Support Release](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)), that will be supported for three years.
 
-You can download it directly from [here](https://get.dot.net/10).
+You can download the SDK from [here](https://get.dot.net/10).
 
-[Visual Studio 2026](https://aka.ms/vs/download) has also been released.
+You can download Visual Studio 2026 from [here](https://aka.ms/vs/download).
 
 Happy hacking!
