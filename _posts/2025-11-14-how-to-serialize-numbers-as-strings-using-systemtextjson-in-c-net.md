@@ -57,6 +57,6 @@ Here, the number is encoded as a `string`, as we expect.
 
 **We can serialize numbers as strings in `Json` by setting the `NumberHandling` property of an instance of the `JsonSerializerOptions` to `System.Text.Json.Serialization.JsonNumberHandling.WriteAsString`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-14%20-%20WriteNumberAsString).
 
 Happy hacking!
