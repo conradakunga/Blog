@@ -116,6 +116,6 @@ James Bond is 40 years old
 
 **We can read numbers encoded as strings in `Json` using `JsonSerializerOptions` with `NumberHandling` set to `JsonNumberHandling.AllowReadingFromString`** 
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-13%20-%20ReadNumberFromString).
 
 Happy hacking!
