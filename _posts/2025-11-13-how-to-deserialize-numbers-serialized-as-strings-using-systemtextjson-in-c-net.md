@@ -25,7 +25,10 @@ If we wanted to serialize this, we would do it like so:
 ```c#
 var person = new Person { Name = "James Bond", Age = 40 };
 // Configure options for serialization
-var options = new JsonSerializerOptions { WriteIndented = true };
+var options = new JsonSerializerOptions
+{
+	WriteIndented = true
+};
 // Serialize
 var json = JsonSerializer.Serialize(person, options);
 // Print to console
@@ -93,9 +96,12 @@ var apiJson =
 }
 """;
 // Configure options for deserialization
-var serilalizationOptions = new JsonSerializerOptions { NumberHandling = System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString };
+var serializationOptions = new JsonSerializerOptions
+{
+	NumberHandling = System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString
+};
 // Deserialize to an object
-person = JsonSerializer.Deserialize<Person>(apiJson, serilalizationOptions);
+person = JsonSerializer.Deserialize<Person>(apiJson, serializationOptions);
 ```
 
 We are setting the [NumberHandling](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions.numberhandling?view=net-9.0#system-text-json-jsonserializeroptions-numberhandling) property to `AllowReadingFromString`.
