@@ -8,11 +8,11 @@ categories:
     - Json
 ---
 
-Yesterday's post, "[How To Deserialize Numbers Serialized As Strings Using System.Text.Json In C# & .NET]({% post_url 2025-11-13-how-to-deserialize-numbers-serialized-as-strings-using-systemtextjson-in-c-net %})", looked at a possible scenario of how to **deserialize** numbers encoded as `strings`, in situations where y**ou are not in control** of your `Json` input.
+Yesterday's post, "[How To Deserialize Numbers Serialized As Strings Using System.Text.Json In C# & .NET]({% post_url 2025-11-13-how-to-deserialize-numbers-serialized-as-strings-using-systemtextjson-in-c-net %})", looked at a possible scenario of how to **deserialize** numbers encoded as `strings`, in situations where **you are not in control** of your `Json` input.
 
 In this post, we will look at the **opposite** problem - how to produce `Json` **compatible with a consumer beyond your control**, that expects numbers to be encoded as `strings`.
 
-The example type will be the Person:
+The example type will be the `Person`:
 
 ```c#
 public sealed class Person
