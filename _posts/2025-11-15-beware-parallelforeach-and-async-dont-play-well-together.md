@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beware - Parallel.ForEach And Async Don't Play Well Together
-date: 2025-11-15 10:01:42 +0300
+date: 2025-11-16 10:01:42 +0300
 categories:
     - C#
     - .NET
