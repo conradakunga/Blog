@@ -42,6 +42,6 @@ This code will correctly execute the queries in **multiple** threads **without e
 
 **`Parallel.ForEachAcync` is the correct way to execute multiple queries in parallel.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-16%20-%20ParallelAsyncProblem).
 
 Happy hacking!
