@@ -53,6 +53,6 @@ What will happen is **lots and lots of database connections will be created** as
 
 `**Parallel.ForEach` does not play well with `async`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-15%20-%20ParallelAsyncProblem).
 
 Happy hacking!
