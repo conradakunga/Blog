@@ -3,6 +3,9 @@ layout: post
 title: How To Execute Database Queries In Parallel In C# & .NET
 date: 2025-11-14 21:09:48 +0300
 categories:
+    - C#
+    - .NET	
+    - Database
 ---
 
 Yesterday's post, "[Beware - Parallel.ForEach And Async Don't Play Well Together]({% post_url 2025-11-15-beware-parallelforeach-and-async-dont-play-well-together %})", discussed the predicament I ran into when incorrectly running async code using [Parallel.ForEach](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.parallel.foreach?view=net-9.0), which ran the code **synchronously** anyway.

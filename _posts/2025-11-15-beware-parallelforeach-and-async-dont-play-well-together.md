@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - Beware
+    - Database
 ---
 
 I was recently **troubleshooting** some database interfacing code that would persistently throw an error to the effect that I had run out of [SQL Server](https://www.microsoft.com/en-gb/sql-server/) connections.
