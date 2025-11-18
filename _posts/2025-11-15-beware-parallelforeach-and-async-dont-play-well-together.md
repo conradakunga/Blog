@@ -5,6 +5,7 @@ date: 2025-11-15 10:01:42 +0300
 categories:
     - C#
     - .NET
+    - Beware
 ---
 
 I was recently **troubleshooting** some database interfacing code that would persistently throw an error to the effect that I had run out of [SQL Server](https://www.microsoft.com/en-gb/sql-server/) connections.
