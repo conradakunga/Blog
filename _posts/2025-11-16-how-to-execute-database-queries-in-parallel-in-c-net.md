@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Execute Database Queries In Parallel In C# & .NET
-date: 2025-11-14 21:09:48 +0300
+date: 2025-11-16 21:09:48 +0300
 categories:
     - C#
     - .NET	
