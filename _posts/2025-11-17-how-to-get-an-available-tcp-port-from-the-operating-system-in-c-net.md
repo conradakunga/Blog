@@ -62,6 +62,6 @@ return;
 
 **You can request the operating system for an available port.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-17%20-%20GetAvailablePort).
 
 Happy hacking!
