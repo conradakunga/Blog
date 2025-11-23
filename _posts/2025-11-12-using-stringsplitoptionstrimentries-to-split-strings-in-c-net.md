@@ -50,10 +50,10 @@ We can use `StringSplitOptions.RemoveEmptyEntries` to deal with this, as outline
 ```c#
 elements = "a , 9,   ,    , llll,".Split(",", StringSplitOptions.RemoveEmptyEntries).Select(x => $"'{x}'").ToArray();
 
-	foreach (var element in elements)
-	{
-		Console.WriteLine(element);
-	}
+foreach (var element in elements)
+{
+	Console.WriteLine(element);
+}
 ```
 
 This will print the following:
