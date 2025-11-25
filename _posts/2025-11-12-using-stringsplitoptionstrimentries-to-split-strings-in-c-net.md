@@ -123,6 +123,4 @@ Here, we can see that just our data is being returned.
 
 You can use `StringSplitOptions.TrimEntries` in combination with StringSplitOptions.RemoveEmptyEntries to control how the returned string is processed by the `String.Split` method.
 
-The code is in my GitHub.
-
 Happy hacking!

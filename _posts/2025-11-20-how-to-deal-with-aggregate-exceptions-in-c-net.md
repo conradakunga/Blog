@@ -120,6 +120,6 @@ In this manner, we can handle the complex `Exception` situation when dealing wit
 
 **The `AggregageException` allows us to handle exceptions in situations where the problem was thrown from a situation involving parallelism.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-20%20-%20AggregatedExceptionHandling).
 
 Happy hacking!
