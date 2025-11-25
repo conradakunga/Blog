@@ -28,9 +28,6 @@ public void Config_Is_Constructed_Correctly_With_EventLog_Issues()
     config.Should().NotBeNull();
   	// Check whether log message is written to the Windows Event log
     _output.Output.Should().Contain("Application is not registered as an event source");
-    config.WriteTo.TestOutput(_output);
-    Log.Logger = config.CreateLogger();
-    Log.Information("Success");
 }
 ```
 
