@@ -57,6 +57,6 @@ Here we can see that it ran.
 
 **We can use an `xUnit` `attribute` to designate tests as platform-specific (Windows).**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/xUnitExtensions).
 
 Happy hacking!
