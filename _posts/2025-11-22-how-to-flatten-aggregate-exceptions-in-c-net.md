@@ -91,6 +91,6 @@ Inner Level 2
 
 **You can call `Flatten()` on an `AggregageException` to get a list of all the `InnerExceptions`, no matter how nested.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-22%20-%20NestedExceptions).
 
 Happy hacking!
