@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-When dealing with [exceptions](https://learn.microsoft.com/en-us/dotnet/api/system.exception?view=net-10.0), which are generally a states that are **unexpected** or **legitimate**, we typically handle them in a [try-catch](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/exception-handling-statements) block as follows:
+When dealing with [exceptions](https://learn.microsoft.com/en-us/dotnet/api/system.exception?view=net-10.0), which are generally a state that are **unexpected** or **legitimate**, we typically handle them in a [try-catch](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/exception-handling-statements) block as follows:
 
 ```c#
 var denominator = 0;
