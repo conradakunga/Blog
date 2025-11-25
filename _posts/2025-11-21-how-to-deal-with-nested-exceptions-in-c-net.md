@@ -88,6 +88,6 @@ This is the level 3
 
 **`Exceptions` can have any level of nested `InnerExceptions`. Always be sure to check**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-21%20-%20NestedExceptions).
 
 Happy hacking!
