@@ -3,9 +3,11 @@ layout: post
 title: How To Deal With Nested Exceptions In C# & .NET
 date: 2025-11-21 15:37:26 +0300
 categories:
+    - C#
+    - .NET
 ---
 
-In yesterday's post, "[How To Deal With Aggregate Exceptions In C# & .NET]({% post_url 2025-11-20-how-to-deal-with-aggregate-exceptions-in-c-net %})", we looked at how to deal with [AggregateExceptions](https://learn.microsoft.com/en-us/dotnet/api/system.aggregateexception?view=net-10.0), that may be thrown by the runtime.
+In yesterday's post, "[How To Deal With Aggregate Exceptions In C# & .NET]({% post_url 2025-11-20-how-to-deal-with-aggregate-exceptions-in-c-net %})", we looked at how to deal with [AggregateExceptions](https://learn.microsoft.com/en-us/dotnet/api/system.aggregateexception?view=net-10.0) that may be thrown by the runtime.
 
 In this post, we will look at how to handle nested [Exceptions](https://learn.microsoft.com/en-us/dotnet/api/system.exception?view=net-10.0).
 
