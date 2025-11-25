@@ -77,7 +77,7 @@ foreach (var culture in cultures)
   var dateString = "2/1/2025";
   if (DateTime.TryParseExact(dateString, ParseFormat, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime date))
   {
-    Console.WriteLine($"{culture} - {date.ToString("d MMM yyyy")}");
+    Console.WriteLine($"{culture} - {date:d MMM yyyy}");
   }
   else
   {
@@ -95,12 +95,12 @@ fr-FR - 2 janv. 2025
 es-ES - 2 ene 2025
 ```
 
-Here we can see that regardless of the culture, we always get back **2 January, 2025**.
+Here we can see that **regardless of the culture**, we always get back **January 2, 2025**.
 
 ### TLDR
 
 **Prefer `TryParseExact` and `ParseExact` over `TryParse` and `Parse`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-11-23%20-%20TryParse).
 
 Happy hacking!
