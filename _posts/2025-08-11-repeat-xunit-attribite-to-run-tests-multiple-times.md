@@ -134,4 +134,6 @@ The test runner will look like this:
 
 **We have created a `Repeat` attribute for the xUnit `Theory`, which allows running a test multiple times.**
 
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/xUnitExtensions).
+
 Happy hacking!
