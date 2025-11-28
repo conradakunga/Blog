@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Parsing data to convert to types is always going to be a minefield.
+**Parsing** data to convert to types is always going to be a minefield.
 
 Take this simple example.
 
@@ -27,7 +27,7 @@ This prints the following:
 
 It happens to print this because my machine is set to the locale `en-KE`, where the **short date** format is **day/month/year**.
 
-If I change my locale, either in my system settings or in code, I get very different results:
+If I change my **locale**, either in my system settings or in code, I get very different results:
 
 ```c#
 Thread.CurrentThread.CurrentCulture = new CultureInfo("en-gb");
@@ -48,7 +48,7 @@ A completely different result!
 
 Give you cannot control the user's settings, you have to tell the runtime what to do in all situations.
 
-For this, we use the ParseExact method.
+For this, we use the [ParseExact](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.parseexact?view=net-10.0) method.
 
 ```c#
 var dateString = "2/1/2025";

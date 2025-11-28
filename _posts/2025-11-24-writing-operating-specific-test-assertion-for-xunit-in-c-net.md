@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing Operating Specific Test Assertion For xUnit In C# & .NET
+title: Writing Operating System Specific Test Assertion For xUnit In C# & .NET
 date: 2025-11-24 17:43:32 +0300
 categories:
     - C#
