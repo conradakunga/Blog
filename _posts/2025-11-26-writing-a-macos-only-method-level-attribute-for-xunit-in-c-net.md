@@ -8,7 +8,7 @@ categories:
     - xUnit
 ---
 
-Yesterday's post, " [Writing A Windows-only method-level attribute for xUnit in C# & .NET]({% post_url 2025-11-25-writing-a-windows-only-method-level-attribute-for-xunit-in-c-net %})", looked at how to write an attribute for the [xUnit](https://xunit.net/) test framework to mark a test as only to be run if the platform it is running under is **Windows**.
+Yesterday's post, "[Writing A Windows-only method-level attribute for xUnit in C# & .NET]({% post_url 2025-11-25-writing-a-windows-only-method-level-attribute-for-xunit-in-c-net %})", looked at how to write an attribute for the [xUnit](https://xunit.net/) test framework to mark a test as only to be run if the platform it is running under is **Windows**.
 
 In this post, we will do the same for **macOS**.
 
