@@ -42,14 +42,20 @@ public sealed class LinuxOnlyFactAttribute : FactAttribute
 You use it like this:
 
 ```c#
-[MacOSOnlyFactAttribute]
-public void Config_Is_Constructed_Correctly_With_EventLog_On_macOS_Issues()
+[LinuxOnlyFactAttribute]
+public void Config_Is_Constructed_Correctly_With_EventLog_On_Linux_Issues()
 {
   //
   // Test code here
   //
 }
 ```
+
+If we run this test on macOS:
+
+![LinuxMacOSSkipped](../images/2025/11/LinuxMacOSSkipped.png)
+
+We can see that it was skipped.
 
 ### TLDR
 

@@ -16,7 +16,7 @@ As I have mentioned before, my development environment is as follows:
 - Virtualized [Windows 11](https://en.wikipedia.org/wiki/Windows_11) Environment on [Parallels Desktop Pro](https://www.parallels.com/products/desktop/pro/)
 - The development environment is [Visual Studio 2022](https://visualstudio.microsoft.com/vs/older-downloads/) and [Visual Studio Code](https://code.visualstudio.com/)
 
-Recently, I was writing tests for a component that behaved differently on **Windows**.
+Recently, I was writing tests using the [xUnit](https://xunit.net/) test framework for a component that behaved differently on **Windows**.
 
 The test itself is as follows:
 

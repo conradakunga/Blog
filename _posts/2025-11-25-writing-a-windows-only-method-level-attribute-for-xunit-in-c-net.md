@@ -8,7 +8,7 @@ categories:
     - xUnit
 ---
 
-Yesterday's post, "[Writing Operating System Specific Test Assertion For xUnit In C# & .NET]({% post_url 2025-11-24-writing-operating-specific-test-assertion-for-xunit-in-c-net %})", discussed how to write an assertion that runs only under a specific condition: **the operating system is Windows**.
+Yesterday's post, "[Writing Operating System Specific Test Assertion For xUnit In C# & .NET]({% post_url 2025-11-24-writing-operating-specific-test-assertion-for-xunit-in-c-net %})", discussed how to write an assertion in [xUnit](https://xunit.net/) that runs only under a specific condition: **the operating system is Windows**.
 
 If you have **many** of these tests, it can become **repetitive** and **annoying** to **keep specifying the condition** for each assertion in code.
 

@@ -49,13 +49,13 @@ public void Config_Is_Constructed_Correctly_With_EventLog_On_macOS_Issues()
 }
 ```
 
-If we run this test on macOS:
+If we run this test on **macOS**:
 
 ![MacOSRunsOnMac](../images/2025/11/MacOSRunsOnMac.png)
 
 It runs successfully.
 
-But if we run it on Windows:
+But if we run it on **Windows**:
 
 ![MacOSSkippedOnWindows](../images/2025/11/MacOSSkippedOnWindows.png)
 
