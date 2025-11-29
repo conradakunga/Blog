@@ -51,11 +51,17 @@ public void Config_Is_Constructed_Correctly_With_EventLog_On_Linux_Issues()
 }
 ```
 
-If we run this test on macOS:
+If we run this test on **macOS**:
 
 ![LinuxMacOSSkipped](../images/2025/11/LinuxMacOSSkipped.png)
 
 We can see that it was skipped.
+
+If we run the tests under Linux:
+
+![LinuxTestsSkippedOthers](../images/2025/11/LinuxTestsSkippedOthers.png)
+
+We can see that the **Windows** and **macOS** tests were skipped, but the **Linux** test was run.
 
 ### TLDR
 
