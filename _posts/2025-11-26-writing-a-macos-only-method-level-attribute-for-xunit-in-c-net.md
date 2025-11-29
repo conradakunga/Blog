@@ -49,6 +49,18 @@ public void Config_Is_Constructed_Correctly_With_EventLog_On_macOS_Issues()
 }
 ```
 
+If we run this test on macOS:
+
+![MacOSRunsOnMac](../images/2025/11/MacOSRunsOnMac.png)
+
+It runs successfully.
+
+But if we run it on Windows:
+
+![MacOSSkippedOnWindows](../images/2025/11/MacOSSkippedOnWindows.png)
+
+We can see that it was skipped.
+
 ### TLDR
 
 **We can use an `xUnit` `attribute` to designate tests as platform-specific (macOS).**
