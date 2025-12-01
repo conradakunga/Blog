@@ -94,8 +94,16 @@ If we run these tests on **macOS**:
 
 We can see here that the **Windows** test was **skipped**.
 
-If we run the same form **Windows**:
+If we run the same on **Windows**:
 
 ![GenericWindiws](../images/2025/11/GenericWindiws.png)
 
 Here, we see that the **Linux & macOS** tests were **skipped**, but the **Windows** test was run.
+
+### TLDR
+
+**We can write a generic attribute that accepts one or more operating system `enum` values to indicate the supported operating systems under which the test should run.**
+
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/xUnitExtensions).
+
+Happy hacking!
