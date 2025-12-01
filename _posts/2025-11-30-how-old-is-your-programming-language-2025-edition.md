@@ -11,7 +11,7 @@ This is an update to [last year's post]({% post_url 2024-11-30-how-old-is-your-p
 
 Ever wonder how old your favourite language is? You might be surprised!
 
-Here are their ages as of 2024
+Here are their ages as of **2025**
 
   * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is 33, and so is Java
   * [PHP](https://en.wikipedia.org/wiki/PHP) is 34
