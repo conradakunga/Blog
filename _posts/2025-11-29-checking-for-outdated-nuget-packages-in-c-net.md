@@ -126,6 +126,8 @@ Your IDE can also allow you to see and upgrade outdated packages.
 
 ![RiderOutdated](../images/2025/12/RiderOutdated.png)
 
+You do, however, have to update the packages **one by one**, unlike the `dotnet outdated` tool that can upgrade them **all at once**.
+
 ### TLDR
 
-**There are various ways to update your project nuget packages. The simplest is the `dotnet outdated tool`**
+**There are various ways to update your project's nuget packages. The simplest is the `dotnet outdated tool`**
