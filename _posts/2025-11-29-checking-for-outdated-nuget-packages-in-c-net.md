@@ -79,7 +79,7 @@ dotnet tool install --global dotnet-outdated-tool
 Or update it to the latest version like so:
 
 ```bash
-dotnet tool install --global dotnet-outdated-tool
+dotnet tool update --global dotnet-outdated-tool
 ```
 
 You then run it like so to see the outdated packages:
