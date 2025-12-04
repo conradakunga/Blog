@@ -31,7 +31,11 @@ What are the benefits?
 1. I have developed a **reference** that I often use myself!
 2. I believe the **quality** of my writing, technical and otherwise, has improved
 3. I have **met a lot of people**, physically and virtually, thanks to this resource
-4. From the analytics, I have created a well used **resource** that is used every day
+4. From the analytics, I have created a well-used **resource** that is used every day
 5. I like to think I have made my mark by **contributing my knowledge** to the world at large
+
+As I write this, here is the current position:
+
+![Now](../images/2025/12/Now.png)
 
 Here's to many more!
