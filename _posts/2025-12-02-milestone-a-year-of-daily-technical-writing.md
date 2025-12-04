@@ -13,7 +13,7 @@ Last year, I began a **journey**.
 
 ![LastYearPosts](../images/2025/12/LastYearPosts.png)
 
-On 22 November 2024, I decided to prove a point to myself - that I could sustain the schedule of writing a technical blog post daily, principally around development of software in  .NET.
+On **22 November 2024**, I decided to prove a point to myself - that I could sustain the schedule of writing a technical blog post daily, principally around development of software in  .NET.
 
 ![AYearLater](../images/2025/12/AYearLater.png)
 
