@@ -87,6 +87,6 @@ We can see that we were able to insert **more than `1,000` rows**.
 
 **You can use UNION or UNION ALL to overcome the 1,000 row bulk insert limit in SQL Server.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-03%20-%20SQL%20Bulk%20Insert).
 
 **Happy hacking!**
