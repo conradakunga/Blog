@@ -10,9 +10,9 @@ categories:
 
 One of the realities of building software in the modern age is mitigating threats to the **security** and **integrity** of applications.
 
-This is especially because most modern systems are connected via REST APIs, where data is passed around through `JSON`.
+This is especially because most modern systems are connected via [REST](https://en.wikipedia.org/wiki/REST) APIs, where data is passed around through `JSON`.
 
-This is an obvious attack vector.
+This is an obvious **attack vector**.
 
 Take, for example, the following class:
 
@@ -24,7 +24,7 @@ public class Person
 }
 ```
 
-Assume we had the following `JSON` produced from a REST endpoint:
+Assume we had the following `JSON` produced from a `REST` endpoint:
 
 ```json
 {
@@ -118,6 +118,6 @@ Here we can see that the serialization for the 3rd attempt **failed**.
 
 **You can use the `JsonSerializerOptions` class, setting the `AllowDuplicateProperties` to `false` to prevent deserialization of `JSON` that has duplicate properties.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-08%20-%20JSONAttributes).
 
 Happy hacking!
