@@ -14,7 +14,7 @@ This is especially because most modern systems are connected via [REST](https://
 
 This is an obvious **attack vector**.
 
-Take, for example, the following class:
+Take, for example, the following `class`:
 
 ```c#
 public class Person
