@@ -1,7 +1,6 @@
 ---
 layout: post
-title: FIX - Workload manifest microsoft.net.workload.emscripten.current: 10.0.100/10.0.100 from workload version 10.0.
-      100.1 was not installed
+title: FIX - Workload manifest microsoft.net.workload.emscripten.current: 10.0.100/10.0.100 from workload version 10.0.100.1 was not installed
 date: 2025-12-11 00:05:27 +0300
 categories:
     - .NET
