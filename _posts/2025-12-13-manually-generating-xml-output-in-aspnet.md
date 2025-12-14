@@ -4,7 +4,7 @@ title: Manually Generating XML Output in ASP.NET
 date: 2025-12-13 14:36:33 +0300
 categories:
     - C#
-    . NET
+    - . NET
     - ASP.NET
 ---
 
