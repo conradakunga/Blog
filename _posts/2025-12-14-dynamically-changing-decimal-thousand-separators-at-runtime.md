@@ -9,7 +9,7 @@ categories:
 
 This article is part of the [2025 C# Advent Calendar.](https://www.csadvent.christmas/)
 
-I participated in the 2024 [C# Advent](https://www.csadvent.christmas/archive/2024) and posted "[Customizing Object Equality In C# & .NET]({% post_url 2024-12-19-customizing-object-equality-in-c-net %})" and "[Caching In .NET Applications & The Hybrid Cache]({% post_url 2024-12-22-caching-in-net-applications-the-hybrid-cache %})"
+I participated in the [2024 C# Advent](https://www.csadvent.christmas/archive/2024) and posted "[Customizing Object Equality In C# & .NET]({% post_url 2024-12-19-customizing-object-equality-in-c-net %})" and "[Caching In .NET Applications & The Hybrid Cache]({% post_url 2024-12-22-caching-in-net-applications-the-hybrid-cache %})"
 
 [Localization](https://developer.mozilla.org/en-US/docs/Glossary/Localization) and other regional concerns are among the problems you will frequently run into when developing applications for use across **different countries and locale**s.
 
@@ -82,7 +82,7 @@ Suppose the consumer then gives you the following information:
 
 There are a number of solutions to this problem.
 
-1. Find an **existing culture** that uses this format and use that inn our code
+1. Find an **existing culture** that uses this format and use that in our code
 2. **Explicitly write code** to do this heavy lifting for us.
 
 ## Use an existing culture
@@ -153,7 +153,7 @@ public sealed class Settings
 }
 ```
 
-We are adding the [Required](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-10.0) attribute so that the **runtime will validate** that they are provided at startup. We are setting [AllowEmptyStrings](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute.allowemptystrings?view=net-10.0#system-componentmodel-dataannotations-requiredattribute-allowemptystrings) to true; otherwise, the runtime will reject a space.
+We are adding the [Required](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-10.0) attribute so that the **runtime will validate** that they are provided at startup. We are setting [AllowEmptyStrings](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute.allowemptystrings?view=net-10.0#system-componentmodel-dataannotations-requiredattribute-allowemptystrings) to `true`; otherwise, the runtime will reject a **space**.
 
 Next, we configure our ASP.NET pipeline to **register this class** as an injectable option.
 
@@ -233,7 +233,7 @@ If we run this code, we should get the same result:
 
 ![FinalFomatting](../images/2025/12/FinalFomatting.png)
 
-The benefit of this technique is that if we subsequently need to handle the formatting of things like dates, the same technique can be leveraged.
+The benefit of this technique is that if we subsequently need to handle the formatting of things like dates, the **same technique can be leveraged**, only this time we will me modifying the [DateTimeInfo](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo?view=net-10.0).
 
 ### TLDR
 
