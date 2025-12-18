@@ -94,6 +94,6 @@ And now we can reuse this class to **serialize** any **serializable** class pass
 
 **We can write a helper class and method to handle serialization of any passed type.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-13%20-%20XML%20Generic).
 
 Happy hacking!
