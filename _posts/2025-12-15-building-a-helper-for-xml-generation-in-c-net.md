@@ -3,6 +3,9 @@ layout: post
 title: Building A Helper For XML Generation In C# & .NET
 date: 2025-12-15 09:37:33 +0300
 categories:
+    - C#
+    - . NET
+    - ASP.NET
 ---
 
 Our last post, "[Manually Generating XML Output in ASP.NET]({% post_url 2025-12-13-manually-generating-xml-output-in-aspnet %})", looked at how to manually generate `XML` payloads using [ASP.NET Minimal APIs](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-10.0), if you **cannot** or **do not want** to use a solution such as [Carter](https://github.com/CarterCommunity/Carter), or [controllers](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/controllers-and-routing/aspnet-mvc-controllers-overview-cs).
