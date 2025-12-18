@@ -8,7 +8,7 @@ categories:
     - ASP.NET
 ---
 
-Our last post, "[Building A Helper For XML Generation In C# & .NET]({% post_url 2025-12-15-building-a-helper-for-xml-generation-in-c-net %})", looked at how to build a generic helper class to serialize passed classes to XML transparently.
+Our last post, "[Building A Helper For XML Generation In C# & .NET]({% post_url 2025-12-15-building-a-helper-for-xml-generation-in-c-net %})", looked at how to build a generic helper class that transparently serializes passed classes to `XML`.
 
 In this post, we will look at how to use extension members to make it simpler and more discoverable.
 
