@@ -47,7 +47,7 @@ public static class ResultEx
 }
 ```
 
-We can build on this by using [extension members](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) to extend the [Result](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.results?view=aspnetcore-10.0) class.
+We can build on this by using [extension members](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) to extend the [Results](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.results?view=aspnetcore-10.0) type.
 
 The new `class` looks like this:
 
