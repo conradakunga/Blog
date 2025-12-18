@@ -8,11 +8,11 @@ categories:
     - ASP.NET
 ---
 
-Our last post, "[Building A Helper For XML Generation In C# & .NET]({% post_url 2025-12-15-building-a-helper-for-xml-generation-in-c-net %})", looked at how to build a generic helper class that transparently serializes passed classes to `XML`.
+Our last post, "[Building A Helper For XML Generation In C# & .NET]({% post_url 2025-12-15-building-a-helper-for-xml-generation-in-c-net %})", looked at how to build a **generic helper class** that transparently **serializes** passed classes to `XML`.
 
-In this post, we will look at how to use extension members to make it simpler and more discoverable.
+In this post, we will look at how to use [extension members](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) to make it **simpler** and more **discoverable**.
 
-The helper class looked like this:
+The helper `class` looked like this:
 
 ```c#
 using System.Text;
@@ -49,7 +49,7 @@ public static class ResultEx
 
 We can build on this by using [extension members](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) to extend the [Result](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.results?view=aspnetcore-10.0) class.
 
-The new class looks like this:
+The new `class` looks like this:
 
 ```c#
 using System.Net.Mime;
@@ -88,7 +88,7 @@ public static class ResultEx
 }
 ```
 
-Here, we have created a static extension method, as we did in the post "[Creating Static Extension Methods In C# & .NET]({% post_url 2025-11-01-creating-static-extension-methods-in-c-net %})", to extend the `Result` class.
+Here, we have created a **static extension method**, as we did in the post "[Creating Static Extension Methods In C# & .NET]({% post_url 2025-11-01-creating-static-extension-methods-in-c-net %})", to extend the `Result` class.
 
 We can now do the following:
 
