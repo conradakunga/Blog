@@ -74,6 +74,6 @@ Otherwise, we get `JSON`:
 
 **We can use the `content-type` header to decide how to serialize responses to clients.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-17%20-%20XML).
 
 Happy hacking!
