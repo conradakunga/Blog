@@ -5,7 +5,7 @@ date: 2025-12-12 00:22:51 +0300
 categories:
     - C#
     - .NET
-    - JSON.NET
+    - System.Text.Json
 ---
 
 The native .NET JSON serialization & deserialization library, System.Text.Json, by default operates in a case-insensitive fashion.
