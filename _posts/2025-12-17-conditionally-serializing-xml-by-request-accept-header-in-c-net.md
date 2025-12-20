@@ -3,6 +3,10 @@ layout: post
 title: Conditionally Serializing XML By Request Accept Header In C# & .NET
 date: 2025-12-17 12:19:14 +0300
 categories:
+    - C#
+    - .NET
+    - ASP.NET
+    - Minimal API
 ---
 
 In the previous post, "[Extending The Results Type For XML Serialization In C# & .NET]({% post_url 2025-12-16-extending-the-result-type-for-xml-serialization-in-c-net %})", we looked at how to extend the [Results](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.results?view=aspnetcore-10.0) `type` to simplify and improve the **discoverability** of `XML` serialization at the API level.

@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - ASP.NET
+    - Minimal API
 ---
 
 In two previous posts, "[Conditionally Output XML Or JSON Using ASP.NET Minimal API]({% post_url 2025-03-21-improving-aspnet-content-negotiation-xml-serialization-performance-using-a-recyclablememorystream %})" and "[Improving ASP.NET Content Negotiation XML Serialization Performance Using A RecyclableMemoryStream]({% post_url 2025-03-21-improving-aspnet-content-negotiation-xml-serialization-performance-using-a-recyclablememorystream %})", we looked at how to generate `XML` output on ASP.NET using [Minimal APIs](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-10.0) and the [Carter](https://www.nuget.org/packages/carter) Library.
