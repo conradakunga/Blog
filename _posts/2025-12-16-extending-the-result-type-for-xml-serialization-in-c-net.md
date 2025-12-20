@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extending The Result Type For XML Serialization In C# & .NET
+title: Extending The Results Type For XML Serialization In C# & .NET
 date: 2025-12-16 10:06:52 +0300
 categories:
     - C#
