@@ -4,7 +4,7 @@ title: Building A Helper For XML Generation In C# & .NET
 date: 2025-12-15 09:37:33 +0300
 categories:
     - C#
-    - . NET
+    - .NET
     - ASP.NET
 ---
 
