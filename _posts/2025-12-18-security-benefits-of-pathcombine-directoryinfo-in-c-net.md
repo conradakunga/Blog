@@ -18,10 +18,10 @@ The code would look something like this:
 
 ```c#
 // Define root location
-const string root = "/Users/rad/Projects/blog/";
+const string root = "/Users/rad/Projects/blog";
 
 // Set upload path
-var uploadPath = root + "uploads/logo.jpg";
+var uploadPath = root + "/uploads/logo.jpg";
 
 Console.WriteLine(uploadPath);
 ```
@@ -40,10 +40,10 @@ The path would be specified as follows:
 
 ```c#
 // Define root location
-const string root = "/Users/rad/Projects/blog/";
+const string root = "/Users/rad/Projects/blog";
 
 // Set upload path
-var uploadPath = root + "uploads/" + "../../../../logo.jpg";
+var uploadPath = root + "/uploads/" + "../../../../logo.jpg";
 
 Console.WriteLine(uploadPath);
 ```
@@ -153,6 +153,6 @@ We can then throw an [exception](https://learn.microsoft.com/en-us/dotnet/api/sy
 
 **`Path.Combine()` and `DirectoryInfo` can be used together to validate user path inputs to ensure attempts to escape a designated location are thwarted.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-18%20-%20PathSecurity).
 
 Happy hacking!
