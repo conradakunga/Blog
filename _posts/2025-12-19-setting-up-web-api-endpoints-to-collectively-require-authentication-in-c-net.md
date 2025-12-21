@@ -79,11 +79,11 @@ app.MapGet("/v3/Generate", (IOptions<Settings> options) =>
 app.Run();
 ```
 
-Suppose we wanted to secure these endpoints.
+Suppose we wanted to **secure these endpoints**.
 
 The first step would be to set up the security.
 
-The actual workings for this will be covered in a future post, so I am just going to set up a dummy. The exact security scheme does not matter.
+***NOTE: The actual workings for this will be covered in a future post, so I am just going to set up a dummy. The exact security scheme does not matter.***
 
 ```c#
 // Authentication
@@ -96,9 +96,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 ```
 
-The next step is to configure the endpoints to require authorization.
+The next step is to **configure the endpoints to require authorization**.
 
-This is done by calling the .RequireAuthorization() method for each endpoint.
+This is done by calling the [RequireAuthorization()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.authorizationendpointconventionbuilderextensions.requireauthorization?view=aspnetcore-10.0) method for each endpoint.
 
 ```c#
 app.MapGet("/v1/Generate", () =>
@@ -159,8 +159,8 @@ app.MapGet("/v3/Generate", (IOptions<Settings> options) =>
 
 This works, but:
 
-1. Is very **tedious**
-2. Is prone to **errors** - you might forget to call the method for new endpoints
+1. It is very **tedious** having to **remember** to do this for **every endpoint**.
+2. Is prone to **errors** - you might forget to call the method for new endpoints.
 
 There is a better way to go about this: using [MapGroup](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mapgroup?view=aspnetcore-10.0).
 
