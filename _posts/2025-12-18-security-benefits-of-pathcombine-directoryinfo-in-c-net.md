@@ -147,7 +147,7 @@ Validation here is comparing that value with the original **root**, `/Users/rad/
 
 We can see that the `legalInfo` successfully validates, but `illegalInfo` does not.
 
-We can then throw an [exception](https://learn.microsoft.com/en-us/dotnet/api/system.exception?view=net-10.0) or **otherwise respond** to an attempt to manipulate the paths to access an **invalid location**.
+We can then throw an [exception](https://learn.microsoft.com/en-us/dotnet/api/system.exception?view=net-10.0) or **otherwise respond** to any **attempts to manipulate the paths** to access an **invalid location**.
 
 ### TLDR
 
