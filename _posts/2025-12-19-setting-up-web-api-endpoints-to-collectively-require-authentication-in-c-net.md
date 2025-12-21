@@ -253,7 +253,7 @@ secured.MapGet("/v3/Generate", (IOptions<Settings> options) =>
 
 In this manner, **all endpoints that we create from the `secured` class** automatically require authorization.
 
-We can, however, conditionally skip this by calling the [AllowAnonymous()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authorization.allowanonymousattribute?view=aspnetcore-10.0) method on the endpoint.
+We can, however, conditionally **skip authorization for an endpoint** added using the `secured` `RouteGroupBuilder` by calling the [AllowAnonymous()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authorization.allowanonymousattribute?view=aspnetcore-10.0) method on the endpoint.
 
 Like this:
 
