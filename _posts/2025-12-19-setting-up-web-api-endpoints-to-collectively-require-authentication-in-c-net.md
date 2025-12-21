@@ -271,6 +271,6 @@ You can still add endpoints directly to `app`, in which case those will **not** 
 
 **The `MapGroup` allows us to create a grouping of endpoints that can be configured together, for security or other purposes.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-19%20-%20Separators).
 
 Happy hacking!
