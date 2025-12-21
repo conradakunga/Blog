@@ -136,9 +136,9 @@ var illegalInfo = new DirectoryInfo(illegalUploadPath);
 
 // Verify the parent
 if (legalInfo.Parent.Parent.FullName == root)
-	Console.WriteLine($"'{legalInfo}' is a valid path");
+  Console.WriteLine($"'{legalInfo}' is a valid path");
 if (illegalInfo.Parent.Parent.FullName != root)
-	Console.WriteLine($"ERROR: '{legalInfo}' is an invalid valid path");
+  Console.WriteLine($"ERROR: '{legalInfo}' is an invalid valid path");
 ```
 
 We are calling `Parent.Parent` twice because the **parent** of `/Users/rad/Projects/blog/uploads/logo.jpg` is `/Users/rad/Projects/blog/uploads/`, and we are interested in the **parent** of this, `/Users/rad/Projects/blog`.
