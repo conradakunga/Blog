@@ -261,9 +261,11 @@ Like this:
 secured.MapGet("/Health", () => Results.Ok()).AllowAnonymous();
 ```
 
-We can see the effects by invoking a **secured** and an **unsecured** endpoint:
+We can see the effects by invoking a **secured** endpoint:
 
 ![AuthenticateFail](../images/2025/12/AuthenticateFail.png)
+
+We then invoke an **unsecured** endpoint:
 
 ![AnonymousAllow](../images/2025/12/AnonymousAllow.png)
 
