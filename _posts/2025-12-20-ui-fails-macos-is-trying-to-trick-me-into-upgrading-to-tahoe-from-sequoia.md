@@ -7,7 +7,7 @@ categories:
     - UI Fails
 ---
 
-I am running macOS [Seuqoia](https://en.wikipedia.org/wiki/MacOS_Sequoia), and I have no plans to upgrade to [Tahoe](https://en.wikipedia.org/wiki/MacOS_Tahoe) in the immediate future.
+I am running [macOS](https://www.apple.com/os/macos/) [Seuqoia](https://en.wikipedia.org/wiki/MacOS_Sequoia), and I have no plans to upgrade to [Tahoe](https://en.wikipedia.org/wiki/MacOS_Tahoe) in the immediate future.
 
 This is for several reasons:
 
