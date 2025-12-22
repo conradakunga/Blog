@@ -11,11 +11,11 @@ I am running macOS [Seuqoia](https://en.wikipedia.org/wiki/MacOS_Sequoia), and I
 
 This is for several reasons:
 
-1. I have not heard good things about `Tahoe`.
-2. When new OS releases come, I seldom upgrade. In fact, I upgraded to `Sequoia` from [Sonoma](https://en.wikipedia.org/wiki/MacOS_Sonoma) just a couple of months ago.
-3. I have a very complex setup of virtual machines, [Docker](https://www.docker.com/) [containers](https://hub.docker.com/), [Parallels](https://www.parallels.com/), and various **tools** and **utilities** set up that I am loath to interfere with until I am sure `Tahoe` has no surprises.
+1. I have **not heard good things** about `Tahoe`.
+2. When new OS releases come out, I **seldom upgrade immediately**. In fact, I upgraded to `Sequoia` from [Sonoma](https://en.wikipedia.org/wiki/MacOS_Sonoma) **just a couple of months ago**.
+3. I have a very complex setup of virtual machines, [Docker](https://www.docker.com/) [containers](https://hub.docker.com/), [Parallels](https://www.parallels.com/), and various **tools** and **utilities** set up that I am **loath to interfere with** until I am sure `Tahoe` has no surprises.
 
-So recently, I got an update notification.
+So recently, I got an **update notification**.
 
 Nothing surprising about this.
 
