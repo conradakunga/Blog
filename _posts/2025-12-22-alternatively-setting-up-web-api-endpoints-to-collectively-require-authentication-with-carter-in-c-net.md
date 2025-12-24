@@ -108,6 +108,8 @@ If we invoke our endpoints now, we should get [401](https://developer.mozilla.or
 
 ![CarterSubtract](../images/2025/12/CarterSubtract.png)
 
+Much as you can use a **single module** to map **multiple endpoints**, I strongly **discourage** this approach as it makes **maintenance**, **refactoring** and **collaboration** that much more **difficult**.
+
 ### TLDR
 
 **You can use a single `Carter` module to map your endpoints, and from within that module, create and configure them collectively.**
