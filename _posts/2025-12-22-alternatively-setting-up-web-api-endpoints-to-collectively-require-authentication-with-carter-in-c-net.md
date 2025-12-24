@@ -112,6 +112,6 @@ If we invoke our endpoints now, we should get [401](https://developer.mozilla.or
 
 **You can use a single `Carter` module to map your endpoints, and from within that module, create and configure them collectively.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-22%20-%20CarterGrouped).
 
 Happy hacking!

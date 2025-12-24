@@ -119,6 +119,6 @@ Similarly, for the `Subtract` module:
 
 **We can use `MapGroup` to configure the `IEndPointRouteBuider` before calling `MapCarter` when using the `Carter` package.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-21%20-%20CarterGrouped).
 
 Happy hacking!
