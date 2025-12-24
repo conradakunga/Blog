@@ -3,6 +3,10 @@ layout: post
 title: Setting Up Web API Endpoints To Collectively Require Authentication With Carter In C# & .NET
 date: 2025-12-21 15:29:19 +0300
 categories:
+    - C#
+    - ASP.NET
+    - Security
+    - Carter
 ---
 
 In a previous post, "[Setting Up Web API Endpoints To Collectively Require Authentication In C# & .NET]({% post_url 2025-12-19-setting-up-web-api-endpoints-to-collectively-require-authentication-in-c-net %})", we looked at how to use [MapGroup](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mapgroup?view=aspnetcore-10.0) to ensure all [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) Web API endpoints require **authorization**.
