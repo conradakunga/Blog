@@ -13,7 +13,7 @@ In our last post, "[Overriding EndPoint Authorization When Using Multiple ASP.NE
 
 Also, in a previous post, "[Alternatively Setting Up Web API Endpoints To Collectively Require Authentication With Carter In C# & .NET]({% post_url 2025-12-22-alternatively-setting-up-web-api-endpoints-to-collectively-require-authentication-with-carter-in-c-net %})" we had looked at how to use `Carter` with a single `ICarterModule` implementation.
 
-In this post, we will look at how to override the default authorization when using a single `Carter` module.
+In this post, we will look at how to **override the default authorizatio**n when using a **single** `Carter` module.
 
 The single module that contains the endpoints looks like this:
 
@@ -66,7 +66,7 @@ If we were to add a new `HealthCheck` endpoint that would not require authorizat
 
 ## Override the authorization of the `secured` group
 
-The first way is to register the endpoint on the secured group, and then override the authorization settings by calling [AllowAnonymous()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.authorizationendpointconventionbuilderextensions.allowanonymous?view=aspnetcore-10.0#microsoft-aspnetcore-builder-authorizationendpointconventionbuilderextensions-allowanonymous-1(-0)).
+The first way is to register the endpoint on the `secured` group, and then **override** the authorization settings by calling [AllowAnonymous()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.authorizationendpointconventionbuilderextensions.allowanonymous?view=aspnetcore-10.0#microsoft-aspnetcore-builder-authorizationendpointconventionbuilderextensions-allowanonymous-1(-0)) on the endpoint.
 
 The code will look like this:
 
