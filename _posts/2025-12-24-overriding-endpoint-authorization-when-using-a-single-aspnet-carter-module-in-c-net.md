@@ -127,6 +127,6 @@ If we call this, we should see the following:
 
 **Even with a single `Carter` module, it is possible to override the default authorization for endpoints.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-24%20-%20CarterGrouped).
 
 Happy hacking!
