@@ -37,7 +37,7 @@ This was broken.
 What do these three scenarios have in common?
 
 - **Edge** and **Chrome** are based on the [Chromium](https://www.chromium.org/Home/) engine.
-- **Firefox** has its own rendering engine.
+- **Firefox** has its own rendering engine, [Gecko](https://firefox-source-docs.mozilla.org/overview/gecko.html).
 
 It could also be that the problem was [Jekyll](https://jekyllrb.com/) itself, but I dismissed that because I have been using the same version of **Jekyll** for quite some time, and I know for a fact that at some point it worked well.
 
