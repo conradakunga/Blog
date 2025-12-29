@@ -32,7 +32,9 @@ Tried with yet another browser, [Microsoft Edge](https://www.microsoft.com/en-us
 
 ![nosyntaxedge](../images/2025/12/nosyntaxedge.png)
 
-What do these three scenarious have in common?
+This was broken.
+
+What do these three scenarios have in common?
 
 - **Edge** and **Chrome** are based on the [Chromium](https://www.chromium.org/Home/) engine.
 - **Firefox** has its own rendering engine.
