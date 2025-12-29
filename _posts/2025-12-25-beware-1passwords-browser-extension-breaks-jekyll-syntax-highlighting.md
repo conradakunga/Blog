@@ -7,6 +7,7 @@ categories:
     - Chrome	
     - Edge
     - Firefox
+    - Beware
 ---
 
 Recently, I opened one of my [recent blog posts]({% post_url 2025-12-24-overriding-endpoint-authorization-when-using-a-single-aspnet-carter-module-in-c-net %}) and noticed something curious - the **syntax highlighting for code samples was gone**.
