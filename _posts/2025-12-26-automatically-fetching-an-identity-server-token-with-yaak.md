@@ -12,7 +12,7 @@ The maker of **Insomnia** subsequently [sold it off](https://schier.co/blog/indi
 
 Greg, the original author, [subsequently decided to build another REST client](https://yaak.app/blog/yet-another-api-client), [Yaak](https://yaak.app/).
 
-A common issue when testing APIs is requiring an **access token** for an **authenticated endpoint**.
+A common issue when testing APIs is the requirement for an **access token** to access an **authenticated endpoint**.
 
 One of **Insomnia's** features is the ability to specify scripts that run **pre- or post-request**. This could be used to solve the above problem.
 
@@ -54,19 +54,21 @@ You will see the following menu:
 
 ![variables](../images/2025/12/variables.png)
 
-From here, we go on to create our variable, in this case `AccessToken,` by simply typing the name in the section `VAR_NAME`:
+From here, we go on to create our variable, in this case, `AccessToken,` by simply typing the name in the section `VAR_NAME`:
 
 ![definition](../images/2025/12/definition.png)
 
-By default, the value is encrypted. We can change that by clicking on the following icon and choosing **show** from the menu.
+By default, the value is encrypted. We can change that by clicking on the following icon and choosing **Show** from the menu.
 
 ![decrypt](../images/2025/12/decrypt.png)
 
-Next is to define the expression that we want, which in this case is the following:
+Next is to define the **expression** that we want, which in this case is the following:
 
 ```plaintet
 response.body.path()
 ```
+
+The expression is how we capture our desired element(s) from the returned `JSON`.
 
 You will see the value change from text to have a **highlight** indicating **further configuration** is possible:
 
@@ -76,7 +78,7 @@ If you click on the highlighted text you get the following screen:
 
 ![requestconfig](../images/2025/12/requestconfig.png)
 
-First, we choose the endpoint that we want to invoke (that we define and named earlier)
+First, we choose the **endpoint** that we want to invoke (that we defined and named earlier)
 
 ![chooseEndpoint](../images/2025/12/chooseEndpoint.png)
 
@@ -94,15 +96,15 @@ The `JSON` was as follows:
 }
 ```
 
-So from this, we specify the **timeout** as `846000`:
+So from this, we specify the **timeout** as `84600`:
 
 ![tokenTimeoit](../images/2025/12/tokenTimeoit.png)
 
 Here we are saying the token **expires** after `84600` seconds, and only then should another be requested.
 
-Next we tell Yaak about the shape of the response.
+Next, we tell Yaak about the shape of the response.
 
-In this case we do not expect a **collection**, but a **single response**, and so we indicate as follows:
+In this case, we do not expect a **collection**, but a **single response**, and so we indicate as follows:
 
 ![response](../images/2025/12/response.png)
 
@@ -114,11 +116,11 @@ In this case, that expression is:
 $.access_token
 ```
 
-This is because the `access_token` value is at root level of the response.
+This is because the `access_token` value is at the root level of the response.
 
 ![jsonPath](../images/2025/12/jsonPath.png)
 
-If all goes well you should be able to see a **response** in the preview:
+If all goes well, you should be able to see a **response** in the preview:
 
 ![previewResponse](../images/2025/12/previewResponse.png)
 
