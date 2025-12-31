@@ -3,6 +3,7 @@ layout: post
 title: Automatically Fetching an Identity Server Token with Yaak
 date: 2025-12-26 10:23:06 +0300
 categories:
+    - Tools
     - Yaak
 ---
 
