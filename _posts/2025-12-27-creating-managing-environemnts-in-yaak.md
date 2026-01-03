@@ -15,13 +15,13 @@ Sometimes you would like some **fine-grained control** over the variables.
 
 Consider a situation where you have a third-party API that offers a **test environment** and a **live environment**, each differentiated by an API key.
 
-We need, therefore, to tell Yaak in some way when to use the **test** and when to use the **live** key.
+We need, therefore, to tell **Yaak** in some way when to use the **test** and when to use the **live** key.
 
 In our approach, **we will use this key in a HTTP header** so that the back-end service can retrieve and utilize it.
 
 This is done as follows:
 
-First, click on the environment section:
+First, click on the **environment** section:
 
 ![environmentsetup](../images/2025/12/environmentsetup.png)
 
@@ -31,7 +31,7 @@ This will open a dialog that shows you your **global variables**, if any.
 
 In our case, we have already defined the `AccessToken`. This will **always be available**, regardless of the environment.
 
-To create an environment, click the `(+)` next to **Global Variables**.
+To create an **environment**, click the `(+)` next to **Global Variables**.
 
 ![addEnvironmnet](../images/2025/12/addEnvironmnet.png)
 
@@ -39,7 +39,7 @@ In the dialog presented, you provide a **name** for the environment and **option
 
 ![stagingSetup](../images/2025/12/stagingSetup.png)
 
-Upon saving, you should see the new environment added as a node.
+Upon saving, you should see the new **environment** added as a node.
 
 ![completeStagingSetup](../images/2025/12/completeStagingSetup.png)
 
@@ -75,6 +75,8 @@ For `Staging`:
 For `Production`:
 
 ![productionKey](../images/2025/12/productionKey.png)
+
+We can see in both environments that **the key is set correctly**.
 
 ### TLDR
 
