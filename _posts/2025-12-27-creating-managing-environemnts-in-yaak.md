@@ -9,7 +9,7 @@ categories:
 
 The previous post, "[Automatically Fetching an Identity Server Token with Yaak]({% post_url 2025-12-26-automatically-fetching-an-identity-server-token-with-yaak %})", looked at how to set up [Yaak](https://yaak.app/) to **fetch and store tokens** issued by an identity server to secure endpoints using **request chaining**.
 
-**NOTE: For this post, I am using a Yaak beta version, Version `2025.10.0-beta.8 (2025.10.0-beta.8)`**
+**NOTE: For this post, I am using a Yaak beta version, 2025.10.0-beta.8`**
 
 In that technique, the token was stored in a **global variable**, given that you need a valid identity server token **regardless of circumstances**.
 
