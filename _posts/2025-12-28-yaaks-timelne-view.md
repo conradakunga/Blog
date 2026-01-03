@@ -7,7 +7,7 @@ categories:
     - Yaak
 ---
 
-One of Insomnia's strengths was its ability to display the **raw HTTP traffic** between the server and the client.
+One of [Insomnia's](https://insomnia.rest/) strengths was its ability to display the **raw HTTP traffic** between the server and the client.
 
 You could access it using the **Console** tab, and it looked something like this:
 
