@@ -15,7 +15,7 @@ You could access it using the **Console** tab, and it looked something like this
 
 Yaak, as of the official release, `2025.9.3`, does not have this.
 
-But the beta, `2025.10.0-beta.8`, does, via the **Timeline** tab.
+But the beta, `2025.10.0-beta.8`, does, via the **Timeline** tab. This is a feature that was added as of Beta `6`.
 
 ![timeline](../images/2025/12/timeline.png)
 
