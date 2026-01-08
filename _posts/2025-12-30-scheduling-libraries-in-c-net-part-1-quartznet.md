@@ -452,6 +452,6 @@ Here we can observe  the following:
 
 **In this post, we have looked at how to use the `Quartz` library for *recurrent* and *timed* schedules, as well as how to use it in a ASP.NET project, a worker service, and also how to use a database to store state.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-30%20-%20Quartz).
 
 Happy hacking!
