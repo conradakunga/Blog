@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scheduling Libraries In C# & .NET - Quartz.NET
+title: Scheduling Libraries In C# & .NET - Part 1 - Quartz.NET
 date: 2025-12-30 13:42:30 +0300
 categories:
     - Series
