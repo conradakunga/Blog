@@ -17,4 +17,6 @@ In this series, we shall look at a number of **scheduling** libraries, paying at
 
 Finally, I will **recommend** what I think is the best of the lot.
 
+- [Scheduling Libraries In C# & .NET - Part 1 - Quartz.NET]({% post_url 2025-12-30-scheduling-libraries-in-c-net-part-1-quartznet %})
+
 Happy hacking!

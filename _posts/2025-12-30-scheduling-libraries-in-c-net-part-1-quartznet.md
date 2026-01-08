@@ -6,6 +6,9 @@ categories:
     - Series
     - C#
     - .NET
+    - Scheduling
+    - Quartz.Net
+    - StarLibrarues
 ---
 
 This is Part 1 of a series on [scheduling libraries]({% post_url 2025-12-29-series-scheduling-libraries-in-c-net %}) in C# & .NET.
