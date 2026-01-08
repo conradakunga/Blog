@@ -11,7 +11,7 @@ categories:
     - StarLibrarues
 ---
 
-This is Part 1 of a series on [scheduling libraries]({% post_url 2025-12-29-series-scheduling-libraries-in-c-net %}) in C# & .NET.
+**This is Part 1 of a series on [scheduling libraries]({% post_url 2025-12-29-series-scheduling-libraries-in-c-net %}) in C# & .NET.**
 
 In this post, we will look at the [Quartz.NET](https://www.quartz-scheduler.net/) library.
 
