@@ -360,9 +360,9 @@ dotnet add package Npgsql
 dotnet add package Quartz.Serialization.Json
 ```
 
-This will add the `Quartz` library and the `PostgreSQL` database support.
+This will add the `Quartz` library and support for the `PostgreSQL` database.
 
-Finally we write the code to configure the `Scheduler`.
+Finally, we write the code to configure the `Scheduler`.
 
 ```c#
 using System.Collections.Specialized;
