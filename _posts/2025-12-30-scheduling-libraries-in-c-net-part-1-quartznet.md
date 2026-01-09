@@ -8,7 +8,7 @@ categories:
     - .NET
     - Scheduling
     - Quartz.Net
-    - StarLibrarues
+    - StarLibraries
 ---
 
 **This is Part 1 of a series on [scheduling libraries]({% post_url 2025-12-29-series-scheduling-libraries-in-c-net %}) in C# & .NET.**
@@ -44,7 +44,7 @@ public sealed class NotificationJob : IJob
 
 The next thing is to schedule the job.
 
-This is down as follows:
+This is done as follows:
 
 ```c#
 using Quartz;
@@ -300,13 +300,22 @@ finally
 }
 ```
 
-The magic is happening in the builder.Services.AddQuartz invocation where we:
+The magic is happening here:
+
+```c#
+builder.Services.AddQuartz(x =>
+{
+  // Logic here
+}
+```
+
+  Here, we:
 
 1. **Define** a `jobKey` to refer to our `IJob`
 2. **Register** and add our `IJob`
 3. **Add** a `ITrigger`
 
-If we run this app, everything should work as expected:
+If we run this code, everything should work as expected:
 
 ![quartzWorker](../images/2026/01/quartzWorker.png)
 
