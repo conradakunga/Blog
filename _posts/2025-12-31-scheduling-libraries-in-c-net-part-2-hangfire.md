@@ -513,7 +513,7 @@ We can see here that the long-running task took `1` minute to run.
 
 ### TLDR
 
-**In this post, we have looked at how to use the `Hangfire` library for *recurrent* and *timed* schedules, as well as how to use it in a ASP.NET project, a worker service, and also how to implement background jobs**
+**In this post, we have looked at how to use the `Hangfire` library for *recurrent* and *timed* schedules, as well as how to use it in an ASP.NET project, a worker service, and also how to implement background jobs**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2025-12-31%20-%20Hangfire).
 
