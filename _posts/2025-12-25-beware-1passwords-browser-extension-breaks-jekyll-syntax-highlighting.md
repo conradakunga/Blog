@@ -12,7 +12,7 @@ categories:
 
 **UPDATE** - this seems to have been fixed in version `8.11.27.2` for Chrome
 
-**UPDATE #2** - it is still broken as of version `8.111.22.27` for Microsoft Edge
+**UPDATE #2** - it is still broken as of version `8.11.22.27` for Microsoft Edge
 
 Recently, I opened one of my [recent blog posts]({% post_url 2025-12-24-overriding-endpoint-authorization-when-using-a-single-aspnet-carter-module-in-c-net %}) and noticed something curious - the **syntax highlighting for code samples was gone**.
 
