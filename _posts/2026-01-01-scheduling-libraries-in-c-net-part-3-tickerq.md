@@ -282,6 +282,6 @@ Upon restarting, you will get the following screen:
 
 **In this post, we have looked at how to use the `TickerQ` library for *recurrent* and *timed* schedules, as well as how to use it in a traditional .NET application with an application host (Web, API, or WorkerService)****
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-02%20-%20TickerQ).
 
 Happy hacking!
