@@ -7,7 +7,7 @@ categories:
     - C#
     - .NET
     - Scheduling
-    - Quartz.Net
+    - Hangfire
     - StarLibraries
 ---
 
@@ -23,7 +23,7 @@ To demonstrate this, we shall start with a simple **console application**.
 dotnet new console -o HangfireTestRecurring
 ```
 
-To set up the library, use nuget to install the `Hangfire` package
+To set up the library, use [nuget](https://www.nuget.org/) to install the `Hangfire` package
 
 ```bash
 dotnet add package Hangfire.Core

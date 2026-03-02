@@ -17,7 +17,7 @@ In this post, we will look at the [Quartz.NET](https://www.quartz-scheduler.net/
 
 ## Configuration & Setup
 
-To set up the library, use nuget to install the Quartz package
+To set up the library, use [nuget](https://www.nuget.org/) to install the `Quartz` package
 
 ```bash
 dotnet add package Quartz
