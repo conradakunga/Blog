@@ -52,10 +52,15 @@ In our code, we generally need to resolve such issues to do with **case**, where
 For example, suppose we have a list of names.
 
 ```c#
-string[] names = ["Alicia", "Angel", "Brenda", "Bridget", "Carla", "Cathy", "Cookie", "Dawn", "Dianne", "Donna", "Felicia",
-"Ines", "Jaunita", "Karen", "Katrina", "Kelly", "Kim", "Kim", "Kim", "Latisha", "Latoya", "Leshaun", "Linda", "Lisa",
-"Lori", "Marina", "Monica", "Nicki", "Nicole", "Rasheeda", "Rohna", "Ronda", "Sabrina", "Selena", "Sharron", "Shelley",
-"Stacy", "Tawana", "Theresa", "Tina", "Tonya", "Tracy", "Veronica", "Vicky", "Wanda", "Yolanda"];
+string[] names = ["Brenda", "Latisha", "Linda", "Felicia", "Dawn",
+                  "LeShaun", "Ines", "Alicia", "Teresa", "Monica", 
+                  "Sharon", "Nicki", "Lisa", "Veronica", "Karen", 
+                  "Vicky", "Cookie", "Tonya", "Diane", "Lori", 
+                  "Carla", "Marina", "Selena", "Katrina", "Sabrina", 
+                  "Kim", "LaToya", "Tina", "Shelley", "Bridget", 
+                  "Cathy", "Rasheeda", "Kelly", "Nicole", "Angel",
+                  "Juanita", "Stacy", "Tracie", "Rohna", "Ronda", 
+                  "Donna", "Yolanda", "Tawana", "Wanda" ];
 ```
 
 We want to check if it contains a particular name.
