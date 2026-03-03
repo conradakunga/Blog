@@ -148,7 +148,7 @@ else
   Console.WriteLine($"{name} doesn't exist!");
 ```
 
-The third parameter, [StringComparison](https://learn.microsoft.com/en-us/dotnet/api/system.stringcomparison?view=net-10.0), is an enum with the following values:
+The third parameter, [StringComparison](https://learn.microsoft.com/en-us/dotnet/api/system.stringcomparison?view=net-10.0), is an [enum](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum) with the following values:
 
 | Name                       | Value | Description                                                  |
 | :------------------------- | :---- | :----------------------------------------------------------- |
