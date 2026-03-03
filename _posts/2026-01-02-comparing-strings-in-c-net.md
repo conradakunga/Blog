@@ -136,7 +136,7 @@ There are several **problems** with this approach.
 
 > In the Turkish alphabet, there are two letters for ‘i’, dotless and dotted. The problem is that the dotless ‘i’ in lowercase becomes the dotless in uppercase. At first glance, this wouldn’t appear to be a problem; however, the problem lies in what programmers do with upper- and lowercases in their code.
 
-You can try to be **clever** and call the equivalent methods for an [invariant culture](https://stackoverflow.com/questions/2423377/what-is-the-invariant-culture), [ToUpperInvariant](https://learn.microsoft.com/en-us/dotnet/api/system.string.toupperinvariant?view=net-10.0) and [ToLowerInvariant](https://learn.microsoft.com/en-us/dotnet/api/system.string.tolowerinvariant?view=net-10.0)
+You can try to be **clever** and call the equivalent methods for an [invariant culture](https://stackoverflow.com/questions/2423377/what-is-the-invariant-culture), [ToUpperInvariant](https://learn.microsoft.com/en-us/dotnet/api/system.string.toupperinvariant?view=net-10.0) and [ToLowerInvariant](https://learn.microsoft.com/en-us/dotnet/api/system.string.tolowerinvariant?view=net-10.0).
 
 A better and clearer solution is to use the [string.Equals](https://learn.microsoft.com/en-us/dotnet/api/system.string.equals?view=net-10.0#system-string-equals(system-string-system-stringcomparison)) with the appropriate overload.
 
