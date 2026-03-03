@@ -32,7 +32,7 @@ Tricky.
 
 If I told you these were **serial numbers**, you would say **no**.
 
-If I told you they were **model numbers** for a toy, you would say **yes**.
+If I told you they were **model numbers** for a car or a bike, you would say **yes**.
 
 The point I am making here is that string equality has **context**.
 
