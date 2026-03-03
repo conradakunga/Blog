@@ -163,6 +163,6 @@ This means you can clearly articulate **how** you want the **comparison** to pro
 
 ### TLDR
 
-**`String` comparison is a very context-sensitive operation, and you need to be clear how you want to go about it without falling prey to culture-specific challenges.**
+**`String` comparison is a very context-sensitive operation, and you need to be clear about how you want to go about it without falling prey to different interpretations of what 'equality' is**
 
 Happy hacking!
