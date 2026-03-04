@@ -140,6 +140,6 @@ This technique is **safer** and more **testable** than using the first approach.
 
 **In `xUnit3`, you can write proper cancellation support for your test and test runners using either the static `TestContext.Current.CancellationToken` or injecting an `ITestContextAccessor` into your test constructor, through which you can access the `CancellationToken`.**
 
-The code is in my GitHub,
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-04%20-%20CancellableTests),
 
 Happy hacking!
