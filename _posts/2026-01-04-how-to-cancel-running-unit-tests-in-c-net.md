@@ -69,6 +69,8 @@ The rest runner has a **cancel** button that looks like it should do what we exp
 
 ![cancelTestDefault](../images/2026/01/cancelTestDefault.png)
 
+The IDE I am using is [JetBrains](https://www.jetbrains.com/) [Rider](https://www.jetbrains.com/rider/), but the same principles will apply with [Visual Studio](https://visualstudio.microsoft.com/), [Visual Studio Code](https://code.visualstudio.com/), or any other .NET IDE that supports running tests.
+
 You would be surprised to learn that this **does not actually do anything**.
 
 The icon changes, but the test **runs to completion**.
