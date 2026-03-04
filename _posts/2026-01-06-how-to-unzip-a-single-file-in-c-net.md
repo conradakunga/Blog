@@ -75,6 +75,6 @@ You can verify that it was successfully extracted by opening it in your favourit
 
 **`System.IO` and `System.IO.Compression` contain the `ZipFile` class that you can use to extract files from Zip files.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-06%20-%20UnCompressZipFile).
 
 Happy hacking!
