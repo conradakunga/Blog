@@ -69,7 +69,9 @@ The folder will look like this:
 
 ![uncompressedFileDirectory](../images/2026/01/uncompressedFileDirectory.png)
 
-You can verify that it was successfully extracted by opening it in your favourite text editor.
+You can verify that it was successfully extracted by **opening it in your favourite text editor**.
+
+![warAndPeaceText](../images/2026/01/warAndPeaceText.png)
 
 ### TLDR
 
