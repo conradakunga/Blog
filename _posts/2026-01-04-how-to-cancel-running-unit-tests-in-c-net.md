@@ -63,7 +63,7 @@ We can see here that the test successfully ran after `30` seconds.
 
 Which is as expected.
 
-Now, `30` seconds is a long time. Suppose we wanted to cancel a test mid-run?
+Now, `30` seconds is a long time. Suppose we wanted to **cancel a test mid-run**?
 
 The rest runner has a **cancel** button that looks like it should do what we expect.
 
