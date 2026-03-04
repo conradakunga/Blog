@@ -74,6 +74,6 @@ You can verify that it is the same by **extracting it using your favourite tool*
 
 `System.IO` and `System.IO.Compression` contain the ZipFile class that you can use to create Zip files.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-05%20-%20CompressZipFile).
 
 Happy hacking!
