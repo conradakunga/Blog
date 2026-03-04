@@ -97,6 +97,11 @@ This can be accomplished using the [JsonSerializerOptions](https://learn.microso
 The code will look like this:
 
 ```c#
+var options = new JsonSerializerOptions
+{
+    AllowDuplicateProperties = false
+};
+
 try
 {
   person = JsonSerializer.Deserialize<Person>(jsonAttack, options)!;
