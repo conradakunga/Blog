@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<div><img src="{{ site.baseurl }}/images/MVP_Badge_Avatar_Secondary_DarkBlue7694_RGB_small.png"></div>
 <div class="posts">
   {% assign latest_posts = site.posts | slice: 0, 15 %}
   {% assign postsByWeek = latest_posts | group_by_exp:"post", "post.date | date: '%V'" %}
