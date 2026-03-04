@@ -14,7 +14,7 @@ You may also find that occasionally you might want to **terminate a test early**
 
 1. You **no longer want to wait** for the test run to complete
 2. You **know** that the test is going to **fail**
-3. The dependent external systems, you know for a fact, are down.
+3. The dependent **external systems**, you know for a fact, are **down**.
 
 Take, for example, this simple `class`.
 
