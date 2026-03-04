@@ -52,7 +52,7 @@ The project structure is as follows:
 
 ![compressZipSingleFile](../images/2026/01/compressZipSingleFile.png)
 
-To ensure the file is **copied to the output folder**, update the `.csproj` to add the following:
+To ensure the **text** file is **copied to the output folder**, update the `.csproj` to add the following:
 
 ```xml
 <ItemGroup>
