@@ -8,11 +8,11 @@ categories:
     - Compression
 ---
 
-In an earlier post, [How To Zip A Single File In C# & .NET]({% post_url 2026-01-05-how-to-zip-a-single-file-in-c-net %}), we looked at how to use the [ZipFile](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.zipfile?view=net-10.0) class in the [System.IO.Compression](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression?view=net-10.0) namespace to create a zip file from a single file.
+In an earlier post, [How To Zip A Single File In C# & .NET]({% post_url 2026-01-05-how-to-zip-a-single-file-in-c-net %}), we looked at how to use the [ZipFile](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.zipfile?view=net-10.0) class in the [System.IO.Compression](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression?view=net-10.0) namespace to create a [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) file from a single file.
 
 In this post, we will look at how to zip **multiple** files into a **single zip** file. 
 
-For our example, we have a bunch of books in text file format.
+For our example, we have a bunch of **classic** books in **text file format**.
 
 ![zipFileFolderBooks](../images/2026/01/zipFileFolderBooks.png)
 
@@ -88,7 +88,7 @@ The code for a **single file** is almost **identical**, and you can read about i
 
 ### TLDR
 
-The `ZipFile` class in `System.IO.Compression` can be used to create a single zip file from multiple source files.
+**The `ZipFile` class in `System.IO.Compression` can be used to create a single zip file from multiple source files.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-07%20-%20CompressZipFiles).
 
