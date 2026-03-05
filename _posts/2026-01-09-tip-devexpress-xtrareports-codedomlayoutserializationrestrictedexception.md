@@ -24,14 +24,20 @@ This, as you can see, is a **security** exception.
 
 There are two solutions to this problem.
 
-1. The first, and preferred, is to eschew CodeDOM serialization altogether and use [XML serialization](https://docs.devexpress.com/XtraReports/10011/feature-guide-to-devexpress-reports/store-and-distribute-reports/store-report-layouts-and-documents/xml-serialization).
-2. The second, shorter-term solution (as you get your ducks in a row) is to **temporarily** allow CodeDOM.
+1. The first, and preferred, is to **eschew CodeDOM serialization** altogether and use [XML serialization](https://docs.devexpress.com/XtraReports/10011/feature-guide-to-devexpress-reports/store-and-distribute-reports/store-report-layouts-and-documents/xml-serialization).
+2. The second, **shorter-term solution** (as you get your ducks in a row) is to **temporarily** allow CodeDOM.
 
 This line of code will achieve this:
 
 ```c#
 DevExpress.XtraReports.Configuration.Settings.Default.AllowCodeDomLayoutDeserialization = True
 ```
+
+This code allows you to call the following **prohibited** (by default) methods:
+
+- [XtraReport.LoadLayout()](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport.LoadLayout.overloads)
+- [XtraReport.FromFile()](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport.FromFile(System.String-System.Boolean))
+- [XtraReport.FromStream()](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport.FromStream(System.IO.Stream-System.Boolean))
 
 Place it somewhere in your **application startup**, and everything should work.
 
