@@ -3,6 +3,8 @@ layout: page
 title: Archives
 permalink: /archives/
 ---
+<img src="{{ site.baseurl }}/images/MVP_Badge_Avatar_Secondary_DarkBlue7694_RGB_small.png" alt="">
+
 {% assign count = site.posts | size %}
 {% capture total_words %}
   {% posts_word_count total %}
