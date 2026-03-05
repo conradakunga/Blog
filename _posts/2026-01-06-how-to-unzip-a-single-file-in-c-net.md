@@ -16,6 +16,10 @@ Just as with **compression**, what we need for **decompression** is available in
 
 We will also use the [ZipFile](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.zipfile?view=net-10.0) class for the heavy lifting.
 
+The project structure is as follows:
+
+![uncompressDirectoryStructure](../images/2026/01/uncompressDirectoryStructure.png)
+
 The code is as follows:
 
 ```c#
@@ -46,10 +50,6 @@ await using (var archive = await ZipFile.OpenReadAsync(sourceZipFile))
 
 Log.Information("Written {SourceZipFile} to {TargetTextFile}", sourceZipFile, targetTextFile, targetTextFile);
 ```
-
-The project structure is as follows:
-
-![uncompressDirectoryStructure](../images/2026/01/uncompressDirectoryStructure.png)
 
 To ensure the **zip** file is **copied to the output folder**, update the `.csproj` to add the following:
 

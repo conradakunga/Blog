@@ -16,6 +16,10 @@ We can leverage this in .NET without using third-party libraries, as what we nee
 
 For this, we use the [ZipFile](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.zipfile?view=net-10.0) class for the heavy lifting.
 
+The project structure is as follows:
+
+![compressZipSingleFile](../images/2026/01/compressZipSingleFile.png)
+
 The code is as follows:
 
 ```c#
@@ -47,10 +51,6 @@ Log.Information("Written {SourceFile} to {TargetZipFile}", sourceFile, targetZip
 ```
 
 For this, I am using the novel [War and Peace](https://en.wikipedia.org/wiki/War_and_Peace) by [Leo Tolstoy](https://en.wikipedia.org/wiki/Leo_Tolstoy), available legally as a text file [here](https://github.com/mmcky/nyu-econ-370/blob/master/notebooks/data/book-war-and-peace.txt).
-
-The project structure is as follows:
-
-![compressZipSingleFile](../images/2026/01/compressZipSingleFile.png)
 
 To ensure the **text** file is **copied to the output folder**, update the `.csproj` to add the following:
 
