@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tip - DevExpress XtraRichEdit error BC30451: 'TableBorderLineStyle' is not declared. It may be inaccessible due to its protection level.
+title: "Tip - DevExpress XtraRichEdit error BC30451: 'TableBorderLineStyle' is not declared. It may be inaccessible due to its protection level"
 date: 2026-01-11 14:19:36 +0300
 categories:
     - C#
