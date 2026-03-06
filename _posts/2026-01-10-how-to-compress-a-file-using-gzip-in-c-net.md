@@ -8,7 +8,7 @@ categories:
     - Compression
 ---
 
-A few recent posts,  [How To Zip A Single File In C# & .NET]({% post_url 2026-01-05-how-to-zip-a-single-file-in-c-net %}), [How To UnZip A Single File In C# & .NET]({% post_url 2026-01-06-how-to-unzip-a-single-file-in-c-net %}), [How To Zip Multiple Files In C# & .NET]({% post_url 2026-01-07-how-to-zip-multiple-files-in-c-net %}), [How To UnZip Multiple Files In C# & .NET]({% post_url 2026-01-08-how-to-unzip-multiple-files-in-c-net %}), looked at how to compress and decompress zip files.
+A few recent posts,  [How To Zip A Single File In C# & .NET]({% post_url 2026-01-05-how-to-zip-a-single-file-in-c-net %}), [How To UnZip A Single File In C# & .NET]({% post_url 2026-01-06-how-to-unzip-a-single-file-in-c-net %}), [How To Zip Multiple Files In C# & .NET]({% post_url 2026-01-07-how-to-zip-multiple-files-in-c-net %}), [How To UnZip Multiple Files In C# & .NET]({% post_url 2026-01-08-how-to-unzip-multiple-files-in-c-net %}), looked at how to **compress** and **decompress** [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) files.
 
 Another compression format you will run into, especially in the **Linux**, **Unix**, and **MacOS** worlds, is the [gzip](https://en.wikipedia.org/wiki/Gzip) format.
 
