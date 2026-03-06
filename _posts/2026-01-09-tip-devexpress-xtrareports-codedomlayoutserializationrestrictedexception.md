@@ -30,7 +30,7 @@ There are two solutions to this problem.
 This line of code will achieve this:
 
 ```c#
-DevExpress.XtraReports.Configuration.Settings.Default.AllowCodeDomLayoutDeserialization = True
+DevExpress.XtraReports.Configuration.Settings.Default.AllowCodeDomLayoutDeserialization = true;
 ```
 
 This code allows you to call the following **prohibited** (by default) methods:
