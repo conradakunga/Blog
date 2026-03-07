@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Compress Multiple Files Using GZip In C# & .NET
-date: 2026-01-11 18:56:12 +0300
+date: 2026-01-12 18:56:12 +0300
 categories:
     - C#
     - .NET
