@@ -8,7 +8,7 @@ categories:
     - Compression
 ---
 
-In a prior post, [How To Compress A File Using GZip In C# & .NET]({% post_url 2026-01-10-how-to-compress-a-file-using-gzip-in-c-net %}), we looked at how to **compress** a file with the gzip format using the [System.IO.Compression](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression?view=net-10.0) [GZipStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.gzipstream?view=net-10.0)
+In a prior post, [How To Compress A File Using GZip In C# & .NET]({% post_url 2026-01-10-how-to-compress-a-file-using-gzip-in-c-net %}), we looked at how to **compress** a file with the [gzip](https://en.wikipedia.org/wiki/Gzip) format using the [System.IO.Compression](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression?view=net-10.0) [GZipStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.gzipstream?view=net-10.0)
 
 In this post, we will look at how to **compress multiple files** using [gzip](https://en.wikipedia.org/wiki/Gzip).
 
