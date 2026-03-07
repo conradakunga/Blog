@@ -37,7 +37,7 @@ This is an error you will get if you have code like this:
  End With
 ```
 
-The example here is in VisualBasic.NET.
+The example here is in [Visual Basic.NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/).
 
 The issue here is that there has been a breaking change where this enum, `TableBorderLineStyle` has been [renamed](https://supportcenter.devexpress.com/ticket/details/t1256923/word-processing-the-tableborderlinestyle-enumeration-is-renamed-to-borderlinestyle) to `BorderLineStyle`.
 
@@ -69,4 +69,4 @@ The updated code will look like this:
 
 ### TLDR
 
-The `TableBorderLineStyle` enum has been renemed to `BorderLineStyle` from DevExpress 24 onwards
+**The `TableBorderLineStyle` enum has been renamed to `BorderLineStyle` from DevExpress 24 onwards.**
