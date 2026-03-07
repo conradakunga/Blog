@@ -131,3 +131,11 @@ If we run this code, it should print the following:
 And in our directory, we should be able to see the `gzip` file.
 
 ![mutlifileTarFolder](../images/2026/01/mutlifileTarFolder.png)
+
+### TLDR
+
+**You can create a `gzip` file from multiple source files by `Tar`-ing the files first using a `TarWriter` and then `gzip`-ing them using a `GzipStream`**
+
+The code is in my GitHub.
+
+Happy hacking!
