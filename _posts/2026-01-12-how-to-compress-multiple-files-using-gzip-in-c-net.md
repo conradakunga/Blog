@@ -81,7 +81,7 @@ await using (var gzip = new GZipStream(File.Create(targetGzipFile), CompressionL
 Log.Information("Written {SourceFile} to {TargetFile}", sourceFilesDirectory, targetGzipFile);
 ```
 
-Support for Tar is from the [TarWriter](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarwriter?view=net-10.0) class in the [System.Formats.Tar](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar?view=net-10.0) namespace.
+Support for `Tar` is from the [TarWriter](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarwriter?view=net-10.0) class in the [System.Formats.Tar](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar?view=net-10.0) namespace.
 
 Rather than using a stream, the `TarWriter` also exposes a helper method - [CreateFromDirectoryAsync](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarfile.createfromdirectoryasync?view=net-10.0#system-formats-tar-tarfile-createfromdirectoryasync(system-string-system-string-system-boolean-system-threading-cancellationtoken)), that allows you to **directly** create a `Tar` file from a folder. (There is also a **synchronous** version, [CreateFromDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarfile.createfromdirectory?view=net-10.0))
 
