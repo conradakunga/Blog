@@ -136,6 +136,6 @@ And in our directory, we should be able to see the `gzip` file.
 
 **You can create a `gzip` file from multiple source files by `Tar`-ing the files first using a `TarWriter` and then `gzip`-ing them using a `GzipStream`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-12%20-%20MutliFileGzipCompression).
 
 Happy hacking!
