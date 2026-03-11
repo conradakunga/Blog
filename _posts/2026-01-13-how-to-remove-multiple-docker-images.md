@@ -6,7 +6,7 @@ categories:
     - Docker
 ---
 
-When it comes to [Docker](https://www.docker.com/) (and you ARE using Docker, aren't you?), **housekeeping** is something you will find yourself doing fairly often. 
+When it comes to [Docker](https://www.docker.com/) (and you ARE using **Docker**, aren't you?), **housekeeping** is something you will find yourself doing fairly often. 
 
 This is generally due to:
 
