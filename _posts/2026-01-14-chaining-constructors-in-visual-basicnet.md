@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Recently, while refactoring some legacy Visual Basic .NET code, I ran into a situation where I realized I could reap significant benefits from chaining [constructors](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes), rather than **copying and pasting the body** across slightly different versions.
+Recently, while refactoring some legacy [Visual Basic .NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/) code, I ran into a situation where I realized I could reap significant benefits from chaining [constructors](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes), rather than **copying and pasting the body** across slightly different versions.
 
 The original `type` was as follows:
 
