@@ -127,6 +127,6 @@ Note the use of keywords here:
 
 **Object chaining can simplify object creation and management (generally) without duplicating code.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-14%20-%20ConstructorFunWithVB).
 
 Happy hacking!
