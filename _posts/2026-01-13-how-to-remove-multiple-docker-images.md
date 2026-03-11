@@ -46,6 +46,8 @@ docker rm 24fab8b8f344 2ce96c2e6070 4ff3513d4576
 
 You can also make use of the fact that you only need to provide **enough of the leading tag to be unique**.
 
+![DockerImageListingUnique](../images/2026/01/DockerImageListingUnique.png)
+
 In other words, you can do it this way:
 
 ```bash
