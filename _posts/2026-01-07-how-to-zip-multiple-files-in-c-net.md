@@ -41,13 +41,13 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console().CreateLogger();
 
 // Extract the current folder where the executable is running
-var currentFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+var currentFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
 
 // Construct the full path to the source files
-var folderWithBooks = Path.Combine(currentFolder!, "Books");
+var folderWithBooks = Path.Combine(currentFolder, "Books");
 
 // Construct the full path to the zip file
-var targetZipFile = Path.Combine(folderWithBooks, "Books.zip");
+var targetZipFile = Path.Combine(currentFolder, "Books.zip");
 
 // Retrieve the files
 var filesToZip = Directory.GetFiles(folderWithBooks);
@@ -78,9 +78,26 @@ If we run this code, we should see the following:
 
 ![compressFilesOutput](../images/2026/01/compressFilesOutput.png)
 
-If we navigate to the `Books` folder:
+If we navigate to the output folder:
 
 ![booksZipFile](../images/2026/01/booksZipFile.png)
+
+Alternatively, you can use the [CreateFromDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.zipfile.createfromdirectory?view=net-10.0) method of the [ZipFile](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.zipfile?view=net-10.0) class.
+
+This single method is simpler to leverage.
+
+The code is as follows:
+
+```c#
+// Delete the zip file if it exists
+if (File.Exists(targetZipFile))
+    File.Delete(targetZipFile);
+
+// Create the zip file
+await ZipFile.CreateFromDirectoryAsync(folderWithBooks, targetZipFile);
+```
+
+
 
 In this manner, we can create a **single zip** file from **many source files**.
 
