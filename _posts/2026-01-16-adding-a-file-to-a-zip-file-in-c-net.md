@@ -20,13 +20,16 @@ Our project folder will look like this:
 
 ![addZipFile](../images/2026/01/addZipFile.png)
 
-To ensure the file `wealth-of-nations.md` is copied to the build folder, we update our `.csproj` by adding a new element as follows:
+To ensure the file `wealth-of-nations.md` as well as the Zip file are copied to the build folder, we update our `.csproj` by adding a new element as follows:
 
 ```xml
 <ItemGroup>
-    <None Include="wealth-of-nations.md">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+  <None Include="wealth-of-nations.md">
+  	<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
+  <None Include="Books\**\*">
+  	<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
 </ItemGroup>
 ```
 
