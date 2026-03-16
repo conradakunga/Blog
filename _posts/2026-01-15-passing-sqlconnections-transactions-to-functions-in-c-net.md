@@ -80,8 +80,7 @@ The potential problem is that you are passing the **transactions** and the **con
 This means that a user can do this:
 
 ```c#
-var cn1 = new SqlConnection(
-    "Data Source=.;uid=sa;pwd=YourStrongPassword123;TrustServerCertificate=true");
+"Data Source=.;uid=sa;pwd=YourStrongPassword123;TrustServerCertificate=true");
 await cn1.OpenAsync();
 
 var cn2 = new SqlConnection(
@@ -95,19 +94,19 @@ var processor = new TransactionProcessor();
 // Do the first bit of work
 var firstResult = await processor.DoThisThing(cn1, trans1);
 // Do the next bit of work
-var secondResult = await processor.DoThisThing(cn1, trans2);
+var secondResult = await processor.DoTheOtherThing(cn2, trans2);
 trans1.Commit();
 trans2.Commit();
-Log.Information("Success!");
+Log.Information("Success!")
 ```
 
-Here we are passing **two different** [DBTransaction](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbtransaction?view=net-10.0) objects and two different [SqlConnection](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlconnection?view=netframework-4.8.1) objects to the `TransactionProcessor`.
+Here, we are passing **two different** [DBTransaction](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbtransaction?view=net-10.0) objects and two different [SqlConnection](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlconnection?view=netframework-4.8.1) objects to the `TransactionProcessor`.
 
 This code will also run, but it is not doing what you think it is doing.
 
 Here, we have two transactions running **independently**. So, **one failing** will **not affect the other**.
 
-This probably isn't what you intended.
+This probably **isn't what you intended**.
 
 To prevent this, we refactor the `TransactionProcessor` as follows:
 
@@ -131,7 +130,7 @@ namespace TransactionWork.v2
 }
 ```
 
-Here, we are passing the `DbTransaction` only to the methods, obtaining its `SqlConnection` via the Connection property, on which we then leverage Dapper to execute the query.
+Here, we are passing the `DbTransaction` only to the methods, obtaining its `SqlConnection` via the [Connection](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbtransaction.connection?view=net-10.0) property, on which we then leverage [Dapper](https://github.com/DapperLib/Dapper) to execute the query.
 
 Again, **pay no attention to the fact that the work is a SELECT statement** - in a production use case, there would, naturally, be some database **writes**.
 
