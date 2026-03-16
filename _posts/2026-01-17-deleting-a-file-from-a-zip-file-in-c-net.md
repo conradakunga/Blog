@@ -65,7 +65,7 @@ await using (var archive = ZipFile.Open(targetZipFile, ZipArchiveMode.Update))
 }
 ```
 
-The heavy lifting here is done by the [Delete](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry.delete?view=net-10.0) method of the [ZipArchiveEntry](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry?view=net-10.0) class.
+The heavy lifting here is handled by the [Delete](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry.delete?view=net-10.0) method of the [ZipArchiveEntry](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry?view=net-10.0) class.
 
 We make use of the fact that the [GetEntry](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchive.getentry?view=net-10.0) method of the [ZipArchive](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchive?view=net-10.0) class will return a `ZipArchiveEntry` if the file you are looking for **exists**. Otherwise, it returns `null`.
 
@@ -79,6 +79,6 @@ The program will print the following if it is successful.
 
 **To delete a file from a Zip archive, use the [Delete](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry.delete?view=net-10.0) method of the [ZipArchiveEntry](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry?view=net-10.0) class.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-17%20-%20DeleteFileFromZip).
 
 Happy hacking!
