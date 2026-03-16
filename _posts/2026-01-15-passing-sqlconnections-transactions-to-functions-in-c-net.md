@@ -166,6 +166,6 @@ In this way, we can be **unambiguous about the coupling** of the `SqlTransaction
 
 **We can fetch its associated connection from the `Connection` property.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-15%20-%20Transactions).
 
 Happy hacking!
