@@ -58,6 +58,6 @@ This will print the following:
 
 **You can iterate over the `Entries` collection of the `ZipArchive` class to list the files contained in the `Zip` file.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-18%20-%20ListFilesInZip).
 
 Happy hacking!
