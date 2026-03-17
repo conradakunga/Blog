@@ -90,8 +90,8 @@ And here we can see the difference:
 
 ### TLDR
 
-The `Name` property of the `ZipArchiveEntry` contains the file name, whereas the `FullName` additionally contains the relative path.
+**The `Name` property of the `ZipArchiveEntry` contains the file name, whereas the `FullName` additionally contains the relative path.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-19%20-%20FileNameVsFullName).
 
 Happy hacking!
