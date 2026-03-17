@@ -120,6 +120,6 @@ If we try to **open** the `Zip` file:
 
 **You can use `SharpZipLib` to create password-protected `Zip` files.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-21%20-%20CreatePasswordProtectedZip).
 
 Happy hacking!
