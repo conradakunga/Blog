@@ -102,7 +102,7 @@ The main logic is as follows:
 
 1. Create a [FileStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.filestream?view=net-10.0)
 2. Open a `ZipOutputStream` from the `FileStream`
-3. Set the **compression** level (`1`-9), `9` being the **smallest**, on the `FileStream`
+3. Set the **compression** level (`1`- `9`), `9` being the **smallest**, on the `FileStream`
 4. Set the **password** on the `FileStream`
 5. For **each file to add**, create a `ZipEntry` using the **relative path** of the file, and set the **last modified date** of the `ZipEntry`.
 6. Put this entry into the `ZipOutputStream`
