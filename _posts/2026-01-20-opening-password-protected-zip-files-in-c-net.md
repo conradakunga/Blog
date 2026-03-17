@@ -122,6 +122,6 @@ If we run this program, we should see the following output:
 
 **You can open password-protected `Zip` files using the `SharpZipLib` library.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-20%20-%20PasswordProtectedZip).
 
 Happy hacking!
