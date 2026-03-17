@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ZipArchive FileName vs Name
-date: 2026-01-16 13:31:14 +0300
+date: 2026-01-19 13:31:14 +0300
 categories:
     - C#
     - .NET
