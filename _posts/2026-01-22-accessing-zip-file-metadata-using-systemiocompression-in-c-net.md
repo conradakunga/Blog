@@ -153,6 +153,6 @@ The complete output is as follows:
 
 **The `ZipArchive` class in `System.IO.Compression` allows you to access details of `Zip` files that have been added to a `Zip` archive.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-22%20-%20ZipFileMetadata).
 
 Happy hacking!
