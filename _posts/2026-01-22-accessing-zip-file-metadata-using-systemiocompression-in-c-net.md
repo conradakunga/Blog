@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessing Zip File Metadata Using System.IO.Compression In C# & .NET
-date: 2026-01-23 11:46:44 +0300
+date: 2026-01-22 11:46:44 +0300
 categories:
     - C#
     - .NET
