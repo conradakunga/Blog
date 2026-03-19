@@ -173,6 +173,6 @@ Of interest is that feact that you **generally do not need to know the password 
 
 **You can list the files in a password-protected zip file, as well as associated metadata, using the `SharpZipLib` library, as the classes in `System.IO.Compression`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-23%20-%20PasswordProtectredZipMetadata).
 
 Happy hacking!
