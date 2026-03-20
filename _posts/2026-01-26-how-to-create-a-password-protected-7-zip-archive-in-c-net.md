@@ -109,7 +109,7 @@ If we run this code, we should see the following:
 
 The `7-Zip` file is now in the output folder.
 
-If we try to open the archive, we should receive a prompt for the password.
+If we try to open the archive, we should see a **password prompt**.
 
 ![7zPasswordPrompt](../images/2026/01/7zPasswordPrompt.png)
 
