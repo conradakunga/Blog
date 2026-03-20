@@ -70,7 +70,7 @@ if (result.ExitCode != 0)
     Log.Error("7-Zip failed: {Message}", result.StandardError);
 else
     Log.Information("Extracted files in {SourceFiles} to {TargetFolder} {Message}", source7ZipFile, outputFolder,
-        result.StandardOutput.Trim());
+        result.StandardOutput);
 ```
 
 If we run this code, we should see the following output:
