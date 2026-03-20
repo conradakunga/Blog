@@ -105,7 +105,7 @@ The magic is taking place on these lines:
 
 If we run this code, we should see the following:
 
-![7zPasswordOutput](../images/2026/01/7zPasswordOutput.png)
+![7zipOutput](../images/2026/01/7zipOutput.png)
 
 The `7-Zip` file is now in the output folder.
 
