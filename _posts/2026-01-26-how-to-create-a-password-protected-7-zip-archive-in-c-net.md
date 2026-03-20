@@ -1,24 +1,16 @@
 ---
 layout: post
-title: How To Create A 7-Zip Archive In C# & .NET
-date: 2026-01-25 18:54:48 +0300
+title: How To Create A Password-Protected 7-Zip Archive In C# & .NET
+date: 2026-01-26 19:53:29 +0300
 categories:
     - C#
     - .NET
     - Compression
 ---
 
-The [Zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) compression format has been fairly **ubiquitous** throughout the era of computing. Most operating systems **natively support them**.
+In our previous post, How To Create A 7-Zip Archive In C# & .NET, we looked at how to create a 7z archive by automating the command line.
 
-After `Zip` came the [RAR](https://en.wikipedia.org/wiki/RAR_(file_format)) format by [Eugene Roshal,](https://en.wikipedia.org/wiki/Eugene_Roshal) which offered **faster compression** and **smaller** files.
-
-Recently, the [7z](https://en.wikipedia.org/wiki/7z) format by Igor Pavlov has grown increasingly popular as it creates even smaller compressed files.
-
-There have been attempts to create a **mature**, **high-performing** library that has **feature parity** with the command-line tool.
-
-This has largely been **unsuccessful**.
-
-So the best way to create a `7-Zip` file in .NET is to **automate the command-line tool**.
+In this post, we will look at how to create a **password-protected** `7z` archive.
 
 Our project structure looks like this:
 
@@ -102,19 +94,26 @@ else
     Log.Information("Written files in {SourceFiles} to {Target7ZipFile} : {Message}", folderWithBooks, target7ZipFile, result.StandardOutput);
 ```
 
-Here, we use `CliWrap` to construct the `7zz` command and its **arguments**, then **execute** it.
+The magic is taking place on these lines:
+
+```c#
+.Add($"-p{password}") // Set the password
+.Add("-mhe=on") // encrypt file names
+```
 
 If we run this code, we should see the following:
 
-![7zipConsole](../images/2026/01/7zipConsole.png)
+![7zPasswordOutput](../images/2026/01/7zPasswordOutput.png)
 
 The `7-Zip` file is now in the output folder.
 
-![7zipOutput](../images/2026/01/7zipOutput.png)
+If we try to open the archive, we should receive a prompt for the password.
+
+![7zPasswordPrompt](../images/2026/01/7zPasswordPrompt.png)
 
 ### TLDR
 
-**To create a `7-Zip` archive, it is best to automate the command-line executable.**
+**To create a password protected `7-Zip` file, pass the password as an argument to the command-line tool.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-25%20-%207zipCreator).
 
