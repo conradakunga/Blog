@@ -8,7 +8,7 @@ categories:
     - Compression
 ---
 
-In a previous post, [How To Create A 7-Zip Archive In C# & .NET]({% post_url 2026-01-25-how-to-create-a-7-zip-archive-in-c-net %}), we looked at how to create a [7z](https://en.wikipedia.org/wiki/7z) archive by **automating** the 7-Zip command-line tool.
+In a previous post, [How To Create A 7-Zip Archive In C# & .NET]({% post_url 2026-01-25-how-to-create-a-7-zip-archive-in-c-net %}), we looked at how to create a [7z](https://en.wikipedia.org/wiki/7z) archive by **automating** the 7-Zip **command-line tool**.
 
 In this post, we will look at the reverse - how to **extract files** from a `7z` archive.
 
@@ -26,7 +26,7 @@ To ensure that the `7z` is copied to the **output** folder, add the following el
 </ItemGroup>
 ```
 
-We then add the CliWrap library.
+We then add the [CliWrap](https://github.com/Tyrrrz/CliWrap) library.
 
 ```bash
 dotnet add package CliWrap
@@ -77,7 +77,7 @@ If we run this code, we should see the following output:
 
 ![Extract7zConsole](../images/2026/01/Extract7zConsole.png)
 
-If we look in our output folder, we should see our newly created folder
+If we look in our **output** folder, we should see our newly created folder
 
 ![Extract7ZipFolder](../images/2026/01/Extract7ZipFolder.png)
 
