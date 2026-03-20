@@ -8,7 +8,7 @@ categories:
     - Compression
 ---
 
-In our previous post, How To Create A 7-Zip Archive In C# & .NET, we looked at how to create a 7z archive by automating the command line.
+In our previous post, [How To Create A 7-Zip Archive In C# & .NET]({% post_url 2026-01-25-how-to-create-a-7-zip-archive-in-c-net %}), we looked at how to create a [7z](https://en.wikipedia.org/wiki/7z) archive by **automating the command line**.
 
 In this post, we will look at how to create a **password-protected** `7z` archive.
 
@@ -78,14 +78,16 @@ if (File.Exists(target7ZipFile))
 
 // Orchestrate the command line to excute and run
 var result = await Cli.Wrap(executablePath) // Set the path to the executable
-    .WithArguments(args => args
-            .Add("a") //Specify to create an archive
-            .Add("-t7z") // Specify the target format - 7z
-            .Add(target7ZipFile) // Taget file name
-            .Add($"{folderWithBooks}//*") // The files in the source folder
-            .Add("-mx=9") // max compression
-    )
-    .ExecuteBufferedAsync();
+  .WithArguments(args => args
+  .Add("a") //Specify to create an archive
+  .Add("-t7z") // Specify the target format - 7z
+  .Add(target7ZipFile) // Taget file name
+  .Add($"{folderWithBooks}//*") // The files in the source folder
+  .Add($"-p{password}") // Set the password
+  .Add("-mhe=on") // encrypt file names
+  .Add("-mx=9") // max compression
+  )
+  .ExecuteBufferedAsync();
 
 // Check if the process succeeded
 if (result.ExitCode != 0)
