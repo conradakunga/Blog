@@ -14,7 +14,7 @@ After `Zip` came the [RAR](https://en.wikipedia.org/wiki/RAR_(file_format)) form
 
 Recently, the [7z](https://en.wikipedia.org/wiki/7z) format by Igor Pavlov has grown increasingly popular as it creates even smaller compressed files.
 
-There have been attempts to create a mature, high-performing library that has feature parity with the command-line tool.
+There have been attempts to create a **mature**, **high-performing** library that has **feature parity** with the command-line tool.
 
 This has largely been **unsuccessful**.
 
@@ -116,6 +116,6 @@ The `7-Zip` file is now in the output folder.
 
 **To create a `7-Zip` archive, it is best to automate the command-line executable.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-25%20-%207zipCreator).
 
 Happy hacking!
