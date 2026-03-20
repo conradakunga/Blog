@@ -382,6 +382,8 @@ With the `required` keyword, you get the following **compile-time** error:
 
 ![requiredKeyword](../images/2026/01/requiredKeyword.png)
 
+Thus, you are **forced to initialize** any required properties.
+
 The latest iteration allows access to the backing field, which I have discussed in the post [Using The Field Keyword In C# & .NET]({% post_url 2025-11-03-using-the-field-keyword-in-c-net %}).
 
 This construct is available to any of the .NET family of languages - [C#](https://dotnet.microsoft.com/en-us/languages/csharp), [Visual Basic .NET](https://learn.microsoft.com/dotnet/visual-basic/?WT.mc_id=dotnet-35129-website), and [F#](https://dotnet.microsoft.com/en-us/languages/fsharp).
