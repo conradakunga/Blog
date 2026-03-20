@@ -301,9 +301,9 @@ For the simplest of scenarios, this was all you needed:
 ```c#
 public class Person
 {
-    public string FirstName { get; set; }
-    public string Surname { get; set; }
-		public string FullName => $"{FirstName} {Surname}";
+  public string FirstName { get; set; }
+  public string Surname { get; set; }
+  public string FullName => $"{FirstName} {Surname}";
 }
 ```
 
@@ -354,6 +354,7 @@ public class Person
 {
   public string FirstName { get; init; }
   public string Surname { get; init; }
+  public string FullName => $"{FirstName} {Surname}";
 }
 ```
 
@@ -367,6 +368,7 @@ The next improvement was the [required](https://learn.microsoft.com/en-us/dotnet
 {
   public required string FirstName { get; init; }
   public required string Surname { get; init; }
+  public string FullName => $"{FirstName} {Surname}";
 }
 ```
 
