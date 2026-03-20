@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Problems Do Properties Solve In C# & .NET
+title: What Problems Do Properties Solve & Their Evolution In C# & .NET
 date: 2026-01-24 13:24:34 +0300
 categories:
     - C#
@@ -361,7 +361,7 @@ The compiler would enforce that you can't modify either of these.
 
 ![initKeyword](../images/2026/01/initKeyword.png)
 
-The next improvement was the required keyword.
+The next improvement was the [required](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/required) modifier.
 
 ```c#
 {
