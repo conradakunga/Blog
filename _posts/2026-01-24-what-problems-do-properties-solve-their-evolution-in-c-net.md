@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Properties are a construct that you probably **routinely use** in your day-to-day programming. You probably use them so **frequently** that you likely haven't thought about how **convenient** and **safe** they have made your programming.
+**Properties** are a construct that you probably **routinely use** in your day-to-day programming. You probably use them so **frequently** that you likely haven't thought about how **convenient** and **safe** they have made your programming.
 
 Rather than just linking you to the documentation, **let us look at how things were done before**, and the **incremental improvements** that got us to where we are today.
 
@@ -23,7 +23,7 @@ public class Person
 
 `FirstName` and `Surname` here are what are called [fields](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields). There are **publicly accessible and modifiable variables** within a `type`.
 
-Our type is used like this:
+Our `type` is used like this:
 
 ```c#
 var james = new Person();
@@ -37,7 +37,7 @@ Suppose we want to enforce some **restrictions**, such as you **cannot change** 
 
 How do you do this using fields?
 
-You **can't**.
+**You can't.**
 
 To achieve this, you must provide a [constructor](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) to your type, in which you **initialize** your type.
 
@@ -73,13 +73,13 @@ public class Person
 }
 ```
 
-Another problem you quickly run into is running custom code before you set these variables.
+Another problem you quickly run into is running **custom code before** you set these variables.
 
-For example, you want to ensure that the `FirstName` and `Surname` are not blank or null before setting.
+For example, you want to ensure that `FirstName` and `Surname` are not **blank** or `null` before setting them.
 
-This cannot be directly done using fields.
+This cannot be directly done using `fields`.
 
-A simple solution to this problem is a custom setter method.
+A simple solution to this problem is a custom [setter](https://en.wikipedia.org/wiki/Mutator_method) method.
 
 ```c#
 public class Person
@@ -116,10 +116,10 @@ This solves one problem but creates another: `FirstName` is still **publicly acc
 
 The solution to this is two-fold:
 
-1.  Make the publicly accessible fields private
-2. Introduced another custom method - a getter.
+1.  Make the **publicly** accessible `fields` **private**
+2. Introduced another custom method - a `getter`.
 
-The type now looks like this:
+The `type` now looks like this:
 
 ```c#
 public class Person
@@ -205,7 +205,7 @@ The magic is taking place here:
 
 Notice you cannot access `_firstName` or `_surname` directly.
 
-Properties allow you to have computed properties, so we can implement a FullName property like this:
+Properties allow you to have computed properties, so we can implement a `FullName` property like this:
 
 ```c#
 public string FullName
@@ -224,9 +224,9 @@ var person = new Person
 };
 ```
 
-If you want your type to be immutable, you initialize your properties using a constructor and then remove the **setters**;
+If you want your type to be immutable, you initialize your properties using a `constructor` and then remove the **setters**;
 
-The class now looks like this:
+The `class` now looks like this:
 
 ```c#
 public class Person
@@ -294,7 +294,7 @@ public class Person
 
 Notice that our setters **do not have explicit parameters** - the parameter is an **implicit built-in parameter** that you can access using the `value` keyword.
 
-The next iteration that improved this was to get rid of (where possible) the private backing field.
+The next iteration that improved this was to **get rid of** (where possible) the `private` **backing field**.
 
 For the simplest of scenarios, this was all you needed:
 
@@ -307,7 +307,7 @@ public class Person
 }
 ```
 
-To make the type immutable:
+To make the `type` immutable:
 
 ```c#
 public class Person
@@ -324,7 +324,7 @@ public class Person
 }
 ```
 
-You can also control access to the property within the type with a private setter.
+You can also control access to the property within the type with a `private` **setter**.
 
 ```c#
 public class Person
@@ -345,9 +345,9 @@ This means **that only methods in the class can set** the property.
 
 If you needed custom logic for the setters or getters, you had to introduce backing fields.
 
-The next iteration addressed the need for requiring a constructor for immutable properties.
+The next iteration addressed the need to require a **constructor for setting immutable properties**.
 
-This was the init keyword.
+This was the [init](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init) modifier.
 
 ```c#
 public class Person
@@ -382,7 +382,7 @@ With the `required` keyword, you get the following **compile-time** error:
 
 The latest iteration allows access to the backing field, which I have discussed in the post [Using The Field Keyword In C# & .NET]({% post_url 2025-11-03-using-the-field-keyword-in-c-net %}).
 
-This construct is available to any of the .NET family of languages - C#, Visual Basic .NET, and F#.
+This construct is available to any of the .NET family of languages - [C#](https://dotnet.microsoft.com/en-us/languages/csharp), [Visual Basic .NET](https://learn.microsoft.com/dotnet/visual-basic/?WT.mc_id=dotnet-35129-website), and [F#](https://dotnet.microsoft.com/en-us/languages/fsharp).
 
 And there you have it. A brief evolution of the .NET property construct.
 
