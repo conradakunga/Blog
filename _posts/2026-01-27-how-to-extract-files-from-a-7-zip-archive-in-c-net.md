@@ -85,6 +85,6 @@ If we look in our **output** folder, we should see our newly created folder
 
 **You can extract `7z` archives by automating the command-line tool.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-27%20-%207zipExtractor).
 
 Happy hacking!

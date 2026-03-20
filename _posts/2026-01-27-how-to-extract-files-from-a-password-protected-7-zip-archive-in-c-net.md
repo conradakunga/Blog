@@ -89,6 +89,6 @@ And if we view the output folder, we can see our output folder:
 
 **You can extract password-protected `7z` archives by passing the password to the command-line tool in your code.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-28%20-%207zipExtractorPassword).
 
 Happy hacking!
