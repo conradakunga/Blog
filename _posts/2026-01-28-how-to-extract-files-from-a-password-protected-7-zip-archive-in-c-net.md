@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Extract Files From A Password-Protected 7-Zip Archive In C# & .NET
-date: 2026-01-27 20:29:21 +0300
+date: 2026-01-28 20:29:21 +0300
 categories:
     - C#
     - .NET
