@@ -72,6 +72,9 @@ var target7ZipFile = Path.Combine(currentFolder, "Books.7z");
 // Path to 7zip executable
 const string executablePath = "/opt/homebrew/bin/7zz";
 
+// Archive password
+const string password = "A$tr0ngP@ssw0rD";
+
 // Delete 7zip file if it exists
 if (File.Exists(target7ZipFile))
     File.Delete(target7ZipFile);
