@@ -67,7 +67,7 @@ The **general format** to **create** archives would look like this:
 var result = await Cli.Wrap(executablePath) // Set the path to the executable
     .WithArguments(args => args
             .Add("a") //Specify to create an archive
-            .Add("-t{INSERT FORMAT HERE}") // Specify the target format - 7z
+            .Add("-t{INSERT FORMAT HERE}") // Specify the target format
             .Add(targetArchiveWithFolder) // Target file name
 ```
 
