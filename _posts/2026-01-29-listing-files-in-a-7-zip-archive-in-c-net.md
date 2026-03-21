@@ -8,7 +8,7 @@ categories:
     - Compression
 ---
 
-In a previous post, we looked at "[How To Create A 7-Zip Archive In C# & .NET]({% post_url 2026-01-25-how-to-create-a-7-zip-archive-in-c-net %})" by automating the command-line utility.
+In a previous post, we looked at "[How To Create A 7-Zip Archive In C# & .NET]({% post_url 2026-01-25-how-to-create-a-7-zip-archive-in-c-net %})" by automating the `7-Zip` command-line utility.
 
 We have also looked at "[How To Extract Files From A 7-Zip Archive In C# & .NET.]({% post_url 2026-01-27-how-to-extract-files-from-a-7-zip-archive-in-c-net %})"
 
