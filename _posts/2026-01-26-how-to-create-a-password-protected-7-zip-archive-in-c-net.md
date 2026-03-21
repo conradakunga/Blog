@@ -39,6 +39,8 @@ The next order of business is that you need to know
 
 In [macOS](https://www.apple.com/os/macos/) (that I am using), the executable is actually named `7zz`.
 
+For [Windows](https://www.microsoft.com/en-us/windows?r=1), the executable is named `7z.exe`.
+
 You can find out where it is using the `where` command.
 
 ```bash
