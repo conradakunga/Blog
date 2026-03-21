@@ -200,6 +200,6 @@ The archive to which we added the files will list as follows:
 
 **When adding files to an archive, it is important to be clear whether you are adding the `directory` or the `files` in the directory.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-31%20-%20AddingFilesToArchive).
 
 Happy hacking!
