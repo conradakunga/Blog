@@ -8,7 +8,7 @@ categories:
     - Compression
 ---
 
-In our previous post, "Listing Files In A 7-Zip Archive In C# & .NET", we looked at how to list the files in a [7-Zip](https://en.wikipedia.org/wiki/7z) `7z` archive.
+In our previous post, "[Listing Files In A 7-Zip Archive In C# & .NET]({% post_url 2026-01-29-listing-files-in-a-7-zip-archive-in-c-net %})", we looked at how to list the files in a [7-Zip](https://en.wikipedia.org/wiki/7z) `7z` archive.
 
 In this post, we will look at how to **list the files** in a **password-protected** `7z` archive.
 
@@ -137,6 +137,6 @@ Blocks = 1
 
 **You can list the files in a password-protected `7-Zip` archive using the 7-Zip command-line tool by passing the `l` and `p` arguments.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-30%20-%20List7zFilesPassword).
 
 Happy hacking!
