@@ -57,6 +57,8 @@ If it is installed, the location will be printed.
 
 ![7zLocation](../images/2026/01/7zLocation.png)
 
+For [Windows](https://www.microsoft.com/en-us/windows?r=1), the executable is named `7z.exe`, and is usually in the `Program Files` folder.
+
 We now have enough to write the code.
 
 ```c#
