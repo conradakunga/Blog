@@ -126,6 +126,6 @@ Blocks = 1
 
 **You can list the files in a `7-Zip` archive by using the 7-Zip command-line tool and passing it the `l` argument.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-01-29%20-%20List7zFiles).
 
 Happy hacking!
