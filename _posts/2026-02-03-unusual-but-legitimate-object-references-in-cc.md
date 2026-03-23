@@ -40,8 +40,8 @@ This will print the same result.
 These are also variations that will work:
 
 ```c++
-std::cout << *( hello + 3 ) << std::endl;
-std::cout << *( 3 + hello ) << std::endl;
+std::cout << *( hello + 1 ) << std::endl;
+std::cout << *( 1 + hello ) << std::endl;
 ```
 
 Why does this work? Because `arrays` are ultimately [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)), and what we are doing is [pointer arithmetic](https://www.w3schools.com/c/c_pointers_arithmetic.php).
