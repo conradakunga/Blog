@@ -7,7 +7,7 @@ categories:
     - C++
 ---
 
-When accessing an array in C/C++ (and, indeed, many C-based languages), you would access a particular element in an `int` `array` like this:
+When accessing an `array` in [C](https://en.wikipedia.org/wiki/C_(programming_language))/[C++](https://en.wikipedia.org/wiki/C%2B%2B) (and, indeed, many [C-based languages](https://en.wikipedia.org/wiki/List_of_C-family_programming_languages)), you would access a particular element in an `int` `array` like this:
 
 ```c++
 // Create and initialize an array of 5 numbers
