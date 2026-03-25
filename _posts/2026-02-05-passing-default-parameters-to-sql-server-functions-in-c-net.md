@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Passing Default Parameters to SQL Server Functions In C# & .NET
+title: Passing Default Parameters to SQL Server Functions in C# & .NET
 date: 2026-02-05 21:39:18 +0300
 categories:
     - C#
@@ -12,7 +12,7 @@ Yesterday's post, "[Beware - The Folly of Default Parameters in SQL Server Store
 
 Given SQL Server also supports [fuctions](https://learn.microsoft.com/en-us/sql/relational-databases/user-defined-functions/user-defined-functions?view=sql-server-ver17) one might wonder - **are they susceptible to the same problem**?
 
-We can rewrite the `procedure` as a `function` thus:
+We can rewrite the `procedure` as a `function`, thus:
 
 ```sql
 CREATE OR ALTER FUNCTION fn_GetDayOfWeek
