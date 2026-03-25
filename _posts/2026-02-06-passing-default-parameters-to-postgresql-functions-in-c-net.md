@@ -8,7 +8,7 @@ categories:
     - PostgreSQL
 ---
 
-Yesterday's post, "[Passing Default Parameters to SQL Server Functions in C# & .NET]({% postt_url 2026-02-05-passing-default-parameters-to-sql-server-functions-in-c-net %})", looked at how to call functions in [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server) [T-SQL](https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17) functions and pass them **default** values.
+Yesterday's post, "[Passing Default Parameters to SQL Server Functions in C# & .NET]({% post_url 2026-02-05-passing-default-parameters-to-sql-server-functions-in-c-net %})", looked at how to call functions in [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server) [T-SQL](https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver17) functions and pass them **default** values.
 
 In today's post, we will look at the same thing for [PostgreSQL](https://www.postgresql.org/).
 
