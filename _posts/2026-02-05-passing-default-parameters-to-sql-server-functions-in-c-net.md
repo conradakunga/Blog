@@ -69,7 +69,7 @@ await using (var cn = new SqlConnection(connection))
 }
 ```
 
-Functions, like stored procedures, also support default values.
+`Functions`, like `stored procedures`, also support **default values**.
 
 So we can do the following:
 
