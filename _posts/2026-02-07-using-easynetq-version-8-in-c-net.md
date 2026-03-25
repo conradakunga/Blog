@@ -152,7 +152,7 @@ var app = builder.Build();
 
 Finally, we set up the [RabbitMQ instance](https://www.rabbitmq.com/docs/download), and, as usual, I prefer to do this via [Docker](https://www.docker.com/).
 
-The docker-compose.yaml that I use is as follows:
+The `docker-compose.yaml` that I use is as follows:
 
 ```yaml
 services:
