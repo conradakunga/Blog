@@ -68,6 +68,6 @@ Note that the invocation is **not passing any parameters** at all:
 
 **You can invoke functions in `PostgreSQL` and pass any required parameters. You can also instruct the database to use the function's default parameters by not passing anything.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-07%20-%20DefaultPararemterFunctionsPostgreSQL).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-06%20-%20DefaultPararemterFunctionsPostgreSQL).
 
 Happy hacking!

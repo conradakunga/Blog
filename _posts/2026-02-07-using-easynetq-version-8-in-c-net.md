@@ -180,6 +180,6 @@ default_pass = test
 
 **The new release of `EasyNetQ` introduces breaking changes to support modern application development practices, such as dependency injection.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-07%20-%20EasyNetQChanges).
 
 Happy hacking!

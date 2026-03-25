@@ -159,6 +159,6 @@ This means **you cannot actually forget to pass a parameter** and expect the fun
 
 **To invoke a function with default parameters, you must pass `DEFAULT` as the argument to the parameter.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-06%20-%20DefaultPararemterFunctions).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-05%20-%20DefaultPararemterFunctions).
 
 Happy hacking!
