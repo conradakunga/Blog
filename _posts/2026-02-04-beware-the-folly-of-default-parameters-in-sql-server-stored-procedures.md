@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Beware - The Folly of Default Parameters in Stored Procedures
+title: Beware - The Folly of Default Parameters in SQL Server ßStored Procedures
 date: 2026-02-05 18:27:11 +0300
 categories:
     - C#
