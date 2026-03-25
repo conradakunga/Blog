@@ -258,6 +258,6 @@ Personally, I would prefer a combination of the **previous** method and robust t
 
 **If you forget to pass parameters to a stored procedure and have specified default values, the procedure will run silently and successfully with those default values.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-05%20-%20DefaultPararemterProcedures).
 
 Happy hacking!
