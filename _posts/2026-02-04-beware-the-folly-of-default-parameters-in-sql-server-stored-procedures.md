@@ -252,7 +252,7 @@ EXEC GetDayOfWeek;
 
 ```
 
-Personally, I would prefer a combination of the **previous** method and robust tests.
+Personally, I would prefer a combination of the **latter** method and robust tests.
 
 ### TLDR
 
