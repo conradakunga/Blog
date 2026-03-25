@@ -138,7 +138,7 @@ app.MapGet("/", async (IBus bus, ILogger<Program> logger) =>
 });
 ```
 
-The big change is in the **dependency injection setup**, which looks like this:
+The big change is in the **dependency injection setup**, which now looks like this:
 
 ```c#
 using EasyNetQ;
@@ -169,7 +169,7 @@ services:
       - 15672:15672
 ```
 
-The rabbitmq.conf file that I use to configure the container is as follows:
+The `rabbitmq.conf` file that I use to configure the container is as follows:
 
 ```plaintext
 default_user = test
