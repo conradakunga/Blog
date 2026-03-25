@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Default Parameters In SQL Server Functions
+title: Passing Default Parameters to SQL Server Functions In C# & .NET
 date: 2026-02-05 21:39:18 +0300
 categories:
     - C#
