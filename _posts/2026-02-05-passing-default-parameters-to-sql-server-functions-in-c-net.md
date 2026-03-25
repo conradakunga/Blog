@@ -143,7 +143,7 @@ Error Number:137,State:2,Class:15
 
 ```
 
-So, them, how do we pass a default parameter?
+So, then **how** do we pass a **default parameter**?
 
 ```c#
 await using (var cn = new SqlConnection(connection))
@@ -159,6 +159,6 @@ This means **you cannot actually forget to pass a parameter** and expect the fun
 
 **To invoke a function with default parameters, you must pass `DEFAULT` as the argument to the parameter.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-06%20-%20DefaultPararemterFunctions).
 
 Happy hacking!
