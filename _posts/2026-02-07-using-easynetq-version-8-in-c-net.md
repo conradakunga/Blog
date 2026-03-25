@@ -150,6 +150,32 @@ var app = builder.Build();
 
 **Dependency injection is now supported out of the box**, using a convenient extension method. You no longer need to deal with the `RabbitHutch` object.
 
+Finally, we set up the [RabbitMQ instance](https://www.rabbitmq.com/docs/download), and, as usual, I prefer to do this via [Docker](https://www.docker.com/).
+
+The docker-compose.yaml that I use is as follows:
+
+```yaml
+services:
+  rabbitmq:
+    image: rabbitmq:management-alpine
+    container_name: rabbitmq
+    restart: always
+    volumes:
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+    environment:
+      - TZ=Africa/Nairobi
+    ports:
+      - 5672:5672
+      - 15672:15672
+```
+
+The rabbitmq.conf file that I use to configure the container is as follows:
+
+```plaintext
+default_user = test
+default_pass = test
+```
+
 ### TLDR
 
 **The new release of `EasyNetQ` introduces breaking changes to support modern application development practices, such as dependency injection.**
