@@ -169,7 +169,7 @@ services:
       - 15672:15672
 ```
 
-The `rabbitmq.conf` file that I use to configure the container is as follows:
+The `rabbitmq.conf` file that I use to configure the **container** is as follows:
 
 ```plaintext
 default_user = test
