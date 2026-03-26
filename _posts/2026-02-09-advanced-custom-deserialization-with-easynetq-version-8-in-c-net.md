@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Custom Deserialization With EasyNetQ 8 In C# & .NET
+title: Advanced Custom Deserialization With EasyNetQ Version 8 In C# & .NET
 date: 2026-02-09 22:23:19 +0300
 categories:
     - C#
