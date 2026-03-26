@@ -14,7 +14,7 @@ When it comes to writing scalable applications using [message queues](https://ww
 
 My library of choice for interfacing with `RabbitMQ` is [EasyNetQ](https://easynetq.com/).
 
-After a considerable period, a new release of `EayNetQ`, version `8`, was [recently published](https://github.com/EasyNetQ/EasyNetQ/releases/tag/8.1.2), version 8.1.2 at the time of writing this.
+After a considerable period, a new release of `EayNetQ`, version `8`, was [recently published](https://github.com/EasyNetQ/EasyNetQ/releases/tag/8.1.2), version `8.1.2` at the time of writing this.
 
 This involved [significant changes](https://github.com/EasyNetQ/EasyNetQ/wiki/EasyNetQ-v8-Migration-Guide) to the **API** surface, **design**, and **library** integrations.
 
