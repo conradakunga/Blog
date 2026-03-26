@@ -323,6 +323,6 @@ There is, of course, the question of whether t**his is the best place to have su
 
 **You can control almost any aspect of the serialization of types to `RabbitMQ` using `EasyNetQ`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-09%20-%20AdvancedEasyNetQ).
 
 Happy hacking!
