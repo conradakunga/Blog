@@ -174,6 +174,6 @@ You can see here that it is **snake_case**.
 
 **You can control the serialization that will be used to send, request, or publish messages to `RabbitMQ`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-08%20-%20EasyNetQCustomization).
 
 Happy hacking!
