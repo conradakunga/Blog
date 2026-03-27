@@ -128,6 +128,6 @@ If we run this code, we should see the following:
 
 **You can use `JsonConverters` to natively serialize complex types like `Image` objects.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-11%20-%20ImageSerialization).
 
 Happy hacking!
