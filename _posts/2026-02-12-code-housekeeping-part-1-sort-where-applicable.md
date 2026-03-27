@@ -152,6 +152,14 @@ Not only is it **easy to tell where** exactly to go to set a property, we can al
 
 ![housekeeping1](../images/2026/02/housekeeping1.png)
 
+Most proper [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) support this.
+
+For [JetBrains](https://www.jetbrains.com/) [Rider](https://www.jetbrains.com/rider/), it is here:
+
+![sortMenuJetbrains](../images/2026/02/sortMenuJetbrains.png)
+
+And even if your iDE does not support this **natively**, it probably allows you to add that support via **plugins**.
+
 ### TLDR
 
 **Sort code wherever it is probable that it will make it easier to parse, read, understand, and modify.**
