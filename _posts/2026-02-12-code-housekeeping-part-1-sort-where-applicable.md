@@ -116,9 +116,9 @@ bike.EmissionsStandard = "Initial EmissionsStandard";
 bike.HandlebarType = "Subsequent HandlebarType";
 ```
 
-For this example, you have almost certainly not noticed that `HandlebarType` has been **set twice**.
+For this example, you have **almost certainly not noticed** that `HandlebarType` has been **set twice**.
 
-This would be much easier to catch if the code was **sorted**.
+This would be much easier to catch if the code were **sorted**.
 
 ```c#
 bike.BatteryType = "Initial BatteryType";
