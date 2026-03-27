@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Serialize Images In C# & .NET
+title: How To Serialize Images To JSON In C# & .NET
 date: 2026-02-10 21:18:10 +0300
 categories:
     - C#
