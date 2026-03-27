@@ -167,6 +167,6 @@ If we run this code, it will print the following:
 
 In this way, we can avoid **platform** and **serialization** complications.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-10%20-%20ImageSerialization).
 
 Happy hacking!
