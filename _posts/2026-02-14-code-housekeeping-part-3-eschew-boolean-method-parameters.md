@@ -16,7 +16,7 @@ This is **Part 3** of the **CodeHousekeeping Series**.
 
 Today we will look at a simple concept - **avoid `boolean` parameters.**
 
-My objection to this is nothing to do with functionality but everything to do with readability.
+My objection to this is nothing to do with **functionality** but everything to do with **readability**.
 
 Take the following simplified example:
 
@@ -46,7 +46,7 @@ You can argue that this isn't an issue with a modern IDE - you can mouseover to 
 
 ![booleanMouseOver](../images/2026/02/booleanMouseOver.png)
 
-Or you can decorate the parameter like this:
+Or you can **decorate** the parameter like this:
 
 ![boolanParameterDecoration](../images/2026/02/boolanParameterDecoration.png)
 
@@ -56,7 +56,7 @@ Slightly better but there are still problems:
 2. **Why do I need to mouseover** things to understand the code
 3. What, in fact, does **passing `true` mean**? That I get back the `Gross` or the `Net`
 
-It is much clearer to use `Enums` for this purpose.
+It is much clearer to use [Enums](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum) for this purpose.
 
 We create one like so:
 
@@ -104,8 +104,8 @@ This has the following benefits:
 
 ### TLDR
 
-Generally, use enums over booleans as parameters.
+**Generally, use `enum` over `boolean` as parameters.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-12%20-%20EnumsOverBools).
 
 Happy hacking!
