@@ -6,6 +6,8 @@ categories:
     - C#
     - Languages
     - CodeHouseKeeping
+    - Code
+    - Quality
 ---
 
 **Code Housekeeping** refers to general rules of thumb that make code easier to **read**, **digest**, and **modify** for other developers, **yourself** included.
