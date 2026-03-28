@@ -118,6 +118,8 @@ bike.HandlebarType = "Subsequent HandlebarType";
 
 For this example, you have **almost certainly not noticed** that `HandlebarType` has been **set twice**.
 
+![housekeeping1](../images/2026/02/housekeeping1.png)
+
 This would be much easier to catch if the code were **sorted**.
 
 ```c#
@@ -147,10 +149,6 @@ bike.StarterType = "Initial StarterType";
 bike.WarrantyCoverage = "Initial WarrantyCoverage";
 bike.WindshieldType = "Initial WindshieldType";
 ```
-
-Not only is it **easy to tell where** exactly to go to set a property, we can also see when we have **repeated ourselves**:
-
-![housekeeping1](../images/2026/02/housekeeping1.png)
 
 Most proper [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) support this.
 
