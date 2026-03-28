@@ -10,7 +10,7 @@ categories:
     - Quality
 ---
 
-This is Part 2 of the CodeHousekeeping Series.
+This is **Part 2** of the **CodeHousekeeping Series**.
 
 **Code Housekeeping** refers to general rules of thumb that make code easier to **read**, **digest**, and **modify** for other developers, **yourself** included.
 
@@ -126,6 +126,6 @@ This yields a number of benefits:
 
 **Don't store what you can compute. And don't compute what your code can compute for you.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-12%20-%20ComputeDontStore).
 
 Happy hacking!
