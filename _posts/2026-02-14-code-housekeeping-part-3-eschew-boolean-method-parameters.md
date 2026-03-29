@@ -68,7 +68,7 @@ public enum PriceMode
 }
 ```
 
-Then we create our type like this:
+Then we create our `type` like this:
 
 ```c#
 public class OrderProcessor
