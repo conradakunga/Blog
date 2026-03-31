@@ -68,7 +68,7 @@ This code, when run, inevitably threw an [exception](https://learn.microsoft.com
 
 ![objectInUser](../images/2026/02/objectInUser.png)
 
-The stack-trace is as follows:
+The stacktrace is as follows:
 
 ```plaintext
 at System.Drawing.Graphics.FromImage(Image image)
