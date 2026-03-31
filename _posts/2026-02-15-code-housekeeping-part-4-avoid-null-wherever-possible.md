@@ -146,6 +146,8 @@ var bourne = new Person()
 
 In this case, a default `DateOfBirth` makes no sense if we did not know it at the point of data entry.
 
+In such scenarios, a `NULL` is unavoidable.
+
 ### TLDR
 
 **Avoid `NULL` values whenever possible.**
