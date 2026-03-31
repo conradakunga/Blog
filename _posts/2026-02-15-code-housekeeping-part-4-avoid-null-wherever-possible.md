@@ -152,6 +152,6 @@ In such scenarios, a `NULL` is unavoidable.
 
 **Avoid `NULL` values whenever possible.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-15%20-%20AvoidNullValues).
 
 Happy hacking!

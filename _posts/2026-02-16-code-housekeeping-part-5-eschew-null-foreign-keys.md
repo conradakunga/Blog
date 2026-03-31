@@ -211,8 +211,8 @@ Our original query now returns the following:
 
 ### TLDR
 
-Avoid NULL foreign keys.
+**Avoid NULL foreign keys.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-16%20-%20AvoidNullForeignKeys).
 
 Happy hacking!
