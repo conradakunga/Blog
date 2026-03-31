@@ -8,15 +8,16 @@ categories:
     - CodeHouseKeeping
     - Code
     - Quality
+    - Database
 ---
 
 This is **Part 5** of the **CodeHousekeeping Series**.
 
 **Code Housekeeping** refers to general rules of thumb that make code easier to **read**, **digest**, and **modify** for other developers, **yourself** included.
 
-Yesterday's post, "Code Housekeeping - Part 4 - Avoid NULL Wherever Possible" addressed the issue of using NULL for unknown data.
+Yesterday's post, "[Code Housekeeping - Part 4 - Avoid NULL Wherever Possible]({% post_url 2026-02-15-code-housekeeping-part-4-avoid-null-wherever-possible %})" addressed the issue of using `NULL` for **unknown** data.
 
-Today's post is an extension of the same, but on the database end.
+Today's post is an extension of the same, but on the **database**.
 
 Take this table that stores `Person` entities:
 
