@@ -70,7 +70,7 @@ This code, when run, inevitably threw an [exception](https://learn.microsoft.com
 
 The stack-trace is as follows:
 
-```c#
+```plaintext
 at System.Drawing.Graphics.FromImage(Image image)
    at UserQuery.ImageProcessor.Process() in C:\Users\rad\AppData\Local\Temp\LINQPad5\_xjstuxvs\query_bpcpjn.cs:line 81
    at UserQuery.<>c__DisplayClass0_0.<Main>b__0() in C:\Users\rad\AppData\Local\Temp\LINQPad5\_xjstuxvs\query_bpcpjn.cs:line 53
