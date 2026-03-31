@@ -118,6 +118,10 @@ public class ImageProcessor2
 }
 ```
 
+Here, the `Graphics` object (or whatever equivalent) internal to the processor is created per instance.
+
+We also have the added benefit of being able to **safely dispose** of the `Graphics` object once we're done with it, since it implements [IDisposable](https://learn.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-10.0).
+
 ### TLDR
 
 **Passing around `Image` objects will likely land you in problems, due to threading and `Graphics` issues.**
