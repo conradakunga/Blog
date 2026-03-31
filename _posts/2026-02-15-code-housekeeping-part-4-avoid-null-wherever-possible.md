@@ -10,6 +10,10 @@ categories:
     - Quality
 ---
 
+This is **Part 4** of the **CodeHousekeeping Series**.
+
+**Code Housekeeping** refers to general rules of thumb that make code easier to **read**, **digest**, and **modify** for other developers, **yourself** included.
+
 In an ideal world, we would always have **all the data** for the properties of our `types`.
 
 Take this simple example:
