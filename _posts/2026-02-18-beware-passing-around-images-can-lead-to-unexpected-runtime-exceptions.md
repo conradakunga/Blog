@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Beware - Passing Around Images Can Lead To Unexpected Runtime Exceptions
-date: 2026-02-17 23:27:56 +0300
+date: 2026-02-18 23:27:56 +0300
 categories:
     - C#
     - .NET
     - Graphics
+    - Beware
 ---
 
 Recently, I was refactoring some code to **improve performance** and converted it from single-threaded to [multi-threaded](https://learn.microsoft.com/en-us/dotnet/standard/threading/using-threads-and-threading).
