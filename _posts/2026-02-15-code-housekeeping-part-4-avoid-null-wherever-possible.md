@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Code Housekeeping - Part 4 - Avoid NULL Wherever Possible
-date: 2026-04-12 21:42:33 +0300
+date: 2026-02-15 21:42:33 +0300
 categories:
    - C#
     - Languages
