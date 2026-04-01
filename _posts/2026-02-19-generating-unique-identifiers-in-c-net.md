@@ -279,6 +279,6 @@ Your use case will determine the approach that you take.
 
 **To generate unique, distributed identifiers, the library `sqlids` is an excellent choice.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-02-19%20-%20GenerateIdentifiersWeb).
 
 Happy hacking!
