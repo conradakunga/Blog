@@ -275,6 +275,8 @@ app.MapGet("/v2/{identifier}", (string identifier) =>
 
 Your use case will determine the approach that you take.
 
+Parting shot: `Sqlids` is the successor to [Hashids](https://github.com/ullmark/hashids.net).
+
 ### TLDR
 
 **To generate unique, distributed identifiers, the library `sqlids` is an excellent choice.**
