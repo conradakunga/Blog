@@ -32,7 +32,7 @@ var person = new Person()
 };
 ```
 
-Suppose we were to use this in a REST API.
+Suppose we were to use this in a [REST](https://en.wikipedia.org/wiki/REST) API.
 
 It would look like this:
 
@@ -85,9 +85,9 @@ This is the challenge sites like [YouTube](https://www.youtube.com/) face.
 
 ![youtubeURL](../images/2026/02/youtubeURL.png)
 
-You can see here that the video has an identifier consisting of letters and numbers.
+You can see here that the video has an **identifier** consisting of **letters** and **numbers**.
 
-You can achieve the same result by using a library for generating identifiers, like [sqlids](https://www.nuget.org/packages/Sqids).
+You can achieve the same result by using a package for generating identifiers, like [sqlids](https://www.nuget.org/packages/Sqids).
 
 ```c#
 dotnet add package sqids
@@ -154,6 +154,14 @@ app.MapGet("/v2/{identifier}", (string identifier) =>
 });
 await app.RunAsync();
 ```
+
+Of interest is the following code:
+
+```c#
+ var id = decoder.Decode(identifier)[0];
+```
+
+We are using `[0]` index access because the `Decode` method allows you to **decode multiple identifiers at once**, returning a `List`.
 
 First, we view our `List` of `Person`:
 
@@ -241,6 +249,8 @@ We are creating an `SqidsEncoder` and configuring it:
 2. With an alphabet that strips out `i`,`j`, q (lower and upper case), as well as `1` and `0`
 
 We then use this to **encode** and **decode**.
+
+In a more elaborate API, you can create a `SqidsEncoder` and use [dependency injection]({% post_url 2024-12-31-dependency-injection-in-c-net-introduction-and-basic-implementation %}) to access it from within endpoints.
 
 If we now list our `Person` objects:
 
