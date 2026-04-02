@@ -10,11 +10,11 @@ categories:
 
 In yesterday's post, "[Leveraging LDAPS Authentication in C# & .NET]({% post_url 2026-02-21-leveraging-ldaps-authentication-in-c-net %})", we looked at how to leverage [LDAPS](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/enable-ldap-over-ssl-3rd-certification-authority) authentication in our applications, and the fact that it is more secure than [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol).
 
-In today's post, we will look at a third alternative - StartTLS.
+In today's post, we will look at a third alternative - [StartTLS](https://unix.stackexchange.com/questions/607560/why-is-ldap-with-starttls-preferred-over-ldaps).
 
 This is also an improvement over `LDAP`, as it starts off as `LDAP` and then **upgrades to an encrypted connection**. This makes it more **flexible** and just as **secure** as `LDAPS`.
 
-The code again is very similar to the LDAP and LDAPS code.
+The code again is very similar to the `LDAP` and `LDAPS` code.
 
 ```c#
 using System.DirectoryServices.Protocols;
