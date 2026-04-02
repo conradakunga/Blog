@@ -10,13 +10,13 @@ categories:
 
 In yesterday's post, "[Leveraging LDAP Authentication in C# & .NET]({% 2026-02-20-leveraging-ldap-authentication-in-c-net %})", we looked at how to leverage [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) for authentication.
 
-The problem with LDAP, however, is that it sends the `username` and `password` in plain text over the network, making it vulnerable to [man-in-the-middle attacks](https://www.ibm.com/think/topics/man-in-the-middle), as well as [sniffing](https://www.okta.com/identity-101/sniffing-attack/).
+The problem with `LDAP`, however, is that it sends the `username` and `password` in plain text over the network, making it vulnerable to [man-in-the-middle attacks](https://www.ibm.com/think/topics/man-in-the-middle), as well as [sniffing](https://www.okta.com/identity-101/sniffing-attack/).
 
 There is, however, a solution to this - [LDAP over Secure Sockets Layer (SSL)](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/enable-ldap-over-ssl-3rd-certification-authority), better known as `LDAPS`.
 
 In this protocol, the LDAP traffic is wrapped in SSL / TLS, meaning that all the `usernames`, `passwords`, **queries**, and **responses** are **encrypted**.
 
-The code is very similar to the LDAP.
+The code is very similar to the `LDAP` code.
 
 ```c#
 using System.DirectoryServices.Protocols;
@@ -131,7 +131,7 @@ public class LDAPSAuthenticatorTests
 
 **Due to the insecurity of `LDAP`, we can use the recommended approach of `LDAPS` from the [System.DirectoryServices.Protocols](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.protocols?view=net-10.0-pp) namespace.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Authenticators).
 
 Happy hacking!
 
