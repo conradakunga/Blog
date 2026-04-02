@@ -280,8 +280,8 @@ In this way, we can leverage LDAP authentication in our applications.
 
 ### TLDR
 
-You can leverage LDAP using types in the [System.DirectoryServices.Protocols]() namespace.
+**You can leverage `LDAP` using types in the [System.DirectoryServices.Protocols]() namespace.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Authenticators).
 
 Happy hacking!
