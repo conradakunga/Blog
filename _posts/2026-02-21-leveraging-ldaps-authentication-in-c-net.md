@@ -8,7 +8,7 @@ categories:
     - Security
 ---
 
-In yesterday's post, "[Leveraging LDAP Authentication in C# & .NET]({% 2026-02-20-leveraging-ldap-authentication-in-c-net %})", we looked at how to leverage [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) for authentication.
+In yesterday's post, "[Leveraging LDAP Authentication in C# & .NET]({% post_url 2026-02-20-leveraging-ldap-authentication-in-c-net %})", we looked at how to leverage [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) for authentication.
 
 The problem with `LDAP`, however, is that it sends the `username` and `password` in plain text over the network, making it vulnerable to [man-in-the-middle attacks](https://www.ibm.com/think/topics/man-in-the-middle), as well as [sniffing](https://www.okta.com/identity-101/sniffing-attack/).
 
