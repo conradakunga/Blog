@@ -138,6 +138,6 @@ Thus, we can enjoy the security of `LDAPS` with the convenience of `LDAP`.
 
 **You can use `StartTLS` for authentication in your applications using the types in the `System.DirectoryServices.Protocols` namespace.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Authenticators).
 
 Happy hacking!
