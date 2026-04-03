@@ -13,13 +13,13 @@ Two recent posts, "[Leveraging LDAPS Authentication in C# & .NET]({% post_url 20
 This may sometimes present problems, as the client needs to trust the server's SSL certificate in order for the connection to be securely established.
 
 1. The certificate may have **expired**
-2. The client does not trust the server certificate, as it may be from a different network or environment, or it has not been imported.
+2. The client does not trust the server certificate, as it may be from a different network or environment, or it may not have been imported.
 
 In such cases, you might need to override the validation process in your code. 
 
 This hinges on the [LdapConnection](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.protocols.ldapconnection?view=net-10.0-pp) object.
 
-The code looks like this for LDAPS:
+The code looks like this for `LDAPS`:
 
 ```c#
 var connection = new LdapConnection(identifier)
@@ -45,7 +45,7 @@ var connection = new LdapConnection(identifier)
 connection.SessionOptions.ProtocolVersion = 3;
 ```
 
-The addition for both scenarios is to add this code, an event handler for when the validation process takes place.
+The addition for both scenarios is to add this code, an **event handler** for when the validation process takes place.
 
 ```c#
 connection.SessionOptions.VerifyServerCertificate += (conn, cert) =>
@@ -56,7 +56,7 @@ connection.SessionOptions.VerifyServerCertificate += (conn, cert) =>
 
 Within this event handler, we have options, as we have access to both the `LdapConneciton` (`conn`) and the `X509Certificate` (`certificate`).
 
-We can decide not to bother doing anything at all and just say that the validation is successful, like so:
+We can decide **not to bother doing anything at all** and just say that the validation is successful, like so:
 
 ```c#
 connection.SessionOptions.VerifyServerCertificate += (conn, cert) =>
