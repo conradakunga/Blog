@@ -6,7 +6,7 @@ categories:
     - Operating Systems
 ---
 
-The past two posts, "How To Read Environment Variables In C# & .NET" and "How To Read Environment Variables In PowerShell", have looked at how to read environment variables.
+The past two posts, "[How To Read Environment Variables In C# & .NET]({% post_url 2026-02-25-how-to-read-environment-variables-in-c-net %})" and "[How To Read Environment Variables In PowerShell]({% post_url 2026-02-24-how-to-read-environment-variables-in-powershell %})", have looked at how to read [environment variables](https://en.wikipedia.org/wiki/Environment_variable).
 
 It is important to point out that environment variables are, in fact, **scoped** to three levels:
 
@@ -14,7 +14,7 @@ It is important to point out that environment variables are, in fact, **scoped**
 2. **User** level -  accessible by all processes initiated by the current **user**
 3. **Process** level - accessible only within the **current** process.
 
-This is important to understand when it comes to setting and reading environment variables.
+This is important to understand when **setting** and **reading** environment variables.
 
 A **machine-level** environment variable is the same for **all users on the machine**, and, in fact, requires administrative rights to set and modify. These are useful for things like the [PATH](https://en.wikipedia.org/wiki/PATH_(variable)).
 
