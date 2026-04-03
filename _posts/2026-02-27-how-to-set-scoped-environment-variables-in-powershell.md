@@ -10,7 +10,7 @@ In a previous post, "[How To Read Environment Variables In PowerShell]({% post_u
 
 In a subsequent post, "[About Environment Variable Scopes]({% post_url 2026-02-26-about-environment-variable-scopes %})", we learned that environment variables are **scoped**.
 
-In this post, we will look at how to **write** or **set** environment variables.
+In this post, we will look at how to **write** or **set** environment variables in [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.6).
 
 ## Process Scoped Variables
 
