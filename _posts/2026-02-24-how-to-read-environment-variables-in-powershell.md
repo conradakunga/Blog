@@ -46,6 +46,8 @@ write-host "The command mode is $mode"
 
 ![printCommandMode](../images/2026/02/printCommandMode.png)
 
+**IMPORTANT**: On macOS and Unix, the environment names are **case-sensitive**!
+
 ### TLDR
 
 **You can access environment variables from `PowerShell` using the [Get-ChildItem](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.6) cmdlet or the [$env](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.5) variable.**
