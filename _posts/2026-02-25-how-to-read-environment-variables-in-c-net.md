@@ -27,7 +27,7 @@ It is also possible to get all the environment variables via the appropriately n
 var entries = Environment.GetEnvironmentVariables();
 foreach (DictionaryEntry entry in entries)
 {
-	Console.WriteLine($"Name: {entry.Key}; Values: {entry.Value}");
+  Console.WriteLine($"Name: {entry.Key}; Values: {entry.Value}");
 }
 ```
 
