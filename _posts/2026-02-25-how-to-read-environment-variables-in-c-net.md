@@ -11,7 +11,7 @@ Our previous post, "[How To Read Environment Variables In PowerShell]({% post_ur
 
 In this post, we will look at how to do the same in C# & .NET.
 
-The [Environment](https://learn.microsoft.com/en-us/dotnet/api/system.environment?view=net-10.0) `class` has a method, [GetEnvironmentVariable()](https://learn.microsoft.com/en-us/dotnet/api/system.environment.getenvironmentvariable?view=net-10.0), for this purpose.
+The [Environment](https://learn.microsoft.com/en-us/dotnet/api/system.environment?view=net-10.0) `class` has a method, [GetEnvironmentVariable()](https://learn.microsoft.com/en-us/dotnet/api/system.environment.getenvironmentvariable?view=net-10.0), for this purpose. This returns an [IDictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2?view=net-10.0) collection that we can use to iterate over.
 
 ```c#
 Console.WriteLine(Environment.GetEnvironmentVariable("COMMAND_MODE"));
