@@ -7,7 +7,7 @@ categories:
     - FIX
 ---
 
-Recently, I noticed one of my SQL Server databases had been stuck in a 'Restoring' state for quite some time.
+Recently, I noticed one of my [SQL Server](https://www.microsoft.com/en-us/sql-server) databases had been **stuck** in a 'Restoring' state for quite some time.
 
 Which was strange, because I had not done anything to the database in question.
 
@@ -15,13 +15,11 @@ It looked like this:
 
 ![restoring](../images/2026/03/restoring.png)
 
-And it was stuck in that state for hours.
+And it was stuck in that state for **hours**.
 
-While in this state, you naturally cannot connect to the database.
+While in this state, you naturally **cannot connect** to the database.
 
-The solution is as follows:
-
-Run the following command:
+The solution is to run the following command:
 
 ```sql
 RESTORE DATABASE InnovaSuite WITH RECOVERY
