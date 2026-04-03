@@ -3,6 +3,8 @@ layout: post
 title: How To Read Environment Variables In C# & .NET
 date: 2026-02-25 12:32:50 +0300
 categories:
+    - C#
+    - .NET
 ---
 
 Our previous post, "[How To Read Environment Variables In PowerShell]({% post_url 2026-02-24-how-to-read-environment-variables-in-powershell %})", looked at how you can **read** [environment variables](https://en.wikipedia.org/wiki/Environment_variable) using [PowerShell](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.6) and either just **view** them or **use** them subsequently in your scripts.
