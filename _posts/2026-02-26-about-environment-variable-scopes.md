@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Environment Variable Scopes
-date: 2026-02-24 16:52:28 +0300
+date: 2026-02-26 16:52:28 +0300
 categories:
     - Operating Systems
 ---
