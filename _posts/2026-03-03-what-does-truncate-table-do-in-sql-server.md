@@ -44,6 +44,8 @@ TRUNCATE TABLE Users
 ROLLBACK
 ```
 
+In terms of security considerations, the user running the `TRUNCATE` command requires [ALTER TABLE](https://learn.microsoft.com/en-us/sql/t-sql/statements/alter-table-transact-sql?view=sql-server-ver17) permissions.
+
 ### TLDR
 
 **`TRUNCATE` is a quick way to empty a database table, provided it meets the criteria for truncation.**
