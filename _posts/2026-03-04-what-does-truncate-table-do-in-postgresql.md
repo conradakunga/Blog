@@ -28,10 +28,11 @@ insert into users values (1,1,'James')
 insert into users values (2,2,'Jane')
 ```
 
-`PostgreSQL` also has a `TRUNCATE` table command, and in many ways it is similar to the SQL Server version.
+`PostgreSQL` also has a `TRUNCATE` table command, and in many ways it is **similar** to the `SQL Server` version.
 
 1. Will not fire `DELETE` triggers
 2. By default, it will not run on tables **participating in foreign keys**
+3. Can be wrapped in a **transaction**
 
 There are also some differences:
 
@@ -73,10 +74,12 @@ Specify `CASCADE` when doing the `TRUNCATE`
 TRUNCATE TABLE user_types CASCADE
 ```
 
-In many ways, the PostgreSQL version of TRUNCATE is more flexible.
+In many ways, the `PostgreSQL` version of `TRUNCATE` is more flexible.
+
+In `PostgreSQL`, the `TRUNCATE TABLE` command requires the `TRUNCATE` [privilege](https://www.postgresql.org/docs/current/ddl-priv.html).
 
 ### TLDR
 
-PostgreSQL also has a TRUNCATE TABLE command that is much more flexible than the SQL Server equivalent.
+**`PostgreSQL` also has a TRUNCATE TABLE command that is much more flexible than the `SQL Server` equivalent.**
 
 Happy hacking
