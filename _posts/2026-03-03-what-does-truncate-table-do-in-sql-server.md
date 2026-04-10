@@ -4,6 +4,7 @@ title: What Does Truncate Table Do In SQL Server
 date: 2026-03-03 19:24:17 +0300
 categories:
     - SQL Server
+    - Database
 ---
 
 If you have a large amount of data in a [SQL Server](https://www.microsoft.com/en-us/sql-server) table and want to quickly **purge** it, one way is to truncate the table using the [TRUNCATE](https://learn.microsoft.com/en-us/sql/t-sql/statements/truncate-table-transact-sql?view=sql-server-ver17) command.
