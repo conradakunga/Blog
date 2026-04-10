@@ -38,11 +38,11 @@ There are also some differences:
 
 ## TRUNCATE Trigger
 
-Unlike SQL Server, PostgreSQL offers [triggers](https://www.postgresql.org/docs/18/sql-createtrigger.html) for `TRUNCATION` events:
+Unlike `SQL Server,` `PostgreSQL` offers [triggers](https://www.postgresql.org/docs/18/sql-createtrigger.html) for `TRUNCATION` events:
 
-- BEFORE TRUNCATE
-- ON TRUNCATE
-- AFTER TRUNCATE
+- **BEFORE** TRUNCATE
+- **ON** TRUNCATE
+- **AFTER** TRUNCATE
 
 ## Identity Reset
 
@@ -62,13 +62,13 @@ TRUNCATE users CONTINUE IDENTITY;
 
 If the table is **referenced** by **foreign keys**, you have options:
 
-`TRUNCATE` both tables at the same time
+`TRUNCATE` both tables at the same time, like this:
 
 ```sql
 TRUNCATE TABLE users, user_types
 ```
 
-Specify `CASCADE` when doing the `TRUNCATE`
+Specify `CASCADE` when doing the `TRUNCATE`, like this:
 
 ```sql
 TRUNCATE TABLE user_types CASCADE
