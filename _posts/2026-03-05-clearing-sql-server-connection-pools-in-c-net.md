@@ -42,6 +42,6 @@ Why would you need to clear the pool? Certain classes of errors, such as t**rans
 
 ### TLDR
 
-You can clear SQL Server ADO.NET connection pools using either `SqlConnection.ClearAllPools()` or `SqlConnection.ClearPool()`
+**You can clear SQL Server `ADO.NET` connection pools using either `SqlConnection.ClearAllPools()` or `SqlConnection.ClearPool()`**
 
 Happy hacking!
