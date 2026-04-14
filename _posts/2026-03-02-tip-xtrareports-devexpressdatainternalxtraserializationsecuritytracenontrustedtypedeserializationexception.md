@@ -32,7 +32,7 @@ The quickest way is to proactively tell the reporting engine that you trust **al
 Like so:
 
 ```vb
-DevExpress.Utils.DeserializationSettings.RegisterTrustedAssembly(GetType(Client).Assembly)
+DevExpress.Utils.DeserializationSettings.RegisterTrustedAssembly(GetType(CustomClass).Assembly)
 ```
 
 In [C#](https://learn.microsoft.com/en-us/dotnet/csharp/), it will look like this:
