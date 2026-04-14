@@ -81,6 +81,6 @@ You will need to provide the following:
 
 **This `PowerShell` script allows you to deploy trusted SQL CLR artifacts to your database with the appropriate settings.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-06%20-%20Deploy%20SQLCLR).
 
 Happy hacking!

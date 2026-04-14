@@ -3,7 +3,7 @@ layout: post
 title: Tip - Working With Numbered Lists In Markdown
 date: 2026-03-07 13:45:32 +0300
 categories:
-    - MarkDown
+    - Markdown
 ---
 
 This blog is written in [Markdown](https://www.markdownguide.org/), with the [Ruby](https://www.ruby-lang.org/en/) built [Jekyll](https://jekyllrb.com/) platfom. The source is available [here](https://github.com/conradakunga/Blog).
