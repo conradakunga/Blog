@@ -72,6 +72,8 @@ Otherwise trying to inherit a `sealed` class gives you a compiler error:
 
 ![cantInherit](../images/2026/03/cantInherit.png)
 
+If i had my way I would have the default modifier for modern IDEs to be `sealed` for any new code.
+
 ### TLDR
 
 **Seal classes by default, until a need arises to extend them.**
