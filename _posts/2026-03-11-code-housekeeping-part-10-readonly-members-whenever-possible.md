@@ -53,7 +53,7 @@ public void Prepare()
 
 Any of the `private` members can be **modified**, whether by **accident** or **design**.
 
-A good rule of thumb is if you know for a fact that the **members should not be modified** in the lifetime of the class, declare them as [readonly](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly) so that they are only set in the `constructor` and are **fixed** from then on.
+A good rule of thumb is if you know for a fact that the **members should not be modified** in the lifetime of the `class`, declare them as [readonly](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly) so that they are only set in the `constructor` and are **fixed** from then on.
 
 ```c#
 public sealed class Car
@@ -71,7 +71,7 @@ public sealed class Car
 }
 ```
 
-If you now try and change any of the members, you will get a **compiler error**:
+If you now try and **change** any of the members, you will get a **compiler error**:
 
 ![readonlyMember](../images/2026/03/readonlyMember.png)
 
