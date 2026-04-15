@@ -76,6 +76,6 @@ Otherwise trying to inherit a `sealed` class gives you a compiler error:
 
 **Seal classes by default, until a need arises to extend them.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-10%20-%20DefaultSealed).
 
 Happy hacking!
