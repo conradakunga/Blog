@@ -102,14 +102,16 @@ Yes and no.
 
 The main benefit here is that the method is relatively **static** - if we need additional properties for the `CarCreateRequet`, the method itself is unaffected.
 
-This makes refactoring and evolution of the code much easier.
+This makes **refactoring** and **evolution** of the code much easier.
 
 We will look at how to mitigate the problems with constructors in the next post.
+
+What constitutes "too many parameters"? This, naturally, is a context-sensitive issue. But a good **rule of thumb**, especially for an **method you expect to evolve** that is used a lot, is past `4` or 5
 
 ### TDLR
 
 **Rather than pass around many `parameters`, pass around an aggregated `object`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-08%20-%20MethodParameters).
 
 Happy hacking!
