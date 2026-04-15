@@ -10,6 +10,8 @@ categories:
     - Quality
 ---
 
+**Code Housekeeping** refers to general rules of thumb that make code easier to **read**, **digest**, and **modify** for other developers, **yourself** included.
+
 When writing your code, you will **inevitably** have to write [methods](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods).
 
 And they start off simply enough:

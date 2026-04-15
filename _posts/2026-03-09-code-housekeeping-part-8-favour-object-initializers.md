@@ -10,6 +10,8 @@ categories:
     - Quality
 ---
 
+**Code Housekeeping** refers to general rules of thumb that make code easier to **read**, **digest**, and **modify** for other developers, **yourself** included.
+
 In our previous post, "[Code Housekeeping - Part 7 - Eschew Methods With Many Parameters]({% post_url 2026-03-08-code-housekeeping-part-7-eschew-methods-with-many-parameters %})", we looked at the problems that can arise from `methods` that have **many parameters**.
 
 Our solution to this was to create an `object`, and pass that to the `method`.
@@ -99,6 +101,6 @@ Naturally, this will **not always be possible** as there are scenarios where you
 
 **Prefer object initializers to object constructors wherever possible.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-09%20-%20ObjectInitializers).
 
 Happy hacking!
