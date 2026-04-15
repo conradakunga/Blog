@@ -12,13 +12,13 @@ categories:
 
 **Code Housekeeping** refers to general rules of thumb that make code easier to **read**, **digest**, and **modify** for other developers, **yourself** included.
 
-Our last post, "[Code Housekeeping - Part 9 - Seal Classes & Records By Default]({% post_url 2026-03-10-code-housekeeping-part-9-seal-classes-records-by-default %})", looked at how, by default, C# classes are **extensible** as they are not [sealed](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/sealed).
+Our last post, "[Code Housekeeping - Part 9 - Seal Classes & Records By Default]({% post_url 2026-03-10-code-housekeeping-part-9-seal-classes-records-by-default %})", looked at how, by default, [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) classes are **extensible** as they are not [sealed](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/sealed).
 
 This generally is a result of **code generated** by your IDE (or t**y**ped if you are hand crafting the `classes`).
 
 This "default" behaviour also extends to [private](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private) `members`.
 
-Your typical class will look like this:
+Your typical `class` will look like this:
 
 ```c#
 public sealed class Car
@@ -81,6 +81,6 @@ Naturally, you should not do this if your logic **mutates these members**.
 
 **Where appropriate, make your members `readonly`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-11%20-%20ReadOnlyMembers).
 
 Happy hacking!
