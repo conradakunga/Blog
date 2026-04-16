@@ -74,6 +74,8 @@ Otherwise trying to inherit a `sealed` class gives you a compiler error:
 
 If i had my way I would have the default modifier for modern IDEs to be `sealed` for any new code.
 
+Fun fact - in the [Kotlin](https://kotlinlang.org/) language classes are [sealed by default](https://kotlinlang.org/docs/inheritance.html).
+
 ### TLDR
 
 **Seal classes by default, until a need arises to extend them.**
