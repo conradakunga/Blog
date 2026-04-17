@@ -106,6 +106,6 @@ You enjoy a number of benefits from this:
 
 **Whenever possible, make your types `immutable`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-13%20-%20Immutability).
 
 Happy hacking!
