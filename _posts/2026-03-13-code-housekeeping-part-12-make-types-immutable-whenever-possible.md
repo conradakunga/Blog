@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Housekeeping - Part 12 -Make Types Immutable Whenever Possible
+title: Code Housekeeping - Part 12 - Make Types Immutable Whenever Possible
 date: 2026-03-13 11:36:31 +0300
 categories:
     - C#
@@ -79,7 +79,7 @@ You have successfully **modified** the `DTO` (which makes no sense), despite the
 
 This has been the source of many unintended **bugs** and **failures**.
 
-The solution to this is to make the DTO **immutable**. Once it is set, that is it.
+The solution to this is to make the `DTO` **immutable**. Once it is set, **that is it**.
 
 ```c#
 public sealed record CarDTO
@@ -92,15 +92,15 @@ public sealed record CarDTO
 }
 ```
 
-Now, we cannot change the DTO even if we wanted to.
+Now, we cannot **change** the `DTO` **even if we wanted to**.
 
 ![immutableRequired](../images/2026/03/immutableRequired.png)
 
 You enjoy a number of benefits from this:
 
-1. Cannot accidentally (or deliberately) **change** the DTO properties
-2. Communicates clearly the **intent** of the `type`
-3. As it is immutable, it can be safely accessed from **multiple threads**
+1. Cannot accidentally (or deliberately) **change** the `DTO` properties
+2. **Communicates** clearly the **intent** of the `type`
+3. As it is immutable, it can be **safely** accessed from **multiple threads**
 
 ### TLDR
 
