@@ -98,7 +98,7 @@ These are different vehicles
 
 ![recordvsClass](../images/2026/03/recordvsClass.png)
 
-This is because as far as the runtime is concerned, these are different things despite having identical properties.
+This is because as far as the runtime is concerned, **these are different things despite having identical properties**.
 
 As discussed in this post, "[Customizing Object Equality In C# & .NET]({% post_url 2024-12-19-customizing-object-equality-in-c-net %})", you have to do extra work to get the runtime to understand what you mean by equality.
 
