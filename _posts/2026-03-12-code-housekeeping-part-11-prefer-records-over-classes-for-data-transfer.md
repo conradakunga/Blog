@@ -100,7 +100,7 @@ These are different vehicles
 
 This is because as far as the runtime is concerned, these are different things despite having identical properties.
 
-As discussed in this post, "Customizing Object Equality In C# & .NET", you have to do extra work to get the runtime to understand what you mean by equality.
+As discussed in this post, "[Customizing Object Equality In C# & .NET]({% post_url 2024-12-19-customizing-object-equality-in-c-net %})", you have to do extra work to get the runtime to understand what you mean by equality.
 
 ```c#
 public sealed class CarDTO : IEquatable<CarDTO>
@@ -177,6 +177,6 @@ It is important to note that a `record` is still a `class`, just with some handy
 
 **For data transfer scenarios, use `record` rather than `class`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-12%20-%20RecordOverClass).
 
 Happy hacking!
