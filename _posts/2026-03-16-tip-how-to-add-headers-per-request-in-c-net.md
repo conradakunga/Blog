@@ -44,7 +44,7 @@ var response = await client.SendAsync(request);
 
 The logic here is as follows:
 
-1. Create a [HttpRequestMessage](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httprequestmessage?view=net-10.0) (can be a GET, POST, etc)
+1. Create a [HttpRequestMessage](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httprequestmessage?view=net-10.0) (can be a [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET), [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST), etc)
 2. Add your **header**
 3. Send the `HttpRequestMessage`
 4. Await the **response**
