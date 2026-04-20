@@ -49,7 +49,11 @@ The logic here is as follows:
 3. Send the `HttpRequestMessage`
 4. Await the **response**
 
-Reminder: the HttpClient will set the casing for the headers for you. This generally won't be an issue, but there are cases where the downstream server expects the header to be of a particular case.
+**Reminder:** the `HttpClient` will set the casing for the headers for you. 
+
+![responseHedersCasing](../images/2026/03/responseHedersCasing.png)
+
+This generally won't be an issue, but there are cases where the **downstream server expects the header to be of a particular case**.
 
 In such a situation you can use the method outlined in the post "[Controlling The Casing Of Submitted Request Headers In C# & .NET]({% post_url 2025-07-04-controlling-the-casing-of-submitted-request-headers-in-c-net %})"
 
