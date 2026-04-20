@@ -84,6 +84,6 @@ You would typically use this approach if there is a possibility that **subsequen
 
 **To add custom headers to your response, can inject the `HttpContext` into your endpoints and throught that access the `Headers` object of the `Response`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-15%20-%20CustomHeader).
 
 Happy hacking!
