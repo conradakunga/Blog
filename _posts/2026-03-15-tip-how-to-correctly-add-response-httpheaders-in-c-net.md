@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - ASP.NET
+    - Tip
 ---
 
 Our previous post, "[Stop Prefixing HTTP Headers With X]({% post_url 2026-03-14-tip-stop-prefixing-http-headers-with-x %})", talked about **prefixes** to to custom **headers**.

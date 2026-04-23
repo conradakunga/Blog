@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - HttpClient
+    - Tip
 ---
 
 Yesterday's post, "[Tip - How To Correctly Add Response HttpHeaders In C# & .NET]({% post_url 2026-03-15-tip-how-to-correctly-add-response-httpheaders-in-c-net %})", looked at how to **add headers** to HTTP **Responses** by **accessing** and **modifying** the `Headers` collection of the `Response` object of the `HttpContext`.

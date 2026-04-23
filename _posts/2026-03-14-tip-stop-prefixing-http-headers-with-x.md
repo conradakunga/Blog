@@ -5,6 +5,7 @@ date: 2026-03-14 11:51:13 +0300
 categories:
     - HTTP
     - Protocols
+    - Tip
 ---
 
 When writing web applications and APIs, [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers) is something that you will generally have to deal with, either as a **producer** or as a **consumer**.
