@@ -8,11 +8,11 @@ categories:
     - Stellar Repair
 ---
 
-This is Part 1 of an independent review of a product, [Stellar Repair for MS SQL,](https://www.stellarinfo.com/sql-recovery.php) from the folks at [Stellar Info](https://www.stellarinfo.com/).
+This is **Part 1** of an independent review of a product, [Stellar Repair for MS SQL,](https://www.stellarinfo.com/sql-recovery.php) from the folks at [Stellar Info](https://www.stellarinfo.com/).
 
 It is independent in the sense that I have not been offered, nor accepted, compensation of any kind, nor have I been given any sort of direction or assistance.
 
-The evaluation software has a 3-month NFR (Not for resale) license.
+The evaluation software has a **3-month NFR (Not for resale) license**.
 
 - **Part 1 - Introduction (this post)**
 - Part 2 - SQL Server Password Recovery
