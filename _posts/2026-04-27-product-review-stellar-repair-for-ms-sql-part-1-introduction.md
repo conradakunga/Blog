@@ -61,6 +61,8 @@ The operating system, reported, however, is **incorrect**. I am, in fact, on Win
 
 ![SteallarWindows](../images/2026/03/SteallarWindows.png)
 
+However everything seems to be **up and running** in preparation for us to **kick the tyres** of the softare.
+
 In the next post, we will look at **SQL Server password recovery**.
 
 Happy hacking!
