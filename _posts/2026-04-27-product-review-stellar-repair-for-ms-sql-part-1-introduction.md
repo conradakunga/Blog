@@ -18,7 +18,8 @@ The evaluation software has a **3-month NFR (Not for resale) license**.
 - Part 2 - SQL Server Password Recovery
 - Part 3 - Backup Data Recovery
 - Part 4 - Database Recovery
-- Part 5 - Conclusion
+- Part 5 - File corruption
+- Part 6 - Conclusion
 
 ## Introduction
 
