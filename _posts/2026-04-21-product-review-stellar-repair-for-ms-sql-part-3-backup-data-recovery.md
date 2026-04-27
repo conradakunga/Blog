@@ -198,9 +198,11 @@ We can now view the data.
 A couple of suggestions:
 
 1. Support export to the latest [Excel](https://www.microsoft.com/en-us/microsoft-365/excel) format, **XLSX**
-2. Provide clarity as to what happens if the **number of rows exceeds the selected format** (XLS or XLSX) capacity.
+2. Provide clarity as to what happens if the **number of rows exceeds the selected format** (**XLS** or **XLSX**) capacity.
 
 In a subsequest post, I will attempt to corrupt a backup and see what happens when attempting to access and retrieve data.
+
+In the next post we will look at how to recover data from a SQL Server (**.mdf**) file.
 
 ### TLDR
 
