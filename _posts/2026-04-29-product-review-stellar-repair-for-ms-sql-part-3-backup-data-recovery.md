@@ -13,7 +13,7 @@ This is **Part 3** of an independent review of a product, [Stellar Repair for MS
 The version being reviewed is `11.0.1`
 
 - [Part 1 - Introduction]({% post_url 2026-04-19-product-review-stellar-repair-for-ms-sql-part-1-introduction %})
-- [Part 2 - SQL Server Passwod Recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})
+- [Part 2 - SQL Server Password Recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})
 - **Backup Data Recovery (this post)**
 - [Part 4 - Database Recovery]({% post_url 2026-04-30-product-review-stellar-repair-for-ms-sql-part-4-sql-server-database-recovery %})
 - Part 5 - File corruption
@@ -176,9 +176,9 @@ Upon saving you are presented with the following options:
 
 Here you can:
 
-1. Restore to  a completely new database
-2. Restore to an existing database
-3. Resore to a different format:
+1. Restore to  a completely **new** database
+2. Restore to an **existing** database
+3. Restore to a different **format**:
     - HTML
     - CSV
     - Excel
@@ -204,12 +204,12 @@ A couple of suggestions:
 1. Support export to the latest [Excel](https://www.microsoft.com/en-us/microsoft-365/excel) format, **XLSX**
 2. Provide clarity as to what happens if the **number of rows exceeds the selected format** (**XLS** or **XLSX**) capacity.
 
-In a subsequest post, I will attempt to corrupt a backup and see what happens when attempting to access and retrieve data.
+In a subsequent post, I will attempt to corrupt a backup and see what happens when attempting to access and retrieve data.
 
 In the next post we will look at how to recover data from a SQL Server (**.mdf**) file.
 
 ### TLDR
 
-**Stellar Repair allows you to extract data and objects from a backup (.bak) file.**
+**Stellar Repair allows you to extract data and objects from a backup (`.bak`) file.**
 
 Happy hacking!

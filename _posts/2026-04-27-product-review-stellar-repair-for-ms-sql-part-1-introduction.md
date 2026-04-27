@@ -45,7 +45,7 @@ There are also [Linux versions](https://www.stellarinfo.com/database-recovery/sq
 
 For the review, I will be using the [Windows](https://www.stellarinfo.com/thankyou/sql-recovery.php) version.
 
-Upon completion, you will get a menu configurued in your **start menu**.
+Upon completion, you will get a menu configured in your **start menu**.
 
 ![StellarMenu](../images/2026/03/StellarMenu.png)
 
