@@ -10,7 +10,7 @@ categories:
 
 This is **Part 4** of an independent review of a product, [Stellar Repair for MS SQL,](https://www.stellarinfo.com/sql-recovery.php) from the folks at [Stellar Info](https://www.stellarinfo.com/).
 
-The version being reviewed is `11.0.1`
+The version being reviewed is `11.0.0.1`
 
 - [Part 1 - Introduction]({% post_url 2026-04-19-product-review-stellar-repair-for-ms-sql-part-1-introduction %})
 - [Part 2 - SQL Server Password Recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})
