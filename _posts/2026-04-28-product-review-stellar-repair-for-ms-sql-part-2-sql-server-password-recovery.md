@@ -156,8 +156,8 @@ There isn't any sort of a log file in the installed location either.
 
 ![StellarInstaller](../images/2026/03/StellarInstaller.png)
 
-I have not been able to get the password recovery to work. I will revisit this at the end.
+**I have not been able to get the password recovery to work. I will revisit this at the end.**
 
-In the next post, we will look at how to extract data from a backup.
+In the next post, we will look at how to **extract data from a backup**.
 
 Happy hacking!
