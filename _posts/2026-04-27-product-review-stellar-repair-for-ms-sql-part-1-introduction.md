@@ -15,7 +15,7 @@ It is independent in the sense that I have not been offered, nor accepted, compe
 The evaluation software has a **3-month NFR (Not for resale) license**.
 
 - **Part 1 - Introduction (this post)**
-- Part 2 - SQL Server Password Recovery
+- [Part 2 - SQL Server Password Recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})
 - Part 3 - Backup Data Recovery
 - Part 4 - Database Recovery
 - Part 5 - File corruption
@@ -61,8 +61,8 @@ The operating system, reported, however, is **incorrect**. I am, in fact, on Win
 
 ![SteallarWindows](../images/2026/03/SteallarWindows.png)
 
-However everything seems to be **up and running** in preparation for us to **kick the tyres** of the softare.
+However, everything seems to be **up and running** in preparation for us to **kick the tyres** of the software.
 
-In the next post, we will look at **SQL Server password recovery**.
+In the next post, we will look at [SQL Server password recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %}).
 
 Happy hacking!
