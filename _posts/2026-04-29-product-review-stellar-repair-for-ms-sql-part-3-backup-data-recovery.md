@@ -12,14 +12,14 @@ This is **Part 3** of an independent review of a product, [Stellar Repair for MS
 
 The version being reviewed is `11.0.0.1`
 
-- [Part 1 - Introduction]({% post_url 2026-04-19-product-review-stellar-repair-for-ms-sql-part-1-introduction %})
+- [Part 1 - Introduction]({% post_url 2026-04-27-product-review-stellar-repair-for-ms-sql-part-1-introduction %})
 - [Part 2 - SQL Server Password Recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})
 - **Backup Data Recovery (this post)**
-- [Part 4 - Database Recovery]({% post_url 2026-04-30-product-review-stellar-repair-for-ms-sql-part-4-sql-server-database-recovery %})
+- Part 4 - Database Recovery
 - Part 5 - File corruption
 - Part 6 - Conclusion
 
-In our previous post, "[Product Review - Stellar Repair for MS SQL - Part 2: SQL Server Password Recovery]({% post_url 2026-04-20-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})", we looked at the functionality of **retrieving a SQL Server password**.
+In our previous post, "[Product Review - Stellar Repair for MS SQL - Part 2: SQL Server Password Recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})", we looked at the functionality of **retrieving a SQL Server password**.
 
 In this post, we will look at how to **recover data from a SQL backup** (.[bak](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17#creating-backups)), which **may or may not be corrupted**.
 
