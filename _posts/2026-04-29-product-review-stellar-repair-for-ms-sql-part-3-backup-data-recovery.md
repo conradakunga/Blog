@@ -212,4 +212,6 @@ In the next post we will look at how to recover data from a SQL Server (**.mdf**
 
 **Stellar Repair allows you to extract data and objects from a backup (`.bak`) file.**
 
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/Stellar).
+
 Happy hacking!
