@@ -44,13 +44,13 @@ select SpyID,
 from Spies
 ```
 
-The resutls would change as follows:
+The results would change as follows:
 
 ![SpiesAliasOne](../images/2026/03/SpiesAliasOne.png)
 
 Here, we can see our column **name** has **changed**.
 
-The **problem** with aliases in this way is that it is very easy to introduce a very **sublte bug** where you **overwrite a column by mistake**.
+The **problem** with aliases in this way is that it is very easy to introduce a very **subtle bug** where you **overwrite a column by mistake**.
 
 It is very easy to do the following:
 
