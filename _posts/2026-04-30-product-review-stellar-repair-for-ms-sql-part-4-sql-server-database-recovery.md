@@ -12,10 +12,10 @@ This is **Part 4** of an independent review of a product, [Stellar Repair for MS
 
 The version being reviewed is `11.0.0.1`
 
-- [Part 1 - Introduction]({% post_url 2026-04-19-product-review-stellar-repair-for-ms-sql-part-1-introduction %})
+- [Part 1 - Introduction]({% post_url 2026-04-27-product-review-stellar-repair-for-ms-sql-part-1-introduction %})
 - [Part 2 - SQL Server Password Recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})
 - [Backup Data Recovery]({% post_url 2026-04-29-product-review-stellar-repair-for-ms-sql-part-3-backup-data-recovery %})
-- [Part 4 - Database Recovery]({% post_url 2026-04-30-product-review-stellar-repair-for-ms-sql-part-4-sql-server-database-recovery %})
+- **Part 4 - SQL Server Database Recovery (This post)**
 - Part 5 - File corruption
 - Part 6 - Conclusion
 
