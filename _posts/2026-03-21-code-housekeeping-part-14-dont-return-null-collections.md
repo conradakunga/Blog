@@ -19,9 +19,9 @@ Let us take our usual example, a domain model with the following types - a `Spy`
 ```c#
 public sealed class Spy
 {
-	public required string FirstName { get; init; }
-	public required string Surname { get; init; }
-	public required DateOnly DateOfBirth { get; init; }
+  public required string FirstName { get; init; }
+  public required string Surname { get; init; }
+  public required DateOnly DateOfBirth { get; init; }
 }
 ```
 
@@ -30,8 +30,8 @@ And an `Agency`, defined thus:
 ```c#
 public sealed class Agency
 {
-	public required string Name { get; init; }
-	public required Spy[] Spies { get; init; }
+  public required string Name { get; init; }
+  public required Spy[] Spies { get; init; }
 }
 ```
 
@@ -110,6 +110,6 @@ This way if the user **forgets to initialize** the collection, it is always **sa
 
 **Do not return `NULL` in the place of empty collections.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-21%20-%20Empty%20Collections).
 
 Happy hacking!
