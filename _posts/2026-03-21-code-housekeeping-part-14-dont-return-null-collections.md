@@ -35,7 +35,7 @@ public sealed class Agency
 }
 ```
 
-Suppose we want to create a new `Agency` that does not presently have any `Spy`.
+Suppose we want to create a **new** `Agency` that does not presently have any `Spy`.
 
 One way would be to do it this way:
 
@@ -70,7 +70,7 @@ Unhandled exception. System.NullReferenceException: Object reference not set to 
    at Program.<Main>$(String[] args) in /Users/rad/Projects/BlogCode/EmptyCollections/Program.cs:line 12
 ```
 
-The solution to this is to initialize the `Spies` collection with an **empty collection**.
+The solution to this is to initialize the `Spies` collection to an **empty collection**.
 
 This can be done in several ways:
 
@@ -92,7 +92,7 @@ var agency2 = new Agency()
 };
 ```
 
-This is using the [collection expression](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/collection-expressions) syntax, which besides being **terse**, means if you change the collection type to something else like a [list](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-10.0), for example, your **initialization code does not need to change**.
+This is using the [collection expression](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/collection-expressions) syntax, which, besides being **terse**, means that if you change the collection type to something else, like a [list](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-10.0), your **initialization code does not need to change**.
 
 If you are using a traditional class without the [required](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/required) and [init](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init) modifiers, define it like this:
 
@@ -104,7 +104,7 @@ public sealed class Agency
 }
 ```
 
-This way if the user **forgets to initialize** the collection, it is always **safely** an **empty** collection.
+This way, if the user forgets to initialize the collection, it is always a safe **empty** collection.
 
 ### TLDR
 

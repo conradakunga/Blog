@@ -12,7 +12,7 @@ categories:
 
 **Code Housekeeping** refers to general rules of thumb that make code easier to **read**, **digest**, and **modify** for other developers, **yourself** included.
 
-In this post we will look at the issue of **database column** [aliases](https://blog.greglow.com/2019/04/29/t-sql-101-15-using-column-and-table-aliases-in-sql-server-queries/).
+In this post, we will look at the issue of **database column** [aliases](https://blog.greglow.com/2019/04/29/t-sql-101-15-using-column-and-table-aliases-in-sql-server-queries/).
 
 A typical query would look like this:
 
@@ -29,7 +29,7 @@ This, unsurprisingly, returns the following:
 
 ![SpiesOriginal](../images/2026/03/SpiesOriginal.png)
 
-Here, i am using the [Jetbrains](https://www.jetbrains.com/) tool [DataGrip](https://www.jetbrains.com/datagrip/).
+Here, I am using the [Jetbrains](https://www.jetbrains.com/) tool [DataGrip](https://www.jetbrains.com/datagrip/).
 
 Suppose we want, for whatever reason, to **alias** the `Name` as `FullName`.
 
@@ -71,7 +71,7 @@ The results look as follows:
 
 Here we have inadvertently aliased `Name` as `DateOfBirth`.
 
-A good tool such as `DataGrip` can catch this:
+A good tool, such as `DataGrip`, can catch this:
 
 ![DataGripAliasWarning](../images/2026/03/DataGripAliasWarning.png)
 
@@ -101,10 +101,10 @@ select SpyID,
 from Spies
 ```
 
-This makes it **clear** to anyone reading your intent.
+This makes your intent clear to anyone reading.
 
 ### TLDR
 
-**Use `AS` when aliasing columns in queries to make clear your intent.**
+**Use `AS` when aliasing columns in queries to make your intent clear.**
 
 Happy hacking!
