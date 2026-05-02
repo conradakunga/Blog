@@ -8,7 +8,7 @@ categories:
     - Stellar Repair
 ---
 
-This is **Part 5*6 of an independent review of a product, [Stellar Repair for MS SQL,](https://www.stellarinfo.com/sql-recovery.php) from the folks at [Stellar Info](https://www.stellarinfo.com/).
+This is **Part 6** of an independent review of a product, [Stellar Repair for MS SQL,](https://www.stellarinfo.com/sql-recovery.php) from the folks at [Stellar Info](https://www.stellarinfo.com/).
 
 The version being reviewed is `11.0.0.1`
 
