@@ -38,7 +38,7 @@ Here we are using the [newid()](https://learn.microsoft.com/en-us/sql/t-sql/func
 
 This works perfectly fine.
 
-The problem arises when the table is busy and has many rows.
+The problem arises when the table is busy and has **many rows**.
 
 ```sql
 insert into Animals(Animalid, Name)
