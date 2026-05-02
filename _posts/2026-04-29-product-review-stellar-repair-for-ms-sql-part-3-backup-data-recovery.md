@@ -23,14 +23,14 @@ In our previous post, "[Product Review - Stellar Repair for MS SQL - Part 2: SQL
 
 In this post, we will look at how to **recover data from a SQL backup** (.[bak](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17#creating-backups)), which **may or may not be corrupted**.
 
-In preparation for this will 
+In preparation for this, we will:
 
 1. **Prepare** a database
 2. **Seed** it with test data
-3. **Backup** the database
+3. **Back up** the database
 4. **Restore** selected data from the backup
 
-For this exercise we will use [SSMS](https://learn.microsoft.com/en-us/ssms/install/install).
+For this exercise, we will use [SSMS](https://learn.microsoft.com/en-us/ssms/install/install).
 
 First, **connect** to the server:
 
@@ -44,7 +44,7 @@ Then we create our database. The name is `Spies`.
 
 ![createDatabase](../images/2026/03/createDatabase.png)
 
-Next, we create a table so store our `Spies`.
+Next, we create a table to store our `Spies`.
 
 ```sql
 CREATE TABLE Agencies
@@ -107,9 +107,9 @@ SELECT 'da34433e-f36b-1410-8ddd-000326cb3e3a','Zelda Pagac','2010-08-01'UNION
 --- Snipped here ---
 ```
 
-Once ran, the table will have `6,000` rows.
+Once run, the table will have `6,000` rows.
 
-Next, we **backup** the database.
+Next, we **back up** the database.
 
 ![backupMenu](../images/2026/03/backupMenu.png)
 
@@ -143,11 +143,11 @@ When we select and open the file, we get the following screen:
 
 Here we can see our backup file with some basic metadata.
 
-If we click **Next** we proceed to the following screen:
+If we click **Next,** we proceed to the following screen:
 
 ![versionChooser](../images/2026/03/versionChooser.png)
 
-here, it seems you should know a bit about the backup, specifically:
+Here, it seems you should know a bit about the backup, specifically:
 
 1. The version it was **created** in
 2. Whether it was **created originally** in version `2000` or `2005` and subsequently converted to a later version.
@@ -158,19 +158,19 @@ Once you select the appropriate version and click **OK**, you should get the fol
 
 From there, you can now **browse** the database.
 
-You can click on the **table** and the software will **fetch the data** from the backup. At the bottom of the screen you will see a progress bar.
+You can click on the **table,** and the software will **fetch the data** from the backup. At the bottom of the screen, you will see a progress bar.
 
 ![browseData](../images/2026/03/browseData.png)
 
-You can also browse the other table objects such as **columns**, **defaults**, **primary keys**, **foreign keys**, **constraints**, **indexes**, and **statistics**.
+You can also browse the other table objects, such as **columns**, **defaults**, **primary keys**, **foreign keys**, **constraints**, **indexes**, and **statistics**.
 
-Similarly, you can also browse other database objects like [views](https://learn.microsoft.com/en-us/sql/relational-databases/views/views?view=sql-server-ver17), [procedures](https://learn.microsoft.com/en-us/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver17), [functions](https://learn.microsoft.com/en-us/sql/relational-databases/user-defined-functions/user-defined-functions?view=sql-server-ver17), [triggers](https://learn.microsoft.com/en-us/sql/relational-databases/triggers/ddl-triggers?view=sql-server-ver17), [assemblies](https://learn.microsoft.com/en-us/sql/relational-databases/clr-integration/assemblies-database-engine?view=sql-server-ver17), [data types](https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver17), [rules](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-rule-transact-sql?view=sql-server-ver17), [defaults](https://learn.microsoft.com/en-us/sql/relational-databases/tables/specify-default-values-for-columns?view=sql-server-ver17) and sequences.
+Similarly, you can also browse other database objects like [views](https://learn.microsoft.com/en-us/sql/relational-databases/views/views?view=sql-server-ver17), [procedures](https://learn.microsoft.com/en-us/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver17), [functions](https://learn.microsoft.com/en-us/sql/relational-databases/user-defined-functions/user-defined-functions?view=sql-server-ver17), [triggers](https://learn.microsoft.com/en-us/sql/relational-databases/triggers/ddl-triggers?view=sql-server-ver17), [assemblies](https://learn.microsoft.com/en-us/sql/relational-databases/clr-integration/assemblies-database-engine?view=sql-server-ver17), [data types](https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver17), [rules](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-rule-transact-sql?view=sql-server-ver17), [defaults,](https://learn.microsoft.com/en-us/sql/relational-databases/tables/specify-default-values-for-columns?view=sql-server-ver17) and sequences.
 
-At this point you have the option to **save** the recovered backup.
+At this point, you have the option to **save** the recovered backup.
 
 ![SaveRetrieved](../images/2026/03/SaveRetrieved.png)
 
-Upon saving you are presented with the following options:
+Upon saving, you are presented with the following options:
 
 ![SaveOptions](../images/2026/03/SaveOptions.png)
 
@@ -206,7 +206,7 @@ A couple of suggestions:
 
 In a subsequent post, I will attempt to corrupt a backup and see what happens when attempting to access and retrieve data.
 
-In the next post we will look at how to recover data from a SQL Server (**.mdf**) file.
+In the next post, we will look at how [to recover data from a SQL Server (**.mdf**) file]({% post_url 2026-04-30-product-review-stellar-repair-for-ms-sql-part-4-sql-server-database-recovery %}).
 
 ### TLDR
 
