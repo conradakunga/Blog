@@ -17,7 +17,7 @@ The version being reviewed is `11.0.0.1`
 - **Part 3 - Backup Data Recovery (this post)**
 - [Part 4 - Database Recovery]({% post_url 2026-04-30-product-review-stellar-repair-for-ms-sql-part-4-sql-server-database-recovery %})
 - [Part 5 - File corruption]({% post_url 2026-05-01-product-review-stellar-repair-for-ms-sql-part-5-file-corruption %})
-- Part 6 - Conclusion
+- [Part 6 - Conclusion]({% post_url 2026-05-02-product-review-stellar-repair-for-ms-sql-part-6-conclusion %})
 
 In our previous post, "[Product Review - Stellar Repair for MS SQL - Part 2: SQL Server Password Recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})", we looked at the functionality of **retrieving a SQL Server password**.
 
