@@ -18,7 +18,7 @@ The evaluation software has a **3-month NFR (Not for resale) license**.
 - [Part 2 - SQL Server Password Recovery]({% post_url 2026-04-28-product-review-stellar-repair-for-ms-sql-part-2-sql-server-password-recovery %})
 - [Part 3 - Backup Data Recovery]({% post_url 2026-04-29-product-review-stellar-repair-for-ms-sql-part-3-backup-data-recovery %})
 - [Part 4 - Database Recovery]({% post_url 2026-04-30-product-review-stellar-repair-for-ms-sql-part-4-sql-server-database-recovery %})
-- Part 5 - File corruption
+- [Part 5 - File corruption]({% post_url 2026-05-01-product-review-stellar-repair-for-ms-sql-part-5-file-corruption %})
 - Part 6 - Conclusion
 
 ## Introduction
