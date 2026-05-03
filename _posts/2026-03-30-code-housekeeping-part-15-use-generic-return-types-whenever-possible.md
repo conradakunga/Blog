@@ -172,10 +172,14 @@ We are, in fact, free to change this to an `array` if we want.
 
 The magic here is that neither our program nor the `SpyProcessor` **needs to change** to accommodate this.
 
-Our `types` are thus much more **shielded from downstream changes** that force us to **manipulate the return types** using methods like [ToList()](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.tolist?view=net-10.0), [ToArray()](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.toarray?view=net-10.0), [ToHashSet()](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.tohashset?view=net-10.0), etc .
+Our `types` are thus much more **shielded from downstream changes** that would force us to **manipulate return types** using methods like [ToList()](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.tolist?view=net-10.0), [ToArray()](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.toarray?view=net-10.0), [ToHashSet()](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.tohashset?view=net-10.0), etc .
 
 **This is not a silver bullet, as there are times you will need the actual concrete type.**
 
 ### TLDR
 
-Wherever possible, return types as generic as possible.
+**Wherever possible, return types as generic as possible.**
+
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-30%20-%20CollectionReturnTypes).
+
+Happy hacking!
