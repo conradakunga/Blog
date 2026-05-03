@@ -126,7 +126,7 @@ It looks like this:
 SELECT *
 FROM generate_series('2026-01-01 00:00 +00:00'::timestamp,
                      '2026-01-10 00:00 +00:00'::timestamp,
-                     '1 day'::interval);
+                     '1 day');
 ```
 
 The results are as follows:
