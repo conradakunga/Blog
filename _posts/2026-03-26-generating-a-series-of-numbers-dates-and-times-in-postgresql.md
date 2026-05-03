@@ -85,6 +85,8 @@ The results are as we'd expect.
 
 ![smallIncrements](../images/2026/03/smallIncrements.png)
 
+This, we can see, is almost identical to how to tackle this problem in SQL Server, covered in the post "[Generating A Series Of Numbers In SQL Server]({% post_url 2026-03-26-generating-a-series-of-numbers-in-sql-server %})".
+
 ## Timestamp
 
 The generate_series functions that operate with timestamps are in two flavours:
