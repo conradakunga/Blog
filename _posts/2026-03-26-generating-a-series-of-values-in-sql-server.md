@@ -4,6 +4,7 @@ title: Generating A Series Of Values In SQL Server
 date: 2026-03-26 09:40:52 +0300
 categories:
     - SQL Server
+    - Database
 ---
 
 One of the more powerful features of [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) is the ability to generate **sequences** of values.
