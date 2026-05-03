@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generating A Series Of Values In SQL Server
+title: Generating A Series Of Numbers In SQL Server
 date: 2026-03-26 09:40:52 +0300
 categories:
     - SQL Server
