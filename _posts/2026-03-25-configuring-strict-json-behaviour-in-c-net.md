@@ -100,7 +100,7 @@ This is a feature, and not a bug, being a departure from `Newtonsoft.Json` that 
 
 You can further go ahead to define even more conservative settings, like so:
 
-```json
+```c#
 var options = new JsonSerializerOptions
 {
   AllowDuplicateProperties = false,
