@@ -96,7 +96,9 @@ This produces the following:
 
 Note the difference in **casing**.
 
-This is a feature, and not a bug, being a departure from `Newtonsoft.Json` that generally transparently figured out what to do.
+This is a **feature**, and not a **bug**, being a departure from `Newtonsoft.Json` that generally **transparently figured out what to do**.
+
+**Always be explicit** to prevent surprises downstream.
 
 You can further go ahead to define even more conservative settings, like so:
 
