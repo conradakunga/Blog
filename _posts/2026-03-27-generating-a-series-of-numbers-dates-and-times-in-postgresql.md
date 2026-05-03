@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generating A Series Of numbers, dates and times In PostgreSQL
+title: Generating A Series Of Numbers, Dates and Times In PostgreSQL
 date: 2026-03-27 09:40:52 +0300
 categories:
     - PostgreSQL
