@@ -139,6 +139,6 @@ Note the difference here - the results do not have any timezone information.
 
 **You can generate any series of numbers, dates and times in PostgreSQL using the `generate_series` function.**
 
-The code is my GitHub.
+The code is my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-27%20-%20PostgreSQL%20Series).
 
 Happy hacking!

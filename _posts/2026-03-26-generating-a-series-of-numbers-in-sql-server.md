@@ -84,6 +84,6 @@ You can also use **negative** values for **start**, **end** and **step**, and th
 
 **You can generate any series of numbers in SQL Server using the `generate_series` function.**
 
-The code is my GitHub.
+The code is my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-26%20-%20SQL%20Server%20Series).
 
 Happy hacking!
