@@ -70,6 +70,6 @@ If we run this code, we should see something like this:
 
 **You can get the TLS version from the `HttpContext` by getting the `ITlsHandshakeFeature`** 
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-31%20-%20TLSCheck).
 
 Happy hacking!
