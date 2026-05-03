@@ -9,21 +9,21 @@ categories:
 
 One of the more powerful features of [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) is the ability to generate **sequences** of values.
 
-To get a list of number from 1 to 10, we do it like so:
+To get a list of numbers from 1 to 10, we do it like so:
 
 ```c#
 var numbers = Enumerable.Range(1, 10).ToList();
 numbers.ForEach(Console.WriteLine);
 ```
 
-To get a list of all even number from `1` to `10`, we do it like this:
+To get a list of all even numbers from `1` to `10`, we do it like this:
 
 ```c#
 var evenNumbers = Enumerable.Range(1, 10).Where(x => x % 2 == 0).ToList();
 evenNumbers.ForEach(Console.WriteLine);
 ```
 
-To get a list of all odd number from `1` to `10`, we do it like this:
+To get a list of all odd numbers from `1` to `10`, we do it like this:
 
 ```c#
 var oddNumbers = Enumerable.Range(1, 10).Where(x => x % 2 != 0).ToList();
@@ -39,7 +39,7 @@ var smallNumbers = Enumerable.Range(0, 20).Select(x => x / 20.0).ToList();
 smallNumbers.ForEach(Console.WriteLine);
 ```
 
-Do you wish there was something similar in [PostgreSQL](https://www.postgresql.org/)?
+Do you wish there were something similar in [PostgreSQL](https://www.postgresql.org/)?
 
 There is!
 
@@ -47,8 +47,8 @@ You can use the [generate_series](https://www.postgresql.org/docs/current/functi
 
 There are two sets of these
 
-1. One that operates on [numbers](https://www.postgresql.org/docs/current/datatype-numeric.html), specifically `integers`, `biginteger` and `numeric`
-2. One that operates on [timestamps](https://www.postgresql.org/docs/18/functions-datetime.html), with and without [timezones](https://www.postgresql.org/docs/18/runtime-config-client.html#GUC-TIMEZONE)
+1. One that operates on [numbers](https://www.postgresql.org/docs/current/datatype-numeric.html), specifically `integers`, `biginteger,` and `numeric`
+2. One that operates on [timestamps](https://www.postgresql.org/docs/18/functions-datetime.html), with and without [time zones](https://www.postgresql.org/docs/18/runtime-config-client.html#GUC-TIMEZONE)
 
 ## Numeric
 
@@ -94,14 +94,14 @@ The generate_series functions that operate with timestamps are in two flavours:
 1. **Timezone** aware
 2. **Non-timezone** aware
 
-The timezone aware version takes:
+The timezone-aware version takes:
 
 1. **Start** timestamp with timezone
 2. **End** timestamp with timezone
 3. **Interval**
 4. **Timezone**
 
-In this example we are taking midnight, Nairobi time, and adding a day to that from 1 January 2026 to 10 January 2026. We are further indicating we are using the Nairobi time zone (this matters when doing timezone aware date computations!)
+In this example, we are taking midnight, Nairobi time, and adding a day, from **1 January 2026** to **10 January 2026**. We are further indicating we are using the Nairobi time zone (this matters when doing timezone-aware date computations!)
 
 ```sql
 SELECT *
@@ -114,7 +114,7 @@ This returns the following:
 
 ![timezoneSeres](../images/2026/03/timezoneSeres.png)
 
-The none-timezone aware version is very similar:
+The non-timezone-aware version is very similar:
 
 1. **Start** timestamp
 2. **End** timestamp
@@ -133,12 +133,12 @@ The results are as follows:
 
 ![timeSeries](../images/2026/03/timeSeries.png)
 
-Note the difference here - the results do not have any timezone information.
+Note the difference here: the results **do not include** any time zone information.
 
 ### TLDR
 
-**You can generate any series of numbers, dates and times in PostgreSQL using the `generate_series` function.**
+**You can generate any series of numbers, dates, and times in PostgreSQL using the `generate_series` function.**
 
-The code is my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-27%20-%20PostgreSQL%20Series).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-27%20-%20PostgreSQL%20Series).
 
 Happy hacking!

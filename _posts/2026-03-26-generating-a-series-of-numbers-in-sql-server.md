@@ -9,21 +9,21 @@ categories:
 
 One of the more powerful features of [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) is the ability to generate **sequences** of values.
 
-To get a list of number from 1 to 10, we do it like so:
+To get a list of numbers from 1 to 10, we do it like so:
 
 ```c#
 var numbers = Enumerable.Range(1, 10).ToList();
 numbers.ForEach(Console.WriteLine);
 ```
 
-To get a list of all even number from `1` to `10`, we do it like this:
+To get a list of all even numbers from `1` to `10`, we do it like this:
 
 ```c#
 var evenNumbers = Enumerable.Range(1, 10).Where(x => x % 2 == 0).ToList();
 evenNumbers.ForEach(Console.WriteLine);
 ```
 
-To get a list of all odd number from `1` to `10`, we do it like this:
+To get a list of all odd numbers from `1` to `10`, we do it like this:
 
 ```c#
 var oddNumbers = Enumerable.Range(1, 10).Where(x => x % 2 != 0).ToList();
@@ -39,11 +39,11 @@ var smallNumbers = Enumerable.Range(0, 20).Select(x => x / 20.0).ToList();
 smallNumbers.ForEach(Console.WriteLine);
 ```
 
-Do you wish there was something similar in [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server)?
+Do you wish there were something similar in [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server)?
 
 There is!
 
-You can use the [generate_series](https://learn.microsoft.com/en-us/sql/t-sql/functions/generate-series-transact-sql?view=sql-server-ver17) function for such purposes. This has been available from SQL server 2022.
+You can use the [generate_series](https://learn.microsoft.com/en-us/sql/t-sql/functions/generate-series-transact-sql?view=sql-server-ver17) function for such purposes. This has been available from SQL Server 2022.
 
 It takes three parameters:
 
@@ -78,12 +78,12 @@ The results are as we'd expect.
 
 ![smallIncrements](../images/2026/03/smallIncrements.png)
 
-You can also use **negative** values for **start**, **end** and **step**, and this function is available for all the **precise** numeric types - **tinyint**, **smallint**, **int**, **bigint**, and **decimal**
+You can also use **negative** values for **start**, **end,** and **step**, and this function is available for all the **precise** numeric types - **tinyint**, **smallint**, **int**, **bigint**, and **decimal**
 
 ### TLDR
 
 **You can generate any series of numbers in SQL Server using the `generate_series` function.**
 
-The code is my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-26%20-%20SQL%20Server%20Series).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-03-26%20-%20SQL%20Server%20Series).
 
 Happy hacking!
