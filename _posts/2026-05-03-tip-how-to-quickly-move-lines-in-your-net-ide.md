@@ -30,6 +30,17 @@ There is a better way for **Zen** masters.
 2. Press and hold the `ALT` key
 3. Press the up arrow  ⬆️ as many times as you want the line to move up
 
-<video src="../images/2026/05/ALTMoveText.mp4" controls/>
+<video controls>
+<source src="../images/2026/05/ALTMoveText.mp4"/>
+</video>
+
+To move lines **down**, use the down arrow, ⬇️ .
+
+This works with the following IDEs:
+
+1. [Visual Studio](https://visualstudio.microsoft.com/)
+2. [Visual Studio Code](https://code.visualstudio.com/)
+3. [JetBrains Rider](https://www.jetbrains.com/rider/) (if you use Visual Studio bindings)
 
 Happy hacking!
+
