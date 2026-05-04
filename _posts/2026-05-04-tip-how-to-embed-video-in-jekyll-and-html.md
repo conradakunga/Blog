@@ -11,7 +11,7 @@ In our previous post, "[Tip - How To Quickly Move Lines In Your .NET IDE]({% pos
 
 At the bottom, I **embedded a video** of the tip.
 
-I had an option to use a GIF, but even after generating one, I decided **against** it for the following reasons:
+I had an option to use a [GIF](https://en.wikipedia.org/wiki/GIF), but even after generating one, I decided **against** it for the following reasons:
 
 1. The GIF was of noticeably **lower** quality
 2. Video allowed for **better** quality
@@ -38,7 +38,7 @@ A couple of things to note:
 
 1. This is the **play** button that **toggles** to **pause**
 2. This is the **volume** control
-3. This **fills** the screen witht he video
+3. This **fills** the screen with the video
 4. Additional **options**
 
 ![additionalActions](../images/2026/05/additionalActions.png)
