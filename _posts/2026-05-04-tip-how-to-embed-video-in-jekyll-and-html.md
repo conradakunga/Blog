@@ -7,7 +7,7 @@ categories:
     - HTML
 ---
 
-In our previous post, "[Tip - How To Quickly Move Lines In Your .NET IDE]({% post_url 2026-05-03-tip-how-to-quickly-move-lines-in-your-net-ide %})", we looked at how to move lines in your IDE.
+In our previous post, "[Tip - How To Quickly Move Lines In Your .NET IDE]({% post_url 2026-05-03-tip-how-to-quickly-move-lines-in-your-net-ide %})", we looked at how to move lines of text in your IDE.
 
 At the bottom, I **embedded a video** of the tip.
 
