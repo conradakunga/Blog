@@ -42,5 +42,7 @@ This works with the following IDEs:
 2. [Visual Studio Code](https://code.visualstudio.com/)
 3. [JetBrains Rider](https://www.jetbrains.com/rider/) (if you use Visual Studio bindings)
 
+It also works with [SQL Server Management Studio](https://learn.microsoft.com/en-us/ssms/sql-server-management-studio-ssms), SSMS.
+
 Happy hacking!
 
