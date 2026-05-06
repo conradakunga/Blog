@@ -7,7 +7,7 @@ categories:
     - Documentation
 ---
 
-I was recently researching the SQL Server [DATETRUNC](https://learn.microsoft.com/en-us/sql/t-sql/functions/datetrunc-transact-sql?view=sql-server-ver17) function, which returns an **input date** **truncated** to the specified date part.
+I was recently researching the [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server) [DATETRUNC](https://learn.microsoft.com/en-us/sql/t-sql/functions/datetrunc-transact-sql?view=sql-server-ver17) function, which returns an **input date** **truncated** to the specified date part.
 
 I was curious what exactly this entails, and the documentation (at least as I write this) has this **helpful** guide about how the `dayofyear` is truncated:
 
