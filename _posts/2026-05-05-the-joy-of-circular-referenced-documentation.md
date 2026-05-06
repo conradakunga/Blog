@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Joy Of Circular Referenced Documentation
-date: 2026-05-01 23:04:51 +0300
+date: 2026-05-05 23:04:51 +0300
 categories:
     - SQL Server
     - Documentation
