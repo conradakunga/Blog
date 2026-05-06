@@ -99,7 +99,7 @@ public string Greet(DateTime dateTime)
     };
 }
 ```
-  
+
 Here we are passing the current date as an argument to the `Greet` method.
 
 We can then update the tests like this:
@@ -391,6 +391,7 @@ Designing our application around mockable interfaces gives you a lot of flexibil
 
     As seen above, if using a DI container, you do not need to know how to create a `Greeter`. The DI container, however, knows that to create a `Greeter` it needs an `IClock`, and it has been configured to return a `SystemClock` whenever one is requested - so it knows how to construct all the dependencies to construct any registered object that you request.
     
+
 This problem revolving around the `IClock` is in fact a problem many of the Microsoft teams have run into, and each has come up with their own implementations. You can [read the details here](https://github.com/dotnet/aspnetcore/issues/16844) of how this has been a problem for some time.
 
 The good news in in .NET 8 there is an [attempt to come up with a unified solution to this problem](https://github.com/dotnet/runtime/issues/36617).
