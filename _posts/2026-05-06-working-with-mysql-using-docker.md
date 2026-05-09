@@ -69,7 +69,7 @@ services:
       - /Users/rad/Docker/containers/MySQL:/var/lib/mysql
 ```
 
-Using your favourite tool of choice, you can verify that everything is working as expected.
+Using your favourite tool of choice, you can **verify that everything is working** as expected.
 
 ![mysqlconnect](../images/2026/05/mysqlconnect.png)
 
