@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connecting To MySQL & MariaDB using MySQLConnector in C# & .NET 
-date: 2026-05-08 12:56:15 +0300
+title: Connecting To MySQL & MariaDB using MySql.Data in C# & .NET 
+date: 2026-05-09 12:56:15 +0300
 categories:
     - MySQL
     - MariaDB
@@ -20,19 +20,21 @@ Here, we have a number of choices:
 | [MySql.Data](https://dev.mysql.com/downloads/)               | Official driver maintained by Oracle                       |
 | [DevArt.Data.MySQL](https://www.devart.com/dotconnect/mysql/) | Commercial driver                                          |
 
-In this post, we will look at how to use the [MySQLConnector](https://www.nuget.org/packages/MySqlConnector/) package.
+In our previous post, "[Connecting To MySQL & MariaDB using MySQLConnector in C# & .NET]({% post_url 2026-05-08-connecting-to-mysql-mariadb-using-mysqlconnector-in-c-net %})", we looked at how to connect to [MySQL](https://www.mysql.com/) or [MariaDB](https://mariadb.org/) database from a .NET application using the [MySQLConnector](https://mysqlconnector.net/) [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) driver
 
-Create a new project and then add the `MySqlConnector` package as follows:
+In this post, we will look at how to use the [MySql.Data](https://www.nuget.org/packages/mysql.data/) package, the official driver built and maintained by [Oracle](https://www.oracle.com/).
+
+Create a new project and then add the `MySql.Data` package as follows:
 
 ```bash
-dotnet add package MySqlConnector
+dotnet add package MySql.Data
 ```
 
 We then write some code to **connect** to the database and fetch the **current date and time**.
 
 ```c#
 using System.Data;
-using MySqlConnector;
+using MySql.Data.MySqlClient;
 
 const string connectionString = "Server=localhost;userid=root;password=mystrongpassword123;database=testdb";
 
@@ -59,7 +61,7 @@ You can also do it this way, though it is more **unwieldy**.
 
 ```c#
 using System.Data;
-using MySqlConnector;
+using MySql.Data.MySqlClient;
 
 const string connectionString = "Server=localhost;userid=root;password=mystrongpassword123;database=testdb";
 using (var cn = new MySqlConnection(connectionString))
@@ -145,12 +147,12 @@ using (var cn = new MySqlConnection(connectionString))
 
 If we run this program, we should get something like this in the console:
 
-![consoleDates](../images/2026/05/consoleDates.png)
+![consoleDates](../images/2026/05/mysqldataconsole.png)
 
 ### TLDR
 
-**You can use the `MySqlConnector` to connect to MySQL and MariaDB databases.**
+**You can use the `MySql.Data` to connect to MySQL and MariaDB databases.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-08%20-%20MySqlConnection).
+The code is in my GitHub.
 
 Happy hacking!
