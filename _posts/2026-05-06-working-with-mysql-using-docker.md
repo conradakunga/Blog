@@ -9,7 +9,7 @@ categories:
 
 Thanks to the power and flexibility of [Docker](https://www.docker.com/), it is pretty trivial to spin up a [MySQL](https://www.mysql.com/) database instance for **development** and **experimentation**.
 
-The most current version, as I write this, is 9.7.
+The most current version, as I write this, is `9.7`.
 
 The simplest way is to use a `docker-compose.yaml` file.
 
@@ -82,5 +82,7 @@ My tool of choice here is [JetBrains](https://www.jetbrains.com/) [DataGrip](htt
 ### TLDR
 
 **Dockerized MySQL is very straightforward to set up.**
+
+The code is in my GitHub.
 
 Happy hacking!
