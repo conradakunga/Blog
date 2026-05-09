@@ -5,6 +5,7 @@ date: 2026-05-06 11:38:49 +0300
 categories:
     - Database
     - MySQL
+    - MariaDB
 ---
 
 Thanks to the power and flexibility of [Docker](https://www.docker.com/), it is pretty trivial to spin up a [MariaDB](https://mariadb.org/) database instance for **development** and **experimentation**.
