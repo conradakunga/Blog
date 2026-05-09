@@ -26,6 +26,10 @@ services:
       MYSQL_DATABASE: testdb
 ```
 
+The container should be up and running once you spin this up.
+
+![mysqlcontainer](../images/2026/05/mysqlcontainer.png)
+
 Once you shut down this instance, its data is lost.
 
 If you want to persist the data, do it like this:

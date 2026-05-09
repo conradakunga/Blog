@@ -51,6 +51,10 @@ services:
       - /Users/rad/Docker/containers/MariaDB:/var/lib/mysql
 ```
 
+The container should be up and running once you spin this up.
+
+![mariadbcontainer](../images/2026/05/mariadbcontainer.png)
+
 As a habit, it is good to be explicit about the timezone.
 
 Our final file looks like this:
@@ -83,7 +87,7 @@ You can then query to verify all is well.
 
 My tool of choice here is [JetBrains](https://www.jetbrains.com/) [DataGrip](https://www.jetbrains.com/datagrip/), but you can use anything else, such as [MySQL Workbench](https://www.mysql.com/products/workbench/).
 
-Of note, [MariaDB is a close relative of MySQL](https://mariadb.org/en/), and much of what works for MySQL will work for MariaDB.
+Of note, [MariaDB is a close relative of MySQL](https://mariadb.org/en/), and much of what works for **MySQL** will work for **MariaDB**.
 
 ### TLDR
 
