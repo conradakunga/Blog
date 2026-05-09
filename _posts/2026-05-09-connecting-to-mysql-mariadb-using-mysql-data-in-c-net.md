@@ -149,7 +149,7 @@ If we run this program, we should get something like this in the console:
 
 ![consoleDates](../images/2026/05/mysqldataconsole.png)
 
-You will not that the code is identical to that in the [previous post]({% post_url 2026-05-08-connecting-to-mysql-mariadb-using-mysqlconnector-in-c-net %}).
+You will note that the code is **identical** to that in the [previous post]({% post_url 2026-05-08-connecting-to-mysql-mariadb-using-mysqlconnector-in-c-net %}).
 
 ### TLDR
 
