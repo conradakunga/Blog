@@ -13,7 +13,7 @@ The most current version, as I write this, is `9.7`.
 
 The simplest way is to use a `docker-compose.yaml` file.
 
-Below is a simple one that will spin up an instance that will always restart unless you explicitly shut it down.
+Below is a simple file that spins up an instance that will **always restart** unless you explicitly shut it down.
 
 ```yaml
 services:
@@ -83,6 +83,6 @@ My tool of choice here is [JetBrains](https://www.jetbrains.com/) [DataGrip](htt
 
 **Dockerized MySQL is very straightforward to set up.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-06%20-%20MySQL%20Docker%20Compose).
 
 Happy hacking!
