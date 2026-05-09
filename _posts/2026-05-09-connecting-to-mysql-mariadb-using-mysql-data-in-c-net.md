@@ -153,6 +153,6 @@ If we run this program, we should get something like this in the console:
 
 **You can use the `MySql.Data` to connect to MySQL and MariaDB databases.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-09%20-%20MySqlData%20Connection).
 
 Happy hacking!
