@@ -143,10 +143,14 @@ using (var cn = new MySqlConnection(connectionString))
 }
 ```
 
+If we run this program, we should get something like this in the console:
+
+![consoleDates](../images/2026/05/consoleDates.png)
+
 ### TLDR
 
 **You can use the `MySqlConnector` to connect to MySQL and MariaDB databases.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-08%20-%20MySqlConnection).
 
 Happy hacking!
