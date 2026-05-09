@@ -89,6 +89,6 @@ Of note, [MariaDB is a close relative of MySQL](https://mariadb.org/en/), and mu
 
 **Dockerized MariaDB is very straightforward to set up.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-06%20-%20MySQL%20Docker%20Compose).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-07%20-%20MariaDB%20Docker%20Compose).
 
 Happy hacking!
