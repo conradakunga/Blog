@@ -1,0 +1,94 @@
+---
+layout: post
+title: Working With MySQL using Docker
+date: 2026-05-06 11:38:49 +0300
+categories:
+    - Database
+    - MySQL
+---
+
+Thanks to the power and flexibility of [Docker](https://www.docker.com/), it is pretty trivial to spin up a [MariaDB](https://mariadb.org/) database instance for **development** and **experimentation**.
+
+The most current version, as I write this, is `12.2.2`.
+
+![mariadbversion](../images/2026/05/mariadbversion.png)
+
+The simplest way is to use a `docker-compose.yaml` file.
+
+Below is a simple file that spins up an instance that will **always restart** unless you explicitly shut it down.
+
+```yaml
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: mystrongpassword123
+      MYSQL_DATABASE: testdb
+```
+
+Once you shut down this instance, its **data is lost**.
+
+If you want to **persist** the data, do it like this:
+
+First, decide on a location in your file system where you want the persistent data to remain.
+
+Mine is here - `/Users/rad/Docker/containers/MariaDB`
+
+We can update our **Docker Compose** file as follows:
+
+```yaml
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: mystrongpassword123
+      MARIADB_DATABASE: testdb
+    volumes:
+      - /Users/rad/Docker/containers/MariaDB:/var/lib/mysql
+```
+
+As a habit, it is good to be explicit about the timezone.
+
+Our final file looks like this:
+
+```yaml
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: mystrongpassword123
+      TZ: Africa/Nairobi
+      MARIADB_DATABASE: testdb
+    ports:
+      - "3307:3306"
+    volumes:
+      - /Users/rad/Docker/containers/MariaDB:/var/lib/mysql
+```
+
+Here, I am binding the host to port `3307` as I am already using `3306` for a [MySQL](https://www.mysql.com/) container.
+
+Using your favourite tool of choice, you can **verify that everything is working** as expected.
+
+![mysqlconnect](../images/2026/05/mariadbconnect.png)
+
+You can then query to verify all is well.
+
+![mysqltimestamp](../images/2026/05/mariadbtest.png)
+
+My tool of choice here is [JetBrains](https://www.jetbrains.com/) [DataGrip](https://www.jetbrains.com/datagrip/), but you can use anything else, such as [MySQL Workbench](https://www.mysql.com/products/workbench/).
+
+Of note, [MariaDB is a close relative of MySQL](https://mariadb.org/en/), and much of what works for MySQL will work for MariaDB.
+
+### TLDR
+
+**Dockerized MariaDB is very straightforward to set up.**
+
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-06%20-%20MySQL%20Docker%20Compose).
+
+Happy hacking!
