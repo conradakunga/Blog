@@ -28,6 +28,10 @@ services:
       MYSQL_DATABASE: testdb
 ```
 
+The container should be up and running once you spin this up.
+
+![mariadbcontainer](../images/2026/05/mariadbcontainer.png)
+
 Once you shut down this instance, its **data is lost**.
 
 If you want to **persist** the data, do it like this:
@@ -50,10 +54,6 @@ services:
     volumes:
       - /Users/rad/Docker/containers/MariaDB:/var/lib/mysql
 ```
-
-The container should be up and running once you spin this up.
-
-![mariadbcontainer](../images/2026/05/mariadbcontainer.png)
 
 As a habit, it is good to be explicit about the timezone.
 
