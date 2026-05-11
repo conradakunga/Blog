@@ -14,10 +14,10 @@ In two prior posts, "[Connecting To MySQL & MariaDB using MySqlConnector in C# &
 
 In this post we will look at how to work with the ADO.NET primitives to interface with each of the databases and perform the following:
 
-1. Insert
-2. List
-3. Update
-4. Delete
+1. **Insert**
+2. **List**
+3. **Update**
+4. **Delete**
 
 For this set of exercises, we will use a table with the following schema:
 
