@@ -10,7 +10,7 @@ categories:
     - .NET
 ---
 
-In two prior posts, "" and "", we looked at how to connect to a MySQL and a MariaDB database respectively.
+In two prior posts, "[Connecting To MySQL & MariaDB using MySqlConnector in C# & .NET]({% post_url 2026-05-08-connecting-to-mysql-mariadb-using-mysqlconnector-in-c-net %})" and "[Connecting To MySQL & MariaDB using MySql.Data in C# & .NET]({% post_url 2026-05-09-connecting-to-mysql-mariadb-using-mysql-data-in-c-net %})", we looked at how to connect to a MySQL a MariaDB databases using two different ADO.NET MySQL providers.
 
 In this post we will look at how to work with the ADO.NET primitives to interface with each of the databases and perform the following:
 
