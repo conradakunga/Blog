@@ -12,7 +12,7 @@ categories:
 
 In our previous post, "[Interfacing With MySQL & MariaDB Databases in C# & .NET]({% post_url 2026-05-10-interfacing-with-mysql-mariadb-databases-in-c-net %})", we looked at how to interface with [MySQL](https://www.mysql.com/) and [MariaDB](https://mariadb.org/) using the [ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/) primitives - [Connections](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection?view=net-10.0), [Commands](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbcommand?view=net-10.0) and [Parameters](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbparameter?view=net-10.0) using either of the MySQL providers.
 
-In this post we will look at how to realize the same using Dapper, a library we have talked about extensively.
+In this post we will look at how to realize the same using [Dapper](https://github.com/DapperLib/Dapper), a library we have talked about [extensively]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %}).
 
 1. **Insert**
 2. **List**
