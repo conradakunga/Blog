@@ -160,6 +160,6 @@ We can see here that there is **considerably less code**, making it **easier to 
 
 **Dapper can drastically simplify working with `MySQL` and `MariaDB`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-11%20-%20MySqlConnection%20Dapper).
 
 Happy hacking!
