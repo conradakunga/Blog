@@ -31,7 +31,7 @@ CREATE TABLE spies (
 )
 ```
 
-We will use the following type:
+We will use the following `type`:
 
 ```c#
 public sealed class Spy
