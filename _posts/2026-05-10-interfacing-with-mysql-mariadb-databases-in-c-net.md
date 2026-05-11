@@ -227,6 +227,6 @@ If we view our data, the relevant row is gone.
 
 **You can use ADO.NET primitives to fetch and manipulate data from `MySQL` and `MariaDB`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-10%20-%20MySqlConnection%20ADO).
 
 Happy hacking!
