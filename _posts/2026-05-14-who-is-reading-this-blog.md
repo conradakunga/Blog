@@ -31,4 +31,8 @@ This is much higher than I expected, in an age where writing (and reading) seem 
 
 But it is the feedback from readers who have benefited from the blog that makes me happiest.
 
+I am always happy to hear from you.
+
+conradakunga@gmail.com
+
 Happy hacking!
