@@ -101,7 +101,7 @@ This generates the following:
 
 So far so good.
 
-However, the problem of cultures and internationalization raises its ugly head.
+However, the problem of [cultures and internationalization](https://mattjameschampion.com/2024/09/27/a-primer-on-cultureinfo-and-internationalisation-in-c-net/) raises its ugly head.
 
 Take this row:
 
@@ -113,7 +113,7 @@ Is Anglina's birthday on 1<sup>st</sup> April or 4<sup>th</sup> January
 
 There are a number of solutions to this problem.
 
-The first is to solve it as the `class` level to **compute** a **formatted** column, and then use that in the `ClassMap`.
+The first is to solve it at the `class` level to **compute** a **formatted** column, and then use that in the `ClassMap`.
 
 ```c#
 public sealed record Spy
@@ -126,13 +126,13 @@ public sealed record Spy
 }
 ```
 
-The magic here is our new computed column:
+The magic here is our new **computed** column:
 
 ```c#
  public string FormattedDateOfBirth => DateOfBirth.ToString("d MMM M yyyy");
 ```
 
-We then update our `ClassMap` to use this column, rather than the actual `DateOfBirth`.
+We then update our `ClassMap` to use **this** column, rather than the actual `DateOfBirth`.
 
 ```c#
 public sealed class SpyClassmap : ClassMap<Spy>
@@ -167,14 +167,14 @@ Our generated CSV looks like this:
 | Feil | Kenneth | 9 Dec 2014 |
 
 
-We can see here that our DateOfBirth is now formatted unambiguously.
+We can see here that our `DateOfBirth` is now formatted **unambiguously**.
 
-There are a number of problems with this approach:
+There are a number of **problems** with this approach:
 
 1. More code
-2. Changing our types to support presentation concerns is not very clean, or flexible.
+2. **Changing our `type`** to address **presentation** concerns is neither **clean** nor **flexible**.
 
-A better approach is to solve this problem in the ClassMap itself.
+A better approach is to solve this problem in the `ClassMap` itself.
 
 You can do it as follows:
 
@@ -212,12 +212,12 @@ The generated file looks like this:
 | Turner | Tim | 22 Jan 2000 |
 | Feil | Kenneth | 9 Dec 2014 |
 
-This is much cleaner, avoids polluting the type itself, and affords you a lot of flexibility around the formatting of the output, for example is you want a different format for different scenarios.
+This is much **cleaner**, avoids **polluting** the `type` itself, and affords you a lot of **flexibility** in the output formatting, for example, if you want different formats for different **scenarios**.
 
 ### TLDR
 
 **You can control the format of CSVExport columns using a `TypeConverterOption`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-13%20-%20CSVExportFormat).
 
 Happy hacking!

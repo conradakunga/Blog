@@ -25,7 +25,7 @@ public sealed record Spy
 }
 ```
 
-In our project we need to install the following packages:
+In our project, we need to install the following packages:
 
 1. [Bogus](https://github.com/bchavez/Bogus)
 2. [CSVHelper](https://github.com/joshclose/csvhelper)
@@ -85,10 +85,10 @@ Normally, this is enough.
 But there are scenarios where you want some **changes**:
 
 1. You want to change the **order** of the columns
-2. You want to **omit** some column altogether 
+2. You want to **omit** some columns altogether 
 3. You want to change the **headers** of the columns
 
-For such scenarios, we make use of the `ClassMap`.
+In such scenarios, we use the `ClassMap`.
 
 This is a **generic** class that we implement use to control our output.
 
@@ -118,7 +118,7 @@ csv.Context.RegisterClassMap<SpyClassmap>();
 csv.WriteRecords(spies);
 ```
 
-The important bit here is the registration of the `ClassMap`.
+The important bit here is **registering** the `ClassMap`.
 
 ```c#
 csv.Context.RegisterClassMap<SpyClassmap>();
@@ -153,7 +153,7 @@ In this manner, we can control the **output** and **order** of the properties in
 
 ### TLDR
 
-**The *CSVHelper* `ClassMap` can be used to configure column presence and order for CSV output.**
+**The *CSVHelper* `ClassMap` can be used to configure the presence and order of columns in CSV output.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-12%20-%20CSVExport).
 
