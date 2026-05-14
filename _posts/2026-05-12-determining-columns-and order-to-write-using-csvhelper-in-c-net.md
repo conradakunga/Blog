@@ -155,6 +155,6 @@ In this manner, we can control the **output** and **order** of the properties in
 
 **The *CSVHelper* `ClassMap` can be used to configure column presence and order for CSV output.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-05-12%20-%20CSVExport).
 
 Happy hacking!
