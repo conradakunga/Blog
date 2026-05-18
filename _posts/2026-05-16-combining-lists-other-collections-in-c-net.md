@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Sooner or later, you will encounter a scenario where you need to **combine the elements** of **two** `list` objects into a new `list`.
+Sooner or later, you will encounter a scenario where you need to **combine the elements** of **two** [list](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.8.1) objects into a new `list`.
 
 Take the following case:
 
