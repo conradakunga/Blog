@@ -6,7 +6,7 @@ categories:
     - SQL Server
 ---
 
-Generally, it is advisable not to use reserved words for your column names in Microsoft SQL Server. Or, for that matter, any other database.
+Generally, it is advisable **not** to use [reserved words](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/reserved-keywords-transact-sql?view=sql-server-ver17) for your column names in [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server). Or, for that matter, **any other database**.
 
 Take this example:
 
@@ -18,7 +18,7 @@ This will return an error:
 
 ![reservedWordError](../images/2026/05/reservedWordError.png)
 
-If, however, you really, really want to use the name Table, you do it like this:
+If, however, you **really, really** want to use the name `Table`, you do it like this:
 
 ```sql
 select getdate() as [Table]
@@ -28,15 +28,15 @@ This will work:
 
 ![reservedSuccess](../images/2026/05/reservedSuccess.png)
 
-This relies on enclosing the name in square brackets - `[` and `]`
+This relies on enclosing the name in **square brackets** - `[` and `]`
 
-You can also use double quotes:
+You can also use **double quotes**:
 
 ```sql
 select getdate() as "Table"
 ```
 
-As well as single quotes:
+As well as **single quotes**:
 
 ```sql
 select getdate() as 'Table'
