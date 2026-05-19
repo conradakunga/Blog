@@ -29,7 +29,7 @@ If we run this, we will get the following:
 
 ![datetimeresults](../images/2026/05/datetimeresults.png)
 
-The date and time types, however, are specialized.
+The `date` and `time` types, however, are specialized.
 
 ```sql
 declare @Date date=getdate()
@@ -53,6 +53,25 @@ SELECT CAST(@Date AS DATETIME) + CAST(@Time AS DATETIME)
 This will return the following:
 
 ![dateTimeResult](../images/2026/05/dateTimeResult.png)
+
+The complete script is as follows:
+
+```sql
+declare @DateTime  datetime = getdate()
+declare @DateTime2 datetime2 = getdate()
+
+select @DateTime [DateTime], @DateTime2 [DateTime2]
+
+declare @Date date=getdate()
+declare @Time time = getdate()
+
+select @Date [Date], @Time [Time]
+
+SELECT CAST(@Date AS DATETIME2) + CAST(@Time AS DATETIME2) [DateTime]
+
+```
+
+
 
 Note: **this solution will not work for a `DateTime2`**. We will look at that in the next post.
 
