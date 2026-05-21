@@ -4,6 +4,10 @@ title: The Enshittification Continues - APIDog
 date: 2026-05-21 22:12:15 +0300
 categories:
     - Software
+    - Tools
+    - APIDog
+    - Insomnia
+    - Yaak
 ---
 
 As i've mentioned before, for many years I was a keen user of [Insomnia](https://insomnia.rest/) as a tool for testing APIs.
