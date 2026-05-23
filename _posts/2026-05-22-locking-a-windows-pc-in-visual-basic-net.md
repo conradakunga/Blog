@@ -3,7 +3,8 @@ layout: post
 title: Locking A Windows PC In Visual Basic .NET
 date: 2026-05-22 12:44:59 +0300
 categories:
-    
+    - Visual Basic
+    - C#
 ---
 
 In our previous post, "[Locking A Windows PC In C# & .NET]({% post-url 2026-05-22-locking-a-windows-pc-in-c-net %})", we looked at how to **lock** a [Windows](https://www.microsoft.com/en-us/windows) PC in C#.
