@@ -8,19 +8,19 @@ categories:
     - Windows
 ---
 
-This is my current Windows 11 lock screen.
+This is my current [Windows](https://www.microsoft.com/en-us/windows) [11](https://en.wikipedia.org/wiki/Windows_11) **lock screen**.
 
 ![lockScreen](../images/2026/05/lockScreen.png)
 
-From this screen, you cannot use the computer until you enter your password, PIN or fingerprint.
+From this screen, you cannot use the computer until you enter your **password**, **PIN** or **fingerprint**, very useful from a **security** perspective.
 
 ![login](../images/2026/05/login.png)
 
-I wanted to add functionality to an application that I am maintaining that would lock your computer once you logged out of it.
+I wanted to add functionality to an application that I am maintaining that would l**ock your computer once you logged out** of it.
 
 This turns out to be pretty trivial.
 
-We need the magic of [interop](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.dllimportattribute?view=netframework-4.8.1) where we access the Windows API from C# and reference the [LockWorkStation()](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation) method.
+We need the magic of [interop](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.dllimportattribute?view=netframework-4.8.1) where we access the Windows API from [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) and reference the [LockWorkStation()](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation) method.
 
 ```c#
 [DllImport("user32")]
