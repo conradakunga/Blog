@@ -14,7 +14,7 @@ In [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server), there are
 - [Time](https://learn.microsoft.com/en-us/sql/t-sql/data-types/time-transact-sql?view=sql-server-ver17)
 - [Date](https://learn.microsoft.com/en-us/sql/t-sql/data-types/date-transact-sql?view=sql-server-ver17)
 
-For this post, we will not deal with `DateTimeOffset`, as that has additional implications.
+For this post, we will not deal with `DateTimeOffset`, as that has **additional implications**.
 
 For `DateTime` and `DateTime2`, the `date` and `time` components are contained within the type.
 

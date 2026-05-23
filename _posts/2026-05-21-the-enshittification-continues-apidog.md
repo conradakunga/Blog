@@ -10,7 +10,7 @@ categories:
     - Yaak
 ---
 
-As i've mentioned before, for many years I was a keen user of [Insomnia](https://insomnia.rest/) as a tool for testing APIs.
+As I've mentioned before, for many years I was a keen user of [Insomnia](https://insomnia.rest/) as a tool for testing APIs.
 
 Until the unfortunate process of [enshittification]({% post_url 2025-12-26-automatically-fetching-an-identity-server-token-with-yaak %}) caught up with it. Which, as a software developer, I **totally understand**.
 
