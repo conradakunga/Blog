@@ -7,7 +7,7 @@ categories:
     - C#
 ---
 
-In our previous post, "[Locking A Windows PC In C# & .NET]({% post-url 2026-05-22-locking-a-windows-pc-in-c-net %})", we looked at how to **lock** a [Windows](https://www.microsoft.com/en-us/windows) PC in C#.
+In our previous post, "[Locking A Windows PC In C# & .NET]({% post_url 2026-05-22-locking-a-windows-pc-in-c-net %})", we looked at how to **lock** a [Windows](https://www.microsoft.com/en-us/windows) PC in C#.
 
 In this post we will look at how to do the same thing in [Visual Basic.NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/).
 
