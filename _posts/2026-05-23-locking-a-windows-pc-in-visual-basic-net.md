@@ -28,4 +28,4 @@ LockWorkStation();
 
 ### TLDR
 
-**You can call the Windows API from Visual Basic .NET and invoke the `LockWorkStation()` method to lock your computer.**
+**You can call the Windows API from Visual Basic .NET, and invoke the `LockWorkStation()` method to lock your computer.**
