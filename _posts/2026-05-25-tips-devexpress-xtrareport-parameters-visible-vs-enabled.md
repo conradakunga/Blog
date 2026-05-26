@@ -12,12 +12,12 @@ When creating a parameter object for a [DevExpress](https://www.devexpress.com/)
 
 ![createParameter](../images/2026/05/createParameter.png)
 
-You might wonder what is the difference between Visible and Enabled.
+You might wonder what the difference is between `Visible` and `Enabled`.
 
-[Enabled](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraReports.Parameters.Parameter.Enabled) controls whether the parameter allows **editing** of parameter values from the user at runtime.
+[Enabled](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraReports.Parameters.Parameter.Enabled) controls whether the parameter allows the **user to edit its value** at runtime.
 
 [Visible](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraReports.Parameters.Parameter.Visible) controls whether the parameter is **shown** in the parameters panel UI.
 
-If you are providing the parameter **programmatically** in your code, you typically want these to both be `false`.
+If you are providing the parameter value programmatically in your code, you typically want **both** to be `false`.
 
 Happy hacking!
