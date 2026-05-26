@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Short Circuiting Or Evaluation in Visual Basic .NET
+title: Short Circuiting 'Or' Evaluation in Visual Basic .NET
 date: 2026-05-24 12:03:55 +0300
 categories:
     - VB.NET
@@ -11,7 +11,7 @@ Some years back, in the post "[A Rose By Any Other Name - Short Circuiting]({% p
 
 In this post, we will look at a a **similar** scenario, but with the `OR` condition.
 
-Take this C# code, where we have two methods:
+Take this [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) code, where we have two methods:
 
 ```c#
 public bool FirstCheck()
