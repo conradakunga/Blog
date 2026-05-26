@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuring Teams Webhooks for Channels
+title: Configuring Microsoft Teams Webhooks for Channels
 date: 2026-05-26 13:43:35 +0300
 categories:
     - Microsoft 365
