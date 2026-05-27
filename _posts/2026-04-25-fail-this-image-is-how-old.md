@@ -20,8 +20,8 @@ The details told the story:
 
 ![imageDetails](../images/2026/04/imageDetails.png)
 
-The creation date is almost certainly **nonsense**, and Orbstack is doing its best to compute the age.
+The creation date is almost certainly **nonsense**, and **Orbstack** is doing its best to compute the age.
 
-46 years indeed!
+`46` years indeed!
 
 Happy hacking!
