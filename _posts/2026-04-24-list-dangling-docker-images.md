@@ -8,15 +8,13 @@ categories:
 
 [Docker](https://www.docker.com/) is now an essential tool for software developers, as it allows you to spin up almost any infrastructure you may need.
 
-Ordinarily, you would use a utility to manage your containers and images. This may be Docker Desktop or, if you are on macOS, Orbstack.
+Ordinarily, you would use a utility to manage your containers and images. This may be [Docker Desktop](https://docs.docker.com/desktop/) or, if you are on [macOS](https://www.apple.com/os/macos/), [Orbstack](https://orbstack.dev/).
 
-On Orbstack, you can view your local images.
+Images can be in one of **three** states:
 
-Images can be in one of two states:
-
-1. In use - currently in active use for a running container
-2. Unused - downloaded to your local cache but not in use
-3. Dangling - a newver version of the image has been downloaded
+1. **In use** - currently in **active use** for a running container
+2. **Unused** - **downloaded** to your local cache but not in use
+3. **Dangling** - a **newer version** of the image has been downloaded
 
 ![dockerImageState](../images/2026/04/dockerImageState.png)
 
@@ -24,7 +22,7 @@ The **dangling** images are listed further down:
 
 ![dockerDangling](../images/2026/04/dockerDangling.png)
 
-You can also get this information via the command line.
+You can also get this information via the **command line**.
 
 The [docker images](https://docs.docker.com/reference/cli/docker/image/ls/) command lists all the images.
 
@@ -32,7 +30,7 @@ The [docker images](https://docs.docker.com/reference/cli/docker/image/ls/) comm
 docker images
 ```
 
-This returns a list like this:
+This returns a **list** like this:
 
 ![dockerImgaes](../images/2026/04/dockerImgaes.png)
 
