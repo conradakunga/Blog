@@ -9,7 +9,7 @@ categories:
     - .NET
 ---
 
-In our previous post, "[Determining Columns and Order To Write Using CSVHelper In C# & .NET]({% post_url 2026-05-12-determining-columns-and-order-to-write-using-csvhelper-in-c-net %})", we looked at how to control the **columns** and their **order** when outputting **CSV** files using the [CSVHelper](https://github.com/joshclose/csvhelper) library.
+In our previous post, "[Determining Columns and Order To Write Using CSVHelper In C# & .NET]({% post_url 2026-05-12-determining-columns-and order-to-write-using-csvhelper-in-c-net %})", we looked at how to control the **columns** and their **order** when outputting **CSV** files using the [CSVHelper](https://github.com/joshclose/csvhelper) library.
 
 In this post, we will look at another common problem - **formatting** of data.
 
