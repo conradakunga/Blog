@@ -4,6 +4,7 @@ title: Looping Through DevExpress Menu Bar Menu Items
 date: 2025-06-17 16:13:06 +0300
 categories:
     - VB.NET
+    - Visual Basic
     - C#
     - DevExpress
 ---

@@ -4,6 +4,7 @@ title: Programmatically Adding DevExpress Menu Bar Menu Items
 date: 2025-06-18 14:42:44 +0300
 categories:
     - VB.NET
+    - Visual Basic
     - C#
     - DevExpress
 ---

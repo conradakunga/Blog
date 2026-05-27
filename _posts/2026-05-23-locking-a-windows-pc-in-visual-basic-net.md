@@ -3,6 +3,7 @@ layout: post
 title: Locking A Windows PC In Visual Basic .NET
 date: 2026-05-23 12:44:59 +0300
 categories:
+    - VB.NET
     - Visual Basic
     - C#
 ---

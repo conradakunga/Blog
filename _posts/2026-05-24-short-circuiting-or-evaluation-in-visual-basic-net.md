@@ -4,6 +4,7 @@ title: Short Circuiting 'Or' Evaluation in Visual Basic .NET
 date: 2026-05-24 12:03:55 +0300
 categories:
     - VB.NET
+    - Visual Basic
     - .NET
 ---
 

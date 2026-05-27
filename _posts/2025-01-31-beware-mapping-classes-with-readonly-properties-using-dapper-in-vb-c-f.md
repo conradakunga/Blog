@@ -6,6 +6,7 @@ categories:
     - C#
     - Dapper
     - VB.NET
+    - Visual Basic
     - F#
 ---
 

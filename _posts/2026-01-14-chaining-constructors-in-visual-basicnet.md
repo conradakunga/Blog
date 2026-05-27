@@ -3,7 +3,8 @@ layout: post
 title: Chaining Constructors In Visual Basic.NET
 date: 2026-01-14 00:41:29 +0300
 categories:
-    -  Visual Basic.NET
+    - Visual Basic.NET
+    - VB.NET
     - .NET
 ---
 
