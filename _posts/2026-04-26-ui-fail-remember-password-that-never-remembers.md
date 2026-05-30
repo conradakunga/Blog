@@ -19,7 +19,7 @@ This can be **tiresome**.
 
 ![rememerSQLPassword](../images/2026/04/rememerSQLPassword.png)
 
-As does [Visual Studio](https://visualstudio.microsoft.com/vs/), to remember the credentials to a [Nuget](https://www.nuget.org/) package server (we use [Proget](https://inedo.com/proget)).
+As does [Visual Studio](https://visualstudio.microsoft.com/vs/), to remember the credentials to a [Nuget](https://www.nuget.org/) package server (we use [ProGet](https://inedo.com/proget)).
 
 ![rememberProxyPassword](../images/2026/04/rememberProxyPassword.png)
 
@@ -33,7 +33,7 @@ Visual Studio:
 
 ![vsVersion](../images/2026/04/vsVersion.png)
 
-SQL Server Mangement Studio
+SQL Server Management Studio
 
 ![ssmsVersion](../images/2026/04/ssmsVersion.png)
 

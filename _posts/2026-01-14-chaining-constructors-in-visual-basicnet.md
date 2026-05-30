@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chaining Constructors In Visual Basic.NET
+title: Chaining Constructors In Visual Basic .NET
 date: 2026-01-14 00:41:29 +0300
 categories:
-    - Visual Basic.NET
+    - Visual Basic .NET
     - VB.NET
     - .NET
 ---
 
-Recently, while refactoring some legacy [Visual Basic .NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/) code, I ran into a situation where I realized I could reap significant benefits from chaining [constructors](https://learn.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes), rather than **copying and pasting the body** across slightly different versions.
+Recently, while refactoring some legacy [Visual Basic .NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/) code, I realized I could reap significant benefits from **chaining constructors** rather than **copying and pasting the body** across slightly different versions.
 
 The original `type` was as follows:
 
@@ -45,7 +45,7 @@ Public class Teacher
 End class
 ```
 
-The refactoring was around the fact that the domain now required a person to have three names.
+The refactoring was around the fact that the domain now required a person to have **three names**.
 
 ```basic
 Public Sub New(Firstname as String, Surname as String, MiddleName as String)
@@ -55,7 +55,7 @@ Public Sub New(Firstname as String, Surname as String, MiddleName as String)
 End sub
 ```
 
-If you look at the code, there is a clear duplication between the two `Person` constructors.
+If you look at the code, there is a clear **duplication** between the two `Person` constructors.
 
 ```basic
 Public class Person
@@ -121,8 +121,8 @@ Here, we call the base-class **constructor** that takes the `3` names, then set 
 
 Note the use of keywords here:
 
-- `Me` refers to the current class
-- `MyBase` refers to the base class
+- `Me` refers to the **current** class
+- `MyBase` refers to the **base** class
 
 ### TLDR
 

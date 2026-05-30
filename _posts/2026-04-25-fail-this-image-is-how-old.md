@@ -6,15 +6,15 @@ categories:
     - Fail
 ---
 
-If you are a **serious developer**, you almost certainly must be using [Docker](https://www.docker.com/).
+If you are a **serious developer**, you almost certainly use [Docker](https://www.docker.com/).
 
 I manage my images and containers on [macOS](https://www.apple.com/os/macos/) using the excellent tool [Orbstack](https://orbstack.dev/).
 
-The other day I was looking at my **images** and noticed something curious:
+The other day, I was looking at my **images** and noticed something curious:
 
 ![oldImageListing](../images/2026/04/oldImageListing.png)
 
-That is certainly a pretty **ancient image**, certainly older the Docker itself. It's even older than [Linux](https://en.wikipedia.org/wiki/Linux)!
+That is certainly a pretty **ancient image**, certainly older than **Docker** itself. It's even older than [Linux](https://en.wikipedia.org/wiki/Linux)!
 
 The details told the story:
 

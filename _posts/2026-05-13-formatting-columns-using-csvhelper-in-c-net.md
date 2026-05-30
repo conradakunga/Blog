@@ -25,7 +25,7 @@ public sealed record Spy
 }
 ```
 
-In our project we need to install the following packages:
+In our project, we need to install the following **packages**:
 
 1. [Bogus](https://github.com/bchavez/Bogus)
 2. [CSVHelper](https://github.com/joshclose/csvhelper)
@@ -51,7 +51,7 @@ var faker = new Faker<Spy>()
 var spies = faker.Generate(15);
 ```
 
-We then use the code from the last example to generate a CSV.
+We then use the code from the previous example to generate a CSV file.
 
 First, our `ClassMap`:
 
@@ -171,7 +171,7 @@ We can see here that our `DateOfBirth` is now formatted **unambiguously**.
 
 There are a number of **problems** with this approach:
 
-1. More code
+1. **More** code
 2. **Changing our `type`** to address **presentation** concerns is neither **clean** nor **flexible**.
 
 A better approach is to solve this problem in the `ClassMap` itself.
