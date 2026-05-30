@@ -4,7 +4,7 @@ title: Logging Off A Windows PC In C# & .NET
 date: 2026-05-29 04:50:09 +0300
 categories:
     - C#
-    . NET
+    - .NET
 ---
 
 In an earlier post, "[Locking A Windows PC In C# & .NET]({% post_url 2026-05-22-locking-a-windows-pc-in-c-net %})", we looked at how to invoke the [Windows API](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list) to lock the screen.
