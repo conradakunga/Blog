@@ -69,6 +69,6 @@ The duration is 16 years, 4 months, 30 days
 
 ### TLDR
 
-You can customize the display or large `TimeSpans` by passing parameters for `maxUnit` and `precision`.
+**You can customize the display or large `TimeSpans` by passing parameters for `maxUnit` and `precision`.**
 
 Happy hacking!
