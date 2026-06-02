@@ -47,7 +47,6 @@ This can be addressed in Humanizer by passing some parameters to the Humanize() 
 
 ```c#
 Console.WriteLine($"The duration is {age.Humanize(maxUnit: TimeUnit.Year, precision: 2)}");
-}
 ```
 
 This will print the following:
@@ -60,7 +59,6 @@ We can make it more **accurate** by **increasing the precision**:
 
 ```c#
 Console.WriteLine($"The duration is {age.Humanize(maxUnit: TimeUnit.Year, precision: 3)}");
-}
 ```
 
 This will print the following:
