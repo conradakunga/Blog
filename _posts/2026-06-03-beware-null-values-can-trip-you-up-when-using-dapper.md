@@ -8,13 +8,14 @@ categories:
     - Database
     - StarLibrary
     - Dapper
+    - Beware
 ---
 
 I have [extensively discussed]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %}) the use of the excellent library [Dapper](https://github.com/DapperLib/Dapper) for **database access** with most database engines.
 
 Today we will look at a potential problem you can run into unless you understand how to use [nullable value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) types.
 
-Take a common scenario where you need to retrieve the **time** in the database server.
+Take a **common** scenario where you need to retrieve the **time** in the **database server**.
 
 The code is as simple at this:
 
@@ -94,5 +95,7 @@ We have to address the **two** scenarios - when a `NULL` returns, or when a vali
 ### TLDR
 
 **When a NULL is a possible return value, ensure you are using *nullable types* for value types.**
+
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-06-03%20-%20Dapper%20Nulls).
 
 Happy hacking!
