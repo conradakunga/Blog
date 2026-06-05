@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Coding Is Easy - Any Monkey Can Do It. Software, However Is Very Hard
+title: Coding Is Easy - Any Monkey Can Do It. Software, however, is very hard
 date: 2022-01-17 09:06:45 +0300
 categories:
     - Business Of Software
 ---
-There is a famous question those in the software industry ask themselves:
+There is a famous question that those in the software industry ask themselves:
 
 > How hard can it be?
 
@@ -37,7 +37,7 @@ Your function returns this:
 
 How awesome is that?
 
-Since you are shrewd and you don't want to make any assumptions, you post in various Excel focused user groups and blogs about your new formula. You even talk about it on your blog.
+Since you are shrewd and you don't want to make any assumptions, you post in various Excel-focused user groups and blogs about your new formula. You even talk about it on your blog.
 
 Pandemonium!
 
@@ -45,13 +45,13 @@ Everyone wants it!
 
 **"Shut up and take my money!"** is the overwhelming response.
 
-You are so encouraged you even do some *data sciency* stuff and collect data
+You are so encouraged that you even do some *data sciency* stuff and collect data
 
 ![](../images/2022/01/Poll.png)
 
-The results are overwhelming. Dates is such a problem in Excel that 80% of people are willing to pay 50$ for your awesome software.
+The results are overwhelming. Dates are such a problem in Excel that 80% of people are willing to pay 50$ for your awesome software.
 
-So you decide to take advantage of this opportunity, quit your day job and set up a new company to dedicate to this problem.
+So you decide to take advantage of this opportunity, quit your day job, and set up a new company to dedicate to this problem.
 
 ~~And then you lived happily ever after.~~
 
@@ -59,7 +59,7 @@ Ha. Of course not.
 
 Your first problem is how to get your custom formula into users' Excel.
 
-[Registering a custom formula](https://support.microsoft.com/en-us/office/create-custom-functions-in-excel-2f06c10b-3622-40d6-a1b2-b6748ae8231f) is not a trivial exercise for the average non - IT person.
+[Registering a custom formula](https://support.microsoft.com/en-us/office/create-custom-functions-in-excel-2f06c10b-3622-40d6-a1b2-b6748ae8231f) is not a trivial exercise for the average non-IT person.
 
 Since you have no idea how to tackle this problem, you ask around your programmer friends who can create an installer wizard where your users just click Next > Next > Next and have the function registered for you.
 
@@ -70,13 +70,13 @@ As it so happens, one of your friends has some experience in this. And he gives 
     - 2016
     - 2019
     
-    This matters because there are slight differences in how the formulas work in these versions. In your `CURRENT_DATE` function, did you use Excel 2019 specific features? Because those won't work in earlier versions.
+    This matters because there are slight differences in how the formulas work in these versions. In your `CURRENT_DATE` function, did you use Excel 2019-specific features? Because those won't work in earlier versions.
     
 2. What version(s) of Excel do you want to target?
 
-3. You will need a software developer to help you develop the installation wizard for your software, of which your friend is one. He will charge you a friendly rate, but charge you nevertheless.
+3. You will need a software developer to help you build the installation wizard for your software; your friend is one. He will charge you a friendly rate, but charge you nevertheless.
 
-4. Given you are packaging your software in an installer, you have some additional things to think about
+4. Given that you are packaging your software in an installer, you have some additional things to think about
     - What version of Windows will your users be running?
         - Windows 7
         - Windows 8
@@ -86,13 +86,14 @@ As it so happens, one of your friends has some experience in this. And he gives 
         - 32 bit
         - 64 bit
         
+
 Your friend will tell you you need to pay for software to help you with problem 1. [Software like this](https://www.add-in-express.com/purchase/index.php?family=net)
 
 Your friend will also tell you you need to pay for software to help you with problem 4. [Software like this](https://www.advancedinstaller.com/purchase.html)
 
-You discover to your surprise that the [online Excel has a different mechanism](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/custom-functions-overview) for writing and registering custom functions!
+You discover, to your surprise, that the [online Excel has a different mechanism](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/custom-functions-overview) for writing and registering custom functions!
 
-You decide to first concentrate on those using desktop Excel.
+You decide to concentrate on those using desktop Excel first.
 
 So you buy all this extra software and pay your developer to do his thing.
 
@@ -111,15 +112,15 @@ You tell your developer friend that you want to sell your software online. To wh
 
 Luckily for you, he knows a company that [handles such problems](https://stripe.com/pricing) for a fee.
 
-He then goes on to build a complete online purchase experience and you are in business.
+He then goes on to build a complete online purchase experience, and you are in business.
 
 Things start off well.
 
-And then your personal email, which you left on your website explodes with emails like these:
+And then your personal email, which you left on your website, explodes with emails like these:
 
 > "Your component is giving me the wrong result. It's printing 14 April 2022 as 04/14/2022, which is nonsense.
 > 
-> Thanks, James"
+> Thanks, James."
 
 And ...
 
@@ -127,11 +128,11 @@ And ...
 > 
 > Disappointed"
 
-So in a panic you write to some of these customers to find out what the problem is, as you're sure the component is working perfectly.
+So, in a panic, you write to some of these customers to find out what the problem is, as you're sure the component is working perfectly.
 
 Well, it is, but it also isn't.
 
-After a few days of irate email you narrow down the problem.
+After a few days of irate emails, you narrow down the problem.
 
 14 April, 2022 is written differently across countries.
 
@@ -161,37 +162,36 @@ So you call your programmer friend to update the installer.
 
 At which points he tells you:
 
-> "You can't just replace the old function. It has already been used in timetables and models and simulations. If you update the function, you will break people's spreadsheets
+> "You can't just replace the old function. It has already been used in timetables, models, and simulations. If you update the function, you will break people's spreadsheets
 > 
 > This will REALLY upset them."
 
 What do to do? 
 
-> You have to support BOTH the old version and the new version. This is called backwards compatibility.
+> You have to support BOTH the old and new versions. This is called backward compatibility.
 > 
 > You also have to document the new function and explain how to use it, on your websites and in the embedded documentation for your function."
 
 *"Embedded documentation?"* You ask.
 
-> Oh yes, in fact I forgot to tell you that. You have to embed your documentation for your software to be taken seriously. So when the user presses F1, they see this:
+> Oh yes, in fact, I forgot to tell you that. You have to embed your documentation for your software to be taken seriously. So when the user presses F1, they see this:
 > 
 > ![](../images/2022/01/Help.png)
-
 
 *"Oh. How do I do that?"* You ask.
 
 [Software like this](https://www.helpandmanual.com/order.html)
 
-So you put back the original code that you deleted and now your functions look like this
+So you put back the original code that you deleted, and now your functions look like this
 
 ```vbnet
 = CURRENT_DATE()
 = CURRENT_DATE(country_code)
 ```
 
-You have also documented them inline, and on your website.
+You have also documented them in-line and on your website.
 
-So your developer uploads version 2.0 of your software and you email all your customers, because you made them register online.
+So your developer uploads version 2.0 of your software, and you email all your customers, because you made them register online.
 
 You also let your customers know of a new email address to which they can email their support requests.
 
@@ -201,45 +201,45 @@ Ha. Of course not.
 
 Emails start coming in
 
-> "Hello sir.
+> "Hello, sir.
 > 
-> My name is Mohammed Mohammed and I live and work in Somaliland. How do I get a date in Somaliland?"
+> My name is Mohammed Mohammed, and I live and work in Somaliland. How do I get a date in Somaliland?"
 
 You quickly reply:
 
 > "Hi Mohammed, 
 > 
-> As explained in the documentation, you put the 2 digit ISO code for Somaliland as the second parameter."
+> As explained in the documentation, you put the 2-digit ISO code for Somaliland as the second parameter."
 
 
 Mohammed responds.
 
-> "Yes, thank you sir, but Somaliland does not have such a code."
+> "Yes, thank you, sir, but Somaliland does not have such a code."
 
 
 [So you check](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 
 > "Hi Mohammed,
 > 
-> Kindly use `SO` as the code"
+> Kindly use `SO` as the code."
 
 To which he responds:
 
-> "Thank you, but `SO` is the code for Somalia. Our position is Somalia and Somaliland are different countries."
+> "Thank you, but `SO` is the code for Somalia. Our position is that Somalia and Somaliland are different countries."
 
 You also get another bunch of emails that say the same thing:
 
 > "Hi,
 > 
-> is there a way to specify the month in full? The current format is confusing.
+> Is there a way to specify the month in full? The current format is confusing.
 > 
 > Is 04 01 2022 1st April or 4th January? I'd like the format to read as follows:
 > 
-> 1 Apr 2022 or 4 Jan 2022"
+> 1 Apr 2022 or 4 Jan 2022."
 
 So you ask your programmer friend for some advice.
 
-> "As a matter of fact, yes there are special characters called format strings. You can use these to describe how to format dates. Let me send you a table of what you can use for a sample date of 4 Jan 2022"
+> "As a matter of fact, yes, there are special characters called format strings. You can use these to describe how to format dates. Let me send you a table of what you can use for a sample date of 4 Jan 2022."
 
 
 | FormatString   | Value          |
@@ -255,7 +255,7 @@ So you ask your programmer friend for some advice.
 | YY | 22 |
 | YYYY | 2022 |
 
-"So, if you want the date to be 2022, 01 January (Monday) - the FormatString will be this: `yyyy, dd, MMMM (dddd)`"
+"So, if you want the date to be 2022, 01 January (Monday) - the FormatString will be this: `yyyy, dd, MMMM (dddd).`"
 
 You get to work.
 
@@ -305,7 +305,7 @@ Ha. Of course not.
 
 > "Hi,
 > 
-> I was trying to use your new function. I live and work in Kenya and speak Swahili. FYI the months printed by your functions are wrong. 
+> I was trying to use your new function. I live and work in Kenya and speak Swahili. FYI, the months printed by your functions are wrong. 
 > 
 > For your reference, these are the months in Kiswahili:
 > 
@@ -320,11 +320,11 @@ Ha. Of course not.
 > - Septemba
 > - Octoba
 > - Novemba
-> - Decemba"
+> - Decemba
 
-You get a tirade of similar complaints from French, Spanish, Russian, Swede ...
+You get a tirade of similar complaints from French, Spanish, Russian, Swedish...
 
-Version 4 is released to address this problem. It accepts a country code to control how to display the date data.
+Version 4 is released to address this problem. It accepts a country code to control how the date is displayed.
 
 ```vbnet
 ' Original version - v1
@@ -349,26 +349,26 @@ Returns:
 2022, 01 Januari (Jumatatu)
 ```
 
-By this point it is now not feasible to handle both the development of the product, as well as the support. You need to invest in a support team.
+By this point, it is no longer feasible to handle both product development and support. You need to invest in a support team.
 
 You also need to invest in tooling to support the team. So at the very least:
 
 * Ticketing system - to track complaints from receipt to resolution
-* Online forum - to serve as a knowledge base and also place for peer support
-* Alternative support channels, like chat, integrated into the ticketing system.
+* Online forum - to serve as a knowledge base and also a place for peer support
+* Alternative support channels, like chat, are integrated into the ticketing system.
 
-In addition the amounts of money coming in require proper records and book-keeping.
+In addition, the amounts of money coming in require proper records and bookkeeping.
 
-At this point your small project now requires an actual physical presence, with associated costs - rent, operations, power, water, staff, etc.
+At this point, your small project now requires an actual physical presence, with associated costs - rent, operations, power, water, staff, etc.
 
-One day you get this message from your support team.
+One day, you get this message from your support team.
 
 > "Hello.
 > 
-> We are having a strange issue with the function. Some customers are reporting a problem with 29 Feb 2020. Aside from the fact that it is a leap year, we don't know why some customers report an error and others it works OK."
+> We are having a strange issue with the function. Some customers are reporting a problem with 29 Feb 2020. Aside from the fact that it is a leap year, we don't know why some customers report an error, and others report that it works OK."
 
 
-After a week of calling customers and emails, you isolate the problem.
+After a week of calling customers and sending emails, you isolate the problem.
 
 | Version        | Customers      |
 |----------------|----------------|
@@ -379,11 +379,11 @@ After a week of calling customers and emails, you isolate the problem.
 
 There are 4 versions of your software.
 
-The bug manifests only in versions 1 and 3, because you fixed the bug in version 2 and then re-introduced it in version 3 before fixing in in version 4.
+The bug manifests only in versions 1 and 3, because you fixed the bug in version 2 and then reintroduced it in version 3 before fixing it in version 4.
 
 You think fast and email your support.
 
-> "Have you asked them to upgrade to version 4? This fixes their issues plus gives them added functionality!"
+> "Have you asked them to upgrade to version 4? This fixes their issues, plus gives them added functionality!
 
 
 Support replies:
@@ -392,10 +392,10 @@ Support replies:
 
 And so you fix the problematic versions and upload them to the site.
 
-Now you have 6 version running in the wild:
+Now you have 6 versions running in the wild:
 
 | Version | Notes |
-|---------||--------|
+|---------|--------|
 | 1       | Original Version |
 | 1.1      | Updated version with bug fix |
 | 2       | Original Version |
@@ -416,17 +416,17 @@ You also get an interesting statistic from your QA team.
 | 3 | 40,000 | 10,000 |
 | 4 | 60,000 | 62,000 |
 
-On average 25% of your clients have been sending requests but in version 4, more unique customer requests than registered customers have been received.
+On average, 25% of your clients have been sending requests, but in version 4, more unique customer requests have been received than registered customers.
 
 This means, your software is being pirated.
 
-One one hand, this is a compliment as your software is good enough to attract pirates.
+On the one hand, this is a compliment as your software is good enough to attract pirates.
 
-But the other, more salient fact is that support is a cost. Someone has to read your email / handle your call / handle your chat, triage the problem, find solutions and communicate them.
+But the other, more salient fact is that support is a cost. Someone has to read your email / handle your call / handle your chat, triage the problem, find solutions, and communicate them.
 
 **This costs money.**
 
-Also, these clients who have not paid are consuming scarce resources (support staff time and attention) at the expense of paying customers. Thus their satisfaction decreases.
+Also, these clients who have not paid are consuming scarce resources (support staff time and attention) at the expense of paying customers. Thus, their satisfaction decreases.
 
 So ask your friend how to address this problem.
 
@@ -434,9 +434,9 @@ As usual, there is [Software like this](http://xheo.com/products/copy-protection
 
 Remember also that the market is not standing still. Others will have seen the opportunity and will be building similar products.
 
-Microsoft themselves might decide to plug the gap in Excel.
+Microsoft itself might decide to plug the gap in Excel.
 
-In other words, the opportunity shrinks by the day and you need to continuously be thinking of adding value to convince users to upgrade.
+In other words, the opportunity shrinks by the day, and you need to continuously be thinking of adding value to convince users to upgrade.
 
 This is drummed in as the newest figures of version 5 and 6 come in:
 
@@ -449,17 +449,17 @@ This is drummed in as the newest figures of version 5 and 6 come in:
 | 5 | 30,000 |
 | 6 | 17,500 |
 
-At which point you start thinking of alternative business models, because depending on new customers is no longer working.
+At which point you start thinking about alternative business models because relying on new customers is no longer working.
 
 But that is a discussion for another day.
 
 In the course of your operations in addition to the bugs and security flaws in your own software, you are also at the mercy of the bugs and security flaws of the [other](https://www.advancedinstaller.com/release-19.0.html#enhancements) [systems](https://stripe.com/blog/changelog) and [libraries](https://www.add-in-express.com/news-latest.php) that you use.
 
-You have to keep on top of these because much as they are not your problem, **they are also your problem** because your software may introduce security and other risks to your customers.
+You have to keep on top of these because, much as they are not your problem, **they are also your problem** because your software may introduce security and other risks to your customers.
 
-That too, is a discussion for another day.
+That, too, is a discussion for another day.
 
-For today just remember all this grief I have outlined came from a simple question:
+For today, just remember all this grief I have outlined came from a simple question:
 
 > I want to sell this very simple software that computes the date for Excel.
 > 
