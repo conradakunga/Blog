@@ -213,7 +213,9 @@ var client = new HttpClient();
 return client.PostAsJsonAsync(webhook, request);
 ```
 
-Here we are making use of the fact that the PostAsJsonAsync extension method already knows how to post an object directly and handle the serialization of the same.
+Here we are making use of the fact that the [PostAsJsonAsync](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.json.httpclientjsonextensions.postasjsonasync?view=net-11.0-pp) extension method **already knows how to post an object directly** and handle the **serialization** of the same.
+
+We this no longer need to **serialize** the `object` to `json` and convert into `StringContent`.
 
 Our final code looks like this:
 
