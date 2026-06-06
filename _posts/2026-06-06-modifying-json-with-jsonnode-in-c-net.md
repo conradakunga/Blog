@@ -124,6 +124,6 @@ This will look like this:
 
 **You can use the `JsonNode` object for strongly typed access to `json`, as well as to manipulate `json`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-06-06%20-%20ManipulateJson).
 
 Happy hacking!
