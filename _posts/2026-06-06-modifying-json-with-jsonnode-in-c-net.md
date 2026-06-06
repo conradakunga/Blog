@@ -8,7 +8,7 @@ categories:
     - Json
 ---
 
-Over the years we have extensively discussed the use of the native .NET Json library, [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-11.0-pp).
+Over the years we have extensively discussed the use of the native .NET `json` **parser**, [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-11.0-pp).
 
 Almost always, we are **reading** and **writing** `json` (**deserializing** and **serializing**).
 
@@ -59,7 +59,7 @@ This will print the following:
 }
 ```
 
-Suppose, for whatever reason, t**his was not an option** and you wanted to **manipulate** the `json` **directly**. Perhaps the `json` is being fetched from an **external system**.
+Suppose, for whatever reason, **this was not an option** and you wanted to **manipulate** the `json` **directly**. Perhaps the `json` is being fetched from an **external system**.
 
 Rather than manipulating the `string` directly, a far better approach is to use the [JsonNode](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.nodes.jsonnode?view=net-11.0-pp) object. This create a **mutable object model** that you can **manipulate** to your heart's content.
 
@@ -77,7 +77,7 @@ var name = node["Name"]?.GetValue<string>();
 Console.WriteLine($"{name} has {legs} Legs");
 ```
 
-We can see here in the code that we are free to **fetch strongly typed values** from the `JsonNode` with type safety.
+We can see here in the code that we are free to **fetch strongly typed values** from the `JsonNode` with type safety using the **generic** [GetValue](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.nodes.jsonnode.getvalue?view=net-10.0) method.
 
 I am using the ? c[onditional access operand](https://medium.com/geekculture/null-conditional-member-access-operators-in-c-60c79ce5f226) because I am sure that `node` is not `null`, and neither are the values I am fetching.
 
