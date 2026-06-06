@@ -116,7 +116,7 @@ This dialog is probably a `div` so we can extract the content by inspecting the 
 The element with what we are looking for is this one
 
 ![](../images/2020/12/Reuters14.png)
-  
+
 Extracting the html is a click away
 
 ![](../images/2020/12/Reuters15.png)
@@ -458,7 +458,7 @@ Listing As At 30 December 2020 08:10 GMT
 |195|DEFINE MEDIA GMBH|[https://www.definemedia.de/datenschutz-conative/](https://www.definemedia.de/datenschutz-conative/)|
 |196|Delidatax SL|[https://www.delidatax.net/privacy.htm](https://www.delidatax.net/privacy.htm)|
 |197|Delta Projects AB|[https://deltaprojects.com/data-collection-policy](https://deltaprojects.com/data-collection-policy)|
-|198|Demandbase, Inc.|[demandbase.com/privacy-policy/](demandbase.com/privacy-policy/)|
+|198|Demandbase, Inc.|[demandbase.com/privacy-policy/](https://demandbase.com/privacy-policy/)|
 |199|Dentsu Aegis Network Italia SpA|[https://www.dentsuaegisnetwork.com/it/it/policies/info-cookie](https://www.dentsuaegisnetwork.com/it/it/policies/info-cookie)|
 |200|Deutsche Post AG|[https://www.deutschepost.de/de/c/consentric/datenschutz.html](https://www.deutschepost.de/de/c/consentric/datenschutz.html)|
 |201|Dianomi ltd|[https://www.dianomi.com/legal/privacy.epl](https://www.dianomi.com/legal/privacy.epl)|
@@ -807,7 +807,7 @@ Listing As At 30 December 2020 08:10 GMT
 |544|Spolecznosci Sp. z o.o. Sp. k.|[https://www.spolecznosci.pl/polityka-prywatnosci](https://www.spolecznosci.pl/polityka-prywatnosci)|
 |545|SPORTORITY UK LTD|[https://www.minutemedia.com/privacy-policy](https://www.minutemedia.com/privacy-policy)|
 |546|Sportradar AG|[https://www.sportradar.com/about-us/privacy/](https://www.sportradar.com/about-us/privacy/)|
-|547|Spotible|[https://spotible.com/privacy.php](spotible.com/privacy.php)|
+|547|Spotible|[https://spotible.com/privacy.php](http://spotible.com/privacy.php)|
 |548|SpotX, Inc.|[https://www.spotx.tv/privacy-policy/](https://www.spotx.tv/privacy-policy/)|
 |549|SpringServe, LLC|[https://springserve.com/privacy-policy/](https://springserve.com/privacy-policy/)|
 |550|Squared SAS|[https://qwarry.com/imprint/](https://qwarry.com/imprint/)|
