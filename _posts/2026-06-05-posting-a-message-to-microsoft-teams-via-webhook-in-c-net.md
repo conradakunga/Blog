@@ -206,6 +206,6 @@ If all goes well, we should see the following in the Microsoft Teams channel.
 
 **You can programmatically post to Microsoft Teams Channels via webhook using *anonymous types* and a *HttpClient***
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-06-05%20-%20TeamsNotifier).
 
 Happy hacking!
