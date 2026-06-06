@@ -12,7 +12,7 @@ In a previous post, "[Posting Messages To Microsoft Teams With Code]({% post_url
 
 However, as outlined in this post, "[Configuring Microsoft Teams Webhooks for Channels]({% post_url 2026-05-26-configuring-microsoft-teams-webhooks-for-channels %})", **significant changes** have occurred in the architecture and model of Microsoft Teams integration, and not it is powered by [PowerAutomate](https://www.microsoft.com/en-us/power-platform/products/power-automate).
 
-In this post we will look at how to **programmatically** post a message to Microsoft Teams via webhooks.
+In this post we will look at how to **programmatically** post a message to **Microsoft Teams** via **webhooks**.
 
 The first order of business is to identify the [channel](https://en.wikipedia.org/wiki/Webhook) that we want to post the message to, and setup the integration as outlined in [this post]({% post_url 2026-05-26-configuring-microsoft-teams-webhooks-for-channels %}).
 
@@ -161,7 +161,7 @@ Here we can see a couple of things:
 5. We **post** to the **webhook**
 6. We **check** if the result is a **success**
 
-We then write tests for this:
+We then write **tests** for this:
 
 ```c#
 public class TextNotifierTests
