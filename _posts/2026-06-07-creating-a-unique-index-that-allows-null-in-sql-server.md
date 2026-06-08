@@ -220,6 +220,6 @@ This essentially means:
 
 ### TLDR
 
-**In SQL Server you can allow `NULL` values for columns with a unique index by using filtered indexes.**
+**In SQL Server you can allow `NULL` values for columns with a unique index by using filtered indexes. Otherwise, it will allow exactly one `NULL`**
 
 Happy hacking!
