@@ -3,6 +3,11 @@ layout: post
 title: Unique Indexes And NULLs in PostgreSQL, MySQL & MariaDB
 date: 2026-06-08 20:55:36 +0300
 categories:
+    - Database
+    - SQL Server
+    - PostgreSQL
+    - MySQL
+    - MariaDB
 ---
 
 Yesterday's post, "[Creating A Unique Index That Allows NULL In SQL Server]({% post_url 2026-06-07-creating-a-unique-index-that-allows-null-in-sql-server %})", looked at how [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server) treats `NULL` values on columns with [unique constraints](https://www.w3schools.com/sql/sql_unique.asp), and how to get it to ignore `NULLs` for that purpose.
