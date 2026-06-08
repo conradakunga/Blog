@@ -11,7 +11,7 @@ A **uniqe index** is a fairly simple construct.
 
 It does not allow a column value to repeat across the rows.
 
-Take the following table in [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server).
+Take the following table [DDL](https://en.wikipedia.org/wiki/Data_definition_language) in [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server).
 
 ```sql
 CREATE TABLE Fruits
