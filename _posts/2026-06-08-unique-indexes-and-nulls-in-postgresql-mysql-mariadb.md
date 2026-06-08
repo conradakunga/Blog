@@ -14,7 +14,7 @@ Yesterday's post, "[Creating A Unique Index That Allows NULL In SQL Server]({% p
 
 In this post we will look at how [PostgreSQL](https://www.postgresql.org/),  [MySQL](https://www.mysql.com/) and [MariaDB](https://mariadb.org/) approach the problem.
 
-## PostgreSQL.
+## PostgreSQL
 
 We will use the same [DDL](https://en.wikipedia.org/wiki/Data_definition_language):
 
@@ -61,7 +61,7 @@ We succeed immediately.
 
 Which is to say **PostgreSQL** does not consider `NULL` values as unique.
 
-## MySQL/MariaDB
+## MySQL & MariaDB
 
 The **MySQL**  DDL is as follows:
 
