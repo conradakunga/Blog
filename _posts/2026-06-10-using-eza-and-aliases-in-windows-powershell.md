@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Aliases In Windows PowerShell
+title: Using Eza And Aliases In Windows PowerShell
 date: 2026-06-10 20:55:19 +0300
 categories:
 ---
