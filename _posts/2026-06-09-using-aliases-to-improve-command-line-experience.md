@@ -6,6 +6,9 @@ categories:
     - Terminal
     - Command Line
     - Tooling
+    - Linux
+    - Unix
+    - macOS
 ---
 
 As a serious software developer and / or IT professional, you will invariably find yourself at some point doing work in the [terminal](https://dev.to/therubberduckiee/demystifying-the-terminal-how-it-works-behind-the-scenes-50h6).

@@ -3,6 +3,10 @@ layout: post
 title: Using Eza And Aliases In Windows PowerShell
 date: 2026-06-10 20:55:19 +0300
 categories:
+    - Terminal
+    - Command Line
+    - Tooling
+    - Windows
 ---
 
 Yesterday's post, "[Using Aliases To Improve Command Line Experience]({% post_url 2026-06-09-using-aliases-to-improve-command-line-experience %})", looked at how to use **aliases** to improve your terminal workflow. In particular we looked at the [z-shell](https://en.wikipedia.org/wiki/Z_shell) and [bash shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), both available in **Linux**, **Unix** and **macOS**.
