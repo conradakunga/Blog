@@ -26,7 +26,7 @@ draft: true
 
 - [Afroshok](https://afroshok.com/work) - Design, Software
 - [Innova](https://blogs.innova.co.ke/) - Software, Quants
-- [KopoKopo](https://kopokopo.medium.com/) - Payments
+- [KopoKopo](https://kopokopo.co.ke/blog/) - Payments
 - [PesaPal](https://www.pesapal.com/blog) - Payments
 
 ## Link Blogs
