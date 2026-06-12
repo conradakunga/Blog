@@ -8,7 +8,7 @@ categories:
     - Hashing
 ---
 
-Obtaining a [SHA256](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.sha256?view=net-10.0) hash in C# & .NET is a pretty **trivial** exercise.
+Obtaining a [SHA256](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.sha256?view=net-10.0) [hash](https://en.wikipedia.org/wiki/Hash_function) in C# & .NET is a pretty **trivial** exercise.
 
 You call the [HashData](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.sha256.hashdata?view=net-10.0) method of the `SHA256` class as follows:
 
