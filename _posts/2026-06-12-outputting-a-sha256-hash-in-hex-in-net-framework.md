@@ -5,6 +5,7 @@ date: 2026-06-12 21:31:16 +0300
 categories:
     - C#
     - .NET
+    - Hashing
 ---
 
 Obtaining a [SHA256](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.sha256?view=net-10.0) hash in C# & .NET is a pretty **trivial** exercise.
