@@ -53,7 +53,7 @@ public static class ByteArrayExtensions
     var sb = new StringBuilder(bytes.Length * 2);
     foreach (var b in bytes)
       // Get the Hex letter values in upper case
-    	sb.Append(b.ToString("X2"));
+      sb.Append(b.ToString("X2"));
     return sb.ToString();
   }
 }
@@ -77,6 +77,6 @@ This gives me the **same result as before**:
 
 **You can convert a `byte` `array` to a hex `string` on .NET Framework by writing a simple *extension method*.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-06-12%20-%20ToHex).
 
 Happy hacking!
