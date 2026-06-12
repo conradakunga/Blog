@@ -12,7 +12,7 @@ categories:
 
 Yesterday's post, "[Creating A Unique Index That Allows NULL In SQL Server]({% post_url 2026-06-07-creating-a-unique-index-that-allows-null-in-sql-server %})", looked at how [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server) treats `NULL` values on columns with [unique constraints](https://www.w3schools.com/sql/sql_unique.asp), and how to get it to ignore `NULLs` for that purpose.
 
-In this post we will look at how [PostgreSQL](https://www.postgresql.org/),  [MySQL](https://www.mysql.com/) and [MariaDB](https://mariadb.org/) approach the problem.
+In this post, we will look at how [PostgreSQL](https://www.postgresql.org/),  [MySQL](https://www.mysql.com/), and [MariaDB](https://mariadb.org/) approach the problem.
 
 ## PostgreSQL
 
@@ -59,7 +59,7 @@ We succeed immediately.
 
 ![postgresMultiNull](../images/2026/06/postgresMultiNull.png)
 
-Which is to say **PostgreSQL** does not consider `NULL` values as unique.
+Which is to say, **PostgreSQL** does not consider `NULL` values as unique.
 
 ## MySQL & MariaDB
 
@@ -81,7 +81,7 @@ CREATE UNIQUE INDEX uq_spies_code
     ON spyagencies(code)
 ```
 
-Finally we run our **inserts**:
+Finally, we run our **inserts**:
 
 ```sql
 INSERT spyagencies

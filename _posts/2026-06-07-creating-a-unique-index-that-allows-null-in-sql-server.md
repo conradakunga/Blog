@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating A Unique Index That Allows NULL In SQL Server
+title: Creating A Unique Index That Allows NULL in SQL Server
 date: 2026-06-07 06:03:13 +0300
 categories:
     - SQL Server
     - Database
 ---
 
-A **uniqe index** is a fairly simple construct.
+A **unique index** is a fairly simple construct.
 
 It does not allow a column value to repeat across the rows.
 
@@ -178,9 +178,9 @@ VALUES
 
 ```
 
-Here we know the code for the [KGB](https://en.wikipedia.org/wiki/KGB), but we don't know the code for 2 intelligence services - [Pakistani Intelligence](https://en.wikipedia.org/wiki/Inter-Services_Intelligence) and [National Intelligence Service (Kenya](https://www.nis.go.ke/)).
+Here we know the code for the [KGB](https://en.wikipedia.org/wiki/KGB), but we don't know the code for 2 intelligence services - [Pakistani Intelligence](https://en.wikipedia.org/wiki/Inter-Services_Intelligence) and the [National Intelligence Service (Kenya](https://www.nis.go.ke/)).
 
-Ideally, this **should succed**, as `NULL` does not really constitute a code, and no two `NULLs` are equal.
+Ideally, this **should succeed**, as `NULL` does not really constitute a code, and no two `NULLs` are equal.
 
 Interestingly, this **fails**.
 
@@ -194,7 +194,7 @@ Completion time: 2026-06-08T20:38:47.7266925+03:00
 
 ![uniqueNullSQL](../images/2026/06/uniqueNullSQL.png)
 
-This is because SQL Server considers **two different `null` values as a volation of the unique constraint**.
+This is because SQL Server considers **two different `null` values as a violation of the unique constraint**.
 
 This can be fixed by the fact that [indexes can be filtered](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/create-filtered-indexes?view=sql-server-ver17).
 
@@ -210,7 +210,7 @@ CREATE UNIQUE INDEX UQ_Spies_Code
     WHERE (Code IS NOT NULL);
 ```
 
-Now if we try to insert the data, we **succeeed**.
+Now, if we try to insert the data, we **succeed**.
 
 ![filteredSpiesSQL](../images/2026/06/filteredSpiesSQL.png)
 
