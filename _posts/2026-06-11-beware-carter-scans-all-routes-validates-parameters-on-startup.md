@@ -10,15 +10,15 @@ categories:
 
 [Carter](https://github.com/CarterCommunity/Carter) is an excellent library that makes writing [ASP.NET](https://www.asp.net/) Web Applications and APIs that much **easier**.
 
-Today I ran into a problem that manifested as follows:
+Today I ran into a **problem** that manifested as follows:
 
 ![startupError](../images/2026/06/startupError.png)
 
-The application did not start at all, complaining about an issue during **service registration**.
+The application **did not start at all**, complaining about an issue during **service registration**.
 
 I spent an **entire day** chasing this problem and finally discovered the issue.
 
-After several **hours** of searching (including **commenting out all the service registrations**), I finally had the idea to **look across the project** for any endpoints with a parameter named `request`.
+After several **hours** of searching (including **commenting out all the service registrations**), I finally had the idea to **look across the project** for any endpoints with a parameter named `request`, as indicated by the error message.
 
 And I found it:
 
@@ -62,6 +62,8 @@ record Spy(string FirstName, string LastName);
 
 This will start **successfully**.
 
+![spyStart](../images/2026/06/spyStart.png)
+
 It is only **when you actually hit the endpoint** that ASP.NET complains it doesn't know where to find the `Spy`.
 
 ![spyProblem](../images/2026/06/spyProblem.png)
@@ -72,7 +74,7 @@ If you use `Carter`, it scans them **all** at **startup**.
 
 This is actually a **good thing**, as you know in advance if you have any problems with your routes, rather than having **lesser-used routes throw errors after periods of normal operation**.
 
-If only it helped you point towards the culprit!
+If only it **helped you point towards the culprit**!
 
 ### TLDR
 
