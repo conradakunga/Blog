@@ -8,9 +8,9 @@ categories:
     - .NET
 ---
 
-Some years back, in the post "[A Rose By Any Other Name - Short Circuiting]({% post_url 2024-06-05-a-rose-by-any-other-name-short-circuiting %})", we looked at how [Visual Basic.NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/) **does not** do [short circuit evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation) when evaluating an `AND` condition.
+Some years back, in the post "[A Rose By Any Other Name - Short Circuiting]({% post_url 2024-06-05-a-rose-by-any-other-name-short-circuiting %})", we looked at how [Visual Basic .NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/) **does not** do [short-circuit evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation) when evaluating an `AND` condition.
 
-In this post, we will look at a a **similar** scenario, but with the `OR` condition.
+In this post, we will look at a **similar** scenario, but with the `OR` condition.
 
 Take this [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) code, where we have two methods:
 
@@ -44,7 +44,7 @@ The following will be printed on your console:
 
 Here we can see that the second method, `SecondCheck()`, **never ran**.
 
-This is **short circuit behaviour**, meaning the **runtime decides there is no point in evaluating the second condition**, given the **first** is **true**.
+This is **short-circuit behavior**, meaning the **runtime decides there is no point in evaluating the second condition**, given the **first** is **true**.
 
 Let us mirror this code in `VB.NET`.
 

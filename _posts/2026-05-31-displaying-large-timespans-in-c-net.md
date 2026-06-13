@@ -8,7 +8,7 @@ categories:
     - StarLibrary
 ---
 
-In a post last year, "[Displaying User-Friendly TimeSpans In C# & .NET]({% post_url 2025-07-24-displaying-user-friendly-timespans-in-csharp-net %})", we looked at how to display [TimeSpans](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-10.0) in a **user friendly** way using the [Humanizer](https://github.com/humanizr/humanizer) [nuget](https://www.nuget.org/) package.
+In a post last year, "[Displaying User-Friendly TimeSpans In C# & .NET]({% post_url 2025-07-24-displaying-user-friendly-timespans-in-csharp-net %})", we looked at how to display [TimeSpans](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-10.0) in a **user-friendly** way using the [Humanizer](https://github.com/humanizr/humanizer) [nuget](https://www.nuget.org/) package.
 
 This allows you to have code like this:
 

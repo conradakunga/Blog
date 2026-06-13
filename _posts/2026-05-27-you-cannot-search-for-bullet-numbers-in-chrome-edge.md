@@ -37,7 +37,7 @@ But, on a whim, I searched for what **I know exists** - `vii`.
 
 Which, technically, is **accurate** - that `viii` text **does not actually exist on the page** and it is the **browser responsible** for **computing** and **presenting** it.
 
-The same happens for [Safari](https://www.apple.com/safari/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), as well as [Vivaldi](https://vivaldi.com/).
+The same happens for [Safari](https://www.apple.com/safari/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), and [Vivaldi](https://vivaldi.com/).
 
 As far as I can tell, all [Chromium-based](https://www.chromium.org/) browsers probably have this **issue**.
 
@@ -47,6 +47,6 @@ As far as I can tell, all [Chromium-based](https://www.chromium.org/) browsers p
 
 ### TLDR
 
-**You cannot search for bullet numbers on *Chrome*, *Edge*, *Safari* and most *Chromium* based browsers. However, you can on *Firefox*.**
+**You cannot search for bullet numbers on *Chrome*, *Edge*, *Safari* and most *Chromium- based* browsers. However, you can on *Firefox*.**
 
 Happy hacking!

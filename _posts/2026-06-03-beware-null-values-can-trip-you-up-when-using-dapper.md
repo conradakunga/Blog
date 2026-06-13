@@ -13,11 +13,11 @@ categories:
 
 I have [extensively discussed]({% post_url 2025-02-25-simpler-net-data-access-with-dapper-part-1 %}) the use of the excellent library [Dapper](https://github.com/DapperLib/Dapper) for **database access** with most database engines.
 
-Today we will look at a potential problem you can run into unless you understand how to use [nullable value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) types.
+Today, we will look at a potential problem you can run into unless you understand how to use [nullable value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) types.
 
 Take a **common** scenario where you need to retrieve the **time** in the **database server**.
 
-The code is as simple at this:
+The code is as simple as this:
 
 ```c#
 using (var cn = new SqlConnection("data source=;;uid=sa;pwd=YourStrongPassword123;TrustServerCertificate=true"))
@@ -33,7 +33,7 @@ This will print the following:
 03/06/2026 22:08:25
 ```
 
-Now suppose the query returned a `NULL`
+Now, suppose the query returned a `NULL`
 
 ```c#
 using (var cn = new SqlConnection("data source=;;uid=sa;pwd=YourStrongPassword123;TrustServerCertificate=true"))
@@ -63,7 +63,7 @@ This is because `NULL` cannot be converted to a [DateTime](https://learn.microso
 
 Which is as expected.
 
-Technically, this code is **not correct**. If there is a chance that we **might not get a result**, we should be using `QuerySingleOrDefault`, rather than `QuerySingle`.
+Technically, this code is **not correct**. If there is a chance that we **might not get a result**, we should be using `QuerySingleOrDefault` rather than `QuerySingle`.
 
 ```c#
 using (var cn = new SqlConnection("data source=;;uid=sa;pwd=YourStrongPassword123;TrustServerCertificate=true"))

@@ -7,17 +7,17 @@ categories:
     - Terminal
 ---
 
-Frequently, when in your [terminal](https://uwconnect.uw.edu/it?id=kb_article_view&sysparm_article=KB0034768) you will want to go to your [home directory](https://uwconnect.uw.edu/it?id=kb_article_view&sysparm_article=KB0034768).
+Frequently, when in your [terminal,](https://uwconnect.uw.edu/it?id=kb_article_view&sysparm_article=KB0034768) you will want to go to your [home directory](https://uwconnect.uw.edu/it?id=kb_article_view&sysparm_article=KB0034768).
 
 Your home directory is where, by default, **most software and operating systems will place files and settings specific to the user**.
 
-On [Linux](https://en.wikipedia.org/wiki/Linux) this is typically
+On [Linux,](https://en.wikipedia.org/wiki/Linux) this is typically
 
 ```bash
 /home/rad
 ```
 
-On [macOS](https://en.wikipedia.org/wiki/MacOS) this is typically
+On [macOS,](https://en.wikipedia.org/wiki/MacOS) this is typically
 
 ```bash
 /Users/rad
@@ -39,7 +39,7 @@ cd ~
 
 The magic is the tilde character "`~`"
 
-For many years I have been using that.
+For many years, I have been using that.
 
 On **Windows**:
 

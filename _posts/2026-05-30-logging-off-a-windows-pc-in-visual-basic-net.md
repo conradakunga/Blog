@@ -9,7 +9,7 @@ categories:
     - Windows
 ---
 
-In our previous post, "[Logging Off A Windows PC In C# & .NET]({% post_url 2026-05-29-logging-off-a-windows-pc-in-c-net %})", we looked at how to **log off** a Windows PC using C# invoking the [Windows API](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list).
+In our previous post, "[Logging Off A Windows PC In C# & .NET]({% post_url 2026-05-29-logging-off-a-windows-pc-in-c-net %})", we looked at how to **log off** a Windows PC using C#, invoking the [Windows API](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list).
 
 In this post, we will look at how to achieve the same using [Visual Basic .NET](https://learn.microsoft.com/en-us/dotnet/visual-basic/).
 
@@ -43,12 +43,12 @@ It is poor practice to have [magic numbers](https://en.wikipedia.org/wiki/Magic_
 Const EWX_LOGOFF As UInteger = &H0
 ```
 
-Our method call this becomes:
+Our method call thus becomes:
 
 ```vb
 Dim success As Boolean = ExitWindowsEx(EWX_REBOOT, 0)
 ```
 
-Of interest here is that the `&H` prefix means that the following value in in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) 
+Of interest here is that the `&H` prefix means that the following value is in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) 
 
 Happy hacking!

@@ -22,4 +22,4 @@ The same has caught up with [APIDog](https://apidog.com/).
 
 ### TLDR
 
-Alas! A lot of previously free tools eventually succumb to the pull of [enshittification](https://en.wikipedia.org/wiki/Enshittification).
+Alas! Many previously free tools eventually succumb to the pull of [enshittification](https://en.wikipedia.org/wiki/Enshittification).

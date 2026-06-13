@@ -27,13 +27,13 @@ Here's the problem - **they never work**.
 
 **Every time** I launch these applications, they ask me **again** for my username and password.
 
-Bellow is the version information for the culprits.
+Below is the version information for the culprits.
 
-Visual Studio:
+**Visual Studio**:
 
 ![vsVersion](../images/2026/04/vsVersion.png)
 
-SQL Server Management Studio
+**SQL Server Management Studio**:
 
 ![ssmsVersion](../images/2026/04/ssmsVersion.png)
 

@@ -44,6 +44,6 @@ select getdate() as 'Table'
 
 ### TLDR
 
-**To use reversed words as column names in Microsoft SQL Server, enclose the name in one of the following - brackets `[]`, single quotes `''` or double quotes `""`.**
+**To use reversed words as column names in Microsoft SQL Server, enclose the name in one of the following - brackets `[]`, single quotes,`''` or double quotes `""`.**
 
 Happy hacking!
