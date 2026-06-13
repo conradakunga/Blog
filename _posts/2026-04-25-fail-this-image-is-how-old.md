@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fail - This Image is HOW Old?
+title: Fail - This Docker Image is HOW Old?
 date: 2026-04-25 14:02:51 +0300
 categories:
     - Fail
