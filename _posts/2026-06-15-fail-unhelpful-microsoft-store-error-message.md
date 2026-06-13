@@ -28,3 +28,5 @@ In which case, **what's the point of telling me**?
 It can further be argued that this is **better than just keeping quiet**.
 
 Is it, though?
+
+Is the problem on my end? My Windows? My Computer? My network? My ISP? My connectivity? Or is on the Mircrosoft end?
