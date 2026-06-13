@@ -21,7 +21,7 @@ Fair enough.
 
 But **what use is this to me**, the **user**?
 
-It can be argued the error is **not something I can do anything abou**t.
+It can be argued that the error is **not something I can do anything abou**t.
 
 In which case, **what's the point of telling me**?
 
