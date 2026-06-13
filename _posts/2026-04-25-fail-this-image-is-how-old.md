@@ -3,7 +3,9 @@ layout: post
 title: Fail - This Docker Image is HOW Old?
 date: 2026-04-25 14:02:51 +0300
 categories:
+    - UI Fail
     - Fail
+    - Docker
 ---
 
 If you are a **serious developer**, you almost certainly use [Docker](https://www.docker.com/).
