@@ -36,11 +36,11 @@ This code will print the following:
 The duration is 856 weeks
 ```
 
-This, technically, is absolutely **true**. However, most people **do not think in weeks** when we have such a **large range**.
+This is, technically, absolutely **true**. However, most people **do not think in weeks** when we have such a **large range**.
 
 Typically, you'd want this to display in **years** and **weeks**.
 
-This can be addressed in Humanizer by passing some parameters to the Humanize() method.
+This can be addressed in `Humanizer` by passing some parameters to the Humanize() method.
 
 1. The largest unit to use, `maxUnit`
 2. The `precision`

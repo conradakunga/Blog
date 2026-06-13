@@ -9,7 +9,7 @@ categories:
     - Visual Studio
 ---
 
-Quick, what's wrong with this?
+Quick, what's **wrong** with this?
 
 ![VisualStudioCount](../images/2026/06/VisualStudioCount.png)
 
@@ -19,7 +19,7 @@ In case you haven't noticed, this is the problem:
 
 ![VisualStudioCount2](../images/2026/06/VisualStudioCount2.png)
 
-The **count** of updated Nuget packages is **not congruent** with their actual display.
+The **count** of updated **Nuget** packages is **not congruent** with their actual display.
 
 Having been a software developer for a very long time, my first instinct when I see things like these is to empathize with my fellows, because [writing software is hard]({% post_url 2022-01-17-coding-is-easy-any-monkey-can-do-it-software-is-very-hard %}).
 

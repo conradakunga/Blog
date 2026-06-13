@@ -16,7 +16,7 @@ You call the [HashData](https://learn.microsoft.com/en-us/dotnet/api/system.secu
 SHA256.HashData(Encoding.UTF8.GetBytes("Rainbows"))
 ```
 
-This will give you an `array` of `bytes`.
+This will give you an [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays) of [bytes](https://learn.microsoft.com/en-us/dotnet/api/system.byte?view=net-10.0).
 
 Typically, you want this in a **human-readable** `string`.
 

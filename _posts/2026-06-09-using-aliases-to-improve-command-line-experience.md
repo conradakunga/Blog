@@ -11,11 +11,11 @@ categories:
     - macOS
 ---
 
-As a serious software developer and / or IT professional, you will invariably find yourself at some point doing work in the [terminal](https://dev.to/therubberduckiee/demystifying-the-terminal-how-it-works-behind-the-scenes-50h6).
+As a serious software developer and/or IT professional, you will invariably find yourself at some point doing work in the [terminal](https://dev.to/therubberduckiee/demystifying-the-terminal-how-it-works-behind-the-scenes-50h6).
 
 A lot of the tooling available on the command line is pretty **robust**. But there is always room for **improvement**.
 
-Take for example the humble list files command:
+Take, for example, the humble list files command:
 
 ```bash
 ls
@@ -79,7 +79,7 @@ Finally, we **reload** the profile.
 source ~/.zshrc
 ```
 
-Now if I run `ls`, this is the result:
+Now, if I run `ls`, this is the result:
 
 ![lsAlias](../images/2026/06/lsAlias.png)
 
