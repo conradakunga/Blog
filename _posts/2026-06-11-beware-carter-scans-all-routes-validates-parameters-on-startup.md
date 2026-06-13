@@ -38,7 +38,7 @@ Here I have decorated the request with the [FromBody](https://learn.microsoft.co
 
 Now, why are we getting this error at **startup** instead of **when we actually hit this endpoint**?
 
-`Carter` **scans the application** for all classes implementing `ICarterModule`, and each module is used to configure endpoints via `IEndpointRouteBuilder`, which Carter uses internally to **register routes** with ASP.NET Core’s minimal API pipeline.
+`Carter` **scans the application** for all `classes` implementing `ICarterModule`, and each module is used to configure endpoints via `IEndpointRouteBuilder`, which `Carter` uses internally to **register routes** with ASP.NET Core’s minimal API pipeline.
 
 You can see the difference in a normal [Minimal AP](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-10.0)I project.
 

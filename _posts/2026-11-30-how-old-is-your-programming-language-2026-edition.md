@@ -13,7 +13,7 @@ Ever wonder how old your favourite language is? You might be surprised!
 
 Here are their ages as of 2025
 
-  * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is 37, and so is Java
+  * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is 37, and so is [Java](https://en.wikipedia.org/wiki/Java_(programming_language))
   * [PHP](https://en.wikipedia.org/wiki/PHP) is 38
   * [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) is 39
   * [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) is 42
