@@ -102,4 +102,6 @@ And now, we should be able to push our tags.
 
 ![pushTagsSuccess](../images/2026/06/pushTagsSuccess.png)
 
+**WARNING: Be certain that you know what you want to keep - the local or the remote!**
+
 Happy hacking!
