@@ -49,6 +49,17 @@ var faker = new Faker<Person>()
     .UseSeed(0);
 ```
 
+Of interest is this code:
+
+```c#
+ .RuleFor(person => person.FirstName,
+        (faker, person) => faker.Name.FirstName(person.Gender == Gender.Male
+            ? Bogus.DataSets.Name.Gender.Male
+            : Bogus.DataSets.Name.Gender.Female))
+```
+
+This is conditional logic to ensure that `Bogus` generates **names appropriate to the gender**, avoiding the scenario where **Jane** is used for a **Male** `Person`.
+
 We then write them to a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values), using the `CSVHelper` package.
 
 First, the `ClassMap`:
