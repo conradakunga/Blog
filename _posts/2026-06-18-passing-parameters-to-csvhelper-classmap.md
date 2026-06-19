@@ -222,6 +222,6 @@ And:
 
 **You can pass values to a `CSVHelper` `ClassMap` constructor to conditionally control logic.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-06-18%20-%20Condtional%20ClassMap).
 
 Happy hacking!
