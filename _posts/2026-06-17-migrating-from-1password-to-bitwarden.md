@@ -40,6 +40,8 @@ Why?
 
 ![bitwardenPro](../images/2026/06/bitwardenPro.png)
 
+Note that you can get Bitwarden for **absolutely free**, but the integrated authentication alone is worth the price.
+
 I therefore decided to pull the trigger and **migrate**.
 
 The process is pretty simple.
