@@ -220,7 +220,7 @@ And:
 
 ### TLDR
 
-You can pass values to a `CSVHelper` `ClassMap` constructor to conditionally control logic.
+**You can pass values to a `CSVHelper` `ClassMap` constructor to conditionally control logic.**
 
 The code is in my GitHub.
 
