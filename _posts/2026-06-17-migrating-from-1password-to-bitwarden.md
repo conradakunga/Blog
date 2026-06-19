@@ -72,7 +72,7 @@ From there, you can log in to your account:
 
 ## Export Your 1Password Data
 
-The next order of business is to **export** your 1Password data.
+The next order of business is to **export** your **1Password** data.
 
 **Log in** to the application and go to the **File** Menu:
 
@@ -116,7 +116,7 @@ Once you are done importing your data, **DELETE the 1PUX export!**
 
 ## Tweak Your Settings
 
-Next, we **change some settings** to make the software more usable, as some of the defaults range between baffling and annoying.
+Next, we **change some settings** to make the software more usable, as some of the defaults range between **baffling** and **annoying**.
 
 The settings are accessible from the **Bitwarden** menu:
 
@@ -156,6 +156,8 @@ In [Chrome,](https://www.google.com/chrome/) it is here:
 
 ![chromeAutofill](../images/2026/06/chromeAutofill.png)
 
+You should see Bitwarden registered for **Enhanced Autofill**.
+
 **Bitwarden** is also available on your favourite phone AppStore - [Apple](https://www.apple.com/app-store/) or [Google](https://play.google.com/store/apps). Install it.
 
 For **iOS**, go to **Settings** > **AutoFill & Passwords**
@@ -168,9 +170,9 @@ Turn this **ON**
 
 ## Parting Shot
 
-**The software is pretty fully featured and functional, and so far so good.**
+**The software is pretty fully featured and functional, and so far, so good.**
 
-However, to be honest, and not to take anything away from the hard working team at **Bitwarden**, **1Password** is head and shoulders **more polished** in terms of design, UI and UX.
+However, to be honest, and not to take anything away from the hard-working team at Bitwarden, 1Password is head and shoulders more polished in terms of design, UI, and UX.
 
 But in terms of features and functionality, they are **pretty evenly matched**.
 
