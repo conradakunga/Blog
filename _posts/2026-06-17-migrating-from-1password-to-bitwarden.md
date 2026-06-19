@@ -172,7 +172,7 @@ Turn this **ON**
 
 **The software is pretty fully featured and functional, and so far, so good.**
 
-However, to be honest, and not to take anything away from the hard-working team at Bitwarden, 1Password is head and shoulders more polished in terms of design, UI, and UX.
+However, to be honest, and not to take anything away from the hard-working team at **Bitwarden**, **1Password** is **head and shoulders more polished** in terms of design, UI, and UX.
 
 But in terms of features and functionality, they are **pretty evenly matched**.
 
