@@ -112,6 +112,8 @@ For instance, **1Password** can store **software keys and licenses**.
 
 ![bitwardenSoftwareValut](../images/2026/06/bitwardenSoftwareValut.png)
 
+Once you are done importing your data, **DELETE the 1PUX export!**
+
 ## Tweak Your Settings
 
 Next, we **change some settings** to make the software more usable, as some of the defaults range between baffling and annoying.
@@ -162,7 +164,7 @@ Turn this **ON**
 
 ![AutoFill](../images/2026/06/AutoFill.png)
 
-And you should now be up and running.
+**And you should now be up and running.**
 
 ## Parting Shot
 
