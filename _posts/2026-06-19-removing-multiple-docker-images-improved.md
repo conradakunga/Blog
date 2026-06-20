@@ -6,7 +6,7 @@ categories:
     - Docker
 ---
 
-In a previous post, "[How To Remove Multiple Docker Images]({% post_url 2026-01-13-how-to-remove-multiple-docker-images %})", we looked at how to remove multiple Docker images using the command line.
+In a previous post, "[How To Remove Multiple Docker Images]({% post_url 2026-01-13-how-to-remove-multiple-docker-images %})", we looked at how to remove multiple [Docker](https://www.docker.com/) images using the command line.
 
 There we would **remove multiple docker images** like this:
 
