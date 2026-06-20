@@ -40,7 +40,9 @@ Why?
 
 ![bitwardenPro](../images/2026/06/bitwardenPro.png)
 
-Note that you can get Bitwarden for **absolutely free**, but the integrated authentication alone is worth the price.
+Note that you can get **Bitwarden** for **absolutely free**, but the integrated [authenticator](https://bitwarden.com/products/authenticator/) alone is worth the price.
+
+If you really want to use **Bitwarden** for free, you can. But you will need to get the **authenticator** separately as a **standalone application**.
 
 I therefore decided to pull the trigger and **migrate**.
 
@@ -140,7 +142,7 @@ Turn this on:
 
 ![bitwardenBiometrics](../images/2026/06/bitwardenBiometrics.png)
 
-Next, configure your **browser** to **integrate** with Bitwarden.
+Next, configure your **browser** to **integrate** with **Bitwarden**.
 
 From the **browser extension**, go to **settings**:
 
@@ -156,7 +158,7 @@ In [Chrome,](https://www.google.com/chrome/) it is here:
 
 ![chromeAutofill](../images/2026/06/chromeAutofill.png)
 
-You should see Bitwarden registered for **Enhanced Autofill**.
+You should see **Bitwarden** registered for **Enhanced Autofill**.
 
 **Bitwarden** is also available on your favourite phone AppStore - [Apple](https://www.apple.com/app-store/) or [Google](https://play.google.com/store/apps). Install it.
 
