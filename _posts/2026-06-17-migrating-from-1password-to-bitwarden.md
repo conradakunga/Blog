@@ -192,6 +192,10 @@ You will then get a confirmation.
 
 **And we're done!**
 
+You could, at this point, also uninstall all the software, but I have chosen to **leave the application** itself and **disable the extensions**.
+
+You might have canceled the subscription, but you still have **read access to your passwords**, so it's **harmless to keep it around**. Also, you can **re-activate the subscription at any time**.
+
 ## Parting Shot
 
 **The software is pretty fully featured and functional, and so far, so good.**
