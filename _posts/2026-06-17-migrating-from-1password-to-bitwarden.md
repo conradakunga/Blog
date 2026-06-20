@@ -42,6 +42,8 @@ Why?
 
 Note that you can get **Bitwarden** for **absolutely free**, but the integrated [authenticator](https://bitwarden.com/products/authenticator/) alone is worth the price.
 
+![authenticator](../images/2026/06/authenticator.png)
+
 If you really want to use **Bitwarden** for free, you can. But you will need to get the **authenticator** separately as a **standalone application**.
 
 I therefore decided to pull the trigger and **migrate**.
