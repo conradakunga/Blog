@@ -172,6 +172,26 @@ Turn this **ON**
 
 **And you should now be up and running.**
 
+## Cancel 1Password Subscription
+
+The last step is to actually cancel the **1Password** subscription. If you don't, the next cycle will bill you, and your term will be **renewed**.
+
+Log in to your customer profile and go to the **Billing** tab.
+
+At the bottom is an option to **Cancel Subscription**.
+
+![cancel1Password](../images/2026/06/cancel1Password.png)
+
+You will be asked for feedback on why you are canceling.
+
+![1PasswordCancelConfirm](../images/2026/06/1PasswordCancelConfirm.png)
+
+You will then get a confirmation.
+
+![1PasswordCancelComplete](../images/2026/06/1PasswordCancelComplete.png)
+
+**And we're done!**
+
 ## Parting Shot
 
 **The software is pretty fully featured and functional, and so far, so good.**
