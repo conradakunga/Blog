@@ -8,7 +8,7 @@ categories:
 
 In a previous post, "[How To Remove Multiple Docker Images]({% post_url 2026-01-13-how-to-remove-multiple-docker-images %})", we looked at how to remove multiple [Docker](https://www.docker.com/) images using the command line.
 
-There we would **remove multiple docker images** like this:
+There, we would **remove multiple Docker images** like this:
 
 ```bash
 docker rm 24fab8b8f344 2ce96c2e6070 4ff3513d4576
@@ -22,7 +22,7 @@ docker rmi 24 2c 4f
 
 The problem with this approach is that you need to know the [image IDs](https://windsock.io/explaining-docker-image-ids/) **in advance**.
 
-There is a **simpler** way to do this using some command line kung fu.
+There is a **simpler** way to do this using some command-line kung fu.
 
 Run the following command:
 
@@ -30,7 +30,7 @@ Run the following command:
 docker images -f dangling=true -q | xargs docker rmi -f | xargs docker rmi -f
 ```
 
- A bunch of things is happening here:
+ A bunch of things are happening here:
 
 ```bash
 docker images -f dangling=true -q
@@ -48,18 +48,18 @@ This **pipes each of the results** of the first command into the second command.
 xargs
 ```
 
-This takes the input from the pipe and converts it into command line arguments for a subsequent command.
+This takes the input from the pipe and converts it into command-line arguments for a subsequent command.
 
 ```bash
 docker rmi -f
 ```
 
-This removes the actual image specified by the received `ID`.
+This removes the image associated with the specified `ID`.
 
 ![dockerRemoveImages](../images/2026/06/dockerRemoveImages.png)
 
 ## TLDR
 
-You can remove dangling docker images with a single command.
+**You can remove dangling Docker images with a single command.**
 
 Happy hacking!

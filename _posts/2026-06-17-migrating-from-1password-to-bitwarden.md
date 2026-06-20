@@ -11,7 +11,7 @@ categories:
 
 For more than a decade, I have been a happy user of [1Password](https://1password.com/) for managing my myriad of **passwords**, **account numbers**, **credit and debit cards**, and [OTP](https://en.wikipedia.org/wiki/One-time_password) tokens. It has mostly done what it says on the tin, pretty well.
 
-I, like others, griped when they switched to a SAAS model, but being in the industry myself, I totally understood their position, and continued to be a customer.
+I, like others, griped when they switched to a [SAAS](https://www.salesforce.com/eu/saas/) model, but being in the industry myself, I totally understood their position, and continued to be a customer.
 
 Recently, I got this in my inbox.
 
