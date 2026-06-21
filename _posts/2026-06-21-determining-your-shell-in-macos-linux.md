@@ -24,4 +24,6 @@ On **Linux**, it returns thus:
 
 ![linuxShell](../images/2026/06/linuxShell.png)
 
+Of course you could have changed your shell to **something else**, in which case whatever you changed to will be returned.
+
 Happy hacking!
