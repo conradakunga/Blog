@@ -4,6 +4,7 @@ title: FIX - Permission Error When Removing Multiple Docker Images
 date: 2026-06-20 06:00:00 +0300
 categories:
     - Docker
+    - Fix
 ---
 
 In yesterday's post, "[Removing Multiple Docker Images (Improved)]({% post_url 2026-06-19-removing-multiple-docker-images-improved %})", we looked at how to remove multiple Docker images in a single command.
