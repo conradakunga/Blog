@@ -4,6 +4,7 @@ title: Setting OAUTH Authentication & Authorization At Folder Level In Yaak
 date: 2026-06-23 22:44:21 +0300
 categories:
     - Yaak
+    - Tools
 ---
 
 I am a recent and happy convert to the API & endpoint testing tool [Yaak,](https://yaak.app/) which has now **replaced** my previous go-to, [Insomnia](https://insomnia.rest/).
