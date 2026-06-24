@@ -17,7 +17,7 @@ However, in that post, we set it up at the **endpoint level**, and it can be ver
 
 A better approach is to set it up at the **folder** level.
 
-First, create a **folder** that will host your endpoints.
+First, create a **folder** that will host your endpoints. You can, of course, create **subfolders** under this one. We will be setting our security on the **topmost level**.
 
 ![yaakFolder](../images/2026/06/yaakFolder.png)
 
