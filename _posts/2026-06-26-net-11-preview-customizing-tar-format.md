@@ -20,7 +20,16 @@ What you may not realize that there are in fact **multiple types** of `tar`:
 - [GNU](https://en.wikipedia.org/wiki/Tar_(computing)#cite_note-gnu.org-17)
 - [v7](https://en.wikipedia.org/wiki/Tar_(computing)#Header)
 
-In .NET 10, you always got the `Pax` format.
+In .NET 10, you always got the `Pax` format, given there was no way to specify a format.
+
+The code was as follows:
+
+```c#
+await TarFile.CreateFromDirectoryAsync("/source/", "/target/archive.tar",
+    includeBaseDirectory: true);
+```
+
+
 
 In .NET 11, you can specify the **format that you want** using the new overload for [CreateFromDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarfile.createfromdirectory) and [CreateFromDirectoryAsync](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarfile.createfromdirectoryasync), specifying the format that you want with the `format` parameter that takes a [TarEntryFormat](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarentryformat?view=net-11.0) enum.
 
