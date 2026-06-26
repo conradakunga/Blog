@@ -3,6 +3,9 @@ layout: post
 title: Installing .NET 11 Preview On macOS
 date: 2026-06-24 08:49:25 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
 ---
 
 [.NET 10](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-10/overview) was released last year and work is in progress on **.NET 11**, due for release this year. As a reminder, there is an [annual release cycle](https://dotnet.microsoft.com/en-us/platform/support/policy) for .NET (a [topic](https://www.c-sharpcorner.com/blogs/understanding-lts-vs-sts-in-net-choosing-the-right-support-model-for-your-project) of [hot](https://dev.to/ismcagdas/what-net-10-lts-means-for-enterprise-applications-2cdh) [debate](https://www.evincia.co/dotnet-release-cycle.html)).
