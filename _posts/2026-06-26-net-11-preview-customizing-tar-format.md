@@ -3,6 +3,10 @@ layout: post
 title: .NET 11 Preview - Customizing Tar Format
 date: 2026-06-26 22:54:41 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
+    - Compression
 ---
 
 In a previous post, "[How To Compress Multiple Files Using GZip In C# & .NET]({% post_url 2026-01-12-how-to-compress-multiple-files-using-gzip-in-c-net %})", we looked at how to **compress multiple files** using [gzip](https://en.wikipedia.org/wiki/Gzip) compression, during which we observed that it is **not in fact possible to compress multiple files using `gzip`**, as it only supports a **single** file.

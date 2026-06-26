@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - .NET 11 Preview
+    - System.Text.Json
 ---
 
 When serializing [JSON](https://www.json.org/), you have some **leeway** to specify exactly how you want the property names to be serialized. This is useful in cases where you **do not control the consumer** of your output, that might be **fussy about the property naming**.
