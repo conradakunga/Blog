@@ -13,7 +13,7 @@ In a previous post, "[How To Compress Multiple Files Using GZip In C# & .NET]({%
 
 Therefore to compress the files you need to process them into an **intermediate** format that is a single file, the [tar](https://en.wikipedia.org/wiki/Tar_(computing)).
 
-What you may not realize that there are in fact **multiple types** of tar:
+What you may not realize that there are in fact **multiple types** of `tar`:
 
 - [Pax](https://en.wikipedia.org/wiki/Tar_(computing)#POSIX.1-2001/pax)
 - [Ustar](https://en.wikipedia.org/wiki/Tar_(computing)#UStar_format)
@@ -35,7 +35,7 @@ In .NET 11, you can specify the **format that you want** using the new overload 
 Your code would this look like this:
 
 ```c#
-TarFile.CreateFromDirectory("/source/", "/target/archive.tar",
+await TarFile.CreateFromDirectoryAsync("/source/", "/target/archive.tar",
     includeBaseDirectory: true, format: TarEntryFormat.Gnu);
 ```
 
