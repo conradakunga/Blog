@@ -51,27 +51,26 @@ Console.WriteLine(JsonSerializer.Serialize(person, new JsonSerializerOptions { P
 This will output the following:
 
 ```json
-// Camel Case
 {
   "firstName": "James",
   "surname": "Bond"
 }
-// Kebab Case, Lower
+
 {
   "first-name": "James",
   "surname": "Bond"
 }
-// Kebab Case, Uppter
+
 {
   "FIRST-NAME": "James",
   "SURNAME": "Bond"
 }
-// Snake Case, Lower
+
 {
   "first_name": "James",
   "surname": "Bond"
 }
-// Snake Case, Upper
+
 {
   "FIRST_NAME": "James",
   "SURNAME": "Bond"
@@ -89,7 +88,6 @@ Here we can see the following policies are supported:
 In .NET 11, there is an additional one - [PascalCase](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonnamingpolicy.pascalcase?view=net-11.0-pp#system-text-json-jsonnamingpolicy-pascalcase).
 
 ```c#
-// Pascal Case	
 Console.WriteLine("Pascal Case");
 Console.WriteLine(JsonSerializer.Serialize(person, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.PascalCase, WriteIndented = true }));
 ```
