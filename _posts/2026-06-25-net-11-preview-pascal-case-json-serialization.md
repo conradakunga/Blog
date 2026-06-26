@@ -107,6 +107,6 @@ This will output the following:
 
 **You can now output `JSON` properties in `PascalCase`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-06-25%20-%20PascalSerialization).
 
 Happy hacking!
