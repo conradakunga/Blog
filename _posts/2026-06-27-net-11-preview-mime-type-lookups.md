@@ -20,7 +20,7 @@ var mimeType = "";
 switch (extension)
 {
   case ".pdf":
-    mimeType = "applciation/pdf";
+    mimeType = "application/pdf";
     break;
     //
     // Other types here
