@@ -22,9 +22,9 @@ switch (extension)
   case ".pdf":
     mimeType = "applciation/pdf";
     break;
-  //
-  // Other types here
-  //
+    //
+    // Other types here
+    //
   default:
     mimeType = "text/plain";
     break;
