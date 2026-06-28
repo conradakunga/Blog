@@ -9,7 +9,7 @@ categories:
     - MIME
 ---
 
-In. previous post, "[Use Constants For MIME Types]({% post_url 2026-06-01-tip-use-constants-for-mime-types %})", we discussed how to avoid specifying `strings` for [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) types and use  built in **constants** instead.
+In a previous post, "[Use Constants For MIME Types]({% post_url 2026-06-01-tip-use-constants-for-mime-types %})", we discussed how to avoid specifying `strings` for [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) types and use  built in **constants** instead.
 
 The problem with this is that you needed to know the `MIME` type **in advance**, making the code a lot more **complicated** when you don't.
 
