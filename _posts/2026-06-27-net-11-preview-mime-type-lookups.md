@@ -8,7 +8,7 @@ categories:
     - .NET 11 Preview
 ---
 
-In. previous post, "[Use Constants For MIME Types]({% post_url 2026-06-01-tip-use-constants-for-mime-types %})", we discussed how to avoid specifying strings for [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) types and use  built in **constants** instead.
+In. previous post, "[Use Constants For MIME Types]({% post_url 2026-06-01-tip-use-constants-for-mime-types %})", we discussed how to avoid specifying `strings` for [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) types and use  built in **constants** instead.
 
 The problem with this is that you needed to know the `MIME` type **in advance**, making the code a lot more **complicated** when you don't.
 
@@ -31,7 +31,7 @@ switch (extension)
 }
 ```
 
-Alternatively, you had to use a third party Nuget package.
+Alternatively, you had to use a third party [Nuget](https://nuget.org) package.
 
 This is now addressed with the new [MediaTypeMap](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypemap?view=net-11.0) class.
 
@@ -48,7 +48,7 @@ This will print the following:
 text/plain
 ```
 
-A few more examples
+A few more examples:
 
 ```c#
 // PDF
