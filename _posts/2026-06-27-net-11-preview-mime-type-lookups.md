@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - .NET 11 Preview
+    - MIME
 ---
 
 In. previous post, "[Use Constants For MIME Types]({% post_url 2026-06-01-tip-use-constants-for-mime-types %})", we discussed how to avoid specifying `strings` for [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) types and use  built in **constants** instead.
@@ -33,7 +34,7 @@ switch (extension)
 
 Alternatively, you had to use a third party [Nuget](https://nuget.org) package.
 
-This is now addressed with the new [MediaTypeMap](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypemap?view=net-11.0) class.
+This is now addressed with the new [MediaTypeMap](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypemap?view=net-11.0) class, using the [GetMediaType](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypemap.getmediatype?view=net-11.0) method.
 
 You use it as follows:
 
@@ -48,6 +49,20 @@ This will print the following:
 text/plain
 ```
 
+The method takes one of the following:
+
+- The **extension** (**without** a period)
+- The **extension** (**with** a period)
+- The complete file **name**
+
+In ohter words these yield the ssame result:
+
+```c#
+MediaTypeMap.GetMediaType(".txt");
+MediaTypeMap.GetMediaType("txt");
+MediaTypeMap.GetMediaType("mango.txt");
+```
+
 A few more examples:
 
 ```c#
@@ -60,7 +75,7 @@ Console.WriteLine(mediaType);
 // Excel
 mediaType = MediaTypeMap.GetMediaType(".xlsx");
 Console.WriteLine(mediaType);
-//Unknown
+// Unknown
 mediaType = MediaTypeMap.GetMediaType(".dsf");
 Console.WriteLine(mediaType);
 ```
