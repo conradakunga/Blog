@@ -22,7 +22,7 @@ We are doing `byte.MaxValue + 1` because the **upper bound is not included** in 
 
 This is no longer necessary.
 
-A new generic method has been introduced for this very purpose: [NextInteger](https://learn.microsoft.com/lv-lv/dotnet/api/system.random.nextinteger?view=net-11.0&viewFallbackFrom=net-10.0).
+A new [generic method](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-methods) has been introduced for this very purpose: [NextInteger()](https://learn.microsoft.com/lv-lv/dotnet/api/system.random.nextinteger?view=net-11.0&viewFallbackFrom=net-10.0).
 
 The equivalent code is as follows:
 
