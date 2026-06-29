@@ -18,6 +18,8 @@ var randomByte = (byte)Random.Shared.Next(byte.MinValue, byte.MaxValue + 1);
 Console.WriteLine(randomByte);
 ```
 
+We are doing `byte.MaxValue + 1` because the **upper bound is not included** in the range.
+
 This is no longer necessary.
 
 A new generic method has been introduced for this very purpose: [NextInteger](https://learn.microsoft.com/lv-lv/dotnet/api/system.random.nextinteger?view=net-11.0&viewFallbackFrom=net-10.0).
@@ -50,5 +52,7 @@ var randomByte = Random.Shared.NextInteger<short>();
 
 Console.WriteLine(randomByte);
 ```
+
+Overloads that take a [range](https://learn.microsoft.com/lv-lv/dotnet/api/system.random.nextinteger?view=net-11.0#system-random-nextinteger-1(-0-0)) are also available.
 
 Happy hacking!
