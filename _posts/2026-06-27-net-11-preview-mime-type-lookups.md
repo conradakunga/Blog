@@ -9,7 +9,7 @@ categories:
     - MIME
 ---
 
-In a previous post, "[Use Constants For MIME Types]({% post_url 2026-06-01-tip-use-constants-for-mime-types %})", we discussed how to avoid specifying `strings` for [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) types and use  built in **constants** instead.
+In a previous post, "[Use Constants For MIME Types]({% post_url 2026-06-01-tip-use-constants-for-mime-types %})", we discussed how to avoid specifying `strings` for [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) types and use built-in **constants** instead.
 
 The problem with this is that you needed to know the `MIME` type **in advance**, making the code a lot more **complicated** when you didn't.
 
@@ -32,7 +32,7 @@ switch (extension)
 }
 ```
 
-Alternatively, you had to use a third party [Nuget](https://nuget.org) package.
+Alternatively, you had to use a third-party [Nuget](https://nuget.org) package.
 
 This is now addressed with the new [MediaTypeMap](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypemap?view=net-11.0) class, using the [GetMediaType](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypemap.getmediatype?view=net-11.0) method.
 
@@ -55,7 +55,7 @@ The method takes one of the following:
 - The **extension** (**with** a period)
 - The complete file **name**
 
-In ohter words these yield the ssame result:
+In other words these yield the same result:
 
 ```c#
 MediaTypeMap.GetMediaType(".txt");
@@ -84,7 +84,7 @@ These will return the following:
 
 ![mimeResults](../images/2026/06/mimeResults.png)
 
-Of interest here is if the file type is **unknown**, a `null` will be returned. This you can test for in your code.
+Of interest here is that if the file type is **unknown**, a `null` will be returned. You can test for this in your code.
 
 ### TLDR
 

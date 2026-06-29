@@ -3,6 +3,9 @@ layout: post
 title: .NET 11 Preview - Get Random Integral Numbers
 date: 2026-06-29 18:38:54 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
 ---
 
 In a previous post, "[Generating Random Values For Other Integral Types In C# & .NET]({% post_url 2025-09-24-generating-random-values-for-other-integral-types-in-c-net %})", we looked at the additional **gymnastics** needed to generate **random** values for other `integral` types, given that the [Next](https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-10.0) method for the [Random](https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-10.0) type was designed for integers.

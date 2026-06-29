@@ -9,13 +9,13 @@ categories:
     - System.Text.Json
 ---
 
-When serializing [JSON](https://www.json.org/), you have some **leeway** to specify exactly how you want the property names to be serialized. This is useful in cases where you **do not control the consumer** of your output, that might be **fussy about the property naming**.
+When serializing [JSON](https://www.json.org/), you have some **leeway** to specify exactly how you want the property names to be serialized. This is useful in cases where you **do not control the consumer** of your output, which might be **fussy about the property naming**.
 
-Alternatively, you might want to  adapt to the convention of the ecosystem you are integrating with. For example [Python](https://www.python.org/) generally uses [snake case](https://en.wikipedia.org/wiki/Snake_case).
+Alternatively, you might want to adapt to the convention of the ecosystem you are integrating with. For example, [Python](https://www.python.org/) generally uses [snake case](https://en.wikipedia.org/wiki/Snake_case).
 
 We can control this using the [JsonSerializationOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-11.0-pp) class, as outlined below.
 
-First we have our `type`:
+First, we have our `type`:
 
 ```c#
 public sealed class Person
@@ -86,7 +86,7 @@ Here we can see the following policies are supported:
 4. [Snake Case (Upper)](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonnamingpolicy.snakecaseupper?view=net-11.0-pp#system-text-json-jsonnamingpolicy-snakecaseupper)
 5. [Snake Case (Lower)](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonnamingpolicy.pascalcase?view=net-11.0-pp#system-text-json-jsonnamingpolicy-pascalcase)
 
-In .NET 11, there is an additional one - [PascalCase](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonnamingpolicy.pascalcase?view=net-11.0-pp#system-text-json-jsonnamingpolicy-pascalcase).
+In .NET 11, there is an additional one: [PascalCase](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonnamingpolicy.pascalcase?view=net-11.0-pp#system-text-json-jsonnamingpolicy-pascalcase).
 
 ```c#
 Console.WriteLine("Pascal Case");
