@@ -42,6 +42,6 @@ This is fixed in .NET 11 in the [MediaTypeNames.Video](https://learn.microsoft.c
 
 ### TLDR
 
-The [MediaTypeNames.Video](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.video?view=net-11.0)  contains MIME constants for the major video formats.
+**The [MediaTypeNames.Video](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.video?view=net-11.0)  contains MIME constants for the major video formats.**
 
 Happy hacking!
