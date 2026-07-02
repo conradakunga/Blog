@@ -106,6 +106,6 @@ You can see here the each property has a different casing policy.
 
 **You can specify the naming policy of each property in a type using the `JsonNamingPolicy` attribute.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-02%20-%20NamingPolicy).
 
 Happy hacking!
