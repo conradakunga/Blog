@@ -20,11 +20,13 @@ If you run this, it will print your **home** directory:
 
 ![defaultHome](../images/2026/07/defaultHome.png)
 
-If you wanted to change this for **testing** purposes, you would typically do it like this:
+If you wanted to change this for **testing** purposes, you would typically do it like this;
 
 ```bash
 export Home=/Users/Conrad
 ```
+
+And then we would **re-run our program** to pick up the new values.
 
 This tends to be pretty **cumbersome** for a couple of reasons:
 
