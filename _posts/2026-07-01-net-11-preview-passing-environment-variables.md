@@ -8,7 +8,7 @@ categories:
     - .NET 11 Preview
 ---
 
-In a previous post, "[Overriding appsettings.json via Environment Variables]({% post_url 2025-05-14-overriding-appsettingsjson-via-environment-variables %})", we looked at how to access and override [environment variables](https://en.wikipedia.org/wiki/Environment_variable) in our applications.
+In a previous post, "[Overriding appsettings.json via Environment Variables]({% post_url 2025-05-14-overriding-appsettingsjson-via-environment-variables %})", we looked at how to **access** and **override** [environment variables](https://en.wikipedia.org/wiki/Environment_variable) in our applications.
 
 Take the following simple program that has the following code:
 
