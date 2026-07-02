@@ -56,7 +56,7 @@ Suppose, for whatever reason, you wanted **different** **casing** on each `attri
 
 Typically, you would solve this problem using a custom [JsonConverter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-11.0-pp).
 
-However, in .NET 11, you can now solve this problem by decorating each property with a [JsonNamingPolicy](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonnamingpolicy?view=net-11.0-pp) [attribute](https://medium.com/@payton9609/attributes-in-c-cccb57a3f42b), specifying what you want, as follows:
+However, in .NET 11, you can now solve this problem by decorating each property with a [JsonNamingPolicy](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonnamingpolicyattribute?view=net-11.0-pp) [attribute](https://medium.com/@payton9609/attributes-in-c-cccb57a3f42b), specifying what you want, as follows:
 
 ```c#
 public sealed class Spy
