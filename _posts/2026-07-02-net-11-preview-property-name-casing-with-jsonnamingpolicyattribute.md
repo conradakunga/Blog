@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .NET 11 Preview - JsonNamingPolicyAttribute
+title: .NET 11 Preview - Property Name Casing With JsonNamingPolicyAttribute
 date: 2026-07-02 00:19:07 +0300
 categories:
     - C#
