@@ -1,7 +1,7 @@
 ---
 layout: post
 title: .NET 11 Preview - JsonNamingPolicyAttribute
-date: 2026-07-03 00:19:07 +0300
+date: 2026-07-02 00:19:07 +0300
 categories:
     - C#
     - .NET
