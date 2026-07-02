@@ -8,7 +8,7 @@ categories:
     - .NET 11 Preview
 ---
 
-When serializing `JSON`, you have the ability to specify the casing of the **attributes**.
+When serializing `JSON`, you have the ability to specify the **casing** of the names of **properties** of the `type`.
 
 For example, given the following `type`:
 
@@ -30,7 +30,7 @@ var spy = new Spy
 {
     FirstName = "James",
     Surname = "Bond",
-    DatOfBirth = new DateOnly(1950, 1, 1)
+    DateOfBirth = new DateOnly(1950, 1, 1)
 };
 
 var options = new JsonSerializerOptions
@@ -48,15 +48,15 @@ This will print the following:
 {
   "first_name": "James",
   "surname": "Bond",
-  "dat_of_birth": "1950-01-01"
+  "date_of_birth": "1950-01-01"
 }
 ```
 
-Suppose, for whatever reason, you wanted **different** **casing** on each attribute.
+Suppose, for whatever reason, you wanted **different** **casing** on each `attribute`.
 
 Typically, you would solve this problem using a custom [JsonConverter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-11.0-pp).
 
-However, in .NET 11, you can decorate each property with a [JsonNamingPolicy](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonnamingpolicy?view=net-11.0-pp) [attribute](https://medium.com/@payton9609/attributes-in-c-cccb57a3f42b), specifying what you want, as follows:
+However, in .NET 11, you can now solve this problem by decorating each property with a [JsonNamingPolicy](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonnamingpolicy?view=net-11.0-pp) [attribute](https://medium.com/@payton9609/attributes-in-c-cccb57a3f42b), specifying what you want, as follows:
 
 ```c#
 public sealed class Spy
@@ -100,7 +100,7 @@ This will print the following:
 }
 ```
 
-You can see here the each property has a different casing policy.
+You can see here the each property has a **different casing**.
 
 ### TLDR
 
