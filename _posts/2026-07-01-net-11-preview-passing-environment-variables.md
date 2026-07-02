@@ -33,7 +33,7 @@ This tends to be pretty **cumbersome** for a couple of reasons:
 1. You affect **other applications** and tools running that might use this value
 2. It can get **monotonous** if you do this a lot
 
-.NET 11 has a solution for this - you can pass the value you want accessed in the command like using the -e argument  of the [dotnet run tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-run), with the **name** of the variable you want to set followed by its **value**.
+.NET 11 has a solution for this - you can pass the value you want accessed in the command like using the `-e` argument  of the [dotnet run tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-run), with the **name** of the variable you want to set followed by its **value**.
 
 ```bash
 dotnet run -e NAME=VALUE
