@@ -38,7 +38,7 @@ using (var process = Process.Start(startInfo))
   if (process.ExitCode == 0)
   	Log.Information(output);
   else
-  	Log.Error(error);
+    Log.Error(error);
 }
 ```
 
@@ -57,7 +57,7 @@ var result = await Process.RunAndCaptureTextAsync("pwd");
 if (result.ExitStatus.ExitCode == 0)
   Log.Information(result.StandardOutput);
 else
-	Log.Error(result.StandardError);
+  Log.Error(result.StandardError);
 ```
 
 You can see here that the code is **much less**.
