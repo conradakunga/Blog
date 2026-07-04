@@ -42,9 +42,9 @@ using (var process = Process.Start(startInfo))
 }
 ```
 
-This, as you can see, requires quite a bit of **orchestration**.
+As you can see, this requires quite a bit of **orchestration**.
 
-In .NET 11, this has been simplified using new methods - [RunAndCaptureText](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.runandcapturetext?view=net-11.0) and its [async](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/) counterpart, [RunAndCaptureTextAsync](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.runandcapturetextasync?view=net-11.0).
+In .NET 11, this has been simplified using new methods - [RunAndCaptureText](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.runandcapturetext?view=net-11.0) and its [async](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/) counterpart, [RunAndCaptureTextAsync](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.runandcapturetextasync?view=net-11.0), that have been added to the `Process` class.
 
 The code is as follows:
 
