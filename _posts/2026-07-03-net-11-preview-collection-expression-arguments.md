@@ -74,6 +74,28 @@ string[] otherCollection = ["Brenda", "Latisha", "Linda", "Felicia"];
 List<string> namesList = [with(capacity: 4), .. otherCollection];
 ```
 
+Important: This is a preview language feature, and to get it to compile, you must include the following in your `.cspro`j file.
+
+```xml
+<LangVersion>preview</LangVersion> 
+```
+
+It should now look like this:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net11.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+</Project>
+```
+
+
+
 ### TLDR
 
 **You can pass parameters to collections during initialization using the `[with]` keyword.**
