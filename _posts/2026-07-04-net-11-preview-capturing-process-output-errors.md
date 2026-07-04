@@ -44,7 +44,7 @@ using (var process = Process.Start(startInfo))
 
 This requires quite a bit of **orchestration**.
 
-In .NET 11, this has been simplified using new methods - [RunAndCaptureText](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.runandcapturetext?view=net-11.0) and its async counterpart, [RunAndCaptureTextAsync](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.runandcapturetextasync?view=net-11.0).
+In .NET 11, this has been simplified using new methods - [RunAndCaptureText](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.runandcapturetext?view=net-11.0) and its [async](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/) counterpart, [RunAndCaptureTextAsync](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.runandcapturetextasync?view=net-11.0).
 
 The code is as follows:
 
@@ -86,8 +86,8 @@ This will return the following:
 
 ### TLDR
 
-**The Process class now has new methods, `RunAndCaptureText` and `RunAndCaptureTextAsync,` for capturing output and errors from command line / terminal applications.**
+**The Process class now has new methods, `RunAndCaptureText` and `RunAndCaptureTextAsync,` for capturing output and errors from command-line/terminal applications.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-04%20-%20CaptureProcessText).
 
 Happy hacking!
