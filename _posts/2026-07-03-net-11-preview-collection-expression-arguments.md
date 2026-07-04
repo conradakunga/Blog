@@ -10,7 +10,7 @@ categories:
 
 One of the more brilliant [innovations](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history) in C# 12  was [collection expressions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/collection-expressions).
 
-Typically, initializing a collection required code **specific** to that expression. Take the following examples:
+Typically, **initializing** a collection required code **specific** to that expression. Take the following examples:
 
 ```c#
 // Initialize a list
@@ -77,5 +77,7 @@ List<string> namesList = [with(capacity: 4), .. otherCollection];
 ### TLDR
 
 **You can pass parameters to collections during initialization using the `[with]` keyword.**
+
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-03%20-%20CollectionExpressionInit).
 
 Happy hacking!
