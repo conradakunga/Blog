@@ -55,7 +55,7 @@ The method takes one of the following:
 - The **extension** (**with** a period)
 - The complete file **name**
 
-In other words these yield the same result:
+In other words, these yield the same result:
 
 ```c#
 MediaTypeMap.GetMediaType(".txt");

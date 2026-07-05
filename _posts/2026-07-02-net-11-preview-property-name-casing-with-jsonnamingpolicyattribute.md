@@ -100,7 +100,7 @@ This will print the following:
 }
 ```
 
-You can see here the each property has a **different casing**.
+You can see here that each property has a **different casing**.
 
 ### TLDR
 

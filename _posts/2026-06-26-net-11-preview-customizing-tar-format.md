@@ -13,14 +13,14 @@ In a previous post, "[How To Compress Multiple Files Using GZip In C# & .NET]({%
 
 Therefore, to compress the files, you need to process them into an **intermediate** format that is a single file: [tar](https://en.wikipedia.org/wiki/Tar_(computing)).
 
-What you may not realize is that there are in fact **multiple types** of `tar`:
+What you may not realize is that there are, in fact, **multiple types** of `tar`:
 
 - [Pax](https://en.wikipedia.org/wiki/Tar_(computing)#POSIX.1-2001/pax)
 - [Ustar](https://en.wikipedia.org/wiki/Tar_(computing)#UStar_format)
 - [GNU](https://en.wikipedia.org/wiki/Tar_(computing)#cite_note-gnu.org-17)
 - [v7](https://en.wikipedia.org/wiki/Tar_(computing)#Header)
 
-In **.NET 10**, you always got the `Pax` format, given there was no way to specify a format.
+In **.NET 10**, you always got the `Pax` format, given there was no way to **specify** a format.
 
 The code was as follows:
 
@@ -29,7 +29,7 @@ await TarFile.CreateFromDirectoryAsync("/source/", "/target/archive.tar",
     includeBaseDirectory: true);
 ```
 
-**In .NET 11**, you can specify the **format you want** using the new overload for [CreateFromDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarfile.createfromdirectory) and [CreateFromDirectoryAsync](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarfile.createfromdirectoryasync), specifying the format you want with the `format` parameter which takes a [TarEntryFormat](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarentryformat?view=net-11.0) enum.
+**In .NET 11**, you can specify the **format you want** using the new overload for [CreateFromDirectory](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarfile.createfromdirectory) and [CreateFromDirectoryAsync](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarfile.createfromdirectoryasync), specifying the format you want with the `format` parameter, which takes a [TarEntryFormat](https://learn.microsoft.com/en-us/dotnet/api/system.formats.tar.tarentryformat?view=net-11.0) enum.
 
 | Name    | Value | Description                                                  |
 | ------- | ----- | ------------------------------------------------------------ |

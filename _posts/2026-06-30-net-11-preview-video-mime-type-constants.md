@@ -8,9 +8,9 @@ categories:
     - .NET 11 Preview
 ---
 
-In a previous post, "[Tip - Use Constants For MIME Types]({% post_url 2026-06-01-tip-use-constants-for-mime-types %})", we discussed how to use **constants** for [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) types, rather than the usual approach that is specifying them as `strings`.
+In a previous post, "[Tip - Use Constants For MIME Types]({% post_url 2026-06-01-tip-use-constants-for-mime-types %})", we discussed how to use **constants** for [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/MIME_types) types, rather than the usual approach of specifying them as `strings`.
 
-Thus instead of doing this:
+Thus, instead of doing this:
 
 ```c#
 const string ApplicationJSON = "application/json";
@@ -30,9 +30,9 @@ This extends to other types of content:
 - [Multipart](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.multipart?view=net-10.0)
 - [Text](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.text?view=net-10.0)
 
-One glaring omission is **video is not represented** at all.
+One glaring omission is that **video is not represented** at all.
 
-This is fixed in .NET 11 in the [MediaTypeNames.Video](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.video?view=net-11.0) class, that exposes the following [constants](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constants):
+This is fixed in .NET 11 in the [MediaTypeNames.Video](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.video?view=net-11.0) class, which exposes the following [constants](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constants):
 
 - [Mp4](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.video.mp4?view=net-11.0#system-net-mime-mediatypenames-video-mp4) 
 - [Mpeg](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.video.mpeg?view=net-11.0#system-net-mime-mediatypenames-video-mpeg) 
@@ -42,6 +42,6 @@ This is fixed in .NET 11 in the [MediaTypeNames.Video](https://learn.microsoft.c
 
 ### TLDR
 
-**The [MediaTypeNames.Video](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.video?view=net-11.0)  contains MIME constants for the major video formats.**
+**The [MediaTypeNames.Video](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypenames.video?view=net-11.0) contains MIME constants for the major video formats.**
 
 Happy hacking!

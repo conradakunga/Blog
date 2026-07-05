@@ -53,6 +53,6 @@ This will print the following:
 
 **You can pass environment variables you want your application to use using the `-e` argument.**
 
-The code is my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-01%20-%20TestEnvironment).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-01%20-%20TestEnvironment).
 
 Happy hacking!

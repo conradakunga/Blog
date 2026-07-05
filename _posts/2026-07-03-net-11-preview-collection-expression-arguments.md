@@ -74,7 +74,7 @@ string[] otherCollection = ["Brenda", "Latisha", "Linda", "Felicia"];
 List<string> namesList = [with(capacity: 4), .. otherCollection];
 ```
 
-Important: This is a preview language feature, and to get it to compile, you must include the following in your `.cspro`j file.
+Important: This is a preview language feature, and to get it to compile, you must include the following in your `.csproj` file.
 
 ```xml
 <LangVersion>preview</LangVersion> 
