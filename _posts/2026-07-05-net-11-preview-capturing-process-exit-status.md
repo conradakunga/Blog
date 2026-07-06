@@ -10,9 +10,9 @@ categories:
 
 In yesterday's post, "[.NET 11 Preview - Capturing Process Output & Errors]({% post_url 2026-07-04-net-11-preview-capturing-process-output-errors %})", we looked at how .NET 11 simplifies **starting a process** and **capturing its outpu**t.
 
-Today we will look at another scenario - where we want to simply capture the **status** of a [Process](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=net-10.0) upon its exit.
+Today we will look at another scenario - where we want to simply capture the **status** of a [Process](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=net-10.0) upon its **exit**.
 
-Currently, the starndard way to do it is like this:
+Currently, the standard way to do it is like this:
 
 First, we set up our logging with [Serilog](https://github.com/serilog/serilog-sinks-console):
 
