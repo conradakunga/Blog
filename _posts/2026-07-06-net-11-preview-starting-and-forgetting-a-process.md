@@ -8,7 +8,7 @@ categories:
     - .NET 11 Preview
 ---
 
-Yesterday's post, "[.NET 11 Preview - Capturing Process Exit Status]({% post_url 2026-07-05-net-11-preview-capturing-process-exit-status %})", looked at how to **start a process and capture its exit status**, which is useful for scenarios where you want to know whether your **process ran to completion successfully**.
+Yesterday's post, "[.NET 11 Preview - Capturing Process Exit Status]({% post_url 2026-07-05-net-11-preview-capturing-process-exit-status %})", looked at how to **start a process and capture its exit status**, which is useful in scenarios where you want to know whether your **process ran to completion successfully**.
 
 In today's post, we will look at another scenario - where you want to start a process and forget, typically in a scenario where your application executes a long-running child process.
 
