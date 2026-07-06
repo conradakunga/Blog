@@ -77,6 +77,6 @@ Unlike the `Start` method, this returns a [ProcessExitStatus](https://learn.micr
 
 **Running a process and capturing its result has been simplified in .NET 11 with the `Run` and `RunAsync` methods.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-05%20-%20CaptureProcessResult).
 
 Happy hacking!
