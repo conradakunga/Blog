@@ -8,13 +8,13 @@ categories:
     - .NET 11 Preview
 ---
 
-In yesterday's post, "[.NET 11 Preview - Capturing Process Output & Errors]({% post_url 2026-07-04-net-11-preview-capturing-process-output-errors %})", we looked at how .NET 11 simplifies starting a process and capturing its output.
+In yesterday's post, "[.NET 11 Preview - Capturing Process Output & Errors]({% post_url 2026-07-04-net-11-preview-capturing-process-output-errors %})", we looked at how .NET 11 simplifies **starting a process** and **capturing its outpu**t.
 
 Today we will look at another scenario - where we want to simply capture the **status** of a [Process](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=net-10.0) upon its exit.
 
 Currently, the starndard way to do it is like this:
 
-First, we setup our logging with Serilog:
+First, we set up our logging with [Serilog](https://github.com/serilog/serilog-sinks-console):
 
 ```c#
 Log.Logger = new LoggerConfiguration()
@@ -61,7 +61,7 @@ else
     Log.Error("Failure");
 ```
 
-If the process you want to run has arguments, there is an overload that accepts them as an array of strings.
+If the process you want to run has arguments, there is an **overload** that accepts them as an [IList](https://learn.microsoft.com/sr-latn-rs/dotnet/api/system.collections.generic.ilist-1?view=net-11.0) of `strings`.
 
 ```c#
 var result = await Process.RunAsync("pwd", ["-L"]);
