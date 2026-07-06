@@ -3,7 +3,7 @@ layout: post
 title: .NET 11 Preview - Starting and Forgetting A Process
 date: 2026-07-06 22:17:26 +0300
 categories:
-   - C#
+    - C#
     - .NET
     - .NET 11 Preview
 ---
