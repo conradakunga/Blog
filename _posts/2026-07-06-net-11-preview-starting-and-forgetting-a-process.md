@@ -10,7 +10,7 @@ categories:
 
 Yesterday's post, "[.NET 11 Preview - Capturing Process Exit Status]({% post_url 2026-07-05-net-11-preview-capturing-process-exit-status %})", looked at how to **start a process and capture its exit status**, which is useful in scenarios where you want to know whether your **process ran to completion successfully**.
 
-In today's post, we will look at another scenario - where you want to start a process and forget, typically in a scenario where your application executes a long-running child process.
+In today's post, we will look at another scenario - where you want to **start a process** and **forget**, typically in a scenario where your application executes a long-running child process.
 
 Currently, we would do it like this:
 
@@ -23,9 +23,9 @@ Process.Start(new ProcessStartInfo
 });
 ```
 
-This is not the best of examples, as the whole point of ping is to read the results, but this is just an illustration.
+This is not the best of examples, as the whole point of **ping** is to **read** the results, but this is just an **illustration**.
 
-The problem with this is that, much as it works, the intent is not very clear.
+The problem with this is that, much as it works, the **intent is not very clear**.
 
 This has been addressed in NET 11 with the introduction of the aptly named [StartAndForget](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.startandforget?view=net-11.0) method, added to the [Process](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=net-11.0) class.
 
@@ -35,7 +35,7 @@ The equivalent code as follows:
 Process.StartAndForget("ping", ["-v", "conradakunga.com"]);
 ```
 
-Not only is this much simpler, but it is also much clearer.
+Not only is this much **simpler**, but it is also much **clearer** in terms of **communicating** the **intent**.
 
 ### TLDR
 
