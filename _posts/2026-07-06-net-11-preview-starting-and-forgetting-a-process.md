@@ -41,6 +41,6 @@ Not only is this much simpler, but it is also much clearer.
 
 **The `StartAndForget` method has been introduced to the `Process` class for cases where you want to start a child process without waiting for it.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-06%20-%20FireAndForget).
 
 Happy hacking!
