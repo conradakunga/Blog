@@ -39,6 +39,6 @@ Here, we set the [StartDetached](https://learn.microsoft.com/en-us/dotnet/api/sy
 
 **The `StartAndForget` method has an overload that takes a `ProcessStartInfo` object you can use to specify a detached process.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-07%20-%20ProcessDeatched).
 
 Happy hacking!
