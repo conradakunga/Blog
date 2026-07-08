@@ -14,7 +14,7 @@ A caveat with the `Run` APIs such as  [Run](https://learn.microsoft.com/en-us/do
 
 This is **generally a good thing**, but there are times when you want the **child process to outlive** its parent.
 
-In this scenario, `StartAndForget` has an overload that takes a [ProcessStartInfo](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.processstartinfo?view=net-11.0) object.
+In this scenario, [StartAndForget](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.startandforget?view=net-11.0) has an overload that takes a [ProcessStartInfo](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.processstartinfo?view=net-11.0) object.
 
 You can use this to specify that you want a **detached** process as follows:
 
