@@ -116,6 +116,6 @@ We can see here that in **decreasing** size:
 
 **.NET 11 has introduced the *ZStandard* compression algorithm in the `System.IO.Compression` namespace.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-08%20-%20CompressionComparison).
 
 Happy hacking!
