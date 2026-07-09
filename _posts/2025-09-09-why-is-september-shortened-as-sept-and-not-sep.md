@@ -31,7 +31,7 @@ Note that it is **Sept** and not **Sep**.
 
 Why is this?
 
-So, for many years, **Sep** was used until 2021 when the [ISO](https://www.iso.org/home.html) decided to make a change.
+So, for many years, **Sep** was used until 2021, when the [ISO](https://www.iso.org/home.html) decided to make a change.
 
 The rationale appears to be that in the UK, **Sept** is the accepted abbreviation for **September**, as opposed to **Sep**. And so, in 2021, ISO decided to formalize this.
 
@@ -41,9 +41,9 @@ Whether it was [StackOverflow](https://stackoverflow.com/questions/69267710/sept
 
 The biggest objection was that [this change would needlessly break existing code](https://unicode-org.atlassian.net/browse/CLDR-14412), for **what problem was it solving**?
 
-This is a view I happen to concurr with.
+This is a view I happen to concur with.
 
-I don't believe there is anyone incapable of understanding that **Sep** is **September**, and breaking applications that have been running for years for something so pedantic makes little sense to me.
+I don't believe there is anyone incapable of understanding that **Sep** is **September**, and breaking applications that have been running for years over something so **pedantic** makes little sense to me.
 
 But the change has been made, and we are (presumably) stuck with it.
 
@@ -69,10 +69,10 @@ English (Australia)
 
 Here we can see that **June**, **July,** and **Sept** do not conform to the rest.
 
-This generally isn't an issue too much when **displaying** data, but when [parsing]({% post_url 2025-06-16-locale-considerations-when-parsing-dates %})) it.
+This generally isn't an issue too much when **displaying** data, but when [parsing]({% post_url 2025-06-16-locale-considerations-when-parsing-dates %}) it.
 
 ### TLDR
 
-**Programming languages that faithfully implement ISO standards can lead to surprises if you do not follow closely the changes in the standards.**
+**Programming languages that faithfully implement ISO standards can lead to surprises if you do not follow the changes in the standards closely.**
 
 Happy hacking!
