@@ -48,10 +48,12 @@ var response = await client.GetStringAsync("https://facebook.com");
 Console.WriteLine(response.Length);
 ```
 
+We are using **Facebook** here because the server already supports `Zstandard`.
+
 ### TLDR
 
 **You can utilize `Zstandard` compression with a `HttpClient` by wrapping it in a `HttpClientHandler`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-09%20-%20ZStandardHttpClient).
 
 Happy hacking!
