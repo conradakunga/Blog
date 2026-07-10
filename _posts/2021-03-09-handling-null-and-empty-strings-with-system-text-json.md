@@ -48,11 +48,11 @@ If we run the code we get the following:
 
 ![](../images/2021/03/Animal2.png)
 
-You can see in the output that the null is output explicitly.
+You can see in the output that the `null` is output explicitly.
 
-Now there are two main ways to handle this - the first is to have the attribute with a value of null, as we have done. The second is not to have the attribute there at all, if its value is null.
+Now there are two main ways to handle this - the first is to have the attribute with a value of `null`, as we have done. The second is **not to have the attribute there at all**, if its value is null.
 
-To achieve the second method we configure our serialization as follows:
+To achieve the second result, we **configure** our serialization as follows:
 
 ```csharp
 animal = new Animal()
@@ -67,15 +67,15 @@ serialized = JsonSerializer.Serialize(animal, new JsonSerializerOptions()
 });
 ```
 
-If we run the code the output should be as follows:
+If we run the code, the output should be as follows:
 
 ![](../images/2021/03/Animal3.png)
 
-Here we can see the Name property is not serialized at all.
+Here we can see the `Name` property is not serialized at all.
 
-There is a third technique - returning an empty string where there are nulls. This might not be the way most people would do, but this might be a requirement for an upstream API.
+There is a third technique - returning an empty `string` where there are `nulls`. This might not be the way most people would do it, but this might be a requirement for an upstream API.
 
-To do this we create a [JsonConverter](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-5.0). This is a special class that we can subclass and override to control the serialization (and deserialization) process of an object.
+To do this, we create a [JsonConverter](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-5.0). This is a special `class` that we can **subclass** and **override** to control the serialization (and deserialization) process of an object.
 
 ```csharp
 public class NullToEmptyStringConverter : JsonConverter<string>
@@ -87,7 +87,7 @@ public class NullToEmptyStringConverter : JsonConverter<string>
     {
     	return typeToConvert == typeof(string);
     }
-    // Ignore for this exampke
+    // Ignore for this example
     public override string Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
     	throw new NotImplementedException();
@@ -104,14 +104,14 @@ public class NullToEmptyStringConverter : JsonConverter<string>
 ```
 
 There are 4 important bits here
-1. `HandleNull` by default is `false` - the serializer by default will output a null the instant it encounters one and will make no attempt to process it. In our code we need to override this and make it `true`.
+1. `HandleNull` by default is `false` - the serializer by default will output a null the instant it encounters one and will make no attempt to process it. In our code, we need to override this and make it `true`.
 2. `CanConvert` determines the type for which the serialization and deserialization code you are going to write will be processed.
 3. `Read` is the code to deserialize the value.
 4. `Write` is the code to serialize the value.
 
-In our case here we are interested in the string type, and we simply want to write an empty string whenever we encounter a `null`
+In our case here, we are interested in the string type, and we simply want to write an empty string whenever we encounter a `null`
 
-Once we have written our converter, we need to make our code aware of the new converter. This is done by adding it to an instance of the [JsonSerializationOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-5.0) class.
+Once we have written our converter, we need to make our code aware of it. This is done by adding it to an instance of the [JsonSerializationOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-5.0) class.
 
 ```csharp
 animal = new Animal()

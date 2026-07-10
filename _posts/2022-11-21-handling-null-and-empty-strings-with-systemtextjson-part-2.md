@@ -6,9 +6,9 @@ categories:
     - C#
     - System.Text.Json
 ---
-In a previous post I talked about [Handling Null And Empty Strings With System.Text.Json]({% post_url 2021-03-09-handling-null-and-empty-strings-with-system-text-json %})
+In a previous post, I talked about [Handling Null And Empty Strings With System.Text.Json]({% post_url 2021-03-09-handling-null-and-empty-strings-with-system-text-json %})
 
-Today Malthe wrote asking about how to tackle the problem in the reverse - your JSON has empty strings and you want to convert them to `NULL`.
+Today **Malthe** wrote asking about how to tackle the problem in **reverse** - your JSON has empty strings and you want to convert them to `NULL`.
 
 Is this possible?
 
@@ -54,7 +54,7 @@ This is not what we want.
 
 We want that empty string to be deserialized as a `NULL`.
 
-The way to achieve this, as it was for the serialization, is to write a [JsonConverter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-7.0) for the string type, and to override the `Read` method.
+The way to achieve this, as it was for the serialization, is to write a [JsonConverter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-7.0) for the `string` type, and to override the `Read` method.
 
 So we write the following code, completing the serializer we had defined earlier:
 
@@ -122,7 +122,7 @@ options.Converters.Add(new NullToEmptyStringConverter());
 retrievedMonkey = JsonSerializer.Deserialize<Animal>(rawJson, options);
 ```
 
-If we run the code we see now that the name is correctly set to `NULL`
+If we run the code, we see now that the name is correctly set to `NULL`
 
 ![](../images/2022/11/NullValueName.png)
 
