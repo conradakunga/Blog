@@ -57,7 +57,7 @@ Couple of things to note here from Yaak
 2. These are the [request headers](https://developer.mozilla.org/en-US/docs/Glossary/Request_header)
 3. These are the [response header](https://developer.mozilla.org/en-US/docs/Glossary/Response_header)
 
-Note here that there is no [content-encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Encoding) header,, indicating that **no compression** has been used at all.
+Note here that there is no [content-encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Encoding) header, indicating that **no compression** has been used at all.
 
 The client needs to **request** this.
 
