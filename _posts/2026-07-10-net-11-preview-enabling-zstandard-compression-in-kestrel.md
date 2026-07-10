@@ -3,6 +3,9 @@ layout: post
 title: .NET 11 Preview - Enabling Zstandard Compression In Kestrel
 date: 2026-07-10 19:29:58 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
 ---
 
 In a previous post, "[.NET 11 Preview - Zstandard Compression]({% post_url 2026-07-08-net-11-preview-zstandard-compression %})", we looked at the introduction of [Zstandard](https://en.wikipedia.org/wiki/Zstd) **compression algorithm** in .NET 11.
