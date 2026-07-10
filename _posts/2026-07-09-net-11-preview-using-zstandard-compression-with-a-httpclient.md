@@ -27,9 +27,9 @@ It is generally a good idea to specify an **alternate** compression if the web s
 
 ```c#
 var handler = new HttpClientHandler
-	{
-		AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Zstandard
-	};
+{
+	AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Zstandard
+};
 ```
 
 Here, we are specifying `GZip` or `Zstandard`.
