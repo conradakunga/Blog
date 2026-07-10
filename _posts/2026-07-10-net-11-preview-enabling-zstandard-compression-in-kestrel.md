@@ -78,6 +78,10 @@ The allowed values (at least for [Kestrel](https://learn.microsoft.com/en-us/asp
 - `br`, for [Brotli](https://en.wikipedia.org/wiki/Brotli) compression
 - `gzip`, for [GZip](https://en.wikipedia.org/wiki/Gzip) compression
 
+Yaak also has a timeline view to view all your traffic in one place.
+
+![timeline](../images/2026/07/timeline.png)
+
 ### TLDR
 
 **.NET 11 supports `Zstandard` HTTP compression out of the box. You just need to turn it on.**
