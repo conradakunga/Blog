@@ -86,6 +86,6 @@ Yaak also has a timeline view to view all your traffic in one place.
 
 **.NET 11 supports `Zstandard` HTTP compression out of the box. You just need to turn it on.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-10%20-%20WebServer).
 
 Happy hacking!
