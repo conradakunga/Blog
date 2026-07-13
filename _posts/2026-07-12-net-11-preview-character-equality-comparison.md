@@ -22,7 +22,7 @@ However, in .NET 10 and earlier, you don't have much choice when you use the [Eq
 Console.WriteLine('i'.Equals('I'));
 ```
 
-This takes only one parameter: the `char` to compare to`.` And therefore our example here will **always** return `false`.
+This takes only one parameter: the `char` to compare to. And therefore our example here will **always** return `false`.
 
 Luckily, there are ways to perform this comparison and still tell your code how to compare, but you have to convert the `char` to a [string](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-10.0) first, then specify **how** to compare.
 
