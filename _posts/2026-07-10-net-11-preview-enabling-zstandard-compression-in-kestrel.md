@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .NET 11 Preview - Enabling Zstandard Compression In Kestrel
+title: .NET 11 Preview - Enabling Zstandard Compression in Kestrel
 date: 2026-07-10 19:29:58 +0300
 categories:
     - C#
@@ -10,7 +10,7 @@ categories:
 
 In a previous post, "[.NET 11 Preview - Zstandard Compression]({% post_url 2026-07-08-net-11-preview-zstandard-compression %})", we looked at the introduction of [Zstandard](https://en.wikipedia.org/wiki/Zstd) **compression algorithm** in .NET 11.
 
-In this post we will look at how to enable `Zstandard` **HTTP compression** in [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) **web applications** and **API project**s.
+In this post, we will look at how to enable `Zstandard` **HTTP compression** in [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) **web applications** and **API project**s.
 
 The good news is that you don't have to do much - simply **turn it on** as follows:
 
@@ -33,31 +33,31 @@ The magic is in these lines:
 builder.Services.AddResponseCompression();
 ```
 
-Here we are configuring our services to **inject** compression services.
+Here, we are configuring our services to inject compression.
 
 ```c#
 app.UseResponseCompression();
 ```
 
-Here we are instructing our web application to use the compression [middleware](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-10.0).
+Here, we instruct our web application to use the compression [middleware](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-10.0).
 
 We then **start** our application:
 
 ![compressionStartApp](../images/2026/07/compressionStartApp.png)
 
-Then using your favourite tool, make a request.
+Then, using your favorite tool, make a request.
 
 My tool of choice is [Yaak](https://yaak.app/).
 
 ![compressionWithoutHeaders](../images/2026/07/compressionWithoutHeaders.png)
 
-Couple of things to note here from Yaak
+A couple of things to note here from Yaak
 
 1. The **Headers** section allows you to view your headers (request and response)
 2. These are the [request headers](https://developer.mozilla.org/en-US/docs/Glossary/Request_header)
-3. These are the [response header](https://developer.mozilla.org/en-US/docs/Glossary/Response_header)
+3. These are the [response headers](https://developer.mozilla.org/en-US/docs/Glossary/Response_header)
 
-Note here that there is no [content-encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Encoding) header, indicating that **no compression** has been used at all.
+Note that here, there is no [content-encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Encoding) header, indicating that **no compression** has been used at all.
 
 The client needs to **request** this.
 
@@ -69,7 +69,7 @@ To request `Zstandard` compression, specify `zstd` in the header.
 
 Here you can see the server responded with a [content-encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Encoding) header, indicating the compression it used.
 
-If you specify something that it does not understand, this header will not be returned at all and your content will be returned **uncompressed**.
+If you specify something that it does not understand, this header will not be returned at all, and your content will be returned **uncompressed**.
 
 ![potatoHeader](../images/2026/07/potatoHeader.png)
 
