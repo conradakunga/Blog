@@ -100,6 +100,6 @@ We can **verify** that the compression works.
 
 **You can control whether or not to use `Zstandard` compression in `Kestrel`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-11%20-%20WebServer).
 
 Happy hacking!
