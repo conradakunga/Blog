@@ -9,11 +9,11 @@ categories:
     - ASP.NET
 ---
 
-In yesterday's post, "[.NET 11 Preview - Enabling Zstandard Compression in Kestrel]({% post_url 2026-07-10-net-11-preview-enabling-zstandard-compression-in-kestrel %})", we looked at how to enable [Zstandard](https://en.wikipedia.org/wiki/Zstd) content compression in [Kestrel](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-10.0).
+In yesterday's post, "[.NET 11 Preview - Enabling Zstandard Compression in Kestrel]({% post_url 2026-07-10-net-11-preview-enabling-zstandard-compression-in-kestrel %})", we looked at how to enable [Zstandard](https://en.wikipedia.org/wiki/Zstd) **content compression** in [Kestrel](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-10.0).
 
 In this post, we will look at how to turn it **off**.
 
-The simplest way is to not configure this feature in the middleware.
+The simplest way is to **not configure this feature** in the middleware.
 
 In other words, instead of this:
 
@@ -41,9 +41,9 @@ app.MapGet("/Hello", () => "The quick brown fox jumped over the lazy dog");
 app.Run();
 ```
 
-This is the simplest option, and here you will get no content compression at all.
+This is the simplest option, and here you will get **no content compression at all**.
 
-The more sophisticated way is to selectively enable the compression algorithms that you want.
+The more sophisticated way is to **selectively enable the compression algorithms** that you want.
 
 The code will look like this:
 
@@ -82,7 +82,7 @@ Here we are doing the following:
 1. **Removing all**  compression providers
 2. **Re-registering** the ones we want to use
 
-We can verify that the compression works.
+We can **verify** that the compression works.
 
 `Brotli`:
 
@@ -92,7 +92,7 @@ We can verify that the compression works.
 
 ![gzipCompression](../images/2026/07/gzipCompression.png)
 
-`Zstandard` is not compressed:
+`Zstandard` is **not compressed**:
 
 ![zstdNonCompression](../images/2026/07/zstdNonCompression.png)
 
