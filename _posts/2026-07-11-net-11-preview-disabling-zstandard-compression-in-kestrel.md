@@ -3,6 +3,10 @@ layout: post
 title: .NET 11 Preview - Disabling Zstandard Compression in Kestrel
 date: 2026-07-11 21:27:58 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
+    - ASP.NET
 ---
 
 In yesterday's post, "[.NET 11 Preview - Enabling Zstandard Compression in Kestrel]({% post_url 2026-07-10-net-11-preview-enabling-zstandard-compression-in-kestrel %})", we looked at how to enable [Zstandard](https://en.wikipedia.org/wiki/Zstd) content compression in [Kestrel](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-10.0).
