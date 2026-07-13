@@ -49,4 +49,6 @@ This will print the following:
 
 **`Char.Equals` now has an *overload* that allows you to specify how to compare.**
 
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-12%20-%20CharComparisons).
+
 Happy hacking!
