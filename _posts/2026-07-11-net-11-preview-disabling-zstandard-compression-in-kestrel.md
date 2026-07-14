@@ -81,6 +81,7 @@ Here we are doing the following:
 
 1. **Removing all**  compression providers
 2. **Re-registering** the ones we want to use
+3. We are explicitly **not** adding the `Zstandard` compression provider
 
 We can **verify** that the compression works.
 
