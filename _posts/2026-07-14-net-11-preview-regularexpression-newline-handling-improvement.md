@@ -60,6 +60,6 @@ This will return the following:
 
 **The `AnyNewLine` `RegexOptions` flag makes it easier to match text with different newline encodings.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-14%20-%20NewLineRegex).
 
 Happy hacking!
