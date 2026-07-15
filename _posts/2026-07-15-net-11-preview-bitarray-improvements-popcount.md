@@ -92,6 +92,6 @@ Console.WriteLine($"There are {arr.PopCount()} seats occupied");
 
 **The `BitArray` class now has a `PopCount` method that you can use to return the number of `true` bits set.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-15%20-%20BitArrayPop).
 
 Happy hacking!
