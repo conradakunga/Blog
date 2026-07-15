@@ -41,7 +41,7 @@ An increasingly common use case is when you need to **move data** from one `Stri
 Typically, you would do this:
 
 ```c#
-StringBuilder target = new StringBuilder(sb.ToString());
+var target = new StringBuilder(sb.ToString());
 ```
 
 This is generally fine, but you can run into problems when you have very **large** `StringBuilders`, as when you are done you will have two very large `StringBuilders` occupying **memory**.
@@ -51,7 +51,7 @@ In .NET 11 a new static method has been introduced to the StringBuilder to addre
 It works as follows:
 
 ```c#
-StringBuilder target = StringBuilder.MoveChunks(sb);
+var target = StringBuilder.MoveChunks(sb);
 ```
 
 What this will do is **move** the content from the source, `sb` to the target, `target`.
@@ -60,7 +60,7 @@ After the operation is done the **source** will be **empty**.
 
 ```c#
 Console.WriteLine($"The source has {sb.Length} characters before");
-StringBuilder target = StringBuilder.MoveChunks(sb);
+var target = StringBuilder.MoveChunks(sb);
 Console.WriteLine($"The source has {sb.Length} characters after");
 ```
 
