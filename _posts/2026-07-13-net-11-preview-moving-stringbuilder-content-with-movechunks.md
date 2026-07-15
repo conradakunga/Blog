@@ -72,6 +72,6 @@ This code will return the following:
 
 **The `MoveChunks` method allows you to move contents from one `StringBuilder` to another.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-13%20-%20MoveChunks).
 
 Happy Hacking!
