@@ -12,7 +12,7 @@ One of the data structures that a developer will quickly add to their tool-belt 
 
 Creating  and allocating a [string](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/) is an **expensive** process, especially if done **repeatedly**.
 
-Code such as this is problematic:
+Code such as this is **problematic**:
 
 ```c#
 var str = "";
