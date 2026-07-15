@@ -6,8 +6,6 @@ permalink: /about/
 
 I have been writing software professionally for decades. 
 
-![MVP](../images/MVP_Badge_Avatar_Secondary_DarkBlue7694_RGB.png)
-
 In this blog I will be writing primarily about:
 
 1. **The Business of software**
