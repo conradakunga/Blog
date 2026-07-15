@@ -3,6 +3,9 @@ layout: post
 title: .NET 11 Preview - BitArray Improvements - PopCount
 date: 2026-07-15 19:39:08 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
 ---
 
 One of the more **esoteric** data structures in the .NET ecosystem is the [BitArray](https://learn.microsoft.com/en-us/dotnet/api/system.collections.bitarray?view=net-10.0).
