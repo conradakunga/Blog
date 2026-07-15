@@ -46,7 +46,7 @@ var target = new StringBuilder(sb.ToString());
 
 This is generally fine, but you can run into problems when you have very **large** `StringBuilders`, as when you are done you will have two very large `StringBuilders` occupying **memory**.
 
-In .NET 11 a new static method has been introduced to the StringBuilder to address this scenario - [MoveChunks](https://learn.microsoft.com/en-us/dotnet/api/system.text.stringbuilder.movechunks#system-text-stringbuilder-movechunks(system-text-stringbuilder)).
+In .NET 11 a new **static** method has been introduced to the `StringBuilder` to address this scenario - [MoveChunks](https://learn.microsoft.com/en-us/dotnet/api/system.text.stringbuilder.movechunks#system-text-stringbuilder-movechunks(system-text-stringbuilder)).
 
 It works as follows:
 
