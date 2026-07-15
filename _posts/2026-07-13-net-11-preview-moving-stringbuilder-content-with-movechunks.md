@@ -18,7 +18,7 @@ Code such as this is **problematic**:
 var str = "";
 for (var i = 1; i < 10_000; i++)
 {
-	str += $"{i} ";
+  str += $"{i} ";
 }
 Console.WriteLine(str);
 ```
