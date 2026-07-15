@@ -8,7 +8,7 @@ categories:
     - .NET 11 Preview
 ---
 
-For many years, the bane of developers when it came to processing text was the newline.
+For many years, the bane of developers when it came to processing text was the [newline](https://en.wikipedia.org/wiki/Newline).
 
 For many years there were `3`
 
@@ -16,7 +16,7 @@ For many years there were `3`
 - Unix & Linux - `\n`
 - Older MacOS = `\r`
 
-Unicode has an additional 3 
+Unicode has an additional `3` 
 
 -  `\u0085`
 -  `\u2028`
