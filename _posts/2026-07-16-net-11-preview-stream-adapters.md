@@ -31,7 +31,7 @@ var dataInBytes = Encoding.Default.GetBytes(data);
 var dataStream = new MemoryStream(dataInBytes);
 ```
 
-You will see here that we need to create an intermediate `byte` `array`, and then convert that into a `stream`.
+You will see here that we need to create an intermediate [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte?view=net-10.0) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays), and then convert that into a `stream`.
 
 This is such a common use case that .NET 11 now has a solution to this: the `StringStream`. (**As I write this, the official API documentation is yet to be updated, for Preview 6)**
 
