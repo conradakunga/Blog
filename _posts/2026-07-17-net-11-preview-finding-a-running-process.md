@@ -39,9 +39,9 @@ The problem arises when you try to get a process with a [non-existent ID](), or 
 
 ![processException](../images/2026/07/processException.png)
 
-Here I am using the dummy ID of `999999`.
-
 If the runtime cannot obtain the process, **it throws an exception**.
+
+Here, I am using the dummy ID of `999999`.
 
 This means you must always wrap your code in a [try-catch block](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/exception-handling-statements), like so:
 
