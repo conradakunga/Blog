@@ -22,7 +22,7 @@ Will print the following:
 
 ![mediaTypeFromExtension](../images/2026/07/mediaTypeFromExtension.png)
 
-Correspondingly, we can get the extension from the name, like so:
+Correspondingly, we can get the **extension** from the **name**, like so:
 
 ```c#
 Console.WriteLine(MediaTypeMap.GetExtension("image/cgm"));
