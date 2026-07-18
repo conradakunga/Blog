@@ -48,16 +48,14 @@ This means you must always wrap your code in a [try-catch block](https://learn.m
 ```c#
 try
 {
-var process = Process.GetProcessById(99999);
+	var process = Process.GetProcessById(99999);
 Console.WriteLine($"Process name: {process.ProcessName}");
 }
-catch (Exception e)
+	catch (Exception e)
 {
-Console.WriteLine("Could not load process!");
+	Console.WriteLine("Could not load process!");
 }
 ```
-
-
 
 In .NET 11, there is a more elegant API for this problem - the `TryGetProcessById` API.  (**As I write this, the official API documentation is yet to be updated for Preview 6)**
 
