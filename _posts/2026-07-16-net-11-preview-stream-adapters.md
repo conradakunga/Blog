@@ -10,7 +10,7 @@ categories:
 
 Quite a number of .NET APIs take [streams](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-10.0) as parameters.
 
-However, you will typically run into a challenge where your data is not a `stream`, and you will typically need to do some **gymnastics** to **convert** it into one.
+However, you will typically run into a challenge where your data is not a `stream`; then you will need to do some **gymnastics** to **convert** it into one.
 
 Take this example:
 
@@ -33,7 +33,7 @@ var dataStream = new MemoryStream(dataInBytes);
 
 You will see here that we need to create an intermediate [byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte?view=net-10.0) [array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays), and then convert that into a `stream`.
 
-This is such a common use case that .NET 11 now has a solution to this: the `StringStream`. (**As I write this, the official API documentation is yet to be updated, for Preview 6)**
+This is such a common use case that .NET 11 now has a solution to this: the `StringStream`. (**As I write this, the official API documentation is yet to be updated for Preview 6)**
 
 Our code above can be rewritten as follows:
 
@@ -48,6 +48,6 @@ Of importance here is that you have to specify the [encoding](https://en.wikiped
 
 **.NET 11 has new APIs, such as the `StringStream`, that allow you to directly create `Streams` from text.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-16%20-%20StreamAdapters).
 
 Happy hacking!
