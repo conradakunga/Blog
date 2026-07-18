@@ -3,6 +3,9 @@ layout: post
 title: .NET 11 Preview - CGM Support in MediaTypeMap
 date: 2026-07-18 20:39:04 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
 ---
 
 In a previous post, .NET 11 Preview - MIME Type Lookups, we looked at the new [MediaTypeMap](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypemap?view=net-11.0) `class` that allows us to fetch [MIME Types](https://en.wikipedia.org/wiki/MIME) from **file extensions** natively in .NET without requiring **third-party libraries**.
