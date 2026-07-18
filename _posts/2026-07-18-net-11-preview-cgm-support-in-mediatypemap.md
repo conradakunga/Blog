@@ -10,7 +10,7 @@ categories:
 
 In a previous post, [.NET 11 Preview - MIME Type Lookups]({% post_url 2026-06-27-net-11-preview-mime-type-lookups %}), we looked at the new [MediaTypeMap](https://learn.microsoft.com/en-us/dotnet/api/system.net.mime.mediatypemap?view=net-11.0) `class` that allows us to fetch [MIME Types](https://en.wikipedia.org/wiki/MIME) from **file extensions** natively in .NET without requiring **third-party libraries**.
 
-This has further been updated to support a lesser-used but very common format in technical circles - [Computer Graphics](https://en.wikipedia.org/wiki/Computer_Graphics_Metafile) metafile, `.cgm`, standardized in [ISO 8632-1](https://www.iso.org/standard/32378.html).
+This has further been updated to support a lesser-used but very common format in technical circles - [Computer Graphics Metafile](https://en.wikipedia.org/wiki/Computer_Graphics_Metafile), `.cgm`, standardized in [ISO 8632-1](https://www.iso.org/standard/32378.html).
 
 This means that this code:
 
