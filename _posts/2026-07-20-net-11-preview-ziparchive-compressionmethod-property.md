@@ -1,8 +1,11 @@
 ---
 layout: post
-title: .NET 11 Preview - ZipArchive CompressionMethod Property
+title: .NET 11 Preview - ZipArchiveEntry CompressionMethod Property
 date: 2026-07-20 21:45:54 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
 ---
 
 In a previous post in the series on file compression "[Listing The Files In A Zip File In C# & .NET]({% post_url 2026-01-18-listing-the-files-in-a-zip-file-in-c-net %})", we discussed how to **list files** in a [Zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) file.
