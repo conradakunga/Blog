@@ -94,6 +94,6 @@ If we run this code, it should print the following:
 
 **You can use the new `CompressionMethod` property of the `ZipArchiveEntry` class to tell how (if at all) the file was compressed.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-20%20-%20ListFilesInZipCompression).
 
 Happy hacking!
