@@ -8,7 +8,7 @@ categories:
     - .NET 11 Preview
 ---
 
-In a previous post in the series on file compression "[Listing The Files In A Zip File In C# & .NET]({% post_url 2026-01-18-listing-the-files-in-a-zip-file-in-c-net %})", we discussed how to **list files** in a [Zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) file.
+In a previous post in the series on file compression, "[Listing The Files In A Zip File In C# & .NET]({% post_url 2026-01-18-listing-the-files-in-a-zip-file-in-c-net %})", we discussed how to **list files** in a [Zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) file.
 
 When adding a file to a `Zip` file, you generally want to **compress** it. But it is not **mandatory**.
 
@@ -45,7 +45,7 @@ await using (var archive = await ZipFile.OpenAsync(zipFile, ZipArchiveMode.Read)
 }
 ```
 
-The magic is happening in this part:
+The **magic** is happening in this part:
 
 ```c#
 // Check if the file is compressed
@@ -55,9 +55,9 @@ if (file.CompressedLength != file.Length)
 
 We are comparing the [compressed length](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry.compressedlength?view=net-11.0) with the [actual (uncompressed) length](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry.length?view=net-11.0).
 
-The trouble with this is that it much as it can tell you **whether or not** there was compression, it does not tell you what **method** was used.
+The trouble with this is that, as much as it can tell you **whether or not** there was compression, it does not tell you what **method** was used.
 
-This problem is solved in .NET 11 that has added a property, [CompressionMethod](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry.compressionmethod?view=net-11.0) to the [ZipArchiveEntry](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry?view=net-11.0) `class`, to address this problem.
+This problem is solved in .NET 11, which has added a property, [CompressionMethod](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry.compressionmethod?view=net-11.0), to the [ZipArchiveEntry](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry?view=net-11.0) `class`, to address this problem.
 
 We can rewrite our code as follows:
 
