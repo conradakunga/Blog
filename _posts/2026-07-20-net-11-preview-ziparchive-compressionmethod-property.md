@@ -50,7 +50,7 @@ The **magic** is happening in this part:
 ```c#
 // Check if the file is compressed
 if (file.CompressedLength != file.Length)
-	Log.Information("File {FileName} is compressed", file.Name);
+  Log.Information("File {FileName} is compressed", file.Name);
 ```
 
 We are comparing the [compressed length](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry.compressedlength?view=net-11.0) with the [actual (uncompressed) length](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.ziparchiveentry.length?view=net-11.0).
