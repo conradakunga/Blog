@@ -22,7 +22,7 @@ Suppose you want to know how it performs under two different .NET versions, `9` 
 
 Given that this method is pretty **fast**, a **rudimentary** way is to **generate a large number** of them in a **loop** and **time** that. Compile and run against **.NET 9** and then against **.NET 10**.
 
-But this is cumbersome and unscientific.
+But this is **cumbersome** and **unscientific**.
 
 A better way is to use the [BenchmarkDotNet](https://benchmarkdotnet.org/) library.
 
@@ -66,7 +66,7 @@ The magic is happening here:
 
 For this to work, you must have the SDKs of the versions you intend to run against installed.
 
-You can verify as follows;
+You can **verify** as follows;
 
 ```bash
 dotnet --list-sdks
@@ -83,8 +83,8 @@ Our next order of business is to write our **benchmark**. We typically do this i
 ```c#
 public class GuidGenerator
 {
-	[Benchmark]
-public Guid Generate() => Guid.NewGuid();
+  [Benchmark]
+  public Guid Generate() => Guid.NewGuid();
 }
 ```
 
@@ -144,6 +144,6 @@ You can also see I am running this benchmark on Ubuntu Linux 24.04 on a machine 
 
 **`BenchmarkDot` net allows you to compare performance across .NET versions using the `Benchmark` attribute.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-21%20-%20GuidGeneration).
 
 Happy hacking!
