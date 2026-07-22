@@ -1,18 +1,18 @@
 ---
 layout: post
-title: How To Benchmark Performance Across .NET Versions
+title: How to Benchmark Performance Across .NET Versions
 date: 2026-07-21 21:10:52 +0300
 categories:
     - C#
     - .NET
-    - .NET 11 Preview
+    - Performance
 ---
 
 Whenever there is a new release of [.NET](https://dotnet.microsoft.com/), one of the questions that arises is **whether your application is faster or not** when running under the new version.
 
-Which is a sum total of the **collective improvements** across APIs.
+This is the sum total of the **collective improvements** across APIs.
 
-Take for example this method:
+Take, for example, this method:
 
 ```c#
 Guid.NewGuid();
@@ -78,7 +78,7 @@ This should print the following:
 
 Here, you can see I have `3` versions of .NET installed.
 
-Our next order of business is to write our **benchmark**. We typically do this in a `class`, and expose our **benchmark** at a `method` of the `class`, which tells the **runner** what exactly we are benchmarking.
+Our next order of business is to write our **benchmark**. We typically do this in a `class` and expose our **benchmark** as a `method` of the `class`, which tells the **runner** what exactly we are benchmarking.
 
 ```c#
 public class GuidGenerator
@@ -88,7 +88,7 @@ public class GuidGenerator
 }
 ```
 
-Here, we can see what we are benchmarking is the `Generate()` method.
+Here, we can see that what we are benchmarking is the `Generate()` method.
 
 Next, we indicate that we want to benchmark our code across .NET versions. This is achieved using the `SimpleJob` attribute, specifying the **version** we want using the `RuntimeMoniker` as appropriate.
 
