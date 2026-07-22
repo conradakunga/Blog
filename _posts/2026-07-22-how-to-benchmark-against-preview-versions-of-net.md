@@ -92,6 +92,6 @@ Here we can see a couple of things:
 
 **You can run benchmarks against .NET versions *BenchmarkDotNet* is unaware of by subclassing and implementing the `ManualConfig` class.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-22%20-%20GuidGeneration).
 
 Happy hacking!
