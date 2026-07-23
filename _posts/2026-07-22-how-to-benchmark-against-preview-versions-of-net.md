@@ -61,6 +61,13 @@ public sealed class BenchmarkConfig : ManualConfig
 }
 ```
 
+Note here that I am specifying .NET as the baseline here:
+
+```c#
+.WithId("net10")
+	.AsBaseline());
+```
+
 Next, we decorate our **Benchmark** class with a typed `Config` attribute of our `class`, like so:
 
 ```c#
