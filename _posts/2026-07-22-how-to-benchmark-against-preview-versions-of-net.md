@@ -61,7 +61,7 @@ public sealed class BenchmarkConfig : ManualConfig
 }
 ```
 
-Note here that I am specifying .NET as the baseline here:
+Note here that I am specifying .NET as the **baseline** here:
 
 ```c#
 .WithId("net10")
