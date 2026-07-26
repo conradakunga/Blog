@@ -51,6 +51,6 @@ We can see here that our value was **successfully round-tripped**.
 
 **Fractional numbers formatted as *hex* can be round-tripped successfully with preserved accuracy.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-26%20-%20RoundTripHexFraction).
 
 Happy hacking!
