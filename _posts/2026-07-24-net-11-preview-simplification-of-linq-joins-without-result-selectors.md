@@ -102,6 +102,6 @@ Note here we **do not need to construct** our `tuple` in advance, and that the *
 
 **Projection of `LINQ` `JOIN` results is simplified in .NET 11**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-24%20-%20SimpleJoin).
 
 Happy hacking!
