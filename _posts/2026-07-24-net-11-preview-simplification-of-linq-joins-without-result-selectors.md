@@ -70,7 +70,7 @@ This would [project](https://learn.microsoft.com/en-us/dotnet/csharp/linq/standa
 ```c#
 foreach (var (product, order) in result)
 {
-	Console.WriteLine($"Product: {product.Name}, Quantity: {order.Quantity}");
+  Console.WriteLine($"Product: {product.Name}, Quantity: {order.Quantity}");
 }
 ```
 
