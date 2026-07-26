@@ -17,8 +17,8 @@ Take, for example, the following `type` for a `Product`:
 ```c#
 public class Product
 {
-	public required int ID { get; init; }
-	public required string Name { get; init; }
+  public required int ID { get; init; }
+  public required string Name { get; init; }
 }
 ```
 
@@ -27,10 +27,10 @@ Let us add another type, an `Order`:
 ```c#
 public class Order
 {
-	public required int OrderID { get; init; }
-	public required int ProductID { get; init; }
-	public required int Quantity { get; init; }
-
+  public required int OrderID { get; init; }
+  public required int ProductID { get; init; }
+  public required int Quantity { get; init; }
+}
 ```
 
 We then create a [collection](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/collections) of `Product`:
@@ -45,6 +45,16 @@ Product[] products = [
 ```
 
 And another `collection` of `Order`:
+
+```c#
+Order[] orders =
+[
+  new Order{ OrderID=1, ProductID=1,Quantity=10 },
+  new Order{ OrderID=1, ProductID=2,Quantity=13 },
+  new Order{ OrderID=2, ProductID=3,Quantity=5 },
+  new Order{ OrderID=2, ProductID=4,Quantity=8 },
+];
+```
 
 Suppose we wanted to **iterate** over all the orders and print the `Product` **name** and **quantity**. We can achieve this using a `LINQ` `JOIN`, like this:
 
@@ -102,6 +112,6 @@ Note here we **do not need to construct** our `tuple` in advance, and that the *
 
 **Projection of `LINQ` `JOIN` results is simplified in .NET 11**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-24%20-%20SimpleJoin).
+The code is in my GitHub.
 
 Happy hacking!
