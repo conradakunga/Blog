@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - LINQ
+    - .NET 11 Preview
 ---
 
 A staple of .NET programming is the use of [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) to **simplify** a lot of **common operations**.
