@@ -11,7 +11,8 @@ categories:
 Yesterday's post, "[.NET 11 Preview - Formatting Floating Point Numbers In Hex]({% post_url 2026-07-25-net-11-preview-formatting-floating-point-numbers-in-hex %})", looked at how to **format fractional numbers** in [hex](https://en.wikipedia.org/wiki/Hexadecimal), that is now possible in .NET 11.
 
 ```c#
-Console.WriteLine(1_000.ToString("x"));
+var natruralLog = Math.E;
+Console.WriteLine(natruralLog.ToString("x"));
 ```
 
 In this post, we will look at the **reverse** - retrieving the **numerical fractional value** from its **hex** representation.
