@@ -8,9 +8,9 @@ categories:
     - LINQ
 ---
 
-A staple of .NET programming is the use of [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) to simplify a lot of common operations.
+A staple of .NET programming is the use of [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) to **simplify** a lot of **common operations**.
 
-LINQ also offers the ability to [join](https://learn.microsoft.com/en-us/dotnet/csharp/linq/standard-query-operators/join-operations) data, and perform a **variety** of operations.
+`LINQ` also offers the ability to [join](https://learn.microsoft.com/en-us/dotnet/csharp/linq/standard-query-operators/join-operations) data, and perform a **variety** of operations.
 
 Take, for example, the following `type` for a `Product`:
 
