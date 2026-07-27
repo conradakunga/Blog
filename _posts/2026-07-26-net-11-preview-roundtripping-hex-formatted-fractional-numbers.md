@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .NET 11 Preview - Round-tripping Hex Formatted Fractional Numbers
+title: .NET 11 Preview - Round-tripping Hex-Formatted Fractional Numbers
 date: 2026-07-26 01:52:48 +0300
 categories:
     - C#
@@ -8,7 +8,7 @@ categories:
     - .NET 11 Preview
 ---
 
-Yesterday's post, "[.NET 11 Preview - Formatting Floating Point Numbers In Hex]({% post_url 2026-07-25-net-11-preview-formatting-floating-point-numbers-in-hex %})", looked at how to **format fractional numbers** in [hex](https://en.wikipedia.org/wiki/Hexadecimal), that is now possible in .NET 11.
+Yesterday's post, "[.NET 11 Preview - Formatting Floating Point Numbers In Hex]({% post_url 2026-07-25-net-11-preview-formatting-floating-point-numbers-in-hex %})", looked at how to **format fractional numbers** in [hex](https://en.wikipedia.org/wiki/Hexadecimal), which is now possible in .NET 11.
 
 ```c#
 var natruralLog = Math.E;
@@ -29,7 +29,7 @@ Next, we **parse** the value back to a **number**:
 var number = double.Parse(hexValue, NumberStyles.HexFloat);
 ```
 
-Here we are using the [double.Parse](https://learn.microsoft.com/en-us/dotnet/api/system.double.parse?view=net-10.0) method in conjunction with the [NumberStyles.HexFloat](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.numberstyles?view=net-11.0) `enum` in the [System.Globaization](https://learn.microsoft.com/en-us/dotnet/api/system.globalization?view=net-11.0) namespace, that instructs **how** to **parse** the `string`.
+Here we are using the [double.Parse](https://learn.microsoft.com/en-us/dotnet/api/system.double.parse?view=net-10.0) method in conjunction with the [NumberStyles.HexFloat](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.numberstyles?view=net-11.0) `enum` in the [System.Globaization](https://learn.microsoft.com/en-us/dotnet/api/system.globalization?view=net-11.0) namespace, which instructs **how** to **parse** the `string`.
 
 We can then **verify** that our **original** number is **equal** to the **parsed** number.
 
