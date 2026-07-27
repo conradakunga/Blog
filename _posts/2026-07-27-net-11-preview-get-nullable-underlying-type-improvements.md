@@ -57,6 +57,8 @@ Type? underlying = nullableIntType.GetNullableUnderlyingType();
 Console.WriteLine(underlying.Name);
 ```
 
+The results will look like this:
+
 ![nullableImprovements](../images/2026/07/nullableImprovements.png)
 
 ### TLDR
