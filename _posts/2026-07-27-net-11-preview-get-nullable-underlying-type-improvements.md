@@ -10,7 +10,7 @@ categories:
 
 [Nullable types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) have a lot of benefits when it comes to articulating **system design**.
 
-However, obtaining information about a `nullable type` is generally quite an exercise.
+However, obtaining information about a `nullable type` is generally quite an **exercise**.
 
 Take this example: a `nullable` [int](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types).
 
@@ -18,7 +18,7 @@ Take this example: a `nullable` [int](https://learn.microsoft.com/en-us/dotnet/c
 typeof(int?);
 ```
 
-If we wanted to get some information about it, we would do it like this:
+If we wanted to get some information about it, we would do it like this, using [reflection](https://learn.microsoft.com/en-us/dotnet/fundamentals/reflection/overview):
 
 ```c#
 Type nullableIntType = typeof(int?);
@@ -63,6 +63,6 @@ Console.WriteLine(underlying.Name);
 
 **You can now interrogate the Type directly to get information about the underlying type for nullable types.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-27%20-%20NullableInformation).
 
 Happy hacking!
