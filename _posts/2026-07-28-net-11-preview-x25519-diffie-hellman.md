@@ -83,6 +83,6 @@ Personally, I prefer the **previous** because I can **visually see the scope**. 
 
 **.NET 11 simplifies working with `X25519 elliptic-curve Diffie-Hellman` operations.**
 
-The code is in my GitHub,
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-28%20-%20CryptoECDiffieHellman),
 
 Happy hacking!
