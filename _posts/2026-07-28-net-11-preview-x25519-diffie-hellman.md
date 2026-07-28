@@ -16,7 +16,7 @@ The X25519 [elliptic-curve](https://en.wikipedia.org/wiki/Elliptic_curve) [Diffi
 - [Wireguard](https://www.wireguard.com/)
 - [WhatsApp](https://medium.com/@tanyaradzwatmushonga/whatsapp-engineering-how-end-to-end-encryption-works-4d051e68d465)
 
-It is, technically, available in .NET 19, but requires a bit of **elbow grease** to correctly **configure** and **use**.
+It is, technically, available in .NET 10, but requires a bit of **elbow grease** to correctly **configure** and **use**.
 
 ```c#
 using (var alice = ECDiffieHellman.Create(ECCurve.NamedCurves.nistP256))
