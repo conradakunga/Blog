@@ -11,7 +11,7 @@ categories:
 The X25519 [elliptic-curve](https://en.wikipedia.org/wiki/Elliptic_curve) [Diffie-Hellman](https://mathworld.wolfram.com/Diffie-HellmanProtocol.html) algorithm is used heavily where **security** is paramount, and is currently in use in a number of critical **infrastructural** components:
 
 - [SSH](https://en.wikipedia.org/wiki/Secure_Shell)
-- TLS [1.3](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/using)
+- [TLS 1.3](https://www.cloudflare.com/learning/ssl/why-use-tls-1.3/)
 - [Signal](https://signal.org/docs/)
 - [Wireguard](https://www.wireguard.com/)
 - [WhatsApp](https://medium.com/@tanyaradzwatmushonga/whatsapp-engineering-how-end-to-end-encryption-works-4d051e68d465)
