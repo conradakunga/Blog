@@ -3,6 +3,9 @@ layout: post
 title: .NET 11 Preview - X25519 Diffie-Hellman
 date: 2026-07-28 21:06:16 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
 ---
 
 The X25519 [elliptic-curve](https://en.wikipedia.org/wiki/Elliptic_curve) [Diffie-Hellman](https://mathworld.wolfram.com/Diffie-HellmanProtocol.html) algorithm is used heavily where **security** is paramount, and is currently in use in a number of critical **infrastructural** components:
@@ -16,22 +19,20 @@ The X25519 [elliptic-curve](https://en.wikipedia.org/wiki/Elliptic_curve) [Diffi
 It is, technically, available in .NET 19, but requires a bit of **elbow grease** to correctly **configure** and **use**.
 
 ```c#
-bool match = false;
 using (var alice = ECDiffieHellman.Create(ECCurve.NamedCurves.nistP256))
 {
   using (var bob = ECDiffieHellman.Create(ECCurve.NamedCurves.nistP256))
   {
-    // Get alice's secret in a byte array
-    var aliceSecret = alice.DeriveKeyMaterial(bob.PublicKey);
-    // Get bob's secret in a byte array
-    var bobSecret = bob.DeriveKeyMaterial(alice.PublicKey);
+      // Get alice's secret in a byte array
+      var aliceSecret = alice.DeriveKeyMaterial(bob.PublicKey);
+      // Get bob's secret in a byte array
+      var bobSecret = bob.DeriveKeyMaterial(alice.PublicKey);
 
-    // verify the secrets match
-    match = CryptographicOperations.FixedTimeEquals(aliceSecret, bobSecret);
+      // verify the secrets match
+      var match = CryptographicOperations.FixedTimeEquals(aliceSecret, bobSecret);
+      Console.WriteLine(match);
   }
 }
-
-Console.WriteLine(match);
 ```
 
 This should print `true`.
