@@ -221,6 +221,6 @@ In our next post, we will look at how to tackle this.
 
 **`Type` design can start off well and quickly become complicated.**
 
-The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-28%20-%20DiscrimiantedUnions).
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-07-28%20-%20DiscriminatedUnions).
 
 Happy hacking!
