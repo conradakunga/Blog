@@ -4,6 +4,8 @@ title: Discriminated Unions - Part 1 - Introduction
 date: 2026-07-29 21:30:56 +0300
 categories:
     - Programming
+    - Design
+    - Domain Modeling
     - C#
     - NET
 ---
@@ -195,7 +197,7 @@ This will print the following:
 
 So far so good.
 
-Now imagine the entry of a new card type - the **Safiri Card**.
+Now imagine the entry of yet another card type - the **Safiri Card**.
 
 This one does not have a `CVV` at all.
 
