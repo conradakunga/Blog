@@ -10,7 +10,7 @@ categories:
     - NET
 ---
 
-This is **Part 2* of a series on **Discriminated Unions**.
+This is **Part 2** of a series on **Discriminated Unions**.
 
 - [Part 1 - Introduction]({% post_url 2026-07-29-discriminated-unions-part-1 %})
 - **Part 2 - Implementation (this post)**
