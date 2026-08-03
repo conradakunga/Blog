@@ -34,7 +34,7 @@ And these **concrete** classes:
 ```c#
 public class VisaCard : Card
 {
-	public override string Type => "VISA";
+  public override string Type => "VISA";
 }
 ```
 
@@ -43,7 +43,7 @@ And:
 ```c#
 public class AmericanExpressCard : Card
 {
-	public override string Type => "American Express";
+  public override string Type => "American Express";
 }
 ```
 
@@ -228,7 +228,7 @@ public static class PaymentsProcessor
 
 A couple of things to point out:
 
-1. The `MakePayment` method takes as a **parameter** an object of `type` [OneOf<AmericanExpressCard, VisaCard, SafiriCard, MobileMoney>](), which specifies all the `PaymentTypes` we intend to handle.
+1. The `MakePayment` method takes as a **parameter** an object of `type` [OneOf<AmericanExpressCard, VisaCard, SafiriCard, MobileMoneyPayment>](), which specifies all the `PaymentTypes` we intend to handle.
 2. Within the `MakePayment` method, we switch over all the possible `PaymentTypes`
 3. We provide logic for **each candidate** of `PaymentType` specified in the `type`
 
