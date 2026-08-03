@@ -12,6 +12,9 @@ categories:
 
 This is **Part 1** of a series on **Discriminated Unions**.
 
+- Part 1 - Introduction (this post)
+- [Part 2 - Implementation]({% post_url 2026-08-01-discriminated-unions-part-2-implementation %})
+
 In this post, we will start to look at the concept of discriminated unions and how they **elegantly** solve `type` **design problems**.
 
 For this, we will use a **practical example** and work our way up from there.
