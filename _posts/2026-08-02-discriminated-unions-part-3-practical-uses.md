@@ -182,7 +182,7 @@ app.MapGet("/Get/{id:int}", (List<Person> injectedPeople, int id) =>
 
 But I find this **difficult to read**. I prefer the former, more explicit expression.
 
-Now, expect exactly 1 of the 4 possible results:
+Now, expect exactly `1` of the `4` possible results:
 
 ![successResukt](../images/2026/08/successResukt.png)
 
