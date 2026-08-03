@@ -240,6 +240,6 @@ In our next post in the series, we will look at how to use this to solve some co
 
 **Discriminated union allow for the elegant and type-safe solution to the problem where we need to pass unrelated `types` to methods.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-01%20-%20DiscriminatedUnionsOneOf).
 
 Happy hacking!
