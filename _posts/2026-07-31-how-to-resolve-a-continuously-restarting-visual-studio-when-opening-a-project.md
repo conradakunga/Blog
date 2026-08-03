@@ -17,10 +17,16 @@ Visual Studio maintains a **hidden directory** where it stores **intermediate da
 
 The directory is named `.vs`.
 
-You can view this using the following command:
+You can view this using the following command, sa we learnt [yesterday]({% post_url 2026-07-30-showing-hidden-files-directories-in-powershell %}):
 
 ```bash
-ls -Hidden -Folder
+ls -h
+```
+
+This is an [alias](https://learn.microsoft.com/en-us/powershell/scripting/learn/shell/using-aliases?view=powershell-7.6) for the following:
+
+```bash
+Get-ChildItem -Hidden
 ```
 
 This will show something like this:
