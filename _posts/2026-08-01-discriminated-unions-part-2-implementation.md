@@ -3,6 +3,11 @@ layout: post
 title: Discriminated Unions - Part 2 - Implementation
 date: 2026-08-01 10:08:34 +0300
 categories:
+    - Programming
+    - Design
+    - Domain Modeling
+    - C#
+    - NET
 ---
 
 This is **Part 1** of a series on **Discriminated Unions**.
