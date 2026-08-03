@@ -167,6 +167,16 @@ public sealed class SafiriCard : ICard
 }
 ```
 
+Then a new type to support mobile money:
+
+```c#
+public sealed class MobileMoneyPayment
+{
+    public required string PhoneNumber { get; init; }
+    public required string Name { get; init; }
+}
+```
+
 Finally, we turn to our `PaymentProcessor`.
 
 As outlined earlier, we could do it this way:
@@ -192,7 +202,7 @@ Then we write our `PaymentProcessor` like this:
 ```c#
 public static class PaymentsProcessor
 {
-    public static void MakePayment(OneOf<AmericanExpressCard, VisaCard, SafiriCard, MobileMoney> payment,
+    public static void MakePayment(OneOf<AmericanExpressCard, VisaCard, SafiriCard, MobileMoneyPayment> payment,
         decimal Amount)
     {
         payment.Switch(
