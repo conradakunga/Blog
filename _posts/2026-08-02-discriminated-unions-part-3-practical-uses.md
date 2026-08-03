@@ -182,7 +182,17 @@ app.MapGet("/Get/{id:int}", (List<Person> injectedPeople, int id) =>
 
 But I find this **difficult to read**. I prefer the former, more explicit expression.
 
-With this design, you are forced to decide up from what are the return types you are expecting, and write your code around these.
+Now, expect exactly 1 of the 4 possible results:
+
+![successResukt](../images/2026/08/successResukt.png)
+
+![notFoundResult](../images/2026/08/notFoundResult.png)
+
+![errorResult](../images/2026/08/errorResult.png)
+
+![inactiveResult](../images/2026/08/inactiveResult.png)
+
+With this design, you are forced to **decide up from  the return types you are expecting**, and write your code around these options.
 
 ### TLDR
 
