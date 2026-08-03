@@ -228,6 +228,46 @@ The last part is key. **If you fail to provide logic for each branch, you will g
 
 Here, I have **commented** out one branch, `MobileMoney` and a compiler error has been generated.
 
+We can then try some transactions:
+
+```c#
+var amex = new AmericanExpressCard
+{
+    CardHolderName = "Conrad Akunga",
+    CVV = "3423",
+    Number = "0100-3224-2344-23234"
+};
+
+PaymentsProcessor.MakePayment(amex, 10_000);
+
+var visa = new VisaCard
+{
+    CardHolderName = "Conrad Akunga",
+    CVV = "45354",
+    Number = "1234-5678-9190-34234"
+};
+PaymentsProcessor.MakePayment(visa, 10_000);
+
+var safiri = new SafiriCard
+{
+    Number = "2343-3423-2342-5646",
+    CardHolderName = "Conrad Akunga",
+};
+PaymentsProcessor.MakePayment(safiri, 10_000);
+
+var mpesa = new MobileMoneyPayment
+{
+    PhoneNumber = "254-721-345-345",
+    Name = "Conrad Akunga"
+};
+
+PaymentsProcessor.MakePayment(mpesa, 10_000);
+```
+
+This will print the following:
+
+![PaymentsProcessorOneOf](../images/2026/08/PaymentsProcessorOneOf.png)
+
 In this fashion we can pass our method **completely unrelated types** encapsulated into a **parameter**.
 
 This is called a [discriminated union](https://en.wikipedia.org/wiki/Tagged_union), and has for quite some time been available in functional languages like [F#](https://fsharp.org/), [OCAML](https://ocaml.org/) & [Haskell](https://www.haskell.org/).
