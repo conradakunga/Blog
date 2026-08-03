@@ -188,6 +188,6 @@ With this design, you are forced to decide up from what are the return types you
 
 **Discriminated unions lend themselves well to domain design, where we upfront come up with the possible states we are expecting from our systems.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-02%20-%20DiscriminatedUnionsUseCase).
 
 Happy hacking!
