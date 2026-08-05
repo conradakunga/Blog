@@ -7,7 +7,7 @@ categories:
     - Design
     - Domain Modeling
     - C#
-    - NET
+    - .NET
 ---
 
 This is **Part 3** of a series on **Discriminated Unions**.
@@ -15,12 +15,13 @@ This is **Part 3** of a series on **Discriminated Unions**.
 - [Part 1 - Introduction]({% post_url 2026-07-29-discriminated-unions-part-1 %})
 - [Part 2 - Implementation]({% post_url 2026-08-01-discriminated-unions-part-2-implementation %})
 - **Part 3 - Practical Uses (this post)**
+- [Part 4 - .NET 11 Preview - Discriminated Unions Support]({% post_url 2026-08-05-net-11-preview-discriminated-unions-support %})
 
-In our [previous post]({% post_url 2026-08-01-discriminated-unions-part-2-implementation %}), we looked at how to implement [discriminated unions](https://en.wikipedia.org/wiki/Tagged_union) in a way to support a model of payments, where a `PaymentProcessor` can handle different types of **payments**..
+In our [previous post]({% post_url 2026-08-01-discriminated-unions-part-2-implementation %}), we looked at how to implement [discriminated unions](https://en.wikipedia.org/wiki/Tagged_union) in a way to support a model of payments, where a `PaymentProcessor` can handle different types of **payments**.
 
 In this post, we will look at an **elegant** solution to handle a common problem - implementing an endpoint that **fetches an entity by ID**.
 
-This we will implement in a simple ASP.NET project.
+We will implement this in a simple ASP.NET project.
 
 First, a simple `type` to hold our entity, a `Person`.
 
@@ -87,7 +88,7 @@ There is a bunch of other possibilities:
 2. There was a **database error** of some sort
 3. There is a **network error** of some sort
 
-In other words, there are other outcomes, some that are **relevant** to the problem domain, and those the are **not**.
+In other words, there are other outcomes, some that are **relevant** to the problem domain, and those that are **not**.
 
 We can express our **possibilities** as follows:
 
@@ -148,10 +149,10 @@ public sealed class Searcher
 
 In our `Searcher`, we are making use of the `OneOf` package to have a discriminated union as a **return type**, where we return each of the possible scenarios.
 
-Finally, our API simply **matches** agains the return types:
+Finally, our API simply **matches** against the return types:
 
 ```c#
-// Setup end point
+// Setup endpoint
 app.MapGet("/Get/{id:int}", (List<Person> injectedPeople, int id) =>
 {
     return Searcher.Find(injectedPeople, id).Match(
@@ -168,7 +169,7 @@ Here we can see that the API code is very **minimal** - just choosing how to ren
 This can be further **simplified** as follows:
 
 ```c#
-// Setup end point
+// Setup endpoint
 app.MapGet("/Get/{id:int}", (List<Person> injectedPeople, int id) =>
 {
     return Searcher.Find(injectedPeople, id).Match(
@@ -180,7 +181,7 @@ app.MapGet("/Get/{id:int}", (List<Person> injectedPeople, int id) =>
 });
 ```
 
-But I find this **difficult to read**. I prefer the former, more explicit expression.
+But I find this **difficult to read**. I prefer the former, more **explicit** expression.
 
 Now, expect exactly `1` of the `4` possible results:
 
@@ -192,11 +193,11 @@ Now, expect exactly `1` of the `4` possible results:
 
 ![inactiveResult](../images/2026/08/inactiveResult.png)
 
-With this design, you are forced to **decide up from  the return types you are expecting**, and write your code around these options.
+With this design, you are forced to **decide up front the return types you are expecting**, and write your code around these options.
 
 ### TLDR
 
-**Discriminated unions lend themselves well to domain design, where we upfront come up with the possible states we are expecting from our systems.**
+**Discriminated unions lend themselves well to domain design, where we come up with the possible states we are expecting from our system upfront.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-02%20-%20DiscriminatedUnionsUseCase).
 

@@ -7,7 +7,7 @@ categories:
     - Design
     - Domain Modeling
     - C#
-    - NET
+    - .NET
 ---
 
 This is **Part 2** of a series on **Discriminated Unions**.
@@ -15,6 +15,7 @@ This is **Part 2** of a series on **Discriminated Unions**.
 - [Part 1 - Introduction]({% post_url 2026-07-29-discriminated-unions-part-1 %})
 - **Part 2 - Implementation (this post)**
 - [Part 3 - Practical Uses]({% post_url 2026-08-02-discriminated-unions-part-3-practical-uses %})
+- [Part 4 - .NET 11 Preview - Discriminated Unions Support]({% post_url 2026-08-05-net-11-preview-discriminated-unions-support %})
 
 In our [previous post in the series]({% post_url 2026-07-29-discriminated-unions-part-1 %}), we saw how we can start off with a design based on model [inheritance](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance) that can quickly outrun the capabilities of **inheritance**.
 
