@@ -79,12 +79,12 @@ public sealed class Searcher
 }
 ```
 
-All we have changed is the return type.
+**All we have changed is the return type**.
 
 Next, we change our AP to process this:
 
 ```c#
-// Setup end point
+// Setup endpoint
 app.MapGet("/Get/{id:int}", (List<Person> injectedPeople, int id) =>
 {
     return Searcher.Find(injectedPeople, id) switch
@@ -99,7 +99,7 @@ app.MapGet("/Get/{id:int}", (List<Person> injectedPeople, int id) =>
 
 **Your IDE might not support this**, at least as of the time of writing.
 
-Mine, for example, doesn't.
+Mine, for example, **doesn't**.
 
 ![riderIssue](../images/2026/08/riderIssue.png)
 
@@ -107,11 +107,11 @@ I am using the **latest** (at this time) version of JetBrains [Rider](https://ww
 
 ![rider](../images/2026/08/rider.png)
 
-Don't mind the warnings - the code will compile.
+Don't mind the warnings - **the code will compile**.
 
 ![compile](../images/2026/08/compile.png)
 
-A couple of things to note (despite the warnings)
+A couple of things to **note** (despite the warnings)
 
 1. **All the cases** have to be handled
 2. You do not need to provide a **default** branch
@@ -132,9 +132,9 @@ It should work as it did before:
 
 ## Thoughts
 
-This is very welcome, to have support in the language, but I feel there is **room for improvemen**t
+It is very welcome to have support in the **language and runtime**, but I feel there is **room for improvemen**t
 
-1. Having to create a **completely new `type`**, the `FindResult`,  is very cumbersome. It should be possible to declare the discriminated union **inline**. Perhaps something like this:
+1. Having to create a **completely new `type`**, the `FindResult`,  is very **cumbersome**. It should be possible to declare the discriminated union **inline**. Perhaps something like this:
 
     ```c#
     public static union(Person, FoundInactive, NotFound, Problem) Find(List<Person> people, int id)
@@ -149,12 +149,12 @@ This is very welcome, to have support in the language, but I feel there is **roo
 2. **Failure to handle a branch** should give a **compiler error,** not a **warning**.
 3. I actually **prefer** the `OneOf` implementation, as opposed to this.
 
-It is, however, still a **preview** feature, so work is continuing.
+It is, however, still a **preview** feature, so the work to refine it is **probably** continuing.
 
 ### TLDR
 
 **Native support for discriminated unions is being previewed in the language and runtime.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-05%20-%20DiscriminatedUnionsNative).
 
 Happy hacking!
