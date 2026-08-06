@@ -16,7 +16,7 @@ The QA team reported that a report, populated by a **stored procedure**, was alw
 
 The procedure, obfuscated to protect the **guilty**, was as follows:
 
-```c#
+```sql
 create or alter proc [QueryTheThings] @Start date='1 jan 2026',
                                       @End date ='30 jun 2026'
 as
