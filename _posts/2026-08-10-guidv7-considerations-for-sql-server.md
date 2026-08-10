@@ -3,6 +3,10 @@ layout: post
 title: GuidV7 Considerations for SQL Server
 date: 2026-08-10 17:54:56 +0300
 categories:
+    - C#
+    - .NET
+    - Database
+    - SQL Server
 ---
 
 In our previous post, "[GuidV7 Considerations for Database Keys]()," we looked at how `GuidV7` generation for multiple values with the same timestamp presents a challenge: the generated values **sort differently**, affecting the **ordering of clustered indexes**.
