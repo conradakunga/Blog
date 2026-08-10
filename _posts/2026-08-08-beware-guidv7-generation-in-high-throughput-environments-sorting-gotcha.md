@@ -33,7 +33,7 @@ for (var i = 0; i < 10; i++)
 Console.WriteLine();
 ```
 
-As we generate each `s`, we add them to a `List` of `Guid`.
+As we generate each `Guid`, we add them to a `List` of `Guid`.
 
 Once we are done, we **sort** this list and **print** the contents to the console.
 
