@@ -22,15 +22,15 @@ Let us generate a number of these, with a brief **pause** to simulate work:
 
 ```c#
 var list = new List<Guid>();
-	for (var i = 0; i < 10; i++)
-	{
-		var temp = Guid.CreateVersion7();
-		Console.WriteLine(temp);
-		list.Add(temp);
-		Thread.Sleep(1);
-	}
+for (var i = 0; i < 10; i++)
+{
+  var temp = Guid.CreateVersion7();
+  Console.WriteLine(temp);
+  list.Add(temp);
+  Thread.Sleep(1);
+}
 
-	Console.WriteLine();
+Console.WriteLine();
 ```
 
 As we generate each `s`, we add them to a `List` of `Guid`.
