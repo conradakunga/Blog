@@ -7,15 +7,15 @@ categories:
 
 In our previous post, "[GuidV7 Considerations for Database Keys]()," we looked at how `GuidV7` generation for multiple values with the same timestamp presents a challenge: the generated values **sort differently**, affecting the **ordering of clustered indexes**.
 
-In this post, we look at a different challenge revolving around how SQL Server sorts Guid values.
+In this post, we look at a different challenge revolving around how [SQL Server](https://www.microsoft.com/en-us/sql-server) sorts `Guid` values.
 
-We will use the same type as before:
+We will use the same `type` as before:
 
 ```c#
 public sealed record Thing(Guid ID, string Caption);
 ```
 
-We then have the following SQL Server table schema:
+We then have the following **SQL Server** table schema:
 
 ```sql
 create table things
@@ -27,7 +27,7 @@ create table things
 );
 ```
 
-We then generate some `Guid` values in **v7** format, ensuring a unique timestamp.
+We then generate some `Guid` values in **v7** format, ensuring a unique **timestamp**.
 
 ```c#
 using Dapper;
@@ -57,13 +57,13 @@ This will print something like this:
 
 ![sqlgeneration](../images/2026/08/sqlgeneration.png)
 
-If we go to the database and order by ID ...
+If we go to the database and order by `ID` ...
 
 ![sqlgenerationDatabase](../images/2026/08/sqlgenerationDatabase.png)
 
-We can see here that they are not ordered as we would expect.
+We can see here that they **are not ordered as we would expec**t.
 
-We can verify that the Guid values should sort by creation order.
+We can verify that the `Guid` values should **sort by creation order**.
 
 ```c#
 var list = new List<Guid>();
@@ -88,12 +88,12 @@ This should print the **same sequence as creation**:
 
 The issue is around how `Guid` values are [sorted by SQL Server](https://blog.stackademic.com/uuid-v7-in-sql-server-can-you-really-use-it-the-limitation-nobody-tells-you-about-deep-dive-428b3877ebff) - it does not use the algorithm for `Guid` **v7**.
 
-This essentially means `Guid.CreateVersion7()` does not create values that SQL Server will correctly order for a clustered index.
+This essentially means `Guid.CreateVersion7()` **does not create values that SQL Server will correctly order for a clustered index**.
 
 ### TLDR
 
 **SQL Server does not sort `Guid` values using an algorithm congruent with v7.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-10%20-%20GuidGeneration%20SQL%20Server).
 
 Happy hacking!
