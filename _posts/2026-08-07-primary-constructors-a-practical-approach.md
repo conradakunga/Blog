@@ -103,6 +103,6 @@ Everything works as expected.
 
 **For internal use, such as wiring up DI, primary constructors are perfectly acceptable.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-07%20-%20PrimayConstructors).
 
 Happy hacking!
