@@ -80,6 +80,6 @@ We should see the following:
 
 **You can get correctly ordered `Guids` on the server side using the newsequentialid() function**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-11%20-%20GuidGeneration%20SQL%20Server%20Server%20Side).
 
 Happy hacking!
