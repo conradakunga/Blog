@@ -9,13 +9,13 @@ categories:
     - SQL Server
 ---
 
-In [some]({% post_url 2026-08-08-beware-guidv7-generation-in-high-throughput-environments-sorting-gotcha %}) [previous]({% post_url 2026-08-09-guidv7-considerations-for-database-keys %}) posts, we have seen the sort of challenges that may arise when generating `Guid` values for database keys, and in particular, an issue specific to SQL Server [Guid sorting]({% post_url 2026-08-10-guidv7-considerations-for-sql-server %}).
+In [some]({% post_url 2026-08-08-beware-guidv7-generation-in-high-throughput-environments-sorting-gotcha %}) [previous]({% post_url 2026-08-09-guidv7-considerations-for-database-keys %}) posts, we have seen the sort of challenges that may arise when generating `Guid` values for database keys, and in particular, an issue specific to [SQL Server](https://www.microsoft.com/en-us/sql-server) [Guid sorting]({% post_url 2026-08-10-guidv7-considerations-for-sql-server %}).
 
 In a nutshell, client-generated `GUIDs` **do not sort correctly**, even when using `Guid.CreateVersion7()`, due to a complication when multiple `Guid` values are generated in the same **millisecond**.
 
-Additionally, SQL Server sorts `Guids` using a [different algorithm]({% post_url 2026-08-10-guidv7-considerations-for-sql-server %}).
+Additionally, **SQL Server** sorts `Guids` using a [different algorithm]({% post_url 2026-08-10-guidv7-considerations-for-sql-server %}).
 
-In this post, we will look at how to resolve this problem on the server side.
+In this post, we will look at how to resolve this problem on the **server side**.
 
 The solution here is to use the [NEWSEQUENTIALID()](https://learn.microsoft.com/en-us/sql/t-sql/functions/newsequentialid-transact-sql?view=sql-server-ver17) function.
 
@@ -36,6 +36,8 @@ create table things
     caption nvarchar(100) not null
 )
 ```
+
+Here we are using `newsequentialid()` to supply the **default** value. The function is **not usable as a normal function**.
 
 Our code to **insert** will look like this:
 
@@ -66,7 +68,7 @@ Upon **successful** execution, it will output this:
 
 ![serverSideGeneration](../images/2026/08/serverSideGeneration.png)
 
-We can now go and inspect the database.
+We can now go and inspect the **database**.
 
 ```sql
 select * from things order by id
@@ -78,7 +80,7 @@ We should see the following:
 
 ### TLDR
 
-**You can get correctly ordered `Guids` on the server side using the newsequentialid() function**
+**You can get correctly ordered `Guids` on the server side using the `NEWSEQUENTIALID()` function**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-11%20-%20GuidGeneration%20SQL%20Server%20Server%20Side).
 
