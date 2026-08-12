@@ -68,7 +68,7 @@ Upon **successful** execution, it will output this:
 
 ![serverSideGeneration](../images/2026/08/serverSideGeneration.png)
 
-We can now go and inspect the **database**.
+We can now go and inspect the **database**, by queriying all our Thing objects and sorting by ID.
 
 ```sql
 select * from things order by id
@@ -77,6 +77,8 @@ select * from things order by id
 We should see the following:
 
 ![sortedServerSideGuids](../images/2026/08/sortedServerSideGuids.png)
+
+Here we can see they are **correctly ordered as they were inserted**.
 
 ### TLDR
 
