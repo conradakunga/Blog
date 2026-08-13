@@ -72,6 +72,6 @@ We get a prompt asking for the password.
 
 **.NET 11 can now create password-protected zip files via the `CreateEntryFromFileAsync` method.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-12%20-%20PasswordProtectedZip).
 
 Happy hacking!
