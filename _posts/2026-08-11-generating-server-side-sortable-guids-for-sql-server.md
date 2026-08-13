@@ -37,7 +37,7 @@ create table things
 )
 ```
 
-Here we are using `newsequentialid()` to supply the **default** value. The function is **not usable as a normal function**.
+Here we are using `NEWSEQUENTIALID()` to supply the **default** value. The function is **not usable as a normal function**.
 
 Our code to **insert** will look like this:
 
@@ -68,7 +68,7 @@ Upon **successful** execution, it will output this:
 
 ![serverSideGeneration](../images/2026/08/serverSideGeneration.png)
 
-We can now go and inspect the **database**, by queriying all our Thing objects and sorting by ID.
+We can now go and inspect the **database**, by queriying all our `Thing` objects and sorting by `ID`.
 
 ```sql
 select * from things order by id
