@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - .NET 11 Preview
+    - Compression
 ---
 
 In some previous posts, "[How To Zip A Single File In C# & .NET]({% post_url 2026-01-05-how-to-zip-a-single-file-in-c-net %})" and "[How To Zip Multiple Files In C# & .NET]({% post_url 2026-01-07-how-to-zip-multiple-files-in-c-net %})", we have looked at how to create [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) files, either from a **single** file, a collection of files, or a directory.
@@ -13,6 +14,8 @@ In some previous posts, "[How To Zip A Single File In C# & .NET]({% post_url 202
 However, it has not been possible to create password-protected zip files without resorting to **external tools** and **libraries**.
 
 This has been addressed in .NET 11, using the `CreateEntryFromFileAsync` method.
+
+**Note: as of writing the [documentation](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.zipfileextensions.createentryfromfileasync?view=net-11.0) of this method is yet to be updated.**
 
 Suppose we wanted to zip the contents of the great novel [War and Peace](https://en.wikipedia.org/wiki/War_and_Peace) by [Leo Tolstoy](https://en.wikipedia.org/wiki/Leo_Tolstoy) into a **password-protected archive**.
 
@@ -67,6 +70,8 @@ If we try to open the file:
 ![passwordPrompt](../images/2026/08/passwordPrompt.png)
 
 We get a prompt asking for the password.
+
+I find curious that the `Password` is a `ReadOnlyMemory<char>` and not a plain `string`. Any idea why?
 
 ### TLDR
 
