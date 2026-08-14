@@ -13,7 +13,9 @@ In our previous post, "[.NET 11 Preview - Generating Password-Protected Zip Arch
 
 In this post, we will look at how to achieve the **reverse** - **opening** password protected zip archives.
 
-This is possible using the ZipExtractionOptions in conjunction with the ExtractToFileAsync method.
+This is possible using the `ZipExtractionOptions` in conjunction with the `ExtractToFileAsync` method.
+
+**Note: as of writing this, the documentation is yet to be updated.**
 
 The code is as follows:
 
@@ -68,7 +70,7 @@ var options = new ZipExtractionOptions
 }
 ```
 
-It is at this point that we are providing the password to the archive extraction leg:
+It is at this point that we are providing the **password** to the archive extraction code:
 
 ```c#
 // Extract file
