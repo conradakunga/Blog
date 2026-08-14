@@ -89,6 +89,6 @@ And in our file system, we should see the following:
 
 **.NET 11 can now natively extract files from password protected zip archives.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-13%20-%20Open%20PasswordProtectedZip).
 
 Happy hacking!
