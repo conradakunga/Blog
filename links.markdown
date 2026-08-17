@@ -16,6 +16,7 @@ draft: true
 - [Joseph Ndungi](https://dev.to/josephndungi) - Python, Software Development
 - [Kate Ratemo](https://kateratemo.co.ke/blog/) - Software Development, Web Applications
 - [Linet Kwamboka - The Economy Of Data](https://economyofdata.com/) - Data Science & AI
+- [Martin Njoroge](https://kwizl.github.io/) - Technology & Finance
 - [Stanley Masinde](https://blog.stanleymasinde.com/) - Software Engineering, System design
 
 ## Communities
