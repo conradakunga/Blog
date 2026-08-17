@@ -128,6 +128,6 @@ This will yield the following:
 
 If, while opening a zip file, the password is incorrect, trap the `InvalidDataException`.
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-14%20-%20Open%20PasswordProtectedZip%20Fail).
 
 Happy hacking!
