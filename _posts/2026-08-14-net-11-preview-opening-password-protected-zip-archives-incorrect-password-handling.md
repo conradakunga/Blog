@@ -3,6 +3,10 @@ layout: post
 title: .NET 11 Preview - Opening Password-Protected Zip Archives - Incorrect Password Handling
 date: 2026-08-14 09:55:41 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
+    - Compression
 ---
 
 In our previous post, "[.NET 11 Preview - Opening Password Protected Zip Archives]({% post_url 2026-08-13-net-11-preview-opening-password-protected-zip-archives %})", we looked at how to **open password-protected zip archive**s, which is now **natively** possible on .NET 11.

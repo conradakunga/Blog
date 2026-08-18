@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .NET 11 Preview - Opening Password Protected Zip Archives
+title: .NET 11 Preview - Opening Password-Protected ZIP Archives
 date: 2026-08-13 08:12:58 +0300
 categories:
     - C#
@@ -9,13 +9,13 @@ categories:
     - Compression
 ---
 
-In our previous post, "[.NET 11 Preview - Generating Password-Protected Zip Archives]({% post_url 2026-08-12-net-11-preview-generating-password-protected-zip-archives %})", we looked at how to create **password protected** [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) archives in .NET 11, something that for a long time was **not possible without external tools and libraries**.
+In our previous post, "[.NET 11 Preview - Generating Password-Protected Zip Archives]({% post_url 2026-08-12-net-11-preview-generating-password-protected-zip-archives %})", we looked at how to create **password-protected** [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) archives in .NET 11, something that for a long time was **not possible without external tools and libraries**.
 
-In this post, we will look at how to achieve the **reverse** - **opening** password protected zip archives.
+In this post, we will look at how to achieve the **reverse** - **opening** password-protected zip archives.
 
 This is possible using the `ZipExtractionOptions` in conjunction with the `ExtractToFileAsync` method.
 
-**Note: as of writing this, the documentation is yet to be updated.**
+**Note: As of writing this, the documentation has yet to be updated. **
 
 The code is as follows:
 
