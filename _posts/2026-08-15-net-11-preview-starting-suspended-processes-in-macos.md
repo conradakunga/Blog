@@ -43,7 +43,7 @@ You will see after a 10 second pause, the **notepad** window appears.
 
 ![suspededProcess](../images/2026/08/suspededProcess.png)
 
-**From preview 7, this also works in macOS.**
+**From preview 7, this now also works in macOS.**
 
 ### TLDR
 
