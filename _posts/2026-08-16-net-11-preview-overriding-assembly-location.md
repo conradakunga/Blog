@@ -109,7 +109,7 @@ AssemblyLoadContext.SetAssemblyLocationOverride((assembly, defaultLocation) =>
 });
 ```
 
-Here we are trying to set the location again.
+Here we are trying to set the location **again**.
 
 If we run this code, we get the following result:
 
