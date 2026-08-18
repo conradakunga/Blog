@@ -57,6 +57,17 @@ The magic is taking place in the `CreateEntryFromFileAsync` method, where:
 4. We provide the **compression level**
 5. We provide the **encryption method**
 
+The encryption method is from an enum, `ZipEncryptionMethod`, that contains one of these:
+
+| Name      |
+| --------- |
+| None      |
+| ZipCrypto |
+| Aes128    |
+| Aes192    |
+| Aes256    |
+| Unknown   |
+
 If we run this code, we should see the following:
 
 ![passwordZipOutput](../images/2026/08/passwordZipOutput.png)
