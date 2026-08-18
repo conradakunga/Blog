@@ -123,6 +123,6 @@ This is to prevent abuse by **silently redirecting** after initial configuration
 
 **In .NET 11 you can now set the reported location from a call to get an `Assembly` location.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-16%20-%20LocationRedirect).
 
 Happy hacking!
