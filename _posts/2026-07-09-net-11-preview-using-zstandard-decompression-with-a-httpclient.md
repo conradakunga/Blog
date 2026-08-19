@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - .NET 11 Preview
+    - Compression
 ---
 
 Yesterday's post, "[NET 11 Preview - Zstandard Compression]({% post_url 2026-07-08-net-11-preview-zstandard-compression %})", looked at the introduction of the [Zstandard](https://en.wikipedia.org/wiki/Zstd) algorithm into the compression libraries in [System.IO.Compression](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression?view=net-10.0) namespace.

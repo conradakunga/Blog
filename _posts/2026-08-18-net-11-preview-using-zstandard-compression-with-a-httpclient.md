@@ -3,6 +3,10 @@ layout: post
 title: .NET 11 Preview - Using ZStandard Compression With A HttpClient
 date: 2026-08-18 18:23:00 +0300
 categories:
+    - C#
+    - .NET
+    - .NET 11 Preview
+    - Compression
 ---
 
 In a previous post, "[.NET 11 Preview - Using Zstandard Decompression With A HttpClient]({% post_url 2026-07-09-net-11-preview-using-zstandard-decompression-with-a-httpclient %})", we looked at how to configure a [HttpClient](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient) to **transparently decompress traffic** compressed using the [Zstandard](http://facebook.github.io/zstd/) algorithm.

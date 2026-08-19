@@ -6,6 +6,7 @@ categories:
     - C#
     - .NET
     - .NET 11 Preview
+    - Compression
 ---
 
 When it comes to **compression** of data, there are a number of options natively available on .NET
@@ -16,13 +17,13 @@ When it comes to **compression** of data, there are a number of options natively
 
 These are especially useful in scenarios where you are operating with [streams](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-10.0), such as when serving **files** on a **web server**.
 
-When it comes to **compression**, there are usually tradeoffs that you have to make between:
+When it comes to **compression**, there are usually trade-offs that you have to make between:
 
 - File **size**
 - Compression **time**
 - **Processor** usage
 
-In .NET 11, a new algorithm has been introduced - [Zstandard](https://en.wikipedia.org/wiki/Zstd), also known as [zstd](https://github.com/facebook/zstd).
+In .NET 11, a new algorithm has been introduced: [Zstandard](https://en.wikipedia.org/wiki/Zstd), also known as [zstd](https://github.com/facebook/zstd).
 
 This, like the others, is in the [System.IO.Compression](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression?view=net-10.0) namespace.
 

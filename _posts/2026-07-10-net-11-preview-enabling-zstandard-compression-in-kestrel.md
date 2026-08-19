@@ -7,6 +7,7 @@ categories:
     - .NET
     - .NET 11 Preview
     - ASP.NET
+    - Compression
 ---
 
 In a previous post, "[.NET 11 Preview - Zstandard Compression]({% post_url 2026-07-08-net-11-preview-zstandard-compression %})", we looked at the introduction of [Zstandard](https://en.wikipedia.org/wiki/Zstd) **compression algorithm** in .NET 11.
