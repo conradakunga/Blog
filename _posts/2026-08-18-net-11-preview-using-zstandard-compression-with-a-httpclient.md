@@ -48,9 +48,9 @@ var client = new HttpClient();
 await client.PostAsJsonAsync("https://reqbin.com/echo/post/json", jamesBond);
 ```
 
-Here I am using the API testing siite https://reqbin.com/.
+Here I am using the API testing site https://reqbin.com/.
 
-To compress this, we need to do some **additional work**.
+To **compress** this, we need to do some **additional work**.
 
 ```c#
 // Create the payload
@@ -69,6 +69,8 @@ Here we are doing the following:
 2. Creating a [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST) [HttpRequestMessage](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httprequestmessage?view=net-10.0)
 3. **Compressing** the content
 4. Sending the `HttpRequestMessage`
+
+**IMPORTANT: To do this, the web server should be able to decompress Zstandard-compressed traffic.**
 
 ### TLDR
 
