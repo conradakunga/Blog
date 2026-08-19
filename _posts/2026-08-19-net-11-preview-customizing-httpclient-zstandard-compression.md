@@ -56,9 +56,9 @@ The magic is in this line:
 request.Content = new ZstandardCompressedContent(payload, CompressionLevel.SmallestSize);
 ```
 
-Here, we want the smallest possible size.
+Here, we want the **smallest possible size**.
 
-Suppose we wanted to customize more? It is possible to customize a whole host of options using the overloaded constructor that takes a [ZstandardCompressionOptions](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.zstandardcompressionoptions?view=net-11.0)
+Suppose we wanted to **customize** more? It is possible to customize a whole host of **options** using the overloaded constructor that takes a [ZstandardCompressionOptions](https://learn.microsoft.com/en-us/dotnet/api/system.io.compression.zstandardcompressionoptions?view=net-11.0)
 
 The code is as follows:
 
