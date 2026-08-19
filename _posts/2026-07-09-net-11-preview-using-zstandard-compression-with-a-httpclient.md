@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .NET 11 Preview - Using Zstandard Compression With A HttpClient
+title: .NET 11 Preview - Using Zstandard Decompression With A HttpClient
 date: 2026-07-09 22:59:58 +0300
 categories:
     - C#
