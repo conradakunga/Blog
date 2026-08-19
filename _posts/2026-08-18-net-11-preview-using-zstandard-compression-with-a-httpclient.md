@@ -52,11 +52,9 @@ To compress this, we need to do some **additional work**.
 // Create the payload
 var payload = JsonContent.Create(jamesBond);
 // Create a HttpRequest
-using var request = new HttpRequestMessage(HttpMethod.Post, "https://reqbin.com/echo/post/json")
-{
+using var request = new HttpRequestMessage(HttpMethod.Post, API_URL);
 // Compress the content
-	Content = new ZstandardCompressedContent(payload, CompressionLevel.SmallestSize),
-};
+request.Content = new ZstandardCompressedContent(payload, CompressionLevel.SmallestSize);
 //Post
 await client.SendAsync(request);
 ```
@@ -72,6 +70,6 @@ Here we are doing the following:
 
 **.NET 11 allows you to use `Zstandard` to compress traffic to a destination server from a `HttpClient`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-17%20-%20CompressZStandard).
 
 Happy hacking!
