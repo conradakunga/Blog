@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tips - Turning Off Parallels “Parallels Desktop” would like to access data from other apps Confirmation
+title: Tips - Turning Off 'Parallels “Parallels Desktop” would like to access data from other apps' Confirmation
 date: 2026-08-20 09:50:49 +0300
 categories:
     - Tips
