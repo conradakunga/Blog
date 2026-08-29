@@ -79,7 +79,7 @@ public int this[int index] => enumerable.ElementAt(index);
 We would use it like this:
 
 ```c#
-Console.WriteLine((Char)str[0]);
+Console.WriteLine((char)str[0]);
 ```
 
 This should print the following:
