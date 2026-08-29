@@ -56,13 +56,13 @@ This we use as follows:
 str.ItemAt(0);
 ```
 
-It has not been possible to impelment this as a property.
+It has not been possible to impelment this as a **property**.
 
 **This is now available in .NET 11.**
 
-To enable this, you need to turn on preview language features.
+To enable this, you need to turn on **preview language** features.
 
-Change your .csproj to add the following tag:
+Change your .`csproj` to add the following tag:
 
 ```xml
 <LangVersion>preview</LangVersion>
@@ -84,7 +84,7 @@ It should thus look like this:
 </Project>
 ```
 
-
+Then we can implement our extensions.
 
 ```c#
 public static class EnumerableExtensions
