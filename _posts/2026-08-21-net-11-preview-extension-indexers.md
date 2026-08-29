@@ -58,7 +58,7 @@ str.ItemAt(0);
 
 It has not been possible to impelment this as a property.
 
-This is now available in .NET 11.
+**This is now available in .NET 11.**
 
 ```c#
 public static class EnumerableExtensions
