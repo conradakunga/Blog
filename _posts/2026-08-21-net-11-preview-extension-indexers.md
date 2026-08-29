@@ -90,6 +90,6 @@ This should print the following:
 
 **In .NET 11, you can now implement property indexers.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-21%20-%20IndexerExtensions).
 
 Happy hacking!
