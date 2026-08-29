@@ -60,6 +60,32 @@ It has not been possible to impelment this as a property.
 
 **This is now available in .NET 11.**
 
+To enable this, you need to turn on preview language features.
+
+Change your .csproj to add the following tag:
+
+```xml
+<LangVersion>preview</LangVersion>
+```
+
+It should thus look like this:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+</Project>
+```
+
+
+
 ```c#
 public static class EnumerableExtensions
 {
