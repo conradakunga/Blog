@@ -8,7 +8,7 @@ categories:
 
 One of the **command-line tools** you will undoubtedly have in your toolbox is the veritable [ping](https://en.wikipedia.org/wiki/Ping_(networking_utility)) command.
 
-This is what you would reach for if you wanted to check one (or more) of the following:
+This is what you would reach for if you wanted to check **one (or more)** of the following:
 
 1. Whether you are **online**
 2. Whether a **remote address** is **online**
@@ -36,7 +36,7 @@ The results, however, are much easier to **visualize** and **interpret**.
 
 ![gpingSingle](../images/2026/08/gpingSingle.png)
 
-Here we get back a graph that lets you **visualize latency over time**.
+Here we get back a **graph** that lets you **visualize latency over time**.
 
 It is also useful when you want to compare **multiple addresses**.
 
@@ -56,9 +56,9 @@ The results would be as follows:
 
 ![gpingMutliple](../images/2026/08/gpingMutliple.png)
 
-Here we can see all the results returned, rendered as multiple graphs.
+Here we can see all the `ping` results returned, rendered as **multiple**, **color-coded** graphs.
 
-We can see here that Google is **significantly faster** than the other two, but this is almost certainly because Google has a [local edge presence and peers with my ISP](https://peering.google.com/).
+We can see here that [Google](https://google.com/) is **significantly faster** than the other two, but this is almost certainly because [Google](https://google.com/) has a [local edge presence and peers with my ISP](https://peering.google.com/).
 
 ### TLDR
 
