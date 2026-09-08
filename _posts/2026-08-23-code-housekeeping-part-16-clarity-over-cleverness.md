@@ -68,7 +68,7 @@ Items = response.Documents.ToList()
 
 In fact, the former is probably, at face value, a **slightly better** solution because if we were ever to change Items from a [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-10.0) to an [Array](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays), the code would not need to change.
 
-However this code is **clever** rather then being **clear**.
+However this code is **clever** rather than being **clear**.
 
 What is the difference? Code should always be **written to be understood**, to be **clear** rather than to be **clever**.
 
