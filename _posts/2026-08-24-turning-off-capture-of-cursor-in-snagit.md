@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Turing Off Capture Of Cursor In SnagIt
+title: Turning Off Capture Of Cursor In SnagIt
 date: 2026-08-24 16:17:33 +0300
 categories:
     - SnagIt
