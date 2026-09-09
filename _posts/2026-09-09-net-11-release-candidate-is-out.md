@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-The release candidate for .NET 11 is out!
+The **first** release candidate for .NET 11 is out!
 
 The [announcement](https://devblogs.microsoft.com/dotnet/dotnet-11-rc-1/) is here.
 
