@@ -20,8 +20,8 @@ Gender is an enum that is defined thus:
 ```c#
 public enum Gender
 {
-	Male,
-	Famale
+  Male,
+  Famale
 }
 ```
 
@@ -68,14 +68,14 @@ Now let us take a closer look at the logic:
 
 ```c#
 if (person.DateOfBirth.Year >= 1950 && person.DateOfBirth.Year <= 1965)
-	Console.WriteLine($"{person.FullName} is eligible!");
+  Console.WriteLine($"{person.FullName} is eligible!");
 ```
 
 This can be simplified as follows:
 
 ```c#
 if (person.DateOfBirth.Year is >= 1950 and <= 1965)
-	Console.WriteLine($"{person.FullName} is eligible!");
+  Console.WriteLine($"{person.FullName} is eligible!");
 ```
 
 Note the following improvements:
