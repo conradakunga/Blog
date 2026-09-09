@@ -7,7 +7,9 @@ categories:
     - .NET
 ---
 
-The **first** release candidate for .NET 11 is out!
+The **first** [release candidate](https://en.wikipedia.org/wiki/Software_release_life_cycle) for .NET 11 is out!
+
+This is hot on the heels of [preview 7](https://devblogs.microsoft.com/dotnet/dotnet-11-preview-7/).
 
 The [announcement](https://devblogs.microsoft.com/dotnet/dotnet-11-rc-1/) is here.
 
