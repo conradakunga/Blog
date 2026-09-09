@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Boolean logic is at the heart of many algorithms that you implement or use in the course of writing software.
+[Boolean logic](https://en.wikipedia.org/wiki/Boolean_algebra) is at the heart of many **algorithms** that you **implement** or **use** in the course of writing software.
 
 Take for example this type:
 
