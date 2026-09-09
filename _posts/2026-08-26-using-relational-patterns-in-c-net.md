@@ -98,6 +98,6 @@ I, however, personallyfind this [harder to read]({% post_url 2026-08-23-code-hou
 
 **Relational pattens can be used to simplify conditional logic.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-26%20-%20RelationalPatterns).
 
 Happy hacking!
