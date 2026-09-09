@@ -85,6 +85,15 @@ Note the following improvements:
 
 This is called a [relational pattern](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/pattern-matching).
 
+You can also write it like this, a feature known as an [object pattern](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/patterns-objects).
+
+```c#
+if (person.DateOfBirth is { Year: >= 1950 and <= 1965 })
+  Console.WriteLine($"{person.FullName} is eligible!");
+```
+
+I, however, personallyfind this [harder to read]({% post_url 2026-08-23-code-housekeeping-part-16-clarity-over-cleverness %}).
+
 ### TLDR
 
 **Relational pattens can be used to simplify conditional logic.**
