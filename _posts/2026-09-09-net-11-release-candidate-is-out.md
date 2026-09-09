@@ -1,0 +1,18 @@
+---
+layout: post
+title: .NET 11 Release Candidate Is Out
+date: 2026-09-09 17:12:44 +0300
+categories:
+    - C#
+    - .NET
+---
+
+The release candidate for .NET 11 is out!
+
+The [announcement](https://devblogs.microsoft.com/dotnet/dotnet-11-rc-1/) is here.
+
+The [downloads](https://get.dot.net/11) are here.
+
+As usual, we will be **diving into** what I find the most **interesting** bits.
+
+Happy hacking!
