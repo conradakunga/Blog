@@ -9,13 +9,13 @@ categories:
 
 [Boolean logic](https://en.wikipedia.org/wiki/Boolean_algebra) is at the heart of many **algorithms** that you **implement** or **use** in the course of writing software.
 
-Take for example this type:
+Take, for example, this type:
 
 ```c#
 public record Person(string FullName, DateOnly DateOfBirth, string HomeTown, Gender Gender);
 ```
 
-Gender is an enum that is defined thus:
+**Gender** is an `enum` that is defined thus:
 
 ```c#
 public enum Gender
@@ -25,7 +25,7 @@ public enum Gender
 }
 ```
 
-Suppose we wanted to process Person types, based on the following criteria:
+Suppose we wanted to process `Person` types based on the following criteria:
 
 > We want to recruit spies born between **1950** and **1965**.
 
@@ -51,7 +51,7 @@ Person[] people =
 ];
 ```
 
-Finally we **process** them:
+Finally, we **process** them:
 
 ```c#
 foreach (var person in people)
@@ -81,7 +81,7 @@ if (person.DateOfBirth.Year is >= 1950 and <= 1965)
 Note the following improvements:
 
 1. We no longer keep **repeating** `person.DateOfBirth.Year`
-2. The logic is **easier to read** : `person.DateOfBirth.Year is >= 1950 and <= 1965` vs `person.DateOfBirth.Year >= 1950 && person.DateOfBirth.Year <= 1965`
+2. The logic is **easier to read**: `person.DateOfBirth.Year is >= 1950 and <= 1965` vs `person.DateOfBirth.Year >= 1950 && person.DateOfBirth.Year <= 1965`
 
 This is called a [relational pattern](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/pattern-matching).
 
@@ -92,11 +92,11 @@ if (person.DateOfBirth is { Year: >= 1950 and <= 1965 })
   Console.WriteLine($"{person.FullName} is eligible!");
 ```
 
-I, however, personallyfind this [harder to read]({% post_url 2026-08-23-code-housekeeping-part-16-clarity-over-cleverness %}).
+I, however, personally find this [harder to read]({% post_url 2026-08-23-code-housekeeping-part-16-clarity-over-cleverness %}).
 
 ### TLDR
 
-**Relational pattens can be used to simplify conditional logic.**
+**Relational patterns can be used to simplify conditional logic.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-26%20-%20RelationalPatterns).
 
