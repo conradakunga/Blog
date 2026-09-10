@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Relational Patterns In C# & .NET
+title: Using Relational Patterns in C# & .NET
 date: 2026-08-26 18:55:48 +0300
 categories:
     - C#
