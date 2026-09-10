@@ -115,6 +115,6 @@ This is called the [declaration pattern](https://www.c-sharpcorner.com/blogs/und
 
 **The declaration pattern lets you write concise, clear polymorphic code.**
 
-The code is in my Github.
+The code is in my [Github](https://github.com/conradakunga/BlogCode/tree/master/2026-08-27%20-%20DeclarationPattern).
 
 Happy hacking!

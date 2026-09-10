@@ -67,6 +67,6 @@ Very neat.
 
 **You can switch directly on `types` and capture the resulting concrete `type`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-28%20-%20SwitchOnType).
 
 Happy hacking!
