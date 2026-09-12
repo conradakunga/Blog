@@ -124,6 +124,6 @@ This prints what we expect:
 
 **Java has some optimizations that change the behaviour of comparison of boxed primitive types.**
 
-The code is in my GitHub.
+The code is in [my](https://github.com/conradakunga/BlogCode/tree/master/2026-08-29%20-%20BoxingDemo%20C%23) [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-08-29%20-%20BoxingDemo%20Java).
 
 Happy hacking!
