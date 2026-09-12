@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Switching On Types in C# & .NET
-date: 2026-08-27 09:51:31 +0300
+date: 2026-08-28 09:51:31 +0300
 categories:
     - C#
     - .NET
