@@ -12,7 +12,7 @@ A scenario you have probably run into is needing to modify a collection by **ins
 Take, for instance, the following [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-10.0) of `integers`.
 
 ```c#
-var numbers = new List<int>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 ```
 
 If we wanted to insert a `0` at the start of this list,  there are a number of ways to do this:
