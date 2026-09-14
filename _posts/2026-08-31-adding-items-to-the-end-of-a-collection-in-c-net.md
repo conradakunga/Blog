@@ -11,13 +11,13 @@ In our previous post, "[Adding Items To The Beginning Of A Collection in C# & .N
 
 There were three techniques:
 
-1. Insert method
-2. Prepend method
-3. Collection initializers
+1. **Insert** method
+2. **Prepend** method
+3. **Collection initializers**
 
-In this post, we will look at the opposite problem: how to add items to the end of a collection.
+In this post, we will look at the opposite problem: how to add items to the **end of a collection**.
 
-Likewise, here there are also three techniques.
+Likewise, there are also three techniques.
 
 ## Insert
 
