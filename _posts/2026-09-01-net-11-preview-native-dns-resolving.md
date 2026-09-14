@@ -62,6 +62,6 @@ These also have equivalent **synchronous** versions.
 
 **.NET 11 can now do native DNS resolution and parse the returned records for subsequent processing.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-09-01%20-%20DNSResolution).
 
 Happy hacking!
