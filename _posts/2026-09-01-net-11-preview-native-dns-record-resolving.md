@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .NET 11 Preview - Native DNS Resolving
+title: .NET 11 Preview - Native DNS Record Resolving
 date: 2026-09-01 19:26:21 +0300
 categories:
     - C#
