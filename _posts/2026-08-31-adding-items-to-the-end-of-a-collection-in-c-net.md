@@ -21,7 +21,7 @@ Likewise, here there are also three techniques.
 
 ## Insert
 
-We can also use the [Insert](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.insert?view=net-10.0) method here, the twist being we need to specify **where exactly** to insert - the **tail** of the collection.
+We can also use the [Insert](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.insert?view=net-10.0) method here; the twist is that we need to specify **where exactly** to insert - the **tail** of the collection.
 
 We obtain this by retrieving the **number of items already in the list**.
 
