@@ -1,7 +1,7 @@
 ---
 layout: post
 title: .NET 11 Release Candidate - DNS Record Resolving In Linux, macOS & Unix
-date: 2026-09-10 19:58:26 +0300
+date: 2026-09-10 10:58:26 +0300
 categories:
     - C#
     - .NET
