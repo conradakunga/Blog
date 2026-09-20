@@ -1,14 +1,14 @@
 ---
 layout: post
 title: .NET 11 Release Candidate - DNS Record Resolving In Linux, macOS & Unix
-date: 2026-09-10 10:58:26 +0300
+date: 2026-09-02 10:58:26 +0300
 categories:
     - C#
     - .NET
     - .NET 11 Preview
 ---
 
-In a previous post, ".NET 11 Preview - Native DNS Record Resolving", we saw how .NET 11 can now do DNS record resolving natively.
+In a previous post, "[.NET 11 Preview - Native DNS Record Resolving]({% post_url 2026-09-01-net-11-preview-native-dns-record-resolving %})", we saw how .NET 11 can now do [DNS record resolving](https://www.datadoghq.com/knowledge-center/dns-resolution/) natively.
 
 As of the preview, this was only supported on **Windows**, but not on **Linux**, **macOS** or **Unix**.
 
