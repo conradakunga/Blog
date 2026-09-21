@@ -11,7 +11,7 @@ categories:
 
 If you are integrating search into your applications, chances are you are using the excellent [ElasticSearch](https://www.elastic.co/elasticsearch).
 
-It is pretty trivial to check whether the service is up: send a GET request to the root of the sever on port 9200.
+It is pretty trivial to check whether the service is up: send a GET request to the root of the sever on port `9200`.
 
 In my case this is `http://localhost/9200`
 
