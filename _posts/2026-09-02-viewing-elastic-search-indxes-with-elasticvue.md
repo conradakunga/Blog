@@ -27,15 +27,15 @@ This will return something like this:
 
 ![viewIndexSummary](../images/2026/09/viewIndexSummary.png)
 
-Which is a bit cryptic.
+Which is a bit **cryptic**.
 
-You can view a bit more detail (and headers) using the following `GET` request `http://localhost:9200/_cat/indices?v`.
+You can view a bit more **detail** (and **column headers**) by using the following `GET` request `http://localhost:9200/_cat/indices?v`.
 
 ![viewIndexes](../images/2026/09/viewIndexes.png)
 
 Better, but still **ungainly**.
 
-A better solution to this is the tool [ElasticVue](https://elasticvue.com/), available as a [standalone desktop app](https://elasticvue.com/installation/) or as browser plugin for your favourite browser, currently [Chrome](https://chrome.google.com/webstore/detail/elasticvue/hkedbapjpblbodpgbajblpnlpenaebaa), [Edge](https://microsoftedge.microsoft.com/addons/detail/geifniocjfnfilcbeloeidajlfmhdlgo) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/elasticvue/).
+A better solution to this is the tool [ElasticVue](https://elasticvue.com/), available as a [standalone desktop app](https://elasticvue.com/installation/) or as **browser plugin** for your favourite browser, currently [Chrome](https://chrome.google.com/webstore/detail/elasticvue/hkedbapjpblbodpgbajblpnlpenaebaa), [Edge](https://microsoftedge.microsoft.com/addons/detail/geifniocjfnfilcbeloeidajlfmhdlgo) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/elasticvue/).
 
 It is also available as a [docker container](https://hub.docker.com/r/cars10/elasticvue) or a [web app](https://app.elasticvue.com/).
 
