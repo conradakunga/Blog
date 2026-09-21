@@ -11,7 +11,7 @@ categories:
 
 If you are integrating search into your applications, chances are you are using the excellent [ElasticSearch](https://www.elastic.co/elasticsearch).
 
-It is pretty trivial to check whether the service is up: send a GET request to the root of the sever on port `9200`.
+It is pretty trivial to check whether the service is up: send a [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET) request to the root of the sever on port `9200`.
 
 In my case this is `http://localhost/9200`
 
@@ -21,7 +21,7 @@ This should return something like this:
 
 To view the **actual indexes** (assuming your code has indexed your data before) is a bit more work.
 
-Send a [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET) request to the following address `http://localhost:9200/_cat/indices`.
+Send a `GET` request to the following address `http://localhost:9200/_cat/indices`.
 
 This will return something like this:
 
