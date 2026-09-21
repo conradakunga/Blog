@@ -6,7 +6,6 @@ categories:
     - Tools
     - ElasticSearch
     - Tools
-    - StarTools
 ---
 
 If you are integrating search into your applications, chances are you are using the excellent [ElasticSearch](https://www.elastic.co/elasticsearch).
