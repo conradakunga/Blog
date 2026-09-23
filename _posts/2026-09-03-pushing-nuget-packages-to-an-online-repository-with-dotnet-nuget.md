@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pushing Nuget Packages To An Online Repository With dotnet nuget
+title: Pushing NuGet Packages To An Online Repository with dotnet nuget
 date: 2026-09-03 13:25:16 +0300
 categories:
     - C#
@@ -8,7 +8,7 @@ categories:
     - Nuget
 ---
 
-If you are working on the .NET platform, you will undoubtedly have used [nuget](https://learn.microsoft.com/en-us/nuget/what-is-nuget), the [package manager](https://en.wikipedia.org/wiki/Package_manager) to **add**, **remove**, and otherwise **manage** third-party libraries in your applications.
+If you are working on the .NET platform, you will undoubtedly have used [NuGet](https://learn.microsoft.com/en-us/nuget/what-is-nuget), the [package manager](https://en.wikipedia.org/wiki/Package_manager) to **add**, **remove**, and otherwise **manage** third-party libraries in your applications.
 
 Typically, you'd be using the online repository, [nuget.org](https://www.nuget.org/)
 
@@ -20,7 +20,7 @@ You typically would interact with this with your **IDE** or the **command line**
 dotnet add package Dapper
 ```
 
-You can also use a third-party repository, which you would typically use in a team setting.
+You can also use a **third-party repository**, which you would typically use in a team setting.
 
 There are several options, such as [Azure](https://learn.microsoft.com/en-us/azure/devops/artifacts/get-started-nuget?view=azure-devops), [TeamCity](https://www.jetbrains.com/help/teamcity/using-teamcity-as-nuget-feed.html), [GitLab](https://docs.gitlab.com/user/packages/nuget_repository/), [GitHub](https://docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry), and [ProGet](https://inedo.com/proget).
 
