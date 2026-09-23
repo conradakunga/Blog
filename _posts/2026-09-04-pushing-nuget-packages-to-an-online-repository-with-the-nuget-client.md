@@ -27,7 +27,7 @@ Then add it to your `PATH` to simplify things, or put it in a location that is a
 Then you can use it like this:
 
 ```bash
-nuget push *.* -ApiKey x9y5nijN5QzYoCfKEXUa -Source https://nuget.innova.co.ke/nuget/InnovaSharedResources/
+nuget push *.* -ApiKey YOUR_KEY_HERE -Source https://YOUR_REPOSITORY PATH HERE/
 ```
 
 Here, we are doing the following:
