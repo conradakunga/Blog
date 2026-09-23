@@ -18,7 +18,9 @@ You would typically use this if:
 2. You are still generating and consuming [.NET Framework](https://en.wikipedia.org/wiki/.NET_Framework) packages
 3. You are working with [non-SDK](https://learn.microsoft.com/en-us/nuget/resources/check-project-format) projects
 
-You can download it here: https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+If on **Windows**, you can download it here: https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+
+If on macOS, Linux, or Unix, use the instructions [here](https://learn.microsoft.com/en-us/nuget/reference/nuget-exe-cli-reference?tabs=macos).
 
 Then add it to your `PATH` to simplify things, or put it in a location that is already in your `PATH`.
 
