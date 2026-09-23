@@ -14,13 +14,13 @@ In this post, we will look at an alternative tool for this purpose - the [NuGet 
 
 You would typically use this if:
 
-1. You are on the [Windows](https://www.microsoft.com/en-us/windows) platform
+1. You are primarily on the [Windows](https://www.microsoft.com/en-us/windows) platform
 2. You are still generating and consuming [.NET Framework](https://en.wikipedia.org/wiki/.NET_Framework) packages
 3. You are working with [non-SDK](https://learn.microsoft.com/en-us/nuget/resources/check-project-format) projects
 
 If on **Windows**, you can download it here: https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
 
-If on macOS, Linux, or Unix, use the instructions [here](https://learn.microsoft.com/en-us/nuget/reference/nuget-exe-cli-reference?tabs=macos).
+If on **macOS**, **Linux**, or **Unix**, use the instructions [here](https://learn.microsoft.com/en-us/nuget/reference/nuget-exe-cli-reference?tabs=macos).
 
 Then add it to your `PATH` to simplify things, or put it in a location that is already in your `PATH`.
 
@@ -40,6 +40,8 @@ Here, we are doing the following:
 If everything is in order, you should see the following:
 
 ![nugetClient](../images/2026/09/nugetClient.png)
+
+Personally, I use the [dotnet nuget](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-push) tool- it already comes with the .[NET SDK](https://learn.microsoft.com/en-us/dotnet/core/sdk) and is one less thing to manage. 
 
 ### TLDR
 
