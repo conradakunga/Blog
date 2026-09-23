@@ -7,11 +7,11 @@ categories:
     - Terminal
 ---
 
-Viewing files while in the terminal is something that you will probably do quite often.
+**Viewing file contents** while in the terminal is something that you will probably do quite often.
 
 And the goto for this is usually the [cat](https://www.akamai.com/cloud/guides/linux-cat-command) command.
 
-For example in the terminal, if you wanted to view the contents of the file docker-compose.yaml, you would do it like this:
+For example in the terminal, if you wanted to view the **contents** of the file `docker-compose.yaml`, you would do it like this:
 
 ```bash
 cat docker-compose.yaml
