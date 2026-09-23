@@ -1,0 +1,91 @@
+---
+layout: post
+title: Storing Data In Redis With Command Line
+date: 2026-09-05 20:45:25 +0300
+categories:
+    - Tools
+    - Redis
+---
+
+**Caching** is something that you will undoubtedly need to do when writing **high performance systems**, where you are trying to minimize expensive [I/O](https://en.wikipedia.org/wiki/Input/output) such as:
+
+- **Disk** reads
+- **Network** reads
+- **Database** reads
+- Data / objects that are **expensive to compute**
+
+[Redis](https://redis.io/), and its compatriots (which we shall look into later) is a solution built around this precise use case.
+
+You can spin up a **Redis** instance using this [docker-compose](https://compose-spec.io/) file:
+
+```yaml
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis
+    restart: always
+    environment:
+      - TZ=Africa/Nairobi
+    command: ["redis-server", "--requirepass", "YourStrongPassword123"]
+    ports:
+      - '6379:6379'
+```
+
+Once it is running, you should see the following:
+
+![redis](../images/2026/09/redis.png)
+
+Next, we insert some data.
+
+For this we will use the command line.
+
+We start by **connecting** to the instance and **authenticating** ourselves.
+
+```bash
+redis-cli -h localhost -p 6379 -a 'YourStrongPassword123'
+```
+
+If all goes well we should see the following:
+
+![redisConnect](../images/2026/09/redisConnect.png)
+
+We are successfully connected.
+
+Next, we **persist** an `object`.
+
+The `object` is as follows:
+
+```json
+{
+  "Name": "Jake Ballard",
+  "Agency": "B-16"
+}
+```
+
+We want to use the key `my-key` to identify  it.
+
+Our command is thus:
+
+```bash
+SET my-Key '{"Name":"Jake Ballard","Agency":"B-16"}'
+```
+
+If all goes well we should see the following:
+
+![redisSuccess](../images/2026/09/redisSuccess.png)
+
+We can fetch our object as follows:
+
+```bash
+GET my-Key
+```
+
+We should get the following:
+
+![redisFetch](../images/2026/09/redisFetch.png)
+
+Here you can see we get back our `JSON` successfully.
+
+### TLDR
+
+**You can use the *Redis* and its command line client to persist and retrieve data.**
