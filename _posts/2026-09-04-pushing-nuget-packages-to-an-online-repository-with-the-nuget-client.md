@@ -32,7 +32,7 @@ nuget push *.* -ApiKey x9y5nijN5QzYoCfKEXUa -Source https://nuget.innova.co.ke/n
 
 Here, we are doing the following:
 
-- `nuget push` invokes the NuGet client
+- `nuget push` invokes the `NuGet` client
 - `*.*` indicates we want to push **all the files in the current directory**
 - `-ApiKey` indicates the **API key** to use to authenticate against the repository
 - `-Source` indicates the **source**, or where the repository is
