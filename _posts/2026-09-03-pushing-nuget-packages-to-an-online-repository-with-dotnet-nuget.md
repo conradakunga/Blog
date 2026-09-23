@@ -28,7 +28,7 @@ I have used **ProGet** for some time myself.
 
 ![proget](../images/2026/09/proget.png)
 
-It
+It doesn't show any feeds or other information because you need to **log in to access the repository**.
 
 You can also add packages to **ProGet**, or any other repository, using the [dotnet nuget tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-push).
 
