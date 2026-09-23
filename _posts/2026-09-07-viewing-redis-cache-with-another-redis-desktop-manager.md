@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Viewing Redis Cache With Another Redis Desktop Manager
-date: 2026-09-06 21:45:14 +0300
+date: 2026-09-07 21:45:14 +0300
 categories:
    - Tools
    - Redis
