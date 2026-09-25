@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Viewing Files In The Terminal Using Bat Without Line Numbers
-date: 2026-09-09 12:11:54 +0300
+date: 2026-09-11 12:11:54 +0300
 categories:
     - Tools
     - Terminal
