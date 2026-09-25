@@ -7,7 +7,7 @@ categories:
     - Terminal
 ---
 
-In our previous post, "[Viewing Files In The Terminal Using Bat]({% post_url 2026-09-08-viewing-files-in-the-terminal-using-bat %})", we looked at how to **view files** in the **terminal** using the utility [bat](https://github.com/sharkdp/bat), the **better** alternative to the [cat](https://www.akamai.com/docs/guides/linux-cat-command/) utility.
+In a previous post, "[Viewing Files In The Terminal Using Bat]({% post_url 2026-09-08-viewing-files-in-the-terminal-using-bat %})", we looked at how to **view files** in the **terminal** using the utility [bat](https://github.com/sharkdp/bat), the **better** alternative to the [cat](https://www.akamai.com/docs/guides/linux-cat-command/) utility.
 
 A sample file, `docker-compose.yaml`, looks like this:
 
