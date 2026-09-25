@@ -97,4 +97,6 @@ This is why you should not attempt to **manually read and write** `CSV` files. I
 
 **Double spaces appearing in delimited data is a defensive mechanism to ensure the sanctity of the data in the CSV.**
 
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-09-13%20-%20CSVSeparator).
+
 Happy hacking!
