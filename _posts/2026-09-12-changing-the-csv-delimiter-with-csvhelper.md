@@ -5,6 +5,7 @@ date: 2026-09-12 14:04:29 +0300
 categories:
     - C#
     - .NET
+    - StarLibrary
 ---
 
 I have, in the past, talked about the excellent [CSVHelper](https://joshclose.github.io/CsvHelper/) library by [Josh Close](https://github.com/JoshClose).
@@ -108,6 +109,6 @@ Norbert|Keebler|01/23/1979
 
 **When using `CSVHelper`, You can change the separator for a `CSV` by setting the `Delimiter` property for the `CsvConfiguration`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-09-12%20-%20CSVSeparator).
 
 Happy hacking!
