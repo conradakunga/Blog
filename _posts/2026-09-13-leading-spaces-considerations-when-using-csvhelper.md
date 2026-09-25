@@ -89,9 +89,9 @@ In such situations, the library **double quotes the field**.
 
 In fact, **a space appearing anywhere in the data** triggers this behavior.
 
-You will also get this behaviour if there is a **comma** in the **data**, e.g. it is not a delimiter in this context.
+You will also get this behaviour if there is a **comma** in the **data**, e.g. **it is not a delimiter** in this context.
 
-This is why you should not attempt to manually read and write `CSV` files. It is hard. You can read the details in the relevant RFC, [4180](https://www.rfc-editor.org/info/rfc4180/).
+This is why you should not attempt to **manually read and write** `CSV` files. It is **hard**. You can read the details in the relevant [RFC](https://en.wikipedia.org/wiki/Request_for_Comments), [4180](https://www.rfc-editor.org/info/rfc4180/).
 
 ### TLDR
 
