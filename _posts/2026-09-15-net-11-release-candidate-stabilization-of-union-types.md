@@ -64,7 +64,7 @@ This feature was a [preview](https://github.com/dotnet/designs/blob/main/accepte
 <LangVersion>preview</LangVersion>
 ```
 
-As of the release candidate, t**his is no longer required**, as `unions` now are **fully** supported features.
+As of the release candidate, **this is no longer required**, as `unions` now are **fully** supported features.
 
 ### TLDR
 
