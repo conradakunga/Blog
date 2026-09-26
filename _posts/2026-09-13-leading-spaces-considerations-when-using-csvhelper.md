@@ -8,7 +8,7 @@ categories:
     - StarLibrary
 ---
 
-In the past, I have discussed my extensive use of the [CSVHelper](https://github.com/joshclose/csvhelper) library, including as recently as yesterday, where I talked about "[Changing the CSV Delimiter with CSVHelper]({% post_url 2026-09-12-changing-the-csv-delimiter-with-csvhelper %})".
+In the past, I have discussed my extensive use of the [CSVHelper](https://github.com/joshclose/csvhelper) library, including as recently as yesterday, when I talked about "[Changing the CSV Delimiter with CSVHelper]({% post_url 2026-09-12-changing-the-csv-delimiter-with-csvhelper %})".
 
 In the example, the generated file was this:
 
@@ -62,20 +62,19 @@ However, when I examined the raw text --
 
 ```plaintext
 Firstname,Lastname,DateOfBirth
-"Moises",Schumm,02/19/2015
-"Keara",DuBuque,09/04/2004
-"Susie",Kihn,08/11/2025
-"Doris",Greenholt,02/06/2000
-"Lora",Kovacek,11/04/2025
-"Alexander",Stoltenberg,07/03/2026
-"Marianna",Haley,07/31/2017
+Moises,Schumm,02/19/2015
+Keara,DuBuque,09/04/2004
+Susie,Kihn,08/11/2025
+Doris,Greenholt,02/06/2000
+Lora,Kovacek,11/04/2025
+Alexander,Stoltenberg,07/03/2026
+Marianna,Haley,07/31/2017
 " Rosendo",Zemlak,05/13/1978
-"Maximus",Leffler,06/08/2023
-"Marshall",Lockman,10/15/1980
-
+Maximus,Leffler,06/08/2023
+Marshall",Lockman,10/15/1980
 ```
 
-Notice that now there are double quotes around the `Firstname`.
+Notice that now there are **double quotes** around the `Firstname`.
 
 The culprit was not hard to spot:
 
@@ -85,17 +84,17 @@ The culprit was not hard to spot:
 
 There is a **leading space** before **Rosendo**.
 
-In such situations, the library **double quotes the field**.
+In such situations, the library **double-quotes the field**.
 
 In fact, **a space appearing anywhere in the data** triggers this behavior.
 
-You will also get this behaviour if there is a **comma** in the **data**, e.g. **it is not a delimiter** in this context.
+You will also get this behaviour if there is a **comma** in the **data** - e.g. **it is not a delimiter** in this context.
 
-This is why you should not attempt to **manually read and write** `CSV` files. It is **hard**. You can read the details in the relevant [RFC](https://en.wikipedia.org/wiki/Request_for_Comments), [4180](https://www.rfc-editor.org/info/rfc4180/).
+That is why you shouldn't try to **manually read and write** `CSV` files. It is **hard**. You can read the details in the relevant [RFC](https://en.wikipedia.org/wiki/Request_for_Comments), [4180](https://www.rfc-editor.org/info/rfc4180/).
 
 ### TLDR
 
-**Double spaces appearing in delimited data is a defensive mechanism to ensure the sanctity of the data in the CSV.**
+**Double spaces appearing in delimited data are a defensive mechanism to ensure the sanctity of the data in the CSV.**
 
 The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-09-13%20-%20CSVSeparator).
 
