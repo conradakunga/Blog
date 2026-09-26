@@ -7,13 +7,13 @@ categories:
     - Terminal
 ---
 
-In a previous post, "[Viewing Files In The Terminal Using Bat]({% post_url 2026-09-08-viewing-files-in-the-terminal-using-bat %})", we looked at how to **view files** in the **terminal** using the utility [bat](https://github.com/sharkdp/bat), the **better** alternative to the [cat](https://www.akamai.com/docs/guides/linux-cat-command/) utility.
+In a previous post, "[Viewing Files In The Terminal Using Bat]({% post_url 2026-09-08-viewing-files-in-the-terminal-using-bat %})", we looked at how to **view files** in the **terminal** using the utility [bat](https://github.com/sharkdp/bat), a **better** alternative to [cat](https://www.akamai.com/docs/guides/linux-cat-command/).
 
 A sample file, `docker-compose.yaml`, looks like this:
 
 ![batDockerCompose](../images/2026/09/batDockerComposeDefault.png)
 
-However, that colour coded view, with **line numbers**, can sometimes be **problematic** if you need to **copy** and **paste** from this view.
+However, that color-coded view, with **line numbers**, can sometimes be **problematic** if you need to **copy** and **paste** from this view.
 
 The solution to this is the `-p` parameter.
 

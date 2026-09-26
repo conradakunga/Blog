@@ -74,8 +74,6 @@ Maximus,Leffler,06/08/2023
 Marshall",Lockman,10/15/1980
 ```
 
-Notice that now there are **double quotes** around the `Firstname`.
-
 The culprit was not hard to spot:
 
 ```plaintext

@@ -8,7 +8,7 @@ categories:
     - .NET 11 Preview
 ---
 
-Conversion between numeric types is a necessary evil, especially when dealing with [approximate types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types).
+**Conversion** between **numeric types** is a necessary evil, especially when dealing with [approximate types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types).
 
 Take this simple example:
 
