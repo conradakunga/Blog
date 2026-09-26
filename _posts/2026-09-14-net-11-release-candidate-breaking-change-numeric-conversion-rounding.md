@@ -27,7 +27,7 @@ Which **it does**.
 
 At least currently in **.NET 10**.
 
-In .NET 11, however, **this has changed**.
+In .NET 11 **release candidate 1**, however, **this has changed**.
 
 The runtime will [attempt to convert the value to its nearest approximation](https://github.com/dotnet/runtime/pull/130565).
 
