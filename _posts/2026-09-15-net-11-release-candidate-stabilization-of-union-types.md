@@ -8,7 +8,7 @@ categories:
     - .NET 11 Preview
 ---
 
-In a previous post, ".NET 11 Preview - Discriminated Unions Support", we looked at the support for discriminated [union](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/union) types in .NET.
+In a previous post, "[.NET 11 Preview - Discriminated Unions Support]({% post_url 2026-08-05-net-11-preview-discriminated-unions-support %})", we looked at the support for discriminated [union](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/union) types in .NET.
 
 To recap. let us declare some `types`:
 
