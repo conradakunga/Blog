@@ -70,6 +70,6 @@ As of the release candidate, t**his is no longer required**, as `unions` now are
 
 **`Unions` are now native supported in .NET 11.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-09-15%20-%20StableUnion).
 
 Happy hacking!
