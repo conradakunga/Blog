@@ -8,7 +8,7 @@ categories:
 
 In a previous post, "[.NET 11 Release Candidate - Breaking Change - Numeric Conversion Rounding]({% post_url 2026-09-14-net-11-release-candidate-breaking-change-numeric-conversion-rounding %})", we looked at a breaking change in .NET where `float` conversions to `decimal` were first taken to the nearest **approximation** before **conversion**.
 
-As a recap, the prior behaviour in **.NET 10 and prior** was this:
+As a recap, the prior behaviour in **.NET 10 and earlier** was this:
 
 ![preservedDecimal](../images/2026/09/preservedDecimal.png)
 
