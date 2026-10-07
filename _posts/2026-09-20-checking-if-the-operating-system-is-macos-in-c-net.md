@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-In a previous post, "[Determining The Operating System C# .NET Program Is Running Under]({% post_url 2024-11-23-determing-the-operating-system-c-program-is-running-under %)", we looked at how to extract information about the **operating system the code is running under**.
+In a previous post, "[Determining The Operating System C# .NET Program Is Running Under]({% post_url 2024-11-23-determing-the-operating-system-c-program-is-running-under %})", we looked at how to extract information about the **operating system the code is running under**.
 
 There were a lot of candidate APIs
 
