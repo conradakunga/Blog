@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Yesterday's post, "[Checking If the Operating System Is macOS in C# & .NET]()", looked at a quicker, simpler API to check whether your code is running on [macOS](https://en.wikipedia.org/wiki/MacOS).
+Yesterday's post, "[Checking If the Operating System Is macOS in C# & .NET]()", looked at a **quicker**, **simpler** API to check whether your code is running on [macOS](https://en.wikipedia.org/wiki/MacOS).
 
 In today's post, we will look at a similar problem: checking for [Linux](https://en.wikipedia.org/wiki/Linux).
 
@@ -19,6 +19,8 @@ void Main()
   Console.WriteLine(OperatingSystem.IsLinux());
 }
 ```
+
+This just checks whether the underlying operating system is **Linux**. For more **granular** details, there are other APIs that you can turn to.
 
 ### TLDR
 
