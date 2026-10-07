@@ -16,7 +16,7 @@ Unsurprisingly, there is a similar API that you can use: [OperatingSystem.IsLinu
 ```c#
 void Main()
 {
-	Console.WriteLine(OperatingSystem.IsLinux());
+  Console.WriteLine(OperatingSystem.IsLinux());
 }
 ```
 

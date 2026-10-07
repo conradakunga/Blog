@@ -19,7 +19,7 @@ There is actually a much simpler API if all you need is a quick check of whether
 ```c#
 void Main()
 {
-	Console.WriteLine(OperatingSystem.IsMacOS());
+  Console.WriteLine(OperatingSystem.IsMacOS());
 }
 ```
 
