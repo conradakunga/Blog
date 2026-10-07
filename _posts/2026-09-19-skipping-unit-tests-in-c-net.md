@@ -5,6 +5,7 @@ date: 2026-09-19 12:04:08 +0300
 categories:
     - C#
     - .NET
+    - Testing
     - xUnit
 ---
 
@@ -134,6 +135,6 @@ So you have the best of both worlds.
 
 **You can skip unit tests by decorating them with the `Skip` attribute.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-09-19%20-%20TestsForSkipping).
 
 Happy hacking!
