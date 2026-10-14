@@ -17,4 +17,6 @@ The [downloads](https://get.dot.net/11) are here.
 
 As usual, we will be **diving into** what I find to be the most **interesting** bits.
 
+Of interest is that, as a release candidate, it has a [go-live support license](https://dotnet.microsoft.com/platform/support/policy/dotnet-core#previews). This means you can deploy applications to production and still access support.
+
 Happy hacking!
