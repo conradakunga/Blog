@@ -3,6 +3,7 @@ layout: post
 title: Fix - Pushing Packages To Nuget With Special Characters In The API Key
 date: 2026-10-16 06:16:34 +0300
 categories:
+    - Nuget
 ---
 
 In some previous posts, "[Pushing NuGet Packages To An Online Repository with the NuGet Client]({% post_url 2026-09-04-pushing-nuget-packages-to-an-online-repository-with-the-nuget-client %})" and "[Pushing NuGet Packages To An Online Repository with dotnet nuget]({% post_url 2026-09-03-pushing-nuget-packages-to-an-online-repository-with-dotnet-nuget %})" we looked at how to push [nuget](https://learn.microsoft.com/en-us/nuget/what-is-nuget) packages to repositories using either the native `Nuget` client, or the .net tool `dotnet nuget`.
