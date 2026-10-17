@@ -15,13 +15,13 @@ The default goto would be this:
 ```c#
 public IEnumerable<DateOnly> GetDatesInYear(int year)
 {
-	var start = new DateOnly(year, 1, 1);
-	var temp = start;
-	while (temp.Year == year)
-	{
-		yield return temp;
-		temp = temp.AddMonths(1);
-	}
+  var start = new DateOnly(year, 1, 1);
+  var temp = start;
+  while (temp.Year == year)
+  {
+    yield return temp;
+    temp = temp.AddMonths(1);
+  }
 }
 ```
 
@@ -42,7 +42,7 @@ This can be **visualized** with this harness:
 var year = 2026;
 foreach (var date in GetDatesInYear(year))
 {
-  Console.WriteLine(date);
+	Console.WriteLine(date);
 }
 ```
 
