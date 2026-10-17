@@ -48,6 +48,6 @@ foreach (var date in GetDatesInYear(year))
 
 ![firstDayOfMonth](../images/2026/10/firstDayOfMonth.png)
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-10-11%20-%20FirstDayOfMonth).
 
 Happy hacking!
