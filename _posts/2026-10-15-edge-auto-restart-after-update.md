@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Edge Auto Restart After Update
-date: 2026-10-14 14:23:06 +0300
+date: 2026-10-15 14:23:06 +0300
 categories:
     - Edge
 ---
