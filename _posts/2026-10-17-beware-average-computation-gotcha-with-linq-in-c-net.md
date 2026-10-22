@@ -20,7 +20,7 @@ var numbers = new List<decimal>();
 Console.WriteLine(numbers.Average());
 ```
 
-This is simply an attempt to compute the [average](https://en.wikipedia.org/wiki/Average) of a list of `decimal` that does not actually contain any numbers. Average, in some contexts, is also known as the [arithmetic mean](https://en.wikipedia.org/wiki/Arithmetic_mean).
+This is simply an attempt to compute the [average](https://en.wikipedia.org/wiki/Average) of a list of `decimal` that does not actually contain any numbers. **Average**, in some contexts, is also known as the [arithmetic mean](https://en.wikipedia.org/wiki/Arithmetic_mean).
 
 Many would expect this to return a `0`.
 
