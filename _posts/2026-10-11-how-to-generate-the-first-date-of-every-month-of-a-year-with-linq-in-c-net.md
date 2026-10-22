@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Generate The First Day Of Every Month Of A Year With LINQ In C# & .NET
+title: How to Generate The First Day of Every Month Of A Year with LINQ In C# & .NET
 date: 2026-10-11 14:50:27 +0300
 categories:
     - C#
@@ -8,9 +8,9 @@ categories:
     - LINQ
 ---
 
-I recently need to generate the **first day of each month**, for some processing in an algorithm.
+I recently needed to generate the **first day of each month**, for some processing in an algorithm.
 
-The default goto would be this:
+The default approach would be this:
 
 ```c#
 public IEnumerable<DateOnly> GetDatesInYear(int year)
@@ -25,7 +25,7 @@ public IEnumerable<DateOnly> GetDatesInYear(int year)
 }
 ```
 
-Straightforward enough.
+**Straightforward** enough.
 
 You can also achieve the same thing using a [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) expression.
 
