@@ -53,6 +53,6 @@ An **IDE test runner** will return something similar:
 
 **The *xUnit* `Timeout` attribute lets you set a limit for how long a test can run; otherwise, it fails with a timeout.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-10-18%20-%20TestTimeouts).
 
 Happy hacking!
