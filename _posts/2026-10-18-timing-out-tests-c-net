@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timing Out Tests in C# & .NET
+title: "Timing Out Tests in C# & .NET"
 date: 2026-10-18 17:47:11 +0300
 categories:
     - C#
@@ -10,7 +10,7 @@ categories:
 
 In unit testing, there are scenarios where you want to **exit your test run early**.
 
-Take this simple test, on the [xUnit](https://xunit.net/) framework:
+Take this simple test, in the [xUnit](https://xunit.net/) framework:
 
 ```c#
 public async Task SampleTest()
