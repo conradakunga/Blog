@@ -24,7 +24,7 @@ In case you missed it, this is the **difference**:
 
 The post **did not have an extension**.
 
-I spent almost 15 minutes wondering why my post was not being generated until I realized that **Jekyll** ignores files that do not have the `.md` extension.
+I spent almost `15` **minutes** wondering why my post was **not being generated** until I realized that **Jekyll** ignores files that do not have the `.md` extension.
 
 ### TLDR
 
