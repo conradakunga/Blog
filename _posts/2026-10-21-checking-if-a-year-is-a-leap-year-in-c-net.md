@@ -21,8 +21,7 @@ The algorithm is as follows:
 ```c#
 bool IsLeapYear(int year)
 {
-	return year % 400 == 0 ||
-		  (year % 4 == 0 && year % 100 != 0);
+	return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
 }
 ```
 
@@ -33,14 +32,14 @@ Like so:
 ```c#
 public static class DateTimeExtensions
 {
-	public static bool IsLeapYear(this DateTime datetTime)
-	{
-		return datetTime.Year % 400 == 0 || (datetTime.Year % 4 == 0 && datetTime.Year % 100 != 0);
-	}
-	public static bool IsLeapYear(this DateOnly dateOnly)
-	{
-		return dateOnly.ToDateTime(TimeOnly.MinValue).IsLeapYear();
-	}
+  public static bool IsLeapYear(this DateTime datetTime)
+  {
+  	return datetTime.Year % 400 == 0 || (datetTime.Year % 4 == 0 && datetTime.Year % 100 != 0);
+  }
+  public static bool IsLeapYear(this DateOnly dateOnly)
+  {
+  	return dateOnly.ToDateTime(TimeOnly.MinValue).IsLeapYear();
+  }
 }
 ```
 
