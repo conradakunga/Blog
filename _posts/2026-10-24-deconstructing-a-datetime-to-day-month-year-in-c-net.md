@@ -39,6 +39,8 @@ This works.
 But there is a simpler way - an overload for [Deconstruct](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.deconstruct?view=net-10.0#system-datetime-deconstruct(system-int32@-system-int32@-system-int32@)) that returns the values we want.
 
 ```c#
+var now = DateTime.Now;
+
 now.Deconstruct(out var year, out var month, out var day);
 
 Console.WriteLine($"{year} {month} {day}");
@@ -49,6 +51,8 @@ Much **cleaner**.
 You can make it even **simpler** by doing it this way:
 
 ```c#
+var now = DateTime.Now;
+
 var (year, month, day) = now;
 
 Console.WriteLine($"{year} {month} {day}");
