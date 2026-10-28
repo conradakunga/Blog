@@ -6,7 +6,7 @@ categories:
     - Python
 ---
 
-In some earlier posts, "What Happens When You Do File.Delete For A Non-Existent File In C# & .NET" and "What Happens When You Delete A Non-Existent File In Java", we looked at how **deletion of non existent files** was treated in [.NET](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) and [Java](https://www.java.com/).
+In some earlier posts, "[What Happens When You Do File.Delete For A Non-Existent File In C# & .NET]({% post_url 2026-10-25-what-happens-when-you-do-filedelete-for-a-non-existent-file-in-c-net %})" and "[What Happens When You Delete A Non-Existent File In Java]({% post_url 2026-10-26-what-happens-when-you-delete-for-a-non-existent-file-in-java %})", we looked at how **deletion of non existent files** was treated in [.NET](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) and [Java](https://www.java.com/).
 
 In this post, we will look at the same from [Python](https://www.python.org/).
 
