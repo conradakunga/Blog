@@ -42,6 +42,6 @@ if os.path.exists(file_name):
 
 ### TLDR
 
-Python will throw an error if you try to delete a file that does not exist.
+**Python will throw an error if you try to delete a file that does not exist.**
 
 Happy hacking!
