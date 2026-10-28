@@ -18,6 +18,8 @@ import os
 os.remove("/Users/rad/Downloads/NoSuchFile.txt")
 ```
 
+Here we are using the [os.remove](https://www.w3schools.com/python/ref_os_remove.asp) API.
+
 When we run this code, we see the following:
 
 ![deletePython](../images/2026/10/deletePython.png)
