@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Happens When You Do Delete A Non-Existent File In Java
+title: What Happens When You Delete A Non-Existent File In Java
 date: 2026-10-26 14:21:25 +0300
 categories:
     - Java
