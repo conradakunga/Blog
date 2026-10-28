@@ -47,7 +47,7 @@ And we're done.
 
 Not so fast! [Directory.Delete](https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.delete?view=net-10.0#system-io-directory-delete(system-string)) will throw an `exception` if the **directory is not empty**!
 
-Luckily there is an overload for this:
+Luckily there is an [overload](https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.delete?view=net-10.0#system-io-directory-delete(system-string-system-boolean)) for this:
 
 ```c#
 Directory.Delete(rootfolder, true)
