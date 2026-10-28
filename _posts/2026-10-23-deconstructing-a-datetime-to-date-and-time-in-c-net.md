@@ -27,7 +27,7 @@ Console.WriteLine(now.TimeOfDay);
 
 ## Construct TimeOnly and DateOnly From The DateTime
 
-In this approach we use **factory** methods to **construct** the respective objects.
+In this approach, we use **factory** methods to **construct** the respective objects.
 
 ```c#
 var now = DateTime.Now;
@@ -37,7 +37,7 @@ Console.WriteLine(TimeOnly.FromDateTime(now));
 
 ## Deconstruct The DateTime Into Its Constituents
 
-The other method is to use the [Deconstruct](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.deconstruct?view=net-10.0) method of the `DateTime` to deconstruct. Curiously, this method isn't exposed to the IDE ([EditorBrowsable](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.editorbrowsableattribute?view=net-10.0)) so you **just have to know that it is there, or read the documentation to discover it**.
+Another method is to use the [Deconstruct](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.deconstruct?view=net-10.0) method of the `DateTime` to deconstruct it. Curiously, this method isn't exposed to the IDE ([EditorBrowsable](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.editorbrowsableattribute?view=net-10.0)), so you either have to **know it is there** or **read the documentation to find it**.
 
 ```c#
 var now = DateTime.Now;

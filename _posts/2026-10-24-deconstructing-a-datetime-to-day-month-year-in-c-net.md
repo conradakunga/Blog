@@ -16,6 +16,9 @@ This is for use in a downstream process that generates a hash with these values.
 A straightforward way to achieve this is this:
 
 ```c#
+// Get the date we are interested in
+var now = DateTime.Now;
+
 var year = Convert.ToInt32(now.ToString("yyyy"));
 var month = Convert.ToInt32(now.ToString("MM"));
 var day = Convert.ToInt32(now.ToString("dd"));
@@ -25,7 +28,7 @@ Console.WriteLine($"{year} {month} {day}");
 
 The algorithm is pretty simple:
 
-1. User [format strings](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to extract the components we are interested in
+1. Use [format strings](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) to extract the components we are interested in
 2. **Convert** these values to `integers`
 3. **Store** the values in **variables** for future use.
 
@@ -43,7 +46,7 @@ Console.WriteLine($"{year} {month} {day}");
 
 Much **cleaner**.
 
-You can make it still **simpler** by doing it this way:
+You can make it even **simpler** by doing it this way:
 
 ```c#
 var (year, month, day) = now;
