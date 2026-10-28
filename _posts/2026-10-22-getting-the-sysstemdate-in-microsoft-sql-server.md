@@ -6,7 +6,7 @@ categories:
     - SQL Server
 ---
 
-When it comes to getting the current date and time in SQL Server, you have a number of options:
+When it comes to getting the current date and time in [Microsoft SQL Server](https://www.microsoft.com/en/sql-server), you have a number of options:
 
 ## GETDATE()
 

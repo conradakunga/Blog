@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deconstructing A DateTime To Date And Time In C# & .NET
+title: Deconstructing A DateTime to Date and Time in C# & .NET
 date: 2026-10-23 19:08:46 +0300
 categories:
     - C#
