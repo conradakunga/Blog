@@ -24,7 +24,7 @@ var files = Directory.GetFiles(rootFolder);
 // Delete the files
 Parallel.ForEach(files, file =>
 {
-	File.Delete(file);
+  File.Delete(file);
 });
 
 // Delete the folder
