@@ -6,11 +6,11 @@ categories:
     - Java
 ---
 
-In yesterday's post, "[What Happens When You Do File.Delete For A Non-Existent File In C# & .NET]({% post_url 2026-10-25-what-happens-when-you-do-filedelete-for-a-non-existent-file-in-c-net %})", we looked at the intriguing fact that in [.NET](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) trying to delete a file that does not exist will not throw an exception.
+In yesterday's post, "[What Happens When You Do File.Delete For A Non-Existent File In C# & .NET]({% post_url 2026-10-25-what-happens-when-you-do-filedelete-for-a-non-existent-file-in-c-net %})", we looked at the intriguing fact that in [.NET](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) **trying to delete a file that does not exist will not throw an `exception`**.
 
 I wondered if the same was true for [Java](https://www.java.com/).
 
-This is a one liner that is meant to delete a file that I know for a fact does not exist.
+This is a one liner that is meant to **delete a file that I know for a fact does not exist**.
 
 ```java
 void main() throws IOException {
