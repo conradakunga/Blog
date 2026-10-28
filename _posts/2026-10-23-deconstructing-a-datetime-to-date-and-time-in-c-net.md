@@ -31,6 +31,7 @@ In this approach, we use **factory** methods to **construct** the respective obj
 
 ```c#
 var now = DateTime.Now;
+
 Console.WriteLine(DateOnly.FromDateTime(now));
 Console.WriteLine(TimeOnly.FromDateTime(now));
 ```
@@ -41,7 +42,9 @@ Another method is to use the [Deconstruct](https://learn.microsoft.com/en-us/dot
 
 ```c#
 var now = DateTime.Now;
+
 now.Deconstruct(out var date, out var time);
+
 Console.WriteLine(date);
 Console.WriteLine(time);
 ```
