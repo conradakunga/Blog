@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-When working with [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-10.0) and [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-10.0), you will inevitably end up [outputting](https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) them. For this, you will generally need to use `/`, the [date separator](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.dateseparator?view=net-10.0).
+When working with [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-10.0) and [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-10.0) objects, you will inevitably end up [outputting](https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) them. For this, you will generally need to use `/`, the [date separator](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.dateseparator?view=net-10.0).
 
 Something like this:
 
