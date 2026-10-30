@@ -66,9 +66,9 @@ The code will now run as expected, regardless of the configured **date separator
 
 ![overrideSeparator](../images/2026/10/overrideSeparator.png)
 
-But this is a very hacky solution for one-off use.
+But this is a very **hacky** solution for **one-off** use.
 
-We'll implement the proper solution in our next post.
+We'll implement the **proper** solution in our next post.
 
 ### TLDR
 
