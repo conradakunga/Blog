@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-When working with [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-10.0) and [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-10.0), you will inevitably end up outputting them. For this, you will generally need to use `/`, the [date separator](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.dateseparator?view=net-10.0).
+When working with [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-10.0) and [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-10.0), you will inevitably end up [outputting](https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) them. For this, you will generally need to use `/`, the [date separator](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.dateseparator?view=net-10.0).
 
 Something like this:
 
@@ -29,7 +29,7 @@ Here is the same code running in my Windows VM.
 
 Note the result: `30-10-2026`.
 
-This is because my VM has a custom date format.
+This is because my VM has a **custom date format**.
 
 ![formatDate](../images/2026/10/formatDate.png)
 
@@ -41,7 +41,7 @@ But recently I ran into a problem - I am generating a file, and the format for t
 
 My code correctly generates `30-10-2026,` which is technically correct, but wrong for my purposes.
 
-There are a couple of solutions to this:
+There are a **couple** of solutions to this:
 
 The first solution, for simple scenarios, is not to use the **DateSeparator** at all.
 
@@ -66,7 +66,7 @@ The code will now run as expected, regardless of the configured **date separator
 
 ![overrideSeparator](../images/2026/10/overrideSeparator.png)
 
-But this is a very hack-y solution for once of use.
+But this is a very hacky solution for one-off use.
 
 We'll implement the proper solution in our next post.
 

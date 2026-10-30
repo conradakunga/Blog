@@ -9,11 +9,11 @@ categories:
 
 In our previous post, "[Working With `/` The Date Separator In C# & .NET]({% post_url 2026-10-30-working-with-the-date-separator-in-c-net %})", we looked at the interpretation of the [DateSeparator](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.dateseparator?view=net-10.0) and how to **force display of a particular symbol**.
 
-In this post we will look at how to do it **properly**.
+In this post, we will look at how to do it **properly**.
 
-We will take the strategy I first outlined in the post "[Dynamically Changing Date Separators At Runtime]({% post_url 2025-12-14-dynamically-changing-decimal-thousand-separators-at-runtime %})", where we took an existing [culture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-10.0) and **modified it for our purposes**.
+We will use the strategy I first outlined in the post "[Dynamically Changing Date Separators At Runtime]({% post_url 2025-12-14-dynamically-changing-decimal-thousand-separators-at-runtime %})", where we took an existing [culture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-10.0) and **modified it for our purposes**.
 
-Here we are going to extract the [DateTimeFormatInfo](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo?view=net-10.0) for the current culture, and **modify** it to change the [DateSeparator](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.dateseparator?view=net-10.0). For our case we want to use the `+` as a **date separator**.
+Here we are going to extract the [DateTimeFormatInfo](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo?view=net-10.0) for the current culture and **modify** it to change the [DateSeparator](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.datetimeformatinfo.dateseparator?view=net-10.0). In our case, we want to use the `+` as a **date separator**.
 
 ```c#
 using System.Globalization;
@@ -32,7 +32,7 @@ Console.WriteLine(DateTime.Now.ToString("dd/MM/yyyy", dateTimeFormatInfo));
 Console.WriteLine(DateTime.Now.ToString("dd/MM/yyyy"));
 ```
 
-If you run this code you will see **good** news and **bad** news.
+If you run this code, you will see **good** news and **bad** news.
 
 ![CustomCultureRun](../images/2026/10/CustomCultureRun.png)
 
@@ -41,7 +41,7 @@ If you run this code you will see **good** news and **bad** news.
 
 This is not ideal.
 
-The proper solution is to **directly modify the culture**.
+The proper solution is to *modify the culture directly**.
 
 We shall do that as follows:
 
@@ -72,7 +72,7 @@ You can see here that we now **don't need to pass anything** to our [ToString](h
 
 ### TLDR
 
-**To avoid having to pass [Cultures](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-10.0) to your code when formatting, change the [CurrentCutlure](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-10.0) directly to be one with all your configurations made.**
+**To avoid having to pass [Cultures](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-10.0) to your code when formatting, change the [CurrentCutlure](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-10.0) directly to one with all your configurations made.**
 
 The code is in my GitHub.
 
