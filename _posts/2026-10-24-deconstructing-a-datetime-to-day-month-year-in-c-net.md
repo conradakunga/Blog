@@ -9,7 +9,7 @@ categories:
 
 In a previous post, "[Deconstructing A DateTime To Day, Month & Year In C# & .NET]({% post_url 2026-10-23-deconstructing-a-datetime-to-date-and-time-in-c-net %})", we looked at how to deconstruct a [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-10.0) into its `Date` and `Time` components.
 
-In this post we will look at a similar problem - how to extract the **year**, **month** and **day** components from a `DateTime`.
+In this post, we will look at a similar problem - how to extract the **year**, **month** and **day** components from a `DateTime`.
 
 This is for use in a downstream process that generates a hash with these values.
 

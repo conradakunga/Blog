@@ -41,7 +41,7 @@ If you don't want this, i.e. you want to add them to the **root**, use this over
 zip.AddFiles(files, "");
 ```
 
-This will add the files to **root** level of `the` Zip file.
+This will add the files to the **root** level of `the` Zip file.
 
 ### TLDR
 

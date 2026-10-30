@@ -8,7 +8,7 @@ categories:
 
 In some earlier posts, "[What Happens When You Do File.Delete For A Non-Existent File In C# & .NET]({% post_url 2026-10-25-what-happens-when-you-do-filedelete-for-a-non-existent-file-in-c-net %})" and "[What Happens When You Delete A Non-Existent File In Java]({% post_url 2026-10-26-what-happens-when-you-delete-for-a-non-existent-file-in-java %})", we looked at how **deletion of non existent files** was treated in [.NET](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) and [Java](https://www.java.com/).
 
-In this post, we will look at the same from [Python](https://www.python.org/).
+In this post, we will look at the same in [Python](https://www.python.org/).
 
 The approach is pretty straightforward - import the [os](https://docs.python.org/3/library/os.html) module and then we write the code:
 
@@ -26,7 +26,7 @@ When we run this code, we see the following:
 
 We can see here that Python very much objects to deleting a file that does not exist.
 
-A solution to this is to code defensively where we first check if the file exists before doing anything.
+A solution to this is to code defensively, where we first check wheter the file exists before doing anything.
 
 Like so:
 

@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-Was recently writing a small utility that needed to **generate** some files, **process** them, add them to a [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) archive, and then **delete** them.
+I was recently writing a small utility that needed to **generate** files, **process** them, add them to a [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) archive, and then **delete** them.
 
 Somewhere in the code was this line:
 

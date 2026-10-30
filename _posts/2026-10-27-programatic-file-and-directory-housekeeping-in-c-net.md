@@ -33,7 +33,7 @@ Directory.Delete(rootFolder);
 
 At first glance, simple enough.
 
-Until you realize **there is no reason to delete the files first, and then the folder**.
+Until you realize **there is no reason to delete the files first and then the folder**.
 
 You can **delete the folder directly, and its files will go with it**.
 
@@ -47,7 +47,7 @@ And we're done.
 
 Not so fast! [Directory.Delete](https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.delete?view=net-10.0#system-io-directory-delete(system-string)) will throw an `exception` if the **directory is not empty**!
 
-Luckily there is an [overload](https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.delete?view=net-10.0#system-io-directory-delete(system-string-system-boolean)) for this:
+Luckily, there is an [overload](https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.delete?view=net-10.0#system-io-directory-delete(system-string-system-boolean)) for this:
 
 ```c#
 Directory.Delete(rootfolder, true)
@@ -55,7 +55,7 @@ Directory.Delete(rootfolder, true)
 
 This accepts a **flag** that tells the runtime to do a **recursive deletion of the contents of the folder**.
 
-Our code now is like so:
+Our code now is like this:
 
 ```c#
 // Get the files to process
@@ -69,7 +69,7 @@ var files = Directory.GetFiles(rootFolder);
 Directory.Delete(rootFolder);
 ```
 
-If, however, you needed some sort of **log** or **indication of the individual deleted files activity**, you might want to use my initial approach.
+If, however, you need a **log** or **indication of the individual deleted files' activity**, you might want to use my initial approach.
 
 ### TLDR
 
