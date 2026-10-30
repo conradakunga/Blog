@@ -47,6 +47,8 @@ The first solution, for simple scenarios, is not to use the **DateSeparator** at
 
 Specify the **date format** as follows: `dd'/'MM'/'yyyy`
 
+Note here that the `/` is now just a normal, escaped character.
+
 The code now looks like this:
 
 ```c#
