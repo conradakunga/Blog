@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CurrentCulture vs CurrentUICulture In C# & .NET
-date: 2026-11-01 11:06:15 +0300
+title: CurrentCulture vs CurrentUICulture in C# & .NET
+date: 2026-11-01 15:01:15 +0300
 categories:
     - C#
     - .NET
