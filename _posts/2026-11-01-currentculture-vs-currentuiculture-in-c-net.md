@@ -41,7 +41,7 @@ Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-GB");
 Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
 ```
 
-So your buttons and other elements would use **English** (typically specified using resource files), but the logic around parsing and displaying would use **French**.
+So your buttons and other elements would use **English** (typically specified using [resource files](https://learn.microsoft.com/en-us/dotnet/core/extensions/work-with-resx-files-programmatically)), but the logic around parsing and displaying would use **French**.
 
 ### TLDR
 
