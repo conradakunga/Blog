@@ -9,8 +9,8 @@ categories:
 
 When displaying the time, you have two options:
 
-1. 24 hour clock
-2. 12 hour clock
+1. [24 hour clock](https://en.wikipedia.org/wiki/24-hour_clock)
+2. [12 hour clock](https://en.wikipedia.org/wiki/12-hour_clock)
 
 To display the time using the **24 Hour clock**, you would do it like this:
 
