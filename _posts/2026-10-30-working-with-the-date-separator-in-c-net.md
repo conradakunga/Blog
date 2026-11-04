@@ -68,7 +68,7 @@ The code will now run as expected, regardless of the configured **date separator
 
 But this is a very **hacky** solution for **one-off** use.
 
-We'll implement the **proper** solution in our next post.
+We'll implement the **proper** solution in our [next post]({% post_url 2026-10-31-dynamically-changing-date-separators-at-runtime-in-c-net %}).
 
 ### TLDR
 
