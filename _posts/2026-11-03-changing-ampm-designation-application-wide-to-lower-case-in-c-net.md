@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing AM/PM Designation Application-Wide in Lowercase in C# & .NET
+title: Changing AM/PM Designation Application-Wide to Lowercase in C# & .NET
 date: 2026-11-03 18:37:48 +0300
 categories:
     - C#
