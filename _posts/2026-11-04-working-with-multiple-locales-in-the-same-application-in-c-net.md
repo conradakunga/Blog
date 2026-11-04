@@ -7,11 +7,11 @@ categories:
     - NET
 ---
 
-As outlined in [some]({% post_url 2026-11-03-changing-ampm-designation-application-wide-in-lower-case-in-c-netn%}) [earlier]({% post_url 2026-10-31-dynamically-changing-date-separators-at-runtime-in-c-netn %}) [posts]({% post_url %}), you can set the locale of the current [thread]() to whichever one you want.
+As outlined in [some]({% post_url 2026-11-03-changing-ampm-designation-application-wide-in-lower-case-in-c-netn%}) [earlier]({% post_url 2026-10-31-dynamically-changing-date-separators-at-runtime-in-c-netn %}) [posts]({% post_url 2025-12-14-dynamically-changing-decimal-thousand-separators-at-runtime %}), you can set the locale of the current [thread]() to whichever one you want.
 
 We can leverage this if we need to process data from **multiple locales in the same application**.
 
-Let us take a trivial example where we want to **process some code in 3 different locales**:
+Let us take a **trivial** example where we want to **process some code in 3 different locales**:
 
 1. Kenyan English (`en-ke`)
 2. French Canadian (`fr-CA`)
