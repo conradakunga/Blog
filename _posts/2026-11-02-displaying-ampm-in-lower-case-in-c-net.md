@@ -58,7 +58,7 @@ This outputs what we would expect:
 
 ![ampmLower](../images/2026/11/ampmLower.png)
 
-Is there a more robust way of doing this? Of course. We shall look at that in our next post.
+Is there a more robust way of doing this? **Of course**. We shall look at that in our [next post]().
 
 ### TLDR
 

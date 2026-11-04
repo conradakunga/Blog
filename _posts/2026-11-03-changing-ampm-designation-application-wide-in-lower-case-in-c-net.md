@@ -9,7 +9,7 @@ categories:
 
 In our previous post, "[Displaying AM/PM In Lower Case In C# & .NET]({% post_url 2026-11-02-displaying-ampm-in-lower-case-in-c-net %})", we looked at a quick-and-dirty way to display the time with the **am/pm designator in lower case**, like this - `06:13 pm`.
 
-In today's post, we will look at how to do this globally.
+In today's post, we will look at how to do this **globally**.
 
 For this we will use the technique outlined in the post "[Dynamically Changing Date Separators at Runtime in C# & .NET]({% post_url 2026-10-31-dynamically-changing-date-separators-at-runtime-in-c-net %})" where we customize a locale and use that globally in the current thread.
 
