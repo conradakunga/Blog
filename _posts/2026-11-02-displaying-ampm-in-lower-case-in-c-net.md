@@ -58,10 +58,10 @@ This outputs what we would expect:
 
 ![ampmLower](../images/2026/11/ampmLower.png)
 
-Is there a more robust way of doing this? **Of course**. We shall look at that in our [next post]().
+Is there a more robust way of doing this? **Of course**. We shall look at that in our [next post]({% post_url 2026-11-03-changing-ampm-designation-application-wide-to-lower-case-in-c-net %}).
 
 ### TLDR
 
-**To quickly output am/pm in lower case, change the entire time as a `string` to *lowercase*.**
+**To quickly output am/pm in lowercase, change the entire time as a `string` to *lowercase*.**
 
 Happy hacking!
