@@ -12,8 +12,8 @@ When **formatting** a [DateTime](https://learn.microsoft.com/en-us/dotnet/api/sy
 For example, rather than this:
 
 ```c#
-	var currentDateTime = DateTime.Now;
-	Console.WriteLine(currentDateTime);
+var currentDateTime = DateTime.Now;
+Console.WriteLine(currentDateTime);
 ```
 
 ![defaultDateTime](../images/2026/10/defaultDateTime.png)
