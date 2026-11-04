@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing AM/PM Designation Application Wide In Lower Case In C# & .NET
+title: Changing AM/PM Designation Application-Wide in Lowercase in C# & .NET
 date: 2026-11-03 18:37:48 +0300
 categories:
     - C#
@@ -11,7 +11,7 @@ In our previous post, "[Displaying AM/PM In Lower Case In C# & .NET]({% post_url
 
 In today's post, we will look at how to do this **globally**.
 
-For this we will use the technique outlined in the post "[Dynamically Changing Date Separators at Runtime in C# & .NET]({% post_url 2026-10-31-dynamically-changing-date-separators-at-runtime-in-c-net %})" where we **customize a locale and use that globally** in the current thread.
+For this, we will use the technique outlined in the post "[Dynamically Changing Date Separators at Runtime in C# & .NET]({% post_url 2026-10-31-dynamically-changing-date-separators-at-runtime-in-c-net %})" where we **customize a locale and use that globally** in the current thread.
 
 ```c#
 // Clone the current culture, to use as a base
