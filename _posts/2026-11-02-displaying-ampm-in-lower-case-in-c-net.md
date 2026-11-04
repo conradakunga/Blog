@@ -44,7 +44,7 @@ Note here that the `pm` is in **lower case**.
 
 I wondered whether there was a way to modify the format string to output this.
 
-There isn't.
+**There isn't**.
 
 The quick and dirty way is to lower case the entire string.
 
