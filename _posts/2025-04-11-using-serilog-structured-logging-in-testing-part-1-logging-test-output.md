@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Serilog & Structured Logging In Testing - Part 1 - Logging Test Output
+title: Using Serilog & Structured Logging in Testing - Part 1 - Logging Test Output
 date: 2025-04-11 16:34:50 +0300
 categories:
     - Testing
@@ -112,7 +112,7 @@ The tests should pass successfully.
 
 Now, suppose within the context of a test, we want to log to the console what the calculator is doing.
 
-We can update the tests as follows, to add writing to the console:
+We can update the tests as follows to add writing to the console:
 
 ```c#
 public class CalculatorTests
