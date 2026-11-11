@@ -35,6 +35,10 @@ This will print something like this:
 
 We can see that the runtime finds all attached drives, including **hidden** and **system** ones.
 
+If I run the same code on **Windows**, I get the following result:
+
+![windowsDrive](../images/2026/11/windowsDrive.png)
+
 ### TLDR
 
 **The `DriveInfo` class contains methods and properties allowing interrogation of attached drives.**
