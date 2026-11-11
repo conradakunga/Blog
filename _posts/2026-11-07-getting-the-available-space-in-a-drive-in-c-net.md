@@ -3,15 +3,17 @@ layout: post
 title: Getting the Total and Available Space In A Drive in C# & .NET
 date: 2026-11-07 15:56:27 +0300
 categories:
+    - C#
+    - .NET
 ---
 
-In our previous post, "Getting the Connected Drives in C# & .NET", we looked at how to get the available drives attached to a computer.
+In our previous post, "[Getting the Connected Drives in C# & .NET]({% post_url 2026-11-06-getting-the-connected-drives-in-c-net %})", we looked at how to get the **available drives** attached to a computer.
 
-In this post, we will look at how to check for total and available space.
+In this post, we will look at how to **check for total and available space**.
 
 The solution, naturally, is still in the [DriveInfo](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo?view=net-10.0) class.
 
-The properties we need are
+The properties we need are:
 
 - [AvailableFreeSpace](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo.totalfreespace?view=net-10.0)
 - [TotalSize](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo.totalsize?view=net-10.0)
@@ -36,7 +38,7 @@ foreach (var drive in drives)
 }
 ```
 
-Running this code yields the following on macOS:
+Running this code yields the following on **macOS**:
 
 ![macAvailable](../images/2026/11/macAvailable.png)
 
