@@ -7,13 +7,13 @@ categories:
     - .NET
 ---
 
-Recently, I needed to access and enumerate all the drives attached to my main computer, a MacBook Pro running macOS [Sonoma](https://en.wikipedia.org/wiki/MacOS_Sonoma).
+Recently, I needed to access and **enumerate all the drives attached to my main computer**, a [MacBook Pro](https://www.apple.com/ke/macbook-pro/) running macOS [Sonoma](https://en.wikipedia.org/wiki/MacOS_Sonoma).
 
 This can be achieved using the [GetDrives](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo.getdrives?view=net-10.0) method of the [DriveInfo](https://learn.microsoft.com/en-us/dotnet/api/system.io.driveinfo?view=net-10.0) class, which returns a collection of `DriveInfo` objects.
 
-You can then iterate over the list and access whatever information you want.
+You can then **iterate** over the list and access whatever information you want.
 
-During iteration, check whether the drive is ready by examining its `IsReady` property. This is because some drives may be connected, but not actually in a position to be interrogated; for example, a DVD drive that does not actually have a DVD.
+During iteration, check whether the drive is ready by examining its `IsReady` property. This is because some drives may be **connected**, but not actually in a position to be **interrogated**; for example, a DVD drive that does not actually have a DVD.
 
 The code is as follows:
 
