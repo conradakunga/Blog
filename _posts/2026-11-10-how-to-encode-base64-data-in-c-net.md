@@ -27,7 +27,7 @@ public sealed class SearchRequest
 
 ```
 
-We create an object like so:
+We create an `object` like this:
 
 ```c#
 var req = new SearchRequest
@@ -109,6 +109,13 @@ You will get the same problem with these characters:
 The specification, [RFC 4648](https://www.rfc-editor.org/info/rfc4648/), specifies what to do when encountering this data - which is **replacing** it with other characters: `+` is replaced with `-`, and `/` is replaced with `_`
 
 If you use `Convert.ToBase64String`, **you must replace these yourself**. [Base64Url.EncodeToString](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64url.encodetostring?view=net-10.0) **does this for you**.
+
+```c#
+var encodedByteData = Convert.ToBase64String(byteData);
+    .TrimEnd('=')
+    .Replace('+', '-')
+    .Replace('/', '_');
+```
 
 ### TLDR
 
