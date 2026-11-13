@@ -7,17 +7,17 @@ categories:
     - Web
 ---
 
-When it comes to sending data to to a web server over the web, you have a couple of options:
+When it comes to **sending data to a web server** over the web, you have a couple of **options**:
 
-1. Sending data within the URL
+1. Sending data within the **URL**
     1. [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET)
     2. [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/DELETE)
-2. Sending data within the HTTP header
+2. Sending data within the `HTTP` **body**
     1. [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST)
     2. [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/PUT)
     3. [PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/PATCH)
 
-These generally map as follows, for a RESTful API
+These generally map as follows for a [RESTful API](https://aws.amazon.com/what-is/restful-api/)
 
 | Operaton    | Method         |
 | ----------- | -------------- |
