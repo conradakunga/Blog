@@ -62,47 +62,7 @@ For example, if your API supports **search**, the payload would look like this:
 }
 ```
 
-You would therefore need to convert this to a `string` so that you can submit in a URL.
-
-First, a `class` to represent the `object`:
-
-```c#
-public sealed class SearchRequest
-{
-  public required string SearchText { get; init; }
-  public required string SortColumn { get; init; }
-  public required int PageNumber { get; init; }
-  public required int PageSize { get; init; }
-  public required string Database { get; init; }
-  public required bool ActiveOnly { get; init; }
-}
-
-```
-
-The code would look like this:
-
-```c#
-var req = new SearchRequest
-{
-  SearchText = "conrad",
-  SortColumn = "Name",
-  PageNumber = 0,
-  PageSize = 50,
-  Database = "Animals",
-  ActiveOnly = true
-};
-
-// Get the data in bytes
-var byteData = JsonSerializer.SerializeToUtf8Bytes(req);
-// Convert to a URL representable string
-var encodedByteData = Base64Url.EncodeToString(byteData);
-```
-
-This generates a string like this:
-
-```plaintext
-eyJTZWFyY2hUZXh0IjoiY29ucmFkIiwiU29ydENvbHVtbiI6Ik5hbWUiLCJQYWdlTnVtYmVyIjowLCJQYWdlU2l6ZSI6NTAsIkRhdGFiYXNlIjoiQW5pbWFscyIsIkFjdGl2ZU9ubHkiOnRydWV9
-```
+You would therefore need to **convert** this to a `string` so that you can submit in a URL.
 
 To avoid having to deal with all these problems, a simple solution is to **abandon** the `GET` together and use a `POST`.
 
