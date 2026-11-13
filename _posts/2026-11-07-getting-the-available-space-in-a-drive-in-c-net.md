@@ -46,7 +46,7 @@ On **Windows**:
 
 ![windowsAvailability](../images/2026/11/windowsAvailability.png)
 
-Notably, drives like **shares** show the **underlying information of the drive they are mapped to**. For example, the `926.35` GB here is the main drive that is hosting my Windows VM.
+Notably, drives like **shares** show the **underlying information of the drive they are mapped to**. For example, the `926.35` GB here is the main drive that is hosting my **Windows** virtual machine.
 
 ### TLDR
 
