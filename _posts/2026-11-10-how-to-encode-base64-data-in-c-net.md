@@ -110,6 +110,8 @@ The specification, [RFC 4648](https://www.rfc-editor.org/info/rfc4648/), specifi
 
 If you use `Convert.ToBase64String`, **you must replace these yourself**. [Base64Url.EncodeToString](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64url.encodetostring?view=net-10.0) **does this for you**.
 
+In other words you will have to do this:
+
 ```c#
 var encodedByteData = Convert.ToBase64String(byteData);
     .TrimEnd('=')
