@@ -57,6 +57,8 @@ var encodedByteData = Convert.ToBase64String(byteData);
 
 Simple enough.
 
+There ia a second class that can do this - [Base64](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64?view=net-10.0), via the [EncodeToUtf8](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64.encodetoutf8inplace?view=net-10.0) method.
+
 There is also another `class` that can do this - [Base64Url](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64url?view=net-10.0), which has an [EncodeToString](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64url.encodetostring?view=net-10.0) method. 
 
 ```c#
