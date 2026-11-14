@@ -5,12 +5,11 @@ date: 2026-11-10 11:24:53 +0300
 categories:
     - C#
     - .NET
-
 ---
 
 A common protocol for **encoding data** for safe representation as a `string` is [Base64](https://en.wikipedia.org/wiki/Base64). You typically need this for **encoding arbitrary data** over a channel that expects **text**, such as **email**.
 
-The go-to for this is typically the [Convert](https://learn.microsoft.com/en-us/dotnet/api/system.convert?view=net-10.0) class, which has a [ToBase64String](https://learn.microsoft.com/en-us/dotnet/api/system.convert.tobase64string?view=net-10.0) method. If you want a `character` array instead, you can use the [ConvertToBase64CharArray](https://learn.microsoft.com/en-us/dotnet/api/system.convert.tobase64chararray?view=net-10.0) method.
+The go-to for this is typically the [Convert](https://learn.microsoft.com/en-us/dotnet/api/system.convert?view=net-10.0) class, which has a [ToBase64String](https://learn.microsoft.com/en-us/dotnet/api/system.convert.tobase64string?view=net-10.0) method. If you want a `character` array instead, you can use the [ToBase64CharArray](https://learn.microsoft.com/en-us/dotnet/api/system.convert.tobase64chararray?view=net-10.0) method.
 
 Let us use the **example** from the previous post, "[How To Encode An Object For Passing In A URL In C# & .NET]({% post_url 2026-11-09-how-to-encode-an-object-for-passing-in-a-url-in-c-net %})".
 
@@ -84,7 +83,7 @@ We will change our search text from `conrad` to `conrad ` (here are **two spaces
 
 ![encodeNoMatch](../images/2026/11/encodeNoMatch.png)
 
-Let us now visualize the actual outputs:
+Let us now **visualize** the actual outputs:
 
 ```plaintext
 eyJTZWFyY2hUZXh0IjoiY29ucmFkICIsIlNvcnRDb2x1bW4iOiJOYW1lIiwiUGFnZU51bWJlciI6MCwiUGFnZVNpemUiOjUwLCJEYXRhYmFzZSI6IkFuaW1hbHMiLCJBY3RpdmVPbmx5Ijp0cnVlfQ==
