@@ -19,7 +19,7 @@ When it comes to **sending data to a web server** over the web, you have a coupl
 
 These generally map as follows for a [RESTful API](https://aws.amazon.com/what-is/restful-api/)
 
-| Operaton    | Method         |
+| Operation   | Method         |
 | ----------- | -------------- |
 | Fetch data  | `GET`          |
 | Insert data | `POST`         |
@@ -37,9 +37,9 @@ The problem is that the URL has some **hard limits** in terms of:
 
 **Size** is a bit complex. The [HTTP specification](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Resources_and_specifications) does not actually set a **maximum size**, so implementation is left to the mercy of **browsers** and **web servers**.
 
-For **browsers**, [Chrome](https://www.google.com/chrome/), and other [Chromium](https://www.chromium.org/) based browsers like [Microsoft Edge](https://explore.microsoft.com/en-us/edge) have a [hard limit of 2,097,152 characters](https://chromium.googlesource.com/chromium/src/+/main/docs/security/url_display_guidelines/url_display_guidelines.md), about `2MB`. Firefox has a limit of about `65,536` (`64 KB`). [Safari](https://www.apple.com/safari/), based on chrome, has a limit of `80,000`.
+For **browsers**, [Chrome](https://www.google.com/chrome/), and other [Chromium-based browsers](https://www.chromium.org/browsers like [Microsoft Edge](https://explore.microsoft.com/en-us/edge) have a [hard limit of 2,097,152 characters](https://chromium.googlesource.com/chromium/src/+/main/docs/security/url_display_guidelines/url_display_guidelines.md), about `2MB`. Firefox has a limit of about `65,536` (`64 KB`). [Safari](https://www.apple.com/safari/), based on chrome, has a limit of `80,000`.
 
-For **web servers**, you have a different set of constraints. [Microsoft IIS](https://www.iis.net/) has a [default length](https://learn.microsoft.com/en-us/iis/configuration/system.webserver/security/requestfiltering/requestlimits/) limit of `4KB`. [Apache](https://httpd.apache.org/) has a limit ranging from `8,000` to `128,000` bytes. [Nginx](https://nginx.org/) has a [default length](https://nginx.org/en/docs/http/ngx_http_core_module.html) of '8KB'.
+or **web servers**, you have a different set of constraints. [Microsoft IIS](https://www.iis.net/) has a [default length](https://learn.microsoft.com/en-us/iis/configuration/system.webserver/security/requestfiltering/requestlimits/) limit of `4KB`. [Apache](https://httpd.apache.org/) has a limit ranging from `8,000` to `128,000` bytes. [Nginx](https://nginx.org/) has a [default length](https://nginx.org/en/docs/http/ngx_http_core_module.html) of '8KB'.
 
 When it comes to **representation**, you have a different problem, given that the URL is basically a `string`.
 

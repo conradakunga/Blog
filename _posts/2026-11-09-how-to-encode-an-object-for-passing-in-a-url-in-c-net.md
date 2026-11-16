@@ -103,7 +103,7 @@ var data = Base64Url.DecodeFromChars(encodedByteData);
 var request = JsonSerializer.Deserialize<SearchRequest>(data);
 ```
 
-Here, `encodedByteData` we are fetching from the **URL**.
+Here, `encodedByteData` is the data that we are fetching from the **URL**.
 
 ### TLDR
 
