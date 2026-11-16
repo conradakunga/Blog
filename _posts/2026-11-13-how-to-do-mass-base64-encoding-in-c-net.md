@@ -74,6 +74,6 @@ Console.WriteLine(base64Result);
 
 **There are `Stream` based `classes` that can help encoding large amounts of data.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-13%20-%20DefaultEncoding).
 
 Happy hacking!

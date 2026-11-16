@@ -74,4 +74,6 @@ This will return the following:
 
 `Encoding.Default` is generally synonomous with `Encoding.UTF8`
 
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-14%20-%20DefaultEncoding).
+
 Happy hacking!
