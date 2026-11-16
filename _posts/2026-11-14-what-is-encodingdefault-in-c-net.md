@@ -58,7 +58,7 @@ byte[] utf = Encoding.Default.GetBytes("This is some text with an emoji 🤗");
 
 What does this [Encoding.Default](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.default?view=net-10.0) refer to?
 
-In .[NET Core, and later versions](https://dotnet.microsoft.com/en-us/), this is **always** [UTF8](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.utf8?view=net-10.0). In [.NET Framework](https://en.wikipedia.org/wiki/.NET_Framework) (**Windows** Only!), it would return t**he encoding that corresponds to the system's active code page**.
+In .[NET Core, and later versions](https://dotnet.microsoft.com/en-us/), this is **always** [UTF8](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.utf8?view=net-10.0). In [.NET Framework](https://en.wikipedia.org/wiki/.NET_Framework) (**Windows Only!**), it would return **the encoding that corresponds to the system's active code page**.
 
 ### TLDR
 
