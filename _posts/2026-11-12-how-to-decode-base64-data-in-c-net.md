@@ -60,6 +60,6 @@ This returns the following:
 
 **There are `3` main ways to decode `Base64` data.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-12%20-%20DecodeBase64).
 
 Happy hacking!

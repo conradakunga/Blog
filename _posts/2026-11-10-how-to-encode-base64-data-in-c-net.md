@@ -57,7 +57,7 @@ var encodedByteData = Convert.ToBase64String(byteData);
 
 Simple enough.
 
-There ia a second class that can do this - [Base64](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64?view=net-10.0), via the [EncodeToUtf8](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64.encodetoutf8inplace?view=net-10.0) method.
+There is a **second** class that can do this: [Base64](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64?view=net-10.0), via the [EncodeToUtf8](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64.encodetoutf8inplace?view=net-10.0) method.
 
 There is also another `class` that can do this - [Base64Url](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64url?view=net-10.0), which has an [EncodeToString](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64url.encodetostring?view=net-10.0) method. 
 
@@ -98,7 +98,7 @@ Its tricky to see but the difference is this:
 
 ![diff](../images/2026/11/diff.png)
 
-That `=` that is a part of the `Convert` output is the issue. This is a **special character** that the encoding inserts to **pad the output** to ensure the length is a multiple of `4` bytes.
+That `=` is the part of the `Convert` output that is the issue. This is a **special character** that the encoding inserts to **pad the output** to ensure the length is a multiple of `4` bytes.
 
 Which is precisely the problem [Base64Url.EncodeToString](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64url.encodetostring?view=net-10.0) is solving - it removes these characters for you.
 
@@ -111,7 +111,7 @@ The specification, [RFC 4648](https://www.rfc-editor.org/info/rfc4648/), specifi
 
 If you use `Convert.ToBase64String`, **you must replace these yourself**. [Base64Url.EncodeToString](https://learn.microsoft.com/en-us/dotnet/api/system.buffers.text.base64url.encodetostring?view=net-10.0) **does this for you**.
 
-In other words you will have to do this:
+In other words, you will have to do this:
 
 ```c#
 var encodedByteData = Convert.ToBase64String(byteData);
@@ -124,6 +124,6 @@ var encodedByteData = Convert.ToBase64String(byteData);
 
 **For passing Base64 data over a URL, use Base64Url.EncodeToString instead of `Convert.ToBase64String,` as it does some replacements automatically for you.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-10%20-%20EncodeBase64).
 
 Happy hacking!
