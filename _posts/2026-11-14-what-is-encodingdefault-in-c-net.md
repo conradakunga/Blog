@@ -60,6 +60,16 @@ What does this [Encoding.Default](https://learn.microsoft.com/en-us/dotnet/api/s
 
 In .[NET Core, and later versions](https://dotnet.microsoft.com/en-us/), this is **always** [UTF8](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.utf8?view=net-10.0). In [.NET Framework](https://en.wikipedia.org/wiki/.NET_Framework) (**Windows Only!**), it would return **the encoding that corresponds to the system's active code page**.
 
+You can check for yourself like so:
+
+```c#
+Console.WriteLine(Encoding.Default.EncodingName);
+```
+
+This will return the following:
+
+![defaultEncoding](../images/2026/11/defaultEncoding.png)
+
 ### TLDR
 
 `Encoding.Default` is generally synonomous with `Encoding.UTF8`
