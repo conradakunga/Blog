@@ -84,6 +84,7 @@ It has be best of both worlds:
 3. Can be treated as **Idempotent**, like `GET`
 4. **Response** comes back in the **body**, like `GET`
 5. Does not **alter server state**, like `GET`
+6. As it is **idempotent**, it is safe to **retry**
 
 Recent builds modern browsers and tools support this.
 
