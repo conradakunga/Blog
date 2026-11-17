@@ -88,7 +88,7 @@ public class SearchModule : ICarterModule
 }
 ```
 
-The magic is happening here, where we register our route:
+The magic is happening **here**, where we **register our route**:
 
 ```c#
  app.MapMethods("/", [HttpMethods.Query], (SearchRequest request) =>
@@ -98,6 +98,10 @@ The magic is happening here, where we register our route:
 ```
 
 You can see here the code is exactly the same as that of the **Minimal API**, as `Carter` is just a thin **wrapper** over the same.
+
+A quick test using a API client like [Yaak]() (my goto!) should show the following:
+
+![CarterQuery](../images/2026/11/CarterQuery.png)
 
 ### TLDR
 
