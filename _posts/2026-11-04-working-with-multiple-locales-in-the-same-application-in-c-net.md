@@ -71,6 +71,6 @@ In this way, we can write an application that **accepts and processes data** fro
 
 **Leverage the fact that localization can he set at the thread level to allow building of robust, culturally aware applications.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-04%20-%20MultipleLocales).
 
 Happy hacking!

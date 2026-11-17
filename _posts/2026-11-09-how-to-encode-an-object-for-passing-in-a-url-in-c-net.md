@@ -109,6 +109,6 @@ Here, `encodedByteData` is the data that we are fetching from the **URL**.
 
 **You can write code to *encode* and post `JSON` over `GET`, as well as *decode* and process the same.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-09%20-%20Base64UrlEncode).
 
 Happy hacking!
