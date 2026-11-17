@@ -19,7 +19,7 @@ byte[] utf = Encoding.UTF8.GetBytes("This is some text with an emoji 🤗");
 
 Here you can see I am explicitly requesting `UTF8`.
 
-There are others that you may **occasionally** need to use directly, like [ASCII](https://en.wikipedia.org/wiki/ASCII).
+There are other **encodings** that you may **occasionally** need to use directly, like [ASCII](https://en.wikipedia.org/wiki/ASCII).
 
 ```c#
 byte[] ascii = Encoding.ASCII.GetBytes("This is some text with an emoji 🤗");
