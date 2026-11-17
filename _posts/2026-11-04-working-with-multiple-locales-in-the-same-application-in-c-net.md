@@ -63,7 +63,7 @@ If we run this code, it will print something like this:
 
 ![mutliLocaleThreads](../images/2026/11/mutliLocaleThreads.png)
 
-Here, we can see that each print output ran in a **different** `thread`, within which we set our c**ustom locale**.
+Here, we can see that each print output ran in a **different** `thread`, within which we set our **custom locale**.
 
 In this way, we can write an application that **accepts and processes data** from users with **different locales**.
 
