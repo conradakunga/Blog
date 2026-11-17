@@ -107,6 +107,6 @@ A quick test using a API client like [Yaak]() (my goto!) should show the followi
 
 **You can register methods using `HTTP QUERY` with `Carter`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-17%20-%20QueryCarterAPI).
 
 Happy hacking!
