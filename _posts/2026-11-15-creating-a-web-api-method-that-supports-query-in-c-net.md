@@ -94,6 +94,6 @@ For obvious reasons, **a body is mandatory**.
 
 **ASP.NET supports building of API and Web endpoints supporting `HTTP QUERY`**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-15%20-%20QueryAPI).
 
 Happy hacking!
