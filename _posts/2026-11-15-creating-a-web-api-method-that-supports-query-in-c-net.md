@@ -88,6 +88,8 @@ The **raw request** is as follows:
 
 ![QueryRequestHeaders](../images/2026/11/QueryRequestHeaders.png)
 
+For obvious reasons, **a body is mandatory**.
+
 ### TLDR
 
 **ASP.NET supports building of API and Web endpoints supporting `HTTP QUERY`**
