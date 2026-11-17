@@ -10,7 +10,7 @@ categories:
 
 In a previous post, "[What Problem Does HTTP QUERY Solve?]({% post_url 2026-11-09-how-to-encode-an-object-for-passing-in-a-url-in-c-net %})", we discussed the [HTTP QUERY](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/QUERY) method, and how it makes a whole class of APIs and applications easier to **design** and **build**.
 
-In today's post, we will look at how to implement one **in practice**.
+In today's post, we will look at how to implement one **in practice** using ASP.NET Minimal API.
 
 For this we will use the example from an earlier post, "[How To Encode An Object For Passing In A URL In C# & .NET]({% post_url 2026-11-09-how-to-encode-an-object-for-passing-in-a-url-in-c-net %})", that has this payload:
 
