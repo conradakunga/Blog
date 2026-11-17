@@ -3,13 +3,15 @@ layout: post
 title: Sending A HTTP Query Request With A HttpClient In C# & .NET
 date: 2026-11-16 12:59:52 +0300
 categories:
+    - C#
+    - .NET
 ---
 
 In our previous post, "[Creating A Web API Method That Supports QUERY In C# & .NET]({% post_url 2026-11-15-creating-a-web-api-method-that-supports-query-in-c-net %})", we looked at how to write a server side API to handle a [HTTP Query](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/QUERY) request.
 
 In this post we will look at how to send a `HTTP QUERY` request from a [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-10.0).
 
-For this we will use our example from yesterday's post.
+For this we will use our example from [yesterday's]({% post_url 2026-11-15-creating-a-web-api-method-that-supports-query-in-c-net  %}) post.
 
 ```json
 {
@@ -94,6 +96,6 @@ If we run this code, we should get the expected result:
 
 **You can send `HTTP QUERY` requests using a `HttpClient`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-16%20-%20HttpClientQuery).
 
 Happy hacking!
