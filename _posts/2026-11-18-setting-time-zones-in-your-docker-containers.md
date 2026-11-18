@@ -41,11 +41,11 @@ We can see here that in the container the time is `16:16` but on the host it is 
 
 This is because **containers default to UTC** unless told otherwise
 
-This **matters** when your host is interacting with the container!
+This **matters** when your **host** is interacting with the **container**!
 
 It is therefore crucial to **remember to set the timezone in the container**.
 
-**Most containers** will allow you to set this through an environment variable, `TZ`.
+**Most containers** will allow you to set this through an [environment variable](https://docs.docker.com/compose/how-tos/environment-variables/set-environment-variables/), `TZ`.
 
 Like so:
 
