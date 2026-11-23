@@ -4,6 +4,7 @@ title: Setting Time Zones In Your Docker Containers
 date: 2026-11-18 19:07:56 +0300
 categories:
     - Docker
+    - PostgreSQL
 ---
 
 If you are not using [containers](https://www.docker.com/resources/what-container/) for your infrastructure, I would be **surprised**. **A whole class of problems and complications go away when your infrastructure is a container** that can quickly be spun up as needed.
