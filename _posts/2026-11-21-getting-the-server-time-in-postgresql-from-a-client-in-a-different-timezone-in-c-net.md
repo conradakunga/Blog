@@ -18,7 +18,7 @@ This looks like the end of the discussion.
 
 But isn't.
 
-Let us try and connect to the server and retrieve the time using code.
+Let us try and connect to the server and retrieve the time using **code**.
 
 For this we need the following packages:
 
@@ -44,9 +44,9 @@ Looks ok.
 
 Now suppose the client was in a different time zone.
 
-Let us say, the client was in Lima, Peru.
+Let us say, the client was in [Lima](https://en.wikipedia.org/wiki/Lima), [Peru](https://en.wikipedia.org/wiki/Peru).
 
-We can inform the server where we are connecting from like this:
+We can inform the **server** of t**he time zone we are connecting from** like this:
 
 ```c#
 using (var cn = new NpgsqlConnection("host=localhost;username=myuser;password=mypassword;database=postgres;Timezone=America/Lima"))
@@ -62,11 +62,19 @@ using (var cn = new NpgsqlConnection("host=localhost;username=myuser;password=my
 }
 ```
 
+The magic is this bit:
+
+```plaintext
+Timezone=America/Lima
+```
+
 This prints the following:
 
 ![limaTime](../images/2026/11/limaTime.png)
 
-Which is wrong!
+Which is **wrong**!
+
+The time on the database server is `19:24`.
 
 The problem is here:
 
