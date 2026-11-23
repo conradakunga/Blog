@@ -57,4 +57,4 @@ It is not this simple always, as we will see in the next post.
 
 ### TLDR
 
-**`UTF8` encoding uses `1` to 4 bytes (depending on what is being represented).`Unicode` encoding uses 2- `4`.**
+**`UTF8` encoding uses `1` to 4 bytes (depending on what is being represented).`Unicode` encoding uses `2`- `4`.**
