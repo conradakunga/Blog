@@ -110,6 +110,6 @@ using (var cn = new NpgsqlConnection("host=localhost;username=myuser;password=my
 
 **Over and above the timezone of the server, you must also factor in the time zone of the client when you need to fetch the server time for computations.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-21%20-%20ServerTime).
 
 Happy hacking!
