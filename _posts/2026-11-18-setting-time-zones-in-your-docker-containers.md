@@ -38,7 +38,7 @@ Now let us get the **system time** from that container.
 
 ![dateTime](../images/2026/11/dateTime.png)
 
-We can see here that in the container the time is `16:16` but on the host it is `19:16`.
+We can see here that in the container the time is `16:16,` but on the host it is `19:16`.
 
 This is because **containers default to UTC** unless told otherwise
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting The Server Time In PostgreSQL From A Client In A Different Timezone In C# & .NET
+title: Getting the Server Time in PostgreSQL From A Client In A Different Timezone in C# & .NET
 date: 2026-11-21 19:05:09 +0300
 categories:
     - C#
@@ -8,9 +8,9 @@ categories:
     - PostgreSQL
 ---
 
-In a previous post, "[Setting Time Zones In Your Docker Containers]({% post_url 2026-11-18-setting-time-zones-in-your-docker-containers %})", we looked at how to set the time zone for the server in [PostgreSQL](https://www.postgresql.org/).
+In a previous post, "[Setting Time Zones In Your Docker Containers]({% post_url 2026-11-18-setting-time-zones-in-your-docker-containers %})", we looked at how to set the time zone for the [MySQL](https://www.mysql.com/) server.
 
-We could then query the database in the container from the server, like so:
+We could then query the **database** in the container from the server, like so:
 
 ![dateTime](../images/2026/11/dateTime.png)
 
@@ -44,7 +44,7 @@ Looks ok.
 
 Now suppose the client was in a different time zone.
 
-Let us say, the client was in [Lima](https://en.wikipedia.org/wiki/Lima), [Peru](https://en.wikipedia.org/wiki/Peru).
+Let us say the client was in [Lima](https://en.wikipedia.org/wiki/Lima), [Peru](https://en.wikipedia.org/wiki/Peru).
 
 We can inform the **server** of t**he time zone we are connecting from** like this:
 

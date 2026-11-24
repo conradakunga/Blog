@@ -7,11 +7,11 @@ categories:
     - .NET
 ---
 
-In some previous posts, "[What Is Encoding.Default In C# & .NET]({% post_url 2026-11-14-what-is-encodingdefault-in-c-net %})" and "[How to do Mass Base64 Encoding In C# & .NET]({% post_url 2026-11-13-how-to-do-mass-base64-encoding-in-c-net %})", we looked at the role of [encoding](https://en.wikipedia.org/wiki/Character_encoding) and how to achieve encoding using the various [encoding](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding?view=net-11.0) classes.
+In previous posts, "[What Is Encoding.Default In C# & .NET]({% post_url 2026-11-14-what-is-encodingdefault-in-c-net %})" and "[How to do Mass Base64 Encoding In C# & .NET]({% post_url 2026-11-13-how-to-do-mass-base64-encoding-in-c-net %})", we looked at the role of [encoding](https://en.wikipedia.org/wiki/Character_encoding) and how to achieve it using various [encoding](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding?view=net-11.0) classes.
 
 We also saw how [Encoding.Default](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.default?view=net-10.0) is the same as [Encoding.UTF8](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.utf8?view=net-10.0), which are encodings that support [Unicode](https://en.wikipedia.org/wiki/Unicode).
 
-However, there is also a class that can potentially lead to confusion - [Encoding.Unicode](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.unicode?view=net-10.0), which is also a `Unicode` compliant encoding. However, they are **not the same thing**!
+However, there is also a class that can potentially lead to confusion: [Encoding.Unicode](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.unicode?view=net-10.0), which is also an encoding. However, they are **not the same thing**!
 
 Let us start with some text to encode:
 
@@ -53,10 +53,10 @@ In `Unicode` **Encoding**, it is `84-00`.
 
 This is exactly why the size is **double**, at least for the text presented.
 
-It is not this simple always, as we will see in the next post.
+It is not always this simple, as we will see in the [next post]({% post_url 2026-11-20-utf8-vs-ascii-encoding-in-c-net %}).
 
 ### TLDR
 
-**`UTF8` encoding uses `1` to 4 bytes (depending on what is being represented).`Unicode` encoding uses `2`- `4`.**
+**`UTF8` encoding uses `1` to 4 bytes (depending on what is being represented).`Unicode` encoding uses `2`- `4 bytes`.**
 
 Happy hacking!

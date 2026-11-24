@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Carter To Create A ASP.NET WebAPI With QUERY Support In C# & .NET
+title: Using Carter to Create A ASP.NET WebAPI With QUERY Support in C# & .NET
 date: 2026-11-17 14:35:36 +0300
 categories:
     - C#
@@ -12,7 +12,7 @@ In our previous post, "[Creating A Web API Method That Supports QUERY In C# & .N
 
 In this post, we will look at how to achieve the same thing using the [Carter](https://github.com/CarterCommunity/Carter) library.
 
-For this we will use the same example as before:
+For this, we will use the same example as before:
 
 This is the payload:
 
@@ -41,7 +41,7 @@ public sealed class SearchRequest
 }
 ```
 
-The first step is to setup the project, an empty **Web** project:
+The first step is to set up the project, an empty **Web** project:
 
 ```bash
 dotnet new web -o QueryCarterAPI
@@ -99,7 +99,7 @@ The magic is happening **here**, where we **register our route**:
 
 You can see here the code is exactly the same as that of the **Minimal API**, as `Carter` is just a thin **wrapper** over the same.
 
-A quick test using a API client like [Yaak]() (my goto!) should show the following:
+A quick test using an API client like [Yaak]() (my go-to!) should show the following:
 
 ![CarterQuery](../images/2026/11/CarterQuery.png)
 

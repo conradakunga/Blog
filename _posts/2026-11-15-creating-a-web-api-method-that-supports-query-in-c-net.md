@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating A Web API Method That Supports QUERY In C# & .NET
+title: Creating A Web API Method That Supports QUERY in C# & .NET
 date: 2026-11-15 11:41:49 +0300
 categories:
     - C#
@@ -62,7 +62,7 @@ app.MapMethods("/", [HttpMethods.Query],
 app.Run();
 ```
 
-Unlike the other well known methods, [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET), [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST), [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/PUT), [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/DELETE), [PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/PATCH) there are no ASP.NET equivalents ([MapGet](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mapget?view=aspnetcore-10.0), [MapPost](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mappost?view=aspnetcore-10.0), [MapPut](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mapput?view=aspnetcore-10.0), [MapDelete](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mapdelete?view=aspnetcore-10.0), [MapPatch](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mappatch?view=aspnetcore-10.0)) for [QUERY](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/QUERY). At least **not yet**.
+Unlike the other well-known methods, [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET), [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST), [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/PUT), [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/DELETE), [PATCH,](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/PATCH) there are no ASP.NET equivalents ([MapGet](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mapget?view=aspnetcore-10.0), [MapPost](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mappost?view=aspnetcore-10.0), [MapPut](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mapput?view=aspnetcore-10.0), [MapDelete](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mapdelete?view=aspnetcore-10.0), [MapPatch](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mappatch?view=aspnetcore-10.0)) for [QUERY](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/QUERY). At least **not yet**.
 
 We therefore have to use the generic [MapMethods](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutebuilderextensions.mapmethods?view=aspnetcore-10.0) and specify our method directly.
 
@@ -74,11 +74,11 @@ app.MapMethods("/", [HttpMethods.Query],
 }
 ```
 
-The logic itself is pretty standard. Ideally within we would do whatever **database access** that was required, or fetching from an **application level cache**.
+The logic itself is pretty standard. Ideally within we would do whatever **database access** that was required, or fetching from an **application-level cache**.
 
 We can then try this out with an API client.
 
-As usual, [Yaak](https://yaak.app/) is my goto:
+As usual, [Yaak](https://yaak.app/) is my go-to:
 
 ![mapQueryAPI](../images/2026/11/mapQueryAPI.png)
 

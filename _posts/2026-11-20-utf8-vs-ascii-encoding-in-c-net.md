@@ -11,7 +11,7 @@ In our previous post, "[UTF8 vs Unicode Encoding In C# & .NET]({% post_url 2026-
 
 In this post, we shall look at the relationship between [ASCII](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoding.ascii?view=net-11.0) and `UTF8 Encoding.`
 
-Let us look at our cipher-text:
+Let us look at our ciphertext:
 
 ```c#
 const string text = "The quick brown fox";
@@ -28,7 +28,7 @@ Console.WriteLine(string.Join("-", Encoding.UTF8.GetBytes(text)));
 
 ![asciiUTF8](../images/2026/11/asciiUTF8.png)
 
-Straight away, we see the beauty behind the design of `UTF8` - all `ASCII` encoded files are `UTF8` **compatible**, provided the text to encode is in fact `ASCII`.
+Straight away, we see the beauty behind the design of `UTF8` - all files are `UTF8` **compatible**, provided the text to encode is in fact `ASCII`.
 
 Should you try anything that is not `ASCII`, you get a problem.
 
@@ -41,7 +41,7 @@ Console.WriteLine(string.Join("-", Encoding.ASCII.GetBytes(text)));
 Console.WriteLine(string.Join("-", Encoding.UTF8.GetBytes(text)));
 ```
 
-We can see here that there is an **emoji** at the end of our cipher-text.
+We can see here that there is an **emoji** at the end of our ciphertext.
 
 This returns the following:
 

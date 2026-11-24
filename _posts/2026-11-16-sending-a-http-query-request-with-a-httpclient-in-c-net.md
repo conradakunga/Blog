@@ -7,7 +7,7 @@ categories:
     - .NET
 ---
 
-In our previous post, "[Creating A Web API Method That Supports QUERY In C# & .NET]({% post_url 2026-11-15-creating-a-web-api-method-that-supports-query-in-c-net %})", we looked at how to write a server side API to handle a [HTTP Query](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/QUERY) request.
+In our previous post, "[Creating A Web API Method That Supports QUERY In C# & .NET]({% post_url 2026-11-15-creating-a-web-api-method-that-supports-query-in-c-net %})", we looked at how to write a server-side API to handle an [HTTP Query](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/QUERY) request.
 
 In this post we will look at how to send a `HTTP QUERY` request from a [HttpClient](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-10.0).
 
@@ -70,19 +70,19 @@ The magic here is in the [PostAsJsonAsync](https://learn.microsoft.com/en-us/dot
 - Sends the **request** as `POST`
 - **Retrieves** the **response**
 
-However there is no such method for a [QUERY](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/QUERY) request. At least, not yet.
+However, there is no such method for a [QUERY](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/QUERY) request. At least, not yet.
 
 Se we have to do the heavy lifting **ourselves**, like so:
 
 ```c#
 // Construct our HttpRequest
 var request = new HttpRequestMessage(HttpMethod.Query, "http://localhost:5076");
-// Set the contnet
+// Set the content
 request.Content = JsonContent.Create(req);
 // Sed the request
 var response = await client.SendAsync(request);
 
-// Extract the content form the response
+// Extract the content from the response
 var responseContent = await response.Content.ReadAsStringAsync();
 
 Console.WriteLine(responseContent);
