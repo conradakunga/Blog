@@ -3,7 +3,7 @@ layout: post
 title: Setting Docker Environment Variables
 date: 2026-11-23 19:36:02 +0300
 categories:
-
+    - Docker
 ---
 
 In a previous post, "[Setting Time Zones In Your Docker Containers]({% post_url 2026-11-18-setting-time-zones-in-your-docker-containers %})", we looked at how to set the **timezone** in a **container** so as to ensure that the **host and the container are using the same timezone**.
