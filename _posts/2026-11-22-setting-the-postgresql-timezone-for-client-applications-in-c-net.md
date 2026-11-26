@@ -137,6 +137,6 @@ We can see here that the **timezone at the client is respected**.
 
 **You can set the timezone for the connecting client application globally using the PGTZ environment variable.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-22%20-%20PostgresEnvironment).
 
 Happy hacking!
