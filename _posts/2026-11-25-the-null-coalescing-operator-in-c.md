@@ -52,6 +52,6 @@ This is **syntactically equivalent** to the previous code that explicitly checks
 
 **Use the *null-coalescing operator* to assign values only if the *target* is not `null`.**
 
-The code is in my GitHub.
+The code is in my [GitHub](https://github.com/conradakunga/BlogCode/tree/master/2026-11-25%20-%20Coalescing).
 
 Happy hacking!
